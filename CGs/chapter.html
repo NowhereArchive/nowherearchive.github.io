@@ -83,11 +83,13 @@
       const imagesContainer = document.getElementById("imagesContainer");
       imagesContainer.innerHTML = ""; // Clear existing content
 
+      let chapterName = (getQueryParam("name"));
+
       images.forEach((image) => {
         const imageDiv = document.createElement("div");
         imageDiv.classList.add("image-card");
         imageDiv.innerHTML = `
-          <img src="CGs/chapter00/${image.fileName}" alt="${image.title}" />
+          <img src="CGs/${chapterName}/${image.fileName}" alt="${image.title}" />
         `;
         imagesContainer.appendChild(imageDiv);
       });
