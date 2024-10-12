@@ -69,6 +69,16 @@
         "name": "chapter13",
         "displayName": "Chapter 13",
         "category": "Main Story"
+      },
+      {
+        "name": "rainburst",
+        "displayName": "Raint Burst",
+        "category": "Character Events"
+      },
+      {
+        "name": "floraunfurl",
+        "displayName": "Flora Unfurl",
+        "category": "Character Events"
       }
     ]
   }
