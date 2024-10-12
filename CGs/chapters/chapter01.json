@@ -1,35 +1,34 @@
 [
-    {
-      "title": "1",
-      "fileName": "1.png"
-    },
-    {
-      "title": "2",
-      "fileName": "2.png"
-    },
-    {
-      "title": "3",
-      "fileName": "3.png"
-    },
-    {
-      "title": "4",
-      "fileName": "4.png"
-    },
-    {
-      "title": "5",
-      "fileName": "5.png"
-    },
-    {
-      "title": "6",
-      "fileName": "6.png"
-    },
-    {
-      "title": "7",
-      "fileName": "7.png"
-    },
-    {
-      "title": "8",
-      "fileName": "8.png"
-    }
+  {
+    "title": "1",
+    "fileName": "https://i.imgur.com/y7wu1cP.png"
+  },
+  {
+    "title": "2",
+    "fileName": "https://i.imgur.com/3t2c7Jt.png"
+  },
+  {
+    "title": "3",
+    "fileName": "https://i.imgur.com/tT5m1js.png"
+  },
+  {
+    "title": "4",
+    "fileName": "https://i.imgur.com/CCsA9sk.png"
+  },
+  {
+    "title": "5",
+    "fileName": "https://i.imgur.com/cv9EjxR.png"
+  },
+  {
+    "title": "6",
+    "fileName": "https://i.imgur.com/hN1bqrX.png"
+  },
+  {
+    "title": "7",
+    "fileName": "https://i.imgur.com/Jfd984C.png"
+  },
+  {
+    "title": "8",
+    "fileName": "https://i.imgur.com/YpmVedQ.png"
+  }
 ]
-  
