@@ -67,6 +67,7 @@
       const imagesFile = `chapters/${chapterName}.json`; // Assuming the JSON file is named after the chapter
 
       try {
+        
         const response = await fetch(imagesFile);
         if (!response.ok) {
           throw new Error("Error loading images");
@@ -90,7 +91,7 @@
         const imageDiv = document.createElement("div");
         imageDiv.classList.add("image-card");
         imageDiv.innerHTML = `
-          <img src="CGs/${chapterName}/${image.fileName}" alt="${image.title}" />
+          <img src="${image.fileName}" alt="${image.title}" />
         `;
         imagesContainer.appendChild(imageDiv);
       });
