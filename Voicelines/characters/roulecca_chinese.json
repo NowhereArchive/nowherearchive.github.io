@@ -1,0 +1,208 @@
+{
+    "default": [
+        {
+            "title": "Obtain the Sinner",
+            "filename": "File:vo_roulecca_cacha_001.ogg",
+            "text": "居然能抓到露莉，你运气不错嘛！不如来和露莉玩点什么吧？反正……最后肯定是露莉赢！"
+        },
+        {
+            "title": "Raise to Phase 1",
+            "filename": "File:vo_roulecca_promotion_001.ogg",
+            "text": "Lucky——难道今天也是露莉的幸运日吗？"
+        },
+        {
+            "title": "Raise to Phase 3",
+            "filename": "File:vo_roulecca_promotion2_001.ogg",
+            "text": "让游戏再刺激一点吧，最好……让所有人都知道露莉的厉害！"
+        },
+        {
+            "title": "Level Start",
+            "filename": "File:vo_roulecca_battlebegin_001.ogg",
+            "text": "出去玩咯——"
+        },
+        {
+            "title": "Win Battles",
+            "filename": "File:vo_roulecca_battlewin_001.ogg",
+            "text": "露莉这次还没玩尽兴呢——"
+        },
+        {
+            "title": "Lose Battles",
+            "filename": "File:vo_roulecca_battlelose_001.ogg",
+            "text": "输了？露莉居然输了？！哈哈，哈哈哈！"
+        },
+        {
+            "title": "Ultimate Skill",
+            "filename": "File:bt_roulecca_uniqueskill_001.ogg",
+            "text": "哈哈哈哈，哈哈哈哈哈！"
+        },
+        {
+            "title": "Die in Battles",
+            "filename": "File:bt_roulecca_dead_001.ogg",
+            "text": "你们终于……来接我了……"
+        },
+        {
+            "title": "Greeting",
+            "filename": "File:vo_roulecca_greeting_001.ogg",
+            "text": "一个人真的好无聊……局长要和露莉玩点什么吗？"
+        },
+        {
+            "title": "Conversation 1",
+            "filename": "File:vo_roulecca_talk1_001.ogg",
+            "text": "听说点45的子弹穿过脑袋的时间只需要0.45秒，嗯……找谁来试一试呢？"
+        },
+        {
+            "title": "Conversation 2",
+            "filename": "File:vo_roulecca_talk1_002.ogg",
+            "text": "技巧？战术？情报？嗨呀，倒霉蛋才需要那些东西。露莉盯上谁，老天就不会放过他！"
+        },
+        {
+            "title": "Conversation 3",
+            "filename": "File:vo_roulecca_talk1_003.ogg",
+            "text": "从小到大，不管什么游戏，露莉都没输过呢。不用作弊，也不用努力，因为大家都超——级宠爱露莉。对吧？局长，你也是的吧？"
+        },
+        {
+            "title": "Special Conversation 1",
+            "filename": "File:vo_roulecca_talk2_001.ogg",
+            "text": "复仇从来都不是露莉的目的，嘿嘿，是露莉活下去的理由哦。"
+        },
+        {
+            "title": "Special Conversation 2",
+            "filename": "File:vo_roulecca_talk2_002.ogg",
+            "text": "炸弹也是，敌人也是，什么黑水、邪教徒、杀人的怪物，露莉都不怕！我会把背后的一切都揪出来。"
+        },
+        {
+            "title": "Special Conversation 3",
+            "filename": "File:vo_roulecca_talk2_003.ogg",
+            "text": "露莉可是在你身上下了重注的，不要随随便便把命输给别人。"
+        },
+        {
+            "title": "Full Compliance",
+            "filename": "File:vo_roulecca_obeyfull_001.ogg",
+            "text": "露莉又找到四叶草了！哼哼，像局长运气这么差的人，恐怕这辈子都找不到一株吧。算了…这株就送给你吧，作为回报，局长要再多陪露莉玩一会儿。"
+        },
+        {
+            "title": "Idle",
+            "filename": "File:vo_roulecca_idle_001.ogg",
+            "text": "piapia,piapiapiapia！"
+        },
+        {
+            "title": "Annoyed",
+            "filename": "File:vo_roulecca_clicking_001.ogg",
+            "text": "局长看起来好闲呀，要和露莉玩点什么吗？比如——猜猜弹槽里有几颗子弹？"
+        },
+        {
+            "title": "Special Attention",
+            "filename": "File:vo_roulecca_specialattention_001.ogg",
+            "text": "哦哦，局长要来陪露莉玩了吗？"
+        },
+        {
+            "title": "Dispatch",
+            "filename": "File:vo_roulecca_dispatch_001.ogg",
+            "text": "出发咯~"
+        },
+        {
+            "title": "Dispatch Complete",
+            "filename": "File:vo_roulecca_dispatch2_001.ogg",
+            "text": "露莉回来啦！这次露莉没有到处乱跑哦。"
+        },
+        {
+            "title": "Level Up",
+            "filename": "File:vo_roulecca_levelup_002.ogg",
+            "text": "诶？原来露莉还能变强的呀——"
+        },
+        {
+            "title": "Pat Head",
+            "filename": "File:vo_roulecca_head_001.ogg",
+            "text": "Stop ruffling my hair! I'm not a little kid! Waaa—cut it out!"
+        },
+        {
+            "title": "Deploy",
+            "filename": "File:bt_roulecca_jointeam_001.ogg",
+            "text": "Hmm... How much should Roulecca aim to win this time?"
+        }
+    ],
+    "seaside_dessert_stand": [
+        {
+            "title": "Obtain Attire",
+            "filename": "File:vo_roulecca_seaside_dessert_stand_cacha_001.ogg",
+            "text": "biubiubiu——！嘿嘿，吓了一跳吗？这是水枪啦局长！快来跟露莉一起玩呀！"
+        },
+        {
+            "title": "Level Up",
+            "filename": "File:vo_roulecca_seaside_dessert_stand_levelup_001.ogg",
+            "text": "露莉要赢更多更多的冰淇淋！"
+        },
+        {
+            "title": "Greeting",
+            "filename": "File:vo_roulecca_seaside_dessert_stand_greeting_001.ogg",
+            "text": "局长——今天有认真准备好和露莉的赌局么？输的人可是要买三份蜜瓜冰棍！"
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "filename": "File:vo_roulecca_seaside_dessert_stand_talk_001.ogg",
+            "text": "露莉很喜欢去伊琳娜的那艘大船上玩，那里的人就算是被赢走了好多好多东西也不会生气，而且他们还会冲过来和露莉合影。说是什么“赌王在世”……真是搞不懂这群家伙。"
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "filename": "File:vo_roulecca_seaside_dessert_stand_talk_002.ogg",
+            "text": "Lucky——今天又赢了这么多蛋糕，好开心！不过，之前有许多人也会送甜点给露莉吃，是……是谁来着？嗯……糟糕，露莉想不起来了……"
+        },
+        {
+            "title": "Idle",
+            "filename": "File:vo_roulecca_seaside_dessert_stand_idle_001.ogg",
+            "text": "嗯——好棒的天气。局长不来和露莉玩点什么游戏么？不管是冲浪，还是沙滩排球，露莉都可以！"
+        },
+        {
+            "title": "Annoyed",
+            "filename": "File:vo_roulecca_seaside_dessert_stand_clicking_001.ogg",
+            "text": "哈哈……局长，好痒啊！啊——露莉也不能输！"
+        },
+        {
+            "title": "Special Attention",
+            "filename": "File:vo_roulecca_seaside_dessert_stand_specialattention_001.ogg",
+            "text": "局长……你怎么一直在盯着露莉呀。难道说……局长也喜欢露莉的鲨鱼玩偶么？哼，这可是露莉好不容易赢来的东西，才不会借给你躺！"
+        }
+    ],
+    "puerile_maniac": [
+        {
+            "title": "Obtain Attire",
+            "filename": "File:vo_roulecca_puerile_maniac_cacha_001.ogg",
+            "text": "露莉今天早上吃了一块奇怪的蛋糕就变成这样了，嗯……好像是夏音姐姐放在桌子上的，因为看起来实在太好吃了……露莉就没忍住……嘿嘿……"
+        },
+        {
+            "title": "Level Up",
+            "filename": "File:vo_roulecca_puerile_maniac_levelup_001.ogg",
+            "text": "露莉感觉自己又长高了！"
+        },
+        {
+            "title": "Greeting",
+            "filename": "File:vo_roulecca_puerile_maniac_greeting_001.ogg",
+            "text": "捉迷藏？我不要……不能因为露莉身体变小了就跟露莉玩这么幼稚的游戏呀！或者，局长你让露莉躲到你怀里怎么样？"
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "filename": "File:vo_roulecca_puerile_maniac_talk_001.ogg",
+            "text": "啊……？睡前……不可以吃零食么？就……就吃一口！露莉那么幸运一定不会有蛀牙的！嗯！"
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "filename": "File:vo_roulecca_puerile_maniac_talk_002.ogg",
+            "text": "嗯……露莉有点困了……局长可以帮露莉拿几个小熊玩偶吗……露莉要像小时候一样抱着它们睡觉……"
+        },
+        {
+            "title": "Idle",
+            "filename": "File:vo_roulecca_puerile_maniac_idle_001.ogg",
+            "text": "如果当时露莉有现在这么强就好了……就算用这把枪也能把那些家伙们统统干掉！"
+        },
+        {
+            "title": "Annoyed",
+            "filename": "File:vo_roulecca_puerile_maniac_clicking_001.ogg",
+            "text": "不许把露莉当小孩子！虽然露莉的身体变小了，但头脑还是很聪明的！赢下局长轻轻松松！看招！Biubiubiubiubiu!"
+        },
+        {
+            "title": "Special Attention",
+            "filename": "File:vo_roulecca_puerile_maniac_specialattention_001.ogg",
+            "text": "哼哼，是不是觉得露莉这一身特别合适呀~作为露莉的家人，一局长也要来夸夸露莉！"
+        }
+    ]
+}

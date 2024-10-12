@@ -1,0 +1,166 @@
+{
+    "default": [
+        {
+            "title": "Obtain the Sinner",
+            "filename": "File:vo_raven_cacha_001.ogg",
+            "text": "哎哎哎，我就是个破写字儿的，怎么还拉人呢？还是……我写了你什么不可告人的秘密出去了？"
+        },
+        {
+            "title": "Raise to Phase 1",
+            "filename": "File:vo_raven_promotion_001.ogg",
+            "text": "多谢你的光临，我会好好写这份报道的。"
+        },
+        {
+            "title": "Raise to Phase 3",
+            "filename": "File:vo_raven_promotion2_001.ogg",
+            "text": "嗯，是足以载入史册的时刻。"
+        },
+        {
+            "title": "Level Start",
+            "filename": "File:vo_raven_battlebegin_001.ogg",
+            "text": "希望能找到些有趣的素材。"
+        },
+        {
+            "title": "Win Battles",
+            "filename": "File:vo_raven_battlewin_001.ogg",
+            "text": "“MBCC的禁闭者们赢得全面胜利！”——这标题不错吧。"
+        },
+        {
+            "title": "Lose Battles",
+            "filename": "File:vo_raven_battlelose_001.ogg",
+            "text": "咳，怎么和我以前遇到的采访对象一样难搞……"
+        },
+        {
+            "title": "Ultimate Skill",
+            "filename": "File:bt_raven_uniqueskill_001.ogg",
+            "text": "永不复焉！"
+        },
+        {
+            "title": "Die in Battles",
+            "filename": "File:bt_raven_dead_001.ogg",
+            "text": "哈哈……我的死亡，会被记住吗……"
+        },
+        {
+            "title": "Greeting",
+            "filename": "File:vo_raven_greeting_001.ogg",
+            "text": "嗯？什么熬夜写稿，我只是为了能第一眼看见你。"
+        },
+        {
+            "title": "Conversation 1",
+            "filename": "File:vo_raven_talk1_001.ogg",
+            "text": "找我代笔很便宜的，说吧，你想写什么？八卦杂谈？还是明星黑料？又或者……一首情诗？"
+        },
+        {
+            "title": "Conversation 2",
+            "filename": "File:vo_raven_talk1_002.ogg",
+            "text": "疯子？你知道的，我们诗人大多都是疯子。"
+        },
+        {
+            "title": "Conversation 3",
+            "filename": "File:vo_raven_talk1_003.ogg",
+            "text": "是是非非不过一篇文章，正确与否有那么重要吗？反正……辛迪加早就不在乎多这一滩墨水了。"
+        },
+        {
+            "title": "Special Conversation 1",
+            "filename": "File:vo_raven_talk2_001.ogg",
+            "text": "这里每一天的变化我都知道，你猜，它正落向何处？"
+        },
+        {
+            "title": "Special Conversation 2",
+            "filename": "File:vo_raven_talk2_002.ogg",
+            "text": "言语文字有其自然力量，它们的每一道脉冲，都将成为我对这个世界的反抗。"
+        },
+        {
+            "title": "Special Conversation 3",
+            "filename": "File:vo_raven_talk2_003.ogg",
+            "text": "找猫寻狗的报道我可不写，要写我就写……MBCC的局长为情所困，赖在我这小报社不肯离开？"
+        },
+        {
+            "title": "Full Compliance",
+            "filename": "File:vo_raven_obeyfull_001.ogg",
+            "text": "我用羽毛笔记录着辛迪加的一切，很显然，当你来到我面前时……哎呀，不好意思，本来想写句诗形容一下，但写不出来，你明白我的心意就行。"
+        },
+        {
+            "title": "Idle",
+            "filename": "File:vo_raven_idle_001.ogg",
+            "text": "如此无聊的日子，正适合为这个世界献上一首打油诗"
+        },
+        {
+            "title": "Annoyed",
+            "filename": "File:vo_raven_clicking_001.ogg",
+            "text": "这是什么新型催稿方式吗？算了，那你这稿子我不接了。"
+        },
+        {
+            "title": "Special Attention",
+            "filename": "File:vo_raven_specialattention_001.ogg",
+            "text": "看来你对我很上心啊~是担心你在我笔下的形象吗？放心吧。很完美"
+        },
+        {
+            "title": "Dispatch",
+            "filename": "File:vo_raven_dispatch_001.ogg",
+            "text": "我以前很喜欢跑户外采访的，直到我的膝盖中了一枪……"
+        },
+        {
+            "title": "Dispatch Complete",
+            "filename": "File:vo_raven_dispatch2_001.ogg",
+            "text": "累死我了……但收获不错，这个世界果然无时无刻不在发生有趣的事。"
+        },
+        {
+            "title": "Level Up",
+            "filename": "File:vo_raven_levelup_002.ogg",
+            "text": "渡鸦很开心，我是说它。"
+        },
+        {
+            "title": "Pat Head",
+            "filename": "File:vo_raven_head_001.ogg",
+            "text": "这可不是疤痕…这是我的勋章，成为疯子的勋章。"
+        },
+        {
+            "title": "Deploy",
+            "filename": "File:bt_raven_jointeam_001.ogg",
+            "text": "Who put a glass and roses on my grave?"
+        }
+    ],
+    "arnheim_athenaeum": [
+        {
+            "title": "Obtain Attire",
+            "filename": "File:vo_raven_aenhaimuzhiguan_cacha_001.ogg",
+            "text": "哎呀，你就是那个让我在这里等候了千年才见到的，那位倾慕我的观察者？要不要我给你签个名？"
+        },
+        {
+            "title": "Level Up",
+            "filename": "File:vo_raven_aenhaimuzhiguan_levelup_001.ogg",
+            "text": "说吧，你还想得到什么秘密？"
+        },
+        {
+            "title": "Greeting",
+            "filename": "File:vo_raven_aenhaimuzhiguan_greeting_001.ogg",
+            "text": "想要知道这个世界的未来，还是想知道过去历史讲述的真谛？来，让我带你去寻找吧……不对，上一任主人把那本书放哪儿了……？嗯？上一任？啊？我有说上一任这个词吗？你听错了吧…~哈哈~"
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "filename": "File:vo_raven_aenhaimuzhiguan_talk_001.ogg",
+            "text": "遇事不决图书馆，遇到麻烦，来图书馆就对了。"
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "filename": "File:vo_raven_aenhaimuzhiguan_talk_002.ogg",
+            "text": "如果你在这里看见了一只正在阅读的乌鸦，不要惊讶，那可能是前主人回来巡阅自己的宝藏。"
+        },
+        {
+            "title": "Idle",
+            "filename": "File:vo_raven_aenhaimuzhiguan_idle_001.ogg",
+            "text": "按照规则，是这个图书馆能解答的问题我都可以回答你，但是每回合只能询问3次，所以，你要好好思考你的问题哦~"
+        },
+        {
+            "title": "Annoyed",
+            "filename": "File:vo_raven_aenhaimuzhiguan_clicking_001.ogg",
+            "text": "哎哎哎，这可是由世界规则制定的衣服~你……啧，这衣服是爱缇租的，可贵了，小心点别弄坏了！"
+        },
+        {
+            "title": "Special Attention",
+            "filename": "File:vo_raven_aenhaimuzhiguan_specialattention_001.ogg",
+            "text": "你对我的身份很好奇么？我是不是看起来，很像一位你认识的“故人”？"
+        }
+    ]
+}

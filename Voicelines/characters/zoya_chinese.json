@@ -1,0 +1,223 @@
+{
+    "default": [
+        {
+            "title": "Obtain the Sinner",
+            "filename": "File:vo_zoya_cacha_001.ogg",
+            "text": "出动那么多警力，居然只为抓个辛迪加黑帮。你的部下实在……弱得不像话啊。"
+        },
+        {
+            "title": "Raise to Phase 1",
+            "filename": "File:vo_zoya_promotion_001.ogg",
+            "text": "徒有力量是不够的，你得让它发挥该有的作用。"
+        },
+        {
+            "title": "Raise to Phase 3",
+            "filename": "File:vo_zoya_promotion2_001.ogg",
+            "text": "他们说，这是人类的极限/笑话，人只会不断突破极限。"
+        },
+        {
+            "title": "Level Start",
+            "filename": "File:vo_zoya_battlebegin_001.ogg",
+            "text": "我等很久了。"
+        },
+        {
+            "title": "Win Battles",
+            "filename": "File:vo_zoya_battlewin_001.ogg",
+            "text": "你们找错了对手。"
+        },
+        {
+            "title": "Lose Battles",
+            "filename": "File:vo_zoya_battlelose_001.ogg",
+            "text": "这不是结束，别认输！"
+        },
+        {
+            "title": "Ultimate Skill",
+            "filename": "File:bt_zoya_uniqueskill_001.ogg",
+            "text": "我，即是军团！"
+        },
+        {
+            "title": "Die in Battles",
+            "filename": "File:bt_zoya_dead_001.ogg",
+            "text": "我不能……倒在这里……"
+        },
+        {
+            "title": "Greeting",
+            "filename": "File:vo_zoya_greeting_001.ogg",
+            "text": "嘿，你看起来挺悠哉，跟我回趟辛迪加如何？有不少人想见你呢。"
+        },
+        {
+            "title": "Conversation 1",
+            "filename": "File:vo_zoya_talk1_001.ogg",
+            "text": "你的上级每天换着人来盯我，怎么，他们就这么害怕吗？怕一个被囚的禁闭者，还是怕辛迪加不成气候的黑帮？"
+        },
+        {
+            "title": "Conversation 2",
+            "filename": "File:vo_zoya_talk1_002.ogg",
+            "text": "我的部下可不全是肌肉狂，脑筋好的人也一样受欢迎。嗯……我看你就不错，别当公务员了加入军团吧！"
+        },
+        {
+            "title": "Conversation 3",
+            "filename": "File:vo_zoya_talk1_003.ogg",
+            "text": "枪？我们可不靠那种东西战斗，战士只信赖自己的拳头和意志。何况，辛迪加的“枪”早就不干净了。"
+        },
+        {
+            "title": "Special Conversation 1",
+            "filename": "File:vo_zoya_talk2_001.ogg",
+            "text": "你很像我认识的一个人，正直，天真有勇气也有冲劲。呵呵，那个人已经抱着幻想白白丧命了。"
+        },
+        {
+            "title": "Special Conversation 2",
+            "filename": "File:vo_zoya_talk2_002.ogg",
+            "text": "那些被废弃的工厂，记录了这座城市的黄金时代。这才是辛迪加人必须夺回的荣耀。"
+        },
+        {
+            "title": "Special Conversation 3",
+            "filename": "File:vo_zoya_talk2_003.ogg",
+            "text": "“不管失去谁，军团长都必须保持冷静。”可如果出事的人是你，我也不知道自己会做出什么……"
+        },
+        {
+            "title": "Full Compliance",
+            "filename": "File:vo_zoya_obeyfull_001.ogg",
+            "text": "刚见面的时候，你是我单手就能提起的菜鸟，没想到……现在还是一样。但你也是我见过的最强大的人。以后，很多事就都交给你了，局长。"
+        },
+        {
+            "title": "Idle",
+            "filename": "File:vo_zoya_idle_001.ogg",
+            "text": "看起来，这里倒是有几个人……能陪我练练手。"
+        },
+        {
+            "title": "Annoyed",
+            "filename": "File:vo_zoya_clicking_001.ogg",
+            "text": "你……在挑衅我？"
+        },
+        {
+            "title": "Special Attention",
+            "filename": "File:vo_zoya_specialattention_001.ogg",
+            "text": "你就这么看着吗？那不如过来比划两下，我站着不动，再让你两只手。"
+        },
+        {
+            "title": "Dispatch",
+            "filename": "File:vo_zoya_dispatch_001.ogg",
+            "text": "这点小活儿，军团的伙计们很快就能解决。"
+        },
+        {
+            "title": "Dispatch Complete",
+            "filename": "File:vo_zoya_dispatch2_001.ogg",
+            "text": "看，很轻松吧？"
+        },
+        {
+            "title": "Level Up",
+            "filename": "File:vo_zoya_levelup_002.ogg",
+            "text": "嗯……还不够。"
+        },
+        {
+            "title": "Deploy",
+            "filename": "File:bt_zoya_jointeam_001.ogg",
+            "text": "Time for a little exercise."
+        },
+        {
+            "title": "Pat Head",
+            "filename": "File:vo_zoya_head_001.ogg",
+            "text": "我感觉你最近……胆子大了不少。"
+        }
+    ],
+    "wolves_strike_soon": [
+        {
+            "title": "Obtain Attire",
+            "filename": "File:vo_zoya_langxijiangzhi_cacha_001.ogg",
+            "text": "告诉那些黑帮，军团来了——对你们所有人宣战！"
+        },
+        {
+            "title": "Greeting",
+            "filename": "File:vo_zoya_langxijiangzhi_greeting_001.ogg",
+            "text": "呵呵，你来晚了，跟紧点。不是想亲眼见证辛迪加的变革吗？那就时刻待在我身边。"
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "filename": "File:vo_zoya_langxijiangzhi_talk_001.ogg",
+            "text": "谁来做我们第一个对手？泰德？柳生？不如让他们一起上吧，反正结果都一样。"
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "filename": "File:vo_zoya_langxijiangzhi_talk_002.ogg",
+            "text": "谋划的事就交给厄尔希，我只要在前方开辟道路——这才是他最需要的。"
+        },
+        {
+            "title": "Ordinary Contact 3",
+            "filename": "File:vo_zoya_langxijiangzhi_hand_001.ogg",
+            "text": "铁锈、硝烟、没有尽头的暴力。辛迪加从未变过，我已经厌倦了……去把这一切破坏殆尽，该变天了。"
+        },
+        {
+            "title": "Ordinary Contact 4",
+            "filename": "File:vo_zoya_langxijiangzhi_leg_001.ogg",
+            "text": "军团不需要据点。整个辛迪加，都是狼群的领地。"
+        },
+        {
+            "title": "Idle",
+            "filename": "File:vo_zoya_langxijiangzhi_idle_001.ogg",
+            "text": "敌人绝不止眼前的这些，但只要那些阴沟里的家伙敢露面……"
+        },
+        {
+            "title": "Special Attention",
+            "filename": "File:vo_zoya_langxijiangzhi_specialattention_001.ogg",
+            "text": "哦？你终于想好，要加入军团了？"
+        },
+        {
+            "title": "Level Up",
+            "filename": "File:vo_zoya_langxijiangzhi_levelup_001.ogg",
+            "text": "哼，接下来的战斗，我很期待。"
+        }
+    ],
+    "supreme_negotiation": [
+        {
+            "title": "Obtain Attire",
+            "filename": "File:vo_zoya_zhigaojiaoshe_cacha_001.ogg",
+            "text": "如你所见，这次的会面很成功。"
+        },
+        {
+            "title": "Greeting",
+            "filename": "File:vo_zoya_zhigaojiaoshe_greeting_001.ogg",
+            "text": "你来了？很可惜，谈判提前结束了。不过这儿也还算气派，挺适合我们俩聊聊天的。"
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "filename": "File:vo_zoya_zhigaojiaoshe_talk_001.ogg",
+            "text": "呵阿，想要训服猛兽，就得比它更凶狠，更有野心。"
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "filename": "File:vo_zoya_zhigaojiaoshe_talk_002.ogg",
+            "text": "辛迪加的未来么？呵，我不知道，但……我会用自己的方式去寻找答案。"
+        },
+        {
+            "title": "Ordinary Contact 3",
+            "filename": "File:vo_zoya_zhigaojiaoshe_hand_001.ogg",
+            "text": "看你的眼神，是在羡慕它们吗？"
+        },
+        {
+            "title": "Ordinary Contact 4",
+            "filename": "File:vo_zoya_zhigaojiaoshe_leg_001.ogg",
+            "text": "铁锈和硝烟没有消失，而是藏在了人的心里，这些遗留的痕迹在每个角落悄然滋生。"
+        },
+        {
+            "title": "Idle",
+            "filename": "File:vo_zoya_zhigaojiaoshe_idle_001.ogg",
+            "text": "警戒工作做得不错，真乖。"
+        },
+        {
+            "title": "Special Attention",
+            "filename": "File:vo_zoya_zhigaojiaoshe_specialattention_001.ogg",
+            "text": "这身衣服虽然适合坐在谈判桌前，但施展起来还是有点阻碍，罢了……好歹是大家的一番心意。"
+        },
+        {
+            "title": "Level Up",
+            "filename": "File:vo_zoya_zhigaojiaoshe_levelup_001.ogg",
+            "text": "当你够强时，才有人愿意听你说话。"
+        },
+        {
+            "title": "Pat Head",
+            "filename": "File:vo_zoya_zhigaojiaoshe_head_001.ogg",
+            "text": "你的勇气还是那么令人赞叹。"
+        }
+    ]
+}
