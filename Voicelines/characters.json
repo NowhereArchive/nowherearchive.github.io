@@ -745,6 +745,14 @@
       "category": "Sinners"
     },
     {
+      "name": "000",
+      "displayName": "000",
+      "rank": "S",
+      "libram": "PESTILENCE",
+      "tendency": "Umbra",
+      "category": "Sinners"
+    },
+    {
       "name": "zoya",
       "displayName": "Zoya",
       "rank": "S",
