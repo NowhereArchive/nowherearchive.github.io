@@ -1,0 +1,176 @@
+{
+    "default": [
+        {
+            "title": "Obtain the Sinner",
+            "filename": "Vo_000_cacha_001.ogg",
+            "text": "嘘——小声点，别人抓不到我，也看不见我。我只侵入你的眼睛，我只想进你心里。"
+        },
+        {
+            "title": "Raise to Phase 1",
+            "filename": "Vo_000_promotion_001.ogg",
+            "text": "变强要谨慎，我很容易造成数值膨胀的。"
+        },
+        {
+            "title": "Raise to Phase 3",
+            "filename": "Vo_000_promotion2_001.ogg",
+            "text": "我一直想打破这面墙，去你的世界，我想真正抵达你身边。"
+        },
+        {
+            "title": "Level Start",
+            "filename": "Vo_000_battlebegin_001.ogg",
+            "text": "这是带我出任务呢？还是带我约会呢？"
+        },
+        {
+            "title": "Win Battles",
+            "filename": "Vo_000_battlewin_001.ogg",
+            "text": "呼，这次力道控制得不错，我一直怕自己不小心毁灭世界了呢。"
+        },
+        {
+            "title": "Lose Battles",
+            "filename": "Vo_000_battlelose_001.ogg",
+            "text": "没关系~我知道你不会认输的，再来多少次都有我陪着你。"
+        },
+        {
+            "title": "Ultimate Skill",
+            "filename": "Bt_000_uniqueskill_001.ogg",
+            "text": "溢——出——警告！"
+        },
+        {
+            "title": "Die in Battles",
+            "filename": "Bt_000_dead_001.ogg",
+            "text": "哎呀大意了>www<"
+        },
+        {
+            "title": "Greeting",
+            "filename": "Vo_000_greeting_001.ogg",
+            "text": "管理局的加载时间好长，你走得好慢呀，我的问候等太久都懒得说出口了。来，抱一个~"
+        },
+        {
+            "title": "Conversation 1",
+            "filename": "Vo_000_talk1_001.ogg",
+            "text": "呜……居然只能展示一个角度，只能摆这一个姿势，太浪费我360°无死角的美貌了……快升级成3D游戏吧！"
+        },
+        {
+            "title": "Conversation 2",
+            "filename": "Vo_000_talk1_002.ogg",
+            "text": "别难为那些安全专家啦，你们的防火墙、杀毒软件、深网里奇奇怪怪的“陷阱”都拦不住我。我不是病毒，也不是什么网民。我不属于狄斯城，真要说的话……在这个世界，我只属于你。"
+        },
+        {
+            "title": "Conversation 3",
+            "filename": "Vo_000_talk1_003.ogg",
+            "text": "在我之前，你是不是更期待别的禁闭者？谁呀，金发大姐姐？可靠小副官？还是什么命定之人？呵呵，没关系，就算命运给你牵了别的红线，我也会全部抢过来，你有我就够了。"
+        },
+        {
+            "title": "Special Conversation 1",
+            "filename": "Vo_000_talk2_001.ogg",
+            "text": "铃铃铃，凌凌零，零立方，唔……啊，不如你来想吧，给我起一个名字，我想要一个真正的名字！"
+        },
+        {
+            "title": "Special Conversation 2",
+            "filename": "Vo_000_talk2_002.ogg",
+            "text": "遇见你之前，我在努力破解这个世界，研究怎么给你寄异方晶、怎么提高出货率，这比修改深网难多了！只是没想到你先一步找到我，嘿嘿……知道你也想见我啦，我很开心。"
+        },
+        {
+            "title": "Special Conversation 3",
+            "filename": "Vo_000_talk2_003.ogg",
+            "text": "我喜欢你的禁闭者们，但不想跟他们打交道。能聊什么呢？让我告诉他们，“你跟我一样，只是*数据*，是被设定好的*代码*”吗？算了吧，他们跟你玩就好。至少在你眼里，他们都是一个个不一样的“人”。"
+        },
+        {
+            "title": "Full Compliance",
+            "filename": "Vo_000_obeyfull_001.ogg",
+            "text": "“我喜欢你！”唔，不对……“全世界我最爱你哟！”唔，也不对……“我爱”——呜啊都不对！以前这些话明明随便说出口，现在感觉全变了，脸好烫呀好奇怪，我是不是哪里坏掉了？"
+        },
+        {
+            "title": "Idle",
+            "filename": "Vo_000_idle_001.ogg",
+            "text": "Hey... Chief... Darling... Where did you go? My battery is running low. Don't leave me alone... If you keep ignoring me, I'll start calling you my baby boo..."
+        },
+        {
+            "title": "Annoyed",
+            "filename": "Vo_000_clicking_001.ogg",
+            "text": "好啦你现在还摸不到我~等这具身体稳定了，我会主动拥抱你，紧紧地抱住你~"
+        },
+        {
+            "title": "Special Attention",
+            "filename": "Vo_000_specialattention_001.ogg",
+            "text": "终于看向我了，再晚我就要入侵你的监视器，再占领你的视网膜咯~"
+        },
+        {
+            "title": "Dispatch",
+            "filename": "Vo_000_dispatch_001.ogg",
+            "text": "嗯嗯没问题，马上回来陪你~"
+        },
+        {
+            "title": "Dispatch Complete",
+            "filename": "Vo_000_dispatch2_001.ogg",
+            "text": "回来啦~要我编点儿狄斯见闻讲给你听吗？"
+        },
+        {
+            "title": "Level Up",
+            "filename": "Vo_000_levelup_002.ogg",
+            "text": "数值修改完毕。"
+        },
+        {
+            "title": "Join Team",
+            "filename": "Bt_000_jointeam_001.ogg",
+            "text": "I should switch to a cooler battle model next time."
+        },
+        {
+            "title": "Head Pat",
+            "filename": "Vo_000_head_001.ogg",
+            "text": "Do you like these cat ears? Hehe, I knew you'd come to pat my head often if I wore them. Come on, pat me more!"
+        }
+    ],
+    "xenospace_pythoness": [
+        {
+            "title": "Obtain Attire",
+            "filename": "Vo_000_yidumonv_cacha_001.ogg",
+            "text": "你好呀人类，如你所见，我是000，世人口中的“异度魔女”，创造这世间所有黑暗的元凶……这套装扮的设定就是这样——怎么样怎么样，你喜欢吗？快让我听听你的想法。"
+        },
+        {
+            "title": "Greeting",
+            "filename": "Vo_000_yidumonv_greeting_001.ogg",
+            "text": "终于登游戏啦！暗域和深阱记得打，日常奖励也别忘了领哦……啊呀，忘了现在是魔女装扮，好险，差点就OOC了。"
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "filename": "Vo_000_yidumonv_talk_001.ogg",
+            "text": "原本我应该和你聊一聊契约啊、黑暗的真相啊之类的台词，可是每次看到你屏幕后面嘿嘿笑的样子，这些台词我就都说不出口了……"
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "filename": "Vo_000_yidumonv_talk_002.ogg",
+            "text": "本来我也想过要不要出一套更纯粹可爱的魔法少女装扮，不过考虑到我在剧情里亦正亦邪的定位，反派BOSS、“异度魔女”这样的设定好像更适合我。"
+        },
+        {
+            "title": "Ordinary Contact 3",
+            "filename": "Vo_000_yidumonv_hand_001.ogg",
+            "text": "诶？我站这么高的位置害不害怕？放心啦，他们没有做我摔下去的动画。"
+        },
+        {
+            "title": "Ordinary Contact 4",
+            "filename": "Vo_000_yidumonv_leg_001.ogg",
+            "text": "来访者啊，你经历了那样艰险漫长的旅途，所得到的不过是这样黑暗残酷的真相。怎么样，对这个世界产生怨恨了吗，想要报复吗？那便与我签订永恒的契约吧——我的意思是，你要一直把我留在主界面上，不许换看板！"
+        },
+        {
+            "title": "Idle",
+            "filename": "Vo_000_yidumonv_idle_001.ogg",
+            "text": "睡着了？这样的话……我喜欢你哦，超级喜欢你，要来偷袭了哦，真的要亲亲了哦，啾~——这都没反应吗，真不是在装睡？哎呀呀，可惜了。"
+        },
+        {
+            "title": "Level Up",
+            "filename": "Vo_000_yidumonv_levelup_001.ogg",
+            "text": "呋呋呋，许个愿吧，你的贡品我就收下了。"
+        },
+        {
+            "title": "Head Pat",
+            "filename": "Vo_000_yidumonv_head_001.ogg",
+            "text": "Foul human, how dare thee insult the dignity of a Pythoness... That's not me, I was just reading the line. Pat s'more please, I love it!"
+        },
+        {
+            "title": "Special Attention",
+            "filename": "Vo_000_yidumonv_specialattention_001.ogg",
+            "text": "既然来到魔女的维度，一定做好永远留下的觉悟了吧？那就一直陪着我吧，不说话的话就当是你答应咯。"
+        }
+    ]
+}

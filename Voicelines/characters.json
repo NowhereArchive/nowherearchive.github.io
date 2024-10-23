@@ -505,6 +505,14 @@
       "category": "Sinners"
     },
     {
+      "name": "moore",
+      "displayName": "Moore",
+      "rank": "S",
+      "libram": "PESTILENCE",
+      "tendency": "Endura",
+      "category": "Sinners"
+    },
+    {
       "name": "mrfox",
       "displayName": "Mr. Fox",
       "rank": "A",
@@ -606,6 +614,14 @@
       "rank": "S",
       "libram": "FRAUD",
       "tendency": "Arcane",
+      "category": "Sinners"
+    },
+    {
+      "name": "rise",
+      "displayName": "Rise",
+      "rank": "A",
+      "libram": "PESTILENCE",
+      "tendency": "Fury",
       "category": "Sinners"
     },
     {
