@@ -169,6 +169,14 @@
       "category": "Sinners"
     },
     {
+      "name": "dove",
+      "displayName": "Dove",
+      "rank": "A",
+      "libram": "FAMINE",
+      "tendency": "Endura",
+      "category": "Sinners"
+    },
+    {
       "name": "dreya",
       "displayName": "Dreya",
       "rank": "S",
@@ -385,6 +393,14 @@
       "category": "Sinners"
     },
     {
+      "name": "korryn",
+      "displayName": "Korryn",
+      "rank": "S",
+      "libram": "FAMINE",
+      "tendency": "Reticle",
+      "category": "Sinners"
+    },
+    {
       "name": "ll",
       "displayName": "L.L.",
       "rank": "S",
@@ -501,6 +517,14 @@
       "displayName": "Mess",
       "rank": "A",
       "libram": "HERESY",
+      "tendency": "Fury",
+      "category": "Sinners"
+    },
+    {
+      "name": "mira",
+      "displayName": "Mira",
+      "rank": "A",
+      "libram": "FAMINE",
       "tendency": "Fury",
       "category": "Sinners"
     },
@@ -725,6 +749,14 @@
       "displayName": "Victoria",
       "rank": "A",
       "libram": "LIMBO",
+      "tendency": "Arcane",
+      "category": "Sinners"
+    },
+    {
+      "name": "vautour_bleu",
+      "displayName": "Vautour Bleu",
+      "rank": "S",
+      "libram": "FAMINE",
       "tendency": "Arcane",
       "category": "Sinners"
     },
