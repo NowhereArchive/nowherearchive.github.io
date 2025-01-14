@@ -169,3 +169,123 @@ button:hover {
 #restart-button:hover {
   background-color: #d32f2f;
 }
+
+
+/* Base styles for smaller screens */
+@media (max-width: 768px) {
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .game-container {
+    padding: 10px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  #guess-input {
+    width: 90%;
+    padding: 8px;
+    font-size: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+
+  #submit-button {
+    width: 90%;
+    padding: 10px;
+    font-size: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  #submit-button:disabled {
+    background-color: #9e9e9e;
+    cursor: not-allowed;
+  }
+
+  #restart-button {
+    width: 90%;
+    padding: 10px;
+    font-size: 10px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+  }
+
+  #suggestions {
+    position: absolute;
+    top: 100%;
+    left: 5%;
+    right: 5%;
+    max-height: 150px; /* Limit height for scrollability */
+    overflow-y: auto;
+    z-index: 1000;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .suggestion-box {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+  }
+
+  .suggestion-box:hover {
+    background-color: #f1f1f1;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 9px;
+  }
+
+  th, td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+    word-break: break-word; /* For long content */
+  }
+
+  th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+
+  #game-message {
+    text-align: center;
+    font-size: 11px;
+    margin-top: 20px;
+    color: #ff5722;
+    font-weight: bold;
+  }
+}
+
+

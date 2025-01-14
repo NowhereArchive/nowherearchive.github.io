@@ -217,5 +217,20 @@ document.addEventListener("click", function (event) {
     if (!inputField.contains(event.target) && !suggestionsDiv.contains(event.target)) {
       suggestionsDiv.style.display = "none"; // Hide the suggestions dropdown
     }
-  });
-  
+});
+
+// Script to handle navbar toggling on small screens
+function handleSmallScreens() {
+  document.querySelector('.navbar-toggler')
+      .addEventListener('click', () => {
+          let navbarMenu = document.querySelector('.navbar-menu');
+
+          if (!navbarMenu.classList.contains('active')) {
+              navbarMenu.classList.add('active');
+          } else {
+              navbarMenu.classList.remove('active');
+          }
+      });
+}
+
+handleSmallScreens();
