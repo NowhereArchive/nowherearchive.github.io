@@ -1,0 +1,171 @@
+/* General body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1E1E1E;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+/* Game container */
+.game-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 700px;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative; /* Ensures the suggestions are positioned relative to the container */
+}
+
+/* Title */
+h1 {
+  color: #4caf50;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+
+/* Wrapper for input and suggestions */
+.input-container {
+  position: relative; /* Ensure suggestions are positioned relative to the input */
+  width: 100%;
+}
+
+/* Input styling */
+#guess-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  transition: border-color 0.3s;
+}
+
+
+
+#guess-input:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+/* Suggestions dropdown */
+#suggestions {
+  margin-top: 10px;
+  max-height: 200px; /* Maximum height for the suggestions box */
+  overflow-y: auto;  /* Enable vertical scrolling if there are too many suggestions */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: none;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.suggestion-box {
+  padding: 8px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+.suggestion-box:hover {
+  background-color: #f0f0f0;
+}
+
+
+
+/* History Table */
+#history-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+#history-table td, #history-table th {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+#history-table th {
+  background-color: #f0f0f0;
+  color: #4caf50;
+  font-weight: bold;
+}
+
+#history-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#history-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Feedback colors */
+#history-table td {
+  text-align: center;
+  color: #333;
+}
+
+#history-table .correct {
+  background-color: #4caf50;
+  color: white;
+}
+
+#history-table .incorrect {
+  background-color: #e53935;
+  color: white;
+}
+
+/* Game Message */
+#game-message {
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #4caf50;
+  display: none;
+}
+
+#game-message.error {
+  color: #e53935;
+}
+
+/* Buttons */
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Restart button */
+#restart-button {
+  display: none;
+  background-color: #e53935;
+}
+
+#restart-button:hover {
+  background-color: #d32f2f;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="NavBar.css">
+  <title>Guess the Character</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <button title="logo" class="navbar-toggler" data-toggle="open-navbar1">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a href="/">
+          <h4>Path To Nowhere Archive</h4>
+        </a>
+      </div>
+
+      <div class="navbar-menu" id="open-navbar1">
+        <ul class="navbar-nav">
+          <li class="active"><a href="/Game">Game</a></li>
+          <li><a href="/CGs">CGs</a></li>
+          <li><a href="/Voicelines">Voicelines</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div class="game-container">
+        <h1>Character Guessing Game</h1>
+        <div class="input-container">
+          <input type="text" id="guess-input" placeholder="Type a character name...">
+          <div id="suggestions"></div>
+        </div>
+        <button id="submit-button">Submit Guess</button>
+        <div id="game-message"></div>
+        <table id="history-table">
+          <thead>
+            <tr>
+              <th>Guess</th>
+              <th>Alignment</th>
+              <th>Tendency</th>
+              <th>Damage Type</th>
+              <th>Birthplace</th>
+              <th>Rank</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <button id="restart-button">Restart Game</button>
+      </div>
+      
+  
+  <script src="script.js"></script>
+</body>
+</html>
