@@ -43,15 +43,12 @@ h1 {
   transition: border-color 0.3s;
 }
 
-
-
 #guess-input:focus {
   border-color: #4caf50;
   outline: none;
 }
 
 #suggestions {
-  margin-top: 10px;
   max-height: 200px;
   overflow-y: auto;
   border: 1px solid #ddd;
@@ -277,3 +274,47 @@ button:hover {
 }
 
 
+#loading-spinner {
+  display: none;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #4caf50;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#give-up-button {
+  background-color: #ff5722;
+  margin-left: 10px;
+}
+
+#give-up-button:hover {
+  background-color: #e64a19;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+#game-message.success {
+  color: #4caf50;
+  animation: fadeIn 0.5s;
+}
+
+#game-message.error {
+  color: #e53935;
+  animation: fadeIn 0.5s;
+}
+
+.suggestion-box.highlighted {
+  background-color: #4caf50 !important;
+  color: white !important;
+}

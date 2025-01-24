@@ -144,7 +144,7 @@
     "traits": {
       "alignment": "LIMBO",
       "tendency": "Catalyst",
-      "damageType": true,
+      "damageType": "True",
       "birthplace/organization": "Eastside",
       "rank": "S"
     }
@@ -384,7 +384,7 @@
     "traits": {
       "alignment": "LOVE",
       "tendency": "Catalyst",
-      "damageType": true,
+      "damageType": "True",
       "birthplace/organization": "Eastside",
       "rank": "S"
     }
@@ -514,7 +514,7 @@
     "traits": {
       "alignment": "PESTILENCE",
       "tendency": "Catalyst",
-      "damageType": true,
+      "damageType": "True",
       "birthplace/organization": "Eastside",
       "rank": "S"
     }
