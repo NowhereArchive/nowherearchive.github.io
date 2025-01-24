@@ -318,3 +318,73 @@ button:hover {
   background-color: #4caf50 !important;
   color: white !important;
 }
+
+/* Add these updates to the existing styles */
+
+@media (max-width: 768px) {
+  body {
+    font-size: 11px; /* Slightly smaller base font size */
+  }
+
+  .game-container {
+    padding: 8px; /* Reduce padding further */
+    width: 95%; /* Use more screen width */
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 15px; /* Slightly smaller heading */
+    margin-bottom: 8px;
+  }
+
+  #guess-input {
+    font-size: 11px; /* Slightly smaller font size for input */
+    padding: 5px; /* Smaller padding */
+  }
+
+  #suggestions {
+    font-size: 11px; /* Slightly smaller font size for suggestions */
+    max-height: 100px; /* Smaller max height for better fit */
+  }
+
+  .suggestion-box {
+    padding: 5px; /* Smaller padding for suggestions */
+  }
+
+  #history-table {
+    font-size: 9px; /* Slightly smaller font size for table */
+  }
+
+  th, td {
+    padding: 3px; /* Smaller padding for table cells */
+  }
+
+  #game-message {
+    font-size: 11px; /* Slightly smaller font size for messages */
+    margin-top: 8px;
+  }
+
+  button {
+    font-size: 11px; /* Slightly smaller font size for buttons */
+    padding: 5px 10px; /* Smaller padding */
+    margin-top: 6px;
+  }
+
+  #restart-button, #give-up-button {
+    width: 100%; /* Full width buttons for easier tapping */
+    margin-left: 0; /* Remove left margin */
+    margin-top: 6px; /* Add top margin for spacing */
+  }
+
+  #submit-button {
+    width: 100%; /* Full width for easier tapping */
+  }
+
+  .navbar-header h4 {
+    font-size: 13px; /* Slightly smaller font size for navbar title */
+  }
+
+  .navbar-menu .navbar-nav > li > a {
+    font-size: 11px; /* Slightly smaller font size for navbar links */
+  }
+}
