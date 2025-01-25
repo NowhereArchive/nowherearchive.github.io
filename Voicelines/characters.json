@@ -625,6 +625,14 @@
       "category": "Sinners"
     },
     {
+      "name": "pylgia",
+      "displayName": "Pylgia",
+      "rank": "S",
+      "libram": "IMMORTAL",
+      "tendency": "Fury",
+      "category": "Sinners"
+    },
+    {
       "name": "rahu",
       "displayName": "Rahu",
       "rank": "S",
@@ -798,6 +806,14 @@
       "rank": "S",
       "libram": "PESTILENCE",
       "tendency": "Umbra",
+      "category": "Sinners"
+    },
+    {
+      "name": "zephyr",
+      "displayName": "Zephyr",
+      "rank": "A",
+      "libram": "Love",
+      "tendency": "Catalyst",
       "category": "Sinners"
     },
     {
