@@ -790,6 +790,16 @@
     }
   },
   {
+    "name": "Pylgia",
+    "traits": {
+      "alignment": "IMMORTAL",
+      "tendency": "Fury",
+      "damageType": "Physical",
+      "birthplace/organization": "▉▉",
+      "rank": "S"
+    }
+  },
+  {
     "name": "Rahu",
     "traits": {
       "alignment": "ANGER",
@@ -997,6 +1007,16 @@
       "damageType": "Magic",
       "birthplace/organization": "Eastia",
       "rank": "S"
+    }
+  },
+  {
+    "name": "Zephyr",
+    "traits": {
+      "alignment": "LOVE",
+      "tendency": "Catalyst",
+      "damageType": "Magic",
+      "birthplace/organization": "Eastside",
+      "rank": "A"
     }
   },
   {
