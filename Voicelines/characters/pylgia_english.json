@@ -114,6 +114,11 @@
             "title": "Pat Head",
             "text": "It feels soft like clusters of algae rushing against my hair. It's strange, but I don't mind it.",
             "filename": "File:vo_pylgia_head_001.ogg"
+        },
+        {
+            "title": "Deploy",
+            "filename": "File:bt_pylgia_jointeam_001.ogg",
+            "text": "Gaze into the abyss..."
         }
     ]
 }
