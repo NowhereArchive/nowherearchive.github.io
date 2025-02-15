@@ -120,5 +120,48 @@
             "filename": "File:bt_coquelic_jointeam_001.ogg",
             "text": "Flowers will bloom wherever I go."
         }
+    ],
+    "blossom": [
+        {
+            "title": "Obtain Attire",
+            "filename": "File:vo_coquelic_Blossom_cacha_001.ogg",
+            "text": "The moment I opened my eyes, I saw you running toward me. I know that it's your constant watch that has made this grand blossom special."
+        },
+        {
+            "title": "Level Up",
+            "filename": "File:vo_coquelic_Blossom_levelup_001.ogg",
+            "text": "Yes, bloom and thrive!"
+        },
+        {
+            "title": "Greeting",
+            "filename": "File:vo_coquelic_Blossom_greeting_001.ogg",
+            "text": "I haven't seen you for a while, but why are you suddenly so clingy like my flowers? Well, I'm perfectly fine! See? The breath of life you gave me will last long."
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "filename": "File:vo_coquelic_Blossom_talk_001.ogg",
+            "text": "The place that used to be a prison for me has now become a garden in full bloom. Flowers aren't a symbol of my death, but of my rebirth."
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "filename": "File:vo_coquelic_Blossom_talk_002.ogg",
+            "text": "Don't be all gloomy in my garden. You want to upset my flowers too? Rest assured. I won't leave without saying goodbye again."
+        },
+        {
+            "title": "Idle",
+            "filename": "File:vo_coquelic_Blossom_idle_001.ogg",
+            "text": "I always thought I could take on the world on my own, but after everything I've been through, I feel that... it's a comfort to have you all by my side."
+        },
+        {
+            "title": "Annoyed",
+            "filename": "File:vo_coquelic_Blossom_clicking_001.ogg",
+            "text": "Oh? You'd like to have a go? Be my guest. But... I'm afraid I'll have to take your lap as my new seat."
+        },
+        {
+            "title": "Special Attention",
+            "filename": "File:vo_coquelic_Blossom_specialattention_001.ogg",
+            "text": "The new garden has many rare flowering plants that can't be found even in DisCity, like purple water lilies, dancing-lady orchids... Hmm? You only want to see poppies? Well, in that case, you can just look at me."
+        }
     ]
+
 }
