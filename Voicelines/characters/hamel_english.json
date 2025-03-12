@@ -224,5 +224,122 @@
             "filename": "File:vo_hamel_aojiliya_levelup_001.ogg",
             "text": "Let's spread our wings to our heart's content."
         }
+    ],
+    "azure_waltz_in_solace": [
+      {
+        "title": "Obtain Attire",
+        "filename": "File:vo_hamel_azure_waltz_in_solace_cacha_001.ogg",
+        "text": "Have you crossed rivers and seas? Traverse mountains and plains all to find me? That explains perfectly why my heart ripples like the waves upon seeing you again."
+      },  
+      {
+        "title": "Level Start",
+        "filename": "File:vo_hamel_azure_waltz_in_solace_battlebegin_001.ogg",
+        "text": "March forward warrior."
+      },
+      {
+        "title": "Win Battles",
+        "filename": "File:vo_hamel_azure_waltz_in_solace_battlewin_001.ogg",
+        "text": "Dance with me in triumph and celebrate this victory."
+      },
+      {
+        "title": "Lose Battles",
+        "filename": "File:vo_hamel_azure_waltz_in_solace_battlelose_001.ogg",
+        "text": "The Earth is parched and fractured. Let us seek refuge in the embrace of the forest for now."
+      },
+      {
+        "title": "Ultimate Skill",
+        "filename": "File:bt_hamel_azure_waltz_in_solace_uniqueskill_001.ogg",
+        "text": "Flow, shall the springs. Here thy confluence."
+      },
+      {
+        "title": "Die in Battles",
+        "filename": "File:bt_hamel_azure_waltz_in_solace_dead_001.ogg",
+        "text": "It has all vanished into vapors."
+      },
+      {
+        "title": "Greeting",
+        "filename": "File:vo_hamel_azure_waltz_in_solace_greeting_001.ogg",
+        "text": "When we first met in your dream, your eyes were clear and bright. You smiled and held out your arms to me. That unfafilled embrace shall we finish it now?"
+      },
+      {
+        "title": "Ordinary Contact 1",
+        "filename": "File:vo_hamel_azure_waltz_in_solace_talk1_001.ogg",
+        "text": "If you stay with me, I would dance for you at every moonrise and moonfall."
+      },
+      {
+        "title": "Ordinary Contact 2",
+        "filename": "File:vo_hamel_azure_waltz_in_solace_talk1_002.ogg",
+        "text": "When the forest falls into tranquility at night, the lake becomes my stage. Elves flap their wings, and the moon reflects into the most beautiful spotlight. Look, are you as intoxicated as I am?"
+      },
+      {
+        "title": "Ordinary Contact 3",
+        "filename": "File:vo_hamel_azure_waltz_in_solace_hand_001.ogg",
+        "text": "I've heard that at earthly balls, partners will hold each other's hands all the way through the dance. Feeling the warmth of your palm, I finally see why they wouldn't want to let go."
+      },
+      {
+        "title": "Ordinary Contact 4",
+        "filename": "File:vo_hamel_azure_waltz_in_solace_leg_001.ogg",
+        "text": "Dreams and reality, goddesses and mortals, there is an impossible gap between them. But I think, with a heart of love, nothing is insurmountable."
+      },
+      {
+        "title": "Interaction 1",
+        "filename": "File:vo_hamel_azure_waltz_in_solace_talk3_001.ogg",
+        "text": "No one has ever set foot in this clear spring. Only you got an invitation from the elves. They really adore you. Yes. I'm really glad you came here. Came to me."
+      },
+      {
+        "title": "Interaction 2",
+        "filename": "File:vo_hamel_azure_waltz_in_solace_talk3_002.ogg",
+        "text": "Hmm. I look a bit weird? Hmm. Sorry. I guess I'm just too happy with you around."
+      },
+      {
+        "title": "Interaction 3",
+        "filename": "File:vo_hamel_azure_waltz_in_solace_talk3_003.ogg",
+        "text": "Is it not cozy enough for you? Relax. And drift into sweet dreams."
+      },
+      {
+        "title": "Interaction 4",
+        "filename": "File:vo_hamel_azure_waltz_in_solace_talk3_004.ogg",
+        "text": "You're smiling. How wonderful. I hope you find peace of mind here."
+      },
+      {
+        "title": "Interaction 5",
+        "filename": "File:vo_hamel_azure_waltz_in_solace_talk3_005.ogg",
+        "text": "The elves are glad you came. They keep babbling about a story of the destined one. Would you like to know?"
+      },
+      {
+        "title": "Exit Interaction",
+        "filename": "File:vo_hamel_azure_waltz_in_solace_talk3_006.ogg",
+        "text": "Are you well rested? Then, I'll see you next time."
+      },
+      {
+        "title": "Idle",
+        "filename": "File:vo_hamel_azure_waltz_in_solace_idle_001.ogg",
+        "text": "There there. I will follow the steps of the wind and stay by your side. Watching over you."
+      },
+      {
+        "title": "Annoyed",
+        "filename": "File:vo_hamel_azure_waltz_in_solace_clicking_001.ogg",
+        "text": "You journeyed to me through great trials. How could I ever turn away from you?"
+      },
+      {
+        "title": "Special Attention",
+        "filename": "File:vo_hamel_azure_waltz_in_solace_specialattention_001.ogg",
+        "text": "Many have admired my lake and my dance, and I gladly perform for them. Yet, only your gaze can stir the waters and make my dance truly come alive."
+      },
+      {
+        "title": "Level Up",
+        "filename": "File:vo_hamel_azure_waltz_in_solace_levelup_002.ogg",
+        "text": "Your presence will make the power of the clear spring even stronger."
+      },
+      {
+        "title": "Pat Head",
+        "filename": "File:vo_hamel_azure_waltz_in_solace_head_001.ogg",
+        "text": "Hairband made of moonlight or pin formed by water drops. Which one do you prefer me to wear?"
+      },      
+      {
+        "title": "Deploy",
+        "filename": "File:bt_hamel_azure_waltz_in_solace_jointeam_001.ogg",
+        "text": "A trickle of water will shield you from harm on you courageous journey."
+      }
     ]
 }

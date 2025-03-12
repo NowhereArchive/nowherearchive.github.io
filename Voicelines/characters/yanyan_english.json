@@ -115,5 +115,47 @@
             "filename": "File:bt_yanyan_jointeam_001.ogg",
             "text": "Oh! Are we going to beat up the bad guys?! Surely I'll give those baddies a taste of fire!"
         }
+    ],
+    "wafting_whimsy": [
+        {
+            "title": "Level Up",
+            "text": "You've got to have at least one winning move to sail through the world of martial arts.",
+            "filename": "File:vo_yanyan_wafting_whimsy_levelup_001.ogg"
+        },
+        {
+            "title": "Obtain Attire",
+            "text": "Yanyan's Guide to Traveling Down the Mountain. First, watch your step. Second, eat on time. Third, keep an eye on the donkey. Fourth, don't talk to strangers. Huh? Hey there! Are you a local? All alone? Great! How about we travel together?",
+            "filename": "File:vo_yanyan_wafting_whimsy_cacha_001.ogg"
+        },
+        {
+            "title": "Greeting",
+            "text": "Hmm. Got my novels, comic books, martial art manuals, maps, dried fruits snacks, and grandma's (?). Perfect! We're all set to go. Let's hit the road!",
+            "filename": "File:vo_yanyan_wafting_whimsy_greeting_001.ogg"
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "text": "There are so many places I want to explore. The marketplace I read in the book, the pain and Pleasure Boat, the (?), the acrobat you mentioned, a little tea house, and that, uh, what was it called again? M-M-B-C-C, or was it M-C-B-B?",
+            "filename": "File:vo_yanyan_wafting_whimsy_talk_001.ogg"
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "text": "No worries. They're just a bunch of bandits. I'll take care of them in no time and return what they've taken to the villagers. Huh? A hero? Me? Oh, not at all! Grandma always says, a true hero acts for the country and the people. But I don't really get it yet. She told me I'd understand once I see more of the world down the mountain.",
+            "filename": "File:vo_yanyan_wafting_whimsy_talk_002.ogg"
+        },
+        {
+            "title": "Idle",
+            "text": "Wow, what a view! The lush mountains and clear waters are just amazing! Okay, it's decided. I'll rest here for a bit and let my little donkey have a drink!",
+            "filename": "File:vo_yanyan_wafting_whimsy_idle_001.ogg"
+        },
+        {
+            "title": "Annoyed",
+            "text": "Oh, it's you! Oh, I'm so sorry. I didn't mean to hurt you. It was just my instinct as a martial artist. Oh, does it hurt? Let me blow on it for you.",
+            "filename": "File:vo_yanyan_wafting_whimsy_clicking_001.ogg"
+        },
+        {
+            "title": "Special Attention",
+            "text": "You want to hear stories about my life on the mountain, and I want to explore the world down here. I guess that makes us perfect partners!",
+            "filename": "File:vo_yanyan_wafting_whimsy_specialattention_001.ogg"
+        }
     ]
 }
