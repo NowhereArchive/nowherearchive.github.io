@@ -623,6 +623,13 @@
       "libram": "GREED",
       "tendency": "Fury",
       "category": "Sinners"
+    },{
+      "name": "pine",
+      "displayName": "Pine",
+      "rank": "A",
+      "libram": "PESTILENCE",
+      "tendency": "Reticle",
+      "category": "Sinners"
     },
     {
       "name": "pricilla",
