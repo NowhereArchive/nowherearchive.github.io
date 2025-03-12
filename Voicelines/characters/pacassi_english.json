@@ -157,5 +157,48 @@
             "filename": "File:vo_pacassi_winter_night_levelup_001.ogg",
             "text": "Hmm, it's very warm."
         }
+    ],
+    "frostforged_maiden": [
+        {
+            "title": "Level Up",
+            "text": "The snow keeps piling up.",
+            "filename": "File:vo_pacassi_frostforged_maiden_levelup_001.ogg"
+        },
+        {
+            "title": "Obtain Attire",
+            "text": "Hello, laborer. I'm winter's daughter, a unique being born of ice and snow. Every winter, I give blessings to all the laborers toiling away tirelessly. Thus people call me Winter Maiden.",
+            "filename": "File:vo_pacassi_frostforged_maiden_cacha_001.ogg"
+        },
+        {
+            "title": "Greeting",
+            "text": "You came. Is this year's work coming to an end? Then, please take a long, good rest, and wait for the spring to come.",
+            "filename": "File:vo_pacassi_frostforged_maiden_greeting_001.ogg"
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "text": "I was once told by steel workers: when molten iron is poured into a quench chamber, plumes of vapor will gush out of the chimneys, just as grand as how festive fireworks shoot into the sky.",
+            "filename": "File:vo_pacassi_frostforged_maiden_talk_001.ogg"
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "text": "Mourn not for my departure, laborers, for when you see me all gone, it simply heralds the coming of spring, where lives are brought back to the world… By then, I'll be coverging into the blast furnace, seeping into the earth, just to be around in another existence.",
+            "filename": "File:vo_pacassi_frostforged_maiden_talk_002.ogg"
+        },
+        {
+            "title": "Idle",
+            "text": "So you heard about the yield target being overfulfilled too? Isn't that wonderful! Everyone can enjoy a lovely holiday this winter.",
+            "filename": "File:vo_pacassi_frostforged_maiden_idle_001.ogg"
+        },
+        {
+            "title": "Annoyed",
+            "text": "Thank you, but I really don't need this thick scarf.",
+            "filename": "File:vo_pacassi_frostforged_maiden_clicking_001.ogg"
+        },
+        {
+            "title": "Special Attention",
+            "text": "Thank you for bestowing special attention on me all along, but I'm destined to melt and thaw, just as how the laborers will have their victory over the winter.",
+            "filename": "File:vo_pacassi_frostforged_maiden_specialattention_001.ogg"
+        }
     ]
+
 }

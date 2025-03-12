@@ -162,5 +162,47 @@
             "filename": "File:vo_raven_aenhaimuzhiguan_specialattention_001.ogg",
             "text": "Are you curious about who I am? Do I look like someone you are very familiar with?"
         }
+    ],
+    "raven_in_the_box": [
+        {
+            "title": "Level Up",
+            "text": "Thanks, but no matter how much you butter me up, I’m not giving you this plush.",
+            "filename": "File:vo_raven_raven_in_the_box_levelup_001.ogg"
+        },
+        {
+            "title": "Obtain Attire",
+            "text": "I knew they were up to something with all the secrecy. Here, isn't this toy just cute? Oh, you're not jealous, are you?",
+            "filename": "File:vo_raven_raven_in_the_box_cacha_001.ogg"
+        },
+        {
+            "title": "Greeting",
+            "text": "Oh, what took you so long, the celebration is all over now. But luckily, you still get to have a good look at the best gift my students got me.",
+            "filename": "File:vo_raven_raven_in_the_box_greeting_001.ogg"
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "text": "I was expecting a Jack-in-the-Box sort of jumpscare, who knew it would turn out to be a decent gift. But, do I really look like this horse-faced, round-headed dummy in their eyes?",
+            "filename": "File:vo_raven_raven_in_the_box_talk_001.ogg"
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "text": "When after a hot, exhausting day... and thought no more about the morrow— How true these words ring. With this gift in my hand and the smiles on your faces, this fleeting moment is the very epitome of happiness—so simple, yet so invaluable.",
+            "filename": "File:vo_raven_raven_in_the_box_talk_002.ogg"
+        },
+        {
+            "title": "Idle",
+            "text": "They went all out of their way for this little gathering. Kids surely have endless energy to burn... Hmph, might as well put it to better use. Hey, you girls perching on the windowsill, why don't you come in and give the classroom a proper cleaning?",
+            "filename": "File:vo_raven_raven_in_the_box_idle_001.ogg"
+        },
+        {
+            "title": "Annoyed",
+            "text": "Hey, stop fiddling with it. It's from my precious students!",
+            "filename": "File:vo_raven_raven_in_the_box_clicking_001.ogg"
+        },
+        {
+            "title": "Special Attention",
+            "text": "Why the look? Oh, is this teacher-fit I specially chose eye candy for you? Well, in that case, admire all you want.",
+            "filename": "File:vo_raven_raven_in_the_box_specialattention_001.ogg"
+        }
     ]
 }

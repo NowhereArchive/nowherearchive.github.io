@@ -115,5 +115,47 @@
             "filename": "File:bt_golan_jointeam_001.ogg",
             "text": "Huh?! Are they even match for me?!"
         }
+    ],
+    "rooftop_reckoning": [
+        {
+            "title": "Level Up",
+            "text": "Wait wait wait... Is this the power of bond like those high-school animes?",
+            "filename": "File:vo_golan_rooftop_reckoning_levelup_001.ogg"
+        },
+        {
+            "title": "Obtain Attire",
+            "text": "Alright, all done. Now peace is restored. Chief told me to keep it low-key on this mission, but you gotta step up when you see bullies, right?",
+            "filename": "File:vo_golan_rooftop_reckoning_cacha_001.ogg"
+        },
+        {
+            "title": "Greeting",
+            "text": "Now that I've taken care of those small fry, the view from up here is actually pretty nice. Care to sit with me for a bit? I bet the sun set view will be even better.",
+            "filename": "File:vo_golan_rooftop_reckoning_greeting_001.ogg"
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "text": "Open your idiot eyes and look closer! I'm not the bully here—they are! What I do is just giving them what they had coming. Punish! Evil! Got it?!",
+            "filename": "File:vo_golan_rooftop_reckoning_talk_001.ogg"
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "text": "If I were to go to school, I'd never pick on my classmates! Only scums would stoop that low. We in the Iron Gang take the high road—we never mess with ordinary people.",
+            "filename": "File:vo_golan_rooftop_reckoning_talk_002.ogg"
+        },
+        {
+            "title": "Idle",
+            "text": "Hmm? Why so quiet? You're not scared, are you...",
+            "filename": "File:vo_golan_rooftop_reckoning_idle_001.ogg"
+        },
+        {
+            "title": "Annoyed",
+            "text": "Told ya, no weapon on me. I can use whatever's nearby to beat the sh*t out of these lowlifes.",
+            "filename": "File:vo_golan_rooftop_reckoning_clicking_001.ogg"
+        },
+        {
+            "title": "Special Attention",
+            "text": "Well? My moves to punish the bad guys are even more impressive than you thought, aren't they? Go ahead, take it all in—this isn't something you get to see every day.",
+            "filename": "File:vo_golan_rooftop_reckoning_specialattention_001.ogg"
+        }
     ]
 }

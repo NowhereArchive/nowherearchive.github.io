@@ -115,5 +115,47 @@
             "filename": "File:bt_kawa-kawa_jointeam_001.ogg",
             "text": "Okay, I'll be the guide."
         }
+    ],
+    "down_the_rabbit_hole": [
+        {
+            "title": "Level Up",
+            "text": "The rabbit hole has a new guest!",
+            "filename": "File:vo_kawa-kawa_down_the_rabbit_hole_levelup_001.ogg"
+        },
+        {
+            "title": "Obtain Attire",
+            "text": "Late? Late for what? Mr. Pocket Watch, what are you talking about? It's awful enough I've had butterflies in my stomach all morning, and now you are broken too! What's next? Me being hit by a newcomer falling from the sky? ...Ouch!",
+            "filename": "File:vo_kawa-kawa_down_the_rabbit_hole_cacha_001.ogg"
+        },
+        {
+            "title": "Greeting",
+            "text": "Thank you, newcomer! You falling on me helped me remember what I need to do—going to the tea party! It's a rare chance to take in some calories!",
+            "filename": "File:vo_kawa-kawa_down_the_rabbit_hole_greeting_001.ogg"
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "text": "Well well well, everyone in my burrow is my guest! But I not quite ready for the tea party... Oh, I've got it! Let's dash off to the Queen of Hearts' palace—it's ever so grand, and the food is delightful! Just mind that red-eyed rabbit, it does give one a fright!",
+            "filename": "File:vo_kawa-kawa_down_the_rabbit_hole_talk_001.ogg"
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "text": "Do you have a sweet tooth? Like jam, butter, scones... If you do, come to the tea party with me! Here, you must take this spoon so that you can say, I'll only have a spoonful!",
+            "filename": "File:vo_kawa-kawa_down_the_rabbit_hole_talk_002.ogg"
+        },
+        {
+            "title": "Idle",
+            "text": "Hmm... This flower will make a lovely gift... Oh, and this mushroom—quite handy! And this herb, yes, yes! Just what we need to get through the week!",
+            "filename": "File:vo_kawa-kawa_down_the_rabbit_hole_idle_001.ogg"
+        },
+        {
+            "title": "Annoyed",
+            "text": "Oh my whiskers! Careful, careful! My suitcase is packed with all the essentials we need to survive here. If anything happens to them, we'll be doomed!",
+            "filename": "File:vo_kawa-kawa_down_the_rabbit_hole_clicking_001.ogg"
+        },
+        {
+            "title": "Special Attention",
+            "text": "Yes, you're doing good. Stay close to me! It's not quite like the ground up here, and one wrong step could have me searching for hours to get you back!",
+            "filename": "File:vo_kawa-kawa_down_the_rabbit_hole_specialattention_001.ogg"
+        }
     ]
 }

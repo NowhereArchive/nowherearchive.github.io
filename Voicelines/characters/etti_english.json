@@ -162,5 +162,47 @@
             "filename": "File:vo_etti_guiyeqilv_specialattention_001.ogg",
             "text": "What are you looking at me for? Hurry up! Huh? You're not really scared, are you? Relax, if you're in any danger, I'll make an exception and provide you with a little extra help... but don't tell anyone about this!"
         }
+    ],
+    "dances_&_dragons": [
+        {
+            "title": "Level Up",
+            "text": "See my gown swirl with grace? Let's dance wild",
+            "filename": "File:vo_etti_dances_&_dragons_levelup_001.ogg"
+        },
+        {
+            "title": "Obtain Attire",
+            "text": "You stand in the presence of Etti the Dragon of Domination—rightful ruler of the plundered Grandeur Palace, ever-reveling Queen of the Ravening Realm, dancing Avatar of cursed Love and Fury, and mighty Lord of all gold-filled caves... Countless warriors met afoul of me yet survived not. But I know... a Prophetic One shall come, and waltz with me in battle!",
+            "filename": "File:vo_etti_dances_&_dragons_cacha_001.ogg"
+        },
+        {
+            "title": "Greeting",
+            "text": "Oh, looks like someone is waiting to take my hand. So, Sir Armour, guess it's time for you to stand down. Off you go!",
+            "filename": "File:vo_etti_dances_&_dragons_greeting_001.ogg"
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "text": "I admire those brave souls who fall before dragons. Noble hearts, drawing their swords against giant dragons even in fear, just to protect what they hold dear. You too have the \"scent\"! Hmm... wanna know what you smell like? A knight, or a dragon?",
+            "filename": "File:vo_etti_dances_&_dragons_talk_001.ogg"
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "text": "Twirl, sway, and spin! Wow, you can really dance! Wait, hold your shackles. It's been centuries since a mortal graced my cave. How about you dance with me to my heart's content before we cross blades, my Prophetic One?",
+            "filename": "File:vo_etti_dances_&_dragons_talk_002.ogg"
+        },
+        {
+            "title": "Idle",
+            "text": "Falling asleep? Hehe, let me tell you something: never drop your guard around me, whether on the battlefield or at a ball. I am, and always will be, your dearest enemy~",
+            "filename": "File:vo_etti_dances_&_dragons_idle_001.ogg"
+        },
+        {
+            "title": "Annoyed",
+            "text": "Hehe, admiring my dragon horns, are you? If you like them that much, how about you grow your own?",
+            "filename": "File:vo_etti_dances_&_dragons_clicking_001.ogg"
+        },
+        {
+            "title": "Special Attention",
+            "text": "I love seeing myself in your eyes—it's like drowning in the molten lava that gave birth to me... Perhaps, the prophecy will eventually come true! Your eyes will slit, your spine will sprout wings, your arms become claws, and your stomach begets raging fire... Through our eternal dance, the warrior who fights dragons shall become the dragon itself.",
+            "filename": "File:vo_etti_dances_&_dragons_specialattention_001.ogg"
+        }
     ]
 }
