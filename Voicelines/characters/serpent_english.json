@@ -1,0 +1,213 @@
+{
+    "default": [
+        {
+            "title": "Obtain the Sinner",
+            "text": "Are you trying to take me home? Hehehe... if you treat me as a pet, it won't end well...",
+            "filename": "File:vo_serpent_cacha_001.ogg"
+        },
+        {
+            "title": "Raise to Phase 1",
+            "text": "Hmm... this reminds me of the ouroboros.",
+            "filename": "File:vo_serpent_promotion_001.ogg"
+        },
+        {
+            "title": "Raise to Phase 3",
+            "text": "I will... wrap around you tightly...",
+            "filename": "File:vo_serpent_promotion2_001.ogg"
+        },
+        {
+            "title": "Level Up",
+            "text": "Hope you have fun...",
+            "filename": "File:vo_serpent_levelup_002.ogg"
+        },
+        {
+            "title": "Pat Head",
+            "text": "The hero pierced the snake's cranium with his sword, beheading the monstrous serpent. You know where the cranium is? You just touched it.",
+            "filename": "File:vo_serpent_head_001.ogg"
+        },
+        {
+            "title": "Level Start",
+            "text": "I've locked onto my target prey, hiss...",
+            "filename": "File:vo_serpent_battlebegin_001.ogg"
+        },
+        {
+            "title": "Win Battles",
+            "text": "Thank you for making me feel that I am still alive.",
+            "filename": "File:vo_serpent_battlewin_001.ogg"
+        },
+        {
+            "title": "Lose Battles",
+            "text": "Haha... pain is a reassuring sensation.",
+            "filename": "File:vo_serpent_battlelose_001.ogg"
+        },
+        {
+            "title": "Ultimate Skill",
+            "text": "This ends here. You will thank me later.",
+            "filename": "File:bt_serpent_uniqueskill_001.ogg"
+        },
+        {
+            "title": "Die in Battles",
+            "text": "Do I feel... happy?",
+            "filename": "File:bt_serpent_dead_001.ogg"
+        },
+        {
+            "title": "Conversation 1",
+            "text": "I'm neither human nor monster, hmm... I think I might be a venomous snake?",
+            "filename": "File:vo_serpent_talk1_001.ogg"
+        },
+        {
+            "title": "Conversation 2",
+            "text": "Will I get poisoned if I bite my own tongue...? You're so funny. It's as if snake venom got into your head.",
+            "filename": "File:vo_serpent_talk1_002.ogg"
+        },
+        {
+            "title": "Conversation 3",
+            "text": "Everyone has the right to laugh. Whoever takes it away will go to hell.",
+            "filename": "File:vo_serpent_talk1_003.ogg"
+        },
+        {
+            "title": "Special Conversation 1",
+            "text": "I can understand that some people don't like snakes, so you can also understand that I don't like some people, right?",
+            "filename": "File:vo_serpent_talk2_001.ogg"
+        },
+        {
+            "title": "Special Conversation 2",
+            "text": "Misery is the culprit that destroys laughter, but also heralds the birth of a new world. What do you think?",
+            "filename": "File:vo_serpent_talk2_002.ogg"
+        },
+        {
+            "title": "Special Conversation 3",
+            "text": "I love the way you smile, and it's even better if it's because of me.",
+            "filename": "File:vo_serpent_talk2_003.ogg"
+        },
+        {
+            "title": "Full Compliance",
+            "text": "Can you give me a hug? Your temperature reminds me of spring, the time of awakening, the season of rebirth... I can hear our hearts beating together.",
+            "filename": "File:vo_serpent_obeyfull_001.ogg"
+        },
+        {
+            "title": "Greeting",
+            "text": "Ah, a rare guest! You're here to see me again?",
+            "filename": "File:vo_serpent_greeting_001.ogg"
+        },
+        {
+            "title": "Idle",
+            "text": "It's so quiet... it's as if the end of the world is nigh. Looks like I'll be able to get a good night's sleep.",
+            "filename": "File:vo_serpent_idle_001.ogg"
+        },
+        {
+            "title": "Annoyed",
+            "text": "Hmm... seems like you want me to take a bite of you?",
+            "filename": "File:vo_serpent_clicking_001.ogg"
+        },
+        {
+            "title": "Dispatch",
+            "text": "If this can cheer you up...",
+            "filename": "File:vo_serpent_dispatch_001.ogg"
+        },
+        {
+            "title": "Dispatch Complete",
+            "text": "Did you like this performance?",
+            "filename": "File:vo_serpent_dispatch2_001.ogg"
+        },
+        {
+            "title": "Special Attention",
+            "text": "To look for one leaf in an entire forest... to lock onto one monster in an entire herd... you really have a lot of energy.",
+            "filename": "File:vo_serpent_specialattention_001.ogg"
+        }
+    ],
+    "awake_from_slumber": [
+        {
+            "title": "Level Up",
+            "text": "Mmm... Just a little bit longer...",
+            "filename": "File:vo_serpent_awake_from_slumber_levelup_001.ogg"
+        },
+        {
+            "title": "Pat Head",
+            "text": "Your hand's... still so warm...",
+            "filename": ""
+        },
+        {
+            "title": "Obtain Attire",
+            "text": "I had a long dream, a dream of pursuing happiness, a dream of... rebirth.",
+            "filename": "File:vo_serpent_awake_from_slumber_cacha_001.ogg"
+        },
+        {
+            "title": "Greeting",
+            "text": "Oh... It's spring already? I'll get up then... Give me two more minutes...",
+            "filename": "File:vo_serpent_awake_from_slumber_greeting_001.ogg"
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "text": "The sheets are so warm... Chief, if you can join me up here... I'll be very happy...",
+            "filename": "File:vo_serpent_awake_from_slumber_talk_001.ogg"
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "text": "I can't miss this festive holiday... But I need some more time to prepare...",
+            "filename": "File:vo_serpent_awake_from_slumber_talk_002.ogg"
+        },
+        {
+            "title": "Ordinary Contact 3",
+            "text": "No one can take away my... my blankets... Take away my Chief... Hehe... Snore... Snore...",
+            "filename": "File:vo_serpent_awake_from_slumber_hand_001.ogg"
+        },
+        {
+            "title": "Ordinary Contact 4",
+            "text": "Mmm... Time for spring cleaning? But my place is quite tidy already... Or do you want to help me?",
+            "filename": "File:vo_serpent_awake_from_slumber_leg_001.ogg"
+        },
+        {
+            "title": "Idle",
+            "text": "Sigh... The fireworks outside... really disturb my dreams...",
+            "filename": "File:vo_serpent_awake_from_slumber_idle_001.ogg"
+        },
+        {
+            "title": "Special Attention",
+            "text": "My gosh, I'm almost done dressing! If you keep rushing me... I'll bite you!",
+            "filename": "File:vo_serpent_awake_from_slumber_specialattention_001.ogg"
+        }
+    ],
+    "elixir_of_euphoria": [
+        {
+            "title": "Level Up",
+            "text": "Hmm... that's quite a nice potion~",
+            "filename": "File:vo_serpent_elixir_of_euphoria_levelup_001.ogg"
+        },
+        {
+            "title": "Obtain Attire",
+            "text": "So, my little apothecary has finally gained some fame that even the Chief of Minos came in person, just to seek a dose of happiness.",
+            "filename": "File:vo_serpent_elixir_of_euphoria_cacha_001.ogg"
+        },
+        {
+            "title": "Greeting",
+            "text": "Oh my, you're here again? Chief~ If you really like my potions that much, why don't you just move in and... stay here for good?",
+            "filename": "File:vo_serpent_elixir_of_euphoria_greeting_001.ogg"
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "text": "Your dark circles look even worse! You should try this \"Slack-off Potion\"? It can turn you into a cute rubber ducky or a little fuzzy plush in just a sec... What! Why not? This is a perfect chance for you to unwind and I get to play... take care of you!",
+            "filename": "File:vo_serpent_elixir_of_euphoria_talk_001.ogg"
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "text": "In addition to magic potions, I also sell candies. They may taste like peach or tangerine... or, of course, mustard or dish soap. Interested in trying one, Chief? Embracing the unknown is also a kind of joy!",
+            "filename": "File:vo_serpent_elixir_of_euphoria_talk_002.ogg"
+        },
+        {
+            "title": "Idle",
+            "text": "Agarwood, apricot, cornflower, bloodroot, cardamom... This much should be enough. Hmm... the color is no good, maybe some hawthorn and saffron will make it better.",
+            "filename": "File:vo_serpent_elixir_of_euphoria_idle_001.ogg"
+        },
+        {
+            "title": "Annoyed",
+            "text": "Hehe, the owner of this apothecary is not for sale. Keep playing naughty, and you might lose your hand~",
+            "filename": "File:vo_serpent_elixir_of_euphoria_clicking_001.ogg"
+        },
+        {
+            "title": "Special Attention",
+            "text": "Ah yes, eyes on me. Your gaze is the very last ingredient to perfect this potion.",
+            "filename": "File:vo_serpent_elixir_of_euphoria_specialattention_001.ogg"
+        }
+    ]
+}

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Chapters Archive</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="Styles.css" rel="stylesheet">
+    <link href="NavBar.css" rel="stylesheet">
+    <style>
+        .center-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 20px;
+        }
+
+        .chapter-card {
+            position: relative;
+            width: 600px; /* Adjust the width as needed */
+            height: 300px; /* Adjust the height as needed */
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .chapter-card:hover {
+            transform: scale(1.02);
+        }
+
+        .skeleton {
+            background-color: #ccc;
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+            display: block;
+        }
+
+        .chapter-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            display: none; /* Start hidden */
+            opacity: 0; /* Start with opacity 0 for fade-in effect */
+            transition: opacity 0.3s ease; /* Smooth transition for opacity */
+        }
+
+        .chapter-title {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+            color: white;
+            padding: 10px;
+            border-radius: 0 0 10px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <button title="logo" class="navbar-toggler" data-toggle="open-navbar1">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="/">
+                    <h4>Path To Nowhere Archive</h4>
+                </a>
+            </div>
+
+            <div class="navbar-menu" id="open-navbar1">
+                <ul class="navbar-nav">
+                    <li><a href="/Game">Game</a></li>
+                    <li class="active"><a href="/CGs">CGs</a></li>
+                    <li><a href="/Voicelines">Voicelines</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="site-note">
+        <p>This site is currently under development, and some information is still incomplete. If you're looking for something specific that's not available yet, feel free to reach out.</p>
+        <p>Please keep in mind that some photos may contain spoilers, so please continue at your own discretion. Thank you.</p>
+        <p>You can reach me on <a href="https://x.com/BadJTSX">Twitter/X</a></p>
+        <p class="donate">If you want to support the site you can do so by reporting errors, bugs or missing files.</p>
+    </div>
+    
+    <h1>Chapters</h1>
+
+    <div class="dynamic-tabs" id="navbarTabs"></div>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" class="search-input" placeholder="Chapter Search" autocomplete="off">
+    </div>
+
+    <div class="center-container" id="chapterGrid"></div>
+
+    <script>
+        let dropdowns = document.querySelectorAll('.navbar .dropdown-toggler');
+        let dropdownIsOpen = false;
+
+        if (dropdowns.length) {
+            dropdowns.forEach((dropdown) => {
+                dropdown.addEventListener('click', (event) => {
+                    let target = document.querySelector(`#${event.target.dataset.dropdown}`);
+
+                    if (target) {
+                        if (target.classList.contains('show')) {
+                            target.classList.remove('show');
+                            dropdownIsOpen = false;
+                        } else {
+                            target.classList.add('show');
+                            dropdownIsOpen = true;
+                        }
+                    }
+                });
+            });
+        }
+
+        window.addEventListener('mouseup', (event) => {
+            if (dropdownIsOpen) {
+                dropdowns.forEach((dropdownButton) => {
+                    let dropdown = document.querySelector(`#${dropdownButton.dataset.dropdown}`);
+                    let targetIsDropdown = dropdown == event.target;
+
+                    if (dropdownButton == event.target) {
+                        return;
+                    }
+
+                    if ((!targetIsDropdown) && (!dropdown.contains(event.target))) {
+                        dropdown.classList.remove('show');
+                    }
+                });
+            }
+        });
+
+        function handleSmallScreens() {
+            document.querySelector('.navbar-toggler')
+                .addEventListener('click', () => {
+                    let navbarMenu = document.querySelector('.navbar-menu');
+
+                    if (!navbarMenu.classList.contains('active')) {
+                        navbarMenu.classList.add('active');
+                    } else {
+                        navbarMenu.classList.remove('active');
+                    }
+                });
+        }
+
+        handleSmallScreens();
+
+        fetch('chapters.json')
+            .then(response => response.json())
+            .then(data => {
+                const categories = [...new Set(data.chapters.map(chapter => chapter.category))];
+                const navbarTabs = document.getElementById('navbarTabs');
+
+                const allChaptersTab = document.createElement('button');
+                allChaptersTab.innerText = "All Categories";
+                allChaptersTab.onclick = () => filterChapters("All Chapters");
+                navbarTabs.appendChild(allChaptersTab);
+
+                categories.forEach(category => {
+                    const tab = document.createElement('button');
+                    tab.innerText = category;
+                    tab.onclick = () => filterChapters(category);
+                    navbarTabs.appendChild(tab);
+                });
+
+                function filterChapters(selectedCategory) {
+                    const chapterGrid = document.getElementById('chapterGrid');
+                    chapterGrid.innerHTML = '';
+
+                    let filteredChapters;
+
+                    if (selectedCategory === "All Chapters") {
+                        filteredChapters = data.chapters;
+                    } else {
+                        filteredChapters = data.chapters.filter(chapter => chapter.category === selectedCategory);
+                    }
+
+                    filteredChapters.sort((a, b) => a.displayName.localeCompare(b.displayName));
+
+                    const heading = document.querySelector('h1');
+                    heading.innerText = selectedCategory;
+
+                    filteredChapters.forEach(chapter => {
+                        const chapterCard = document.createElement('div');
+                        chapterCard.classList.add('chapter-card');
+
+                        chapterCard.innerHTML = `
+                            <div class="skeleton"></div>
+                            <img src="images/${chapter.name}/${chapter.name}.png" alt="${chapter.displayName}" onload="hideSkeleton(this)">
+                            <div class="chapter-title">${chapter.displayName}</div>
+                        `;
+
+                        chapterCard.onclick = () => {
+                            window.location.href = `chapter.html?name=${chapter.name}`;
+                        };
+                        chapterGrid.appendChild(chapterCard);
+                    });
+                }
+
+                if (categories.length > 0) {
+                    filterChapters(categories[0]);
+                }
+
+                document.getElementById('searchInput').addEventListener('input', function () {
+                    const searchValue = this.value.toLowerCase();
+                    const allChapters = chapterGrid.querySelectorAll('.chapter-card');
+                    allChapters.forEach(chapterCard => {
+                        const chapterName = chapterCard.querySelector('.chapter-title').innerText.toLowerCase();
+                        chapterCard.style.display = chapterName.includes(searchValue) ? 'block' : 'none';
+                    });
+                });
+            })
+            .catch(error => console.error('Error loading chapters:', error));
+
+        document.addEventListener('keydown', function (event) {
+            const searchInput = document.getElementById('searchInput');
+
+            if ((event.key === 'l' || event.key === 'L') && document.activeElement !== searchInput) {
+                event.preventDefault();
+                if (searchInput) {
+                    searchInput.focus();
+                }
+            }
+        });
+
+        function hideSkeleton(img) {
+            const skeleton = img.previousElementSibling;
+            skeleton.style.display = 'none'; // Hide skeleton
+            img.style.display = 'block'; // Show image
+            setTimeout(() => {
+                img.style.opacity = 1; // Fade in image
+            }, 100); // Small delay for transition
+        }
+    </script>
+</body>
+
+</html>

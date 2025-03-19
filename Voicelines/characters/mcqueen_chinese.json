@@ -1,0 +1,203 @@
+{
+    "default": [
+        {
+            "title": "Obtain the Sinner",
+            "filename": "File:vo_mcqueen_cacha_001.ogg",
+            "text": "你就是用这双手抓住我的吗？手指灵巧又有力，要是能为我作画就好了……当然，也可以做些别的~"
+        },
+        {
+            "title": "Level Start",
+            "filename": "File:vo_mcqueen_battlebegin_001.ogg",
+            "text": "听话~把手给我，别让那些没眼光的鉴定师把你弄脏了。"
+        },
+        {
+            "title": "Win Battles",
+            "filename": "File:vo_mcqueen_battlewin_001.ogg",
+            "text": "哎，真可怜，连拿来作假的价值都没有。"
+        },
+        {
+            "title": "Lose Battles",
+            "filename": "File:vo_mcqueen_battlelose_001.ogg",
+            "text": "哎呀……他们发现画里的破绽了！"
+        },
+        {
+            "title": "Ultimate Skill",
+            "filename": "File:bt_mcqueen_uniqueskill_001.ogg",
+            "text": "别眨眼，真假——只差一瞬"
+        },
+        {
+            "title": "Die in Battles",
+            "filename": "File:bt_mcqueen_dead_001.ogg",
+            "text": "呵，真假生死……早就无所谓了……"
+        },
+        {
+            "title": "Greeting",
+            "filename": "File:vo_mcqueen_greeting_001.ogg",
+            "text": "你怎么才回来？我差点就要去找其他人陪我了……好啦，骗你的，外面那些只是低劣的仿品，代替不了你。"
+        },
+        {
+            "title": "Conversation 1",
+            "filename": "File:vo_mcqueen_talk1_001.ogg",
+            "text": "嗯……快帮我看看，这两幅哪个才是真迹？别紧张，你说谁是真的，它就是真的。"
+        },
+        {
+            "title": "Conversation 2",
+            "filename": "File:vo_mcqueen_talk1_002.ogg",
+            "text": "原创作品？像我这种既没天赋又没原则的庸人可涂不出什么东西来……但如果是为了你，我愿意耗费一切为你画上我的真心。"
+        },
+        {
+            "title": "Conversation 3",
+            "filename": "File:vo_mcqueen_talk1_003.ogg",
+            "text": "画手想要以画笔谋生，买家想要添置名画我明明帮他们实现了梦想，局长为什么还要生我的气呢？"
+        },
+        {
+            "title": "Idle",
+            "filename": "File:vo_mcqueen_idle_001.ogg",
+            "text": "怎么？是我不够吸引你了吗？"
+        },
+        {
+            "title": "Annoyed",
+            "filename": "File:vo_mcqueen_clicking_001.ogg",
+            "text": "怎么突然停下了？局长对我不感兴趣了吗？"
+        },
+        {
+            "title": "Special Attention",
+            "filename": "File:vo_mcqueen_specialattention_001.ogg",
+            "text": "眼见可不一定为实，与其一直这样盯着我看，不如……亲自上手，验验真伪？"
+        },
+        {
+            "title": "Dispatch",
+            "filename": "File:vo_mcqueen_dispatch_001.ogg",
+            "text": "嗯~也是时候该去物色一些新的作赝师了。"
+        },
+        {
+            "title": "Dispatch Complete",
+            "filename": "File:vo_mcqueen_dispatch2_001.ogg",
+            "text": "这么着急让我回来，是担心我会和别人共进晚餐吗？"
+        },
+        {
+            "title": "Level Up",
+            "filename": "File:vo_mcqueen_levelup_002.ogg",
+            "text": "别对我这么用心，万一……我当真了呢？"
+        },
+        {
+            "title": "Raise to Phase 1",
+            "filename": "File:vo_mcqueen_promotion_001.ogg",
+            "text": "以假乱真？这只是基础中的基础。"
+        },
+        {
+            "title": "Raise to Phase 3",
+            "filename": "File:vo_mcqueen_promotion2_001.ogg",
+            "text": "你还愿意相信自己的眼睛吗？"
+        },
+        {
+            "title": "Special Conversation 1",
+            "filename": "File:vo_mcqueen_talk2_001.ogg",
+            "text": "坚~持~梦~想~哈哈哈哈——这四个字，就是我在新城听过最好笑的笑话。"
+        },
+        {
+            "title": "Special Conversation 2",
+            "filename": "File:vo_mcqueen_talk2_002.ogg",
+            "text": "以前的我，热爱艺术、怀有梦想。现在……呵，我依然热爱艺术，但怀里没有梦想，只有你了，局长~"
+        },
+        {
+            "title": "Special Conversation 3",
+            "filename": "File:vo_mcqueen_talk2_003.ogg",
+            "text": "被麦昆拖进泥沼还笑着帮她数钱，感谢她发现了自己的才能……哈哈，这样的白痴，就算消失了，也不会有人在意的。"
+        },
+        {
+            "title": "Full Compliance",
+            "filename": "File:vo_mcqueen_obeyfull_001.ogg",
+            "text": "你是我库中唯一一件无法复制的珍藏……相信我，这话我真的只对你一个人说过。"
+        },
+        {
+            "title": "Deploy",
+            "filename": "File:bt_mcqueen_jointeam_001.ogg",
+            "text": "You know I won't turn down your request."
+        }
+    ],
+    "inferno_of_deception": [
+        {
+            "title": "Obtain Attire",
+            "filename": "File:vo_mcqueen_zhuoxinwangjing_cacha_001.ogg",
+            "text": "别害怕，迷途的羔羊，你只是误入了我的火焰圣殿……哎呀，想要离开？那就得靠你自己来分辨……真假的道路了。"
+        },
+        {
+            "title": "Greeting",
+            "filename": "File:vo_mcqueen_zhuoxinwangjing_greeting_001.ogg",
+            "text": "你考虑好了吗，是要成为谎言的信徒，抑或是真实的殉道者？"
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "filename": "File:vo_mcqueen_zhuoxinwangjing_talk_001.ogg",
+            "text": "想要验证这片烈焰是真或假，便只能亲自触碰。但倘若它是真实之火，一旦沾上你就会被烧成灰烬……我可不忍心看到这样的场面啊~"
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "filename": "File:vo_mcqueen_zhuoxinwangjing_talk_002.ogg",
+            "text": "毒牙和利爪？我怎么舍得用那种东西对付你呢……不过，我想送你一株槲寄生，你愿意收下吗？"
+        },
+        {
+            "title": "Idle",
+            "filename": "File:vo_mcqueen_zhuoxinwangjing_idle_001.ogg",
+            "text": "如果你宁可在这里停留，也没有关系，我愿意永远陪着你~"
+        },
+        {
+            "title": "Special Attention",
+            "filename": "File:vo_mcqueen_zhuoxinwangjing_specialattention_001.ogg",
+            "text": "你要踏入眼前的火海，赌上自己的命运吗？来吧，走向我，我会将你引向……最棒的结局！"
+        },
+        {
+            "title": "Level Up",
+            "filename": "File:vo_mcqueen_zhuoxinwangjing_levelup_001.ogg",
+            "text": "呵，你想让我为你带回什么宝物？"
+        },
+        {
+            "title": "Annoyed",
+            "filename": "File:vo_mcqueen_zhuoxinwangjing_clicking_001.ogg",
+            "text": "哎呀，你是祈求我带你离开吗？那就再虔诚点……说不定，祂会垂怜你呢~"
+        }
+    ],
+    "whimsical_theater": [
+        {
+            "title": "Obtain Attire",
+            "filename": "File:vo_mcqueen_mengxisuitan_cacha_001.ogg",
+            "text": "这是哪里的贵人误闯了我这戏园子？哎哎~既然来了，就别急着走呀，来听我唱一出新谱好的戏本子吧~"
+        },
+        {
+            "title": "Greeting",
+            "filename": "File:vo_mcqueen_mengxisuitan_greeting_001.ogg",
+            "text": "来得巧了，今天这戏正准备开场……嗯……我们上次唱到哪儿了？"
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "filename": "File:vo_mcqueen_mengxisuitan_talk_001.ogg",
+            "text": "上回我们说到，随着穷画家的年岁增长，她的欲望也在慢慢变大……难以满足的欲望静静注视着画家，引诱着她，控制着她的思想，直到她完全屈服在欲望的脚下。"
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "filename": "File:vo_mcqueen_mengxisuitan_talk_002.ogg",
+            "text": "好奇之前说的画家怎么样了？她啊，第一份欲望她失去了真，第二份欲望让她失去了善，第三份欲望让她失去了美……至于结局嘛，呵，你猜，是什么呢？"
+        },
+        {
+            "title": "Idle",
+            "filename": "File:vo_mcqueen_mengxisuitan_idle_001.ogg",
+            "text": "讲了这半日的戏，可是说得我口干舌燥，贵人心疼心疼我，赏我杯茶水让我歇歇呗。"
+        },
+        {
+            "title": "Special Attention",
+            "filename": "File:vo_mcqueen_mengxisuitan_specialattention_001.ogg",
+            "text": "啊呀，你终于舍得让我把你也画进这戏中了？"
+        },
+        {
+            "title": "Level Up",
+            "filename": "File:vo_mcqueen_mengxisuitan_levelup_001.ogg",
+            "text": "你哼的这段小调，我听着甚是欢喜。再来一遍吧~"
+        },
+        {
+            "title": "Annoyed",
+            "filename": "File:vo_mcqueen_mengxisuitan_clicking_001.ogg",
+            "text": "贵人真这么喜欢“我”这出戏？"
+        }
+    ]
+}

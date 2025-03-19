@@ -1,0 +1,161 @@
+{
+    "default": [
+        {
+            "title": "Level Start",
+            "filename": "File:vo_labyrinth_battlebegin_001.ogg",
+            "text": "指令收到，准备执行"
+        },
+        {
+            "title": "Obtain the Sinner",
+            "filename": "File:vo_labyrinth_cacha_001.ogg",
+            "text": "智能家用Ⅲ型女仆，雷比尼斯为您服务。"
+        },
+        {
+            "title": "Raise to Phase 1",
+            "filename": "File:vo_labyrinth_promotion_001.ogg",
+            "text": "“只要穿上就会变强？”如果能提升家务工作效率，请立刻实装。"
+        },
+        {
+            "title": "Raise to Phase 3",
+            "filename": "File:vo_labyrinth_promotion2_001.ogg",
+            "text": "机体强度已提升至极限，您的障碍，雷比尼斯将全部扫除。"
+        },
+        {
+            "title": "Win Battles",
+            "filename": "File:vo_labyrinth_battlewin_001.ogg",
+            "text": "清扫结束，切换至家用模式。"
+        },
+        {
+            "title": "Lose Battles",
+            "filename": "File:vo_labyrinth_battlelose_001.ogg",
+            "text": "警告：战斗参数溢出，启用紧急撤离协议。"
+        },
+        {
+            "title": "Ultimate Skill",
+            "filename": "File:bt_labyrinth_uniqueskill_001.ogg",
+            "text": "战斗形态，启动。"
+        },
+        {
+            "title": "Die in Battles",
+            "filename": "File:bt_labyrinth_dead_001.ogg",
+            "text": "……还没有……结束……"
+        },
+        {
+            "title": "Greeting",
+            "filename": "File:vo_labyrinth_greeting_001.ogg",
+            "text": "欢迎使用智能家用Ⅲ型女仆雷比尼斯，您可以使用语音直接指派工作。"
+        },
+        {
+            "title": "Conversation 1",
+            "filename": "File:vo_labyrinth_talk1_001.ogg",
+            "text": "发现垃圾？很抱歉，雷比尼斯马上处理。"
+        },
+        {
+            "title": "Conversation 2",
+            "filename": "File:vo_labyrinth_talk1_002.ogg",
+            "text": "局长，需要雷比尼斯为您做些什么？喝杯茶？吃点东西？还是让雷比尼斯为您捶捶肩"
+        },
+        {
+            "title": "Conversation 3",
+            "filename": "File:vo_labyrinth_talk1_003.ogg",
+            "text": "警告，刀片磨损率超过百分之零点零二，为防止影响工作效率，请求全套更换。"
+        },
+        {
+            "title": "Special Conversation 1",
+            "filename": "File:vo_labyrinth_talk2_001.ogg",
+            "text": "可爱女仆插件启动，已激活人称切换功能。局长，需要我切换对您的称呼吗？局长阁下？局长大人？还是说……主人？"
+        },
+        {
+            "title": "Special Conversation 2",
+            "filename": "File:vo_labyrinth_talk2_002.ogg",
+            "text": "抱歉，局长，雷比尼斯没有实装表情模块但可以告诉局长的是，雷比尼斯当前的情绪为：非常愉快。"
+        },
+        {
+            "title": "Special Conversation 3",
+            "filename": "File:vo_labyrinth_talk2_003.ogg",
+            "text": "雷比尼斯曾经很讨厌辛迪加，还有过去的自己……但现在，雷比尼斯再也不会为过去的事情烦恼了。因为，雷比尼斯遇见了局长……"
+        },
+        {
+            "title": "Full Compliance",
+            "filename": "File:vo_labyrinth_obeyfull_001.ogg",
+            "text": "好感度系统下载完成，请设置雷比尼斯对局长的好感度。可供选择的好感度等级包括：“喜爱”，“喜爱”，“喜爱”。"
+        },
+        {
+            "title": "Idle",
+            "filename": "File:vo_labyrinth_idle_001.ogg",
+            "text": "局长…局长？局长？请不要站在这里发呆干扰雷比尼斯的工作，还是说，有什么可以为您服务的？"
+        },
+        {
+            "title": "Annoyed",
+            "filename": "File:vo_labyrinth_clicking_001.ogg",
+            "text": "触觉系统关闭……您可以继续了，局长。"
+        },
+        {
+            "title": "Special Attention",
+            "filename": "File:vo_labyrinth_specialattention_001.ogg",
+            "text": "检测到信号源为：局长。启动聊天插件。"
+        },
+        {
+            "title": "Dispatch",
+            "filename": "File:vo_labyrinth_dispatch_001.ogg",
+            "text": "任务收到。"
+        },
+        {
+            "title": "Dispatch Complete",
+            "filename": "File:vo_labyrinth_dispatch2_001.ogg",
+            "text": "任务完成。"
+        },
+        {
+            "title": "Level Up",
+            "filename": "File:vo_labyrinth_levelup_002.ogg",
+            "text": "硬件升级。"
+        },
+        {
+            "title": "Deploy",
+            "filename": "File:bt_labyrinth_jointeam_001.ogg",
+            "text": "Mode switch, action, confirm."
+        }
+    ],
+    "fortune_and_prosperity": [
+        {
+            "title": "Obtain Attire",
+            "filename": "File:vo_labyrinth_fortune_and_prosperity_cacha_001.ogg",
+            "text": "欢迎光临福隆饭庄。本店特色家常小炒、时令海鲜，应有尽有。滴滴！用餐须知：本店禁烟，谢绝自带，谢谢合作。"
+        },
+        {
+            "title": "Greeting",
+            "filename": "File:vo_labyrinth_fortune_and_prosperity_greeting_001.ogg",
+            "text": "您好，客人：请坐。抱歉，自前雷比尼斯正忙。您可以扫描桌上的二维码提前点单，谢谢配合。"
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "filename": "File:vo_labyrinth_fortune_and_prosperity_talk_001.ogg",
+            "text": "营业时间，请不要没事也找服务员。“音量数值降低”局长，任务还在继续，请不要暴露身份。"
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "filename": "File:vo_labyrinth_fortune_and_prosperity_talk_002.ogg",
+            "text": "这里需要雷比尼斯。帮助别人，雷比尼斯感到高兴。雷比尼斯，喜欢这里。"
+        },
+        {
+            "title": "Idle",
+            "filename": "File:vo_labyrinth_fortune_and_prosperity_idle_001.ogg",
+            "text": "阶段性工作完成，当前营业额陆万捌仟捌佰捌拾捌元整。是个吉利的数字呢，局长。"
+        },
+        {
+            "title": "Annoyed",
+            "filename": "File:vo_labyrinth_fortune_and_prosperity_clicking_001.ogg",
+            "text": "请勿拍打或攻击服务员，造成损失，十倍赔偿。"
+        },
+        {
+            "title": "Level Up",
+            "filename": "File:vo_labyrinth_fortune_and_prosperity_levelup_001.ogg",
+            "text": "传菜效率提升。"
+        },
+        {
+            "title": "Special Attention",
+            "filename": "File:vo_labyrinth_fortune_and_prosperity_specialattention_001.ogg",
+            "text": "目标尚未出现，局长无需担心。如无其他需要，请局长不要堵在门口，影响其他客人进出，谢谢合作。"
+        }
+    ]
+}

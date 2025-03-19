@@ -1,0 +1,124 @@
+{
+    "default": [
+        {
+            "title": "Obtain the Sinner",
+            "filename": "File:vo_jelena_cacha_001.ogg",
+            "text": "Greetings Chief of Minos. I appreciate your concern. Could you please guide me on the necessary procedures and the details required for registration?"
+        },
+        {
+            "title": "Raise to Phase 1",
+            "filename": "File:vo_jelena_promotion_001.ogg",
+            "text": "If that is your desire, I will see to it that every single request is met."
+        },
+        {
+            "title": "Raise to Phase 3",
+            "filename": "File:vo_jelena_promotion2_001.ogg",
+            "text": "May all the children I hold dear have warm, sweet dreams."
+        },
+        {
+            "title": "Level Start",
+            "filename": "File:vo_jelena_battlebegin_001.ogg",
+            "text": "I will accompany you anywhere you wish to go."
+        },
+        {
+            "title": "Win Battles",
+            "filename": "File:vo_jelena_battlewin_001.ogg",
+            "text": "There. It's all done. Let's return home."
+        },
+        {
+            "title": "Lose Battles",
+            "filename": "File:vo_jelena_battlelose_001.ogg",
+            "text": "Fear not. We can try again together."
+        },
+        {
+            "title": "Ultimate Skill",
+            "filename": "File:bt_jelena_uniqueskill_001.ogg",
+            "text": ""
+        },
+        {
+            "title": "Die in Battles",
+            "filename": "File:bt_jelena_dead_001.ogg",
+            "text": ""
+        },
+        {
+            "title": "Greeting",
+            "filename": "File:vo_jelena_greeting_001.ogg",
+            "text": "Good day chief. Today is poised to be at the lightful day."
+        },
+        {
+            "title": "Conversation 1",
+            "filename": "File:vo_jelena_talk1_001.ogg",
+            "text": "You occupy a position of great influence, and the attention upon you shall only grow in the days to come. Oh, permit me to perfect your attire. For wherever your journey may lead, you must always embody grace and distinction."
+        },
+        {
+            "title": "Conversation 2",
+            "filename": "File:vo_jelena_talk1_002.ogg",
+            "text": "On every rainy day, I hope that when the downpour ends, flower buds will bloom, spring swallows will return, and the dark clouds will clear from the sky. When that moment comes, I'll give my heart to those I cherish. And love shall ever more saturate my being."
+        },
+        {
+            "title": "Conversation 3",
+            "filename": "File:vo_jelena_talk1_003.ogg",
+            "text": "Some children would seek refuge in my room after missteps. Imploring me to intercede on their behalf as if fearing your disappointment. So, Chief, does my voice hold any sway?"
+        },
+        {
+            "title": "Special Conversation 1",
+            "filename": "File:vo_jelena_talk2_001.ogg",
+            "text": "During my time serving under Prime Minister Stewart, attention was palpable, and every little detail demanded meticulous attention. I must say, the atmosphere here is much more pleasant. No wonder everyone enjoys working with you chief."
+        },
+        {
+            "title": "Special Conversation 2",
+            "filename": "File:vo_jelena_talk2_002.ogg",
+            "text": "I understand you have lost so much, with no way to properly honor those memories. I truly empathize with that sentiment. However, my dear chief, take a moment to look around you. You found those worthy of your love, and they love you just as deeply in return. Cherish what you have, and may you find happiness once again."
+        },
+        {
+            "title": "Special Conversation 3",
+            "filename": "File:vo_jelena_talk2_003.ogg",
+            "text": "whether rich or poor, virtuous or flawed, strong or weak. We are all but tiny specks in the grand scheme of things, destined to be swept away by time. I know I may not always be able to protect those I love, but chief, I earnestly ask you to stay safe, for as long as you can. For that is my deepest wish."
+        },
+        {
+            "title": "Full Compliance",
+            "filename": "File:vo_jelena_obeyfull_001.ogg",
+            "text": "I came to this land with a heart filled with animosity. Never expecting to form bonds I would hold dear. The boundary between love and hatred has grown so blurred. Chief, what do you think of me now? I harbor no regrets for my deeds and am prepared to endure any hostility yet. In the end, I only hope that those I love will understand. Regardless of the circumstances, my love remains true."
+        },
+        {
+            "title": "Idle",
+            "filename": "File:vo_jelena_idle_001.ogg",
+            "text": "Close your eyes and sleep in peace."
+        },
+        {
+            "title": "Annoyed",
+            "filename": "File:vo_jelena_clicking_001.ogg",
+            "text": "Well chief, I must admit I didn't anticipate your mischievous side. Shall I indulge this behavior or perhaps consider a touch of disciplinary action?"
+        },
+        {
+            "title": "Special Attention",
+            "filename": "File:vo_jelena_specialattention_001.ogg",
+            "text": "Feel free to give me any work instructions. And I welcome any supervision if doubts arise. Or could it be? You called me here just to be doted on a little?"
+        },
+        {
+            "title": "Dispatch",
+            "filename": "File:vo_jelena_dispatch_001.ogg",
+            "text": "Understood. I shall attend to it right away."
+        },
+        {
+            "title": "Dispatch Complete",
+            "filename": "File:vo_jelena_dispatch2_001.ogg",
+            "text": "Please take a look. Does anything here catch your eye?"
+        },
+        {
+            "title": "Level Up",
+            "filename": "File:vo_jelena_levelup_002.ogg",
+            "text": "Thank you for your kind consideration."
+        },
+        {
+            "title": "Pat Head",
+            "filename": "File:vo_jelena_head_001.ogg",
+            "text": "I appreciate your concern, but I'm not weary just yet."
+        },
+        {
+            "title": "Deploy",
+            "filename": "File:bt_jelena_jointeam_001.ogg",
+            "text": ""
+        }
+    ]
+}
