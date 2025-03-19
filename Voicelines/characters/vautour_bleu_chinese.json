@@ -2,122 +2,122 @@
     "default": [
         {
             "title": "Obtain the Sinner",
-            "filename": "File:vo_vautour_bleu_cacha_001.ogg",
+            "filename": "File:vo_vautour_bleu_cacha_001.aac",
             "text": "蓝鹫的酬金可不便宜，你用这么不可爱的方式邀我过来，是已经想好要去哪了吗？"
         },
         {
             "title": "Raise to Phase 1",
-            "filename": "File:vo_vautour_bleu_promotion_001.ogg",
+            "filename": "File:vo_vautour_bleu_promotion_001.aac",
             "text": "上了我的渡船，可没有回头的选择。"
         },
         {
             "title": "Raise to Phase 3",
-            "filename": "File:vo_vautour_bleu_promotion2_001.ogg",
+            "filename": "File:vo_vautour_bleu_promotion2_001.aac",
             "text": "终于……可以好好休息一会了。"
         },
         {
             "title": "Level Start",
-            "filename": "File:vo_vautour_bleu_battlebegin_001.ogg",
+            "filename": "File:vo_vautour_bleu_battlebegin_001.aac",
             "text": "就当陪你玩玩吧。"
         },
         {
             "title": "Win Battles",
-            "filename": "File:vo_vautour_bleu_battlewin_001.ogg",
+            "filename": "File:vo_vautour_bleu_battlewin_001.aac",
             "text": "别怕，都打点好了，已经没事了。"
         },
         {
             "title": "Lose Battles",
-            "filename": "File:vo_vautour_bleu_battlelose_001.ogg",
+            "filename": "File:vo_vautour_bleu_battlelose_001.aac",
             "text": "胆子挺大？敢劫我的码头。"
         },
         {
             "title": "Ultimate Skill",
-            "filename": "File:bt_vautour_bleu_uniqueskill_001.ogg",
+            "filename": "File:bt_vautour_bleu_uniqueskill_001.aac",
             "text": "末路将至！"
         },
         {
             "title": "Die in Battles",
-            "filename": "File:bt_vautour_bleu_dead_001.ogg",
+            "filename": "File:bt_vautour_bleu_dead_001.aac",
             "text": "呵，不过是……现实的尽头……"
         },
         {
             "title": "Greeting",
-            "filename": "File:vo_vautour_bleu_greeting_001.ogg",
+            "filename": "File:vo_vautour_bleu_greeting_001.aac",
             "text": "总和蛇头打交道，就不怕我把你拐了？你说……MBCC愿意出多少赎金呢？"
         },
         {
             "title": "Conversation 1",
-            "filename": "File:vo_vautour_bleu_talk1_001.ogg",
+            "filename": "File:vo_vautour_bleu_talk1_001.aac",
             "text": "“梦想”也是明码标价的。拒绝交易的那些人，不过是对价格还不满意罢了~"
         },
         {
             "title": "Conversation 2",
-            "filename": "File:vo_vautour_bleu_talk1_002.ogg",
+            "filename": "File:vo_vautour_bleu_talk1_002.aac",
             "text": "摆渡的车队通过狄斯海关时会响起美妙的铃声，有机会的话一定带你也听听……那是梦想被现实击溃的声音。"
         },
         {
             "title": "Conversation 3",
-            "filename": "File:vo_vautour_bleu_talk1_003.ogg",
+            "filename": "File:vo_vautour_bleu_talk1_003.aac",
             "text": "只要报酬足够，我的队伍能将人捎去任何地方。至于顾客抵达目的地时还能不能呼吸，可就不好保证啰。"
         },
         {
             "title": "Special Conversation 1",
-            "filename": "File:vo_vautour_bleu_talk2_001.ogg",
+            "filename": "File:vo_vautour_bleu_talk2_001.aac",
             "text": "不用为我惋惜那些埋葬在砂海的财富，迪希尔的沉浮不过是末世下的必然。一起笑一笑，就当送他们一程？"
         },
         {
             "title": "Special Conversation 2",
-            "filename": "File:vo_vautour_bleu_talk2_002.ogg",
+            "filename": "File:vo_vautour_bleu_talk2_002.aac",
             "text": "如果你也想和我一样，在砂海里自由通行，有一栋自己的小楼，能随时吃到新城的甜品，那就记住了：人心是最宝贵的生存本金。握紧它，利用它。"
         },
         {
             "title": "Special Conversation 3",
-            "filename": "File:vo_vautour_bleu_talk2_003.ogg",
+            "filename": "File:vo_vautour_bleu_talk2_003.aac",
             "text": "这么好的天气，被我一个人独占也太浪费了。我忘掉生意，你也丢掉工作吧。就这样安安静静地，什么都不去想，一起看车来车往，人去楼空。"
         },
         {
             "title": "Full Compliance",
-            "filename": "File:vo_vautour_bleu_obeyfull_001.ogg",
+            "filename": "File:vo_vautour_bleu_obeyfull_001.aac",
             "text": "如果有一天蓝鹫这个名字在砂海消失，听姐姐的话，别去找它。它只是飞得太久太累了，想自己好好睡一觉。只留下你的祝福就够了，祝它……有枝可栖。"
         },
         {
             "title": "Idle",
-            "filename": "File:vo_vautour_bleu_idle_001.ogg",
+            "filename": "File:vo_vautour_bleu_idle_001.aac",
             "text": "这孩子，又在做那些傻乎乎的美梦了……也不怕被我卖到异邦去。"
         },
         {
             "title": "Annoyed",
-            "filename": "File:vo_vautour_bleu_clicking_001.ogg",
+            "filename": "File:vo_vautour_bleu_clicking_001.aac",
             "text": "年轻人就是容易情不自禁……（轻笑）要我帮帮你吗？"
         },
         {
             "title": "Special Attention",
-            "filename": "File:vo_vautour_bleu_specialattention_001.ogg",
+            "filename": "File:vo_vautour_bleu_specialattention_001.aac",
             "text": "之前还没看够吗？那就再近点，看得清楚些。"
         },
         {
             "title": "Dispatch",
-            "filename": "File:vo_vautour_bleu_dispatch_001.ogg",
+            "filename": "File:vo_vautour_bleu_dispatch_001.aac",
             "text": "让我看看究竟是什么，能让我们小局长这么牵肠挂肚？"
         },
         {
             "title": "Dispatch Complete",
-            "filename": "File:vo_vautour_bleu_dispatch2_001.ogg",
+            "filename": "File:vo_vautour_bleu_dispatch2_001.aac",
             "text": "傻瓜，这点好处就把你唬住了？"
         },
         {
             "title": "Level Up",
-            "filename": "File:vo_vautour_bleu_levelup_002.ogg",
+            "filename": "File:vo_vautour_bleu_levelup_002.aac",
             "text": "给我的？（笑）有心了。"
         },
         {
             "title": "Pat Head",
-            "filename": "File:vo_vautour_bleu_head_001.ogg",
+            "filename": "File:vo_vautour_bleu_head_001.aac",
             "text": "有些人呐，真是越来越无法无天了。"
         },
         {
             "title": "Deploy",
-            "filename": "File:bt_vautour_bleu_jointeam_001.ogg",
+            "filename": "File:bt_vautour_bleu_jointeam_001.aac",
             "text": ""
         }
     ]

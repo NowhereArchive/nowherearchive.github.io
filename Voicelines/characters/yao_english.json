@@ -2,122 +2,122 @@
     "default": [
         {
             "title": "Obtain the Sinner",
-            "filename": "File:vo_yao_cacha_001.ogg",
+            "filename": "File:vo_yao_cacha_001.aac",
             "text": "Is it you who summoned me? When the Sun Crow rises, crops scorch, plants wither, and the great famine follows... Mortal, be prepared."
         },
         {
             "title": "Raise to Phase 1",
-            "filename": "File:vo_yao_promotion_001.ogg",
+            "filename": "File:vo_yao_promotion_001.aac",
             "text": "Thank you... even though I can't seem to recall anything."
         },
         {
             "title": "Raise to Phase 3",
-            "filename": "File:vo_yao_promotion2_001.ogg",
+            "filename": "File:vo_yao_promotion2_001.aac",
             "text": "The flaming feathers of the sunblaze shall shield the rivers for you."
         },
         {
             "title": "Level Start",
-            "filename": "File:vo_yao_battlebegin_001.ogg",
+            "filename": "File:vo_yao_battlebegin_001.aac",
             "text": "May there be no suffering beings wherever I go."
         },
         {
             "title": "Win Battles",
-            "filename": "File:vo_yao_battlewin_001.ogg",
+            "filename": "File:vo_yao_battlewin_001.aac",
             "text": "Did I also, in the past... incinerate them in the flames?"
         },
         {
             "title": "Lose Battles",
-            "filename": "File:vo_yao_battlelose_001.ogg",
+            "filename": "File:vo_yao_battlelose_001.aac",
             "text": "Worry not... The Sun Crow doesn't feel pain."
         },
         {
             "title": "Ultimate Skill",
-            "filename": "File:bt_yao_uniqueskill_001.ogg",
+            "filename": "File:bt_yao_uniqueskill_001.aac",
             "text": "Solarfire!"
         },
         {
             "title": "Die in Battles",
-            "filename": "File:bt_yao_dead_001.ogg",
+            "filename": "File:bt_yao_dead_001.aac",
             "text": "This is... the destiny of calamity..."
         },
         {
             "title": "Greeting",
-            "filename": "File:vo_yao_greeting_001.ogg",
+            "filename": "File:vo_yao_greeting_001.aac",
             "text": "Is it the herald of sunrise? ...No, it's you calling for me."
         },
         {
             "title": "Conversation 1",
-            "filename": "File:vo_yao_talk1_001.ogg",
+            "filename": "File:vo_yao_talk1_001.aac",
             "text": "Legend has it that I popped out of a crack from the sun... Scary how words get around, I'm clearly a child of Mania... Ah, is it not appropriate to say that?"
         },
         {
             "title": "Conversation 2",
-            "filename": "File:vo_yao_talk1_002.ogg",
+            "filename": "File:vo_yao_talk1_002.aac",
             "text": "Hunger, poverty, and slaughter... burn like an endless wildfire... It must be hard for you, to walk alongside calamity."
         },
         {
             "title": "Conversation 3",
-            "filename": "File:vo_yao_talk1_003.ogg",
+            "filename": "File:vo_yao_talk1_003.aac",
             "text": "Thank you for retrieving this body for me, and taking me to see this city untouched by disasters... The past me can finally rest when dusk comes."
         },
         {
             "title": "Special Conversation 1",
-            "filename": "File:vo_yao_talk2_001.ogg",
+            "filename": "File:vo_yao_talk2_001.aac",
             "text": "Slightly plump temple, and a hint of redness in between your brows. These signs... Fear not, it's a good omen."
         },
         {
             "title": "Special Conversation 2",
-            "filename": "File:vo_yao_talk2_002.ogg",
+            "filename": "File:vo_yao_talk2_002.aac",
             "text": "Fear and faith coexist, I had to become a presence to be feared... If I had the chance to go back in time... I would be sure to have a long, heart-to-heart talk with you."
         },
         {
             "title": "Special Conversation 3",
-            "filename": "File:vo_yao_talk2_003.ogg",
+            "filename": "File:vo_yao_talk2_003.aac",
             "text": "I was once worried that I couldn't protect all beings, and I was afraid that the devoured me would bring new disasters... Now everything is fine, fortunately, because of you."
         },
         {
             "title": "Full Compliance",
-            "filename": "File:vo_yao_obeyfull_001.ogg",
+            "filename": "File:vo_yao_obeyfull_001.aac",
             "text": "The next time ten suns appear in the sky, please promise me you will hold the bow. An arrow shot by someone of noble character, that's where I belong."
         },
         {
             "title": "Idle",
-            "filename": "File:vo_yao_idle_001.ogg",
+            "filename": "File:vo_yao_idle_001.aac",
             "text": "Crimson clouds and scorching heat... I fear a disaster has descended! ...Oh, it's just me."
         },
         {
             "title": "Annoyed",
-            "filename": "File:vo_yao_clicking_001.ogg",
+            "filename": "File:vo_yao_clicking_001.aac",
             "text": "The warmth of a human... If only I could touch you too."
         },
         {
             "title": "Special Attention",
-            "filename": "File:vo_yao_specialattention_001.ogg",
+            "filename": "File:vo_yao_specialattention_001.aac",
             "text": "It's you? ...It's rare to meet someone who has the courage to gaze directly at the sun."
         },
         {
             "title": "Dispatch",
-            "filename": "File:vo_yao_dispatch_001.ogg",
+            "filename": "File:vo_yao_dispatch_001.aac",
             "text": "A rare leisure stroll."
         },
         {
             "title": "Dispatch Complete",
-            "filename": "File:vo_yao_dispatch2_001.ogg",
+            "filename": "File:vo_yao_dispatch2_001.aac",
             "text": "Is this the treasure of this mortal world? I... I'm familiar with it..."
         },
         {
             "title": "Level Up",
-            "filename": "File:vo_yao_levelup_002.ogg",
+            "filename": "File:vo_yao_levelup_002.aac",
             "text": "Illuminate... broader territories."
         },
         {
             "title": "Deploy",
-            "filename": "File:bt_yao_jointeam_001.ogg",
+            "filename": "File:bt_yao_jointeam_001.aac",
             "text": "Turn into ashes!"
         },
         {
             "title": "Pat Head",
-            "filename": "File:vo_yao_head_001.ogg",
+            "filename": "File:vo_yao_head_001.aac",
             "text": "The glory of the sun cannot be obscured!"
         }
     ],
@@ -125,52 +125,52 @@
         {
             "title": "Obtain Attire",
             "text": "With the deepest reverence, I stand before you today, offering a sacred dance to the divine. In fulfilling these holy rights, I shall bring forth the Gods' revelations and be bestow blessings upon my homeland.",
-            "filename": "File:vo_yao_attire_cacha_001.ogg"
+            "filename": "File:vo_yao_attire_cacha_001.aac"
         },
         {
             "title": "Greeting",
             "text": "I was scratching my head over the auspicious reading in today's divination. Turns out it's because you were going to drop by.",
-            "filename": "File:vo_yao_attire_greeting_001.ogg"
+            "filename": "File:vo_yao_attire_greeting_001.aac"
         },
         {
             "title": "Ordinary Contact 1",
             "text": "The ancient teachings say that the wise conduct rituals with honesty and faithfulness in both word and deed. Well, I can't vouch for my honesty, but I'm definitely faithful to everyone's wishes. So by those ancient standards, does that make me at least half way wise?",
-            "filename": "File:vo_yao_attire_talk_001.ogg"
+            "filename": "File:vo_yao_attire_talk_001.aac"
         },
         {
             "title": "Ordinary Contact 2",
             "text": "Hmm. Today's divination reading says, reform entails bidding riddance to the old. Simply put, it's a divine message urging me to get rid of this paint shedding artifact.",
-            "filename": "File:vo_yao_attire_talk_002.ogg"
+            "filename": "File:vo_yao_attire_talk_002.aac"
         },
         {
             "title": "Ordinary Contact 3",
             "text": "Since the sacred dance allows no room for air, I once thought the gods were harsh and unreasonably demanding. But now I see, this dance isn't meant just for the Gods.",
-            "filename": "File:vo_yao_attire_hand_001.ogg"
+            "filename": "File:vo_yao_attire_hand_001.aac"
         },
         {
             "title": "Ordinary Contact 4",
             "text": "This is the ceremonial robe passed down through generations of seers. Its fabric steeped in the blessings of those who wore it. So, when my successors dance upon the altar in this robe, my benedictions will pass on to them, right? How lovely.",
-            "filename": "File:vo_yao_attire_leg_001.ogg"
+            "filename": "File:vo_yao_attire_leg_001.aac"
         },
         {
             "title": "Idle",
             "text": "Hmm... What story should I use to convince people to avoid this disaster? Got it! The Stone Lion's eyes turn red, an omen of land subsidence. I'll show up with the story tomorrow after I paint some pig blood on the Stone Lion tonight.",
-            "filename": "File:vo_yao_attire_idle_001.ogg"
+            "filename": "File:vo_yao_attire_idle_001.aac"
         },
         {
             "title": "Special Attention",
             "text": "Enjoy this dance to honor the gods? Then watch me closely and believe in me all the way until the very last note.",
-            "filename": "File:vo_yao_attire_specialattention_001.ogg"
+            "filename": "File:vo_yao_attire_specialattention_001.aac"
         },
         {
             "title": "Level Up",
             "text": "The divine voices are becoming ever more pronounced.",
-            "filename": "File:vo_yao_attire_levelup_001.ogg"
+            "filename": "File:vo_yao_attire_levelup_001.aac"
         },
         {
             "title": "Pat Head",
             "text": "How dare you, a mere mortal, just respect a holy person? Relax, I was just kidding. But seriously, don't mess with the ornaments of my hair. It's a real hassle to put them on, since each one is endowed with divine grace.",
-            "filename": "File:vo_yao_attire_head_001.ogg"
+            "filename": "File:vo_yao_attire_head_001.aac"
         }
     ]
 }

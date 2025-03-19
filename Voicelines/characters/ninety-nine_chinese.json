@@ -2,164 +2,164 @@
     "default": [
         {
             "title": "Obtain the Sinner",
-            "filename": "File:vo_ninety-nine_cacha_001.ogg",
+            "filename": "File:vo_ninety-nine_cacha_001.aac",
             "text": "是你……呵呵。我记得你的气味，到哪儿都能找到你。"
         },
         {
             "title": "Raise to Phase 1",
-            "filename": "File:vo_ninety-nine_promotion_001.ogg",
+            "filename": "File:vo_ninety-nine_promotion_001.aac",
             "text": "哈哈哈……你也要这力量？你也……想要一头野兽？"
         },
         {
             "title": "Raise to Phase 3",
-            "filename": "File:vo_ninety-nine_promotion2_001.ogg",
+            "filename": "File:vo_ninety-nine_promotion2_001.aac",
             "text": "给了我力量，就别松开枷锁——一刻也不行。"
         },
         {
             "title": "Level Start",
-            "filename": "File:vo_ninety-nine_battlebegin_001.ogg",
+            "filename": "File:vo_ninety-nine_battlebegin_001.aac",
             "text": "呵呵，好熟悉的味道。"
         },
         {
             "title": "Win Battles",
-            "filename": "File:vo_ninety-nine_battlewin_001.ogg",
+            "filename": "File:vo_ninety-nine_battlewin_001.aac",
             "text": "太快了，没用的家伙，结束得太快了！"
         },
         {
             "title": "Lose Battles",
-            "filename": "File:vo_ninety-nine_battlelose_001.ogg",
+            "filename": "File:vo_ninety-nine_battlelose_001.aac",
             "text": "放开我，还没结束！放开！"
         },
         {
             "title": "Ultimate Skill",
-            "filename": "File:bt_ninety-nine_uniqueskill_001.ogg",
+            "filename": "File:bt_ninety-nine_uniqueskill_001.aac",
             "text": "啊——"
         },
         {
             "title": "Die in Battles",
-            "filename": "File:bt_ninety-nine_dead_001.ogg",
+            "filename": "File:bt_ninety-nine_dead_001.aac",
             "text": "我....自由了吗"
         },
         {
             "title": "Greeting",
-            "filename": "File:vo_ninety-nine_greeting_001.ogg",
+            "filename": "File:vo_ninety-nine_greeting_001.aac",
             "text": "我知道来的人是你，我能听出你的脚步声。"
         },
         {
             "title": "Conversation 1",
-            "filename": "File:vo_ninety-nine_talk1_001.ogg",
+            "filename": "File:vo_ninety-nine_talk1_001.aac",
             "text": "他们要我的手臂，要我疯狂，要我破坏一切。他们想要制造怪物，却说我……是“最高杰作”。"
         },
         {
             "title": "Conversation 2",
-            "filename": "File:vo_ninety-nine_talk1_002.ogg",
+            "filename": "File:vo_ninety-nine_talk1_002.aac",
             "text": "我曾跟很多人拼死战斗。在他们之中，海拉不是最强的，却是最能扛的。"
         },
         {
             "title": "Conversation 3",
-            "filename": "File:vo_ninety-nine_talk1_003.ogg",
+            "filename": "File:vo_ninety-nine_talk1_003.aac",
             "text": "手臂会沸腾，身体会自己行动。不需要思考，不需要理智，他们要我暴走，说，破坏就是我的本能。"
         },
         {
             "title": "Special Conversation 1",
-            "filename": "File:vo_ninety-nine_talk2_001.ogg",
+            "filename": "File:vo_ninety-nine_talk2_001.aac",
             "text": "锁链？没什么，我习惯了。而且，现在挣脱，很简单。"
         },
         {
             "title": "Special Conversation 2",
-            "filename": "File:vo_ninety-nine_talk2_002.ogg",
+            "filename": "File:vo_ninety-nine_talk2_002.aac",
             "text": "别人叫我什么都无所谓。但我喜欢“九十九”……这是我第一个名字。"
         },
         {
             "title": "Special Conversation 3",
-            "filename": "File:vo_ninety-nine_talk2_003.ogg",
+            "filename": "File:vo_ninety-nine_talk2_003.aac",
             "text": "帕尔马的事，我记不清了。只记得黑暗里有海拉的声音。她一直在跟我说话，说辛迪加，地上，人。她说要带我离开。"
         },
         {
             "title": "Full Compliance",
-            "filename": "File:vo_ninety-nine_obeyfull_001.ogg",
+            "filename": "File:vo_ninety-nine_obeyfull_001.aac",
             "text": "你是第二个，我想却无法解决的人。从今以后，我会一直为你战斗的，直到精疲力竭的那天。"
         },
         {
             "title": "Idle",
-            "filename": "File:vo_ninety-nine_idle_001.ogg",
+            "filename": "File:vo_ninety-nine_idle_001.aac",
             "text": "……饿了。"
         },
         {
             "title": "Annoyed",
-            "filename": "File:vo_ninety-nine_clicking_001.ogg",
+            "filename": "File:vo_ninety-nine_clicking_001.aac",
             "text": "你想.....干什么？"
         },
         {
             "title": "Special Attention",
-            "filename": "File:vo_ninety-nine_specialattention_001.ogg",
+            "filename": "File:vo_ninety-nine_specialattention_001.aac",
             "text": "看好我，就像我看着你一样。"
         },
         {
             "title": "Dispatch",
-            "filename": "File:vo_ninety-nine_dispatch_001.ogg",
+            "filename": "File:vo_ninety-nine_dispatch_001.aac",
             "text": "我……尽力。"
         },
         {
             "title": "Dispatch Complete",
-            "filename": "File:vo_ninety-nine_dispatch2_001.ogg",
+            "filename": "File:vo_ninety-nine_dispatch2_001.aac",
             "text": "按你说的，结束了。"
         },
         {
             "title": "Level Up",
-            "filename": "File:vo_ninety-nine_levelup_002.ogg",
+            "filename": "File:vo_ninety-nine_levelup_002.aac",
             "text": "有意思。"
         },
         {
             "title": "Pat Head",
-            "filename": "File:vo_ninety-nine_head_001.ogg",
+            "filename": "File:vo_ninety-nine_head_001.aac",
             "text": "你这是……在安抚我？"
         },
         {
             "title": "Deploy",
-            "filename": "File:bt_ninety-nine_jointeam_001.ogg",
+            "filename": "File:bt_ninety-nine_jointeam_001.aac",
             "text": "I can feel my blood boiling."
         }
     ],
     "chaotic_restraint": [
         {
             "title": "Obtain Attire",
-            "filename": "File:vo_ninety-nine_chaotic_restraint_cacha_001.ogg",
+            "filename": "File:vo_ninety-nine_chaotic_restraint_cacha_001.aac",
             "text": "我是……帕尔马的生物兵器九十九。战斗……给我命令，我只需要战斗……"
         },
         {
             "title": "Level Up",
-            "filename": "File:vo_ninety-nine_chaotic_restraint_levelup_001.ogg",
+            "filename": "File:vo_ninety-nine_chaotic_restraint_levelup_001.aac",
             "text": "更强了……我会给他们一个痛快的。"
         },
         {
             "title": "Greeting",
-            "filename": "File:vo_ninety-nine_chaotic_restraint_greeting_001.ogg",
+            "filename": "File:vo_ninety-nine_chaotic_restraint_greeting_001.aac",
             "text": "你来了……下一场战斗，什么时候开始？"
         },
         {
             "title": "Ordinary Contact 1",
-            "filename": "File:vo_ninety-nine_chaotic_restraint_talk_001.ogg",
+            "filename": "File:vo_ninety-nine_chaotic_restraint_talk_001.aac",
             "text": "战斗，无休止的战斗，直到一方倒下……"
         },
         {
             "title": "Ordinary Contact 2",
-            "filename": "File:vo_ninety-nine_chaotic_restraint_talk_002.ogg",
+            "filename": "File:vo_ninety-nine_chaotic_restraint_talk_002.aac",
             "text": "疼痛会让人分心，所以想要活下去，就必须习惯疼痛的感觉。"
         },
         {
             "title": "Idle",
-            "filename": "File:vo_ninety-nine_chaotic_restraint_idle_001.ogg",
+            "filename": "File:vo_ninety-nine_chaotic_restraint_idle_001.aac",
             "text": "你好像一直都在这里，究竟有什么目的？"
         },
         {
             "title": "Annoyed",
-            "filename": "File:vo_ninety-nine_chaotic_restraint_clicking_001.ogg",
+            "filename": "File:vo_ninety-nine_chaotic_restraint_clicking_001.aac",
             "text": "咕噜……咕噜……"
         },
         {
             "title": "Special Attention",
-            "filename": "File:vo_ninety-nine_chaotic_restraint_specialattention_001.ogg",
+            "filename": "File:vo_ninety-nine_chaotic_restraint_specialattention_001.aac",
             "text": "如果不是为了战斗，为什么会来找我？我还有别的用处吗？"
         }
     ]
