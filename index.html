@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Voicelines Archive - Homepage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="Styles.css" rel="stylesheet">
+    <link href="NavBar.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <button title="logo" class="navbar-toggler" data-toggle="open-navbar1">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="/">
+                    <h4>Path To Nowhere Archive</h4>
+                </a>
+            </div>
+            <div class="navbar-menu" id="open-navbar1">
+                <ul class="navbar-nav">
+                    <li><a href="/Game">Game</a></li>
+                    <li><a href="CGs">CGs</a></li>
+                    <li><a href="Voicelines">Voicelines</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="site-note">
+        <p>Welcome to the Voicelines Archive! Navigate through different sections to explore characters and their voicelines.</p>
+        <p>This site is currently under development. Please bear with us as we continue to build out the content.</p>
+        <p>You can reach out via <a href="https://x.com/BadJTSX">Twitter/X</a></p>
+        <p class="donate">If you want to support the site you can do so by reporting errors, bugs or missing files.</p>
+    </div>
+
+    <h1>Explore the Archive</h1>
+
+    <div class="center-container">
+        <a href="Voicelines/" class="container-link">
+            <div class="skeleton"></div>
+            <img class="image-default" src="Hella1.png" alt="Voicelines Image" onload="this.style.display='block'; this.previousElementSibling.style.display='none';">
+            <img class="image-hover" src="Hella2.png" alt="Voicelines Hover Image">
+            <div class="text">Voicelines</div>
+        </a>
+        <a href="CGs/" class="container-link">
+            <div class="skeleton"></div>
+            <img class="image-default" src="Hecate1.png" alt="View All Voicelines Image" onload="this.style.display='block'; this.previousElementSibling.style.display='none';">
+            <img class="image-hover" src="Hecate2.png" alt="View All Voicelines Hover Image">
+            <div class="text">In-Game CGs</div>
+        </a>
+    </div>
+
+    <script>
+        // Script to handle navbar toggling on small screens
+        function handleSmallScreens() {
+            document.querySelector('.navbar-toggler')
+                .addEventListener('click', () => {
+                    let navbarMenu = document.querySelector('.navbar-menu');
+
+                    if (!navbarMenu.classList.contains('active')) {
+                        navbarMenu.classList.add('active');
+                    } else {
+                        navbarMenu.classList.remove('active');
+                    }
+                });
+        }
+
+        handleSmallScreens();
+    </script>
+</body>
+
+</html>

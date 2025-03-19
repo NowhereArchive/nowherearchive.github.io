@@ -1,0 +1,1032 @@
+[
+    {
+        "name": "000",
+        "traits": {
+            "alignment": "PESTILENCE",
+            "tendency": "Umbra",
+            "damageType": "Physical",
+            "birthplace/organization": "Unknown",
+            "rank": "S"
+        }
+    },
+    {
+        "name": "Adela",
+        "traits": {
+            "alignment": "SLOTH",
+            "tendency": "Umbra",
+            "damageType": "Physical",
+            "birthplace/organization": "Eastside",
+            "rank": "S"
+        }
+    },
+    {
+        "name": "Angell",
+        "traits": {
+            "alignment": "PESTILENCE",
+            "tendency": "Umbra",
+            "damageType": "Physical",
+            "birthplace/organization": "Syndicate",
+            "rank": "S"
+        }
+    },
+    {
+        "name": "Anne",
+        "traits": {
+            "alignment": "LOVE",
+            "tendency": "Catalyst",
+            "damageType": "Magic",
+            "birthplace/organization": "Syndicate",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Ariel",
+        "traits": {
+            "alignment": "LOVE",
+            "tendency": "Catalyst",
+            "damageType": "Magic",
+            "birthplace/organization": "Eastside",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Bai Yi",
+        "traits": {
+            "alignment": "TREACHERY",
+            "tendency": "Umbra",
+            "damageType": "Physical",
+            "birthplace/organization": "Unknown",
+            "rank": "S"
+        }
+    },
+    {
+        "name": "Bianca",
+        "traits": {
+            "alignment": "PESTILENCE",
+            "tendency": "Reticle",
+            "damageType": "Physical",
+            "birthplace/organization": "Eastside",
+            "rank": "S"
+        }
+    },
+    {
+        "name": "Cabernet",
+        "traits": {
+            "alignment": "SLOTH",
+            "tendency": "Catalyst",
+            "damageType": "Magic",
+            "birthplace/organization": "Eastside",
+            "rank": "S"
+        }
+    },
+    {
+        "name": "Cassia",
+        "traits": {
+            "alignment": "LOVE",
+            "tendency": "Catalyst",
+            "damageType": "Magic",
+            "birthplace/organization": "Eastside",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Chameleon",
+        "traits": {
+            "alignment": "HERESY",
+            "tendency": "Catalyst",
+            "damageType": "Magic",
+            "birthplace/organization": "Eastside",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Che",
+        "traits": {
+            "alignment": "LIMBO",
+            "tendency": "Fury",
+            "damageType": "Physical",
+            "birthplace/organization": "Syndicate",
+            "rank": "B"
+        }
+    },
+    {
+        "name": "Chelsea",
+        "traits": {
+            "alignment": "GREED",
+            "tendency": "Endura",
+            "damageType": "Physical",
+            "birthplace/organization": "Eastside",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Christina",
+        "traits": {
+            "alignment": "ANGER",
+            "tendency": "Fury",
+            "damageType": "Physical",
+            "birthplace/organization": "Eastside",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Cinnabar",
+        "traits": {
+            "alignment": "TREACHERY",
+            "tendency": "Endura",
+            "damageType": "Physical",
+            "birthplace/organization": "Eastside",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Coquelic",
+        "traits": {
+            "alignment": "LIMBO",
+            "tendency": "Catalyst",
+            "damageType": "True",
+            "birthplace/organization": "Eastside",
+            "rank": "S"
+        }
+    },
+    {
+        "name": "Corso",
+        "traits": {
+            "alignment": "VIOLENCE",
+            "tendency": "Fury",
+            "damageType": "Physical",
+            "birthplace/organization": "Syndicate",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Crache",
+        "traits": {
+            "alignment": "LIMBO",
+            "tendency": "Umbra",
+            "damageType": "Physical",
+            "birthplace/organization": "Syndicate",
+            "rank": "S"
+        }
+    },
+    {
+        "name": "Demolia",
+        "traits": {
+            "alignment": "LIMBO",
+            "tendency": "Endura",
+            "damageType": "Physical",
+            "birthplace/organization": "Syndicate",
+            "rank": "B"
+        }
+    },
+    {
+        "name": "Demon",
+        "traits": {
+            "alignment": "ANGER",
+            "tendency": "Endura",
+            "damageType": "Physical",
+            "birthplace/organization": "Syndicate",
+            "rank": "S"
+        }
+    },
+    {
+        "name": "Deren",
+        "traits": {
+            "alignment": "FRAUD",
+            "tendency": "Fury",
+            "damageType": "Physical",
+            "birthplace/organization": "Eastside",
+            "rank": "S"
+        }
+    },
+    {
+        "name": "Dolly",
+        "traits": {
+            "alignment": "VIOLENCE",
+            "tendency": "Fury",
+            "damageType": "Physical",
+            "birthplace/organization": "Syndicate",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Donald",
+        "traits": {
+            "alignment": "TREACHERY",
+            "tendency": "Fury",
+            "damageType": "Physical",
+            "birthplace/organization": "Syndicate",
+            "rank": "S"
+        }
+    },
+    {
+        "name": "Dove",
+        "traits": {
+            "alignment": "FAMINE",
+            "tendency": "Endura",
+            "damageType": "Magic",
+            "birthplace/organization": "Outlands",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Dreya",
+        "traits": {
+            "alignment": "IMMORTAL",
+            "tendency": "Reticle",
+            "damageType": "Physical",
+            "birthplace/organization": "▉▉",
+            "rank": "S"
+        }
+    },
+    {
+        "name": "Du Ruo",
+        "traits": {
+            "alignment": "FRAUD",
+            "tendency": "Catalyst",
+            "damageType": "Magic",
+            "birthplace/organization": "Eastia",
+            "rank": "S"
+        }
+    },
+    {
+        "name": "Dudu",
+        "traits": {
+            "alignment": "SLOTH",
+            "tendency": "Catalyst",
+            "damageType": "None",
+            "birthplace/organization": "Outlands",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "EMP",
+        "traits": {
+            "alignment": "TREACHERY",
+            "tendency": "Reticle",
+            "damageType": "Physical",
+            "birthplace/organization": "Syndicate",
+            "rank": "B"
+        }
+    },
+    {
+        "name": "Echo",
+        "traits": {
+            "alignment": "FRAUD",
+            "tendency": "Arcane",
+            "damageType": "Magic",
+            "birthplace/organization": "Eastside",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Eirene",
+        "traits": {
+            "alignment": "GREED",
+            "tendency": "Arcane",
+            "damageType": "Magic",
+            "birthplace/organization": "Campbell City",
+            "rank": "S"
+        }
+    },
+    {
+        "name": "Eleven",
+        "traits": {
+            "alignment": "SLOTH",
+            "tendency": "Arcane",
+            "damageType": "Magic",
+            "birthplace/organization": "Eastside",
+            "rank": "S"
+        }
+    },
+    {
+        "name": "Enfer",
+        "traits": {
+            "alignment": "LIMBO",
+            "tendency": "Catalyst",
+            "damageType": "Magic",
+            "birthplace/organization": "Eastside",
+            "rank": "S"
+        }
+    },
+    {
+        "name": "Etti",
+        "traits": {
+            "alignment": "FRAUD",
+            "tendency": "Arcane",
+            "damageType": "Magic",
+            "birthplace/organization": "Eastside",
+            "rank": "S"
+        }
+    },
+    {
+        "name": "Eureka",
+        "traits": {
+            "alignment": "LIMBO",
+            "tendency": "Umbra",
+            "damageType": "Physical",
+            "birthplace/organization": "Eastside",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Eve",
+        "traits": {
+            "alignment": "LOVE",
+            "tendency": "Catalyst",
+            "damageType": "Physical",
+            "birthplace/organization": "Eastside",
+            "rank": "S"
+        }
+    },
+    {
+        "name": "Flora",
+        "traits": {
+            "alignment": "TREACHERY",
+            "tendency": "Reticle",
+            "damageType": "Physical",
+            "birthplace/organization": "Eastside",
+            "rank": "B"
+        }
+    },
+    {
+        "name": "Garofano",
+        "traits": {
+            "alignment": "SLOTH",
+            "tendency": "Umbra",
+            "damageType": "Physical",
+            "birthplace/organization": "Eastside",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Gekkabijin",
+        "traits": {
+            "alignment": "LOVE",
+            "tendency": "Umbra",
+            "damageType": "Physical",
+            "birthplace/organization": "Syndicate",
+            "rank": "B"
+        }
+    },
+    {
+        "name": "Golan",
+        "traits": {
+            "alignment": "PESTILENCE",
+            "tendency": "Endura",
+            "damageType": "Physical",
+            "birthplace/organization": "Syndicate",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Hamel",
+        "traits": {
+            "alignment": "LOVE",
+            "tendency": "Catalyst",
+            "damageType": "True",
+            "birthplace/organization": "Eastside",
+            "rank": "S"
+        }
+    },
+    {
+        "name": "Hecate",
+        "traits": {
+            "alignment": "LIMBO",
+            "tendency": "Arcane",
+            "damageType": "Magic",
+            "birthplace/organization": "Unknown",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Hella",
+        "traits": {
+            "alignment": "VIOLENCE",
+            "tendency": "Fury",
+            "damageType": "Physical",
+            "birthplace/organization": "Syndicate",
+            "rank": "B"
+        }
+    },
+    {
+        "name": "Hestia",
+        "traits": {
+            "alignment": "IMMORTAL",
+            "tendency": "Arcane",
+            "damageType": "Magic",
+            "birthplace/organization": "▉▉",
+            "rank": "S"
+        }
+    },
+    {
+        "name": "Horo",
+        "traits": {
+            "alignment": "ANGER",
+            "tendency": "Fury",
+            "damageType": "Physical",
+            "birthplace/organization": "Syndicate",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Ignis",
+        "traits": {
+            "alignment": "HERESY",
+            "tendency": "Arcane",
+            "damageType": "Magic",
+            "birthplace/organization": "Eastside",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Iron",
+        "traits": {
+            "alignment": "ANGER",
+            "tendency": "Umbra",
+            "damageType": "Physical",
+            "birthplace/organization": "Eastside",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Jane",
+        "traits": {
+            "alignment": "VIOLENCE",
+            "tendency": "Reticle",
+            "damageType": "Physical",
+            "birthplace/organization": "Eastside",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Joan",
+        "traits": {
+            "alignment": "ANGER",
+            "tendency": "Arcane",
+            "damageType": "Magic",
+            "birthplace/organization": "Eastside",
+            "rank": "B"
+        }
+    },
+    {
+        "name": "K.K.",
+        "traits": {
+            "alignment": "VIOLENCE",
+            "tendency": "Endura",
+            "damageType": "Physical",
+            "birthplace/organization": "Syndicate",
+            "rank": "B"
+        }
+    },
+    {
+        "name": "Kawa-kawa",
+        "traits": {
+            "alignment": "HERESY",
+            "tendency": "Endura",
+            "damageType": "Physical",
+            "birthplace/organization": "WhiteSands",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Kelvin",
+        "traits": {
+            "alignment": "TREACHERY",
+            "tendency": "Arcane",
+            "damageType": "Magic",
+            "birthplace/organization": "Eastside",
+            "rank": "B"
+        }
+    },
+    {
+        "name": "Korryn",
+        "traits": {
+            "alignment": "FAMINE",
+            "tendency": "Reticle",
+            "damageType": "Physical",
+            "birthplace/organization": "Unknown",
+            "rank": "S"
+        }
+    },
+    {
+        "name": "L.L.",
+        "traits": {
+            "alignment": "PESTILENCE",
+            "tendency": "Catalyst",
+            "damageType": "True",
+            "birthplace/organization": "Eastside",
+            "rank": "S"
+        }
+    },
+    {
+        "name": "Labyrinth",
+        "traits": {
+            "alignment": "ANGER",
+            "tendency": "Umbra",
+            "damageType": "Physical",
+            "birthplace/organization": "Syndicate",
+            "rank": "B"
+        }
+    },
+    {
+        "name": "Lady Pearl",
+        "traits": {
+            "alignment": "SLOTH",
+            "tendency": "Reticle",
+            "damageType": "Physical",
+            "birthplace/organization": "Eastside",
+            "rank": "S"
+        }
+    },
+    {
+        "name": "Lamia",
+        "traits": {
+            "alignment": "HERESY",
+            "tendency": "Arcane",
+            "damageType": "Magic",
+            "birthplace/organization": "Eastside",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Langley",
+        "traits": {
+            "alignment": "TREACHERY",
+            "tendency": "Reticle",
+            "damageType": "Physical",
+            "birthplace/organization": "Paradeisos",
+            "rank": "S"
+        }
+    },
+    {
+        "name": "Letta",
+        "traits": {
+            "alignment": "FRAUD",
+            "tendency": "Catalyst",
+            "damageType": "None",
+            "birthplace/organization": "Eastside",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Levy",
+        "traits": {
+            "alignment": "GREED",
+            "tendency": "Endura",
+            "damageType": "Physical",
+            "birthplace/organization": "Eastside",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Lisa",
+        "traits": {
+            "alignment": "LIMBO",
+            "tendency": "Catalyst",
+            "damageType": "Magic",
+            "birthplace/organization": "Eastside",
+            "rank": "B"
+        }
+    },
+    {
+        "name": "Luvia Ray",
+        "traits": {
+            "alignment": "LIMBO",
+            "tendency": "Arcane",
+            "damageType": "Magic",
+            "birthplace/organization": "Eastside",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Lynn",
+        "traits": {
+            "alignment": "SLOTH",
+            "tendency": "Umbra",
+            "damageType": "Physical",
+            "birthplace/organization": "Syndicate",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Macchiato",
+        "traits": {
+            "alignment": "HERESY",
+            "tendency": "Catalyst",
+            "damageType": "Magic",
+            "birthplace/organization": "Eastside",
+            "rank": "B"
+        }
+    },
+    {
+        "name": "Mantis",
+        "traits": {
+            "alignment": "IMMORTAL",
+            "tendency": "Umbra",
+            "damageType": "Physical",
+            "birthplace/organization": "▉▉",
+            "rank": "S"
+        }
+    },
+    {
+        "name": "Matilda",
+        "traits": {
+            "alignment": "SLOTH",
+            "tendency": "Reticle",
+            "damageType": "Physical",
+            "birthplace/organization": "Eastside",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "McQueen",
+        "traits": {
+            "alignment": "TREACHERY",
+            "tendency": "Umbra",
+            "damageType": "Physical",
+            "birthplace/organization": "Eastside",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Mess",
+        "traits": {
+            "alignment": "HERESY",
+            "tendency": "Fury",
+            "damageType": "Physical",
+            "birthplace/organization": "Syndicate",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Mira",
+        "traits": {
+            "alignment": "FAMINE",
+            "tendency": "Fury",
+            "damageType": "Physical",
+            "birthplace/organization": "Tuco",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Moore",
+        "traits": {
+            "alignment": "PESTILENCE",
+            "tendency": "Endura",
+            "damageType": "Physical",
+            "birthplace/organization": "Eastside",
+            "rank": "S"
+        }
+    },
+    {
+        "name": "Mr. Fox",
+        "traits": {
+            "alignment": "GREED",
+            "tendency": "Catalyst",
+            "damageType": "Magic",
+            "birthplace/organization": "Eastside",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "NOX",
+        "traits": {
+            "alignment": "LIMBO",
+            "tendency": "Fury",
+            "damageType": "Physical",
+            "birthplace/organization": "DisSea",
+            "rank": "S"
+        }
+    },
+    {
+        "name": "Ninety-Nine",
+        "traits": {
+            "alignment": "VIOLENCE",
+            "tendency": "Fury",
+            "damageType": "Physical",
+            "birthplace/organization": "Unknown",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Nino",
+        "traits": {
+            "alignment": "LIMBO",
+            "tendency": "Endura",
+            "damageType": "Physical",
+            "birthplace/organization": "Eastside",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Oak Casket",
+        "traits": {
+            "alignment": "SLOTH",
+            "tendency": "Reticle",
+            "damageType": "Physical",
+            "birthplace/organization": "Syndicate",
+            "rank": "S"
+        }
+    },
+    {
+        "name": "Oliver",
+        "traits": {
+            "alignment": "TREACHERY",
+            "tendency": "Arcane",
+            "damageType": "Magic",
+            "birthplace/organization": "Eastside",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "OwO",
+        "traits": {
+            "alignment": "SLOTH",
+            "tendency": "Endura",
+            "damageType": "Physical",
+            "birthplace/organization": "Outlands",
+            "rank": "S"
+        }
+    },
+    {
+        "name": "Pacassi",
+        "traits": {
+            "alignment": "LOVE",
+            "tendency": "Fury",
+            "damageType": "Magic",
+            "birthplace/organization": "Mayek",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Peggy",
+        "traits": {
+            "alignment": "GREED",
+            "tendency": "Endura",
+            "damageType": "Physical",
+            "birthplace/organization": "Syndicate",
+            "rank": "B"
+        }
+    },
+    {
+        "name": "Pepper",
+        "traits": {
+            "alignment": "GREED",
+            "tendency": "Fury",
+            "damageType": "Physical",
+            "birthplace/organization": "Hess Village",
+            "rank": "B"
+        }
+    },
+    {
+        "name": "Pricilla",
+        "traits": {
+            "alignment": "GREED",
+            "tendency": "Reticle",
+            "damageType": "Physical",
+            "birthplace/organization": "Sutter Village",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Pylgia",
+        "traits": {
+            "alignment": "IMMORTAL",
+            "tendency": "Fury",
+            "damageType": "Physical",
+            "birthplace/organization": "▉▉",
+            "rank": "S"
+        }
+    },
+    {
+        "name": "Rahu",
+        "traits": {
+            "alignment": "ANGER",
+            "tendency": "Endura",
+            "damageType": "Physical",
+            "birthplace/organization": "Syndicate",
+            "rank": "S"
+        }
+    },
+    {
+        "name": "Raven",
+        "traits": {
+            "alignment": "FRAUD",
+            "tendency": "Arcane",
+            "damageType": "Magic",
+            "birthplace/organization": "Syndicate",
+            "rank": "S"
+        }
+    },
+    {
+        "name": "Rise",
+        "traits": {
+            "alignment": "PESTILENCE",
+            "tendency": "Fury",
+            "damageType": "Physical",
+            "birthplace/organization": "Eastside",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Roulecca",
+        "traits": {
+            "alignment": "ANGER",
+            "tendency": "Reticle",
+            "damageType": "Physical",
+            "birthplace/organization": "Syndicate",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Serpent",
+        "traits": {
+            "alignment": "LOVE",
+            "tendency": "Umbra",
+            "damageType": "Magic",
+            "birthplace/organization": "Syndicate",
+            "rank": "S"
+        }
+    },
+    {
+        "name": "Shalom",
+        "traits": {
+            "alignment": "SLOTH",
+            "tendency": "Reticle",
+            "damageType": "Magic",
+            "birthplace/organization": "Unknown",
+            "rank": "S"
+        }
+    },
+    {
+        "name": "Shawn",
+        "traits": {
+            "alignment": "FRAUD",
+            "tendency": "Catalyst",
+            "damageType": "Physical",
+            "birthplace/organization": "Eastside",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Shrooma",
+        "traits": {
+            "alignment": "PESTILENCE",
+            "tendency": "Umbra",
+            "damageType": "Physical",
+            "birthplace/organization": "Syndicate",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Stargazer",
+        "traits": {
+            "alignment": "HERESY",
+            "tendency": "Arcane",
+            "damageType": "Magic",
+            "birthplace/organization": "Unknown",
+            "rank": "S"
+        }
+    },
+    {
+        "name": "Sumire",
+        "traits": {
+            "alignment": "LOVE",
+            "tendency": "Umbra",
+            "damageType": "Physical",
+            "birthplace/organization": "Eastside",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Summer",
+        "traits": {
+            "alignment": "HERESY",
+            "tendency": "Reticle",
+            "damageType": "Physical",
+            "birthplace/organization": "Eastside",
+            "rank": "S"
+        }
+    },
+    {
+        "name": "Tetra",
+        "traits": {
+            "alignment": "GREED",
+            "tendency": "Umbra",
+            "damageType": "Physical",
+            "birthplace/organization": "Eastside",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Thistle",
+        "traits": {
+            "alignment": "LOVE",
+            "tendency": "Umbra",
+            "damageType": "Magic",
+            "birthplace/organization": "Eastside",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Uni",
+        "traits": {
+            "alignment": "LOVE",
+            "tendency": "Endura",
+            "damageType": "Physical",
+            "birthplace/organization": "Eastside",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Vanilla",
+        "traits": {
+            "alignment": "IMMORTAL",
+            "tendency": "Endura",
+            "damageType": "Physical",
+            "birthplace/organization": "▉▉",
+            "rank": "S"
+        }
+    },
+    {
+        "name": "Vautour Bleu",
+        "traits": {
+            "alignment": "FAMINE",
+            "tendency": "Arcane",
+            "damageType": "Magic",
+            "birthplace/organization": "Outlands",
+            "rank": "S"
+        }
+    },
+    {
+        "name": "Victoria",
+        "traits": {
+            "alignment": "LIMBO",
+            "tendency": "Arcane",
+            "damageType": "Magic",
+            "birthplace/organization": "Eastside",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Wendy",
+        "traits": {
+            "alignment": "VIOLENCE",
+            "tendency": "Fury",
+            "damageType": "Physical",
+            "birthplace/organization": "The Rust",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Wolverine",
+        "traits": {
+            "alignment": "VIOLENCE",
+            "tendency": "Reticle",
+            "damageType": "Physical",
+            "birthplace/organization": "The Rust",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Yanyan",
+        "traits": {
+            "alignment": "HERESY",
+            "tendency": "Reticle",
+            "damageType": "Magic",
+            "birthplace/organization": "Eastia",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Yao",
+        "traits": {
+            "alignment": "LIMBO",
+            "tendency": "Fury",
+            "damageType": "Magic",
+            "birthplace/organization": "Eastia",
+            "rank": "S"
+        }
+    },
+    {
+        "name": "Zephyr",
+        "traits": {
+            "alignment": "LOVE",
+            "tendency": "Catalyst",
+            "damageType": "Magic",
+            "birthplace/organization": "Eastside",
+            "rank": "A"
+        }
+    },
+    {
+        "name": "Zoya",
+        "traits": {
+            "alignment": "VIOLENCE",
+            "tendency": "Fury",
+            "damageType": "Physical",
+            "birthplace/organization": "Syndicate",
+            "rank": "S"
+        }
+    }
+]

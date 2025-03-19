@@ -1,0 +1,119 @@
+{
+    "default": [
+        {
+            "title": "Obtain the Sinner",
+            "filename": "File:vo_oliver_cacha_001.ogg",
+            "text": "我，我不知道什么禁闭者……奥利弗是好孩子哦，一定是你们搞错了！"
+        },
+        {
+            "title": "Raise to Phase 1",
+            "filename": "File:vo_oliver_promotion_001.ogg",
+            "text": "这是乖孩子才有的奖励，对吧？"
+        },
+        {
+            "title": "Raise to Phase 3",
+            "filename": "File:vo_oliver_promotion2_001.ogg",
+            "text": "局长想把谁变成玩偶呢？奥利弗都可以做到哦！"
+        },
+        {
+            "title": "Level Start",
+            "filename": "File:vo_oliver_battlebegin_001.ogg",
+            "text": "Please protect me, Chief!"
+        },
+        {
+            "title": "Win Battles",
+            "filename": "File:vo_oliver_battlewin_001.ogg",
+            "text": "诶——我只是轻轻挥了挥手而已，他们怎么不动了？"
+        },
+        {
+            "title": "Lose Battles",
+            "filename": "File:vo_oliver_battlelose_001.ogg",
+            "text": "哇——他们好厉害，居然敢反抗奥利弗的控制"
+        },
+        {
+            "title": "Ultimate Skill",
+            "filename": "File:bt_oliver_uniqueskill_001.ogg",
+            "text": "玩偶们，要乖乖听话哦！"
+        },
+        {
+            "title": "Die in Battles",
+            "filename": "File:bt_oliver_dead_001.ogg",
+            "text": "奇怪……奥利弗感觉不到自已的身体了……"
+        },
+        {
+            "title": "Greeting",
+            "filename": "File:vo_oliver_greeting_001.ogg",
+            "text": "局长大人~局长大人~局长大人！你喜欢听奥利弗这样叫你，对吧！"
+        },
+        {
+            "title": "Conversation 1",
+            "filename": "File:vo_oliver_talk1_001.ogg",
+            "text": "The wounds... w-were from falling over accidentally! Everyone at the Bureau h-has been very nice to me..."
+        },
+        {
+            "title": "Conversation 2",
+            "filename": "File:vo_oliver_talk1_002.ogg",
+            "text": "Don't listen to them. I'm so cute and well-behaved. Of course I won't bully others."
+        },
+        {
+            "title": "Conversation 3",
+            "filename": "File:vo_oliver_talk1_003.ogg",
+            "text": "Ma'am/Sir... They don't let me go out on my own to play... J-jailbreak? What's that? I don't understand."
+        },
+        {
+            "title": "Special Conversation 1",
+            "filename": "File:vo_oliver_talk2_001.ogg",
+            "text": "好羡慕辛迪加的“流浪儿”啊，他们靠自己就可以在那么危险的地方活下去。不像奥利弗，离开局长什么都做不好~"
+        },
+        {
+            "title": "Special Conversation 2",
+            "filename": "File:vo_oliver_talk2_002.ogg",
+            "text": "你看，这个娃娃是不是和奥利弗一样可爱？可是……它的心脏被坏人割破了，不管我怎么努力都修不好它……局长能帮帮我吗？"
+        },
+        {
+            "title": "Special Conversation 3",
+            "filename": "File:vo_oliver_talk2_003.ogg",
+            "text": "是不是只要把局长做成玩偶，我们就永远不会分开了……嗯？奥利弗这次说的是真心话哦~"
+        },
+        {
+            "title": "Full Compliance",
+            "filename": "File:vo_oliver_obeyfull_001.ogg",
+            "text": "如果有个小孩做过很多很多坏事，但他已经知道错了，局长会讨厌他吗？……奥利弗，不想被讨厌，尤其是你。"
+        },
+        {
+            "title": "Idle",
+            "filename": "File:vo_oliver_idle_001.ogg",
+            "text": "又有讨厌鬼说奥利弗不是“乖孩子”，该怎么办呢……嗯，趁局长不在，去处理一下他们吧~"
+        },
+        {
+            "title": "Annoyed",
+            "filename": "File:vo_oliver_clicking_001.ogg",
+            "text": "你找死吗！……哈哈，局长吓到啦！刚刚是奥利弗跟你开玩笑的，是不是演得很像？"
+        },
+        {
+            "title": "Special Attention",
+            "filename": "File:vo_oliver_specialattention_001.ogg",
+            "text": "局长为什么这样盯着奥利弗？是奥利弗做了什么坏事，让局长不开心了吗……"
+        },
+        {
+            "title": "Dispatch",
+            "filename": "File:vo_oliver_dispatch_001.ogg",
+            "text": "Shouldn't I leave this kind of manual work to adults? I just want to stay with you, Chief."
+        },
+        {
+            "title": "Dispatch Complete",
+            "filename": "File:vo_oliver_dispatch2_001.ogg",
+            "text": "奥利弗为了局长那——么努力，局长都不夸夸我吗？"
+        },
+        {
+            "title": "Level Up",
+            "filename": "File:vo_oliver_levelup_002.ogg",
+            "text": "I knew you'd like me best, Chief!"
+        },
+        {
+            "title": "Deploy",
+            "filename": "File:bt_oliver_jointeam_001.ogg",
+            "text": "For you... I will gather the courage to enter the battlefield!"
+        }
+    ]
+}

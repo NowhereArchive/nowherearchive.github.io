@@ -1,0 +1,119 @@
+{
+    "default": [
+        {
+            "title": "Obtain the Sinner",
+            "filename": "File:vo_rise_cacha_001.ogg",
+            "text": "我可以为你工作，但事先声明，在排期合理的前提下，我不接受加班。除非MBCC能承诺支付我四倍时薪，我才勉强同意考虑一下。"
+        },
+        {
+            "title": "Raise to Phase 1",
+            "filename": "File:vo_rise_promotion_001.ogg",
+            "text": "我们的工作取得了阶段性的成果。"
+        },
+        {
+            "title": "Raise to Phase 3",
+            "filename": "File:vo_rise_promotion2_001.ogg",
+            "text": "一切恶行……都会肃清于这把光剑之下！"
+        },
+        {
+            "title": "Level Start",
+            "filename": "File:vo_rise_battlebegin_001.ogg",
+            "text": "这些碍眼的垃圾，我一个都不会放过。"
+        },
+        {
+            "title": "Win Battles",
+            "filename": "File:vo_rise_battlewin_001.ogg",
+            "text": "哈啊——！连空气都变得清新多了！"
+        },
+        {
+            "title": "Lose Battles",
+            "filename": "File:vo_rise_battlelose_001.ogg",
+            "text": "下一次，我会把你们彻底劈碎！"
+        },
+        {
+            "title": "Ultimate Skill",
+            "filename": "File:bt_rise_uniqueskill_001.ogg",
+            "text": "不堪一击！"
+        },
+        {
+            "title": "Die in Battles",
+            "filename": "File:bt_rise_dead_001.ogg",
+            "text": "我还得站起来……去改变这一切……！"
+        },
+        {
+            "title": "Greeting",
+            "filename": "File:vo_rise_greeting_001.ogg",
+            "text": "这就是今天的任务安排？收到，我会在下班之前提交一版报告。"
+        },
+        {
+            "title": "Conversation 1",
+            "filename": "File:vo_rise_talk1_001.ogg",
+            "text": "我所有的工作压力几乎都来自于工作中接触的人，而不是工作本身。"
+        },
+        {
+            "title": "Conversation 2",
+            "filename": "File:vo_rise_talk1_002.ogg",
+            "text": "还在加班？去做些更有意义的事吧，例如多读点书之类的。《狄斯劳动条例》就不错，我曾在涅槃内部的阅读会上分享过它，推荐你也去看看。"
+        },
+        {
+            "title": "Conversation 3",
+            "filename": "File:vo_rise_talk1_003.ogg",
+            "text": "不公的待遇我会直接提出，错误的提议我会当场反驳。混乱的现象就该得到纠正，否则这个世界还能有什么进步可言？"
+        },
+        {
+            "title": "Special Conversation 1",
+            "filename": "File:vo_rise_talk2_001.ogg",
+            "text": "宣泄压力的方式有很多，我的习惯是去打壁球。我会把壁球当做那些让我不爽的事物，再将它们狠狠击飞出去，为此我能消耗一整晚的时间。你如有需要，我可以把地址推给你。"
+        },
+        {
+            "title": "Special Conversation 2",
+            "filename": "File:vo_rise_talk2_002.ogg",
+            "text": "我的第一个上司是个尸位素餐的废物，所以被我扔进回收站了；我的第二个上司实力很强，却总让我怀疑她所有的天赋全都点在了智商上。而你，虽然不太像个上位者，却已经算是我遇到过最好的上司。"
+        },
+        {
+            "title": "Special Conversation 3",
+            "filename": "File:vo_rise_talk2_003.ogg",
+            "text": "童年时大家应该都憧憬过吧，小说里那种英雄式的主角。可惜，现实里不是所有人都像天选之人那样拥有能战胜一切邪恶的力量，最终要么被吃干抹净，要么就同流合污。但我不想被他们改变，所以选择去改变他们。"
+        },
+        {
+            "title": "Full Compliance",
+            "filename": "File:vo_rise_obeyfull_001.ogg",
+            "text": "为你工作我感到放松。不是工作内容简单的意思，而是因为……我的内心终于得到了喘息，不必再被过载的重压追赶。你身边有个理想的世界正在一点一点建立，虽然还只是个雏形……但我看到了它完成的未来。"
+        },
+        {
+            "title": "Idle",
+            "filename": "File:vo_rise_idle_001.ogg",
+            "text": "劳逸结合？说得好，是时候出门去倒杯狄式浓缩了。"
+        },
+        {
+            "title": "Annoyed",
+            "filename": "File:vo_rise_clicking_001.ogg",
+            "text": "再烦我，小心我对着你的脸劈下去。"
+        },
+        {
+            "title": "Special Attention",
+            "filename": "File:vo_rise_specialattention_001.ogg",
+            "text": "有事快说，不要耽误我准时下班，"
+        },
+        {
+            "title": "Dispatch",
+            "filename": "File:vo_rise_dispatch_001.ogg",
+            "text": "需求收到。"
+        },
+        {
+            "title": "Dispatch Complete",
+            "filename": "File:vo_rise_dispatch2_001.ogg",
+            "text": "工作结束，我下班了。"
+        },
+        {
+            "title": "Level Up",
+            "filename": "File:vo_rise_levelup_002.ogg",
+            "text": "新模型的工作效率有所提升。"
+        },
+        {
+            "title": "Deploy",
+            "filename": "File:bt_rise_jointeam_001.ogg",
+            "text": "Nice! I haven't had a chance to decompress in ages."
+        }
+    ]
+}

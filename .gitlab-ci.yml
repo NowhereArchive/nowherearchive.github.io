@@ -1,0 +1,14 @@
+image: node:latest
+
+pages:
+  script:
+    - apt-get update && apt-get install -y rsync
+    - mkdir .public
+    - rsync -av --exclude='Voicelines/audio/' --exclude='.git/' ./ .public/
+    - mv .public public
+
+  artifacts:
+    paths:
+    - public
+  only:
+    - main
