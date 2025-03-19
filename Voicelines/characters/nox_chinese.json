@@ -2,226 +2,226 @@
     "default": [
         {
             "title": "Obtain the Sinner",
-            "filename": "File:vo_nox_cacha_001.ogg",
+            "filename": "File:vo_nox_cacha_001.aac",
             "text": "我看得到……侵蚀你们的痛苦，和疯狂……"
         },
         {
             "title": "Raise to Phase 1",
-            "filename": "File:vo_nox_promotion_001.ogg",
+            "filename": "File:vo_nox_promotion_001.aac",
             "text": "越强大的禁闭者……也越接近毁灭……"
         },
         {
             "title": "Raise to Phase 3",
-            "filename": "File:vo_nox_promotion2_001.ogg",
+            "filename": "File:vo_nox_promotion2_001.aac",
             "text": "深渊，不再是我的囚笼。"
         },
         {
             "title": "Level Start",
-            "filename": "File:vo_nox_battlebegin_001.ogg",
+            "filename": "File:vo_nox_battlebegin_001.aac",
             "text": "我听到深渊的呼唤……"
         },
         {
             "title": "Win Battles",
-            "filename": "File:vo_nox_battlewin_001.ogg",
+            "filename": "File:vo_nox_battlewin_001.aac",
             "text": "它们不用再痛苦了……这样就好。"
         },
         {
             "title": "Lose Battles",
-            "filename": "File:vo_nox_battlelose_001.ogg",
+            "filename": "File:vo_nox_battlelose_001.aac",
             "text": "不，它们还没有安息……"
         },
         {
             "title": "Ultimate Skill",
-            "filename": "File:bt_nox_uniqueskill_001.ogg",
+            "filename": "File:bt_nox_uniqueskill_001.aac",
             "text": "这才是你们的归宿！"
         },
         {
             "title": "Die in Battles",
-            "filename": "File:bt_nox_dead_001.ogg",
+            "filename": "File:bt_nox_dead_001.aac",
             "text": "我……不想……！"
         },
         {
             "title": "Greeting",
-            "filename": "File:vo_nox_greeting_001.ogg",
+            "filename": "File:vo_nox_greeting_001.aac",
             "text": "差一点，我就又被那些声音吞噬。还好……你来了。"
         },
         {
             "title": "Conversation 1",
-            "filename": "File:vo_nox_talk1_001.ogg",
+            "filename": "File:vo_nox_talk1_001.aac",
             "text": "这把剑沾染过的血……我永远不会忘记。"
         },
         {
             "title": "Conversation 2",
-            "filename": "File:vo_nox_talk1_002.ogg",
+            "filename": "File:vo_nox_talk1_002.aac",
             "text": "“死神”——禁闭者会这么叫我。我……喜欢这个称呼。"
         },
         {
             "title": "Conversation 3",
-            "filename": "File:vo_nox_talk1_003.ogg",
+            "filename": "File:vo_nox_talk1_003.aac",
             "text": "这具身体曾经有过灵魂。她的记忆，她的名字，都被深渊吞噬了。我不是她……我只是她的残骸。"
         },
         {
             "title": "Special Conversation 1",
-            "filename": "File:vo_nox_talk2_001.ogg",
+            "filename": "File:vo_nox_talk2_001.aac",
             "text": "变成这副模样……也不全是坏处。如果没有感染，恐怕我连正常的行走都无法做到。"
         },
         {
             "title": "Special Conversation 2",
-            "filename": "File:vo_nox_talk2_002.ogg",
+            "filename": "File:vo_nox_talk2_002.aac",
             "text": "我还记得，朝阳从东边升起，阳光照进窗户，落在我身上。那曾是我最期待的时刻。那究竟是……什么时候的记忆呢？"
         },
         {
             "title": "Special Conversation 3",
-            "filename": "File:vo_nox_talk2_003.ogg",
+            "filename": "File:vo_nox_talk2_003.aac",
             "text": "对我来说，只要有你在，死亡……就不再是唯一的答案。"
         },
         {
             "title": "Full Compliance",
-            "filename": "File:vo_nox_obeyfull_001.ogg",
+            "filename": "File:vo_nox_obeyfull_001.aac",
             "text": "你让我察觉到许多……不熟悉的情绪。我期待你的到来，想听你说更多，想看到你的笑容。这也是被我忘记的过去吗？我想……留在你身边。"
         },
         {
             "title": "Idle",
-            "filename": "File:vo_nox_idle_001.ogg",
+            "filename": "File:vo_nox_idle_001.aac",
             "text": "是的，我听到了……很痛苦吧？"
         },
         {
             "title": "Annoyed",
-            "filename": "File:vo_nox_clicking_001.ogg",
+            "filename": "File:vo_nox_clicking_001.aac",
             "text": "这么做没有意义。我早就……什么都感觉不到了。"
         },
         {
             "title": "Special Attention",
-            "filename": "File:vo_nox_specialattention_001.ogg",
+            "filename": "File:vo_nox_specialattention_001.aac",
             "text": "你居然愿意，和我这样的……怪物，待在一起吗？"
         },
         {
             "title": "Dispatch",
-            "filename": "File:vo_nox_dispatch_001.ogg",
+            "filename": "File:vo_nox_dispatch_001.aac",
             "text": "我愿意为你在世间行走。"
         },
         {
             "title": "Dispatch Complete",
-            "filename": "File:vo_nox_dispatch2_001.ogg",
+            "filename": "File:vo_nox_dispatch2_001.aac",
             "text": "这样的结果，满足你的期待吗？"
         },
         {
             "title": "Level Up",
-            "filename": "File:vo_nox_levelup_002.ogg",
+            "filename": "File:vo_nox_levelup_002.aac",
             "text": "又近了一步……"
         },
         {
             "title": "Pat Head",
-            "filename": "File:vo_nox_head_001.ogg",
+            "filename": "File:vo_nox_head_001.aac",
             "text": "不要这么做，这样……会很危险。"
         },
         {
             "title": "Deploy",
-            "filename": "File:bt_nox_jointeam_001.ogg",
+            "filename": "File:bt_nox_jointeam_001.aac",
             "text": "I'll relieve them of pain..."
         }
     ],
     "ashen_prayer": [
         {
             "title": "Obtain Attire",
-            "filename": "File:vo_nox_ashen_prayer_cacha_001.ogg",
+            "filename": "File:vo_nox_ashen_prayer_cacha_001.aac",
             "text": "阳光、教堂、红色的花……真让人怀念……奇怪，怀念是什么？"
         },
         {
             "title": "Greeting",
-            "filename": "File:vo_nox_ashen_prayer_greeting_001.ogg",
+            "filename": "File:vo_nox_ashen_prayer_greeting_001.aac",
             "text": "祈祷，得到了回应……你回来了。"
         },
         {
             "title": "Ordinary Contact 1",
-            "filename": "File:vo_nox_ashen_prayer_talk_001.ogg",
+            "filename": "File:vo_nox_ashen_prayer_talk_001.aac",
             "text": "我知道，祈求并不能为我带来安宁，可过去的我别无他法。万幸，如今你在这里。"
         },
         {
             "title": "Ordinary Contact 2",
-            "filename": "File:vo_nox_ashen_prayer_talk_002.ogg",
+            "filename": "File:vo_nox_ashen_prayer_talk_002.aac",
             "text": "在内海中行走时，我无时无刻不在祈祷着能看到曙光。这追逐的过程，给了我继续下去的力量。"
         },
         {
             "title": "Ordinary Contact 3",
-            "filename": "File:vo_nox_ashen_prayer_hand_001.ogg",
+            "filename": "File:vo_nox_ashen_prayer_hand_001.aac",
             "text": "我还记得，内海的边缘有一座小教堂。那里能看见阳光，我很喜欢……可是，那次离开之后，我就再也没有找到过那个地方……"
         },
         {
             "title": "Ordinary Contact 4",
-            "filename": "File:vo_nox_ashen_prayer_leg_001.ogg",
+            "filename": "File:vo_nox_ashen_prayer_leg_001.aac",
             "text": "你更喜欢，这副姿态吗？我可以一直保持这样，如果这是你的愿望……"
         },
         {
             "title": "Idle",
-            "filename": "File:vo_nox_ashen_prayer_idle_001.ogg",
+            "filename": "File:vo_nox_ashen_prayer_idle_001.aac",
             "text": "请为他们……为我们，带去安宁……"
         },
         {
             "title": "Level Up",
-            "filename": "File:vo_nox_ashen_prayer_levelup_001.ogg",
+            "filename": "File:vo_nox_ashen_prayer_levelup_001.aac",
             "text": "谢谢你，即便我不曾祈求过获得力量。"
         },
         {
             "title": "Pat Head",
-            "filename": "File:vo_nox_ashen_prayer_head_001.ogg",
+            "filename": "File:vo_nox_ashen_prayer_head_001.aac",
             "text": "谢谢你，我感觉到了温暖。"
         },
         {
             "title": "Special Attention",
-            "filename": "File:vo_nox_ashen_prayer_specialattention_001.ogg",
+            "filename": "File:vo_nox_ashen_prayer_specialattention_001.aac",
             "text": "你找到了我……是有什么无法实现的愿望吗？别担心，我会为你祈祷的。"
         }
     ],
     "gloom_of_daybreak": [
         {
             "title": "Obtain Attire",
-            "filename": "File:vo_nox_poxiaozhian_cacha_001.ogg",
+            "filename": "File:vo_nox_poxiaozhian_cacha_001.aac",
             "text": "我是诺克斯，追猎妖鬼之人，最后的黑剑。命定之人啊，请告诉我，你是否也在寻求一场决战，为人类争取那缥缈的黎明……若是如此，便请使用我吧！"
         },
         {
             "title": "Greeting",
-            "filename": "File:vo_nox_poxiaozhian_greeting_001.ogg",
+            "filename": "File:vo_nox_poxiaozhian_greeting_001.aac",
             "text": "启程吧，太阳已经升起，我们没有太多时间了。"
         },
         {
             "title": "Ordinary Contact 1",
-            "filename": "File:vo_nox_poxiaozhian_talk_001.ogg",
+            "filename": "File:vo_nox_poxiaozhian_talk_001.aac",
             "text": "黑剑，是混合了妖鬼血肉的异类，战斗的兵器。无论哪方获胜，这个世界都不再会有我们的容身之所。"
         },
         {
             "title": "Ordinary Contact 2",
-            "filename": "File:vo_nox_poxiaozhian_talk_002.ogg",
+            "filename": "File:vo_nox_poxiaozhian_talk_002.aac",
             "text": "妖鬼……是自不知名的黑暗中涌现的恶魔，噬人的怪物。它们中的一部分或许还会保留人类的外观，但请不要被蒙蔽——妖鬼没有情感，只会被无尽的饥饿所左右。从遇见它们的那一刻起，就只剩下战斗这一个选择。"
         },
         {
             "title": "Ordinary Contact 3",
-            "filename": "File:vo_nox_poxiaozhian_hand_001.ogg",
+            "filename": "File:vo_nox_poxiaozhian_hand_001.aac",
             "text": "死亡天使……他们是这么称呼我的吗？真可惜，我不是无血无泪的天使……我没有翅膀，明明只能在地上爬行，却还是想要仰望天空。"
         },
         {
             "title": "Ordinary Contact 4",
-            "filename": "File:vo_nox_poxiaozhian_leg_001.ogg",
+            "filename": "File:vo_nox_poxiaozhian_leg_001.aac",
             "text": "湖边的日出，宁静的村庄……那是我成为黑剑之后仅剩的记忆。妖鬼的到来撕碎了一切，也包括我的过去……"
         },
         {
             "title": "Idle",
-            "filename": "File:vo_nox_poxiaozhian_idle_001.ogg",
+            "filename": "File:vo_nox_poxiaozhian_idle_001.aac",
             "text": "妖鬼的血肉终将吞噬我的理性，这是每一个黑剑的宿命……等那天到来的时候，请给予我安宁……我不想毁掉曾经守护的一切。"
         },
         {
             "title": "Special Attention",
-            "filename": "File:vo_nox_poxiaozhian_specialattention_001.ogg",
+            "filename": "File:vo_nox_poxiaozhian_specialattention_001.aac",
             "text": "祈求换不来奇迹，更换不来妖鬼的怜悯……唯有战斗，才能给予我们活下去的权力……命定之人啊，我会成为你手中的利刃，为你，为每一个挣扎求生的人带去最后的希望！"
         },
         {
             "title": "Pat Head",
-            "filename": "File:vo_nox_poxiaozhian_head_001.ogg",
+            "filename": "File:vo_nox_poxiaozhian_head_001.aac",
             "text": "不用担心，我不会离开你的。"
         },
         {
             "title": "Level Up",
-            "filename": "File:vo_nox_poxiaozhian_levelup_001.ogg",
+            "filename": "File:vo_nox_poxiaozhian_levelup_001.aac",
             "text": "这是必要的力量……也是必要的牺牲。"
         }
     ]

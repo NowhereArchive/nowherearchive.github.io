@@ -2,34 +2,34 @@
     "welcome": [
         {
             "title": "vo_cgplot_01",
-            "filename": "242979285.ogg",
+            "filename": "242979285.aac",
             "text": "Welcome to the Minos Bureau of Crisis Control Chief."
         },
         {
             "title": "vo_cgplot_08",
-            "filename": "24572117.ogg",
+            "filename": "24572117.aac",
             "text": "Great. You'll be welcomed."
         },
         {
             "title": "vo_cgplot_1318",
-            "filename": "863062629.ogg",
+            "filename": "863062629.aac",
             "text": "Welcome back, Chief. You've been sorely missed."
         },
         {
             "title": "vo_event_00001",
-            "filename": "136382578.ogg",
+            "filename": "136382578.aac",
             "text": "I oversaw the entirety of the separation of the sinners. Welcome back. Chief."
         },
         {
             "title": "vo_event_20303",
-            "filename": "327061880.ogg",
+            "filename": "327061880.aac",
             "text": "Welcome back, Chief."
         }
     ],
     "shalom": [
         {
             "title": "vo_shalom_trial",
-            "filename": "839232383.ogg",
+            "filename": "839232383.aac",
             "text": "I didn't expect you to show up in person, ma'am. There's an urgent document requiring Chiefs authorization. Could you spare a few minutes?"
         }
     ]

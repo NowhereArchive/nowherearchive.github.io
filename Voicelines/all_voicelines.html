@@ -138,7 +138,7 @@
                 lineDiv.classList.add('voiceline');
                 lineDiv.innerHTML = `
                     <p>${voiceline.character} - ${voiceline.language} - ${voiceline.attire}: ${voiceline.title}</p>
-                    <button onclick="playVoice('https://gitlab.com/NowhereArchive/nowherearchive.gitlab.io/-/raw/main/Voicelines/audio/${sanitizeName(voiceline.character)}/${sanitizeName(voiceline.language)}/${sanitizeName(voiceline.attire)}/${sanitizeName(voiceline.filename)}')">Play</button>
+                    <button onclick="playVoice('https://raw.githubusercontent.com/NowhereArchive/NowhereAudios/main/audio/${sanitizeName(voiceline.character)}/${sanitizeName(voiceline.language)}/${sanitizeName(voiceline.attire)}/${sanitizeName(voiceline.filename)}')">Play</button>
                     <button onclick="pauseVoice()">Stop</button>
                     <p class="voiceline-text">${voiceline.text}</p>
                 `;
