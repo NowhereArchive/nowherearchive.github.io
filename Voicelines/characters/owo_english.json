@@ -120,5 +120,47 @@
             "filename": "File:bt_owo_jointeam_001.aac",
             "text": "Haha, tremble before me, you fiends! The queen of lion dancing is here!"
         }
+    ],
+    "serendipity_poem": [
+        {
+            "title": "Obtain Attire",
+            "filename": "File:vo_owo_serendipity_poem_cacha_001.aac",
+            "text": "Hey, here, over here! Heads up! The world's greatest, happiest, and baddest residential land dances about to begin! Listen up everyone! I wish you health and wealth and happiness every day!"
+        },
+        {
+            "title": "Level Up",
+            "filename": "File:vo_owo_serendipity_poem_levelup_001.aac",
+            "text": "Hey, you're roarsome! Come on! Let's roar and roll!"
+        },
+        {
+            "title": "Greeting",
+            "filename": "File:vo_owo_serendipity_poem_greeting_001.aac",
+            "text": "I, OwO, the unparalleled door god, will protect everyone for the whole new year. With OwO here, all evil doers will be swept out of my way."
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "filename": "File:vo_owo_serendipity_poem_talk_001.aac",
+            "text": "The gongs and drums made drown out my voice. The firecrackers might outshine my hello. So, right this moment, I'm going to wish you a year of peaceful sleep and fine food every day."
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "filename": "File:vo_owo_serendipity_poem_talk_002.aac",
+            "text": "Wow! Look at those lanterns! The fireworks! Are they prepared for me? Good job, you dispaz! Rest assured, I'll never let you down! OwO and her lion are gonna throw a show to everyone everywhere!"
+        },
+        {
+            "title": "Idle",
+            "filename": "File:vo_owo_serendipity_poem_idle_001.aac",
+            "text": "I practiced on the plum blossom pillars, popping on your gate is just easy peasy. I could never fall- Oh, my, that was close."
+        },
+        {
+            "title": "Annoyed",
+            "filename": "File:vo_owo_serendipity_poem_clicking_001.aac",
+            "text": "Oy you DisCity chump, dare you touch the armor of the door god? Alright, today's a lucky day, so I might spare you just this once, and I grant you permission to touch it now, just for once."
+        },
+        {
+            "title": "Special Attention",
+            "filename": "File:vo_owo_serendipity_poem_specialattention_001.aac",
+            "text": "This is the new costume OwO prepare for the show. And this is the new lion head the folks at Drifter Camp made with me. There there, DisPal. You can flatter me now."
+        }
     ]
 }

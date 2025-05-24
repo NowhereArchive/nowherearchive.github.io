@@ -172,5 +172,58 @@
             "filename": "File:vo_shalom_yehuaruzhou_specialattention_001.aac",
             "text": "You like being with me? Hehe... Don't worry. I won't leave."
         }
+    ],
+    "undawning_nighttide": [
+        {
+            "title": "Level Up",
+            "text": "Nicely done, my dear.",
+            "filename": "File:vo_shalom_undawning_nighttide_levelup_002.aac"
+        },
+        {
+            "title": "Pat Head",
+            "text": "Quite naughty, aren't we? Come, show me what you're really capable of.",
+            "filename": "File:vo_shalom_undawning_nighttide_head_001.aac"
+        },
+        {
+            "title": "Obtain Attire",
+            "text": "The tree's tender sprouts left their marks on us... Will you forsake the garden and join me in this undawning night?",
+            "filename": "File:vo_shalom_undawning_nighttide_cacha_001.aac"
+        },
+        {
+            "title": "Greeting",
+            "text": "The ebony moon rises from the crimson sea, casting its glow upon your path. I've always known you'd find your way to me.",
+            "filename": "File:vo_shalom_undawning_nighttide_greeting_001.aac"
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "text": "To be banished from the garden is to be freed from all restraints. We are the wildest of rebels, yet bound by loyalty to none but the two of us.",
+            "filename": "File:vo_shalom_undawning_nighttide_talk_001.aac"
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "text": "Unlike the garden, these crimson waters birth only the \"unholy\"—broken, chaotic, yet brimming with life. We shed our brittle façades, reconstituting in defiance of the light, to be reborn in this eternal, undawning night.",
+            "filename": "File:vo_shalom_undawning_nighttide_talk_002.aac"
+        },
+        {
+            "title": "Ordinary Contact 3",
+            "text": "You are my favorite, so listen to me when I speak... Yes, just like this—empty, still, unburdened by any thought. Stay with me a while longer, before the inevitable reckoning arrives.",
+            "filename": "File:vo_shalom_undawning_nighttide_talk_003.aac"
+        },
+        {
+            "title": "Ordinary Contact 4",
+            "text": "Oaths and promises are mere whispers in the wind. What endures is the present—like moonlight, and the two of us, here, in this fleeting moment.",
+            "filename": "File:vo_shalom_undawning_nighttide_talk_004.aac"
+        },
+        {
+            "title": "Idle",
+            "text": "Shhh... close your eyes and listen. Do you feel it? The pulse of the sea, the rhythm of the heart. That, my dear, is the breath of freedom.",
+            "filename": "File:vo_shalom_undawning_nighttide_idle_001.aac"
+        },
+        {
+            "title": "Special Attention",
+            "text": "Name your destination and I shall follow—right to the world's edge.",
+            "filename": "File:vo_shalom_undawning_nighttide_specialattention_001.aac"
+        }
     ]
+
 }

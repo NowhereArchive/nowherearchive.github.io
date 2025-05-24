@@ -801,6 +801,14 @@
             "category": "Sinners"
         },
         {
+            "name": "wuhuanzi",
+            "displayName": "Wuhuanzi",
+            "rank": "A",
+            "libram": "SLOTH",
+            "tendency": "Arcane",
+            "category": "Sinners"
+        },
+        {
             "name": "yanyan",
             "displayName": "Yanyan",
             "rank": "A",

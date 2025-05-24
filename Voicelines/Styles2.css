@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+body {
+  background-color: #121212;
+  color: #E0E0E0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  padding-top: 60px;
+  outline: none;
+  line-height: 1.6;
+}
+
+.character-header {
+  text-align: center;
+  padding: 2em 0 1em;
+  background: linear-gradient(to right, #121212, #1e1e1e, #121212);
+  margin-bottom: 1em;
+  border-bottom: 1px solid #333;
+}
+
+.character-header h1 {
+  color: #FFFFFF;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-size: 2.5em;
+  letter-spacing: 1px;
+}
+
+.character-subtitle {
+  color: #BB86FC;
+  font-size: 1.2em;
+  margin-top: 0.5em;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 2em 0 1.5em;
+}
+
+.search-input {
+  padding: 12px 20px;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 8px;
+  border: 2px solid #333;
+  background-color: #252525;
+  color: #FFFFFF;
+  outline: none;
+  transition: all 0.3s ease;
+  font-size: 1.1em;
+}
+
+.search-input:focus {
+  border-color: #9c1111;
+  box-shadow: 0 0 0 3px rgba(156, 17, 17, 0.2);
+}
+
+.language-buttons, .attire-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1.5em 0;
+  gap: 10px;
+}
+
+.language-button, .attire-button {
+  background-color: #2a2a2a;
+  color: #FFFFFF;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 0.8em 1.5em;
+  margin: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+}
+
+.language-button:hover, .attire-button:hover {
+  background-color: #9c1111;
+  border-color: #9c1111;
+  transform: translateY(-2px);
+}
+
+.active-button {
+  background-color: #9c1111 !important;
+  border-color: #9c1111 !important;
+  box-shadow: 0 4px 8px rgba(156, 17, 17, 0.3);
+}
+
+.voicelines-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.voiceline {
+  background-color: #252525;
+  border-left: 4px solid #9c1111;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 1em auto;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.voiceline:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.voiceline p:first-child {
+  font-weight: 700;
+  color: #BB86FC;
+  margin-bottom: 0.8em;
+  font-size: 1.1em;
+}
+
+.voiceline-text {
+  color: #f0f0f0;
+  margin: 1em 0;
+  font-weight: 400;
+}
+
+.voiceline-text-NotEn {
+  font-size: 0.85em;
+  font-style: italic;
+  color: #aaa;
+  margin-top: 0.5em;
+}
+
+.voiceline-buttons {
+  margin-top: 1em;
+}
+
+.voiceline button {
+  background-color: #9c1111;
+  margin-right: 12px;
+  padding: 0.5em 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.voiceline button:hover {
+  background-color: #c41414;
+  transform: translateY(-1px);
+}
+
+.loading-state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #333;
+  border-top: 5px solid #9c1111;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.no-results {
+  text-align: center;
+  padding: 2em;
+  color: #888;
+  font-style: italic;
+}
+
+.no-results-icon {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  color: #555;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(156, 17, 17, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(156, 17, 17, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(156, 17, 17, 0); }
+}
+
+.active-button {
+  animation: pulse 1.5s infinite;
+}
+
+/* Keep existing navbar and scrollbar styles */
+html::-webkit-scrollbar {
+  width: 8px;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: #3A3A3A;
+}
+
+@media (max-width: 768px) {
+  .character-header h1 {
+    font-size: 1.8em;
+  }
+  
+  .search-input {
+    width: 90%;
+  }
+  
+  .language-buttons, .attire-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .language-button, .attire-button {
+    width: 90%;
+    margin: 5px 0;
+  }
+  
+  .voiceline {
+    padding: 15px;
+  }
+}
+

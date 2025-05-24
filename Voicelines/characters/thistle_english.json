@@ -115,5 +115,48 @@
             "filename": "File:bt_thistle_jointeam_001.aac",
             "text": "No need to come along, I'll handle it."
         }
+    ],
+    "oneiric_flexagon": [
+        {
+            "title": "Level Up",
+            "text": "Look! Another little paper crane with a letter!",
+            "filename": "File:vo_thistle_oneiric_flexagon_levelup_001.aac"
+        },
+        {
+            "title": "Obtain Attire",
+            "text": "Ha! Bet you didn't expect your mystery gift to be an elf doll—complete with her own garden, no less! Hey! What's with that look? The gift's already unpacked, so no returns! Just graciously accept it!",
+            "filename": "File:vo_thistle_oneiric_flexagon_cacha_001.aac"
+        },
+        {
+            "title": "Greeting",
+            "text": "In the garden... full of flowers... growing so fast... reaching the sky... Hmm... and I could fly to the sky...",
+            "filename": "File:vo_thistle_oneiric_flexagon_greeting_001.aac"
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "text": "Nice to meet me? Hmph! Unlike you busy types who just stuff dolls into bookcases and forget about them, I watch you every day! When you leave the window open, when you're too lazy to make your bed—I know all your little secrets!",
+            "filename": "File:vo_thistle_oneiric_flexagon_talk_001.aac"
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "text": "Oh, gee, y-you do have *some* good qualities. Like... um... hmm... Oh, I know! At least you're better than those giants who dress up their dolls 7 or 8 times a day, take pictures, and just leave everything in a mess!",
+            "filename": "File:vo_thistle_oneiric_flexagon_talk_002.aac"
+        },
+        {
+            "title": "Idle",
+            "text": "...Hardy, heat-resistant, prefers sandy loam... Wow, this book is amazing! Not only are the paper flowers so life-like, but it also explains planting methods so clearly! I mean... it almost makes me feel like even I could take care of the flowers we just planted.",
+            "filename": "File:vo_thistle_oneiric_flexagon_idle_001.aac"
+        },
+        {
+            "title": "Annoyed",
+            "text": "Touching me with just one finger... quite gentle. Maybe you are a decent giant after all!",
+            "filename": "File:vo_thistle_oneiric_flexagon_clicking_001.aac"
+        },
+        {
+            "title": "Special Attention",
+            "text": "Wh—why are you looking at me like that? You're not going to play dress-up, are you?",
+            "filename": "File:vo_thistle_oneiric_flexagon_specialattention_001.aac"
+        }
     ]
+
 }
