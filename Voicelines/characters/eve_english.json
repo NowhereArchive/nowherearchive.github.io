@@ -120,5 +120,59 @@
             "filename": "File:bt_eve_jointeam_001.aac",
             "text": "It's time for the toys to meet new friends."
         }
+    ],
+    "eerie_fables": [
+        {
+            "title": "Level Up",
+            "text": "The curse that bound me is broken now...",
+            "filename": "File:vo_eve_eerie_fables_levelup_001.aac"
+        },
+        {
+            "title": "Pat Head",
+            "text": "For countless days and nights trapped in that dreadful orb, I wore this tiara. Its weight—much like the heavy gazes of the crowd at my coronation—kept me from ever removing it... Do you think me foolish as well?",
+            "filename": "File:vo_eve_eerie_fables_head_001.aac"
+        },
+        {
+            "title": "Obtain Attire",
+            "text": "It turns out that there really is such a brave knight undaunted by the vengeful witch, striving to break through this transparent barrier from the other side of the crystal ball with me... Just like a fairy tale.",
+            "filename": "File:vo_eve_eerie_fables_cacha_001.aac"
+        },
+        {
+            "title": "Greeting",
+            "text": "I am deeply grateful for your succor, my noble champion. But after being sealed within the crystal ball for so long, I fear I have nothing worthy to offer you in return—not even a royal reward. Perhaps, you might accept these jewels instead?",
+            "filename": "File:vo_eve_eerie_fables_greeting_001.aac"
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "text": "Whether it's the legendary beauty envied by all or the pure soul coveted by the evil witch, neither holds meaning for me. Yet fate imposed them on me, as a price to trade away my dearest family. Tell me, my noble champion, in all your travels across the continent, have you ever encountered a bargain more cruel than this?",
+            "filename": "File:vo_eve_eerie_fables_talk_001.aac"
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "text": "In fairy tales, the brave knight rescues the princess, and they live happily ever after, their story ending in joy. But my story seems to have no ending in sight... Where is my \"happily ever after\"? Did you bring it, yet I fail to see it because I'm blindfolded?",
+            "filename": "File:vo_eve_eerie_fables_talk_002.aac"
+        },
+        {
+            "title": "Ordinary Contact 3",
+            "text": "The witch's curse froze everything, leaving my body as stiff and lifeless as a glass doll. Yet just now, I thought I felt the warmth of your hands.",
+            "filename": "File:vo_eve_eerie_fables_hand_001.aac"
+        },
+        {
+            "title": "Ordinary Contact 4",
+            "text": "My servants once promised to bring me a knight, no matter the cost. At the time, I dismissed it as just another harmless white lie, like the fairy tales they used to read to me... But I was wrong. It turned out that even the blade of a plastic sword could protect a princess, and the brave knight from the stories truly did exist.",
+            "filename": "File:vo_eve_eerie_fables_leg_001.aac"
+        },
+        {
+            "title": "Idle",
+            "text": "Dear little horse, take Eve back home... Back to the rich plains, the endless red pines, the long river that flows in quiet grace. Take her back to that land—so beautiful, yet so unfamiliar, the place she once called home.",
+            "filename": "File:vo_eve_eerie_fables_idle_001.aac"
+        },
+        {
+            "title": "Special Attention",
+            "text": "Why do you gaze at me so? If there is worse news, please, do tell. Nothing could be more dreadful than the endless, empty days of imprisonment within that crystal ball.",
+            "filename": "File:vo_eve_eerie_fables_specialattention_001.aac"
+        }
     ]
+
+
 }
