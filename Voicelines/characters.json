@@ -817,6 +817,22 @@
             "category": "Sinners"
         },
         {
+            "name": "yingying",
+            "displayName": "Yingying",
+            "rank": "S",
+            "libram": "LOVE",
+            "tendency": "Arcane",
+            "category": "Sinners"
+        },
+        {
+            "name": "yugu",
+            "displayName": "Yugu",
+            "rank": "S",
+            "libram": "FRAUD",
+            "tendency": "Endura",
+            "category": "Sinners"
+        },
+        {
             "name": "000",
             "displayName": "000",
             "rank": "S",
