@@ -241,6 +241,14 @@
             "category": "Sinners"
         },
         {
+            "name": "ermes_costello",
+            "displayName": "Ermes Costello",
+            "rank": "S",
+            "libram": "INFINITE",
+            "tendency": "Fury",
+            "category": "Sinners"
+        },
+        {
             "name": "etti",
             "displayName": "Etti",
             "rank": "S",
@@ -294,6 +302,14 @@
             "rank": "A",
             "libram": "PESTILENCE",
             "tendency": "Endura",
+            "category": "Sinners"
+        },
+        {
+            "name": "graves",
+            "displayName": "Graves",
+            "rank": "S",
+            "libram": "DEATH",
+            "tendency": "Umbra",
             "category": "Sinners"
         },
         {
@@ -377,6 +393,14 @@
             "category": "Sinners"
         },
         {
+            "name": "jolyne_cujoh",
+            "displayName": "Jolyne Cujoh",
+            "rank": "S",
+            "libram": "INFINITE",
+            "tendency": "Umbra",
+            "category": "Sinners"
+        },
+        {
             "name": "kk",
             "displayName": "K.K.",
             "rank": "B",
@@ -406,6 +430,14 @@
             "rank": "S",
             "libram": "FAMINE",
             "tendency": "Reticle",
+            "category": "Sinners"
+        },
+        {
+            "name": "kujo_jotaro",
+            "displayName": "Kujo Jotaro",
+            "rank": "S",
+            "libram": "INFINITE",
+            "tendency": "Fury",
             "category": "Sinners"
         },
         {
