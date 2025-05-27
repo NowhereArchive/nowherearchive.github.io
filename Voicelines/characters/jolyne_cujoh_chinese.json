@@ -1,0 +1,94 @@
+{
+    "default": [
+        {
+            "title": "Obtain the Sinner",
+            "text": "我是佛罗里达州绿海豚监狱的服刑囚犯，我叫空条徐伦。",
+            "filename": "File:vo_jolyne_cujoh_cacha_001.aac"
+        },
+        {
+            "title": "Raise to Phase 1",
+            "text": "我已经下定了决心。",
+            "filename": "File:vo_jolyne_cujoh_promotion_001.aac"
+        },
+        {
+            "title": "Raise to Phase 3",
+            "text": "我要从这片石之海重获自由。",
+            "filename": "File:vo_jolyne_cujoh_promotion2_001.aac"
+        },
+        {
+            "title": "Level Start",
+            "text": "如果你想打，那我奉陪。",
+            "filename": "File:vo_jolyne_cujoh_battlebegin_001.aac"
+        },
+        {
+            "title": "Win Battles",
+            "text": "我赢了。",
+            "filename": "File:vo_jolyne_cujoh_battlewin_001.aac"
+        },
+        {
+            "title": "Lose Battles",
+            "text": "现在只有先逃出去了，先活下来再想别的。",
+            "filename": "File:vo_jolyne_cujoh_battlelose_001.aac"
+        },
+        {
+            "title": "Ultimate Skill",
+            "text": "石之自由！",
+            "filename": "File:bt_jolyne_cujoh_uniqueskill_001.aac"
+        },
+        {
+            "title": "Die in Battles",
+            "text": "天哪，怎么会……",
+            "filename": "File:bt_jolyne_cujoh_dead_001.aac"
+        },
+        {
+            "title": "Greeting",
+            "text": "别叫我JoJo，只有我妈妈才能这么叫我。",
+            "filename": "File:vo_jolyne_cujoh_greeting_001.aac"
+        },
+        {
+            "title": "Special Conversation 1",
+            "text": "我在这栋严密戒备禁闭牢房，有必须达到的目标。我一定要完成它，为此，我绝不能有无谓的消耗……不，我甚至还要变得更强！",
+            "filename": "File:vo_jolyne_cujoh_talk2_001.aac"
+        },
+        {
+            "title": "Special Conversation 2",
+            "text": "从我出生前开始，他就在守护许多事物，他一直不陪在我身边，也是因为不想把我和妈妈卷进如今这种事情里。就在刚才，我们心有灵犀了，我切身感到，自己理解了爸爸。",
+            "filename": "File:vo_jolyne_cujoh_talk2_002.aac"
+        },
+        {
+            "title": "Special Conversation 3",
+            "text": "一个囚犯看到了泥墙，另一个囚犯看到了铁窗外的星辰，我是哪一个？我当然选择看星辰，我要一直注视那星辰之光，直到和爸爸重聚！",
+            "filename": "File:vo_jolyne_cujoh_talk2_003.aac"
+        },
+        {
+            "title": "Full Compliance",
+            "text": "你的想法中蕴含着希望，绝不是一片黑暗……哪怕只有一条险路，只要还有一点思路，那就一定是通往成功的道路！",
+            "filename": "File:vo_jolyne_cujoh_obeyfull_001.aac"
+        },
+        {
+            "title": "Idle",
+            "text": "我实在闲着没事，给自己钉了个脐钉。",
+            "filename": "File:vo_jolyne_cujoh_idle_001.aac"
+        },
+        {
+            "title": "Annoyed",
+            "text": "混账，恶心死了，还沾在我的脸上，我都快吐了！",
+            "filename": "File:vo_jolyne_cujoh_clicking_001.aac"
+        },
+        {
+            "title": "Special Attention",
+            "text": "别凑近了说这种话！",
+            "filename": "File:vo_jolyne_cujoh_specialattention_001.aac"
+        },
+        {
+            "title": "Level Up",
+            "text": "还能这么用。对我的心意起反应，以我心灵的力量驱动……",
+            "filename": "File:vo_jolyne_cujoh_levelup_002.aac"
+        },
+        {
+            "title": "Pat Head",
+            "text": "别担心，以现在的你，一定没问题的。",
+            "filename": "File:vo_jolyne_cujoh_head_001.aac"
+        }
+    ]
+}

@@ -1,0 +1,94 @@
+{
+    "default": [
+        {
+            "title": "Obtain the Sinner",
+            "text": "My daughter’s still alive, but not exactly safe. Take care of Jolyne until I get there.",
+            "filename": "File:vo_kujo_jotaro_cacha_001.aac"
+        },
+        {
+            "title": "Raise to Phase 1",
+            "text": "That was my Stand, Star Platinum.",
+            "filename": "File:vo_kujo_jotaro_promotion_001.aac"
+        },
+        {
+            "title": "Raise to Phase 3",
+            "text": "Time, stop!",
+            "filename": "File:vo_kujo_jotaro_promotion2_001.aac"
+        },
+        {
+            "title": "Level Start",
+            "text": "Don’t move! The attack has already begun.",
+            "filename": "File:vo_kujo_jotaro_battlebegin_001.aac"
+        },
+        {
+            "title": "Win Battles",
+            "text": "Gotcha!",
+            "filename": "File:vo_kujo_jotaro_battlewin_001.aac"
+        },
+        {
+            "title": "Lose Battles",
+            "text": "Everyone, now! Get out of here!",
+            "filename": "File:vo_kujo_jotaro_battlelose_001.aac"
+        },
+        {
+            "title": "Ultimate Skill",
+            "text": "Star Platinum — The World!",
+            "filename": "File:bt_kujo_jotaro_uniqueskill_001.aac"
+        },
+        {
+            "title": "Die in Battles",
+            "text": "Too short...! Just five seconds of stopped time isn’t enough!",
+            "filename": "File:bt_kujo_jotaro_dead_001.aac"
+        },
+        {
+            "title": "Greeting",
+            "text": "What did you just say?",
+            "filename": "File:vo_kujo_jotaro_greeting_001.aac"
+        },
+        {
+            "title": "Special Conversation 1",
+            "text": "Sharing with others is beautiful—but sometimes it leaves behind residue... called hatred.",
+            "filename": "File:vo_kujo_jotaro_talk2_001.aac"
+        },
+        {
+            "title": "Special Conversation 2",
+            "text": "Stay calm and look closely—you *can* read his movements. Feel them.",
+            "filename": "File:vo_kujo_jotaro_talk2_002.aac"
+        },
+        {
+            "title": "Special Conversation 3",
+            "text": "You’ve grown.",
+            "filename": "File:vo_kujo_jotaro_talk2_003.aac"
+        },
+        {
+            "title": "Full Compliance",
+            "text": "I’ve always treasured you.",
+            "filename": "File:vo_kujo_jotaro_obeyfull_001.aac"
+        },
+        {
+            "title": "Idle",
+            "text": "Time resumes.",
+            "filename": "File:vo_kujo_jotaro_idle_001.aac"
+        },
+        {
+            "title": "Annoyed",
+            "text": "That’s enough.",
+            "filename": "File:vo_kujo_jotaro_clicking_001.aac"
+        },
+        {
+            "title": "Special Attention",
+            "text": "I don’t understand you. Has reality driven you mad?",
+            "filename": "File:vo_kujo_jotaro_specialattention_001.aac"
+        },
+        {
+            "title": "Level Up",
+            "text": "Ora ora ora ora!",
+            "filename": "File:vo_kujo_jotaro_levelup_002.aac"
+        },
+        {
+            "title": "Pat Head",
+            "text": "Got it. I trust you.",
+            "filename": "File:vo_kujo_jotaro_head_001.aac"
+        }
+    ]
+}

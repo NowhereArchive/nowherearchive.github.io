@@ -1,0 +1,89 @@
+{
+    "default": [
+        {
+            "title": "Obtain the Sinner",
+            "text": "我名叫艾梅斯·克斯提洛，抢了便利店，因为是再犯，必须实际服刑了。",
+            "filename": "File:vo_ermes_costello_cacha_001.aac"
+        },
+        {
+            "title": "Raise to Phase 1",
+            "text": "一旦接受这个能力，用起来还挺方便的。",
+            "filename": "File:vo_ermes_costello_promotion_001.aac"
+        },
+        {
+            "title": "Raise to Phase 3",
+            "text": "亲吻，是复仇的许可证！",
+            "filename": "File:vo_ermes_costello_promotion2_001.aac"
+        },
+        {
+            "title": "Level Start",
+            "text": "还想躲吗？你已经躲不掉了。",
+            "filename": "File:vo_ermes_costello_battlebegin_001.aac"
+        },
+        {
+            "title": "Win Battles",
+            "text": "去地狱里向他们谢罪吧！",
+            "filename": "File:vo_ermes_costello_battlewin_001.aac"
+        },
+        {
+            "title": "Lose Battles",
+            "text": "离远点，往远处跑！",
+            "filename": "File:vo_ermes_costello_battlelose_001.aac"
+        },
+        {
+            "title": "Ultimate Skill",
+            "text": "亲吻！",
+            "filename": "File:bt_ermes_costello_uniqueskill_001.aac"
+        },
+        {
+            "title": "Die in Battles",
+            "text": "这是……开始坏死了！",
+            "filename": "File:bt_ermes_costello_dead_001.aac"
+        },
+        {
+            "title": "Greeting",
+            "text": "你真是个有趣的家伙。",
+            "filename": "File:vo_ermes_costello_greeting_001.aac"
+        },
+        {
+            "title": "Special Conversation 1",
+            "text": "第二天是周一这件事让所有人都很郁闷，但大家都想着愉快的周六总会来到，坚持生活下去。人生并不总是周一……！",
+            "filename": "File:vo_ermes_costello_talk2_001.aac"
+        },
+        {
+            "title": "Special Conversation 2",
+            "text": "所谓复仇，是为了给自己的命运一个了断！",
+            "filename": "File:vo_ermes_costello_talk2_002.aac"
+        },
+        {
+            "title": "Special Conversation 3",
+            "text": "肯定会有一些自以为是的人来教训我，说什么复仇也不会让姐姐复生。也肯定会有人说，重要的是宽恕。但是！当自己的血亲被扔进污水渠，还要逼自己忘记这件事继续生活，这样的人生，我才不要。我一直以来，都是怀着这样的决心！",
+            "filename": "File:vo_ermes_costello_talk2_003.aac"
+        },
+        {
+            "title": "Full Compliance",
+            "text": "不知怎么的，眼泪突然下来了。我其实很想去你那狠狠哭一场，但是，或许没时间，没工夫让我哭了……",
+            "filename": "File:vo_ermes_costello_obeyfull_001.aac"
+        },
+        {
+            "title": "Idle",
+            "text": "风，已经停了……",
+            "filename": "File:vo_ermes_costello_idle_001.aac"
+        },
+        {
+            "title": "Annoyed",
+            "text": "真是服了，你这人真是……",
+            "filename": "File:vo_ermes_costello_clicking_001.aac"
+        },
+        {
+            "title": "Special Attention",
+            "text": "喂，你干什么啊，到底怎么了？",
+            "filename": "File:vo_ermes_costello_specialattention_001.aac"
+        },
+        {
+            "title": "Level Up",
+            "text": "有进步了，有进步了！",
+            "filename": "File:vo_ermes_costello_levelup_002.aac"
+        }
+    ]
+}

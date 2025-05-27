@@ -1,0 +1,89 @@
+{
+    "default": [
+        {
+            "title": "Obtain the Sinner",
+            "text": "Name's Ermes Costello. Got caught robbing a convenience store. Since it’s not my first offense... I’m doing real time.",
+            "filename": "File:vo_ermes_costello_cacha_001.aac"
+        },
+        {
+            "title": "Raise to Phase 1",
+            "text": "Once you get the hang of this power, it’s actually pretty damn handy.",
+            "filename": "File:vo_ermes_costello_promotion_001.aac"
+        },
+        {
+            "title": "Raise to Phase 3",
+            "text": "Kiss—it’s my license for revenge!",
+            "filename": "File:vo_ermes_costello_promotion2_001.aac"
+        },
+        {
+            "title": "Level Start",
+            "text": "Still think you can run? That chance is long gone.",
+            "filename": "File:vo_ermes_costello_battlebegin_001.aac"
+        },
+        {
+            "title": "Win Battles",
+            "text": "Go apologize in hell!",
+            "filename": "File:vo_ermes_costello_battlewin_001.aac"
+        },
+        {
+            "title": "Lose Battles",
+            "text": "Get back! Run as far as you can!",
+            "filename": "File:vo_ermes_costello_battlelose_001.aac"
+        },
+        {
+            "title": "Ultimate Skill",
+            "text": "Kiss!",
+            "filename": "File:bt_ermes_costello_uniqueskill_001.aac"
+        },
+        {
+            "title": "Die in Battles",
+            "text": "It’s... starting to rot...",
+            "filename": "File:bt_ermes_costello_dead_001.aac"
+        },
+        {
+            "title": "Greeting",
+            "text": "You're a pretty interesting one.",
+            "filename": "File:vo_ermes_costello_greeting_001.aac"
+        },
+        {
+            "title": "Special Conversation 1",
+            "text": "Everyone hates Mondays, but we push through ‘cause we know Saturday’s coming. Life isn’t just Mondays, right?",
+            "filename": "File:vo_ermes_costello_talk2_001.aac"
+        },
+        {
+            "title": "Special Conversation 2",
+            "text": "Revenge—it's how I bring closure to my fate.",
+            "filename": "File:vo_ermes_costello_talk2_002.aac"
+        },
+        {
+            "title": "Special Conversation 3",
+            "text": "Some people will preach at me—say revenge won’t bring my sister back. That forgiveness is the answer. But if you ask me to forget the one I lost... to walk away like nothing happened... that ain’t a life I want. I’ve made up my mind since the start.",
+            "filename": "File:vo_ermes_costello_talk2_003.aac"
+        },
+        {
+            "title": "Full Compliance",
+            "text": "I don’t know why, but the tears just started flowing. Honestly... I wanted to come cry in your arms. But maybe... maybe there’s no time left for tears.",
+            "filename": "File:vo_ermes_costello_obeyfull_001.aac"
+        },
+        {
+            "title": "Idle",
+            "text": "The wind’s stopped...",
+            "filename": "File:vo_ermes_costello_idle_001.aac"
+        },
+        {
+            "title": "Annoyed",
+            "text": "You’ve seriously got a screw loose, you know that?",
+            "filename": "File:vo_ermes_costello_clicking_001.aac"
+        },
+        {
+            "title": "Special Attention",
+            "text": "Hey! What the hell are you doing!?",
+            "filename": "File:vo_ermes_costello_specialattention_001.aac"
+        },
+        {
+            "title": "Level Up",
+            "text": "Now *that’s* what I call progress!",
+            "filename": "File:vo_ermes_costello_levelup_002.aac"
+        }
+    ]
+}
