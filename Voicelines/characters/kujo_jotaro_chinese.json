@@ -1,0 +1,94 @@
+{
+    "default": [
+        {
+            "title": "Obtain the Sinner",
+            "text": "我女儿还活着，但似乎也不算是安然无恙。替我照顾好徐伦，等到我过去就行。",
+            "filename": "File:vo_kujo_jotaro_cacha_001.aac"
+        },
+        {
+            "title": "Raise to Phase 1",
+            "text": "刚才那就是我的替身，白金之星。",
+            "filename": "File:vo_kujo_jotaro_promotion_001.aac"
+        },
+        {
+            "title": "Raise to Phase 3",
+            "text": "时间停住！",
+            "filename": "File:vo_kujo_jotaro_promotion2_001.aac"
+        },
+        {
+            "title": "Level Start",
+            "text": "别动！攻击已经开始了。",
+            "filename": "File:vo_kujo_jotaro_battlebegin_001.aac"
+        },
+        {
+            "title": "Win Battles",
+            "text": "我抓住了！",
+            "filename": "File:vo_kujo_jotaro_battlewin_001.aac"
+        },
+        {
+            "title": "Lose Battles",
+            "text": "所有人，立刻！离开这里！",
+            "filename": "File:vo_kujo_jotaro_battlelose_001.aac"
+        },
+        {
+            "title": "Ultimate Skill",
+            "text": "白金之星，世界！",
+            "filename": "File:bt_kujo_jotaro_uniqueskill_001.aac"
+        },
+        {
+            "title": "Die in Battles",
+            "text": "太短了……！只能静止5秒钟实在太短了！",
+            "filename": "File:bt_kujo_jotaro_dead_001.aac"
+        },
+        {
+            "title": "Greeting",
+            "text": "你刚才说什么？",
+            "filename": "File:vo_kujo_jotaro_greeting_001.aac"
+        },
+        {
+            "title": "Special Conversation 1",
+            "text": "向他人的心灵传递事物是很美好的，但有时也会留下残渣，名为“仇恨”的残渣。",
+            "filename": "File:vo_kujo_jotaro_talk2_001.aac"
+        },
+        {
+            "title": "Special Conversation 2",
+            "text": "冷静下来，仔细看，他的动向肯定是能看清的，去感受他的动向。",
+            "filename": "File:vo_kujo_jotaro_talk2_002.aac"
+        },
+        {
+            "title": "Special Conversation 3",
+            "text": "你成长了啊。",
+            "filename": "File:vo_kujo_jotaro_talk2_003.aac"
+        },
+        {
+            "title": "Full Compliance",
+            "text": "我一直都很珍视你。",
+            "filename": "File:vo_kujo_jotaro_obeyfull_001.aac"
+        },
+        {
+            "title": "Idle",
+            "text": "时间，开始流动。",
+            "filename": "File:vo_kujo_jotaro_idle_001.aac"
+        },
+        {
+            "title": "Annoyed",
+            "text": "真是够了。",
+            "filename": "File:vo_kujo_jotaro_clicking_001.aac"
+        },
+        {
+            "title": "Special Attention",
+            "text": "我听不懂你在说什么，你是被现状逼疯了吗？",
+            "filename": "File:vo_kujo_jotaro_specialattention_001.aac"
+        },
+        {
+            "title": "Level Up",
+            "text": "欧拉欧拉欧拉欧拉！",
+            "filename": "File:vo_kujo_jotaro_levelup_002.aac"
+        },
+        {
+            "title": "Pat Head",
+            "text": "知道了，我相信你。",
+            "filename": "File:vo_kujo_jotaro_head_001.aac"
+        }
+    ]
+}

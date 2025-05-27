@@ -1,0 +1,94 @@
+{
+    "default": [
+        {
+            "title": "Obtain the Sinner",
+            "text": "I'm an inmate at Green Dolphin Street Prison in Florida. My name is Jolyne Cujoh.",
+            "filename": "File:vo_jolyne_cujoh_cacha_001.aac"
+        },
+        {
+            "title": "Raise to Phase 1",
+            "text": "I've made up my mind.",
+            "filename": "File:vo_jolyne_cujoh_promotion_001.aac"
+        },
+        {
+            "title": "Raise to Phase 3",
+            "text": "I'm going to win my freedom from this Stone Ocean.",
+            "filename": "File:vo_jolyne_cujoh_promotion2_001.aac"
+        },
+        {
+            "title": "Level Start",
+            "text": "If you're looking for a fight, I'm ready.",
+            "filename": "File:vo_jolyne_cujoh_battlebegin_001.aac"
+        },
+        {
+            "title": "Win Battles",
+            "text": "I won.",
+            "filename": "File:vo_jolyne_cujoh_battlewin_001.aac"
+        },
+        {
+            "title": "Lose Battles",
+            "text": "Right now, I need to escape—survive first, figure out the rest later.",
+            "filename": "File:vo_jolyne_cujoh_battlelose_001.aac"
+        },
+        {
+            "title": "Ultimate Skill",
+            "text": "Stone Free!",
+            "filename": "File:bt_jolyne_cujoh_uniqueskill_001.aac"
+        },
+        {
+            "title": "Die in Battles",
+            "text": "No way... how could this happen...",
+            "filename": "File:bt_jolyne_cujoh_dead_001.aac"
+        },
+        {
+            "title": "Greeting",
+            "text": "Don’t call me JoJo. Only my mom can call me that.",
+            "filename": "File:vo_jolyne_cujoh_greeting_001.aac"
+        },
+        {
+            "title": "Special Conversation 1",
+            "text": "I'm in this high-security solitary cell with a goal I must achieve. I have to see it through. For that, I can't afford to waste my strength... no, I have to get even stronger!",
+            "filename": "File:vo_jolyne_cujoh_talk2_001.aac"
+        },
+        {
+            "title": "Special Conversation 2",
+            "text": "Even before I was born, he was protecting so many things. The reason he was never there for me is because he didn’t want to drag me or Mom into this mess. Just now, I felt it—something clicked. I finally understand Dad.",
+            "filename": "File:vo_jolyne_cujoh_talk2_002.aac"
+        },
+        {
+            "title": "Special Conversation 3",
+            "text": "One prisoner sees a mud wall, another sees the stars beyond the bars. Which one am I? Of course I choose to see the stars. I’ll keep looking toward that starlight—until I reunite with Dad!",
+            "filename": "File:vo_jolyne_cujoh_talk2_003.aac"
+        },
+        {
+            "title": "Full Compliance",
+            "text": "There’s hope in your thinking—it’s not all darkness. Even if there’s just one treacherous path, as long as you can think of a way forward, it leads to success!",
+            "filename": "File:vo_jolyne_cujoh_obeyfull_001.aac"
+        },
+        {
+            "title": "Idle",
+            "text": "I had nothing to do, so I gave myself a navel piercing.",
+            "filename": "File:vo_jolyne_cujoh_idle_001.aac"
+        },
+        {
+            "title": "Annoyed",
+            "text": "Damn it, that’s disgusting—it’s stuck to my face! I’m gonna puke!",
+            "filename": "File:vo_jolyne_cujoh_clicking_001.aac"
+        },
+        {
+            "title": "Special Attention",
+            "text": "Don’t say that stuff so close to me!",
+            "filename": "File:vo_jolyne_cujoh_specialattention_001.aac"
+        },
+        {
+            "title": "Level Up",
+            "text": "So it can be used this way too... It reacts to my will, driven by my spirit’s strength...",
+            "filename": "File:vo_jolyne_cujoh_levelup_002.aac"
+        },
+        {
+            "title": "Pat Head",
+            "text": "Don’t worry. The way you are now, you’ll be just fine.",
+            "filename": "File:vo_jolyne_cujoh_head_001.aac"
+        }
+    ]
+}
