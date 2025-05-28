@@ -505,6 +505,14 @@
             "category": "Sinners"
         },
         {
+            "name": "luminita",
+            "displayName": "Luminita",
+            "rank": "A",
+            "libram": "SLOTH",
+            "tendency": "Endura",
+            "category": "Sinners"
+        },
+        {
             "name": "luvia_ray",
             "displayName": "Luvia Ray",
             "rank": "A",
