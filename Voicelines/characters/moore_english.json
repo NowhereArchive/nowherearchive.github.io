@@ -121,46 +121,46 @@
             "text": "Firewall debugging completed. You're under protection now."
         }
     ],
-    "Eternal_Bliss": [
+    "eternal_bliss": [
         {
             "title": "Obtain Attire",
             "text": "Let me see... Who's a little mouse that has walked into my web? Hehehe... It's you. Don't be impatient. Once I finish what I'm doing here, I'll take my time playing with you.",
-            "filename": "File:vo_moore_Eternal_Bliss_cacha_001.aac"
+            "filename": "File:vo_moore_eternal_bliss_cacha_001.aac"
         },
         {
             "title": "Greeting",
             "text": "It seems you never tire of playing cat and mouse. Heh, this time, who is the hunter and who is the prey?",
-            "filename": "File:vo_moore_Eternal_Bliss_greeting_001.aac"
+            "filename": "File:vo_moore_eternal_bliss_greeting_001.aac"
         },
         {
             "title": "Ordinary Contact 1",
             "text": "Enjoy the peace of DisCity while you can. It's our gift to you. However, this peaceful illusion will soon reach its end.",
-            "filename": "File:vo_moore_Eternal_Bliss_talk_001.aac"
+            "filename": "File:vo_moore_eternal_bliss_talk_001.aac"
         },
         {
             "title": "Ordinary Contact 2",
             "text": "You did destroy the dark web with your own hands. Unfortunately in the underground, deceiving death is all too common. See? Even I have returned from the dead.",
-            "filename": "File:vo_moore_Eternal_Bliss_talk_002.aac"
+            "filename": "File:vo_moore_eternal_bliss_talk_002.aac"
         },
         {
             "title": "Idle",
             "text": "It's true that staying in such a dark place makes it easy to get sleepy. Let me have another cup of coffee.",
-            "filename": "File:vo_moore_Eternal_Bliss_idle_001.aac"
+            "filename": "File:vo_moore_eternal_bliss_idle_001.aac"
         },
         {
             "title": "Annoyed",
             "text": "You're already caught in my web with no strength to struggle. Yet you still approach willingly. Should I call you fearless or simply foolish?",
-            "filename": "File:vo_moore_Eternal_Bliss_clicking_001.aac"
+            "filename": "File:vo_moore_eternal_bliss_clicking_001.aac"
         },
         {
             "title": "Special Attention",
             "text": "I like how you never learn your lesson, always charging in recklessly. Come then, no matter how many times you try, I'll be waiting for you.",
-            "filename": "File:vo_moore_Eternal_Bliss_specialattention_001.aac"
+            "filename": "File:vo_moore_eternal_bliss_specialattention_001.aac"
         },
         {
             "title": "Level Up",
             "text": "Did you hear that? Doomsday is one step closer.",
-            "filename": "File:vo_moore_Eternal_Bliss_levelup_001.aac"
+            "filename": "File:vo_moore_eternal_bliss_levelup_001.aac"
         }
     ]
 }
