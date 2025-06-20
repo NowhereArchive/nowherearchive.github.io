@@ -120,5 +120,58 @@
             "filename": "File:bt_bianca_jointeam_001.aac",
             "text": "Ready? We're going on TV now!"
         }
+    ],
+    "in_cider_scoop": [
+        {
+            "title": "Level Up",
+            "text": "Woohoo! Gimme another one!",
+            "filename": "File:vo_bianca_in_cider_scoop_levelup_001.aac"
+        },
+        {
+            "title": "Pat Head",
+            "text": "Hmm? What? Something wrong with my head? Wait... Is it... a twig growing on my head?! Oh, I'm \"twigging,\" hahaha! ...Hey, you could... water it if you want—it'll grow bigger~",
+            "filename": "File:vo_bianca_in_cider_scoop_head_001.aac"
+        },
+        {
+            "title": "Obtain Attire",
+            "text": "Hehe, Chief, with the two of us invincible inspectors on this case, we'll de-definitely dig up something super-dooper juicy at this party! It's just... I didn't expect the cider here would be soooo tasty!",
+            "filename": "File:vo_bianca_in_cider_scoop_cacha_001.aac"
+        },
+        {
+            "title": "Greeting",
+            "text": "Whoa! Ashy, you're here! You've gotta try this! Fermented apple juice, 100% organic! No wonder it's Eastside-exclusive. Fancy stuff, huh?",
+            "filename": "File:vo_bianca_in_cider_scoop_greeting_001.aac"
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "text": "Listen, in a vanity fair like this, you must keep your head clear of all the \"vanity\" and \"luxury\"... Behind it all lie illegal crimes and dirty deals... That's why we're here! My eyes are the best HD lenses—no one escapes the Journalist of Justice!",
+            "filename": "File:vo_bianca_in_cider_scoop_talk_001.aac"
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "text": "Hehe, I wasn’t just out there drinking juice. I've got some scoop! First hand, hot off the press! Wanna hear? Come closer, Ashy, I'll tell ya~",
+            "filename": "File:vo_bianca_in_cider_scoop_talk_002.aac"
+        },
+        {
+            "title": "Ordinary Contact 3",
+            "text": "Ohh, the crimson delight, the forbidden fruit, the crystal of wisdom, and the key to all desires... You, aren't you curious about what it tastes like? Come on, take a bite, live a little!",
+            "filename": "File:vo_bianca_in_cider_scoop_hand_001.aac"
+        },
+        {
+            "title": "Ordinary Contact 4",
+            "text": "Ahh, I fell down. I'm stuck! I'm forever imprisoned by this giant, evil couch. Oh no, don't you save me, my friend! ...Unless, we're heading out to dig up something big out there!",
+            "filename": "File:vo_bianca_in_cider_scoop_leg_001.aac"
+        },
+        {
+            "title": "Idle",
+            "text": "Twinkle, twinkle, little camera, capturing stories near and far~",
+            "filename": "File:vo_bianca_in_cider_scoop_idle_001.aac"
+        },
+        {
+            "title": "Special Attention",
+            "text": "Whoa, are you recording? Ahem—zoom in on me, please! Bon dinner party, everyone! I, Bianca, the most legendary journalist in DisCity, am here to bring you the breaking news of tonight! Stay tuned!",
+            "filename": "File:vo_bianca_in_cider_scoop_specialattention_001.aac"
+        }
     ]
+
 }

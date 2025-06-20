@@ -115,5 +115,48 @@
             "filename": "File:bt_oliver_jointeam_001.aac",
             "text": "For you... I will gather the courage to enter the battlefield!"
         }
+    ],
+    "haloed_refrain": [
+        {
+            "title": "Level Up",
+            "text": "Even the doves love the hymns I sing!",
+            "filename": "File:vo_oliver_haloed_refrain_levelup_001.aac"
+        },
+        {
+            "title": "Obtain Attire",
+            "text": "I will cleanse everyone's sins with my singing. Oliver will purify your souls, and you'll all become happy, grateful little lambs, obedient and content!",
+            "filename": "File:vo_oliver_haloed_refrain_cacha_001.aac"
+        },
+        {
+            "title": "Greeting",
+            "text": "Did you come all this way because you heard Oliver was performing on stage, Chief? Don't worry, the character I'm playing is a sweet and obedient choir kid just like Oliver! You're going to love it!",
+            "filename": "File:vo_oliver_haloed_refrain_greeting_001.aac"
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "text": "I didn't even want to play this role—they all insisted Oliver was perfect for it! How could I say no and let everyone down? So I agreed! Isn't Oliver such a good child?",
+            "filename": "File:vo_oliver_haloed_refrain_talk_001.aac"
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "text": "\"I will follow that person, no matter where they go. I will stay by their side forever, nothing can keep me away.\" Hehe, it was good, right? Oliver was thinking about you while performing, Chief! Everyone said my performance was packed with emotion!",
+            "filename": "File:vo_oliver_haloed_refrain_talk_002.aac"
+        },
+        {
+            "title": "Idle",
+            "text": "That flight arc you just did wasn't very graceful. Let's go again. This is Oliver's grand entrance we're talking about! You're good children—you wouldn't ruin it, would you?",
+            "filename": "File:vo_oliver_haloed_refrain_idle_001.aac"
+        },
+        {
+            "title": "Annoyed",
+            "text": "Oh my! Chief, why are you always tugging on Oliver's ribbons? What are you, a little schoolkid pulling on someone's pigtails because you like them?",
+            "filename": "File:vo_oliver_haloed_refrain_clicking_001.aac"
+        },
+        {
+            "title": "Special Attention",
+            "text": "One minute, two minutes... Chief, you've been staring at Oliver for so long. Ah, I get it, you want to keep admiring my performance!",
+            "filename": "File:vo_oliver_haloed_refrain_specialattention_001.aac"
+        }
     ]
+
 }

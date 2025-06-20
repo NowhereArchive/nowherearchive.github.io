@@ -224,5 +224,48 @@
             "filename": "File:vo_bai_yi_langlibaitiao_specialattention_001.aac",
             "text": "All right, all hands on deck. We're heading to deeper waters!"
         }
+    ],
+    "aeons_vanguard": [
+        {
+            "title": "Level Up",
+            "text": "Yep, still got it.",
+            "filename": "File:vo_bai_yi_aeons_vanguard_levelup_001.aac"
+        },
+        {
+            "title": "Obtain Attire",
+            "text": "I wielded lightning, swift and bold\nwith ambitions that never grow cold.\nAs long as I guard your sacred door\nNo evil shall threaten you anymore.\nYep, there are indeed evils lurking around your place. But don't worry, my mere presence is enough to send them running for cover.",
+            "filename": "File:vo_bai_yi_aeons_vanguard_cacha_001.aac"
+        },
+        {
+            "title": "Greeting",
+            "text": "There you are! Grab a drink and take in the view with me: the depots are packed, and everyone's living the good life. Those years I spent fighting? Totally worth it. A massive toast to that!",
+            "filename": "File:vo_bai_yi_aeons_vanguard_greeting_001.aac"
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "text": "This security gig is a breeze compared to what I used to do. If it's a respectful visitor, I'll simply step aside; if it's someone bold enough to test their luck, well, my sword could use a little entertainment every now and then.",
+            "filename": "File:vo_bai_yi_aeons_vanguard_talk_001.aac"
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "text": "Yeah, I know they call me the \"general of mass destruction,\" and let's just say, that's not all rumors. But nowadays, my job's more about keeping goblins and poltergeists in check to ensure a peaceful new year for the common folks.",
+            "filename": "File:vo_bai_yi_aeons_vanguard_talk_002.aac"
+        },
+        {
+            "title": "Idle",
+            "text": "The winter's breath still chills the air, while willows dance with vernal flair... A fine sight of early spring, yet here you are, snoozing away. Well, as they say, \"What can't be done today can wait until tomorrow\"—for now, enjoy your dreams.",
+            "filename": "File:vo_bai_yi_aeons_vanguard_idle_001.aac"
+        },
+        {
+            "title": "Annoyed",
+            "text": "Fumble all you like, it's no skin off my back. But just so you know, the painting's not gonna look quite as majestic with all the colors gone!",
+            "filename": "File:vo_bai_yi_aeons_vanguard_clicking_001.aac"
+        },
+        {
+            "title": "Special Attention",
+            "text": "Hey there, it's been ages! You're looking as spry as ever. Don't just stand there—go ahead and slather my armor in vermilion and ink, toss in a fine bottle of wine, and I'll make sure to keep another year safe for you. Deal?",
+            "filename": "File:vo_bai_yi_aeons_vanguard_specialattention_001.aac"
+        }
     ]
+
 }

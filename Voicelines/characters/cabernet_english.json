@@ -172,5 +172,48 @@
             "filename": "File:vo_cabernet_mingdingyoumeng_specialattention_001.aac",
             "text": "Are you waiting for me to do it? I see... My warmth and breath are your perfect accompaniment for this wine and fruit."
         }
+    ],
+    "intoxication_a_deux": [
+        {
+            "title": "Level Up",
+            "text": "Measured without detracting from the flair. You did put some thoughts into this outfit, didn't you?",
+            "filename": "File:vo_cabernet_intoxication_a_deux_levelup_001.aac"
+        },
+        {
+            "title": "Obtain Attire",
+            "text": "Don't rush, stand still... There you go. This jade pendant comports better with the banquet.",
+            "filename": "File:vo_cabernet_intoxication_a_deux_cacha_001.aac"
+        },
+        {
+            "title": "Greeting",
+            "text": "Hehe, relax. A tasting for me is not about how rare or expensive the dishes are, but rather whether you can indulge your innermost desires in the culinary forays.",
+            "filename": "File:vo_cabernet_intoxication_a_deux_greeting_001.aac"
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "text": "Legend has it that Outland cuisines are too rich to be counted. In fact, what we have right now is but a tiny fraction. Just imagine how many are out there for us to taste... It doesn't really befit me to heap praise on something like this, but perhaps it is your presence that intoxicates me so.",
+            "filename": "File:vo_cabernet_intoxication_a_deux_talk_001.aac"
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "text": "A microcosm of high society like this is naturally redolent of greed. Nevertheless, just as pure souls appear exceptionally fresh and mellow against a decadent backdrop of unfettered desires, dining here can be a uniquely contrasting experience. So, please, feast your senses on these delicacies.",
+            "filename": "File:vo_cabernet_intoxication_a_deux_talk_002.aac"
+        },
+        {
+            "title": "Idle",
+            "text": "Hmm~ I do enjoy watching you savor the cuisines. I find it most, shall we say, luscious...",
+            "filename": "File:vo_cabernet_intoxication_a_deux_idle_001.aac"
+        },
+        {
+            "title": "Annoyed",
+            "text": "Your dressing speaks for you from the outside in. It is a statement of your manners, upbringing and standing. So be warned, I'll have to punish you if you rumple my design~",
+            "filename": "File:vo_cabernet_intoxication_a_deux_clicking_001.aac"
+        },
+        {
+            "title": "Special Attention",
+            "text": "Why are you tracing my footsteps so closely? Is it out of a trust for my connoisseurship, or just a sense of duty to chaperone me throughout the night. Here, take my hand, stay by my side, and see what I am seeing...",
+            "filename": "File:vo_cabernet_intoxication_a_deux_specialattention_001.aac"
+        }
     ]
+
 }

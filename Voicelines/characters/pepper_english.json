@@ -115,5 +115,48 @@
             "filename": "File:bt_pepper_jointeam_001.aac",
             "text": "I'm coming!"
         }
+    ],
+    "peppy_shepherdess": [
+        {
+            "title": "Level Up",
+            "text": "Hmm... \"Care for Sheep Step by Step\"? Ohh I get it, so that's how I can keep my lambies happy and healthy!",
+            "filename": "File:vo_pepper_peppy_shepherdess_levelup_001.aac"
+        },
+        {
+            "title": "Obtain Attire",
+            "text": "Hey Chief, come look at my little lambs! My baaaa-rilliant fluffy pookie! Aren't they just adorable? So, you wanna herd them with me maybe?",
+            "filename": "File:vo_pepper_peppy_shepherdess_cacha_001.aac"
+        },
+        {
+            "title": "Greeting",
+            "text": "Hey Chief, over here! The sunshine, the breeze, and my lambs—they're all so softy 'n fluffy! Ahh, what a life!",
+            "filename": "File:vo_pepper_peppy_shepherdess_greeting_001.aac"
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "text": "Let's see, today's jobs... Take my lambies to the new ranch, clean up the pen... Oh right! And pack up the morning milk for the farmer's market!",
+            "filename": "File:vo_pepper_peppy_shepherdess_talk_001.aac"
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "text": "Do I still wanna be the biggest rascal in DisCity? Sure thing! Rascals can be awesome ranchers too, y'know! Hmph, say I can't, I'm gonna chuck a lamb poop at you!",
+            "filename": "File:vo_pepper_peppy_shepherdess_talk_002.aac"
+        },
+        {
+            "title": "Idle",
+            "text": "One sheep, two sheep, three... Ugh nope, I'm not gonna fall asleep counting sheep!",
+            "filename": "File:vo_pepper_peppy_shepherdess_idle_001.aac"
+        },
+        {
+            "title": "Annoyed",
+            "text": "Wait what? What do you mean my face's soft 'n fluffy like a ball of wool. No way! My lambs are waaay fluffier! For sure!",
+            "filename": "File:vo_pepper_peppy_shepherdess_clicking_001.aac"
+        },
+        {
+            "title": "Special Attention",
+            "text": "Hehe, looks like you're enjoying the ranch too! I haven't seen a view like this since I left home. It feels so good to be back in nature.\nThanks for bringing me here, Chief. Let's stay until you clock off, okay?",
+            "filename": "File:vo_pepper_peppy_shepherdess_specialattention_001.aac"
+        }
     ]
+
 }

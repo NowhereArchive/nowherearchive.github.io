@@ -120,5 +120,58 @@
             "filename": "File:bt_mantis_jointeam_001.aac",
             "text": "Looks like... someone's about to be preyed on..."
         }
+    ],
+    "sylvan_silhouette": [
+        {
+            "title": "Level Up",
+            "text": "The heavy, ripe fruit has fallen into your embrace.",
+            "filename": "File:vo_mantis_sylvan_silhouette_levelup_001.aac"
+        },
+        {
+            "title": "Pat Head",
+            "text": "How dare you touch a fae's ears? So impertinent... Ahem, I'm only blushing because my power is leaking out a little...",
+            "filename": "File:vo_mantis_sylvan_silhouette_head_001.aac"
+        },
+        {
+            "title": "Obtain Attire",
+            "text": "Sailing on a small boat across swamps, forests, and mists to reach an orchard of trees laden with ripe fruitâ€”this fairy realm kissed by the fae has never been seen by human eyes... and yet, you still found me.",
+            "filename": "File:vo_mantis_sylvan_silhouette_cacha_001.aac"
+        },
+        {
+            "title": "Greeting",
+            "text": "Whenever I see you, I'm reminded of that time we jumped into the rushing stream together... Care to relive that moment? Here, give me your hand, let's jump in together.",
+            "filename": "File:vo_mantis_sylvan_silhouette_greeting_001.aac"
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "text": "You once said that at journey's end lies crystal-clear waters, branches heavy with apples, and endless bounties of food and grapes, but... without you there, even if I reached such a paradise, all that beauty... would simply fade away...",
+            "filename": "File:vo_mantis_sylvan_silhouette_talk_001.aac"
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "text": "This bowed apple branch heavy with fruit... is a talisman that guides humans to this place... Take it, so when you seek for me again, you won't lose your way...",
+            "filename": "File:vo_mantis_sylvan_silhouette_talk_002.aac"
+        },
+        {
+            "title": "Ordinary Contact 3",
+            "text": "Legend tells of a fae who ended her journey by taking an apple and sinking beneath the waters. Under her nurturing, the plump seeds sprouted and grew into towering trees, their branches budding with flowers from which countless new versions of herself were born... Such is the way of forest spirits...",
+            "filename": "File:vo_mantis_sylvan_silhouette_hand_001.aac"
+        },
+        {
+            "title": "Ordinary Contact 4",
+            "text": "Living freely in the forest like a fae... So that's your wish? Well then... hold me tight and don't let go, I'll take you for a flight!",
+            "filename": "File:vo_mantis_sylvan_silhouette_leg_001.aac"
+        },
+        {
+            "title": "Idle",
+            "text": "The sound of wings fluttering through the trees, accompanied by flowing streams and frog songs... Sleep peacefully, and may the forest grant you sweet dreams...",
+            "filename": "File:vo_mantis_sylvan_silhouette_idle_001.aac"
+        },
+        {
+            "title": "Special Attention",
+            "text": "There's no one else here, just our silhouettes reflected in the water... and... the two of us, in each other's eyes...",
+            "filename": "File:vo_mantis_sylvan_silhouette_specialattention_001.aac"
+        }
     ]
+
 }
