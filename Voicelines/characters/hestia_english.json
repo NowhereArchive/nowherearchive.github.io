@@ -120,5 +120,58 @@
             "filename": "File:bt_hestia_jointeam_001.aac",
             "text": "There is nothing to fear. I'm here to show you the way..."
         }
+    ],
+    "lambent_wishbearer": [
+        {
+            "title": "Level Up",
+            "text": "The lanterns of wishes are floating high...",
+            "filename": "File:vo_hestia_lambent_wishbearer_levelup_001.aac"
+        },
+        {
+            "title": "Pat Head",
+            "text": "I-is this how mortals show affections?",
+            "filename": "File:vo_hestia_lambent_wishbearer_head_001.aac"
+        },
+        {
+            "title": "Obtain Attire",
+            "text": "Haste not, wish maker. The ritual is about to begin and the flame of wishes shall soon be kindled.",
+            "filename": "File:vo_hestia_lambent_wishbearer_cacha_001.aac"
+        },
+        {
+            "title": "Greeting",
+            "text": "Finally made it, did you? Worry not, there's still time... Is this your carefully made lantern... Well, despite its rather \"unique\" structure, it'll fly high into the sky. I'll help you.",
+            "filename": "File:vo_hestia_lambent_wishbearer_greeting_001.aac"
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "text": "Back on my first trial in the mortal realm, I struggled to find my way... But despite my blindness, I was able to see with my heart the care and love the villagers had for me... Perhaps that's what the Divine Emperor intended for me to understand...",
+            "filename": "File:vo_hestia_lambent_wishbearer_talk_001.aac"
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "text": "Mortals possess unwieldy bodies, vulnerable to poison and destined to age, as frail as this light. Yet, they can warm others with their flickering flames, even someone as strange and blind as me. Therefore, I do not wish for their light to fade...",
+            "filename": "File:vo_hestia_lambent_wishbearer_talk_002.aac"
+        },
+        {
+            "title": "Ordinary Contact 3",
+            "text": "These lanterns are handmade by the villagers, each wish carefully written, stroke by stroke. Hung on the wisteria tree year after year, their heartfelt devotion alone is enough to lift them into the sky—even without my \"extra help\"...",
+            "filename": "File:vo_hestia_lambent_wishbearer_hand_001.aac"
+        },
+        {
+            "title": "Ordinary Contact 4",
+            "text": "The light flickers—sometimes bright, sometimes dim. The lanterns, too, come in all shapes: some delicate, some rough. Yet the vibrant festivity of this once-a-year event and the people's devotion to their wishes always shine through. Perhaps that's what it means when they say, \"Our days are numbered, but our hearts remember...\"",
+            "filename": "File:vo_hestia_lambent_wishbearer_leg_001.aac"
+        },
+        {
+            "title": "Idle",
+            "text": "Fear not... The flame will not burn you. Instead, it will bring warmth and carry you to the place your creator's heart intended for you to go...",
+            "filename": "File:vo_hestia_lambent_wishbearer_idle_001.aac"
+        },
+        {
+            "title": "Special Attention",
+            "text": "Your gaze ignites more fiercely than the lantern... resembling a bonfire or a blazing torch. It's like a mortal flame so captivating that even immortals can't bear to look away.",
+            "filename": "File:vo_hestia_lambent_wishbearer_specialattention_001.aac"
+        }
     ]
+
 }

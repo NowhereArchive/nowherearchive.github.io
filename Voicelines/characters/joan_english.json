@@ -115,5 +115,48 @@
             "filename": "File:bt_joan_jointeam_001.aac",
             "text": "Bass drummer get ready! The performance is about to start."
         }
+    ],
+    "backstage_break": [
+        {
+            "title": "Level Up",
+            "text": "It's dark chocolate. Want one?",
+            "filename": "File:vo_joan_backstage_break_levelup_001.aac"
+        },
+        {
+            "title": "Obtain Attire",
+            "text": "Why are you following me backstage? Ugh, no need to worry about me.",
+            "filename": "File:vo_joan_backstage_break_cacha_001.aac"
+        },
+        {
+            "title": "Greeting",
+            "text": "Find yourself a seat, but just a heads-up—I broke a chair in a fight here and can't remember which one.",
+            "filename": "File:vo_joan_backstage_break_greeting_001.aac"
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "text": "It's dark, cramped, and cluttered backstage, with music loud enough to deafen.\nBut here, I feel alive.",
+            "filename": "File:vo_joan_backstage_break_talk_001.aac"
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "text": "Thanks for the bouquet, Chief. Send me a bigger one when I go on a world tour someday.",
+            "filename": "File:vo_joan_backstage_break_talk_002.aac"
+        },
+        {
+            "title": "Idle",
+            "text": "It's nice to have someone to talk to during breaks.",
+            "filename": "File:vo_joan_backstage_break_idle_001.aac"
+        },
+        {
+            "title": "Annoyed",
+            "text": "Heck, I don't have to dress as boring as you to go on stage.",
+            "filename": "File:vo_joan_backstage_break_clicking_001.aac"
+        },
+        {
+            "title": "Special Attention",
+            "text": "Nice view from here, huh? You get to take in the whole stage—and me.",
+            "filename": "File:vo_joan_backstage_break_specialattention_001.aac"
+        }
     ]
+
 }

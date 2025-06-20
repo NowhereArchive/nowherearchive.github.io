@@ -120,5 +120,48 @@
             "filename": "File:vo_korryn_head_001.aac",
             "text": "I guess you don't know what happened to those people who touched my hair, they all... Haha. Relax, you're different."
         }
+    ],
+    "aureate_ambush": [
+        {
+            "title": "Level Up",
+            "text": "The best things always fall right into my lap.",
+            "filename": "File:vo_korryn_aureate_ambush_levelup_001.aac"
+        },
+        {
+            "title": "Obtain Attire",
+            "text": "Not bad, finding this place. You've got some skill. Just thirty seconds ago, this was a WhiteSands bandit treasure den. Now—it's Tuco territory.",
+            "filename": "File:vo_korryn_aureate_ambush_cacha_001.aac"
+        },
+        {
+            "title": "Greeting",
+            "text": "Oh? How surprising... the winds of this underground cavern rarely drag in such a distinguished guest. Tell me, Chief—are you here to be my big, juicy prize, or to become my partner in crime?",
+            "filename": "File:vo_korryn_aureate_ambush_greeting_001.aac"
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "text": "Those petty desert bandits... risking their lives for treasure only to hide it away, letting it waste away in the sands. What a shame... Fortunately, these precious things found their way to me. I'd say they've finally found a proper home.",
+            "filename": "File:vo_korryn_aureate_ambush_talk_001.aac"
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "text": "Not to brag, but with this big fella and my furs, just sitting here is enough to keep every desert bandit and outlaw at bay... Oh, and don't forget to keep your MBCC badge out on your jacket.",
+            "filename": "File:vo_korryn_aureate_ambush_talk_002.aac"
+        },
+        {
+            "title": "Idle",
+            "text": "Hey Sheriff, before these gold coins get confiscated, let me get you fitted with a gold chain. Then you'll be the most dazzling lizard in all of WhiteSands!",
+            "filename": "File:vo_korryn_aureate_ambush_idle_001.aac"
+        },
+        {
+            "title": "Annoyed",
+            "text": "Darling, according to the rules, before you get handsy with me, you have to say \"Please, Boss Korryn, I'm begging you.\" Hmm? Since when is that a rule? Since I made it up just now!",
+            "filename": "File:vo_korryn_aureate_ambush_clicking_001.aac"
+        },
+        {
+            "title": "Special Attention",
+            "text": "Oho, you're so forward darling! Did you want to have a heart-to-heart with me, or maybe—something more adult? I'm talking about splitting these treasures, of course. What on earth did you think I meant?",
+            "filename": "File:vo_korryn_aureate_ambush_specialattention_001.aac"
+        }
     ]
+
 }

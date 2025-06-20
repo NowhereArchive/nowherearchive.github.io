@@ -120,5 +120,58 @@
             "filename": "File:vo_l.l._head_001.aac",
             "text": "Let me tell you a secret: you have been a prisoner in my mind for a long time."
         }
+    ],
+    "astral_rhapsody": [
+        {
+            "title": "Level Up",
+            "text": "My singing, it does echo far and wide!",
+            "filename": "File:vo_ll_astral_rhapsody_levelup_001.aac"
+        },
+        {
+            "title": "Pat Head",
+            "text": "Hehe, what, you want to sing alongside me? Let's stretch our voice across the cosmos, shall we?",
+            "filename": "File:vo_ll_astral_rhapsody_head_001.aac"
+        },
+        {
+            "title": "Obtain Attire",
+            "text": "Captivated by my singing, lost in my voice, and then... Why leave when you could stay with me here forever?",
+            "filename": "File:vo_ll_astral_rhapsody_cacha_001.aac"
+        },
+        {
+            "title": "Greeting",
+            "text": "Mic check, mic check, testing, te—Hey, now that you're here, eyes on me and gimme all your attention~",
+            "filename": "File:vo_ll_astral_rhapsody_greeting_001.aac"
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "text": "Come closer, I've passed you top-level access. We can laugh, we can shout, we can sing a song and cuddle as long as we like, with no one else around! Whether it’s lounging or getting a little naughty, anything goes!",
+            "filename": "File:vo_ll_astral_rhapsody_talk_001.aac"
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "text": "Time is irrelevant, and darkness isn’t scary. Stay with me as long as you like, and I will be here for you, singing till the end.",
+            "filename": "File:vo_ll_astral_rhapsody_talk_002.aac"
+        },
+        {
+            "title": "Ordinary Contact 3",
+            "text": "Ah... the concussive beats, the exquisite melodies, they permeate my mind, stir up my senses, and resonate with my soul... The bliss born from this spiritual delight radiates through my spine, touching every part of me... Hehe... Once you've felt this, you'll surely crave more, won't you?",
+            "filename": "File:vo_ll_astral_rhapsody_hand_001.aac"
+        },
+        {
+            "title": "Ordinary Contact 4",
+            "text": "You know, this microphone directly connects to the bureau's radio. That means everything we do here can be heard by everyone in the bureau! ... Alright, alright, I know such a mild joke won't faze you... Ah, of course, you know me so well, so you figured I was joking.",
+            "filename": "File:vo_ll_astral_rhapsody_leg_001.aac"
+        },
+        {
+            "title": "Idle",
+            "text": "...It’s alright, as long as you're here to stay with me...",
+            "filename": "File:vo_ll_astral_rhapsody_idle_001.aac"
+        },
+        {
+            "title": "Special Attention",
+            "text": "If you want it, just say it. Tell me directly: Do you want to see if my singing and your heartbeat can harmonize perfectly?",
+            "filename": "File:vo_ll_astral_rhapsody_specialattention_001.aac"
+        }
     ]
+
 }
