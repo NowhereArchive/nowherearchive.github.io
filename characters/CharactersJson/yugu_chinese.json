@@ -1,0 +1,124 @@
+{
+    "default": [
+        {
+            "title": "Obtain the Sinner",
+            "text": "在下玉骨娘，自东洲云游而来造访贵宝地，远渡重洋，舟车劳顿……请问您是否有空余的房间，可以收留我这个外乡人？",
+            "filename": "File:vo_yugu_cacha_001.aac"
+        },
+        {
+            "title": "Raise to Phase 1",
+            "text": "得此厚爱，荣幸非常。",
+            "filename": "File:vo_yugu_promotion_001.aac"
+        },
+        {
+            "title": "Raise to Phase 3",
+            "text": "颤栗不断，夺魂迷魄，痴缠之中蹦出滚烫烫的一颗心来……如此，痛快。",
+            "filename": "File:vo_yugu_promotion2_001.aac"
+        },
+        {
+            "title": "Level Start",
+            "text": "上回书说到……",
+            "filename": "File:vo_yugu_battlebegin_001.aac"
+        },
+        {
+            "title": "Win Battles",
+            "text": "一场胜仗落下帷幕，欲知后事如何，且听——下回分解。",
+            "filename": "File:vo_yugu_battlewin_001.aac"
+        },
+        {
+            "title": "Lose Battles",
+            "text": "从来物极必反，盛者必衰，呵呵……现如今，你我也要跌入这泥潭，万劫不复了么？",
+            "filename": "File:vo_yugu_battlelose_001.aac"
+        },
+        {
+            "title": "Ultimate Skill",
+            "text": "好一段活色生香啊～",
+            "filename": "File:bt_yugu_uniqueskill_001.aac"
+        },
+        {
+            "title": "Die in Battles",
+            "text": "呵呵，终究是有今日……",
+            "filename": "File:bt_yugu_dead_001.aac"
+        },
+        {
+            "title": "问候-男",
+            "text": "红颜女儿殒命井底，玉面郎君吊颈枝头……千足万手，菩萨像底黄金万两，好先生～快快坐下，好好听听这一出大戏……",
+            "filename": "chrmcbcayddofrnggt7g7oq0z09edbp.mp3"
+        },
+        {
+            "title": "问候-女",
+            "text": "红颜女儿殒命井底，玉面郎君吊颈枝头……千足万手，菩萨像底黄金万两，好小姐～快快坐下，好好听听这一出大戏……",
+            "filename": "jt49csryzfj8z2kvfclxsscit7sexpp.mp3"
+        },
+        {
+            "title": "Conversation 1",
+            "text": "一张好嘴，两片柔唇，能言善辩是说书匠最基础的功夫，更是数千场表演所积累的经验……个中的奥秘之处，想必您已领会。",
+            "filename": "File:vo_yugu_talk1_001.aac"
+        },
+        {
+            "title": "Conversation 2",
+            "text": "狄斯人喜欢我的表演，或者说……他们喜欢我。我满足了那些渴求，成为一个来自东方的刻奇传说。只是故事讲完后，你们可曾想好……要以什么还我？",
+            "filename": "File:vo_yugu_talk1_002.aac"
+        },
+        {
+            "title": "Conversation 3",
+            "text": "上回书说道，那小城中出了个专害夜行者的歹人，开膛破肚好不残忍……是夜，那年轻的卖酒娘踏着夜色独自朝你走来，泪眼婆娑，身姿颤抖，你迎上去问道发生何事，却只见那姑娘从衣裳里掏出了一把带血尖刀……哎，你跑什么呀？",
+            "filename": "File:vo_yugu_talk1_003.aac"
+        },
+        {
+            "title": "Special Conversation 1",
+            "text": "这枚玉佩是我的至亲所赠，它见证了我开启这场旅途，现在，也见证我愿和归巢的鸟儿一般停留在您身边。呵呵……您看上去很好奇？想摸摸它吗？",
+            "filename": "File:vo_yugu_talk2_001.aac"
+        },
+        {
+            "title": "Special Conversation 2",
+            "text": "狄斯比东洲更爱亲吻，嘴唇你碰我，我碰你，上到电影海报，下到街头漫步，无不热衷亲吻。呵呵，但你知道吗？撕咬……可比亲吻更缠绵。",
+            "filename": "File:vo_yugu_talk2_002.aac"
+        },
+        {
+            "title": "Special Conversation 3",
+            "text": "狄斯与我成长的东洲相比，有许多不同，但一样有依恋母亲的幼童，相互勉励的爱侣，有脑满肠肥的堕落者，也有如您一般面目清明的斗争者。这里的人们究竟会带来什么样的新故事，真是让在下无比期待……",
+            "filename": "File:vo_yugu_talk2_003.aac"
+        },
+        {
+            "title": "Full Compliance",
+            "text": "我曾听闻世有一柄断罪斩妖的锐利宝剑，现身于乱世，颠沛流离。“它”本可以明哲保身，却偏去殉那场天翻地覆……只是，当“它”神销身毁，肉拆骨散时，“它”会恐惧吗？会后悔吗？会恨这浑浊世道吗？哈…哈哈，在下日夜都在盼望，盼望着您倾情上演何种结局……",
+            "filename": "File:vo_yugu_obeyfull_001.aac"
+        },
+        {
+            "title": "Idle",
+            "text": "狄斯，一座摇摇欲坠的城市，纵使千般维护，这和平究竟又能撑到几时……？",
+            "filename": "File:vo_yugu_idle_001.aac"
+        },
+        {
+            "title": "Annoyed",
+            "text": "看来您和大多数狄斯人一样，对在下充满了好奇与揣测，如何……我是一个恰当的“东洲梦”吗？",
+            "filename": "File:vo_yugu_clicking_001.aac"
+        },
+        {
+            "title": "Special Attention",
+            "text": "当您注视着我的时候，我也在看着您，我想我们都在等待着某些东西……某些…让人兴奋的好东西……哈……",
+            "filename": "File:vo_yugu_specialattention_001.aac"
+        },
+        {
+            "title": "Dispatch",
+            "text": "在外游荡，收集某些特定的“东西”，在下尤其善于此道。",
+            "filename": "File:vo_yugu_dispatch_001.aac"
+        },
+        {
+            "title": "Dispatch Complete",
+            "text": "收获颇丰。",
+            "filename": "File:vo_yugu_dispatch2_001.aac"
+        },
+        {
+            "title": "Level Up",
+            "text": "作为报酬……就让在下为您讲些奇闻轶事吧。",
+            "filename": "File:vo_yugu_levelup_002.aac"
+        },
+        {
+            "title": "Pat Head",
+            "text": "从前，我还是个孩子时，母亲也常常这般抚摸我的头，呵呵……我想您和她一样温柔，一样……理解我的心思。",
+            "filename": "File:vo_yugu_head_001.aac"
+        }
+    ]
+}
