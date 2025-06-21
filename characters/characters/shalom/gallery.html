@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shalom - Gallery</title>
+    <link href="../../Styles.css" rel="stylesheet" />
+    <link href="../../NavBar.css" rel="stylesheet" />
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .gallery-item {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .gallery-item .caption {
+            padding: 10px;
+            background: #f5f5f5;
+        }
+        .back-link {
+            margin: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <button title="logo" class="navbar-toggler" data-toggle="open-navbar1">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="/">
+                    <h4>Path To Nowhere Archive</h4>
+                </a>
+            </div>
+
+            <div class="navbar-menu" id="open-navbar1">
+                <ul class="navbar-nav">
+                    <li><a href="/Game">Game</a></li>
+                    <li><a href="/CGs">CGs</a></li>
+                    <li><a href="/Voicelines">Voicelines</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <a href="./" class="back-link">← Back to Shalom's Voicelines</a>
+    
+    <h1>Shalom - Character Gallery</h1>
+    
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="../../images/shalom/shalom.png" alt="Shalom Portrait">
+            <div class="caption">Character Portrait</div>
+        </div>
+        <div class="gallery-item">
+            <img src="../../images/shalom/shalom_art1.jpg" alt="Shalom Art 1">
+            <div class="caption">Official Artwork</div>
+        </div>
+        <div class="gallery-item">
+            <img src="../../images/shalom/shalom_art2.jpg" alt="Shalom Art 2">
+            <div class="caption">Alternate Artwork</div>
+        </div>
+    </div>
+
+    <script>
+        function handleSmallScreens() {
+            document.querySelector('.navbar-toggler')
+                .addEventListener('click', () => {
+                    let navbarMenu = document.querySelector('.navbar-menu');
+                    if (!navbarMenu.classList.contains('active')) {
+                        navbarMenu.classList.add('active');
+                    } else {
+                        navbarMenu.classList.remove('active');
+                    }
+                });
+        }
+        handleSmallScreens();
+    </script>
+</body>
+</html> 
