@@ -1,0 +1,120 @@
+{
+    "default": [
+      {
+        "title": "Obtain the Sinner",
+        "text": "Not Available Yet",
+        "filename": "File:vo_hypatia_cacha_001.aac"
+      },
+      {
+        "title": "Raise to Phase 1",
+        "text": "Not Available Yet",
+        "filename": "File:vo_hypatia_promotion_001.aac"
+      },
+      {
+        "title": "Raise to Phase 3",
+        "text": "Not Available Yet",
+        "filename": "File:vo_hypatia_promotion2_001.aac"
+      },
+      {
+        "title": "Level Start",
+        "text": "Not Available Yet",
+        "filename": "File:vo_hypatia_battlebegin_001.aac"
+      },
+      {
+        "title": "Win Battles",
+        "text": "Not Available Yet",
+        "filename": "File:vo_hypatia_battlewin_001.aac"
+      },
+      {
+        "title": "Lose Battles",
+        "text": "Not Available Yet",
+        "filename": "File:vo_hypatia_battlelose_001.aac"
+      },
+      {
+        "title": "Ultimate Skill",
+        "text": "Not Available Yet",
+        "filename": "File:bt_hypatia_uniqueskill_001.aac"
+      },
+      {
+        "title": "Die in Battles",
+        "text": "Not Available Yet",
+        "filename": "File:bt_hypatia_dead_001.aac"
+      },
+      {
+        "title": "Greeting",
+        "text": "Not Available Yet",
+        "filename": "File:vo_hypatia_greeting_001.aac"
+      },
+      {
+        "title": "Conversation 1",
+        "text": "Not Available Yet",
+        "filename": "File:vo_hypatia_talk1_001.aac"
+      },
+      {
+        "title": "Conversation 2",
+        "text": "Not Available Yet",
+        "filename": "File:vo_hypatia_talk1_002.aac"
+      },
+      {
+        "title": "Conversation 3",
+        "text": "Not Available Yet",
+        "filename": "File:vo_hypatia_talk1_003.aac"
+      },
+      {
+        "title": "Special Conversation 1",
+        "text": "Not Available Yet",
+        "filename": "File:vo_hypatia_talk2_001.aac"
+      },
+      {
+        "title": "Special Conversation 2",
+        "text": "Not Available Yet",
+        "filename": "File:vo_hypatia_talk2_002.aac"
+      },
+      {
+        "title": "Special Conversation 3",
+        "text": "Not Available Yet",
+        "filename": "File:vo_hypatia_talk2_003.aac"
+      },
+      {
+        "title": "Full Compliance",
+        "text": "Not Available Yet",
+        "filename": "File:vo_hypatia_obeyfull_001.aac"
+      },
+      {
+        "title": "Idle",
+        "text": "Not Available Yet",
+        "filename": "File:vo_hypatia_idle_001.aac"
+      },
+      {
+        "title": "Annoyed",
+        "text": "Not Available Yet",
+        "filename": "File:vo_hypatia_clicking_001.aac"
+      },
+      {
+        "title": "Special Attention",
+        "text": "Not Available Yet",
+        "filename": "File:vo_hypatia_specialattention_001.aac"
+      },
+      {
+        "title": "Dispatch",
+        "text": "Not Available Yet",
+        "filename": "File:vo_hypatia_dispatch_001.aac"
+      },
+      {
+        "title": "Dispatch Complete",
+        "text": "Not Available Yet",
+        "filename": "File:vo_hypatia_dispatch2_001.aac"
+      },
+      {
+        "title": "Level Up",
+        "text": "Not Available Yet",
+        "filename": "File:vo_hypatia_levelup_002.aac"
+      },
+      {
+        "title": "Pat Head",
+        "text": "Not Available Yet",
+        "filename": "File:vo_hypatia_head_001.aac"
+      }
+    ]
+  }
+  
