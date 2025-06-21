@@ -101,7 +101,7 @@
                 <ul class="navbar-nav">
                     <li><a href="/Game">Game</a></li>
                     <li class="active"><a href="/CGs">CGs</a></li>
-                    <li><a href="/Voicelines">Voicelines</a></li>
+                    <li><a href="/characters">Characters</a></li>
                 </ul>
             </div>
         </div>
@@ -224,7 +224,7 @@
                         `;
 
                         chapterCard.onclick = () => {
-                            window.location.href = `chapter.html?name=${chapter.name}`;
+                            window.location.href = `${chapter.name}/`;
                         };
                         chapterGrid.appendChild(chapterCard);
                     });
