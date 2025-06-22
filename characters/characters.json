@@ -353,6 +353,14 @@
             "category": "Sinners"
         },
         {
+            "name": "hypatia",
+            "displayName": "Hypatia",
+            "rank": "S",
+            "libram": "FAMINE",
+            "tendency": "Reticle",
+            "category": "Sinners"
+        },
+        {
             "name": "ignis",
             "displayName": "Ignis",
             "rank": "A",
@@ -526,6 +534,14 @@
             "rank": "A",
             "libram": "SLOTH",
             "tendency": "Umbra",
+            "category": "Sinners"
+        },
+        {
+            "name": "lysandra",
+            "displayName": "Lysandra",
+            "rank": "A",
+            "libram": "VIOLENCE",
+            "tendency": "Fury",
             "category": "Sinners"
         },
         {
