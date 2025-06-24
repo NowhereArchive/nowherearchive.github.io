@@ -2,118 +2,118 @@
     "default": [
       {
         "title": "Obtain the Sinner",
-        "text": "Not Available Yet",
-        "filename": "File:vo_hypatia_cacha_001.aac"
+        "filename": "File:vo_hypatia_cacha_001.aac",
+        "text": "No text yet but you can still listen"
       },
       {
         "title": "Raise to Phase 1",
-        "text": "Not Available Yet",
-        "filename": "File:vo_hypatia_promotion_001.aac"
+        "filename": "File:vo_hypatia_promotion_001.aac",
+        "text": "No text yet but you can still listen"
       },
       {
         "title": "Raise to Phase 3",
-        "text": "Not Available Yet",
-        "filename": "File:vo_hypatia_promotion2_001.aac"
+        "filename": "File:vo_hypatia_promotion2_001.aac",
+        "text": "No text yet but you can still listen"
       },
       {
         "title": "Level Start",
-        "text": "Not Available Yet",
-        "filename": "File:vo_hypatia_battlebegin_001.aac"
+        "filename": "File:vo_hypatia_battlebegin_001.aac",
+        "text": "No text yet but you can still listen"
       },
       {
         "title": "Win Battles",
-        "text": "Not Available Yet",
-        "filename": "File:vo_hypatia_battlewin_001.aac"
+        "filename": "File:vo_hypatia_battlewin_001.aac",
+        "text": "No text yet but you can still listen"
       },
       {
         "title": "Lose Battles",
-        "text": "Not Available Yet",
-        "filename": "File:vo_hypatia_battlelose_001.aac"
-      },
-      {
-        "title": "Ultimate Skill",
-        "text": "Not Available Yet",
-        "filename": "File:bt_hypatia_uniqueskill_001.aac"
-      },
-      {
-        "title": "Die in Battles",
-        "text": "Not Available Yet",
-        "filename": "File:bt_hypatia_dead_001.aac"
+        "filename": "File:vo_hypatia_battlelose_001.aac",
+        "text": "No text yet but you can still listen"
       },
       {
         "title": "Greeting",
-        "text": "Not Available Yet",
-        "filename": "File:vo_hypatia_greeting_001.aac"
+        "filename": "File:vo_hypatia_greeting_001.aac",
+        "text": "No text yet but you can still listen"
       },
       {
         "title": "Conversation 1",
-        "text": "Not Available Yet",
-        "filename": "File:vo_hypatia_talk1_001.aac"
+        "filename": "File:vo_hypatia_talk1_001.aac",
+        "text": "No text yet but you can still listen"
       },
       {
         "title": "Conversation 2",
-        "text": "Not Available Yet",
-        "filename": "File:vo_hypatia_talk1_002.aac"
+        "filename": "File:vo_hypatia_talk1_002.aac",
+        "text": "No text yet but you can still listen"
       },
       {
         "title": "Conversation 3",
-        "text": "Not Available Yet",
-        "filename": "File:vo_hypatia_talk1_003.aac"
+        "filename": "File:vo_hypatia_talk1_003.aac",
+        "text": "No text yet but you can still listen"
       },
       {
         "title": "Special Conversation 1",
-        "text": "Not Available Yet",
-        "filename": "File:vo_hypatia_talk2_001.aac"
+        "filename": "File:vo_hypatia_talk2_001.aac",
+        "text": "No text yet but you can still listen"
       },
       {
         "title": "Special Conversation 2",
-        "text": "Not Available Yet",
-        "filename": "File:vo_hypatia_talk2_002.aac"
+        "filename": "File:vo_hypatia_talk2_002.aac",
+        "text": "No text yet but you can still listen"
       },
       {
         "title": "Special Conversation 3",
-        "text": "Not Available Yet",
-        "filename": "File:vo_hypatia_talk2_003.aac"
+        "filename": "File:vo_hypatia_talk2_003.aac",
+        "text": "No text yet but you can still listen"
       },
       {
         "title": "Full Compliance",
-        "text": "Not Available Yet",
-        "filename": "File:vo_hypatia_obeyfull_001.aac"
+        "filename": "File:vo_hypatia_obeyfull_001.aac",
+        "text": "No text yet but you can still listen"
       },
       {
         "title": "Idle",
-        "text": "Not Available Yet",
-        "filename": "File:vo_hypatia_idle_001.aac"
+        "filename": "File:vo_hypatia_idle_001.aac",
+        "text": "No text yet but you can still listen"
       },
       {
         "title": "Annoyed",
-        "text": "Not Available Yet",
-        "filename": "File:vo_hypatia_clicking_001.aac"
+        "filename": "File:vo_hypatia_clicking_001.aac",
+        "text": "No text yet but you can still listen"
       },
       {
         "title": "Special Attention",
-        "text": "Not Available Yet",
-        "filename": "File:vo_hypatia_specialattention_001.aac"
+        "filename": "File:vo_hypatia_specialattention_001.aac",
+        "text": "No text yet but you can still listen"
       },
       {
         "title": "Dispatch",
-        "text": "Not Available Yet",
-        "filename": "File:vo_hypatia_dispatch_001.aac"
+        "filename": "File:vo_hypatia_dispatch_001.aac",
+        "text": "No text yet but you can still listen"
       },
       {
         "title": "Dispatch Complete",
-        "text": "Not Available Yet",
-        "filename": "File:vo_hypatia_dispatch2_001.aac"
+        "filename": "File:vo_hypatia_dispatch2_001.aac",
+        "text": "No text yet but you can still listen"
       },
       {
         "title": "Level Up",
-        "text": "Not Available Yet",
-        "filename": "File:vo_hypatia_levelup_002.aac"
+        "filename": "File:vo_hypatia_levelup_002.aac",
+        "text": "No text yet but you can still listen"
       },
       {
         "title": "Pat Head",
-        "text": "Not Available Yet",
-        "filename": "File:vo_hypatia_head_001.aac"
+        "filename": "File:vo_hypatia_head_001.aac",
+        "text": "No text yet but you can still listen"
+      },
+      {
+        "title": "Ultimate Skill",
+        "filename": "File:bt_hypatia_uniqueskill_001.aac",
+        "text": "No text yet but you can still listen"
+      },
+      {
+        "title": "Die in Battles",
+        "filename": "File:bt_hypatia_dead_001.aac",
+        "text": "No text yet but you can still listen"
       }
     ]
   }
