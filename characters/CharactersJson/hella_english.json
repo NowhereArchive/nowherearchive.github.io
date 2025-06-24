@@ -119,43 +119,91 @@
     "queen_of_hearts": [
         {
             "title": "Obtain Attire",
-            "filename": "File:vo_hella_queen_of_hearts_cacha_001.aac",
+            "filename": "File:vo_hella_hongxinnvwang_cacha_001.aac",
             "text": "Who the hell is interrupting my nap time again? Kneel at once! Eh... If it's not Chief? (Giggles) Awesome! Now my croquet match can go as scheduled!"
         },
         {
             "title": "Greeting",
-            "filename": "File:vo_hella_queen_of_hearts_greeting_001.aac",
+            "filename": "File:vo_hella_hongxinnvwang_greeting_001.aac",
             "text": "Don't bring me white flowers. I prefer red roses. If it happens again, I'll... hit your head a hundred times!"
         },
         {
             "title": "Ordinary Contact 1",
-            "filename": "File:vo_hella_queen_of_hearts_talk_001.aac",
+            "filename": "File:vo_hella_hongxinnvwang_talk_001.aac",
             "text": "The weight, size, and texture of this scepter, and its shiny luster... It's as if it was tailored for me! And... most importantly, it's got a big head! So big and beautifully awesome!"
         },
         {
             "title": "Ordinary Contact 2",
-            "filename": "File:vo_hella_queen_of_hearts_talk_002.aac",
+            "filename": "File:vo_hella_hongxinnvwang_talk_002.aac",
             "text": "I want to eat that thing that's a dough topped with lots of fruit and cream! What's it called... some kind of tart...? Right, right! A fruit tart! I want it! Make one for me now!"
         },
         {
             "title": "Idle",
-            "filename": "File:vo_hella_queen_of_hearts_idle_001.aac",
+            "filename": "File:vo_hella_hongxinnvwang_idle_001.aac",
             "text": "It's almost tea party time! Go and decorate the venue now, Chief... Why? Because you're the only idle servant here with nothing else to do."
         },
         {
             "title": "Annoyed",
-            "filename": "File:vo_hella_queen_of_hearts_clicking_001.aac",
+            "filename": "File:vo_hella_hongxinnvwang_clicking_001.aac",
             "text": "Try that a few more times, and you should worry about your head... Chief!"
         },
         {
             "title": "Level Up",
-            "filename": "File:vo_hella_queen_of_hearts_levelup_001.aac",
+            "filename": "File:vo_hella_hongxinnvwang_levelup_001.aac",
             "text": "Ah! What's with these little animals? They've been giving me trouble the whole day! You're lucky you guys are cute, or I would have..."
         },
         {
             "title": "Special Attention",
-            "filename": "File:vo_hella_queen_of_hearts_specialattention_001.aac",
+            "filename": "File:vo_hella_hongxinnvwang_specialattention_001.aac",
             "text": "Ahem, to keep our relationship fair and equal, as the Queen, I order you to... Hey! You're trying some funny business with the shackles again!?"
         }
+    ],
+    "northward_to_whitesands": [
+      {
+        "title": "Level Up",
+        "filename": "File:vo_hella_shahaiqilv_levelup_001.aac",
+        "text": "Text not available yet but you can still listen"
+      },
+      {
+        "title": "Obtain Attire",
+        "filename": "File:vo_hella_shahaiqilv_cacha_001.aac",
+        "text": "Text not available yet but you can still listen"
+      },
+      {
+        "title": "Greeting",
+        "filename": "File:vo_hella_shahaiqilv_greeting_001.aac",
+        "text": "Text not available yet but you can still listen"
+      },
+      {
+        "title": "Ordinary Contact 1",
+        "filename": "File:vo_hella_shahaiqilv_talk_001.aac",
+        "text": "Text not available yet but you can still listen"
+      },
+      {
+        "title": "Ordinary Contact 2",
+        "filename": "File:vo_hella_shahaiqilv_talk_002.aac",
+        "text": "Text not available yet but you can still listen"
+      },
+      {
+        "title": "Idle",
+        "filename": "File:vo_hella_shahaiqilv_idle_001.aac",
+        "text": "Text not available yet but you can still listen"
+      },
+      {
+        "title": "Annoyed",
+        "filename": "File:vo_hella_shahaiqilv_clicking_001.aac",
+        "text": "Text not available yet but you can still listen"
+      },
+      {
+        "title": "Special Attention",
+        "filename": "File:vo_hella_shahaiqilv_specialattention_001.aac",
+        "text": "Text not available yet but you can still listen"
+      },
+      {
+        "title": "Pat Head",
+        "filename": "File:vo_hella_shahaiqilv_head_001.aac",
+        "text": "Text not available yet but you can still listen"
+      }
     ]
+  
 }
