@@ -172,5 +172,58 @@
             "filename": "File:vo_shalom_yehuaruzhou_specialattention_001.aac",
             "text": "你很喜欢和我待在一起吗？嗯……放心，我不会离开的。"
         }
+    ],
+    "undawning_nighttide": [
+        {
+            "title": "Obtain Attire",
+            "text": "果树抽出了嫩芽，在你我身上留下了伤痕……即使被逐出乐园，从此生活在永夜之中，你也愿意与我同行吗？",
+            "filename": "File:vo_shalom_anyetongxing_cacha_001.aac"
+        },
+        {
+            "title": "Greeting",
+            "text": "黯月自红海中升起，照亮眼前的道路。我知道，你终将来到我身边。",
+            "filename": "File:vo_shalom_anyetongxing_greeting_001.aac"
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "text": "不受乐园庇荫，同样意味着不需再被那些规则束缚。我们是最疯狂的背叛者，也是彼此……最忠诚的同伴。",
+            "filename": "File:vo_shalom_anyetongxing_body_001.aac"
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "text": "与乐园相比，这片海洋只能孕育“不洁”的存在——残破、混沌，但如此鲜活。剥离外表、重塑骨肉，你我背离光明，也将在永夜中重获新生。",
+            "filename": "File:vo_shalom_anyetongxing_body_002.aac"
+        },
+        {
+            "title": "Ordinary Contact 3",
+            "text": "你是魔女的眷属，只需听从我的声音、我的话语……没错，像现在这样就好，什么都不必做，什么都不用想。在惩戒降临之前，再陪我多呆一会儿吧。",
+            "filename": "File:vo_shalom_anyetongxing_righthand_001.aac"
+        },
+        {
+            "title": "Ordinary Contact 4",
+            "text": "誓约与承诺都无法永恒，值得铭记的只有现在，比如……当下的月光，还有此刻的你我。",
+            "filename": "File:vo_shalom_anyetongxing_lefthand_001.aac"
+        },
+        {
+            "title": "Idle",
+            "text": "嘘，闭上眼，仔细听……感受到了吗？海水在翻涌、心跳在复苏。这是自由的气息。",
+            "filename": "File:vo_shalom_anyetongxing_idle_001.aac"
+        },
+        {
+            "title": "Special Attention",
+            "text": "无论你前往何处，我将会与你同在——哪怕是世界的尽头。",
+            "filename": "File:vo_shalom_anyetongxing_specialattention_001.aac"
+        },
+        {
+            "title": "Level Up",
+            "text": "乖孩子，干得不错。",
+            "filename": "File:vo_shalom_anyetongxing_levelup_001.aac"
+        },
+        {
+            "title": "Pat Head",
+            "text": "不守规矩的坏孩子。来吧，继续，让我看看你能做到哪一步？",
+            "filename": "File:vo_shalom_anyetongxing_head_001.aac"
+        }
     ]
+
 }
