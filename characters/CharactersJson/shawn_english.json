@@ -115,5 +115,53 @@
             "filename": "File:bt_shawn_jointeam_001.aac",
             "text": "Which voice would you like me to  use? Yeah... Your wish is my command."
         }
+    ],
+    "digital_fauxmance": [
+      {
+        "title": "Level Up",
+        "filename": "File:vo_shawn_weiliantuisong_levelup_001.aac",
+        "text": "Text not available yet but you can still listen"
+      },
+      {
+        "title": "Obtain Attire",
+        "filename": "File:vo_shawn_weiliantuisong_cacha_001.aac",
+        "text": "Text not available yet but you can still listen"
+      },
+      {
+        "title": "Greeting",
+        "filename": "File:vo_shawn_weiliantuisong_greeting_001.aac",
+        "text": "Text not available yet but you can still listen"
+      },
+      {
+        "title": "Ordinary Contact 1",
+        "filename": "File:vo_shawn_weiliantuisong_talk_001.aac",
+        "text": "Text not available yet but you can still listen"
+      },
+      {
+        "title": "Ordinary Contact 2",
+        "filename": "File:vo_shawn_weiliantuisong_talk_002.aac",
+        "text": "Text not available yet but you can still listen"
+      },
+      {
+        "title": "Idle",
+        "filename": "File:vo_shawn_weiliantuisong_idle_001.aac",
+        "text": "Text not available yet but you can still listen"
+      },
+      {
+        "title": "Annoyed",
+        "filename": "File:vo_shawn_weiliantuisong_clicking_001.aac",
+        "text": "Text not available yet but you can still listen"
+      },
+      {
+        "title": "Special Attention",
+        "filename": "File:vo_shawn_weiliantuisong_specialattention_001.aac",
+        "text": "Text not available yet but you can still listen"
+      },
+      {
+        "title": "Pat Head",
+        "filename": "File:vo_shawn_weiliantuisong_head_001.aac",
+        "text": "Text not available yet but you can still listen"
+      }
     ]
+  
 }
