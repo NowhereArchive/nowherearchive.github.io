@@ -71,6 +71,16 @@
             "category": "Main Story"
         },
         {
+            "name": "Chapter14",
+            "displayName": "Chapter 14",
+            "category": "Main Story"
+        },
+        {
+            "name": "Chapter15",
+            "displayName": "Chapter 15",
+            "category": "Main Story"
+        },
+        {
             "name": "rainburst",
             "displayName": "Rain Burst",
             "category": "Character Events"
@@ -78,6 +88,91 @@
         {
             "name": "floraunfurl",
             "displayName": "Flora Unfurl",
+            "category": "Character Events"
+        },
+        {
+            "name": "BeyondDiscars",
+            "displayName": "Beyond Discars",
+            "category": "Character Events"
+        },
+        {
+            "name": "DreamyBubble",
+            "displayName": "Dreamy Bubble",
+            "category": "Character Events"
+        },
+        {
+            "name": "DittyNightsong",
+            "displayName": "Ditty Nightsong",
+            "category": "Character Events"
+        },
+        {
+            "name": "EclipseOfEternalVows",
+            "displayName": "Eclipse of Eternal Vows",
+            "category": "Character Events"
+        },
+        {
+            "name": "GlitchwaveNihil",
+            "displayName": "Glitchwave Nihil",
+            "category": "Character Events"
+        },
+        {
+            "name": "InsatiableFiesta",
+            "displayName": "Insatiable Fiesta",
+            "category": "Character Events"
+        },
+        {
+            "name": "IntoTheBlue",
+            "displayName": "Into The Blue",
+            "category": "Character Events"
+        },
+        {
+            "name": "NoGangsLand",
+            "displayName": "No Gang's Land",
+            "category": "Character Events"
+        },
+        {
+            "name": "OdeToSun",
+            "displayName": "Ode To Sun",
+            "category": "Character Events"
+        },
+        {
+            "name": "PerfectVote",
+            "displayName": "Perfect Vote",
+            "category": "Character Events"
+        },
+        {
+            "name": "QuixoticTroupe",
+            "displayName": "Quixotic Troupe",
+            "category": "Character Events"
+        },
+        {
+            "name": "RagingSands",
+            "displayName": "Raging Sands",
+            "category": "Character Events"
+        },
+        {
+            "name": "ThePhantomOfTheMist",
+            "displayName": "The Phantom of the Mist",
+            "category": "Character Events"
+        },
+        {
+            "name": "ToyboxTerror",
+            "displayName": "Toybox Terror",
+            "category": "Character Events"
+        },
+        {
+            "name": "VerdantPromises",
+            "displayName": "Verdant Promises",
+            "category": "Character Events"
+        },
+        {
+            "name": "VeiledInVioletVagary",
+            "displayName": "Veiled in Violet Vagary",
+            "category": "Character Events"
+        },
+        {
+            "name": "VelvetySusurration",
+            "displayName": "Velvety Susurration",
             "category": "Character Events"
         }
     ]
