@@ -7,3 +7,5 @@ characters/character-redirect-template.html
 characters/urls.json
 CGs/generate-chapter-pages.js
 CGs/chapter-template.html
+CGs/chapter-redirect-template.html
+CGs/update-github-urls.js
