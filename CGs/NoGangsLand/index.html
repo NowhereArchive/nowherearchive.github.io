@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3M02N0366N"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-702GZFHJQE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-3M02N0366N");
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-702GZFHJQE');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>No Gang's Land - CG Images</title>
+  <link href="../Styles.css" rel="stylesheet" />
+  <link href="../NavBar.css" rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <button title="logo" class="navbar-toggler" data-toggle="open-navbar1">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a href="/">
+          <h4>Path To Nowhere Archive</h4>
+        </a>
+      </div>
+
+      <div class="navbar-menu" id="open-navbar1">
+        <ul class="navbar-nav">
+          <li><a href="/CGs">CGs</a></li>
+          <li><a href="/characters">Characters</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <h1 id="chapterTitle">No Gang's Land</h1>
+
+  <div id="imagesContainer" class="images-container"></div>
+
+  <script>
+    // Chapter name will be injected here during generation
+    const chapterName = "NoGangsLand";
+
+    // Function to load images based on the JSON data
+    async function loadImages() {
+      const imagesFile = `../chapters/${chapterName}.json`;
+
+      try {
+        const response = await fetch(imagesFile);
+        if (!response.ok) {
+          throw new Error("Error loading images");
+        }
+        const imagesData = await response.json();
+        renderImages(imagesData);
+      } catch (error) {
+        console.error("Error loading images:", error);
+        document.getElementById("imagesContainer").innerHTML = `<p>Error loading images.</p>`;
+      }
+    }
+
+    // Function to render the images on the page
+    function renderImages(images) {
+      const imagesContainer = document.getElementById("imagesContainer");
+      imagesContainer.innerHTML = ""; // Clear existing content
+
+      images.forEach((image) => {
+        const imageDiv = document.createElement("div");
+        imageDiv.classList.add("image-card");
+        imageDiv.innerHTML = `
+          <img src="${image.fileName}" alt="${image.title}" />
+        `;
+        imagesContainer.appendChild(imageDiv);
+      });
+    }
+
+    // Load images when the document is ready
+    loadImages();
+
+    // Handle small screens for responsive design
+    function handleSmallScreens() {
+      document.querySelector(".navbar-toggler").addEventListener("click", () => {
+        let navbarMenu = document.querySelector(".navbar-menu");
+        navbarMenu.classList.toggle("active");
+      });
+    }
+
+    handleSmallScreens();
+  </script>
+</body>
+</html> 
