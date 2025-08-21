@@ -172,7 +172,49 @@
             "text": "Why do you gaze at me so? If there is worse news, please, do tell. Nothing could be more dreadful than the endless, empty days of imprisonment within that crystal ball.",
             "filename": "File:vo_eve_eerie_fables_specialattention_001.aac"
         }
-    ]
+    ],
+  "frostling_whisper": [
+    {
+      "title": "Level Up",
+      "text": "Little bear, little bear, grow up fast, grow up soon...",
+      "filename": "File:vo_eve_cangjimilin_levelup_001.aac"
+    },
+    {
+      "title": "Obtain Attire",
+      "text": "Over the years, this forsaken garden has gradually fallen to the encroaching frost, yet it now welcomes an unexpected visitor... Since you cannot leave for the time being, why not stay and join the final feast before all of nature slumbers?",
+      "filename": "File:vo_eve_cangjimilin_cacha_001.aac"
+    },
+    {
+      "title": "Greeting",
+      "text": "The snowy forest is treacherous to traverse. Please, sit beside me and have a cup of hot tea. If you would... tell me about the world beyond this frozen realm. What is it like now?",
+      "filename": "File:vo_eve_cangjimilin_greeting_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 1",
+      "text": "This feast has always had only two attendees. Myself and my little bear. We've kept each other company and shared warmth amidst the icy rime, until... you joined us.",
+      "filename": "File:vo_eve_cangjimilin_talk1_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 2",
+      "text": "This place is silent, cold, pale, and monotonous, yet they speak of it as if it were a fairy tale winter wonderland... If I am truly the protagonist of a fairy tale, then it must be a tale of heartless tragedy.",
+      "filename": "File:vo_eve_cangjimilin_talk1_002.aac"
+    },
+    {
+      "title": "Idle",
+      "text": "Listen, that's the sound of the frigid winds caressing the treetops... a lullaby for sweet winter dreams.",
+      "filename": "File:vo_eve_cangjimilin_idle_001.aac"
+    },
+    {
+      "title": "Annoyed",
+      "text": "Though my little bear is still but a cub, it already possesses enough strength to serve as my loyal guardian.",
+      "filename": "File:vo_eve_cangjimilin_clicking_001.aac"
+    },
+    {
+      "title": "Special Attention",
+      "text": "The feast is not yet over, and I shall not depart so easily. But perhaps next spring, someone will take my hand and lead me out of this timeworn blanket of ice and snow.",
+      "filename": "File:vo_eve_cangjimilin_specialattention_001.aac"
+    }
+  ]
 
 
 }
