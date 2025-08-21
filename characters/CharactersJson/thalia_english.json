@@ -1,0 +1,110 @@
+{
+    "default": [
+      {
+        "title": "Obtain the Sinner",
+        "text": "Hello, I'm Thalia Ellington. You've seen my channel, I assume? I have to say, this place of yours has some character to it. We could film a nice MBCC tour vlog here with some product placements... Hmm? MBCC doesn't need promotion?",
+        "filename": "File:vo_thalia_cacha_001.aac"
+      },
+      {
+        "title": "Raise to Phase 1",
+        "text": "Sponsorships? The more, the merrier.",
+        "filename": "File:vo_thalia_promotion_001.aac"
+      },
+      {
+        "title": "Raise to Phase 3",
+        "text": "Fame and glory are just fleeting illusions. The only things that matter are what you can hold in your hands.",
+        "filename": "File:vo_thalia_promotion2_001.aac"
+      },
+      {
+        "title": "Level Up",
+        "text": "The sales from this stream actually held up quite well.",
+        "filename": "File:vo_thalia_levelup_002.aac"
+      },
+      {
+        "title": "Level Start",
+        "text": "Wrap this up quick. I've got a major livestream to catch.",
+        "filename": "File:vo_thalia_battlebegin_001.aac"
+      },
+      {
+        "title": "Win Battles",
+        "text": "Honestly? This is what you needed me for?",
+        "filename": "File:vo_thalia_battlewin_001.aac"
+      },
+      {
+        "title": "Lose Battles",
+        "text": "End the stream now, or we'll lose everything!",
+        "filename": "File:vo_thalia_battlelose_001.aac"
+      },
+      {
+        "title": "Ultimate Skill",
+        "text": "Shop like you mean it!",
+        "filename": "File:bt_thalia_uniqueskill_001.aac"
+      },
+      {
+        "title": "Die in Battles",
+        "text": "Is there still a chance... to start over...",
+        "filename": "File:bt_thalia_dead_001.aac"
+      },
+      {
+        "title": "Conversation 1",
+        "text": "From handcrafted haute couture to rare Outland artifacts—even bulk packs of instant noodles for the whole family—my stream has it all. Whatever you desire, consider it yours.",
+        "filename": "File:vo_thalia_talk1_001.aac"
+      },
+      {
+        "title": "Conversation 2",
+        "text": "Chief, you don't look so good. Those fine lines around your eyes are really showing... How about this—I can recommend a night cream that I've personally tested with excellent results. It's budget-friendly, and if you use my promo code, it's three for the price of two. Pretty sweet deal, isn't it?",
+        "filename": "File:vo_thalia_talk1_002.aac"
+      },
+      {
+        "title": "Conversation 3",
+        "text": "Being an influencer isn't as easy as it looks. I wake up at five every day, filming all morning, editing six different versions of product reviews during lunch, attending events in the afternoon, streaming past midnight, and still squeezing in more work—all on four hours of sleep... Not everyone can keep up with a schedule like this.",
+        "filename": "File:vo_thalia_talk1_003.aac"
+      },
+      {
+        "title": "Special Conversation 1",
+        "text": "People follow me for different reasons—some want the latest trends, some crave a peek into a lifestyle they don't have, some take inspiration from my \"success story,\" and some are just bored. I play along with all of them. But you... you don't seem to fit any of those boxes.",
+        "filename": "File:vo_thalia_talk2_001.aac"
+      },
+      {
+        "title": "Special Conversation 2",
+        "text": "When my family went bankrupt, I asked relatives and acquaintances for help, only to be turned away like some stray. That's when I swore I'd never leave my dignity at someone else's doorstep again... Later, I became successful, and those people suddenly came crawling back. But don't worry, I'm nothing if not generous. I made sure to give them a few extra discount coupons.",
+        "filename": "File:vo_thalia_talk2_002.aac"
+      },
+      {
+        "title": "Special Conversation 3",
+        "text": "The Ellington family crest bears a hummingbird, meant to symbolize diligence and prosperity. Funny how those were the two things my family never quite mastered. Turns out, they just skipped a generation. After all, who clawed her way back to wealth? That would be me.",
+        "filename": "File:vo_thalia_talk2_003.aac"
+      },
+      {
+        "title": "Greeting",
+        "text": "Hello, lovelies! Whether you had a good day or not yesterday, you're always welcome in Thalia's stream. Today I've invited a very special guest who'll be sharing their exclusive must-have favorites... Chief, the spotlight is yours!",
+        "filename": "File:vo_thalia_greeting_001.aac"
+      },
+      {
+        "title": "Idle",
+        "text": "Hey, snap out of it! If you've got nothing better to do, why not come with me to an event? I could use an assistant.",
+        "filename": "File:vo_thalia_idle_001.aac"
+      },
+      {
+        "title": "Annoyed",
+        "text": "You like this? Good taste! It's our latest featured product. If you want one, I can give you an exclusive deal.",
+        "filename": "File:vo_thalia_clicking_001.aac"
+      },
+      {
+        "title": "Dispatch",
+        "text": "So, which brand had the good taste to invite me?",
+        "filename": "File:vo_thalia_dispatch_001.aac"
+      },
+      {
+        "title": "Dispatch Complete",
+        "text": "A client sent me some gifts. Here, you can take them.",
+        "filename": "File:vo_thalia_dispatch2_001.aac"
+      },
+      {
+        "title": "Special Attention",
+        "text": "Since you seem to enjoy looking at me so much, why not become my photographer? That way, you can admire me from every angle—with a perfectly legitimate excuse.",
+        "filename": "File:vo_thalia_specialattention_001.aac"
+      }
+    ]
+  }
+  
