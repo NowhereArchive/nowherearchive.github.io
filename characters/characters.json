@@ -385,10 +385,18 @@
             "category": "Sinners"
         },
         {
+            "name": "jasmine",
+            "displayName": "Jasmine",
+            "rank": "S",
+            "libram": "WAR",
+            "tendency": "Fury",
+            "category": "Sinners"
+        },
+        {
             "name": "jelena",
             "displayName": "Jelena",
             "rank": "S",
-            "libram": "LOVE",
+            "libram": "FAMINE",
             "tendency": "Catalyst",
             "category": "Sinners"
         },
@@ -665,6 +673,14 @@
             "category": "Sinners"
         },
         {
+            "name": "parfait",
+            "displayName": "Parfait",
+            "rank": "S",
+            "libram": "DEATH",
+            "tendency": "Catalyst",
+            "category": "Sinners"
+        },
+        {
             "name": "peggy",
             "displayName": "Peggy",
             "rank": "B",
@@ -798,6 +814,14 @@
             "rank": "A",
             "libram": "GREED",
             "tendency": "Umbra",
+            "category": "Sinners"
+        },
+        {
+            "name": "thalia",
+            "displayName": "Thalia",
+            "rank": "A",
+            "libram": "GREED",
+            "tendency": "Reticle",
             "category": "Sinners"
         },
         {
