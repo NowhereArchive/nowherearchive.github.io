@@ -1,124 +1,152 @@
 {
     "default": [
-        {
-            "title": "Obtain the Sinner",
-            "text": "You, illuminated the darkest depths of the sea bed, awakening me, and my distant memories. My human companion, I have waited for you for so long, so very long.",
-            "filename": "File:vo_pylgia_cacha_001.aac"
-        },
-        {
-            "title": "Raise to Phase 1",
-            "text": "As long as the environment keeps changing, evolution will never cease.",
-            "filename": "File:vo_pylgia_promotion_001.aac"
-        },
-        {
-            "title": "Raise to Phase 3",
-            "text": "I will reach the deepest fathoms of the sea.",
-            "filename": "File:vo_pylgia_promotion2_001.aac"
-        },
-        {
-            "title": "Level Start",
-            "text": "Begin exploring... these waters.",
-            "filename": "File:vo_pylgia_battlebegin_001.aac"
-        },
-        {
-            "title": "Win Battles",
-            "text": "Threat eliminated. I can dive deeper now.",
-            "filename": "File:vo_pylgia_battlewin_001.aac"
-        },
-        {
-            "title": "Lose Battles",
-            "text": "The Abyss will devour everything.",
-            "filename": "File:vo_pylgia_battlelose_001.aac"
-        },
-        {
-            "title": "Ultimate Skill",
-            "text": "Pierce, tear apart and sink into the sea.",
-            "filename": "File:bt_pylgia_uniqueskill_001.aac"
-        },
-        {
-            "title": "Die in Battles",
-            "text": "This too... is part of the cycle",
-            "filename": "File:bt_pylgia_dead_001.aac"
-        },
-        {
-            "title": "Greeting",
-            "text": "Currents converge, fish migrate, you have come back to me again.",
-            "filename": "File:vo_pylgia_greeting_001.aac"
-        },
-        {
-            "title": "Conversation 1",
-            "text": "Killing, predation and death are just like birth, growth and love. They are just stages in life cycle.",
-            "filename": "File:vo_pylgia_talk1_001.aac"
-        },
-        {
-            "title": "Conversation 2",
-            "text": "We are all children of the ocean, destined to converge and combine. Becoming part of each other.",
-            "filename": "File:vo_pylgia_talk1_002.aac"
-        },
-        {
-            "title": "Conversation 3",
-            "text": "No matter how deep I dive, I must return to the surface in the end. Humans don't truly belong in the cold deep sea.",
-            "filename": "File:vo_pylgia_talk1_003.aac"
-        },
-        {
-            "title": "Special Conversation 1",
-            "text": "Since the beginning of my memory, I have lived in the sea, the land is out of my reach, and human emotions are so complex, I can't get close.",
-            "filename": "File:vo_pylgia_talk2_001.aac"
-        },
-        {
-            "title": "Special Conversation 2",
-            "text": "The truth is a ray of light, colder than the deepest waters. Whoever saw it can't resist chasing its dangerous yet irresistible for there's nothing else left to pursue in the sheer darkness.",
-            "filename": "File:vo_pylgia_talk2_002.aac"
-        },
-        {
-            "title": "Special Conversation 3",
-            "text": "I love the summer waves, sunlight reaching the sea floor, migratory birds and fish on the water surface. Would you like to see it too?",
-            "filename": "File:vo_pylgia_talk2_003.aac"
-        },
-        {
-            "title": "Full Compliance",
-            "text": "Humans age and die. I don't like it. One day, when you reach the end of your existence, come to me, become one with me, and let us coexist for all eternity.",
-            "filename": "File:vo_pylgia_obeyfull_001.aac"
-        },
-        {
-            "title": "Idle",
-            "text": "In this lull between storms, everything is so peaceful.",
-            "filename": "File:vo_pylgia_idle_001.aac"
-        },
-        {
-            "title": "Annoyed",
-            "text": "Uh, stop. The barnacles and shells are sharp. Be careful. I don't want you to get hurt.",
-            "filename": "File:vo_pylgia_clicking_001.aac"
-        },
-        {
-            "title": "Special Attention",
-            "text": "Because of you, I returned from the abyss, and you didn't let me down. You are here.",
-            "filename": "File:vo_pylgia_specialattention_001.aac"
-        },
-        {
-            "title": "Dispatch",
-            "text": "Are we going to the sea?",
-            "filename": "File:vo_pylgia_dispatch_001.aac"
-        },
-        {
-            "title": "Dispatch Complete",
-            "text": "The tide has brought them back to the shore.",
-            "filename": "File:vo_pylgia_dispatch2_001.aac"
-        },
-        {
-            "title": "Level Up",
-            "text": "Deeper... Colder...",
-            "filename": "File:vo_pylgia_levelup_002.aac"
-        },
-        {
-            "title": "Pat Head",
-            "text": "It feels soft like clusters of algae rushing against my hair. It's strange, but I don't mind it.",
-            "filename": "File:vo_pylgia_head_001.aac"
-        },
-        {
-            "title": "Deploy",
-            "filename": "File:bt_pylgia_jointeam_001.aac",
-            "text": "Gaze into the abyss..."
-        }
+      {
+        "title": "Obtain the Sinner",
+        "text": "You... illuminated the darkest depths of the seabed... awakening me... and my distant memories... My human companion... I have waited for you... for so long... so very long...",
+        "filename": "File:vo_pylgia_cacha_001.aac"
+      },
+      {
+        "title": "Raise to Phase 1",
+        "text": "As long as the environment keeps changing... evolution will never cease...",
+        "filename": "File:vo_pylgia_promotion_001.aac"
+      },
+      {
+        "title": "Raise to Phase 3",
+        "text": "I will... reach the deepest fathoms of the sea...",
+        "filename": "File:vo_pylgia_promotion2_001.aac"
+      },
+      {
+        "title": "Level Up",
+        "text": "Deeper... colder...",
+        "filename": "File:vo_pylgia_levelup_002.aac"
+      },
+      {
+        "title": "Pat Head",
+        "text": "It feels... soft... like clusters of algae brushing against my hair... It's strange... but... I don't mind it...",
+        "filename": "File:vo_pylgia_head_001.aac"
+      },
+      {
+        "title": "Level Start",
+        "text": "Begin exploring... these waters...",
+        "filename": "File:vo_pylgia_battlebegin_001.aac"
+      },
+      {
+        "title": "Win Battles",
+        "text": "Threat... eliminated... I can dive deeper now...",
+        "filename": "File:vo_pylgia_battlewin_001.aac"
+      },
+      {
+        "title": "Lose Battles",
+        "text": "The abyss... will devour everything...",
+        "filename": "File:vo_pylgia_battlelose_001.aac"
+      },
+      {
+        "title": "Conversation 1",
+        "text": "Killing, predation, and death... are just like birth, growth, and love. They are just stages in life's cycle...",
+        "filename": "File:vo_pylgia_talk1_001.aac"
+      },
+      {
+        "title": "Conversation 2",
+        "text": "We are all children of the ocean... destined to converge and combine... becoming part of each other...",
+        "filename": "File:vo_pylgia_talk1_002.aac"
+      },
+      {
+        "title": "Conversation 3",
+        "text": "No matter how deep I dive... I must return to the surface in the end... Humans... don't truly belong in the cold deep sea...",
+        "filename": "File:vo_pylgia_talk1_003.aac"
+      },
+      {
+        "title": "Special Conversation 1",
+        "text": "Since the beginning of my memory... I have lived in the sea... The land is out of my reach... and human emotions are so complex... I... can't get close...",
+        "filename": "File:vo_pylgia_talk2_001.aac"
+      },
+      {
+        "title": "Special Conversation 2",
+        "text": "The truth... is a ray of light... colder than the deepest waters... Whoever saw it can't resist chasing... it's dangerous yet irresistible... for there's nothing else left to pursue... in the sheer darkness...",
+        "filename": "File:vo_pylgia_talk2_002.aac"
+      },
+      {
+        "title": "Special Conversation 3",
+        "text": "I love... the summer waves... sunlight reaching the sea floor... migratory birds, and fish on the water's surface... Would you like to see it too?",
+        "filename": "File:vo_pylgia_talk2_003.aac"
+      },
+      {
+        "title": "Full Compliance",
+        "text": "Humans... age... and die... I don't like it... One day, when you reach the end of your existence... come to me, become one with me, and let us coexist... for all eternity...",
+        "filename": "File:vo_pylgia_obeyfull_001.aac"
+      },
+      {
+        "title": "Greeting",
+        "text": "Currents converge... Fish migrate... You... have come back to me again...",
+        "filename": "File:vo_pylgia_greeting_001.aac"
+      },
+      {
+        "title": "Idle",
+        "text": "In this lull between storms... everything is so peaceful...",
+        "filename": "File:vo_pylgia_idle_001.aac"
+      },
+      {
+        "title": "Annoyed",
+        "text": "Stop... the barnacles and shells... are sharp. Be careful... I don't want you to get hurt...",
+        "filename": "File:vo_pylgia_clicking_001.aac"
+      },
+      {
+        "title": "Dispatch",
+        "text": "Are we... going to the sea?",
+        "filename": "File:vo_pylgia_dispatch_001.aac"
+      },
+      {
+        "title": "Dispatch Complete",
+        "text": "The tide... has brought them back to the shore...",
+        "filename": "File:vo_pylgia_dispatch2_001.aac"
+      },
+      {
+        "title": "Special Attention",
+        "text": "Because of you... I returned from the Abyss... and you... didn't let me down... You are... here.",
+        "filename": "File:vo_pylgia_specialattention_001.aac"
+      }
+    ],
+    "shackled_dream_in_aqua": [
+      {
+        "title": "Level Up",
+        "text": "Might it... enable me to traverse the barrier and stand by your side?",
+        "filename": "File:vo_pylgia_shuixingzhiguan_levelup_001.aac"
+      },
+      {
+        "title": "Obtain Attire",
+        "text": "In the cerulean glow of the abyss, I was born; adrift in confluents and frothy tides, I wandered... And now, here I am, bereft of self, all but a showing piece awaiting the demise of my sanity. What, pray tell, makes you linger?",
+        "filename": "File:vo_pylgia_shuixingzhiguan_cacha_001.aac"
+      },
+      {
+        "title": "Greeting",
+        "text": "This is... an abyssal trench tainted by darkness—where water halts and time slows.... Only you, can bring hope and change to this cage of vast voids...",
+        "filename": "File:vo_pylgia_shuixingzhiguan_greeting_001.aac"
+      },
+      {
+        "title": "Ordinary Contact 1",
+        "text": "Those who visit here, they merely glance my way. They just... stand aloof, like deep-sea creatures that shy away from getting close. But you—you are different... Pardon me, I don't disdain it. I'm just feeling... bewildered.",
+        "filename": "File:vo_pylgia_shuixingzhiguan_talk_001.aac"
+      },
+      {
+        "title": "Ordinary Contact 2",
+        "text": "Once I viewed the human world from afar, weaving through the oceanic vessels, in want of the starlight gleaming at harbors... Always mesmerized by those things, untouchable yet captivating, much as now I anticipate the light in your eyes.",
+        "filename": "File:vo_pylgia_shuixingzhiguan_talk_002.aac"
+      },
+      {
+        "title": "Idle",
+        "text": "Hark... the sound of water striking this glass, isn't it... so much like the currents caressing the beach rocks? They'll both drift you into dreams...",
+        "filename": "File:vo_pylgia_shuixingzhiguan_idle_001.aac"
+      },
+      {
+        "title": "Annoyed",
+        "text": "This translucent wall does us part... I can sense you across this thalassic vast, yet I could not reach you, for we are worlds apart.",
+        "filename": "File:vo_pylgia_shuixingzhiguan_clicking_001.aac"
+      },
+      {
+        "title": "Special Attention",
+        "text": "These viewers... They come and go, surveying the exhibits, selecting what they adore, while we too observe them... How wondrous it is, then, that we chose each other. Perhaps this is what humanity deems a \"soul match.\"",
+        "filename": "File:vo_pylgia_shuixingzhiguan_specialattention_001.aac"
+      }
     ]
-}
+  }
+  
