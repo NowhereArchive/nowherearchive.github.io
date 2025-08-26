@@ -777,6 +777,14 @@
             "category": "Sinners"
         },
         {
+            "name": "shin",
+            "displayName": "Shin",
+            "rank": "S",
+            "libram": "IMMORTAL",
+            "tendency": "Catalyst",
+            "category": "Sinners"
+        },
+        {
             "name": "shrooma",
             "displayName": "Shrooma",
             "rank": "A",
