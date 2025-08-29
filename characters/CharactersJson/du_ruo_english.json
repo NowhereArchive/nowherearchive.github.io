@@ -116,56 +116,56 @@
             "filename": "File:vo_du_ruo_specialattention_001.aac"
         }
     ],
-    "lunaria_enigma": [
+    "jingyechangxi": [
         {
             "title": "Level Up",
             "text": "Westward, the tides rise; amidst their ebb and flow, the Moon shines.",
-            "filename": "File:vo_du_ruo_lunaria_enigma_levelup_001.aac"
+            "filename": "File:vo_du_ruo_jingyechangxi_levelup_001.aac"
         },
         {
             "title": "Pat Head",
             "text": "Is this a new form of mortal ritual? Hm, the gestures of courtesy matter not. As long as you're a sincere petitioner, I shall grant you lunar grace.",
-            "filename": ""
+            "filename": "File:vo_duruo_jingyechangxi_head_001.aac"
         },
         {
             "title": "Obtain Attire",
             "text": "To have braved the Tidal Illusion and found your way to me... Traveler, you share a rare bond with the Moon. Remain here, bathe in its silver light, and become my herald.",
-            "filename": "File:vo_du_ruo_lunaria_enigma_cacha_001.aac"
+            "filename": "File:vo_du_ruo_jingyechangxi_cacha_001.aac"
         },
         {
             "title": "Greeting",
             "text": "When the Moon is full, families reunite. Each time I witness their joy, I long to descend to the mortal world and share their bliss.",
-            "filename": "File:vo_du_ruo_lunaria_enigma_greeting_001.aac"
+            "filename": "File:vo_du_ruo_jingyechangxi_greeting_001.aac"
         },
         {
             "title": "Ordinary Contact 1",
             "text": "You seem quite taken by the splash on my gown... Hm, ordinary waters cannot touch the form of a goddess, but this pond has felt my grace. It offered its devotion willingly, and thus becoming part of my power.",
-            "filename": "File:vo_du_ruo_lunaria_enigma_talk_001.aac"
+            "filename": "File:vo_du_ruo_jingyechangxi_talk_001.aac"
         },
         {
             "title": "Ordinary Contact 2",
             "text": "They praise that long may the sun shine, claiming the Moon merely mirrors the light. But I say, without the Moon, how could there be a morrow, if a good day does not end with moonlit sorrow?",
-            "filename": "File:vo_du_ruo_lunaria_enigma_talk_002.aac"
+            "filename": "File:vo_du_ruo_jingyechangxi_talk_002.aac"
         },
         {
             "title": "Ordinary Contact 3",
             "text": "The full moon pierces the night; the tide burning in your veins echoes with mine. Come, gaze upon the waters—do you not see yourself in a new light?",
-            "filename": "File:vo_du_ruo_lunaria_enigma_hand_001.aac"
+            "filename": "File:vo_du_ruo_jingyechangxi_hand_001.aac"
         },
         {
             "title": "Ordinary Contact 4",
             "text": "Some tales say an old couple found me inside a bamboo stalk; others claim I coveted the immortal elixir to ascend to Heaven... Hm, amusing stories, indeed. Attend me, my herald—how would you spin a story of my origin?",
-            "filename": "File:vo_du_ruo_lunaria_enigma_leg_001.aac"
+            "filename": "File:vo_du_ruo_jingyechangxi_leg_001.aac"
         },
         {
             "title": "Idle",
             "text": "The Moon may be veiled by clouds, but never for long. It shall always cut through the mist and once again shed light upon the world.",
-            "filename": "File:vo_du_ruo_lunaria_enigma_idle_001.aac"
+            "filename": "File:vo_du_ruo_jingyechangxi_idle_001.aac"
         },
         {
             "title": "Special Attention",
             "text": "The Moon has delivered your wish. The goddess shall grant her grace to her most devoted heralds. Step aboard this boat, and heed the words I bestow upon you.",
-            "filename": "File:vo_du_ruo_lunaria_enigma_specialattention_001.aac"
+            "filename": "File:vo_du_ruo_jingyechangxi_specialattention_001.aac"
         }
     ]
 }
