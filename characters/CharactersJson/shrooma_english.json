@@ -115,5 +115,47 @@
             "filename": "File:bt_shrooma_jointeam_001.aac",
             "text": "Are the adults here this useless? Even I have to step in?"
         }
-    ]
+    ],
+  "whimsy_escape": [
+    {
+      "title": "Annoyed",
+      "filename": "File:vo_shrooma_huanyuxianzong_clicking_001.aac",
+      "text": "You humans are so greedy. Always brushing fairy dust from wings endlessly for cash. Listen, I'll make you a deal. You can sell it, but in return you need to buy me potato chips, bubble gum and that plastic castle place that I couldn't carry back last time because it was too heavy."
+    },
+    {
+      "title": "Greeting",
+      "filename": "File:vo_shrooma_huanyuxianzong_greeting_001.aac",
+      "text": "You weren't sent by the elders to make sure I finished my homework were you? Don't worry. I'll definitely complete it properly. But once I'm done, I'm gonna play my heart out for days."
+    },
+    {
+      "title": "Ordinary Contact 1",
+      "filename": "File:vo_shrooma_huanyuxianzong_body_001.aac",
+      "text": "All these knickknacks were properly traded with human children and exchanged for fairy dust. As for those books and notebooks, the elders just had to copy humans with their education system, and now studying is such a pain. But they say humans have something called a computer that can... ahem...what are you thinking? It can help with research and studying. Do you know what it is?"
+    },
+    {
+      "title": "Ordinary Contact 2",
+      "filename": "File:vo_shrooma_huanyuxianzong_body_002.aac",
+      "text": "According to the websprite's network, what I'm studying here is just the tip of the iceberg compared to human textbooks. Is that even true? With all that homework, do humans even have time to learn how to gather flower nectar, identify edible berries or grow mushrooms?"
+    },
+    {
+      "title": "Level Up",
+      "filename": "File:vo_shrooma_huanyuxianzong_levelup_001.aac",
+      "text": "Heh, another journal all filled up."
+    },
+    {
+      "title": "Obtain Attire",
+      "filename": "File:vo_shrooma_huanyuxianzong_cacha_001.aac",
+      "text": "Pippi's magic circle are just squiggles. Pinky's wings are like flies. Honey treats hide under the oak tree shelf. I'll sneak and eat them all by myself. Huh? How long have you been standing there? I'm just doing my homework. Nothing else!"
+    },
+    {
+      "title": "Idle",
+      "filename": "File:vo_shrooma_huanyuxianzong_idle_001.aac",
+      "text": "I'm so bored. Huh? I remember those things humans call french fries are pretty tasty. I should go grab some more."
+    },
+    {
+      "title": "Special Attention",
+      "filename": "File:vo_shrooma_huanyuxianzong_specialattention_001.aac",
+      "text": "Hmm, if you're so eager to play with me, why don't you help me with this human observation homework instead?"
+    }
+  ]
 }
