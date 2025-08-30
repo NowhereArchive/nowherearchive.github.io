@@ -120,5 +120,57 @@
             "filename": "File:bt_jelena_jointeam_001.aac",
             "text": ""
         }
-    ]
+    ],
+  "scorched_lullaby": [
+    {
+      "title": "Level Up",
+      "filename": "File:vo_jelena_zhuoyeyaolan_levelup_001.aac",
+      "text": "Another child has been reborn."
+    },
+    {
+      "title": "Obtain Attire",
+      "filename": "File:vo_jelena_zhuoyeyaolan_cacha_001.aac",
+      "text": "Their cries for mother pierced through the flame and reached my ears. So I came, allowing them a rebirth in blood and ash. Tell me, what brings you here?"
+    },
+    {
+      "title": "Greeting",
+      "filename": "File:vo_jelena_zhuoyeyaolan_greeting_001.aac",
+      "text": "You linger at the edge of the dark forest, refusing to venture deeper. But what can you truly discern if you won't look in my eyes? Come closer to me. There's nothing to fear here. Only a mother and her beloved children."
+    },
+    {
+      "title": "Ordinary Contact 1",
+      "filename": "File:vo_jelena_zhuoyeyaolan_body_001.aac",
+      "text": "I do not pick and choose which lives to save, whether tainted or pure, low-born or noble, I embrace all equally, making those souls who call to me, my kin, my treasures, sharing with them immortality and eternity. In your eyes, is that blasphemy?"
+    },
+    {
+      "title": "Ordinary Contact 2",
+      "filename": "File:vo_jelena_zhuoyeyaolan_body_002.aac",
+      "text": "This flame is the earth itself, the body of mother, the crucible of the world. It melds flesh, reshapes souls, stripping away all suffering and sorrow, forging a rebirth that is twisted, yet pure. This is what you sought to glimpse. My salvation."
+    },
+    {
+      "title": "Ordinary Contact 3",
+      "filename": "File:vo_jelena_zhuoyeyaolan_hand_001.aac",
+      "text": "Every lamb that leaps into the flame has already endured immeasurable suffering. Holy water cannot heal their wounds. Nor can sermons ease their pain. This is why they choose to fall into my embrace. To be reborn through me. For I will never allow my children to endure such torment again."
+    },
+    {
+      "title": "Ordinary Contact 4",
+      "filename": "File:vo_jelena_zhuoyeyaolan_background_001.aac",
+      "text": "A mother is forever attuned to crying, whether it be the wailing of those seeking comfort, or the joyful cries of souls reborn. Remember this, these magical flowers, the forbidden fruits are not necessary for the summoning ritual. Your sincere tears alone are enough to draw my gaze."
+    },
+    {
+      "title": "Idle",
+      "filename": "File:vo_jelena_zhuoyeyaolan_idle_001.aac",
+      "text": "My embrace is already overflowing, yet the crying never ceases. When will these afflicted souls finally find peace?"
+    },
+    {
+      "title": "Special Attention",
+      "filename": "File:vo_jelena_zhuoyeyaolan_specialattention_001.aac",
+      "text": "Your gaze is different from those children who trust mother completely. Is it because you are braver than they are? Or simply, because you are more lost."
+    },
+    {
+      "title": "Pat Head",
+      "filename": "File:vo_jelena_zhuoyeyaolan_head_001.aac",
+      "text": "Yes, that's it. Don't resist the urge to touch me. I will indulge your every whim."
+    }
+  ]
 }

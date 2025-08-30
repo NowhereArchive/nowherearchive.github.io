@@ -115,5 +115,47 @@
             "filename": "File:bt_christina_jointeam_001.aac",
             "text": "Time for the Eastside acting inspector to shine!"
         }
-    ]
+    ],
+    "sunrise_express": [
+    {
+      "title": "Special Attention",
+      "filename": "File:vo_christina_kuaichechenlv_specialattention_001.aac",
+      "text": "Assistant look! The sun is rising from the valley! Isn't it beautiful? You're mesmerized too, aren't you? Come stand here with me. Don't worry, the great detective won't let you fall."
+    },
+    {
+      "title": "Level Up",
+      "filename": "File:vo_christina_kuaichechenlv_levelup_001.aac",
+      "text": "They upgraded my ticket, and the next investigation site is the VIP carriage."
+    },
+    {
+      "title": "Idle",
+      "filename": "File:vo_christina_kuaichechenlv_idle_001.aac",
+      "text": "Ugh, it's so boring without any cases to solve. How come everyone on this train seems to be a law-abiding citizen."
+    },
+    {
+      "title": "Annoyed",
+      "filename": "File:vo_christina_kuaichechenlv_clicking_001.aac",
+      "text": "Hey hey stop fooling around and give me a hand! I'm about to drop my suitcase!"
+    },
+    {
+      "title": "Obtain Attire",
+      "filename": "File:vo_christina_kuaichechenlv_cacha_001.aac",
+      "text": "Assistant! Over here! I'm right here! I-I didn't oversleep. Come on, I still made it on time. Quick, pull me up!"
+    },
+    {
+      "title": "Ordinary Contact 1",
+      "filename": "File:vo_christina_kuaichechenlv_body_001.aac",
+      "text": "Trains are notorious hotspots for murder cases. You know that famous case, right? Hmm... I can't remember how it started or ended, but anyway, everyone's a potential culprit. I wonder if we'll stumble upon a similar case this time."
+    },
+    {
+      "title": "Ordinary Contact 2",
+      "filename": "File:vo_christina_kuaichechenlv_body_002.aac",
+      "text": "Hey, that man over there with the weird beard looks suspicious. But don't look back! The way he's eating that egg is so bizarre. Could he be tampering with it somehow? What? You're saying that's how famous detectives eat?"
+    },
+    {
+      "title": "Greeting",
+      "filename": "File:vo_christina_kuaichechenlv_greeting_001.aac",
+      "text": "My assistant, you're here too! Did you also sense suspicious individuals in this carriage? Ahem! Excellent! Even while traveling, we must remain vigilant!"
+    }
+  ]
 }
