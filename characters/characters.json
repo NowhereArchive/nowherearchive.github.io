@@ -766,7 +766,17 @@
             "rank": "S",
             "libram": "SLOTH",
             "tendency": "Reticle",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "yehuaruzhou",
+                    "displayName": "City never sleeps"
+                }
+            ]
         },
         {
             "name": "shawn",
