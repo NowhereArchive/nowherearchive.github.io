@@ -65,6 +65,14 @@
             "category": "Sinners"
         },
         {
+            "name": "cassian",
+            "displayName": "Cassian",
+            "rank": "A",
+            "libram": "SLOTH",
+            "tendency": "Catalyst",
+            "category": "Sinners"
+        },
+        {
             "name": "chameleon",
             "displayName": "Chameleon",
             "rank": "A",
@@ -590,6 +598,14 @@
             "rank": "A",
             "libram": "HERESY",
             "tendency": "Fury",
+            "category": "Sinners"
+        },
+        {
+            "name": "milly",
+            "displayName": "Milly",
+            "rank": "S",
+            "libram": "DEATH",
+            "tendency": "Arcane",
             "category": "Sinners"
         },
         {

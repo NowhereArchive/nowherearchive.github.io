@@ -34,6 +34,140 @@
   <title>Hestia Voicelines - Path To Nowhere Archive</title>
   <link href="../../Styles.css" rel="stylesheet" />
   <link href="../../NavBar.css" rel="stylesheet" />
+  <link href="Styles.css" rel="stylesheet" />
+  <style>
+    .hero-controls {
+      max-width: 800px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .search-container {
+      position: relative;
+      max-width: 600px;
+      margin: 2rem auto;
+      width: 100%;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 1rem 1.5rem;
+      padding-right: 8rem;
+      font-size: 1.1rem;
+      border: 2px solid rgba(255, 255, 255, 0.1);
+      border-radius: 50px;
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(10px);
+      color: white;
+      transition: all 0.3s ease;
+    }
+
+    .search-input::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .search-shortcut {
+      position: absolute;
+      right: 3.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 0.75rem;
+      font-family: monospace;
+      pointer-events: none;
+      opacity: 0.6;
+      transition: all 0.3s ease;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+      background: transparent;
+      border: none;
+      padding: 0;
+    }
+
+    .search-container:focus-within .search-shortcut {
+      opacity: 0;
+      transform: translateY(-50%) scale(0.9);
+    }
+
+    .search-input:focus {
+      outline: none;
+      border-color: #9c1111;
+      box-shadow: 0 0 0 3px rgba(156, 17, 17, 0.3);
+    }
+
+    .search-button {
+      position: absolute;
+      right: 0.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+      background: transparent;
+      border: none;
+      color: rgba(255, 255, 255, 0.7);
+      cursor: pointer;
+      padding: 0.5rem;
+      border-radius: 50%;
+      transition: all 0.2s ease;
+    }
+
+    .search-button:hover {
+      color: white;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .button-groups {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .language-buttons,
+    .attire-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .language-buttons button,
+    .attire-buttons button {
+      padding: 0.5rem 1.25rem;
+      border: none;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      color: #e0e0e0;
+      font-family: 'Lato', sans-serif;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .language-buttons button:hover,
+    .attire-buttons button:hover {
+      background: rgba(156, 17, 17, 0.3);
+      color: white;
+    }
+
+    .language-buttons button.active,
+    .attire-buttons button.active {
+      background: #9c1111;
+      color: white;
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      .button-groups {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .language-buttons,
+      .attire-buttons {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -56,7 +190,7 @@
 
       <div class="navbar-menu" id="open-navbar1">
         <ul class="navbar-nav">
-          <li><a href="/Game">Game</a></li>
+          <!-- <li><a href="/Game">Game</a></li> -->
           <li><a href="/CGs">CGs</a></li>
           <li><a href="/characters">Characters</a></li>
 
@@ -64,15 +198,29 @@
       </div>
     </div>
   </nav>
-  <h1 id="characterName">Hestia</h1>
-
-  <div class="search-container">
-    <input type="text" id="searchInput" class="search-input" placeholder="Search Through Voicelines"
-      autocomplete="off" />
-  </div>
-
-  <div class="language-buttons" id="languageButtonsContainer"></div>
-  <div class="attire-buttons" id="attireButtonsContainer"></div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 id="characterName">Hestia</h1>
+      <div class="hero-controls">
+        <div class="search-container">
+          <input type="text" id="searchInput" class="search-input" placeholder="Search voicelines..." autocomplete="off" />
+          <span class="search-shortcut" title="Press / to search">/</span>
+          <button class="search-button" id="searchButton">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+        </div>
+        <div class="button-groups">
+          <div class="language-buttons" id="languageButtonsContainer"></div>
+          <div class="attire-buttons" id="attireButtonsContainer"></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-overlay"></div>
+  </section>
 
   <div id="voicelinesContainer"></div>
 
@@ -152,19 +300,147 @@
         )}`;
 
         const lineDiv = document.createElement("div");
-        lineDiv.classList.add("voiceline");
+        lineDiv.className = 'voiceline-card';
+        const hasTranslation = language !== "english" && englishVoicelineMap[voiceline.title];
+        
         lineDiv.innerHTML = `
-        <p>${voiceline.title}:</p>
-        <button onclick="playVoice('${sanitizedAudioFile}')">Play</button>
-        <button onclick="stopVoice()">Stop</button>
-        <p class="voiceline-text">${voiceline.text}</p>
-      `;
+          <div class="voiceline-header">
+            <div class="voiceline-title">${voiceline.title}</div>
+            <div class="voiceline-actions">
+              <button class="action-btn copy-btn" title="Copy text">
+                <svg viewBox="0 0 24 24" width="16" height="16">
+                  <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+                </svg>
+              </button>
+              <button class="action-btn download-btn" title="Download" data-audio="${sanitizedAudioFile}">
+                <svg viewBox="0 0 24 24" width="16" height="16">
+                  <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+                </svg>
+              </button>
+              ${navigator.share ? `
+              <button class="action-btn share-btn" title="Share">
+                <svg viewBox="0 0 24 24" width="16" height="16">
+                  <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92c0-1.61-1.31-2.92-2.92-2.92zM18 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM6 13c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm12 7.02c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"/>
+                </svg>
+              </button>` : ''}
+            </div>
+          </div>
+          <div class="voiceline-content">
+            <div class="voiceline-text">${voiceline.text}</div>
+            ${hasTranslation ? `
+              <div class="translation-toggle">
+                <button class="translation-btn">Show Translation</button>
+              </div>
+              <div class="voiceline-translation" style="display: none;">
+                <div class="translation-label">English:</div>
+                <div class="translation-text">${englishVoicelineMap[voiceline.title]}</div>
+              </div>` : ''}
+          </div>
+          <div class="voiceline-controls">
+            <button class="play-btn" data-audio="${sanitizedAudioFile}">
+              <svg class="play-icon" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+              <svg class="pause-icon" viewBox="0 0 24 24" style="display: none;">
+                <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+              </svg>
+            </button>
+            <div class="progress-container">
+              <div class="progress-bar"></div>
+            </div>
+            <div class="voiceline-duration">0:00</div>
+          </div>
+        `;
 
-        if (language !== "english") {
-          lineDiv.innerHTML += `<p class="voiceline-text-NotEn" style="color: gray;">${englishVoicelineMap[voiceline.title] || "N/A"
-            }</p>`;
+        // Add event listeners for the new card
+        const playBtn = lineDiv.querySelector('.play-btn');
+        if (playBtn) {
+          playBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const audioFile = playBtn.getAttribute('data-audio');
+            playVoice(audioFile, lineDiv);
+          });
         }
-
+        
+        // Copy button
+        const copyBtn = lineDiv.querySelector('.copy-btn');
+        if (copyBtn) {
+          copyBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const textToCopy = lineDiv.querySelector('.voiceline-text').textContent;
+            navigator.clipboard.writeText(textToCopy).then(() => {
+              const originalHTML = copyBtn.innerHTML;
+              copyBtn.innerHTML = `<svg viewBox="0 0 24 24" width="16" height="16"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>`;
+              setTimeout(() => {
+                copyBtn.innerHTML = originalHTML;
+              }, 2000);
+            });
+          });
+        }
+        
+        // Download button
+        const downloadBtn = lineDiv.querySelector('.download-btn');
+        if (downloadBtn) {
+          downloadBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const audioUrl = downloadBtn.getAttribute('data-audio');
+            const fileName = audioUrl.split('/').pop();
+            const a = document.createElement('a');
+            a.href = audioUrl;
+            a.download = fileName || 'voiceline.mp3';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+          });
+        }
+        
+        // Share button
+        const shareBtn = lineDiv.querySelector('.share-btn');
+        if (shareBtn && navigator.share) {
+          shareBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const title = lineDiv.querySelector('.voiceline-title').textContent;
+            const text = lineDiv.querySelector('.voiceline-text').textContent;
+            const url = window.location.href;
+            
+            navigator.share({
+              title: `${characterName} - ${title}`,
+              text: text,
+              url: url
+            }).catch(console.error);
+          });
+        }
+        
+        // Translation toggle
+        const translationBtn = lineDiv.querySelector('.translation-btn');
+        const translationDiv = lineDiv.querySelector('.voiceline-translation');
+        if (translationBtn && translationDiv) {
+          translationBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const isHidden = translationDiv.style.display === 'none';
+            translationDiv.style.display = isHidden ? 'block' : 'none';
+            translationBtn.textContent = isHidden ? 'Hide Translation' : 'Show Translation';
+          });
+        }
+        
+        // Progress bar click to seek
+        const progressContainer = lineDiv.querySelector('.progress-container');
+        if (progressContainer) {
+          progressContainer.addEventListener('click', (e) => {
+            if (!currentAudio) return;
+            
+            const rect = progressContainer.getBoundingClientRect();
+            const pos = (e.clientX - rect.left) / rect.width;
+            currentAudio.currentTime = pos * currentAudio.duration;
+            
+            // Update progress bar immediately
+            const progressBar = progressContainer.querySelector('.progress-bar');
+            if (progressBar) {
+              progressBar.style.width = `${pos * 100}%`;
+            }
+          });
+        }
+        
         container.appendChild(lineDiv);
       });
     }
@@ -267,26 +543,125 @@
     loadVoicelines();
 
     let currentAudio = null;
+    let currentPlayingCard = null;
+    let currentProgressInterval = null;
 
-    function playVoice(file) {
-      if (currentAudio) {
-        currentAudio.pause();
-        currentAudio.currentTime = 0;
+    function formatTime(seconds) {
+      const mins = Math.floor(seconds / 60);
+      const secs = Math.floor(seconds % 60);
+      return `${mins}:${secs.toString().padStart(2, '0')}`;
+    }
+
+    function updateProgress(card) {
+      if (currentProgressInterval) clearInterval(currentProgressInterval);
+      
+      currentProgressInterval = setInterval(() => {
+        if (currentAudio) {
+          const progress = (currentAudio.currentTime / currentAudio.duration) * 100;
+          const progressBar = card.querySelector('.progress-bar');
+          const durationDisplay = card.querySelector('.voiceline-duration');
+          
+          if (progressBar) {
+            progressBar.style.width = `${progress}%`;
+          }
+          
+          if (durationDisplay) {
+            durationDisplay.textContent = formatTime(currentAudio.currentTime);
+          }
+        }
+      }, 100);
+      
+      // Clear interval when audio ends
+      currentAudio.addEventListener('ended', function onEnd() {
+        clearInterval(currentProgressInterval);
+        const playBtn = card.querySelector('.play-btn');
+        if (playBtn) {
+          playBtn.querySelector('.play-icon').style.display = 'block';
+          playBtn.querySelector('.pause-icon').style.display = 'none';
+        }
+        const progressBar = card.querySelector('.progress-bar');
+        if (progressBar) progressBar.style.width = '0%';
+        currentAudio.removeEventListener('ended', onEnd);
+      }, { once: true });
+    }
+
+    function playVoice(file, card) {
+      // If clicking the same card, toggle play/pause
+      if (currentPlayingCard === card) {
+        if (currentAudio && !currentAudio.paused) {
+          currentAudio.pause();
+          const playBtn = card.querySelector('.play-btn');
+          if (playBtn) {
+            playBtn.querySelector('.play-icon').style.display = 'block';
+            playBtn.querySelector('.pause-icon').style.display = 'none';
+          }
+          clearInterval(currentProgressInterval);
+          return;
+        } else if (currentAudio) {
+          currentAudio.play();
+          const playBtn = card.querySelector('.play-btn');
+          if (playBtn) {
+            playBtn.querySelector('.play-icon').style.display = 'none';
+            playBtn.querySelector('.pause-icon').style.display = 'block';
+          }
+          updateProgress(card);
+          return;
+        }
       }
+      
+      // Stop any currently playing audio
+      stopVoice();
+      
+      // Play the new audio
       currentAudio = new Audio(file);
-      currentAudio.play();
+      currentPlayingCard = card;
+      
+      // Update UI for the new playing card
+      const playBtn = card.querySelector('.play-btn');
+      if (playBtn) {
+        playBtn.querySelector('.play-icon').style.display = 'none';
+        playBtn.querySelector('.pause-icon').style.display = 'block';
+      }
+      
+      // Set up event listeners for the new audio
+      currentAudio.addEventListener('loadedmetadata', function() {
+        const durationDisplay = card.querySelector('.voiceline-duration');
+        if (durationDisplay) {
+          durationDisplay.textContent = formatTime(currentAudio.duration);
+        }
+      });
+      
+      currentAudio.play().then(() => {
+        updateProgress(card);
+      }).catch(error => {
+        console.error('Error playing audio:', error);
+      });
     }
 
     function stopVoice() {
       if (currentAudio) {
+        // Reset UI for the previously playing card
+        if (currentPlayingCard) {
+          const playBtn = currentPlayingCard.querySelector('.play-btn');
+          if (playBtn) {
+            playBtn.querySelector('.play-icon').style.display = 'block';
+            playBtn.querySelector('.pause-icon').style.display = 'none';
+          }
+          const progressBar = currentPlayingCard.querySelector('.progress-bar');
+          if (progressBar) progressBar.style.width = '0%';
+        }
+        
+        // Stop the audio
         currentAudio.pause();
         currentAudio.currentTime = 0;
+        currentAudio = null;
+        currentPlayingCard = null;
+        clearInterval(currentProgressInterval);
       }
     }
 
     document.addEventListener("keydown", function (event) {
       const searchInput = document.getElementById("searchInput");
-
       if (
         (event.key === "l" || event.key === "L") &&
         document.activeElement !== searchInput

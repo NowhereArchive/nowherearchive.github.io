@@ -3,44 +3,50 @@
 
 <head>
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-WCKMLLZJ');</script>
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WCKMLLZJ');</script>
     <!-- End Google Tag Manager -->
-    <title>Voicelines Archive - Homepage</title>
+    <meta name="description" content="Complete Path To Nowhere archive featuring character voicelines, CG galleries, and game content. Listen to Sinner quotes and explore the world of Path To Nowhere."/>
+    <title>Path To Nowhere Archive - Character Voicelines, CGs & Game Database</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link href="Styles.css" rel="stylesheet">
     <link href="NavBar.css" rel="stylesheet">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3M02N0366N"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-702GZFHJQE"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-702GZFHJQE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
 
-    gtag("config", "G-3M02N0366N");
-  </script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'G-702GZFHJQE');
-  </script>
+        gtag("config", "G-3M02N0366N");
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-702GZFHJQE');
+    </script>
 </head>
 
 <body>
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCKMLLZJ"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCKMLLZJ" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <nav class="navbar">
         <div class="container">
@@ -56,7 +62,7 @@
             </div>
             <div class="navbar-menu" id="open-navbar1">
                 <ul class="navbar-nav">
-                    <li><a href="/Game">Game</a></li>
+                    <!-- <li><a href="/Game">Game</a></li> -->
                     <li><a href="CGs">CGs</a></li>
                     <li><a href="characters">Characters</a></li>
                 </ul>
@@ -64,46 +70,71 @@
         </div>
     </nav>
 
-    <div class="site-note">
-        <p>Welcome! Navigate through different sections to explore characters and their voicelines.</p>
-        <p>This site is currently under development. Please bear with us as we continue to build out the content.</p>
-        <p>You can reach out on <a href="https://t.me/TheNowhereArchive">Telegram</a></p>
-        <p class="donate">If you want to support the site you can do so by reporting errors, bugs or missing files.</p>
-    </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        
+        <div class="hero-content">
+            <h1>Path To Nowhere Archive</h1>
+            <div class="site-note">
+            <div class="note-content">
+                <p>This site is currently under development. Please bear with us as we continue to build out the content.</p>
+                <p>You can reach out on <a href="https://t.me/TheNowhereArchive" class="telegram-link">Telegram</a> for updates and support.</p>
+                <p class="donate">If you want to support the site you can do so by reporting errors, bugs or missing files.</p>
+            </div>
+        </div>  
+            
+        </div>
+        <div class="hero-overlay"></div>
+        <!-- Site Note -->
+        
+        <div class="search-container">
+            <input type="text" id="searchInput" class="search-input" placeholder="Search characters or CGs...">
+            <span class="search-shortcut" title="Press / to search">/</span>
+            <button class="search-button" id="searchButton">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button>
+        </div>
+    </section>
 
-    <h1>Explore the Archive</h1>
+    
 
-    <div class="center-container">
+    <!-- Search Script -->
+    <script src="js/search.js"></script>
+    
+    <!-- Main Content -->
+    <main class="main-content">
+        <h2 class="section-title">Featured Content</h2>
+        <div class="grid-container">
         <a href="characters/" class="container-link">
             <div class="skeleton"></div>
-            <img class="image-default" src="Hella1.png" alt="Voicelines Image" onload="this.style.display='block'; this.previousElementSibling.style.display='none';">
-            <img class="image-hover" src="Hella2.png" alt="Voicelines Hover Image">
-            <div class="text">Characters</div>
+            <img class="image-default" src="Hella1.png" alt="Hella character from Path To Nowhere"
+                onload="this.style.display='block'; this.previousElementSibling.style.display='none';">
+            <img class="image-hover" src="Hella2.png" alt="Hella character from Path To Nowhere">
+            <div class="text">Characters Voicelines</div>
         </a>
         <a href="CGs/" class="container-link">
             <div class="skeleton"></div>
-            <img class="image-default" src="Hecate1.png" alt="View All Voicelines Image" onload="this.style.display='block'; this.previousElementSibling.style.display='none';">
-            <img class="image-hover" src="Hecate2.png" alt="View All Voicelines Hover Image">
+            <img class="image-default" src="Hecate1.png" alt="Hecate character from Path To Nowhere"
+                onload="this.style.display='block'; this.previousElementSibling.style.display='none';">
+            <img class="image-hover" src="Hecate2.png" alt="Hecate character from Path To Nowhere">
             <div class="text">In-Game CGs</div>
         </a>
-    </div>
+        </div>
+    </main>
 
+    <!-- Add the JavaScript file -->
+    <script src="js/main.js"></script>
+    
+    <!-- Google Analytics -->
     <script>
-        // Script to handle navbar toggling on small screens
-        function handleSmallScreens() {
-            document.querySelector('.navbar-toggler')
-                .addEventListener('click', () => {
-                    let navbarMenu = document.querySelector('.navbar-menu');
-
-                    if (!navbarMenu.classList.contains('active')) {
-                        navbarMenu.classList.add('active');
-                    } else {
-                        navbarMenu.classList.remove('active');
-                    }
-                });
-        }
-
-        handleSmallScreens();
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-3M02N0366N');
+        gtag('config', 'G-702GZFHJQE');
     </script>
 </body>
 
