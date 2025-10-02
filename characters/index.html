@@ -46,6 +46,110 @@
             justify-content: center;
             margin: 20px;
         }
+
+        .dynamic-tabs {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem auto 2rem;
+            max-width: 1200px;
+            padding: 0 1rem;
+        }
+
+        .dynamic-tabs button {
+            padding: 0.5rem 1.25rem;
+            border: none;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #e0e0e0;
+            font-family: 'Lato', sans-serif;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .dynamic-tabs button:hover {
+            background: rgba(156, 17, 17, 0.3);
+            color: white;
+        }
+
+        .dynamic-tabs button.active {
+            background: #9c1111;
+            color: white;
+            font-weight: 600;
+        }
+
+        .search-container {
+            position: relative;
+            max-width: 600px;
+            margin: 2rem auto;
+            width: 100%;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            padding-right: 8rem;
+            font-size: 1.1rem;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 50px;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(10px);
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .search-input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .search-shortcut {
+            position: absolute;
+            right: 3.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.75rem;
+            font-family: monospace;
+            pointer-events: none;
+            opacity: 0.6;
+            transition: all 0.3s ease;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+            background: transparent;
+            border: none;
+            padding: 0;
+        }
+
+        .search-container:focus-within .search-shortcut {
+            opacity: 0;
+            transform: translateY(-50%) scale(0.9);
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: #9c1111;
+            box-shadow: 0 0 0 3px rgba(156, 17, 17, 0.3);
+        }
+
+        .search-button {
+            position: absolute;
+            right: 0.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            background: transparent;
+            border: none;
+            color: rgba(255, 255, 255, 0.7);
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 50%;
+            transition: all 0.2s ease;
+        }
+
+        .search-button:hover {
+            color: white;
+            background: rgba(255, 255, 255, 0.1);
+        }
     </style>
 </head>
 
@@ -70,7 +174,7 @@
 
             <div class="navbar-menu" id="open-navbar1">
                 <ul class="navbar-nav">
-                    <li><a href="/Game">Game</a></li>
+                    <!-- <li><a href="/Game">Game</a></li> -->
                     <li><a href="/CGs">CGs</a></li>
                     <li class="active"><a href="/characters">Characters</a></li>
 
@@ -78,22 +182,33 @@
             </div>
         </div>
     </nav>
-    <div class="site-note">
-        <p>This site is currently under development, and some information is still be incomplete. If you're looking for
-            something specific that's not available yet, feel free to reach out.</p>
-        <p>Please keep in mind that voicelines of CN exclusive characters are translated and may not be 100% accurate.
-            Thank you.</p>
-        <p>You can reach out on <a href="https://t.me/TheNowhereArchive">Telegram</a></p>
-        <p class="donate">If you want to support the site you can do so by reporting errors, bugs or missing files.</p>
-    </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Path To Nowhere Archive</h1>
+            <div class="site-note">
+            <div class="note-content">
+                <p>This site is currently under development. Please bear with us as we continue to build out the content.</p>
+                <p>You can reach out on <a href="https://t.me/TheNowhereArchive" class="telegram-link">Telegram</a> for updates and support.</p>
+                <p class="donate">If you want to support the site you can do so by reporting errors, bugs or missing files.</p>
+            </div>
+            <br>
+            <div class="search-container">
+                <input type="text" id="searchInput" class="search-input" placeholder="Search characters..." autocomplete="off">
+                <span class="search-shortcut" title="Press / to search">/</span>
+                <button class="search-button" id="searchButton">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+            </div>
+            <div class="dynamic-tabs" id="navbarTabs"></div>
 
-    <h1>Characters</h1>
+        </div>
+    </section>
 
-    <div class="dynamic-tabs" id="navbarTabs"></div>
-
-    <div class="search-container">
-        <input type="text" id="searchInput" class="search-input" placeholder="Character Search" autocomplete="off">
-    </div>
+    
 
     <!-- <div class="center-container">
         <a href="all_voicelines.html">
