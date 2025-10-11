@@ -1,0 +1,209 @@
+{
+    "chapters": [
+        {
+            "name": "chapter00",
+            "displayName": "Chapter 00",
+            "category": "Main Story"
+        },
+        {
+            "name": "chapter01",
+            "displayName": "Chapter 01",
+            "category": "Main Story"
+        },
+        {
+            "name": "chapter02",
+            "displayName": "Chapter 02",
+            "category": "Main Story"
+        },
+        {
+            "name": "chapter03",
+            "displayName": "Chapter 03",
+            "category": "Main Story"
+        },
+        {
+            "name": "chapter04",
+            "displayName": "Chapter 04",
+            "category": "Main Story"
+        },
+        {
+            "name": "chapter05",
+            "displayName": "Chapter 05",
+            "category": "Main Story"
+        },
+        {
+            "name": "chapter06",
+            "displayName": "Chapter 06",
+            "category": "Main Story"
+        },
+        {
+            "name": "chapter07",
+            "displayName": "Chapter 07",
+            "category": "Main Story"
+        },
+        {
+            "name": "chapter08",
+            "displayName": "Chapter 08",
+            "category": "Main Story"
+        },
+        {
+            "name": "chapter09",
+            "displayName": "Chapter 09",
+            "category": "Main Story"
+        },
+        {
+            "name": "chapter10",
+            "displayName": "Chapter 10",
+            "category": "Main Story"
+        },
+        {
+            "name": "chapter11",
+            "displayName": "Chapter 11",
+            "category": "Main Story"
+        },
+        {
+            "name": "chapter12",
+            "displayName": "Chapter 12",
+            "category": "Main Story"
+        },
+        {
+            "name": "chapter13",
+            "displayName": "Chapter 13",
+            "category": "Main Story"
+        },
+        {
+            "name": "Chapter14",
+            "displayName": "Chapter 14",
+            "category": "Main Story"
+        },
+        {
+            "name": "Chapter15",
+            "displayName": "Chapter 15",
+            "category": "Main Story"
+        },
+        {
+            "name": "rainburst",
+            "displayName": "Rain Burst",
+            "category": "Character Events"
+        },
+        {
+            "name": "floraunfurl",
+            "displayName": "Flora Unfurl",
+            "category": "Character Events"
+        },
+        {
+            "name": "BeyondDiscars",
+            "displayName": "Beyond Discars",
+            "category": "Character Events"
+        },
+        {
+            "name": "DreamyBubble",
+            "displayName": "Dreamy Bubble",
+            "category": "Character Events"
+        },
+        {
+            "name": "DittyNightsong",
+            "displayName": "Ditty Nightsong",
+            "category": "Character Events"
+        },
+        {
+            "name": "EclipseOfEternalVows",
+            "displayName": "Eclipse of Eternal Vows",
+            "category": "Character Events"
+        },
+        {
+            "name": "GlitchwaveNihil",
+            "displayName": "Glitchwave Nihil",
+            "category": "Character Events"
+        },
+        {
+            "name": "InsatiableFiesta",
+            "displayName": "Insatiable Fiesta",
+            "category": "Character Events"
+        },
+        {
+            "name": "IntoTheBlue",
+            "displayName": "Into The Blue",
+            "category": "Character Events"
+        },
+        {
+            "name": "NoGangsLand",
+            "displayName": "No Gang's Land",
+            "category": "Character Events"
+        },
+        {
+            "name": "OdeToSun",
+            "displayName": "Ode To Sun",
+            "category": "Character Events"
+        },
+        {
+            "name": "PerfectVote",
+            "displayName": "Perfect Vote",
+            "category": "Character Events"
+        },
+        {
+            "name": "QuixoticTroupe",
+            "displayName": "Quixotic Troupe",
+            "category": "Character Events"
+        },
+        {
+            "name": "RagingSands",
+            "displayName": "Raging Sands",
+            "category": "Character Events"
+        },
+        {
+            "name": "ThePhantomOfTheMist",
+            "displayName": "The Phantom of the Mist",
+            "category": "Character Events"
+        },
+        {
+            "name": "ToyboxTerror",
+            "displayName": "Toybox Terror",
+            "category": "Character Events"
+        },
+        {
+            "name": "VerdantPromises",
+            "displayName": "Verdant Promises",
+            "category": "Character Events"
+        },
+        {
+            "name": "VeiledInVioletVagary",
+            "displayName": "Veiled in Violet Vagary",
+            "category": "Character Events"
+        },
+        {
+            "name": "VelvetySusurration",
+            "displayName": "Velvety Susurration",
+            "category": "Character Events"
+        },
+        {
+            "name": "NightOfWonders",
+            "displayName": "Night of Wonders",
+            "category": "Character Events"
+        },
+        {
+            "name": "DragonAndIsleOfSky",
+            "displayName": "Dragon and Isle of Sky",
+            "category": "Character Events"
+        },
+        {
+            "name": "ShalomInterrogation",
+            "displayName": "Shalom",
+            "category": "Character Interrogations"
+        },
+        {
+            "name": "CoquelicInterrogation",
+            "displayName": "Coquelic",
+            "category": "Character Interrogations"
+        },
+        {
+            "name": "000Interrogation",
+            "displayName": "000",
+            "category": "Character Interrogations"
+        },
+        {
+            "name": "MooreInterrogation",
+            "displayName": "Moore",
+            "category": "Character Interrogations"
+        }
+    ]
+}

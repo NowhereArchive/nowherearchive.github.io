@@ -1,0 +1,119 @@
+{
+    "default": [
+        {
+            "title": "Obtain the Sinner",
+            "text": "契约已缔结，从今天起，我们就是伴侣了……以后我是不是就可以在这个新家里，每天都和你一起吃饭、跳舞、数星星，分享所有小小的快乐，再也不分开？",
+            "filename": "File:vo_graves_cacha_001.aac"
+        },
+        {
+            "title": "Raise to Phase 1",
+            "text": "我会好好珍藏来自于你的祝福，为了我们的永恒。",
+            "filename": "File:vo_graves_promotion_001.aac"
+        },
+        {
+            "title": "Raise to Phase 3",
+            "text": "我承诺，无论顺境或是逆境、富裕或贫穷、健康或疾病、快乐或忧愁，我都将支持你、爱护你，与你同甘共苦，永不离弃。",
+            "filename": "File:vo_graves_promotion2_001.aac"
+        },
+        {
+            "title": "Level Start",
+            "text": "一起来见证这场盛大的婚礼吧。",
+            "filename": "File:vo_graves_battlebegin_001.aac"
+        },
+        {
+            "title": "Win Battles",
+            "text": "可以就这样一直留在我的身边吗？我也想成为你的庇护和港湾。",
+            "filename": "File:vo_graves_battlewin_001.aac"
+        },
+        {
+            "title": "Lose Battles",
+            "text": "原来诺言也会凋零……",
+            "filename": "File:vo_graves_battlelose_001.aac"
+        },
+        {
+            "title": "Ultimate Skill",
+            "text": "爱与痛并存。",
+            "filename": "File:bt_graves_uniqueskill_001.aac"
+        },
+        {
+            "title": "Die in Battles",
+            "text": "直到死亡……将我们分离……",
+            "filename": "File:bt_graves_dead_001.aac"
+        },
+        {
+            "title": "Greeting",
+            "text": "我喜欢这种，用最温柔，最专注的目光迎接爱人回来的小仪式……要是你也能这样看着我就好了……",
+            "filename": "File:vo_graves_greeting_001.aac"
+        },
+        {
+            "title": "Conversation 1",
+            "text": "你说，人们为什么要交换戒指呢？我猜或许是为了让承诺有形可见吧，这样……它就不会轻易消失了。",
+            "filename": "File:vo_graves_talk1_001.aac"
+        },
+        {
+            "title": "Conversation 2",
+            "text": "古堡外面的世界是什么样的？以前总是听宾客们说，新城的空气里飘着钞票的味道，大街上遍地是黄金，就连那里的猫和狗都会唱歌……这些都是真的吗？",
+            "filename": "File:vo_graves_talk1_002.aac"
+        },
+        {
+            "title": "Conversation 3",
+            "text": "那些曾经在爱神的见证下结为夫妻的新人，现在怎么样了？他们当初都是怀着真挚与深情许下诺言的，一定可以就这样幸福地共度一生吧。",
+            "filename": "File:vo_graves_talk1_003.aac"
+        },
+        {
+            "title": "Special Conversation 1",
+            "text": "古堡里以前有一架很大的管风琴，我跟着乐手先生学了一些，会在他有事外出时帮忙为婚礼配乐……我也用这样的形式参与了很多人生命中最重要的时刻呢。就算不被看到不被感谢也不要紧，我很高兴自己可以帮上一些忙。",
+            "filename": "File:vo_graves_talk2_001.aac"
+        },
+        {
+            "title": "Special Conversation 2",
+            "text": "新娘抛出的捧花代表着祝福和新的开始，接住它的人据说很快就能迎来属于自己的幸福和好运。虽然我在婚礼现场从来不受待见，但每次躲在门后，看着那些接到花的人露出满脸的惊喜，我都会忍不住跟着笑出来……真不敢想象，要是我也能亲手接到一次的话，该有多开心啊。",
+            "filename": "File:vo_graves_talk2_002.aac"
+        },
+        {
+            "title": "Special Conversation 3",
+            "text": "虽然没真正尝试过，但我猜……我或许也能当个合格的婚礼司仪吧？毕竟，不只是狄斯的仪式，我对外邦的婚礼习俗也略有了解。如果是你的话……会期待一场什么样的婚礼？",
+            "filename": "File:vo_graves_talk2_003.aac"
+        },
+        {
+            "title": "Full Compliance",
+            "text": "曾经的我以为只要穿着这件婚纱，就可以像那些新娘一样找到命定之人、得到幸福。可在你这儿，我好像明白了，真正的幸福不是来自婚纱或仪式，而是某种更深的、来自内心的东西……我还是不太懂，你愿意再教教我吗？",
+            "filename": "File:vo_graves_obeyfull_001.aac"
+        },
+        {
+            "title": "Idle",
+            "text": "她从墓中醒来，婚纱上冰霜绽开。誓言已经消散，爱人长眠不返……",
+            "filename": "File:vo_graves_idle_001.aac"
+        },
+        {
+            "title": "Annoyed",
+            "text": "你的手很暖，爱人之间的触碰，也是如此的温度吧？",
+            "filename": "File:vo_graves_clicking_001.aac"
+        },
+        {
+            "title": "Special Attention",
+            "text": "我一直以为，只有在交换誓词时才能得到这样的注视……只有你，会用这样温和的眼神看着我，就好像我也是一个正常人，而不是什么可怕的怪物。",
+            "filename": "File:vo_graves_specialattention_001.aac"
+        },
+        {
+            "title": "Dispatch",
+            "text": "婚礼是不能迟到的，每一个珍贵的瞬间都不容错过。",
+            "filename": "File:vo_graves_dispatch_001.aac"
+        },
+        {
+            "title": "Dispatch Complete",
+            "text": "来，这是我从婚礼上带回来的伴手礼……它象征着最美好的祝愿，请不要拒绝，好吗？",
+            "filename": "File:vo_graves_dispatch2_001.aac"
+        },
+        {
+            "title": "Level Up",
+            "text": "这是你给我的信物吗？",
+            "filename": "File:vo_graves_levelup_002.aac"
+        },
+        {
+            "title": "Pat Head",
+            "text": "你掀起了我的头纱，看到了我有多丑陋……可、可即使是这样，你还是愿意给我一个吻吗？",
+            "filename": "File:vo_graves_head_001.aac"
+        }
+    ]
+}

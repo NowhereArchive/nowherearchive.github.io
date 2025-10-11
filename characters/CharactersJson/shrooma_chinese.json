@@ -1,0 +1,119 @@
+{
+    "default": [
+        {
+            "title": "Obtain the Sinner",
+            "filename": "File:vo_shrooma_cacha_001.aac",
+            "text": "手表、作业、包包……嗯，都带齐了，我们走吧。作为公民，我会像老师说的那样配合你们的行动，但也希望你们能够加快自查，在开学之前发现自己弄错了人，让我回家。"
+        },
+        {
+            "title": "Raise to Phase 1",
+            "filename": "File:vo_shrooma_promotion_001.aac",
+            "text": "我、我的蘑菇居然也能有这样的数据……？没搞错吧？"
+        },
+        {
+            "title": "Raise to Phase 3",
+            "filename": "File:vo_shrooma_promotion2_001.aac",
+            "text": "只要一点点积攒孢子……就总有一天，能同化世界，获得自由。"
+        },
+        {
+            "title": "Level Start",
+            "filename": "File:vo_shrooma_battlebegin_001.aac",
+            "text": "看好我的帽子，跟紧不要走散！"
+        },
+        {
+            "title": "Win Battles",
+            "filename": "File:vo_shrooma_battlewin_001.aac",
+            "text": "怎么样，小看角落里的蘑菇，可是会吃大亏的。"
+        },
+        {
+            "title": "Lose Battles",
+            "filename": "File:vo_shrooma_battlelose_001.aac",
+            "text": "早跟你说了苟一苟苟一苟，非不听我的。被一脚踩烂了吧？"
+        },
+        {
+            "title": "Ultimate Skill",
+            "filename": "File:bt_shrooma_uniqueskill_001.aac",
+            "text": "腐烂成泥吧！"
+        },
+        {
+            "title": "Die in Battles",
+            "filename": "File:bt_shrooma_dead_001.aac",
+            "text": "明明……明明马上就能见到阳光了……"
+        },
+        {
+            "title": "Greeting",
+            "filename": "File:vo_shrooma_greeting_001.aac",
+            "text": "大人也会有需要我帮忙的地方吗？难道是毕业太久，把知识还给老师了？唔……如果是二元一次方程的话，我学得确实还不错。"
+        },
+        {
+            "title": "Conversation 1",
+            "filename": "File:vo_shrooma_talk1_001.aac",
+            "text": "在这里乱哭乱叫只会消耗自己的体力和别人的耐心，我的父母很快就会过来接我的——毕竟我没有犯错，你们很快就会意识到这一点的。"
+        },
+        {
+            "title": "Conversation 2",
+            "filename": "File:vo_shrooma_talk1_002.aac",
+            "text": "《论“黑泥”一词对无端恶意的娱乐化及匿名发泄社区对人性的扭曲》……？好多深奥的词啊，局长可以给我解释一下吗？我好像还没有学到呢。"
+        },
+        {
+            "title": "Conversation 3",
+            "filename": "File:vo_shrooma_talk1_003.aac",
+            "text": "非要说的话，这儿的日子和学校或者家里也差不太多，都有一大堆的“守则”一定要做到，一大堆的“期望”最好要做到，我都习惯了。……嗯？难道他们说得对，义务教育的终点就是这里？"
+        },
+        {
+            "title": "Special Conversation 1",
+            "filename": "File:vo_shrooma_talk2_001.aac",
+            "text": "我有好多同学都看不上蘑菇。他们觉得食用菇看起来再白嫩也是泥里长出来的，从根子上就烂，所以学校就巴巴地把它从菜单里撤下去了。听了这话我是真的会谢——拜托，蘑菇长成这样只是为了活下去好吧，它哪在乎是不是讨人喜欢啊。"
+        },
+        {
+            "title": "Special Conversation 2",
+            "filename": "File:vo_shrooma_talk2_002.aac",
+            "text": "以前总有误入我们版的人留言，说什么“垃圾就该去垃圾该去的地方”，我们会回复“是哦，欢迎回家”来反击，复读好几十层楼，让那些家伙灰溜溜滚蛋……仔细想想，比起骂人，“不是只有我一个人心里有恶意”这点，反而安慰了我更多……"
+        },
+        {
+            "title": "Special Conversation 3",
+            "filename": "File:vo_shrooma_talk2_003.aac",
+            "text": "局长，你是我见过的最见多识广的人了，如果连你都没见过不会委屈不会嫉妒不会烦躁的人……那是不是说明，世上压根就不存在这种人，我也不会因为心里有黑泥，就觉得自己比别人脏啊？"
+        },
+        {
+            "title": "Full Compliance",
+            "filename": "File:vo_shrooma_obeyfull_001.aac",
+            "text": "我以前以为大人都跟来检查校风校纪的巡查组一样，只在乎表面功夫有没有做到位，至于阴暗角落里的蘑菇，他们要么装作看不到，要么心虚地掩盖至死。但原来，真的有人会注意到蘑菇，真的会有人不在乎脏臭，扒开淤泥，让哪怕是有毒的蘑菇，也能争取到一缕阳光。"
+        },
+        {
+            "title": "Idle",
+            "filename": "File:vo_shrooma_idle_001.aac",
+            "text": "嗯？人都不在了？顶啊，机会这不就来了吗？那小局长的终端网络密码设置得比初始密码还简单，这不让我狠狠上一下？"
+        },
+        {
+            "title": "Annoyed",
+            "filename": "File:vo_shrooma_clicking_001.aac",
+            "text": "不要以为你是大人，你做这些就不会被老师骂。"
+        },
+        {
+            "title": "Special Attention",
+            "filename": "File:vo_shrooma_specialattention_001.aac",
+            "text": "奇怪，你既不是看我不顺眼，也不是想抓我的把柄，更不是在掂量我有没有让你满意……那你这样看着我干什么？"
+        },
+        {
+            "title": "Dispatch",
+            "filename": "File:vo_shrooma_dispatch_001.aac",
+            "text": "请不要小看我，我五岁就能独立完成购物了。但按规矩，找零要允许我自由支配。"
+        },
+        {
+            "title": "Dispatch Complete",
+            "filename": "File:vo_shrooma_dispatch2_001.aac",
+            "text": "购物清单上的都买到了，刚好把钱全部用完。你真的不是故意的？"
+        },
+        {
+            "title": "Level Up",
+            "filename": "File:vo_shrooma_levelup_002.aac",
+            "text": "慢慢滋养，慢慢成长，慢慢扩散……"
+        },
+        {
+            "title": "Deploy",
+            "filename": "File:bt_shrooma_jointeam_001.aac",
+            "text": "Are the adults here this useless? Even I have to step in?"
+        }
+    ]
+}

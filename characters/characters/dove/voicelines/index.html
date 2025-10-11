@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WCKMLLZJ');</script>
+  <!-- End Google Tag Manager -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3M02N0366N"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-702GZFHJQE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-3M02N0366N");
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-702GZFHJQE');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>dove Voice Lines</title>
+  <link href="../../../Styles.css" rel="stylesheet" />
+  <link href="../../../NavBar.css" rel="stylesheet" />
+</head>
+
+<body>
+      <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCKMLLZJ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <button title="logo" class="navbar-toggler" data-toggle="open-navbar1">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a href="/">
+          <h4>Path To Nowhere Archive</h4>
+        </a>
+      </div>
+
+      <div class="navbar-menu" id="open-navbar1">
+        <ul class="navbar-nav">
+          <li><a href="/Game">Game</a></li>
+          <li><a href="/CGs">CGs</a></li>
+          <li><a href="/Voicelines">Voicelines</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <h1 id="characterName">Character</h1>
+
+  <div class="search-container">
+    <input type="text" id="searchInput" class="search-input" placeholder="Search Through Voicelines"
+      autocomplete="off" />
+  </div>
+
+  <div class="language-buttons" id="languageButtonsContainer"></div>
+  <div class="attire-buttons" id="attireButtonsContainer"></div>
+
+  <div id="voicelinesContainer"></div>
+
+  <script>
+    // Character name will be injected here during generation
+    const characterName = "dove";
+    let language = "english";
+
+    function sanitizeName(name) {
+      return name.toLowerCase().replace(/\s+/g, "_");
+    }
+
+    function trimFilePrefix(filename) {
+      return filename.startsWith("File:") ? filename.slice(5) : filename;
+    }
+
+    function renderVoicelines(data, sanitizedAttire, sanitizedLanguage) {
+      const voicelinesContainer = document.getElementById(
+        "voicelinesContainer"
+      );
+      const voicelines = data[sanitizedAttire];
+
+      if (!voicelines) {
+        voicelinesContainer.innerHTML = `<p>No voice lines found for ${sanitizedAttire} in ${sanitizedLanguage}.</p>`;
+        return;
+      }
+
+      const englishVoicelinesFile = `../../../CharactersJson/${characterName}_english.json`;
+      const englishVoicelineMap = {};
+
+      if (sanitizedLanguage !== "english") {
+        fetch(englishVoicelinesFile)
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error("Network response was not ok");
+            }
+            return response.json();
+          })
+          .then((englishData) => {
+            const englishVoicelines = englishData[sanitizedAttire];
+
+            if (englishVoicelines) {
+              englishVoicelines.forEach((voiceline) => {
+                englishVoicelineMap[voiceline.title] = voiceline.text;
+              });
+            }
+            displayVoicelines(
+              voicelinesContainer,
+              voicelines,
+              sanitizedAttire,
+              englishVoicelineMap
+            );
+            filterVoicelines();
+          })
+          .catch((error) => {
+            console.error("Error loading English voicelines:", error);
+            voicelinesContainer.innerHTML = `<p>Error loading English voice lines.</p>`;
+          });
+      } else {
+        displayVoicelines(voicelinesContainer, voicelines, sanitizedAttire);
+        filterVoicelines();
+      }
+    }
+
+    function displayVoicelines(
+      container,
+      voicelines,
+      sanitizedAttire,
+      englishVoicelineMap = {}
+    ) {
+      container.innerHTML = "";
+
+      voicelines.forEach((voiceline) => {
+        const trimmedFilename = trimFilePrefix(voiceline.filename);
+        console.log(sanitizedAttire);
+        const sanitizedAudioFile = `https://raw.githubusercontent.com/NowhereArchive/NowhereAudios/main/audio/${characterName}/${language}/${sanitizedAttire}/${sanitizeName(
+          trimmedFilename
+        )}`;
+
+        const lineDiv = document.createElement("div");
+        lineDiv.classList.add("voiceline");
+        lineDiv.innerHTML = `
+        <p>${voiceline.title}:</p>
+        <button onclick="playVoice('${sanitizedAudioFile}')">Play</button>
+        <button onclick="stopVoice()">Stop</button>
+        <p class="voiceline-text">${voiceline.text}</p>
+      `;
+
+        if (language !== "english") {
+          lineDiv.innerHTML += `<p class="voiceline-text-NotEn" style="color: gray;">${englishVoicelineMap[voiceline.title] || "N/A"
+            }</p>`;
+        }
+
+        container.appendChild(lineDiv);
+      });
+    }
+
+    function createAttireButtons(data) {
+  const attireButtonsContainer = document.getElementById("attireButtonsContainer");
+  attireButtonsContainer.innerHTML = "";
+
+  Object.keys(data).forEach((attire) => {
+    const button = document.createElement("button");
+    button.classList.add("attire-button");
+    button.innerText = attire.replace(/_/g, " ").replace(/\b\w/g, (char) => char.toUpperCase());
+    
+    button.onclick = () => {
+      const buttons = attireButtonsContainer.getElementsByClassName("attire-button");
+      Array.from(buttons).forEach((btn) => btn.classList.remove("active-button"));
+
+      button.classList.add("active-button");
+      
+      // Store the current search value
+      const searchValue = document.getElementById("searchInput").value;
+      
+      renderVoicelines(data, attire, language);
+      
+      // Restore the search value
+      document.getElementById("searchInput").value = searchValue;
+      filterVoicelines(); // Reapply filtering based on the previous search
+    };
+    attireButtonsContainer.appendChild(button);
+  });
+}
+
+    function createLanguageButtons() {
+      const languageButtonsContainer = document.getElementById(
+        "languageButtonsContainer"
+      );
+      const languages = ["English", "Japanese", "Chinese", "Korean"];
+      const availableLanguages = [];
+
+      languages.forEach((lang) => {
+        const languageFile = `../../../CharactersJson/${characterName}_${sanitizeName(
+          lang
+        )}.json`;
+        fetch(languageFile)
+          .then((response) => {
+            if (response.ok) {
+              availableLanguages.push(lang);
+              const button = document.createElement("button");
+              button.classList.add("language-button");
+              button.innerText = lang;
+              button.onclick = () => {
+                const buttons =
+                  languageButtonsContainer.getElementsByClassName(
+                    "language-button"
+                  );
+                Array.from(buttons).forEach((btn) =>
+                  btn.classList.remove("active-button")
+                );
+
+                button.classList.add("active-button");
+                language = sanitizeName(lang);
+                loadVoicelines();
+              };
+              languageButtonsContainer.appendChild(button);
+            }
+          })
+          .catch((error) =>
+            console.error(`Error loading ${lang} file:`, error)
+          );
+      });
+    }
+
+    function capitalizeWords(name) {
+      return name
+        .split(" ")
+        .map(
+          (word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+        )
+        .join(" ");
+    }
+
+    async function loadVoicelines() {
+      const voicelinesFile = `../../../CharactersJson/${characterName}_${language}.json`;
+
+      try {
+        const response = await fetch(voicelinesFile);
+        if (!response.ok) {
+          throw new Error("Error loading voice lines");
+        }
+        const data = await response.json();
+
+        const characterDisplayName = capitalizeWords(
+          characterName.replace("_", " ")
+        );
+        document.getElementById("characterName").innerText =
+          characterDisplayName;
+
+        createAttireButtons(data);
+        renderVoicelines(data, Object.keys(data)[0], language);
+      } catch (error) {
+        console.error("Error loading voice lines:", error);
+      }
+    }
+
+    createLanguageButtons();
+    loadVoicelines();
+
+    let currentAudio = null;
+
+    function playVoice(file) {
+      if (currentAudio) {
+        currentAudio.pause();
+        currentAudio.currentTime = 0;
+      }
+      currentAudio = new Audio(file);
+      currentAudio.play();
+    }
+
+    function stopVoice() {
+      if (currentAudio) {
+        currentAudio.pause();
+        currentAudio.currentTime = 0;
+      }
+    }
+
+    document.addEventListener("keydown", function (event) {
+      const searchInput = document.getElementById("searchInput");
+
+      if (
+        (event.key === "l" || event.key === "L") &&
+        document.activeElement !== searchInput
+      ) {
+        event.preventDefault();
+        if (searchInput) {
+          searchInput.focus();
+        }
+      }
+    });
+
+    document
+      .getElementById("searchInput")
+      .addEventListener("input", filterVoicelines);
+
+    function filterVoicelines() {
+  const searchValue = document.getElementById("searchInput").value.toLowerCase();
+  const voicelines = document.querySelectorAll(".voiceline");
+
+  voicelines.forEach((line) => {
+    const lineTitle = line.querySelector("p").innerText.toLowerCase(); // Get the voiceline title
+    const lineText = line.querySelector(".voiceline-text").innerText.toLowerCase(); // Get the non-English text
+    const englishText = line.querySelector(".voiceline-text-NotEn")?.innerText.toLowerCase(); // Get the English text if available
+
+    // Check if the search term is found in either the title, the voiceline text, or the English translation
+    const match = lineTitle.includes(searchValue) || lineText.includes(searchValue) || (englishText && englishText.includes(searchValue));
+    
+    // Toggle display based on the search match
+    line.style.display = match ? "block" : "none";
+  });
+}
+
+    function handleSmallScreens() {
+      document
+        .querySelector(".navbar-toggler")
+        .addEventListener("click", () => {
+          let navbarMenu = document.querySelector(".navbar-menu");
+
+          if (!navbarMenu.classList.contains("active")) {
+            navbarMenu.classList.add("active");
+          } else {
+            navbarMenu.classList.remove("active");
+          }
+        });
+    }
+
+    handleSmallScreens();
+  </script>
+</body>
+</html> 

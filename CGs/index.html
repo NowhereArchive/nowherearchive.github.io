@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Chapters Archive</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="Styles.css" rel="stylesheet">
+    <link href="NavBar.css" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3M02N0366N"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-702GZFHJQE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-3M02N0366N");
+      gtag('config', 'G-702GZFHJQE');
+    </script>
+    <style>
+        .hero {
+            position: relative;
+            min-height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 6rem 2rem 3rem;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('../header.png') no-repeat center center/cover;
+            margin: 0 0 2rem 0;
+            border-bottom: 1px solid rgba(156, 17, 17, 0.3);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            width: 100%;
+            padding: 0 20px;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-controls {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .search-container {
+            position: relative;
+            max-width: 600px;
+            margin: 2rem auto;
+            width: 100%;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            padding-right: 8rem;
+            font-size: 1.1rem;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 50px;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(10px);
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .search-input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .search-shortcut {
+            position: absolute;
+            right: 3.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.75rem;
+            font-family: monospace;
+            pointer-events: none;
+            opacity: 0.6;
+            transition: all 0.3s ease;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+            background: transparent;
+            border: none;
+            padding: 0;
+        }
+
+        .search-container:focus-within .search-shortcut {
+            opacity: 0;
+            transform: translateY(-50%) scale(0.9);
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: #9c1111;
+            box-shadow: 0 0 0 3px rgba(156, 17, 17, 0.3);
+        }
+
+        .search-button {
+            position: absolute;
+            right: 0.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            background: transparent;
+            border: none;
+            color: rgba(255, 255, 255, 0.7);
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 50%;
+            transition: all 0.2s ease;
+        }
+
+        .search-button:hover {
+            color: white;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .center-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 0 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .chapter-card {
+            position: relative;
+            aspect-ratio: 16/9;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            background: #1e1e1e;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .chapter-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .skeleton {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, #2c2c2c 0%, #3a3a3a 50%, #2c2c2c 100%);
+            background-size: 200% 100%;
+            animation: skeleton-loading 1.5s infinite;
+        }
+
+        @keyframes skeleton-loading {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+
+        .chapter-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .chapter-card.loaded img {
+            opacity: 1;
+        }
+
+        .chapter-title {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 1rem;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-align: left;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .dynamic-tabs {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem auto 2rem;
+            max-width: 1200px;
+            padding: 0 1rem;
+        }
+
+        .dynamic-tabs button {
+            padding: 0.5rem 1.25rem;
+            border: none;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #e0e0e0;
+            font-family: 'Lato', sans-serif;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .dynamic-tabs button:hover {
+            background: rgba(156, 17, 17, 0.3);
+            color: white;
+        }
+
+        .dynamic-tabs button.active {
+            background: #9c1111;
+            color: white;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .center-container {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                padding: 0 1rem;
+                gap: 1rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .search-container {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <button title="logo" class="navbar-toggler" data-toggle="open-navbar1">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="/">
+                    <h4>Path To Nowhere Archive</h4>
+                </a>
+            </div>
+
+            <div class="navbar-menu" id="open-navbar1">
+                <ul class="navbar-nav">
+                    <!-- <li><a href="/Game">Game</a></li> -->
+                    <li class="active"><a href="/CGs">CGs</a></li>
+                    <li><a href="/characters">Characters</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Chapters Archive</h1>
+            <div class="site-note">
+                <div class="note-content">
+                    <p>This site is currently under development. Please bear with us as we continue to build out the content.</p>
+                    <p>You can reach out on <a href="https://t.me/TheNowhereArchive" class="telegram-link">Telegram</a> for updates and support.</p>
+                    <p class="donate">If you want to support the site you can do so by reporting errors, bugs or missing files.</p>
+                </div>
+            </div>
+            <div class="hero-controls">
+                <div class="search-container">
+                    <input type="text" id="searchInput" class="search-input" placeholder="Search chapters..." autocomplete="off">
+                    <span class="search-shortcut" title="Press / to search">/</span>
+                    <button class="search-button" id="searchButton">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                </div>
+                <div class="dynamic-tabs" id="navbarTabs"></div>
+            </div>
+        </div>
+    </section>
+        <div class="center-container" id="chapterGrid"></div>
+    </main>
+
+    <script>
+        let dropdowns = document.querySelectorAll('.navbar .dropdown-toggler');
+        let dropdownIsOpen = false;
+
+        if (dropdowns.length) {
+            dropdowns.forEach((dropdown) => {
+                dropdown.addEventListener('click', (event) => {
+                    let target = document.querySelector(`#${event.target.dataset.dropdown}`);
+
+                    if (target) {
+                        if (target.classList.contains('show')) {
+                            target.classList.remove('show');
+                            dropdownIsOpen = false;
+                        } else {
+                            target.classList.add('show');
+                            dropdownIsOpen = true;
+                        }
+                    }
+                });
+            });
+        }
+
+        window.addEventListener('mouseup', (event) => {
+            if (dropdownIsOpen) {
+                dropdowns.forEach((dropdownButton) => {
+                    let dropdown = document.querySelector(`#${dropdownButton.dataset.dropdown}`);
+                    let targetIsDropdown = dropdown == event.target;
+
+                    if (dropdownButton == event.target) {
+                        return;
+                    }
+
+                    if ((!targetIsDropdown) && (!dropdown.contains(event.target))) {
+                        dropdown.classList.remove('show');
+                    }
+                });
+            }
+        });
+
+        function handleSmallScreens() {
+            document.querySelector('.navbar-toggler')
+                .addEventListener('click', () => {
+                    let navbarMenu = document.querySelector('.navbar-menu');
+
+                    if (!navbarMenu.classList.contains('active')) {
+                        navbarMenu.classList.add('active');
+                    } else {
+                        navbarMenu.classList.remove('active');
+                    }
+                });
+        }
+
+        handleSmallScreens();
+
+        fetch('chapters.json')
+            .then(response => response.json())
+            .then(data => {
+                const categories = [...new Set(data.chapters.map(chapter => chapter.category))];
+                const navbarTabs = document.getElementById('navbarTabs');
+
+                const allChaptersTab = document.createElement('button');
+                allChaptersTab.innerText = "All Categories";
+                allChaptersTab.onclick = () => filterChapters("All Chapters");
+                navbarTabs.appendChild(allChaptersTab);
+
+                categories.forEach(category => {
+                    const tab = document.createElement('button');
+                    tab.innerText = category;
+                    tab.onclick = () => filterChapters(category);
+                    navbarTabs.appendChild(tab);
+                });
+
+                function filterChapters(selectedCategory) {
+                    const chapterGrid = document.getElementById('chapterGrid');
+                    chapterGrid.innerHTML = '';
+
+                    let filteredChapters;
+
+                    if (selectedCategory === "All Chapters") {
+                        filteredChapters = data.chapters;
+                    } else {
+                        filteredChapters = data.chapters.filter(chapter => chapter.category === selectedCategory);
+                    }
+
+                    filteredChapters.sort((a, b) => a.displayName.localeCompare(b.displayName));
+
+                    const heading = document.querySelector('h1');
+                    heading.innerText = selectedCategory;
+
+                    filteredChapters.forEach(chapter => {
+                        const chapterCard = document.createElement('div');
+                        chapterCard.classList.add('chapter-card');
+
+                        chapterCard.innerHTML = `
+                            <div class="skeleton"></div>
+                            <img src="images/${chapter.name}/${chapter.name}.png" alt="${chapter.displayName}" onload="hideSkeleton(this)">
+                            <div class="chapter-title">${chapter.displayName}</div>
+                        `;
+
+                        chapterCard.onclick = () => {
+                            window.location.href = `${chapter.name}/`;
+                        };
+                        chapterGrid.appendChild(chapterCard);
+                    });
+                }
+
+                if (categories.length > 0) {
+                    filterChapters(categories[0]);
+                }
+
+                document.getElementById('searchInput').addEventListener('input', function () {
+                    const searchValue = this.value.toLowerCase();
+                    const allChapters = chapterGrid.querySelectorAll('.chapter-card');
+                    allChapters.forEach(chapterCard => {
+                        const chapterName = chapterCard.querySelector('.chapter-title').innerText.toLowerCase();
+                        chapterCard.style.display = chapterName.includes(searchValue) ? 'block' : 'none';
+                    });
+                });
+            })
+            .catch(error => console.error('Error loading chapters:', error));
+
+        document.addEventListener('keydown', function (event) {
+            const searchInput = document.getElementById('searchInput');
+
+            if ((event.key === 'l' || event.key === 'L') && document.activeElement !== searchInput) {
+                event.preventDefault();
+                if (searchInput) {
+                    searchInput.focus();
+                }
+            }
+        });
+
+        function hideSkeleton(img) {
+            const skeleton = img.previousElementSibling;
+            skeleton.style.display = 'none'; // Hide skeleton
+            img.style.display = 'block'; // Show image
+            setTimeout(() => {
+                img.style.opacity = 1; // Fade in image
+            }, 100); // Small delay for transition
+        }
+    </script>
+</body>
+
+</html>

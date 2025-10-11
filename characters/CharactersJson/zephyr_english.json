@@ -1,0 +1,119 @@
+{
+    "default": [
+        {
+            "title": "Obtain the Sinner",
+            "text": "Uh, sinner registration form? What's that? Oh, that piece of paper! I think I used it for something else when I was bored earlier. Well, come on, Chief. It's not like we're meeting each other for the first time. Don't be so stuffy.",
+            "filename": "File:vo_zephyr_cacha_001.aac"
+        },
+        {
+            "title": "Raise to Phase 1",
+            "text": "I'm feeling so great I could fly a plane upside down for three miles!",
+            "filename": "File:vo_zephyr_promotion_001.aac"
+        },
+        {
+            "title": "Raise to Phase 3",
+            "text": "If I could soar up to thirty thousand feet again, how about I take you for a wild ride through the clouds!",
+            "filename": "File:vo_zephyr_promotion2_001.aac"
+        },
+        {
+            "title": "Level Start",
+            "text": "Three, two, one! The Zephyr taking off! Whoosh!",
+            "filename": "File:vo_zephyr_battlebegin_001.aac"
+        },
+        {
+            "title": "Win Battles",
+            "text": "Oh yes! Let's throw a victory party tonight!",
+            "filename": "File:vo_zephyr_battlewin_001.aac"
+        },
+        {
+            "title": "Lose Battles",
+            "text": "Chin up! We'll get another chance.",
+            "filename": "File:vo_zephyr_battlelose_001.aac"
+        },
+        {
+            "title": "Ultimate Skill",
+            "text": "Enemy control tower jammed!",
+            "filename": "File:bt_zephyr_uniqueskill_001.aac"
+        },
+        {
+            "title": "Die in Battles",
+            "text": "Mayday……Mayday……",
+            "filename": "File:bt_zephyr_dead_001.aac"
+        },
+        {
+            "title": "Greeting",
+            "text": "Hey, Chief. Wanna go out and have some fun today? Where? Oh, who knows! We'll figure it out on the way!",
+            "filename": "File:vo_zephyr_greeting_001.aac"
+        },
+        {
+            "title": "Conversation 1",
+            "text": "Testing? Testing? Can anyone hear me? Hey Chief, think I could connect to the neighboring FAC's PA system?",
+            "filename": "File:vo_zephyr_talk1_001.aac"
+        },
+        {
+            "title": "Conversation 2",
+            "text": "Oh, why can't I throw paper planes into your office? Isn't it a delightful surprise to receive messages that way when you're buried in work?",
+            "filename": "File:vo_zephyr_talk1_002.aac"
+        },
+        {
+            "title": "Conversation 3",
+            "text": "Everyone drinks at the tavern for different reasons, but it's way more fun than when they try so hard to be all serious. It's not a real party until everyone lets loose a little!",
+            "filename": "File:vo_zephyr_talk1_003.aac"
+        },
+        {
+            "title": "Special Conversation 1",
+            "text": "I've never regretted becoming a pilot. People only see the crash and feel sorry for me, but all I remember is the freedom of soaring through the sky. It's the same with joining the MBCC. My friend said I'd lose my freedom, but they don't realize the amazing sights I could see here. The things I could never find anywhere else.",
+            "filename": "File:vo_zephyr_talk2_001.aac"
+        },
+        {
+            "title": "Special Conversation 2",
+            "text": "Those normies like to call me unlucky and short-sighted and see my life as a mess. Ha! As long as I'm having fun, that's all that matters. What if some monster shows up tomorrow and obliterate the entire city? You gotta live in the moment.",
+            "filename": "File:vo_zephyr_talk2_002.aac"
+        },
+        {
+            "title": "Special Conversation 3",
+            "text": "We may never have another rendezvous in the sky. But I'll never forget that moment when we cruise through the clouds, vented all their emotions, and finally gazed down at  DisCity from thirty thousand feet above.",
+            "filename": "File:vo_zephyr_talk2_003.aac"
+        },
+        {
+            "title": "Full Compliance",
+            "text": "If we're going to embark on a new adventure together in the future, then staying at the bureau for a while seems fine. But, promise me, once you're done chasing your big fancy dreams, we'll run away together without telling anyone. I'll show you the view from above the clouds. What do you say?",
+            "filename": "File:vo_zephyr_obeyfull_001.aac"
+        },
+        {
+            "title": "Idle",
+            "text": "Hey Chief! I've already hopped on the plane for a joy ride! Just leaving you a message so you won't miss me too much.",
+            "filename": "File:vo_zephyr_idle_001.aac"
+        },
+        {
+            "title": "Annoyed",
+            "text": "Oh, bored? Come on, let's go! Time for an adventure!",
+            "filename": "File:vo_zephyr_clicking_001.aac"
+        },
+        {
+            "title": "Special Attention",
+            "text": "I've set up a special channel just for you, Chief. As soon as I get a signal from you, I'll fly through the clouds and be right by your side.",
+            "filename": "File:vo_zephyr_specialattention_001.aac"
+        },
+        {
+            "title": "Dispatch",
+            "text": "Hmm, what do you think are my chances of sneaking away right under your nose? This jop's looking like a snooze fest.",
+            "filename": "File:vo_zephyr_dispatch_001.aac"
+        },
+        {
+            "title": "Dispatch Complete",
+            "text": "Ah, all done! Heading out for a few drinks? Try not to miss me too much.",
+            "filename": "File:vo_zephyr_dispatch2_001.aac"
+        },
+        {
+            "title": "Level Up",
+            "text": "Huh? What's this? Oh, this is fun! Let's do it again!",
+            "filename": "File:vo_zephyr_levelup_002.aac"
+        },
+        {
+            "title": "Deploy",
+            "filename": "File:bt_zephyr_jointeam_001.aac",
+            "text": "Do I really have to stand here? How about I spin the props and drop in from above?"
+        }
+    ]
+}

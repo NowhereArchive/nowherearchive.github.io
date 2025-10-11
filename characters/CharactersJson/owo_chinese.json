@@ -1,0 +1,124 @@
+{
+    "default": [
+        {
+            "title": "Obtain the Sinner",
+            "filename": "File:vo_owo_cacha_001.aac",
+            "text": "果然！没人能拒绝嗷呜的舞狮！连管理局都被吸引过来了，什么狄斯大邦，不过如此~"
+        },
+        {
+            "title": "Raise to Phase 1",
+            "filename": "File:vo_owo_promotion_001.aac",
+            "text": "嗯~不愧是我嗷呜！"
+        },
+        {
+            "title": "Raise to Phase 3",
+            "filename": "File:vo_owo_promotion2_001.aac",
+            "text": "你对嗷呜的支持，嗷呜不会忘记的！……暂时不会忘记……至少这个月不会！"
+        },
+        {
+            "title": "Level Start",
+            "filename": "File:vo_owo_battlebegin_001.aac",
+            "text": "便宜你了狄斯人，一般人可没有机会在嗷呜身后当狮尾喔~"
+        },
+        {
+            "title": "Win Battles",
+            "filename": "File:vo_owo_battlewin_001.aac",
+            "text": "居然敢看不起我霹雳无敌舞狮大王，被打得屁滚尿流了吧！略略略！"
+        },
+        {
+            "title": "Lose Battles",
+            "filename": "File:vo_owo_battlelose_001.aac",
+            "text": "可恶——！你们给我等着！我，我嗷呜还会再回来的！"
+        },
+        {
+            "title": "Ultimate Skill",
+            "filename": "File:bt_owo_uniqueskill_001.aac",
+            "text": "威武狮王，堂堂驾到！"
+        },
+        {
+            "title": "Die in Battles",
+            "filename": "File:bt_owo_dead_001.aac",
+            "text": "嗷呜很强的……是他们……呜，他们耍赖皮……"
+        },
+        {
+            "title": "Greeting",
+            "filename": "File:vo_owo_greeting_001.aac",
+            "text": "天真的狄斯人哟，我劝你别白费力气了，你和天才舞狮少女之间的差距，是永远无法弥补的！"
+        },
+        {
+            "title": "Conversation 1",
+            "filename": "File:vo_owo_talk1_001.aac",
+            "text": "古老的外邦有一头狮，她滴名字就叫——嗷呜！"
+        },
+        {
+            "title": "Conversation 2",
+            "filename": "File:vo_owo_talk1_002.aac",
+            "text": "是谁说我的狮头老土！谁说它过时了的！是谁！呜呜呜你让那混蛋出来！呜呜呜我.....我要咬人了！"
+        },
+        {
+            "title": "Conversation 3",
+            "filename": "File:vo_owo_talk1_003.aac",
+            "text": "“&￥*￥，%*$@，&#*@……”哦，这是电影台词。不会有笨蛋以为是什么舞狮秘诀吧？哈哈哈哈哈！笨蛋！"
+        },
+        {
+            "title": "Special Conversation 1",
+            "filename": "File:vo_owo_talk2_001.aac",
+            "text": "你！是不是忘记什么事了！再好好想想！就是那个！那个！……呜鸣鸣你今天没有夸嗷呜的大电影！"
+        },
+        {
+            "title": "Special Conversation 2",
+            "filename": "File:vo_owo_talk2_002.aac",
+            "text": "我看你骨骼清奇，怎么样，要不要做舞狮第十八代传人？……不对，是十八还是十九啊……我是第几代来着？……一，二，三……"
+        },
+        {
+            "title": "Special Conversation 3",
+            "filename": "File:vo_owo_talk2_003.aac",
+            "text": "我们那里有句老话——“醒狮闹，财神到”！所以，为了你，嗷呜一定会努力大闹特闹的！"
+        },
+        {
+            "title": "Full Compliance",
+            "filename": "File:vo_owo_obeyfull_001.aac",
+            "text": "舞狮很辛苦的！要学好多年！还经常受伤！你真的想学？真的！不后悔？……嗷呜有徒弟了？嗷呜有徒弟了！嗷呜有徒弟咯！！！"
+        },
+        {
+            "title": "Idle",
+            "filename": "File:vo_owo_idle_001.aac",
+            "text": "起床啦！！！不是吧，居然真的被吓到了？哈哈哈你们狄斯人真好玩！"
+        },
+        {
+            "title": "Annoyed",
+            "filename": "File:vo_owo_clicking_001.aac",
+            "text": "我我我警告你，不尊重狮子的人是不会被保佑的嗷！怪物会把你吃吃吃掉我也不会管你的！你……你不许过来哇！！！"
+        },
+        {
+            "title": "Special Attention",
+            "filename": "File:vo_owo_specialattention_001.aac",
+            "text": "这可是天下第一无敌霹雳威风灵巧的小天才嗷呜的表演，不许眨眼喔！"
+        },
+        {
+            "title": "Dispatch",
+            "filename": "File:vo_owo_dispatch_001.aac",
+            "text": "狄斯能有我家乡好玩么？要不是看你缺人手，我才不想出去玩呢！"
+        },
+        {
+            "title": "Dispatch Complete",
+            "filename": "File:vo_owo_dispatch2_001.aac",
+            "text": "不许拿走不许拿走！这些都是嗷呜辛辛苦苦抢来的！"
+        },
+        {
+            "title": "Level Up",
+            "filename": "File:vo_owo_levelup_002.aac",
+            "text": "嗷——！"
+        },
+        {
+            "title": "Pat Head",
+            "filename": "File:vo_owo_head_001.aac",
+            "text": "狮头是不是很漂亮？很霸气？很威风？是不是很想摸一摸？哼哼……想得美！"
+        },
+        {
+            "title": "Deploy",
+            "filename": "File:bt_owo_jointeam_001.aac",
+            "text": "Haha, tremble before me, you fiends! The queen of lion dancing is here!"
+        }
+    ]
+}

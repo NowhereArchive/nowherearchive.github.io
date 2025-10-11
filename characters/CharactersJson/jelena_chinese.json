@@ -1,0 +1,124 @@
+{
+    "default": [
+        {
+            "title": "Obtain the Sinner",
+            "text": "你好，米诺斯的局长，承蒙您的关心……请问，我们需要走什么样的流程，要登记些什么信息呢？",
+            "filename": "File:vo_jelena_cacha_001.aac"
+        },
+        {
+            "title": "Raise to Phase 1",
+            "text": "如果这就是您的期望，我会一一满足。",
+            "filename": "File:vo_jelena_promotion_001.aac"
+        },
+        {
+            "title": "Raise to Phase 3",
+            "text": "愿我深爱着的孩子们，都能有温暖的甜梦……",
+            "filename": "File:vo_jelena_promotion2_001.aac"
+        },
+        {
+            "title": "Level Start",
+            "text": "只要是您的希望，我会陪您到任何地方。",
+            "filename": "File:vo_jelena_battlebegin_001.aac"
+        },
+        {
+            "title": "Win Battles",
+            "text": "好了，都结束了，一起回家吧。",
+            "filename": "File:vo_jelena_battlewin_001.aac"
+        },
+        {
+            "title": "Lose Battles",
+            "text": "别担心，我们可以再尝试一次。",
+            "filename": "File:vo_jelena_battlelose_001.aac"
+        },
+        {
+            "title": "Ultimate Skill",
+            "text": "听，要下雨了……",
+            "filename": "File:bt_jelena_uniqueskill_001.aac"
+        },
+        {
+            "title": "Die in Battles",
+            "text": "雨……终于停了么……",
+            "filename": "File:bt_jelena_dead_001.aac"
+        },
+        {
+            "title": "问候-男",
+            "text": "贵安，局长先生，今天一定会是令人愉悦的一天。",
+            "filename": "1nihfvlidr4tdkg02xv4p9xfbj5lg3a.mp3"
+        },
+        {
+            "title": "问候-女",
+            "text": "贵安，局长小姐，今天一定会是令人愉悦的一天。",
+            "filename": "oy06lc117mb53sfkemxrur93fcl6ybr.mp3"
+        },
+        {
+            "title": "Conversation 1",
+            "text": "您现在是有影响力的人了，之后只会受到更多的关注。来，让我为您整理下着装吧，不管去哪儿，您都该是最耀眼的人物。",
+            "filename": "File:vo_jelena_talk1_001.aac"
+        },
+        {
+            "title": "Conversation 2",
+            "text": "我在每一个雨天祈祷，希望大雨过后，花蕾生长，春燕回归，天空不再乌云密布，届时，我会将心献给亲爱的你们，随后爱会继续填满我的胸腔。",
+            "filename": "File:vo_jelena_talk1_002.aac"
+        },
+        {
+            "title": "Conversation 3",
+            "text": "有些孩子一做错事就会躲到我的房间，好像怕惹你生气，求我来说说好话。那么局长，我的求情会有用吗？",
+            "filename": "File:vo_jelena_talk1_003.aac"
+        },
+        {
+            "title": "Special Conversation 1",
+            "text": "为斯图尔特议长工作时，大家都很紧绷，要留意着各种各样的细节……您这儿的环境就轻松多了，难怪大家都这么喜欢您，局长。",
+            "filename": "File:vo_jelena_talk2_001.aac"
+        },
+        {
+            "title": "Special Conversation 2",
+            "text": "我知道您失去过很多，也都无处缅怀，我明白这种心情……但亲爱的局长，请看看自己身边，您已经找到值得深爱的事物，并且，他们也同样深爱着你……好好珍惜吧，愿你能重获幸福。",
+            "filename": "File:vo_jelena_talk2_002.aac"
+        },
+        {
+            "title": "Special Conversation 3",
+            "text": "无论贫富贵贱，善恶强弱，在时代的洪流面前，人的命运都不过一粒微尘。我自以为的守护也许只是徒劳，但……局长，请活久一些，我希望您能好好活着。",
+            "filename": "File:vo_jelena_talk2_003.aac"
+        },
+        {
+            "title": "Full Compliance",
+            "text": "我带着仇恨踏上这片土地，却从未想过还会遇见想要珍惜的人，爱与恨总会难以分辨……局长，你又会怎么看我？我不后悔自己做的事，也愿意接受所有人的恨意，但若有尘埃落定的一天，我希望我爱的人知道，无论如何，我依然爱你。",
+            "filename": "File:vo_jelena_obeyfull_001.aac"
+        },
+        {
+            "title": "Idle",
+            "text": "闭上眼睛，好好地睡吧……",
+            "filename": "File:vo_jelena_idle_001.aac"
+        },
+        {
+            "title": "Annoyed",
+            "text": "没想到局长偶尔也会调皮……我是该纵容一下呢？还是给点小小的“惩罚”？",
+            "filename": "File:vo_jelena_clicking_001.aac"
+        },
+        {
+            "title": "Special Attention",
+            "text": "工作上的事您可以尽情吩咐，如果有怀疑我也接受所有监督。又或者……您叫我来，只是想偶尔撒撒娇？",
+            "filename": "File:vo_jelena_specialattention_001.aac"
+        },
+        {
+            "title": "Dispatch",
+            "text": "了解，我这就去办。",
+            "filename": "File:vo_jelena_dispatch_001.aac"
+        },
+        {
+            "title": "Dispatch Complete",
+            "text": "来看看，有喜欢的礼物吗？",
+            "filename": "File:vo_jelena_dispatch2_001.aac"
+        },
+        {
+            "title": "Level Up",
+            "text": "谢谢您这样惦记着我。",
+            "filename": "File:vo_jelena_levelup_002.aac"
+        },
+        {
+            "title": "Pat Head",
+            "text": "谢谢您的关心，我还不累。",
+            "filename": "File:vo_jelena_head_001.aac"
+        }
+    ]
+}

@@ -1,0 +1,119 @@
+{
+    "default": [
+        {
+            "title": "Obtain the Sinner",
+            "text": "Within your embrace, spring dwells, where petals softly descend... Get ready, here comes your Wisteria Fairy! Open your arms wide and be sure to catch me properly!",
+            "filename": "File:vo_yingying_cacha_001.aac"
+        },
+        {
+            "title": "Raise to Phase 1",
+            "text": "In my homeland, people often say this you see—when you truly care for someone, you can't help but save all the best things for them.",
+            "filename": "File:vo_yingying_promotion_001.aac"
+        },
+        {
+            "title": "Raise to Phase 3",
+            "text": "Seeing the stars dance across the sky and lanterns paint the night in a dazzle... This is the moment I've been dreaming of sharing with you.",
+            "filename": "File:vo_yingying_promotion2_001.aac"
+        },
+        {
+            "title": "Level Up",
+            "text": "All of these... are they meant just for me?",
+            "filename": "File:vo_yingying_levelup_002.aac"
+        },
+        {
+            "title": "Pat Head",
+            "text": "Happy with just touching my hair? Here, I'll close my eyes and give you a few more seconds... Where else would you like to touch? My eyelashes? My nose? Or perhaps... my lips?",
+            "filename": "File:vo_yingying_head_001.aac"
+        },
+        {
+            "title": "Level Start",
+            "text": "Keen for some action, aren't we? Very well, I shall bravely risk my life to keep you company!",
+            "filename": "File:vo_yingying_battlebegin_001.aac"
+        },
+        {
+            "title": "Win Battles",
+            "text": "Behave a little better next time, and I won't have to be so rough with you. I might even treat you to some sweets!",
+            "filename": "File:vo_yingying_battlewin_001.aac"
+        },
+        {
+            "title": "Lose Battles",
+            "text": "There, there... Don't be disheartened. Like flowers in spring, new opportunities will bloom. I'll make sure they learn it the hard way next time.",
+            "filename": "File:vo_yingying_battlelose_001.aac"
+        },
+        {
+            "title": "Ultimate Skill",
+            "text": "As wisteria blooms, behold the splendor!",
+            "filename": "File:bt_yingying_uniqueskill_001.aac"
+        },
+        {
+            "title": "Die in Battles",
+            "text": "The fete... is over...",
+            "filename": "File:bt_yingying_dead_001.aac"
+        },
+        {
+            "title": "Conversation 1",
+            "text": "Oh, sweetheart! I just came across a saying: \"A fated encounter may lead to shared happiness.\" And then... I walked out and found you right here. Destiny at work, wouldn't you agree?",
+            "filename": "File:vo_yingying_talk1_001.aac"
+        },
+        {
+            "title": "Conversation 2",
+            "text": "If ever I disappear, look for me by the old wisteria tree! I'll be hiding among the flowers, watching the wish plaques tied there through the ages. When the wind blows, they always weave a melody so beautiful, just like those hushed prayers...",
+            "filename": "File:vo_yingying_talk1_002.aac"
+        },
+        {
+            "title": "Conversation 3",
+            "text": "Let me tell you about making wishes! It's all about sincerity, sweetheart... Yes, close your eyes and imagine your wish coming true—Oh, don't knit your brow so much! Take it easy, alright?",
+            "filename": "File:vo_yingying_talk1_003.aac"
+        },
+        {
+            "title": "Special Conversation 1",
+            "text": "I love the lights here, ever-glowing in such radiant colors... Do people here also make wishes upon dazzling lights like these? Tell me, what would your heart's desire be?",
+            "filename": "File:vo_yingying_talk2_001.aac"
+        },
+        {
+            "title": "Special Conversation 2",
+            "text": "In that street of my memories lived the dearest souls. They took me in, raised me with care, taught me to sing, dressed me in beauty, and showered me with all their love and kindness... For all those years, every wish they made was for my happiness. So now, I make my own wish—to watch over them all, for eternity.",
+            "filename": "File:vo_yingying_talk2_002.aac"
+        },
+        {
+            "title": "Special Conversation 3",
+            "text": "I once dwelled in a dream for so long, waiting for a hero who would protect the lights of countless homes and keep my flowers blooming even when the world's collapsing. I couldn't find them, and I dared not wake, so I kept sleeping, and sleeping... You really made me wait, you know?",
+            "filename": "File:vo_yingying_talk2_003.aac"
+        },
+        {
+            "title": "Full Compliance",
+            "text": "Mmm... The wisteria has heard your wish, ready to make it bloom into reality. She will stay by your side always, never parting ways. Now then... would you like to hear my wish? It's just a tiny one, all about you, sweetheart.",
+            "filename": "File:vo_yingying_obeyfull_001.aac"
+        },
+        {
+            "title": "Greeting",
+            "text": "My, you're in such a hurry! Missing me that much? Easy now, I'm not going anywhere. I promised to stay by your side, didn't I?",
+            "filename": "File:vo_yingying_greeting_001.aac"
+        },
+        {
+            "title": "Idle",
+            "text": "\"In the balmy breeze, her lips part in grace. Her form, ethereal, stirs the flowers in place...\" Oh, will a charming companion linger with me till the dead of night, till the break of dawn?",
+            "filename": "File:vo_yingying_idle_001.aac"
+        },
+        {
+            "title": "Annoyed",
+            "text": "Huh?! Not so rough—that hurts. Be gentle, will you?",
+            "filename": "File:vo_yingying_clicking_001.aac"
+        },
+        {
+            "title": "Dispatch",
+            "text": "I'd love to go for a walk, but... won't you join me, sweetheart?",
+            "filename": "File:vo_yingying_dispatch_001.aac"
+        },
+        {
+            "title": "Dispatch Complete",
+            "text": "Mmm... That was absolutely delightful. Until we meet again!",
+            "filename": "File:vo_yingying_dispatch2_001.aac"
+        },
+        {
+            "title": "Special Attention",
+            "text": "Hehe, I see your darting glances and blushing ears... What's with the shyness? Look at me properly—don't you know how much I enjoy gazing at you too?",
+            "filename": "File:vo_yingying_specialattention_001.aac"
+        }
+    ]
+}

@@ -1,0 +1,176 @@
+{
+    "default": [
+        {
+            "title": "Obtain the Sinner",
+            "filename": "File:vo_serpent_cacha_001.aac",
+            "text": "你这是想接我回家？呵呵呵~把我当宠物的话可是不会有好下场的~"
+        },
+        {
+            "title": "Raise to Phase 1",
+            "filename": "File:vo_serpent_promotion_001.aac",
+            "text": "嗯……这让我想起了衔尾蛇。"
+        },
+        {
+            "title": "Raise to Phase 3",
+            "filename": "File:vo_serpent_promotion2_001.aac",
+            "text": "我会~紧紧地围住你的~"
+        },
+        {
+            "title": "Level Start",
+            "filename": "File:vo_serpent_battlebegin_001.aac",
+            "text": "我已经锁定好猎物了，嘶~"
+        },
+        {
+            "title": "Win Battles",
+            "filename": "File:vo_serpent_battlewin_001.aac",
+            "text": "谢谢你让我感受到，我还活着。"
+        },
+        {
+            "title": "Lose Battles",
+            "filename": "File:vo_serpent_battlelose_001.aac",
+            "text": "哈哈……疼痛也是让人安心的感觉。"
+        },
+        {
+            "title": "Ultimate Skill",
+            "filename": "File:bt_serpent_uniqueskill_001.aac",
+            "text": "在此长眠，你会感激我的。"
+        },
+        {
+            "title": "Die in Battles",
+            "filename": "File:bt_serpent_dead_001.aac",
+            "text": "我有感受到……快乐吗？"
+        },
+        {
+            "title": "Greeting",
+            "filename": "File:vo_serpent_greeting_001.aac",
+            "text": "呀，真难得，你又来看我啦~？"
+        },
+        {
+            "title": "Conversation 1",
+            "filename": "File:vo_serpent_talk1_001.aac",
+            "text": "我既不是人类，也不是怪物，嗯……我想我可能是一条毒蛇吧？"
+        },
+        {
+            "title": "Conversation 2",
+            "filename": "File:vo_serpent_talk1_002.aac",
+            "text": "我咬到自己的舌头会不会中毒……？你可真有意思，看上去像脑子中了蛇毒一样。"
+        },
+        {
+            "title": "Conversation 3",
+            "filename": "File:vo_serpent_talk1_003.aac",
+            "text": "每个人都有欢笑的权利，剥夺它的人都不会有好下场的。"
+        },
+        {
+            "title": "Special Conversation 1",
+            "filename": "File:vo_serpent_talk2_001.aac",
+            "text": "我能理解有些人不喜欢蛇，那你应该也能理解我不喜欢有些人吧？"
+        },
+        {
+            "title": "Special Conversation 2",
+            "filename": "File:vo_serpent_talk2_002.aac",
+            "text": "苦难是毁灭欢笑的罪魁祸首，但也是让世界重生的前摇，你觉得呢？"
+        },
+        {
+            "title": "Special Conversation 3",
+            "filename": "File:vo_serpent_talk2_003.aac",
+            "text": "我喜欢看你笑起来的样子，如果是因为我而感到开心，那就更好了。"
+        },
+        {
+            "title": "Full Compliance",
+            "filename": "File:vo_serpent_obeyfull_001.aac",
+            "text": "可以给我一个拥抱吗？你的温度让我想起了春天，苏醒的时间，重生的季节……我能听到我们两个的心脏在一起跳动。"
+        },
+        {
+            "title": "Idle",
+            "filename": "File:vo_serpent_idle_001.aac",
+            "text": "好安静啊……就像世界末日一样，看来能睡个好觉了。"
+        },
+        {
+            "title": "Annoyed",
+            "filename": "File:vo_serpent_clicking_001.aac",
+            "text": "唔……看来，你想让我咬你一口？"
+        },
+        {
+            "title": "Special Attention",
+            "filename": "File:vo_serpent_specialattention_001.aac",
+            "text": "在一座森林里寻找一片叶子，在一群怪物中紧盯一只怪物，你的精力可真不错。"
+        },
+        {
+            "title": "Dispatch",
+            "filename": "File:vo_serpent_dispatch_001.aac",
+            "text": "如果这样能让你开心的话~"
+        },
+        {
+            "title": "Dispatch Complete",
+            "filename": "File:vo_serpent_dispatch2_001.aac",
+            "text": "这趟表演，你还满意吗？"
+        },
+        {
+            "title": "Level Up",
+            "filename": "File:vo_serpent_levelup_002.aac",
+            "text": "希望你玩得开心~"
+        },
+        {
+            "title": "Deploy",
+            "filename": "File:bt_serpent_jointeam_001.aac",
+            "text": "Today's performance is about to start. Get ready to laugh your head off!"
+        },
+        {
+            "title": "Pat Head",
+            "filename": "File:vo_serpent_head_001.aac",
+            "text": "勇者用剑穿过蛇的颅顶，斩杀了凶恶的巨蛇，知道颅顶是哪里吗？就是你刚才抚摸的地方。"
+        }
+    ],
+    "awake_from_slumber": [
+        {
+            "title": "Obtain Attire",
+            "filename": "File:vo_serpent_awake_from_slumber_cacha_001.aac",
+            "text": "我做了一个很长的梦，一个追逐快乐的梦，一个……重生的梦。"
+        },
+        {
+            "title": "Greeting",
+            "filename": "File:vo_serpent_awake_from_slumber_greeting_001.aac",
+            "text": "唔……春天啦？我马上就醒……马上……再给我两分钟……"
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "filename": "File:vo_serpent_awake_from_slumber_talk_001.aac",
+            "text": "被子好暖和好暖和……要是局长能陪我一起……我会觉得更快乐的……"
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "filename": "File:vo_serpent_awake_from_slumber_talk_002.aac",
+            "text": "这快乐的节日，少了我可不行……只是，需要再给我一点准备时间……"
+        },
+        {
+            "title": "Ordinary Contact 3",
+            "filename": "File:vo_serpent_awake_from_slumber_hand_001.aac",
+            "text": "哪里来的小妖精都不能分开我和被……被……分开我和局长……嘿嘿……呼……呼……"
+        },
+        {
+            "title": "Ordinary Contact 4",
+            "filename": "File:vo_serpent_awake_from_slumber_leg_001.aac",
+            "text": "嗯……要大扫除？可我这里不是挺整洁的……或者，你帮帮我嘛？"
+        },
+        {
+            "title": "Idle",
+            "filename": "File:vo_serpent_awake_from_slumber_idle_001.aac",
+            "text": "唔……窗外的烟花声……还真是扰人清梦呢……"
+        },
+        {
+            "title": "Level Up",
+            "filename": "File:vo_serpent_awake_from_slumber_levelup_001.aac",
+            "text": "嗯……再让我睡一会儿……"
+        },
+        {
+            "title": "Pat Head",
+            "filename": "File:vo_serpent_awake_from_slumber_head_001.aac",
+            "text": "你的手……还是那么温暖……"
+        },
+        {
+            "title": "Special Attention",
+            "filename": "File:vo_serpent_awake_from_slumber_specialattention_001.aac",
+            "text": "哎呀，我马上就穿戴好了！再催我……我可就咬你了！"
+        }
+    ]
+}

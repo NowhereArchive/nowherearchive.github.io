@@ -1,0 +1,119 @@
+{
+    "default": [
+        {
+            "title": "Obtain the Sinner",
+            "text": "I am Yugu, hailing from Eastia. It took me quite an arduous journey to reach your esteemed establishment... Might I inquire if you have a spare room for this weary traveler from distant lands?",
+            "filename": "File:vo_yugu_cacha_001.aac"
+        },
+        {
+            "title": "Raise to Phase 1",
+            "text": "I am deeply honored by your kind generosity.",
+            "filename": "File:vo_yugu_promotion_001.aac"
+        },
+        {
+            "title": "Raise to Phase 3",
+            "text": "Trembling without cease, soul-stirred and spellbound. Set ablaze, the heart is pounding in this sweet obsession... Ah, such exquisite rapture.",
+            "filename": "File:vo_yugu_promotion2_001.aac"
+        },
+        {
+            "title": "Level Up",
+            "text": "In exchange... allow me to regale you with some tales of intrigue.",
+            "filename": "File:vo_yugu_levelup_002.aac"
+        },
+        {
+            "title": "Pat Head",
+            "text": "Many moons past, in my childhood, my mother would stroke my head just like this. Heh... Your touch feels as tender as hers, and you are... just as perceptive of my heart.",
+            "filename": "File:vo_yugu_head_001.aac"
+        },
+        {
+            "title": "Level Start",
+            "text": "When we last left our tale...",
+            "filename": "File:vo_yugu_battlebegin_001.aac"
+        },
+        {
+            "title": "Win Battles",
+            "text": "And so this triumph draws its curtain, but what fate awaits beyond? That is a tale for another time...",
+            "filename": "File:vo_yugu_battlewin_001.aac"
+        },
+        {
+            "title": "Lose Battles",
+            "text": "All that reaches its peak shall fall, and every glory is destined to wane. Heh... Now, shall we too sink into this abyss of no return?",
+            "filename": "File:vo_yugu_battlelose_001.aac"
+        },
+        {
+            "title": "Ultimate Skill",
+            "text": "Ah, what a tale of exquisite sensualities!",
+            "filename": "File:bt_yugu_uniqueskill_001.aac"
+        },
+        {
+            "title": "Die in Battles",
+            "text": "Heh, this day has finally arrived...",
+            "filename": "File:bt_yugu_dead_001.aac"
+        },
+        {
+            "title": "Conversation 1",
+            "text": "With a skilled tongue and supple lips, the fundamental art of taletelling lies in eloquence, refined through thousands of performances... I trust you've come to grasp the intricacies of my craft.",
+            "filename": "File:vo_yugu_talk1_001.aac"
+        },
+        {
+            "title": "Conversation 2",
+            "text": "The people of DisCity relish my shows, or rather... they relish my very being. I've appeased their cravings, becoming their kitsch Eastian fantasy. Yet, as the tales end, have you decided... how you shall recompense me?",
+            "filename": "File:vo_yugu_talk1_002.aac"
+        },
+        {
+            "title": "Conversation 3",
+            "text": "As our tale last told, a vicious murderer haunted this quaint town, one who preyed on night wanderers, gutting them with brutal savagery... One night, a young maiden approached through the darkness, trembling and tear-stained. You rushed to ask about her distress, only to watch as she drew a bloodied blade from her dress... Hey, why are you running away?",
+            "filename": "File:vo_yugu_talk1_003.aac"
+        },
+        {
+            "title": "Special Conversation 1",
+            "text": "This jade pendant was a gift from a friend. It beheld the beginning of my journey, and now... it bears witness to my wish to linger by your side, like a bird returning to its nest. Heh... It seems your interest is piqued. Would you like to touch it?",
+            "filename": "File:vo_yugu_talk2_001.aac"
+        },
+        {
+            "title": "Special Conversation 2",
+            "text": "In DisCity, the affection for kisses surpasses that in Eastia. Lips touching lips, from movie posters to street-strolling pairs, everyone here is fascinated with it. Heh, but do you know what stirs even deeper passion than a kiss? A bite...",
+            "filename": "File:vo_yugu_talk2_002.aac"
+        },
+        {
+            "title": "Special Conversation 3",
+            "text": "DisCity differs greatly from my homeland Eastia, yet both share the same cast: children clinging to their mothers, lovers supporting one another, the corrupt wallowing in decadence, and crusaders of resolute spirit, much like yourself. Ah, what novel tales will the denizens of this place unveil? I am simply eager to behold...",
+            "filename": "File:vo_yugu_talk2_003.aac"
+        },
+        {
+            "title": "Full Compliance",
+            "text": "Once, a whisper reached me of a fabled sword that vanquished demons, arising amidst chaotic times, roaming bereft and solitary. It could have sought safety, yet it martyred itself for a world-shattering cause... When its spirit wanes and form crumbles, will it harbor fear? Regret? Or hatred for this sullied world? Hah... haha, I await day and night, eager to witness the denouement you shall weave...",
+            "filename": "File:vo_yugu_obeyfull_001.aac"
+        },
+        {
+            "title": "Greeting",
+            "text": "A beauty lies lifeless in a well; from a branch hangs a young lord... And beneath the thousand-armed Bodhisattva, countless gold glistens... Come, esteemed guest, take a seat and witness this grand tale unfurl...",
+            "filename": "File:vo_yugu_greeting_001.aac"
+        },
+        {
+            "title": "Idle",
+            "text": "DisCity, a city teetering on the edge. Despite all efforts to preserve it, how much longer can this peace truly last...?",
+            "filename": "File:vo_yugu_idle_001.aac"
+        },
+        {
+            "title": "Annoyed",
+            "text": "It appears you, much like the denizens of DisCity, are brimming with curiosity and speculation about me. Pray tell... am I living up to your \"Eastian fantasy\"?",
+            "filename": "File:vo_yugu_clicking_001.aac"
+        },
+        {
+            "title": "Dispatch",
+            "text": "I traverse vast lands, seeking to enrich this... \"collection\" of mine, and I consider myself quite the connoisseur in this domain.",
+            "filename": "File:vo_yugu_dispatch_001.aac"
+        },
+        {
+            "title": "Dispatch Complete",
+            "text": "A fruitful harvest.",
+            "filename": "File:vo_yugu_dispatch2_001.aac"
+        },
+        {
+            "title": "Special Attention",
+            "text": "As you cast your eyes upon me, I return the gaze with equal measure. It seems we are both awaiting something... something... delightfully exhilarating... Hah...",
+            "filename": "File:vo_yugu_specialattention_001.aac"
+        }
+    ]
+}

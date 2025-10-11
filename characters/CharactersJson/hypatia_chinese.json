@@ -1,0 +1,119 @@
+{
+    "default": [
+        {
+            "title": "Obtain the Sinner",
+            "text": "费沙研究所成员，伊帕希娅·坎贝尔。此行来访，旨在交流天灾防御技术，探求共存可能……希望我们能合作顺利，局长阁下。",
+            "filename": "File:vo_hypatia_cacha_001.aac"
+        },
+        {
+            "title": "Raise to Phase 1",
+            "text": "不被限制的力量，只会带来毁灭。",
+            "filename": "File:vo_hypatia_promotion_001.aac"
+        },
+        {
+            "title": "Raise to Phase 3",
+            "text": "既然已经做下决定……那就不要后悔，不要回头。",
+            "filename": "File:vo_hypatia_promotion2_001.aac"
+        },
+        {
+            "title": "Level Start",
+            "text": "低调行事，速战速决。",
+            "filename": "File:vo_hypatia_battlebegin_001.aac"
+        },
+        {
+            "title": "Win Battles",
+            "text": "一切，如你所愿。",
+            "filename": "File:vo_hypatia_battlewin_001.aac"
+        },
+        {
+            "title": "Lose Battles",
+            "text": "再来一次，我们可以做得更好。",
+            "filename": "File:vo_hypatia_battlelose_001.aac"
+        },
+        {
+            "title": "Ultimate Skill",
+            "text": "玫瑰，于眼中盛放。",
+            "filename": "File:bt_hypatia_uniqueskill_001.aac"
+        },
+        {
+            "title": "Die in Battles",
+            "text": "我应当…就此停手的…",
+            "filename": "File:bt_hypatia_dead_001.aac"
+        },
+        {
+            "title": "Greeting",
+            "text": "你好，局长阁下。在今日的工作开始前，要先来一杯坎贝尔的香草茶吗？",
+            "filename": "File:vo_hypatia_greeting_001.aac"
+        },
+        {
+            "title": "Conversation 1",
+            "text": "用狂厄炼化金属，让物质分解、转移、重组，直至完美——驾驭灰烬结晶，我们将获得对抗天灾的力量。",
+            "filename": "File:vo_hypatia_talk1_001.aac"
+        },
+        {
+            "title": "Conversation 2",
+            "text": "释放枷锁、束缚狂厄、吞噬黑环，所有坎贝尔求而不得的技术，竟然都汇集到了同一个人身上。到底是怎样残酷的过去，才构成了今日的你呢？",
+            "filename": "File:vo_hypatia_talk1_002.aac"
+        },
+        {
+            "title": "Conversation 3",
+            "text": "之前有个狄斯的小姑娘，吵着让我给你捎些东西。几封书信、少许纪念品，还有一叠……写着你名字的欠条？",
+            "filename": "File:vo_hypatia_talk1_003.aac"
+        },
+        {
+            "title": "Special Conversation 1",
+            "text": "坎贝尔家族的每个成员都会在成年礼上获得一朵属于自己的黄金玫瑰。它是荣耀，更是责任。",
+            "filename": "File:vo_hypatia_talk2_001.aac"
+        },
+        {
+            "title": "Special Conversation 2",
+            "text": "点石成金并不困难。只是为此付出的“代价”，往往比成果更加昂贵。",
+            "filename": "File:vo_hypatia_talk2_002.aac"
+        },
+        {
+            "title": "Special Conversation 3",
+            "text": "我听见那些失去家园、前来投奔的人的哭声，可他们被黄金做的大门拦在外面，直到风沙吹散了所有声音……局长，请告诉我，这样的未来真的正确吗？我……找不到答案。",
+            "filename": "File:vo_hypatia_talk2_003.aac"
+        },
+        {
+            "title": "Full Compliance",
+            "text": "希望某天我也能像你一样勇敢，能够颠覆规则，自由而坚定地选择自己的道路。在那一天到来前，请你一直陪在我的身边，成为我勇气的来源。",
+            "filename": "File:vo_hypatia_obeyfull_001.aac"
+        },
+        {
+            "title": "Idle",
+            "text": "只要解明原理，就能逆向推导本质，从而将其复现。但你不一样，你身上的谜团太过复杂……解析，或许还需要一段时间……",
+            "filename": "File:vo_hypatia_idle_001.aac"
+        },
+        {
+            "title": "Annoyed",
+            "text": "狄斯的待客之道，未免也太无礼了。",
+            "filename": "File:vo_hypatia_clicking_001.aac"
+        },
+        {
+            "title": "Special Attention",
+            "text": "有时，眼神传递出的信息会比文字更加明显，比如……你注视我的时候，是在想念我吗？",
+            "filename": "File:vo_hypatia_specialattention_001.aac"
+        },
+        {
+            "title": "Dispatch",
+            "text": "要谁亲自动手？",
+            "filename": "File:vo_hypatia_dispatch_001.aac"
+        },
+        {
+            "title": "Dispatch Complete",
+            "text": "嗯？只要这些就够了吗？",
+            "filename": "File:vo_hypatia_dispatch2_001.aac"
+        },
+        {
+            "title": "Level Up",
+            "text": "你的支持对我很有帮助，多谢。",
+            "filename": "File:vo_hypatia_levelup_002.aac"
+        },
+        {
+            "title": "Pat Head",
+            "text": "复杂的发型会影响行动，但……维护外表也是贵族的义务。",
+            "filename": "File:vo_hypatia_head_001.aac"
+        }
+    ]
+}
