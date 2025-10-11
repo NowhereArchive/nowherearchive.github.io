@@ -355,82 +355,79 @@
         handleSmallScreens();
 
         fetch('chapters.json')
-            .then(response => response.json())
-            .then(data => {
-                const categories = [...new Set(data.chapters.map(chapter => chapter.category))];
-                const navbarTabs = document.getElementById('navbarTabs');
+    .then(response => response.json())
+    .then(data => {
+        const categories = Object.keys(data);
+        const navbarTabs = document.getElementById('navbarTabs');
 
-                const allChaptersTab = document.createElement('button');
-                allChaptersTab.innerText = "All Categories";
-                allChaptersTab.onclick = () => filterChapters("All Chapters");
-                navbarTabs.appendChild(allChaptersTab);
+        // Create "All Categories" tab
+        const allChaptersTab = document.createElement('button');
+        allChaptersTab.innerText = "All Categories";
+        allChaptersTab.onclick = () => filterChapters("All Chapters");
+        navbarTabs.appendChild(allChaptersTab);
 
-                categories.forEach(category => {
-                    const tab = document.createElement('button');
-                    tab.innerText = category;
-                    tab.onclick = () => filterChapters(category);
-                    navbarTabs.appendChild(tab);
-                });
-
-                function filterChapters(selectedCategory) {
-                    const chapterGrid = document.getElementById('chapterGrid');
-                    chapterGrid.innerHTML = '';
-
-                    let filteredChapters;
-
-                    if (selectedCategory === "All Chapters") {
-                        filteredChapters = data.chapters;
-                    } else {
-                        filteredChapters = data.chapters.filter(chapter => chapter.category === selectedCategory);
-                    }
-
-                    filteredChapters.sort((a, b) => a.displayName.localeCompare(b.displayName));
-
-                    const heading = document.querySelector('h1');
-                    heading.innerText = selectedCategory;
-
-                    filteredChapters.forEach(chapter => {
-                        const chapterCard = document.createElement('div');
-                        chapterCard.classList.add('chapter-card');
-
-                        chapterCard.innerHTML = `
-                            <div class="skeleton"></div>
-                            <img src="images/${chapter.name}/${chapter.name}.png" alt="${chapter.displayName}" onload="hideSkeleton(this)">
-                            <div class="chapter-title">${chapter.displayName}</div>
-                        `;
-
-                        chapterCard.onclick = () => {
-                            window.location.href = `${chapter.name}/`;
-                        };
-                        chapterGrid.appendChild(chapterCard);
-                    });
-                }
-
-                if (categories.length > 0) {
-                    filterChapters(categories[0]);
-                }
-
-                document.getElementById('searchInput').addEventListener('input', function () {
-                    const searchValue = this.value.toLowerCase();
-                    const allChapters = chapterGrid.querySelectorAll('.chapter-card');
-                    allChapters.forEach(chapterCard => {
-                        const chapterName = chapterCard.querySelector('.chapter-title').innerText.toLowerCase();
-                        chapterCard.style.display = chapterName.includes(searchValue) ? 'block' : 'none';
-                    });
-                });
-            })
-            .catch(error => console.error('Error loading chapters:', error));
-
-        document.addEventListener('keydown', function (event) {
-            const searchInput = document.getElementById('searchInput');
-
-            if ((event.key === 'l' || event.key === 'L') && document.activeElement !== searchInput) {
-                event.preventDefault();
-                if (searchInput) {
-                    searchInput.focus();
-                }
-            }
+        // Create category tabs
+        categories.forEach(category => {
+            const tab = document.createElement('button');
+            tab.innerText = category;
+            tab.onclick = () => filterChapters(category);
+            navbarTabs.appendChild(tab);
         });
+
+        function filterChapters(selectedCategory) {
+            const chapterGrid = document.getElementById('chapterGrid');
+            chapterGrid.innerHTML = '';
+
+            let chaptersToDisplay = [];
+
+            if (selectedCategory === "All Chapters") {
+                // Flatten all categories into one array
+                Object.values(data).forEach(categoryChapters => {
+                    chaptersToDisplay = chaptersToDisplay.concat(categoryChapters);
+                });
+            } else if (data[selectedCategory]) {
+                chaptersToDisplay = data[selectedCategory];
+            }
+
+            // Sort chapters
+            if (selectedCategory === 'Character Events') {
+                chaptersToDisplay.sort((a, b) => (a.count || 0) - (b.count || 0));
+            } else {
+                chaptersToDisplay.sort((a, b) => a.displayName.localeCompare(b.displayName));
+            }
+
+            const heading = document.querySelector('h1');
+            heading.innerText = selectedCategory;
+
+            chaptersToDisplay.forEach(chapter => {
+                const chapterCard = document.createElement('div');
+                chapterCard.classList.add('chapter-card');
+
+                chapterCard.innerHTML = `
+                    <div class="skeleton"></div>
+                    <img src="images/${chapter.name}/${chapter.name}.png" alt="${chapter.displayName}" onload="hideSkeleton(this)">
+                    <div class="chapter-title">${chapter.displayName}</div>
+                `;
+
+                chapterCard.onclick = () => {
+                    window.location.href = `chapter.html?name=${chapter.name}`;
+                };
+
+                chapterGrid.appendChild(chapterCard);
+            });
+        }
+
+        // Show first category by default
+        if (categories.length > 0) {
+            filterChapters(categories[0]);
+        }
+    })
+    .catch(error => {
+        console.error('Error loading chapters:', error);
+        document.getElementById('chapterGrid').innerHTML = `
+            <p>Error loading chapters. Please check the console for details.</p>
+        `;
+    });
 
         function hideSkeleton(img) {
             const skeleton = img.previousElementSibling;
