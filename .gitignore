@@ -3,7 +3,7 @@
 characters/README.md
 characters/all_voicelines.html
 characters/character-redirect-template.html
-characters/character-template.html
+# characters/character-template.html
 characters/generate-character-pages.js
 characters/urls.json
 CGs/generate-chapter-pages.js

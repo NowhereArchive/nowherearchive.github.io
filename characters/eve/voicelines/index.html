@@ -3,11 +3,14 @@
 
 <head>
   <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-WCKMLLZJ');</script>
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WCKMLLZJ');</script>
   <!-- End Google Tag Manager -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3M02N0366N"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-702GZFHJQE"></script>
@@ -22,15 +25,15 @@
   </script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-  
+
     gtag('config', 'G-702GZFHJQE');
   </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
-    content="Listen to all Eve voice lines from Path To Nowhere. Complete collection of character quotes and audio in multiple languages including English, Japanese, Chinese, and Korean."/>
+    content="Listen to all Eve voice lines from Path To Nowhere. Complete collection of character quotes and audio in multiple languages including English, Japanese, Chinese, and Korean." />
   <title>Eve Voicelines - Path To Nowhere Archive</title>
   <link href="../../Styles.css" rel="stylesheet" />
   <link href="../../NavBar.css" rel="stylesheet" />
@@ -160,7 +163,7 @@
         flex-direction: column;
         align-items: center;
       }
-      
+
       .language-buttons,
       .attire-buttons {
         width: 100%;
@@ -171,9 +174,9 @@
 </head>
 
 <body>
-      <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCKMLLZJ"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCKMLLZJ" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   <nav class="navbar">
     <div class="container">
@@ -204,10 +207,12 @@
       <h1 id="characterName">Eve</h1>
       <div class="hero-controls">
         <div class="search-container">
-          <input type="text" id="searchInput" class="search-input" placeholder="Search voicelines..." autocomplete="off" />
+          <input type="text" id="searchInput" class="search-input" placeholder="Search voicelines..."
+            autocomplete="off" />
           <span class="search-shortcut" title="Press / to search">/</span>
           <button class="search-button" id="searchButton">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
               <circle cx="11" cy="11" r="8"></circle>
               <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
             </svg>
@@ -227,6 +232,28 @@
   <script>
     const characterName = "eve";
     let language = "english";
+
+    let attireDisplayNames = {};
+
+    async function loadCharacterData() {
+      const response = await fetch('../../characters.json');
+      const data = await response.json();
+      const character = data.characters.find(c => c.name === characterName);
+
+      if (character && character.attires) {
+        character.attires.forEach(attire => {
+          attireDisplayNames[attire.name] = attire.displayName;
+        });
+      }
+    }
+
+    async function init() {
+      await loadCharacterData();
+      createLanguageButtons();
+      loadVoicelines();
+    }
+
+    init();
 
     function sanitizeName(name) {
       return name.toLowerCase().replace(/\s+/g, "_");
@@ -302,7 +329,7 @@
         const lineDiv = document.createElement("div");
         lineDiv.className = 'voiceline-card';
         const hasTranslation = language !== "english" && englishVoicelineMap[voiceline.title];
-        
+
         lineDiv.innerHTML = `
           <div class="voiceline-header">
             <div class="voiceline-title">${voiceline.title}</div>
@@ -352,7 +379,6 @@
           </div>
         `;
 
-        // Add event listeners for the new card
         const playBtn = lineDiv.querySelector('.play-btn');
         if (playBtn) {
           playBtn.addEventListener('click', (e) => {
@@ -361,8 +387,7 @@
             playVoice(audioFile, lineDiv);
           });
         }
-        
-        // Copy button
+
         const copyBtn = lineDiv.querySelector('.copy-btn');
         if (copyBtn) {
           copyBtn.addEventListener('click', (e) => {
@@ -377,8 +402,7 @@
             });
           });
         }
-        
-        // Download button
+
         const downloadBtn = lineDiv.querySelector('.download-btn');
         if (downloadBtn) {
           downloadBtn.addEventListener('click', (e) => {
@@ -393,8 +417,7 @@
             document.body.removeChild(a);
           });
         }
-        
-        // Share button
+
         const shareBtn = lineDiv.querySelector('.share-btn');
         if (shareBtn && navigator.share) {
           shareBtn.addEventListener('click', (e) => {
@@ -402,7 +425,7 @@
             const title = lineDiv.querySelector('.voiceline-title').textContent;
             const text = lineDiv.querySelector('.voiceline-text').textContent;
             const url = window.location.href;
-            
+
             navigator.share({
               title: `${characterName} - ${title}`,
               text: text,
@@ -410,8 +433,7 @@
             }).catch(console.error);
           });
         }
-        
-        // Translation toggle
+
         const translationBtn = lineDiv.querySelector('.translation-btn');
         const translationDiv = lineDiv.querySelector('.voiceline-translation');
         if (translationBtn && translationDiv) {
@@ -422,56 +444,54 @@
             translationBtn.textContent = isHidden ? 'Hide Translation' : 'Show Translation';
           });
         }
-        
-        // Progress bar click to seek
+
         const progressContainer = lineDiv.querySelector('.progress-container');
         if (progressContainer) {
           progressContainer.addEventListener('click', (e) => {
             if (!currentAudio) return;
-            
+
             const rect = progressContainer.getBoundingClientRect();
             const pos = (e.clientX - rect.left) / rect.width;
             currentAudio.currentTime = pos * currentAudio.duration;
-            
-            // Update progress bar immediately
+
             const progressBar = progressContainer.querySelector('.progress-bar');
             if (progressBar) {
               progressBar.style.width = `${pos * 100}%`;
             }
           });
         }
-        
+
         container.appendChild(lineDiv);
       });
     }
 
     function createAttireButtons(data) {
-  const attireButtonsContainer = document.getElementById("attireButtonsContainer");
-  attireButtonsContainer.innerHTML = "";
+      const attireButtonsContainer = document.getElementById("attireButtonsContainer");
+      attireButtonsContainer.innerHTML = "";
 
-  Object.keys(data).forEach((attire) => {
-    const button = document.createElement("button");
-    button.classList.add("attire-button");
-    button.innerText = attire.replace(/_/g, " ").replace(/\b\w/g, (char) => char.toUpperCase());
-    
-    button.onclick = () => {
-      const buttons = attireButtonsContainer.getElementsByClassName("attire-button");
-      Array.from(buttons).forEach((btn) => btn.classList.remove("active-button"));
+      Object.keys(data).forEach((attire) => {
+        const button = document.createElement("button");
+        button.classList.add("attire-button");
+        button.innerText = attireDisplayNames[attire] ||
+          attire.replace(/_/g, " ").replace(/\b\w/g, (char) => char.toUpperCase());
 
-      button.classList.add("active-button");
-      
-      // Store the current search value
-      const searchValue = document.getElementById("searchInput").value;
-      
-      renderVoicelines(data, attire, language);
-      
-      // Restore the search value
-      document.getElementById("searchInput").value = searchValue;
-      filterVoicelines(); // Reapply filtering based on the previous search
-    };
-    attireButtonsContainer.appendChild(button);
-  });
-}
+
+        button.onclick = () => {
+          const buttons = attireButtonsContainer.getElementsByClassName("attire-button");
+          Array.from(buttons).forEach((btn) => btn.classList.remove("active-button"));
+
+          button.classList.add("active-button");
+
+          const searchValue = document.getElementById("searchInput").value;
+
+          renderVoicelines(data, attire, language);
+
+          document.getElementById("searchInput").value = searchValue;
+          filterVoicelines();
+        };
+        attireButtonsContainer.appendChild(button);
+      });
+    }
 
     function createLanguageButtons() {
       const languageButtonsContainer = document.getElementById(
@@ -554,24 +574,23 @@
 
     function updateProgress(card) {
       if (currentProgressInterval) clearInterval(currentProgressInterval);
-      
+
       currentProgressInterval = setInterval(() => {
         if (currentAudio) {
           const progress = (currentAudio.currentTime / currentAudio.duration) * 100;
           const progressBar = card.querySelector('.progress-bar');
           const durationDisplay = card.querySelector('.voiceline-duration');
-          
+
           if (progressBar) {
             progressBar.style.width = `${progress}%`;
           }
-          
+
           if (durationDisplay) {
             durationDisplay.textContent = formatTime(currentAudio.currentTime);
           }
         }
       }, 100);
-      
-      // Clear interval when audio ends
+
       currentAudio.addEventListener('ended', function onEnd() {
         clearInterval(currentProgressInterval);
         const playBtn = card.querySelector('.play-btn');
@@ -586,7 +605,6 @@
     }
 
     function playVoice(file, card) {
-      // If clicking the same card, toggle play/pause
       if (currentPlayingCard === card) {
         if (currentAudio && !currentAudio.paused) {
           currentAudio.pause();
@@ -608,29 +626,25 @@
           return;
         }
       }
-      
-      // Stop any currently playing audio
+
       stopVoice();
-      
-      // Play the new audio
+
       currentAudio = new Audio(file);
       currentPlayingCard = card;
-      
-      // Update UI for the new playing card
+
       const playBtn = card.querySelector('.play-btn');
       if (playBtn) {
         playBtn.querySelector('.play-icon').style.display = 'none';
         playBtn.querySelector('.pause-icon').style.display = 'block';
       }
-      
-      // Set up event listeners for the new audio
-      currentAudio.addEventListener('loadedmetadata', function() {
+
+      currentAudio.addEventListener('loadedmetadata', function () {
         const durationDisplay = card.querySelector('.voiceline-duration');
         if (durationDisplay) {
           durationDisplay.textContent = formatTime(currentAudio.duration);
         }
       });
-      
+
       currentAudio.play().then(() => {
         updateProgress(card);
       }).catch(error => {
@@ -640,7 +654,6 @@
 
     function stopVoice() {
       if (currentAudio) {
-        // Reset UI for the previously playing card
         if (currentPlayingCard) {
           const playBtn = currentPlayingCard.querySelector('.play-btn');
           if (playBtn) {
@@ -650,8 +663,7 @@
           const progressBar = currentPlayingCard.querySelector('.progress-bar');
           if (progressBar) progressBar.style.width = '0%';
         }
-        
-        // Stop the audio
+
         currentAudio.pause();
         currentAudio.currentTime = 0;
         currentAudio = null;
@@ -678,21 +690,19 @@
       .addEventListener("input", filterVoicelines);
 
     function filterVoicelines() {
-  const searchValue = document.getElementById("searchInput").value.toLowerCase();
-  const voicelines = document.querySelectorAll(".voiceline");
+      const searchValue = document.getElementById("searchInput").value.toLowerCase();
+      const voicelines = document.querySelectorAll(".voiceline-card");
 
-  voicelines.forEach((line) => {
-    const lineTitle = line.querySelector("p").innerText.toLowerCase(); // Get the voiceline title
-    const lineText = line.querySelector(".voiceline-text").innerText.toLowerCase(); // Get the non-English text
-    const englishText = line.querySelector(".voiceline-text-NotEn")?.innerText.toLowerCase(); // Get the English text if available
+      voicelines.forEach((line) => {
+        const lineTitle = line.querySelector(".voiceline-title").innerText.toLowerCase();
+        const lineText = line.querySelector(".voiceline-text").innerText.toLowerCase();
+        const englishText = line.querySelector(".translation-text")?.innerText.toLowerCase();
 
-    // Check if the search term is found in either the title, the voiceline text, or the English translation
-    const match = lineTitle.includes(searchValue) || lineText.includes(searchValue) || (englishText && englishText.includes(searchValue));
-    
-    // Toggle display based on the search match
-    line.style.display = match ? "block" : "none";
-  });
-}
+        const match = lineTitle.includes(searchValue) || lineText.includes(searchValue) || (englishText && englishText.includes(searchValue));
+
+        line.style.display = match ? "block" : "none";
+      });
+    }
 
     function handleSmallScreens() {
       document
@@ -711,4 +721,5 @@
     handleSmallScreens();
   </script>
 </body>
+
 </html>

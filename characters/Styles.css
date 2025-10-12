@@ -503,6 +503,14 @@ h1::after {
   position: relative;
 }
 
+.no-results {
+  text-align: center;
+  padding: 2rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-style: italic;
+  display: none;
+}
+
 @media (max-width: 768px) {
   .character-grid {
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));

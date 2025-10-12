@@ -6,7 +6,21 @@
             "rank": "S",
             "libram": "SLOTH",
             "tendency": "Umbra",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "candlelit_turret",
+                    "displayName": "Candlelit Turret"
+                },
+                {
+                    "name": "woodland_wanderer",
+                    "displayName": "Woodland Wanderer"
+                }
+            ]
         },
         {
             "name": "angell",
@@ -14,7 +28,17 @@
             "rank": "S",
             "libram": "PESTILENCE",
             "tendency": "Umbra",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "lurking_lotusblade",
+                    "displayName": "Lurking Lotusblade"
+                }
+            ]
         },
         {
             "name": "anne",
@@ -22,7 +46,21 @@
             "rank": "A",
             "libram": "LOVE",
             "tendency": "Catalyst",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "steamy_night_chat",
+                    "displayName": "Steamy Night Chat"
+                },
+                {
+                    "name": "glistening_raindrops",
+                    "displayName": "Glistening Raindrops"
+                }
+            ]
         },
         {
             "name": "ariel",
@@ -30,7 +68,21 @@
             "rank": "A",
             "libram": "LOVE",
             "tendency": "Catalyst",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "silent_nocturne",
+                    "displayName": "Silent Nocturne"
+                },
+                {
+                    "name": "cageling",
+                    "displayName": "Cageling"
+                }
+            ]
         },
         {
             "name": "bai_yi",
@@ -38,7 +90,25 @@
             "rank": "S",
             "libram": "TREACHERY",
             "tendency": "Umbra",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "blade_of_night",
+                    "displayName": "Blade Of Night"
+                },
+                {
+                    "name": "wave_rider",
+                    "displayName": "Wave Rider"
+                },
+                {
+                    "name": "aeons_vanguard",
+                    "displayName": "Aeons Vanguard"
+                }
+            ]
         },
         {
             "name": "bianca",
@@ -46,7 +116,17 @@
             "rank": "S",
             "libram": "PESTILENCE",
             "tendency": "Reticle",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "in_cider_scoop",
+                    "displayName": "In Cider Scoop"
+                }
+            ]
         },
         {
             "name": "cabernet",
@@ -54,7 +134,21 @@
             "rank": "S",
             "libram": "SLOTH",
             "tendency": "Catalyst",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "bacchanal_reverie",
+                    "displayName": "Bacchanal Reverie"
+                },
+                {
+                    "name": "intoxication_a_deux",
+                    "displayName": "Intoxication a Deux"
+                }
+            ]
         },
         {
             "name": "cassia",
@@ -62,7 +156,21 @@
             "rank": "A",
             "libram": "LOVE",
             "tendency": "Catalyst",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default_old",
+                    "displayName": "Default Old"
+                },
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "aromas_in_bloom",
+                    "displayName": "Aromas In Bloom"
+                }
+            ]
         },
         {
             "name": "cassian",
@@ -78,7 +186,21 @@
             "rank": "A",
             "libram": "HERESY",
             "tendency": "Catalyst",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "message_in_dreams",
+                    "displayName": "Message In Dreams"
+                },
+                {
+                    "name": "dream_s_ephemera",
+                    "displayName": "Dream's Ephemera"
+                }
+            ]
         },
         {
             "name": "che",
@@ -86,7 +208,17 @@
             "rank": "B",
             "libram": "LIMBO",
             "tendency": "Fury",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "unexpected_guest",
+                    "displayName": "Unexpected Guest"
+                }
+            ]
         },
         {
             "name": "chelsea",
@@ -94,7 +226,21 @@
             "rank": "A",
             "libram": "GREED",
             "tendency": "Endura",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "moonlight_rendezvous",
+                    "displayName": "Moonlight Rendezvous"
+                },
+                {
+                    "name": "lake_of_mythos",
+                    "displayName": "Lake Of Mythos"
+                }
+            ]
         },
         {
             "name": "christina",
@@ -102,7 +248,17 @@
             "rank": "A",
             "libram": "ANGER",
             "tendency": "Fury",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "sunrise_express",
+                    "displayName": "Sunrise Express"
+                }
+            ]
         },
         {
             "name": "cinnabar",
@@ -110,7 +266,21 @@
             "rank": "A",
             "libram": "TREACHERY",
             "tendency": "Endura",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "special_escort",
+                    "displayName": "Special Escort"
+                },
+                {
+                    "name": "courteous_call",
+                    "displayName": "Courteous Call"
+                }
+            ]
         },
         {
             "name": "coquelic",
@@ -118,7 +288,21 @@
             "rank": "S",
             "libram": "LIMBO",
             "tendency": "Catalyst",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "blossom",
+                    "displayName": "Blossom"
+                },
+                {
+                    "name": "crimson_hunt",
+                    "displayName": "Crimson Hunt"
+                }
+            ]
         },
         {
             "name": "corso",
@@ -126,7 +310,17 @@
             "rank": "A",
             "libram": "VIOLENCE",
             "tendency": "Fury",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "suit_up_outlaw",
+                    "displayName": "Suit Up Outlaw"
+                }
+            ]
         },
         {
             "name": "crache",
@@ -134,7 +328,21 @@
             "rank": "S",
             "libram": "LIMBO",
             "tendency": "Umbra",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "eternal_night_hunt",
+                    "displayName": "Eternal Night Hunt"
+                },
+                {
+                    "name": "lucida_mystica",
+                    "displayName": "Lucida Mystica"
+                }
+            ]
         },
         {
             "name": "demolia",
@@ -142,7 +350,17 @@
             "rank": "B",
             "libram": "LIMBO",
             "tendency": "Endura",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "gritty_detour",
+                    "displayName": "Gritty Detour"
+                }
+            ]
         },
         {
             "name": "demon",
@@ -150,7 +368,17 @@
             "rank": "S",
             "libram": "ANGER",
             "tendency": "Endura",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "under_the_neon_lights",
+                    "displayName": "Under The Neon Lights"
+                }
+            ]
         },
         {
             "name": "deren",
@@ -158,7 +386,17 @@
             "rank": "S",
             "libram": "FRAUD",
             "tendency": "Fury",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "eclat_eminence",
+                    "displayName": "Eclat Eminence"
+                }
+            ]
         },
         {
             "name": "dolly",
@@ -166,7 +404,13 @@
             "rank": "A",
             "libram": "VIOLENCE",
             "tendency": "Fury",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                }
+            ]
         },
         {
             "name": "donald",
@@ -174,7 +418,17 @@
             "rank": "S",
             "libram": "TREACHERY",
             "tendency": "Fury",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "good_old_days",
+                    "displayName": "Good Old Days"
+                }
+            ]
         },
         {
             "name": "dove",
@@ -182,7 +436,13 @@
             "rank": "A",
             "libram": "FAMINE",
             "tendency": "Endura",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                }
+            ]
         },
         {
             "name": "dreya",
@@ -190,7 +450,17 @@
             "rank": "S",
             "libram": "IMMORTAL",
             "tendency": "Reticle",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "cosmic_escapist",
+                    "displayName": "Cosmic Escapist"
+                }
+            ]
         },
         {
             "name": "du_ruo",
@@ -198,7 +468,17 @@
             "rank": "S",
             "libram": "FRAUD",
             "tendency": "Catalyst",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "lunaria_enigma",
+                    "displayName": "Lunaria Enigma"
+                }
+            ]
         },
         {
             "name": "dudu",
@@ -206,7 +486,21 @@
             "rank": "A",
             "libram": "SLOTH",
             "tendency": "Catalyst",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "unsung_maestro",
+                    "displayName": "Unsung Maestro"
+                },
+                {
+                    "name": "bewitching_piper",
+                    "displayName": "Bewitching Piper"
+                }
+            ]
         },
         {
             "name": "emp",
@@ -214,7 +508,21 @@
             "rank": "B",
             "libram": "TREACHERY",
             "tendency": "Reticle",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "backstreet_overlord",
+                    "displayName": "Backstreet Overlord"
+                },
+                {
+                    "name": "hail_from_the_otaku_world",
+                    "displayName": "Hail From The Otaku World"
+                }
+            ]
         },
         {
             "name": "echo",
@@ -222,7 +530,13 @@
             "rank": "A",
             "libram": "FRAUD",
             "tendency": "Arcane",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                }
+            ]
         },
         {
             "name": "eirene",
@@ -230,7 +544,21 @@
             "rank": "S",
             "libram": "GREED",
             "tendency": "Arcane",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "seaside_sunrise",
+                    "displayName": "Seaside Sunrise"
+                },
+                {
+                    "name": "daughter_of_fraser_city",
+                    "displayName": "Daughter Of Fraser City"
+                }
+            ]
         },
         {
             "name": "eleven",
@@ -238,7 +566,17 @@
             "rank": "S",
             "libram": "SLOTH",
             "tendency": "Arcane",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "rippling_heartthrobs",
+                    "displayName": "Rippling Heartthrobs"
+                }
+            ]
         },
         {
             "name": "enfer",
@@ -246,7 +584,21 @@
             "rank": "S",
             "libram": "LIMBO",
             "tendency": "Catalyst",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "sculptor_s_nest",
+                    "displayName": "Sculptor's Nest"
+                },
+                {
+                    "name": "virtuoso_of_jade",
+                    "displayName": "Virtuoso Of Jade"
+                }
+            ]
         },
         {
             "name": "ermes_costello",
@@ -254,7 +606,13 @@
             "rank": "S",
             "libram": "INFINITE",
             "tendency": "Fury",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                }
+            ]
         },
         {
             "name": "etti",
@@ -262,7 +620,21 @@
             "rank": "S",
             "libram": "FRAUD",
             "tendency": "Arcane",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "noctivagation",
+                    "displayName": "Noctivagation"
+                },
+                {
+                    "name": "dances_&_dragons",
+                    "displayName": "Dances & Dragons"
+                }
+            ]
         },
         {
             "name": "eureka",
@@ -270,7 +642,17 @@
             "rank": "A",
             "libram": "LIMBO",
             "tendency": "Umbra",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "eureka_in_meowingtons",
+                    "displayName": "Eureka In Meowingtons"
+                }
+            ]
         },
         {
             "name": "eve",
@@ -278,7 +660,21 @@
             "rank": "S",
             "libram": "LOVE",
             "tendency": "Catalyst",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "eerie_fables",
+                    "displayName": "Eerie Fables"
+                },
+                {
+                    "name": "frostling_whisper",
+                    "displayName": "Frostling Whisper"
+                }
+            ]
         },
         {
             "name": "flora",
@@ -286,7 +682,13 @@
             "rank": "B",
             "libram": "TREACHERY",
             "tendency": "Reticle",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                }
+            ]
         },
         {
             "name": "garofano",
@@ -294,7 +696,17 @@
             "rank": "A",
             "libram": "SLOTH",
             "tendency": "Umbra",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "in_the_veiled_grove",
+                    "displayName": "In The Veiled Grove"
+                }
+            ]
         },
         {
             "name": "gekkabijin",
@@ -302,7 +714,13 @@
             "rank": "B",
             "libram": "LOVE",
             "tendency": "Umbra",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                }
+            ]
         },
         {
             "name": "golan",
@@ -310,7 +728,17 @@
             "rank": "A",
             "libram": "PESTILENCE",
             "tendency": "Endura",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "rooftop_reckoning",
+                    "displayName": "Rooftop Reckoning"
+                }
+            ]
         },
         {
             "name": "graves",
@@ -318,7 +746,13 @@
             "rank": "S",
             "libram": "DEATH",
             "tendency": "Umbra",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                }
+            ]
         },
         {
             "name": "hamel",
@@ -326,7 +760,25 @@
             "rank": "S",
             "libram": "LOVE",
             "tendency": "Catalyst",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "joyful_tune",
+                    "displayName": "Joyful Tune"
+                },
+                {
+                    "name": "odile",
+                    "displayName": "Odile"
+                },
+                {
+                    "name": "azure_waltz_in_solace",
+                    "displayName": "Azure Waltz In Solace"
+                }
+            ]
         },
         {
             "name": "hecate",
@@ -334,7 +786,21 @@
             "rank": "A",
             "libram": "LIMBO",
             "tendency": "Arcane",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "yesterday_revisits",
+                    "displayName": "Yesterday Revisits"
+                },
+                {
+                    "name": "travellers_tale",
+                    "displayName": "Travellers Tale"
+                }
+            ]
         },
         {
             "name": "hella",
@@ -342,7 +808,21 @@
             "rank": "B",
             "libram": "VIOLENCE",
             "tendency": "Fury",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "queen_of_hearts",
+                    "displayName": "Queen Of Hearts"
+                },
+                {
+                    "name": "northward_to_whitesands",
+                    "displayName": "Northward To Whitesands"
+                }
+            ]
         },
         {
             "name": "hestia",
@@ -350,7 +830,17 @@
             "rank": "S",
             "libram": "IMMORTAL",
             "tendency": "Arcane",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "lambent_wishbearer",
+                    "displayName": "Lambent Wishbearer"
+                }
+            ]
         },
         {
             "name": "horo",
@@ -358,7 +848,17 @@
             "rank": "A",
             "libram": "ANGER",
             "tendency": "Fury",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "limit_breaker",
+                    "displayName": "Limit Breaker"
+                }
+            ]
         },
         {
             "name": "hypatia",
@@ -366,7 +866,13 @@
             "rank": "S",
             "libram": "FAMINE",
             "tendency": "Reticle",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                }
+            ]
         },
         {
             "name": "ignis",
@@ -374,7 +880,21 @@
             "rank": "A",
             "libram": "HERESY",
             "tendency": "Arcane",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "warm_flame",
+                    "displayName": "Warm Flame"
+                },
+                {
+                    "name": "caramel_starwish",
+                    "displayName": "Caramel Starwish"
+                }
+            ]
         },
         {
             "name": "iron",
@@ -382,7 +902,17 @@
             "rank": "A",
             "libram": "ANGER",
             "tendency": "Umbra",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "dr__ironstein",
+                    "displayName": "Dr Ironstein"
+                }
+            ]
         },
         {
             "name": "jane",
@@ -390,7 +920,13 @@
             "rank": "A",
             "libram": "VIOLENCE",
             "tendency": "Reticle",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                }
+            ]
         },
         {
             "name": "jasmine",
@@ -398,7 +934,13 @@
             "rank": "S",
             "libram": "WAR",
             "tendency": "Fury",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                }
+            ]
         },
         {
             "name": "jelena",
@@ -406,7 +948,17 @@
             "rank": "S",
             "libram": "FAMINE",
             "tendency": "Catalyst",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "scorched_lullaby",
+                    "displayName": "Scorched Lullaby"
+                }
+            ]
         },
         {
             "name": "joan",
@@ -414,7 +966,17 @@
             "rank": "B",
             "libram": "ANGER",
             "tendency": "Arcane",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "backstage_break",
+                    "displayName": "Backstage Break"
+                }
+            ]
         },
         {
             "name": "jolyne_cujoh",
@@ -422,7 +984,13 @@
             "rank": "S",
             "libram": "INFINITE",
             "tendency": "Umbra",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                }
+            ]
         },
         {
             "name": "kk",
@@ -430,7 +998,17 @@
             "rank": "B",
             "libram": "VIOLENCE",
             "tendency": "Endura",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "undercover_fill_in",
+                    "displayName": "Undercover Fill In"
+                }
+            ]
         },
         {
             "name": "kawa-kawa",
@@ -438,7 +1016,17 @@
             "rank": "A",
             "libram": "HERESY",
             "tendency": "Endura",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "down_the_rabbit_hole",
+                    "displayName": "Down The Rabbit Hole"
+                }
+            ]
         },
         {
             "name": "kelvin",
@@ -446,7 +1034,17 @@
             "rank": "B",
             "libram": "TREACHERY",
             "tendency": "Arcane",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "chilling_hideaway",
+                    "displayName": "Chilling Hideaway"
+                }
+            ]
         },
         {
             "name": "korryn",
@@ -454,7 +1052,17 @@
             "rank": "S",
             "libram": "FAMINE",
             "tendency": "Reticle",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "aureate_ambush",
+                    "displayName": "Aureate Ambush"
+                }
+            ]
         },
         {
             "name": "kujo_jotaro",
@@ -462,7 +1070,13 @@
             "rank": "S",
             "libram": "INFINITE",
             "tendency": "Fury",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                }
+            ]
         },
         {
             "name": "ll",
@@ -470,7 +1084,17 @@
             "rank": "S",
             "libram": "PESTILENCE",
             "tendency": "Catalyst",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "astral_rhapsody",
+                    "displayName": "Astral Rhapsody"
+                }
+            ]
         },
         {
             "name": "labyrinth",
@@ -478,7 +1102,17 @@
             "rank": "B",
             "libram": "ANGER",
             "tendency": "Umbra",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "fortune_and_prosperity",
+                    "displayName": "Fortune And Prosperity"
+                }
+            ]
         },
         {
             "name": "lady_pearl",
@@ -486,7 +1120,17 @@
             "rank": "S",
             "libram": "SLOTH",
             "tendency": "Reticle",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "aftershow_brilliance",
+                    "displayName": "Aftershow Brilliance"
+                }
+            ]
         },
         {
             "name": "lamia",
@@ -494,7 +1138,17 @@
             "rank": "A",
             "libram": "HERESY",
             "tendency": "Arcane",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "hushed_tides",
+                    "displayName": "Hushed Tides"
+                }
+            ]
         },
         {
             "name": "langley",
@@ -502,7 +1156,21 @@
             "rank": "S",
             "libram": "TREACHERY",
             "tendency": "Reticle",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "banquet_guest",
+                    "displayName": "Banquet Guest"
+                },
+                {
+                    "name": "madame_maelstrom",
+                    "displayName": "Madame Maelstrom"
+                }
+            ]
         },
         {
             "name": "letta",
@@ -510,7 +1178,17 @@
             "rank": "A",
             "libram": "FRAUD",
             "tendency": "Catalyst",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "spectral_shenanigans",
+                    "displayName": "Spectral Shenanigans"
+                }
+            ]
         },
         {
             "name": "levy",
@@ -518,7 +1196,17 @@
             "rank": "A",
             "libram": "GREED",
             "tendency": "Endura",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "twilight_thrills",
+                    "displayName": "Twilight Thrills"
+                }
+            ]
         },
         {
             "name": "lisa",
@@ -526,7 +1214,17 @@
             "rank": "B",
             "libram": "LIMBO",
             "tendency": "Catalyst",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "trail_of_butterfly",
+                    "displayName": "Trail Of Butterfly"
+                }
+            ]
         },
         {
             "name": "luminita",
@@ -534,7 +1232,13 @@
             "rank": "A",
             "libram": "SLOTH",
             "tendency": "Endura",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                }
+            ]
         },
         {
             "name": "luvia_ray",
@@ -542,7 +1246,21 @@
             "rank": "A",
             "libram": "LIMBO",
             "tendency": "Arcane",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "glittering_stars",
+                    "displayName": "Glittering Stars"
+                },
+                {
+                    "name": "beach_frolic",
+                    "displayName": "Beach Frolic"
+                }
+            ]
         },
         {
             "name": "lynn",
@@ -550,7 +1268,17 @@
             "rank": "A",
             "libram": "SLOTH",
             "tendency": "Umbra",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "skittish_star",
+                    "displayName": "Skittish Star"
+                }
+            ]
         },
         {
             "name": "lysandra",
@@ -558,7 +1286,13 @@
             "rank": "A",
             "libram": "VIOLENCE",
             "tendency": "Fury",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                }
+            ]
         },
         {
             "name": "macchiato",
@@ -566,7 +1300,17 @@
             "rank": "B",
             "libram": "HERESY",
             "tendency": "Catalyst",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "beguiled_heart",
+                    "displayName": "Beguiled Heart"
+                }
+            ]
         },
         {
             "name": "mantis",
@@ -574,7 +1318,17 @@
             "rank": "S",
             "libram": "IMMORTAL",
             "tendency": "Umbra",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "sylvan_silhouette",
+                    "displayName": "Sylvan Silhouette"
+                }
+            ]
         },
         {
             "name": "matilda",
@@ -582,7 +1336,17 @@
             "rank": "A",
             "libram": "SLOTH",
             "tendency": "Reticle",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "elfin_siesta",
+                    "displayName": "Elfin Siesta"
+                }
+            ]
         },
         {
             "name": "mcqueen",
@@ -590,7 +1354,21 @@
             "rank": "A",
             "libram": "TREACHERY",
             "tendency": "Umbra",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "inferno_of_deception",
+                    "displayName": "Inferno Of Deception"
+                },
+                {
+                    "name": "whimsical_theater",
+                    "displayName": "Whimsical Theater"
+                }
+            ]
         },
         {
             "name": "mess",
@@ -598,7 +1376,17 @@
             "rank": "A",
             "libram": "HERESY",
             "tendency": "Fury",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "mystic_pawnshop",
+                    "displayName": "Mystic Pawnshop"
+                }
+            ]
         },
         {
             "name": "milly",
@@ -606,7 +1394,13 @@
             "rank": "S",
             "libram": "DEATH",
             "tendency": "Arcane",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                }
+            ]
         },
         {
             "name": "mira",
@@ -614,7 +1408,13 @@
             "rank": "A",
             "libram": "FAMINE",
             "tendency": "Fury",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                }
+            ]
         },
         {
             "name": "moore",
@@ -622,7 +1422,17 @@
             "rank": "S",
             "libram": "PESTILENCE",
             "tendency": "Endura",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "eternal_bliss",
+                    "displayName": "Eternal Bliss"
+                }
+            ]
         },
         {
             "name": "mrfox",
@@ -630,7 +1440,17 @@
             "rank": "A",
             "libram": "GREED",
             "tendency": "Catalyst",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "twilight_game",
+                    "displayName": "Twilight Game"
+                }
+            ]
         },
         {
             "name": "nox",
@@ -638,7 +1458,21 @@
             "rank": "S",
             "libram": "LIMBO",
             "tendency": "Fury",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "ashen_prayer",
+                    "displayName": "Ashen Prayer"
+                },
+                {
+                    "name": "gloom_of_daybreak",
+                    "displayName": "Gloom Of Daybreak"
+                }
+            ]
         },
         {
             "name": "ninety-nine",
@@ -646,7 +1480,17 @@
             "rank": "A",
             "libram": "VIOLENCE",
             "tendency": "Fury",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "chaotic_restraint",
+                    "displayName": "Chaotic Restraint"
+                }
+            ]
         },
         {
             "name": "nino",
@@ -654,7 +1498,17 @@
             "rank": "A",
             "libram": "LIMBO",
             "tendency": "Endura",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "nino_sama_schoolgoing",
+                    "displayName": "Nino Sama Schoolgoing"
+                }
+            ]
         },
         {
             "name": "oak_casket",
@@ -662,7 +1516,21 @@
             "rank": "S",
             "libram": "SLOTH",
             "tendency": "Reticle",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "forest_of_enthrallment",
+                    "displayName": "Forest Of Enthrallment"
+                },
+                {
+                    "name": "sepulchral_ride",
+                    "displayName": "Sepulchral Ride"
+                }
+            ]
         },
         {
             "name": "oliver",
@@ -670,7 +1538,17 @@
             "rank": "A",
             "libram": "TREACHERY",
             "tendency": "Arcane",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "haloed_refrain",
+                    "displayName": "Haloed Refrain"
+                }
+            ]
         },
         {
             "name": "owo",
@@ -678,7 +1556,17 @@
             "rank": "S",
             "libram": "SLOTH",
             "tendency": "Endura",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "serendipity_poem",
+                    "displayName": "Serendipity Poem"
+                }
+            ]
         },
         {
             "name": "pacassi",
@@ -686,7 +1574,21 @@
             "rank": "A",
             "libram": "LOVE",
             "tendency": "Fury",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "winter_night",
+                    "displayName": "Winter Night"
+                },
+                {
+                    "name": "frostforged_maiden",
+                    "displayName": "Frostforged Maiden"
+                }
+            ]
         },
         {
             "name": "parfait",
@@ -694,7 +1596,13 @@
             "rank": "S",
             "libram": "DEATH",
             "tendency": "Catalyst",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                }
+            ]
         },
         {
             "name": "peggy",
@@ -702,7 +1610,13 @@
             "rank": "B",
             "libram": "GREED",
             "tendency": "Endura",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                }
+            ]
         },
         {
             "name": "pepper",
@@ -710,7 +1624,17 @@
             "rank": "B",
             "libram": "GREED",
             "tendency": "Fury",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "peppy_shepherdess",
+                    "displayName": "Peppy Shepherdess"
+                }
+            ]
         },
         {
             "name": "pine",
@@ -718,7 +1642,13 @@
             "rank": "A",
             "libram": "PESTILENCE",
             "tendency": "Reticle",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                }
+            ]
         },
         {
             "name": "pricilla",
@@ -726,7 +1656,21 @@
             "rank": "A",
             "libram": "GREED",
             "tendency": "Reticle",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "night_of_petals",
+                    "displayName": "Night Of Petals"
+                },
+                {
+                    "name": "private_mischief",
+                    "displayName": "Private Mischief"
+                }
+            ]
         },
         {
             "name": "pylgia",
@@ -734,7 +1678,17 @@
             "rank": "S",
             "libram": "IMMORTAL",
             "tendency": "Fury",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "shackled_dream_in_aqua",
+                    "displayName": "Shackled Dream In Aqua"
+                }
+            ]
         },
         {
             "name": "rahu",
@@ -742,7 +1696,17 @@
             "rank": "S",
             "libram": "ANGER",
             "tendency": "Endura",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "radiant_stealth",
+                    "displayName": "Radiant Stealth"
+                }
+            ]
         },
         {
             "name": "raven",
@@ -750,7 +1714,21 @@
             "rank": "S",
             "libram": "FRAUD",
             "tendency": "Arcane",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "arnheim_athenaeum",
+                    "displayName": "Arnheim Athenaeum"
+                },
+                {
+                    "name": "raven_in_the_box",
+                    "displayName": "Raven In The Box"
+                }
+            ]
         },
         {
             "name": "rise",
@@ -758,7 +1736,17 @@
             "rank": "A",
             "libram": "PESTILENCE",
             "tendency": "Fury",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "nebula_sentinel",
+                    "displayName": "Nebula Sentinel"
+                }
+            ]
         },
         {
             "name": "roulecca",
@@ -766,7 +1754,21 @@
             "rank": "A",
             "libram": "ANGER",
             "tendency": "Reticle",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "seaside_dessert_stand",
+                    "displayName": "Seaside Dessert Stand"
+                },
+                {
+                    "name": "puerile_maniac",
+                    "displayName": "Puerile Maniac"
+                }
+            ]
         },
         {
             "name": "serpent",
@@ -774,7 +1776,21 @@
             "rank": "S",
             "libram": "LOVE",
             "tendency": "Umbra",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "awake_from_slumber",
+                    "displayName": "Awake From Slumber"
+                },
+                {
+                    "name": "elixir_of_euphoria",
+                    "displayName": "Elixir Of Euphoria"
+                }
+            ]
         },
         {
             "name": "shalom",
@@ -789,8 +1805,12 @@
                     "displayName": "Default"
                 },
                 {
-                    "name": "yehuaruzhou",
-                    "displayName": "City never sleeps"
+                    "name": "city_never_sleeps",
+                    "displayName": "City Never Sleeps"
+                },
+                {
+                    "name": "undawning_nighttide",
+                    "displayName": "Undawning Nighttide"
                 }
             ]
         },
@@ -800,7 +1820,17 @@
             "rank": "A",
             "libram": "FRAUD",
             "tendency": "Catalyst",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "digital_fauxmance",
+                    "displayName": "Digital Fauxmance"
+                }
+            ]
         },
         {
             "name": "shin",
@@ -808,7 +1838,13 @@
             "rank": "S",
             "libram": "IMMORTAL",
             "tendency": "Catalyst",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                }
+            ]
         },
         {
             "name": "shrooma",
@@ -816,7 +1852,17 @@
             "rank": "A",
             "libram": "PESTILENCE",
             "tendency": "Umbra",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "whimsy_escape",
+                    "displayName": "Whimsy Escape"
+                }
+            ]
         },
         {
             "name": "stargazer",
@@ -824,7 +1870,17 @@
             "rank": "S",
             "libram": "HERESY",
             "tendency": "Arcane",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "moonlit_enchantment",
+                    "displayName": "Moonlit Enchantment"
+                }
+            ]
         },
         {
             "name": "sumire",
@@ -832,7 +1888,21 @@
             "rank": "A",
             "libram": "LOVE",
             "tendency": "Umbra",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "flower_of_fantasy",
+                    "displayName": "Flower Of Fantasy"
+                },
+                {
+                    "name": "moonrise_fondness",
+                    "displayName": "Moonrise Fondness"
+                }
+            ]
         },
         {
             "name": "summer",
@@ -840,7 +1910,21 @@
             "rank": "S",
             "libram": "HERESY",
             "tendency": "Reticle",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "desert_delusions",
+                    "displayName": "Desert Delusions"
+                },
+                {
+                    "name": "luminous_night",
+                    "displayName": "Luminous Night"
+                }
+            ]
         },
         {
             "name": "tetra",
@@ -848,7 +1932,17 @@
             "rank": "A",
             "libram": "GREED",
             "tendency": "Umbra",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "edge_of_nightfall",
+                    "displayName": "Edge Of Nightfall"
+                }
+            ]
         },
         {
             "name": "thalia",
@@ -856,7 +1950,13 @@
             "rank": "A",
             "libram": "GREED",
             "tendency": "Reticle",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                }
+            ]
         },
         {
             "name": "thistle",
@@ -864,7 +1964,17 @@
             "rank": "A",
             "libram": "LOVE",
             "tendency": "Umbra",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "oneiric_flexagon",
+                    "displayName": "Oneiric Flexagon"
+                }
+            ]
         },
         {
             "name": "uni",
@@ -872,7 +1982,17 @@
             "rank": "A",
             "libram": "LOVE",
             "tendency": "Endura",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "guise_into_life",
+                    "displayName": "Guise Into Life"
+                }
+            ]
         },
         {
             "name": "vanilla",
@@ -880,7 +2000,17 @@
             "rank": "S",
             "libram": "IMMORTAL",
             "tendency": "Endura",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "aether_runner",
+                    "displayName": "Aether Runner"
+                }
+            ]
         },
         {
             "name": "victoria",
@@ -888,7 +2018,21 @@
             "rank": "A",
             "libram": "LIMBO",
             "tendency": "Arcane",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "good_morning__medison",
+                    "displayName": "Good Morning Medison"
+                },
+                {
+                    "name": "cocooned_serenade",
+                    "displayName": "Cocooned Serenade"
+                }
+            ]
         },
         {
             "name": "vautour",
@@ -896,7 +2040,17 @@
             "rank": "S",
             "libram": "FAMINE",
             "tendency": "Arcane",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "languor_en_bleu",
+                    "displayName": "Languor En Bleu"
+                }
+            ]
         },
         {
             "name": "wendy",
@@ -904,7 +2058,21 @@
             "rank": "A",
             "libram": "VIOLENCE",
             "tendency": "Fury",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "chainsaw_nightmare",
+                    "displayName": "Chainsaw Nightmare"
+                },
+                {
+                    "name": "elegy_of_the_rust",
+                    "displayName": "Elegy Of The Rust"
+                }
+            ]
         },
         {
             "name": "wolverine",
@@ -912,7 +2080,17 @@
             "rank": "A",
             "libram": "VIOLENCE",
             "tendency": "Reticle",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "summer_splash",
+                    "displayName": "Summer Splash"
+                }
+            ]
         },
         {
             "name": "wuhuanzi",
@@ -920,7 +2098,13 @@
             "rank": "A",
             "libram": "SLOTH",
             "tendency": "Arcane",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                }
+            ]
         },
         {
             "name": "yanyan",
@@ -928,7 +2112,17 @@
             "rank": "A",
             "libram": "HERESY",
             "tendency": "Reticle",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "wafting_whimsy",
+                    "displayName": "Wafting Whimsy"
+                }
+            ]
         },
         {
             "name": "yao",
@@ -936,7 +2130,17 @@
             "rank": "S",
             "libram": "LIMBO",
             "tendency": "Fury",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "fireborne_offering",
+                    "displayName": "Fireborne Offering"
+                }
+            ]
         },
         {
             "name": "yingying",
@@ -944,7 +2148,13 @@
             "rank": "S",
             "libram": "LOVE",
             "tendency": "Arcane",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                }
+            ]
         },
         {
             "name": "yugu",
@@ -952,7 +2162,13 @@
             "rank": "S",
             "libram": "FRAUD",
             "tendency": "Endura",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                }
+            ]
         },
         {
             "name": "000",
@@ -960,15 +2176,31 @@
             "rank": "S",
             "libram": "PESTILENCE",
             "tendency": "Umbra",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "xenospace_pythoness",
+                    "displayName": "Xenospace Pythoness"
+                }
+            ]
         },
         {
             "name": "zephyr",
             "displayName": "Zephyr",
             "rank": "A",
-            "libram": "Love",
+            "libram": "LOVE",
             "tendency": "Catalyst",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                }
+            ]
         },
         {
             "name": "zoya",
@@ -976,7 +2208,21 @@
             "rank": "S",
             "libram": "VIOLENCE",
             "tendency": "Fury",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                },
+                {
+                    "name": "wolves_strike_soon",
+                    "displayName": "Wolves Strike Soon"
+                },
+                {
+                    "name": "supreme_negotiation",
+                    "displayName": "Supreme Negotiation"
+                }
+            ]
         },
         {
             "name": "faye",
@@ -984,7 +2230,13 @@
             "rank": "MBCC",
             "libram": "none",
             "tendency": "none",
-            "category": "NPCs"
+            "category": "NPCs",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                }
+            ]
         }
     ]
 }
