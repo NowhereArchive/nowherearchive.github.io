@@ -459,6 +459,10 @@
                 {
                     "name": "cosmic_escapist",
                     "displayName": "Cosmic Escapist"
+                },
+                {
+                    "name": "seastral_stralight",
+                    "displayName": "Seastral Stralight"
                 }
             ]
         },
@@ -925,6 +929,10 @@
                 {
                     "name": "default",
                     "displayName": "Default"
+                },
+                {
+                    "name": "off-duty_summer_civvies",
+                    "displayName": "Off-duty Summer Civvies"
                 }
             ]
         },
@@ -1147,6 +1155,10 @@
                 {
                     "name": "hushed_tides",
                     "displayName": "Hushed Tides"
+                },
+                {
+                    "name": "drowning_lurve",
+                    "displayName": "Drowning Lurve"
                 }
             ]
         },
@@ -1707,8 +1719,8 @@
                     "displayName": "Radiant Stealth"
                 },
                 {
-                    "name": "knights_oath",
-                    "displayName": "Knight's Oath"
+                    "name": "loyal_oath",
+                    "displayName": "Loyal Oath"
                 }
             ]
         },
@@ -1883,6 +1895,10 @@
                 {
                     "name": "moonlit_enchantment",
                     "displayName": "Moonlit Enchantment"
+                },
+                {
+                    "name": "sunfall_prophecy",
+                    "displayName": "Sunfall Prophecy"
                 }
             ]
         },
