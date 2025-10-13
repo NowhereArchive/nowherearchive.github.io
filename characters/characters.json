@@ -1705,6 +1705,10 @@
                 {
                     "name": "radiant_stealth",
                     "displayName": "Radiant Stealth"
+                },
+                {
+                    "name": "knights_oath",
+                    "displayName": "Knight's Oath"
                 }
             ]
         },
