@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     // Function to navigate to character page
     function navigateToCharacter(characterName) {
-        window.location.href = `characters/${characterName}/Voicelines`;
+        window.location.href = `characters/${characterName}/voicelines`;
     }
 
     // Function to navigate to chapter page
