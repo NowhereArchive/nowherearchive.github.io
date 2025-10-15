@@ -164,55 +164,56 @@
         }
     ],
     "seastral_stralight": [
-      {
-        "title": "Level Up",
-        "filename": "File:vo_dreya_hanhaixingmang_levelup_001.aac",
-        "text": "The Sea Breeze carries new secrets to shore."
-      },
-      {
-        "title": "Obtain Attire",
-        "filename": "File:vo_dreya_hanhaixingmang_cacha_001.aac",
-        "text": "I feel like it's been so long since I've seen the sea this gentle. But a sea like this is indeed perfect for a walk together."
-      },
-      {
-        "title": "Greeting",
-        "filename": "File:vo_dreya_hanhaixingmang_greeting_001.aac",
-        "text": "Sit down here and feel the waves are whispering the stars are watching and they're waiting for someone to understand them Or swallow them"
-      },
-      {
-        "title": "Ordinary Contact 1",
-        "filename": "File:vo_dreya_hanhaixingmang_body_001.aac",
-        "text": "Gravity pools of the ties, just as it pools that light and time. The stars softly call to the ocean, and the ocean will lead to the answer to them."
-      },
-      {
-        "title": "Ordinary Contact 2",
-        "filename": "File:vo_dreya_hanhaixingmang_body_002.aac",
-        "text": "Human emotions in the vast universe are like distant lights upon the sea. Their presence may be faint, yet they shine, with such a clarity."
-      },
-      {
-        "title": "Ordinary Contact 3",
-        "filename": "File:vo_dreya_hanhaixingmang_sky_001.aac",
-        "text": "On a clear summer night, if you find yourself lost in a drifted sea, look to the stars above. They will guide your way."
-      },
-      {
-        "title": "Ordinary Contact 4",
-        "filename": "File:vo_dreya_hanhaixingmang_sea_001.aac",
-        "text": "Planting a mid-a-soft glow as they dread, creating what you call a phosphorescent sea, like celestial waters. Perhaps, the ocean itself is a starry sky too."
-      },
-      {
-        "title": "Idle",
-        "filename": "File:vo_dreya_hanhaixingmang_idle_001.aac",
-        "text": "Where shall we go next? Whether it's to the depths of the ocean or the distant cosmic seas? I am willing to journey with you."
-      },
-      {
-        "title": "Special Attention",
-        "filename": "File:vo_dreya_hanhaixingmang_specialattention_001.aac",
-        "text": "Night sky hides, flowing starlight. Humans express their funness through their days. Is that what I see in your eyes as you look at me?"
-      },
-      {
-        "title": "Pat Head",
-        "filename": "File:vo_dreya_hanhaixingmang_head_001.aac",
-        "text": "It's not starlight glowing upon my head. It's the hair ornament you gave me."
-      }
-    ]
+    {
+      "title": "Level Up",
+      "filename": "File:vo_dreya_hanhaixingmang_levelup_001.aac",
+      "text": "The sea breeze carries new secrets to shore."
+    },
+    {
+      "title": "Obtain Attire",
+      "filename": "File:vo_dreya_hanhaixingmang_cacha_001.aac",
+      "text": "I feel like it's been so long since I've seen the sea this gentle. But a sea like this is indeed perfect for a walk together."
+    },
+    {
+      "title": "Greeting",
+      "filename": "File:vo_dreya_hanhaixingmang_greeting_001.aac",
+      "text": "Sit down... here and feel... the waves are whispering... the stars are watching. They're waiting for someone to understand them, or swallow them."
+    },
+    {
+      "title": "Ordinary Contact 1",
+      "filename": "File:vo_dreya_hanhaixingmang_body_001.aac",
+      "text": "Gravity pools at the tides, just as it pools at light and time. The stars softly call to the ocean, and the ocean... will it answer them?"
+    },
+    {
+      "title": "Ordinary Contact 2",
+      "filename": "File:vo_dreya_hanhaixingmang_body_002.aac",
+      "text": "Human emotions in the vast universe are like distant lights upon the sea. Their presence may be faint, yet they shine, with such clarity."
+    },
+    {
+      "title": "Ordinary Contact 3",
+      "filename": "File:vo_dreya_hanhaixingmang_sky_001.aac",
+      "text": "On a clear summer night, if you find yourself lost in a drifted sea, look to the stars above. They will guide your way."
+    },
+    {
+      "title": "Ordinary Contact 4",
+      "filename": "File:vo_dreya_hanhaixingmang_sea_001.aac",
+      "text": "Plankton emit a soft glow as they drift, creating what you call a phosphorescent sea, like celestial waters. Perhaps, the ocean itself is a starry sky too."
+    },
+    {
+      "title": "Idle",
+      "filename": "File:vo_dreya_hanhaixingmang_idle_001.aac",
+      "text": "Where shall we go next? Whether it's to the depths of the ocean or the distant cosmic seas. I am willing to journey with you."
+    },
+    {
+      "title": "Special Attention",
+      "filename": "File:vo_dreya_hanhaixingmang_specialattention_001.aac",
+      "text": "Night sky... hides flowing starlight. Humans express their fondness through their gaze. Is that what I see in your eyes as you look at me?"
+    },
+    {
+      "title": "Pat Head",
+      "filename": "File:vo_dreya_hanhaixingmang_head_001.aac",
+      "text": "It's not starlight glowing upon my head. It's the hair ornament you gave me."
+    }
+  ]
+
 }

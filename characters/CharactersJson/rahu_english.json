@@ -164,56 +164,55 @@
         }
     ],
     "loyal_oath": [
-      {
-        "title": "Level Up",
-        "filename": "File:vo_rahu_rongguangqishi_levelup_002.aac",
-        "text": "I will not fail you."
-      },
-      {
-        "title": "Obtain Attire",
-        "filename": "File:vo_rahu_rongguangqishi_cacha_001.aac",
-        "text": "I pledge to you, my liege, my lifelong loyalty and protection. From this day onward, we shall share in both glory and hardship, holding a steadfast bond."
-      },
-      {
-        "title": "Greeting",
-        "filename": "File:vo_rahu_rongguangqishi_greeting_001.aac",
-        "text": "I've completed my patrol of the estate. All is secure. Do you have any outings today that require my escort?"
-      },
-      {
-        "title": "Ordinary Contact 1",
-        "filename": "File:vo_rahu_rongguangqishi_hand_001.aac",
-        "text": "Do whatever you wish to do. I will forever stand by your side. No matter who threatens your safety, I will never allow them to find any opening to exploit."
-      },
-      {
-        "title": "Ordinary Contact 2",
-        "filename": "File:vo_rahu_rongguangqishi_talk1_002.aac",
-        "text": "After pledging loyalty, a knight traditionally receives a token from their Lord, a symbol of favor and recognition. But your trust in me is the greatest reward I could ask for."
-      },
-      {
-        "title": "Ordinary Contact 3",
-        "filename": "File:vo_rahu_rongguangqishi_hand_001.aac",
-        "text": "Do whatever you wish to do. I will forever stand by your side. No matter who threatens your safety, I will never allow them to find any opening to exploit."
-      },
-      {
-        "title": "Ordinary Contact 4",
-        "filename": "File:vo_rahu_rongguangqishi_weapon_001.aac",
-        "text": "My weapons and strength exist solely to protect. They defend your honor, fulfill your will, and clear all obstacles from the path you walk."
-      },
-      {
-        "title": "Idle",
-        "filename": "File:vo_rahu_rongguangqishi_idle_001.aac",
-        "text": "The sunlight is perfect right now. Why don't we go sit in the garden courtyard downstairs? And enjoy a cup of black tea."
-      },
-      {
-        "title": "Special Attention",
-        "filename": "File:vo_rahu_rongguangqishi_specialattention_001.aac",
-        "text": "Personal protection is also one of a knight's duties. Since I have sworn my oath to you, you need not worry that I will ever leave your side."
-      },
-      {
-        "title": "Pat Head",
-        "filename": "File:vo_rahu_rongguangqishi_head_001.aac",
-        "text": "Please don't touch my hair. A knight's appearance reflects your dignity as well. So I prefer to maintain a neat and proper hairstyle."
-      }
-    ]
-  
+    {
+      "title": "Level Up",
+      "filename": "File:vo_rahu_rongguangqishi_levelup_002.aac",
+      "text": "I will not fail you."
+    },
+    {
+      "title": "Obtain Attire",
+      "filename": "File:vo_rahu_rongguangqishi_cacha_001.aac",
+      "text": "I pledge to you, my liege, my lifelong loyalty and protection. From this day onward, we shall share in both glory and hardship, holding a steadfast bond."
+    },
+    {
+      "title": "Greeting",
+      "filename": "File:vo_rahu_rongguangqishi_greeting_001.aac",
+      "text": "I've completed my patrol of the estate. All is secure. Do you have any outings today that require my escort?"
+    },
+    {
+      "title": "Ordinary Contact 1",
+      "filename": "File:vo_rahu_rongguangqishi_hand_001.aac",
+      "text": "Do whatever you wish to do. I will forever stand by your side. No matter who threatens your safety, I will never allow them to find any opening to exploit."
+    },
+    {
+      "title": "Ordinary Contact 2",
+      "filename": "File:vo_rahu_rongguangqishi_talk1_002.aac",
+      "text": "After pledging loyalty, a knight traditionally receives a token from their Lord, a symbol of favor and recognition. But your trust in me is the greatest reward I could ask for."
+    },
+    {
+      "title": "Ordinary Contact 3",
+      "filename": "File:vo_rahu_rongguangqishi_hand_001.aac",
+      "text": "Do whatever you wish to do. I will forever stand by your side. No matter who threatens your safety, I will never allow them to find any opening to exploit."
+    },
+    {
+      "title": "Ordinary Contact 4",
+      "filename": "File:vo_rahu_rongguangqishi_weapon_001.aac",
+      "text": "My weapons and strength exist solely to protect. They defend your honor, fulfill your will, and clear all obstacles from the path you walk."
+    },
+    {
+      "title": "Idle",
+      "filename": "File:vo_rahu_rongguangqishi_idle_001.aac",
+      "text": "The sunlight is perfect right now. Why don't we go sit in the garden courtyard downstairs? And enjoy a cup of black tea."
+    },
+    {
+      "title": "Special Attention",
+      "filename": "File:vo_rahu_rongguangqishi_specialattention_001.aac",
+      "text": "Personal protection is also one of a knight's duties. Since I have sworn my oath to you, you need not worry that I will ever leave your side."
+    },
+    {
+      "title": "Pat Head",
+      "filename": "File:vo_rahu_rongguangqishi_head_001.aac",
+      "text": "Please don't touch my hair. A knight's appearance reflects your dignity as well. So I prefer to maintain a neat and proper hairstyle."
+    }
+  ]
 }

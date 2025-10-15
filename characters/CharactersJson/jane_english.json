@@ -117,46 +117,47 @@
         }
     ],
     "off-duty_summer_civvies": [
-      {
-        "title": "Level Up",
-        "filename": "File:vo_jane_bianzhuanghuwei_levelup_001.aac",
-        "text": "For sure. That's a pretty solid piece of work experience."
-      },
-      {
-        "title": "Obtain Attire",
-        "filename": "File:vo_jane_bianzhuanghuwei_cacha_001.aac",
-        "text": "Pull security deployment complete. Next, I'll continue to provide security services by your side as an undercover guard. Using the pre-teps of hanging laundry to maintain my cover."
-      },
-      {
-        "title": "Greeting",
-        "filename": "File:vo_jane_bianzhuanghuwei_greeting_001.aac",
-        "text": "Patrol complete. No security concerns detected. You free to enjoy the party to your heart's content."
-      },
-      {
-        "title": "Ordinary Contact 1",
-        "filename": "File:vo_jane_bianzhuanghuwei_body_001.aac",
-        "text": "The best of skies is to fully embrace your cover identity. The side serving as your bodyguard chief. I've also taken on a swimsuit photography job for the supply office and a pool cleaning assignment at the hotel. If I can complete them all simultaneously, it should help pay off a significant portion of my previous stats."
-      },
-      {
-        "title": "Ordinary Contact 2",
-        "filename": "File:vo_jane_bianzhuanghuwei_body_002.aac",
-        "text": "The hotel repair costs amounted to 350,000 discounts, and ammunition expenses total 50,000 discounts. So my payment for this operation is only... Huh? 500 discounts? Understood. I'll be more careful next time."
-      },
-      {
-        "title": "Idle",
-        "filename": "File:vo_jane_bianzhuanghuwei_idle_001.aac",
-        "text": "Good, another one taking care of. Hmm? I mean, another job completed."
-      },
-      {
-        "title": "Annoyed",
-        "filename": "File:vo_jane_bianzhuanghuwei_clicking_001.aac",
-        "text": "Even though going on vacation is relaxing, please... Don't do that sort of thing when I'm trying to concentrate."
-      },
-      {
-        "title": "Special Attention",
-        "filename": "File:vo_jane_bianzhuanghuwei_specialattention_001.aac",
-        "text": "Chief, would you like to take a photo together? Any photos with you won't be sent to the supply office. I'll save them just for you."
-      }
-    ]
+    {
+      "title": "Level Up",
+      "filename": "File:vo_jane_bianzhuanghuwei_levelup_001.aac",
+      "text": "For sure, that's a pretty solid piece of work experience."
+    },
+    {
+      "title": "Obtain Attire",
+      "filename": "File:vo_jane_bianzhuanghuwei_cacha_001.aac",
+      "text": "Pool security deployment complete. Next, I'll continue to provide security services by your side as an undercover guard, using the pretext of hanging laundry to maintain my cover."
+    },
+    {
+      "title": "Greeting",
+      "filename": "File:vo_jane_bianzhuanghuwei_greeting_001.aac",
+      "text": "Patrol complete. No security concerns detected. You're free to enjoy the party to your heart's content."
+    },
+    {
+      "title": "Ordinary Contact 1",
+      "filename": "File:vo_jane_bianzhuanghuwei_body_001.aac",
+      "text": "The best of disguise is to fully embrace your cover identity. Besides serving as your bodyguard chief, I've also taken on a swimsuit photography job for the supply office and a pool cleaning assignment at the hotel. If I can complete them all simultaneously, it should help pay off a significant portion of my previous debts."
+    },
+    {
+      "title": "Ordinary Contact 2",
+      "filename": "File:vo_jane_bianzhuanghuwei_body_002.aac",
+      "text": "The hotel repair costs amounted to 350,000 DisCoins, and ammunition expenses total 50,000 DisCoins. So my payment for this operation is only... Huh? 500 DisCoins? Understood. I'll be more careful next time."
+    },
+    {
+      "title": "Idle",
+      "filename": "File:vo_jane_bianzhuanghuwei_idle_001.aac",
+      "text": "Good, another one taking care of. Hmm? I mean, another job completed."
+    },
+    {
+      "title": "Annoyed",
+      "filename": "File:vo_jane_bianzhuanghuwei_clicking_001.aac",
+      "text": "Even though going on vacation is relaxing, please don't do that sort of thing when I'm trying to concentrate."
+    },
+    {
+      "title": "Special Attention",
+      "filename": "File:vo_jane_bianzhuanghuwei_specialattention_001.aac",
+      "text": "Chief, would you like to take a photo together? Any photos with you won't be sent to the supply office. I'll save them just for you."
+    }
+  ]
+
   
 }

@@ -164,55 +164,55 @@
         }
     ],
     "sunfall_prophecy": [
-      {
-        "title": "Level Up",
-        "filename": "File:vo_anarkia_furiyuyan_levelup_002.aac",
-        "text": "This is quite the suspicious sign."
-      },
-      {
-        "title": "Obtain Attire",
-        "filename": "File:vo_anarkia_furiyuyan_cacha_001.aac",
-        "text": "This is no mere coincidence, dear traveler. Our meeting was portalled in the stars. Your name engraved on the Temple's sacred tablets. I have been waiting for you all this time. Follow me."
-      },
-      {
-        "title": "Greeting",
-        "filename": "File:vo_anarkia_furiyuyan_greeting_001.aac",
-        "text": "Why is it that every time I see you, you look so bewildered? Ha ha ha ha! Would you like me to part the mist, sub-skiring your future for you?"
-      },
-      {
-        "title": "Ordinary Contact 1",
-        "filename": "File:vo_anarkia_furiyuyan_hand_001.aac",
-        "text": "Dreams are reflections of reality, and the fissions you see within them are mysterious prophecies. I'm curious, whose think you're appeared in your dreams? Tell me, an island to your prayer whether it's an omen of fortune, or misfortune."
-      },
-      {
-        "title": "Ordinary Contact 2",
-        "filename": "File:vo_anarkia_furiyuyan_talk1_002.aac",
-        "text": "Legend says the solar Phoenix rises reborn from the flames upon the stone of fate. It's cry awakening order and truth. The wheel of fate turns and endless cycles, and after destruction always comes rebirth."
-      },
-      {
-        "title": "Ordinary Contact 3",
-        "filename": "File:vo_anarkia_furiyuyan_hand_001.aac",
-        "text": "Dreams are reflections of reality, and the fissions you see within them are mysterious prophecies. I'm curious, whose think you're appeared in your dreams? Tell me, an island to your prayer whether it's an omen of fortune, or misfortune."
-      },
-      {
-        "title": "Ordinary Contact 4",
-        "filename": "File:vo_anarkia_furiyuyan_card_001.aac",
-        "text": "Follow your intuition and draw the card that belongs only to you. Don't worry. Whatever future it for tells, I believe you'll be able to forge your own past."
-      },
-      {
-        "title": "Idle",
-        "filename": "File:vo_anarkia_furiyuyan_idle_001.aac",
-        "text": "The blazing sun falls, stars shatter into dust. Oh, what a terrifying yet mesmerizing sight."
-      },
-      {
-        "title": "Special Attention",
-        "filename": "File:vo_anarkia_furiyuyan_specialattention_001.aac",
-        "text": "Listen carefully. This is a prophecy made solely for you. Whether it proves to be an illusion or becomes reality, depends entirely on your perception."
-      },
-      {
-        "title": "Pat Head",
-        "filename": "File:vo_anarkia_furiyuyan_head_001.aac",
-        "text": "Curious about this serpent on my crown? It's the guardian of the kingdom, a symbol of absolute power, but it can also be the embodiment of darkness and chaos."
-      }
-    ]
+    {
+      "title": "Level Up",
+      "filename": "File:vo_anarkia_furiyuyan_levelup_002.aac",
+      "text": "This is quite the auspicious sign."
+    },
+    {
+      "title": "Obtain Attire",
+      "filename": "File:vo_anarkia_furiyuyan_cacha_001.aac",
+      "text": "This is no mere coincidence, dear traveler. Our meeting was foretold in the stars. Your name engraved on the temple's sacred tablets. I have been waiting for you all this time. Follow me."
+    },
+    {
+      "title": "Greeting",
+      "filename": "File:vo_anarkia_furiyuyan_greeting_001.aac",
+      "text": "Why is it that every time I see you, you look so bewildered? Haha, would you like me to part the mists, obscuring your future for you?"
+    },
+    {
+      "title": "Ordinary Contact 1",
+      "filename": "File:vo_anarkia_furiyuyan_hand_001.aac",
+      "text": "Dreams are reflections of reality, and the visions you see within them are mysterious prophecies. I'm curious, whose figure appeared in your dreams? Tell me, and I'll interpret whether it's an omen of fortune, or misfortune."
+    },
+    {
+      "title": "Ordinary Contact 2",
+      "filename": "File:vo_anarkia_furiyuyan_talk1_002.aac",
+      "text": "Legend says the solar Phoenix rises reborn from the flames upon the stone of fate. Its cry awakening order and truth. The wheel of fate turns in endless cycles, and after destruction always comes rebirth."
+    },
+    {
+      "title": "Ordinary Contact 3",
+      "filename": "File:vo_anarkia_furiyuyan_hand_001.aac",
+      "text": "Dreams are reflections of reality, and the visions you see within them are mysterious prophecies. I'm curious, whose figure appeared in your dreams? Tell me, and I'll interpret whether it's an omen of fortune, or misfortune."
+    },
+    {
+      "title": "Ordinary Contact 4",
+      "filename": "File:vo_anarkia_furiyuyan_card_001.aac",
+      "text": "Follow your intuition and draw the card that belongs only to you. Don't worry, whatever future it foretells, I believe you'll be able to forge your own path."
+    },
+    {
+      "title": "Idle",
+      "filename": "File:vo_anarkia_furiyuyan_idle_001.aac",
+      "text": "The blazing sun falls, stars shatter into dust. Oh, what a terrifying yet mesmerizing sight."
+    },
+    {
+      "title": "Special Attention",
+      "filename": "File:vo_anarkia_furiyuyan_specialattention_001.aac",
+      "text": "Listen carefully. This is a prophecy made solely for you. Whether it proves to be an illusion or becomes reality, depends entirely on your perception."
+    },
+    {
+      "title": "Pat Head",
+      "filename": "File:vo_anarkia_furiyuyan_head_001.aac",
+      "text": "Curious about this serpent on my crown? It's the guardian of the kingdom, a symbol of absolute power, but it can also be the embodiment of darkness and chaos."
+    }
+  ]
 }
