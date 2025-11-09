@@ -1,0 +1,218 @@
+{
+  "default": [
+    {
+      "title": "Obtain the Sinner",
+      "text": "I'm so glad that you've brought me to this grand feast. Ah... I can smell an intoxicating sweet aroma in every corner!",
+      "filename": "File:vo_cab_cacha_001.aac"
+    },
+    {
+      "title": "Raise to Phase 1",
+      "text": "That's not enough to satisfy me...",
+      "filename": "File:vo_cab_promotion_001.aac"
+    },
+    {
+      "title": "Raise to Phase 3",
+      "text": "If it's for the pursuit of the ultimate savor, I am willing to be dined on.",
+      "filename": "File:vo_cab_promotion2_001.aac"
+    },
+    {
+      "title": "Level Start",
+      "text": "Hmm... Let me savor it.",
+      "filename": "File:vo_cab_battlebegin_001.aac"
+    },
+    {
+      "title": "Win Battles",
+      "text": "It makes a decent meal.",
+      "filename": "File:vo_cab_battlewin_001.aac"
+    },
+    {
+      "title": "Lose Battles",
+      "text": "...Inedible.",
+      "filename": "File:vo_cab_battlelose_001.aac"
+    },
+    {
+      "title": "Ultimate Skill",
+      "text": "I smell the sweet fragrance of souls!",
+      "filename": "File:bt_cab_uniqueskill_001.aac"
+    },
+    {
+      "title": "Die in Battles",
+      "text": "Ha... Hahaha... Tear it up, gobble it down...",
+      "filename": "File:bt_cab_dead_001.aac"
+    },
+    {
+      "title": "Greeting",
+      "text": "The green fairy flew by. First, I see reality, then fear, and at last... I see you.",
+      "filename": "File:vo_cab_greeting_001.aac"
+    },
+    {
+      "title": "Conversation 1",
+      "text": "Eating is not simply an act of \"swallowing\". Once you learn how to \"savor\" a dish, it'll turn into a wonderful experience. So, face your desire for food honestly and satisfy it the best you can!",
+      "filename": "File:vo_cab_talk1_001.aac"
+    },
+    {
+      "title": "Conversation 2",
+      "text": "I've acquired many extremely rare ingredients before. Some of them cost as much as a house, but still... none could compare to those sweet grapes I've once had.",
+      "filename": "File:vo_cab_talk1_002.aac"
+    },
+    {
+      "title": "Conversation 3",
+      "text": "When you were born into a high position, everything you see is covered in a blurry haze. But if you search hard enough, you may just find those souls who glitter brilliantly.",
+      "filename": "File:vo_cab_talk1_003.aac"
+    },
+    {
+      "title": "Special Conversation 1",
+      "text": "I've always had an overly obsessive and passionate preference for things that can satisfy my taste, and it so happens that my status can sate my willful obsession.",
+      "filename": "File:vo_cab_talk2_001.aac"
+    },
+    {
+      "title": "Special Conversation 2",
+      "text": "Honorable humans give off a fascinating, irresistible aroma... They're like great black grapes that ferment into ruby-hued wine, so tempting for my palate.",
+      "filename": "File:vo_cab_talk2_002.aac"
+    },
+    {
+      "title": "Special Conversation 3",
+      "text": "Warm juice exploding on the tip of the tongue, caressing the mouth, sliding down the throat into the stomach... This is how you make me feel. I'm sorry... It looks like simply staying by your side no longer satisfies me. I wish... we could truly become one.",
+      "filename": "File:vo_cab_talk2_003.aac"
+    },
+    {
+      "title": "Full Compliance",
+      "text": "Your soul is a mix of dreams and reality, art and life. Before it matures, I'm willing to bear the searing hunger and tame the urge to kiss your lip. Until this plump, mouth-watering fruit blooms before my eyes and offers itself to me...",
+      "filename": "File:vo_cab_obeyfull_001.aac"
+    },
+    {
+      "title": "Idle",
+      "text": "Sigh... I haven't got much of an appetite.",
+      "filename": "File:vo_cab_idle_001.aac"
+    },
+    {
+      "title": "Annoyed",
+      "text": "The cunning visitor from the abyss has been waiting to prey on those... dishonest beings.",
+      "filename": "File:vo_cab_clicking_001.aac"
+    },
+    {
+      "title": "Special Attention",
+      "text": "You seem to be looking forward to dining with me too, don't you?",
+      "filename": "File:vo_cab_specialattention_001.aac"
+    },
+    {
+      "title": "Dispatch",
+      "text": "Do I need to... do it myself?",
+      "filename": "File:vo_cab_dispatch_001.aac"
+    },
+    {
+      "title": "Dispatch Complete",
+      "text": "A novel experience.",
+      "filename": "File:vo_cab_dispatch2_001.aac"
+    },
+    {
+      "title": "Level Up",
+      "text": "Hmm, it tastes good.",
+      "filename": "File:vo_cab_levelup_002.aac"
+    },
+    {
+      "title": "Pat Head",
+      "text": "For some ingredients, this part, indeed, is the most flavorful. Do you think so?",
+      "filename": "File:vo_cab_head_001.aac"
+    },
+    {
+      "title": "Join Team",
+      "text": "Thank you for your warm invitation.",
+      "filename": "File:bt_cab_jointeam_001.aac"
+    }
+  ],
+  "bacchanal_reverie": [
+    {
+      "title": "Obtain Attire",
+      "text": "Welcome to the paradise of bliss and abundance. Only here can your unique and rich soul be nourished... Come, won't you share a drink with me?",
+      "filename": "File:vo_cab_mingdingyoumeng_cacha_001.aac"
+    },
+    {
+      "title": "Level Up",
+      "text": "Fruity and full-bodied... Truly a fine wine.",
+      "filename": "File:vo_cab_mingdingyoumeng_levelup_001.aac"
+    },
+    {
+      "title": "Greeting",
+      "text": "Earth-sprung honey, horn-poured raindrop, and Limnio kissed by thunder, blended into this cup's swirling ambrosial nectar... Drink, and share with me this unparalleled pleasure.",
+      "filename": "File:vo_cab_mingdingyoumeng_greeting_001.aac"
+    },
+    {
+      "title": "Pat Head",
+      "text": "Hehe, don't worry, I'm still sober. One must know their limits to enjoy this light-headed rapture...",
+      "filename": "File:vo_cab_mingdingyoumeng_head_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 1",
+      "text": "Why hesitate? If you are still tethered by worldly troubles, why not take some of this adorable fruit? It will make you forget all your sorrows and burdens... You will certainly love it.",
+      "filename": "File:vo_cab_mingdingyoumeng_body_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 2",
+      "text": "No one can resist pleasure. Slowly, they will be marinated in joy and mature in indulgence... until every blood vessel is flowing with the fruity fragrance. A different kind of decadent and luxurious taste...",
+      "filename": "File:vo_cab_mingdingyoumeng_body_002.aac"
+    },
+    {
+      "title": "Ordinary Contact 3",
+      "text": "Do you also think it's lacking something? Indeed, the finest drink demands the most exquisite ingredient for the pinnacle of sensory delight. Like a soul as sharp and unwavering as yours...",
+      "filename": "File:vo_cab_mingdingyoumeng_hand_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 4",
+      "text": "Compared to humans, animals have much simpler desires. This adorable one here knows exactly what it wants and longs for nothing more. Human desires, however, are complex and insatiable... Is this evolution or degeneration?",
+      "filename": "File:vo_cab_mingdingyoumeng_background_001.aac"
+    },
+    {
+      "title": "Idle",
+      "text": "Relax, there is no rush. Neither hunger nor thirst exist here. You may take your time to savor every detail before making your decision. Unlike the harsh mortal world... everything here is forgiving, especially to you.",
+      "filename": "File:vo_cab_mingdingyoumeng_idle_001.aac"
+    },
+    {
+      "title": "Special Attention",
+      "text": "Are you waiting for me to do it? I see... My warmth and breath are your perfect accompaniment for this wine and fruit.",
+      "filename": "File:vo_cab_mingdingyoumeng_specialattention_001.aac"
+    }
+  ],
+  "intoxication_a_deux": [
+    {
+      "title": "Level Up",
+      "text": "Measured without detracting from the flair. You did put some thoughts into this outfit, didn't you?",
+      "filename": "File:vo_cab_gongzui_levelup_001.aac"
+    },
+    {
+      "title": "Obtain Attire",
+      "text": "Don't rush, stand still... There you go. This jade pendant comports better with the banquet.",
+      "filename": "File:vo_cab_gongzui_cacha_001.aac"
+    },
+    {
+      "title": "Greeting",
+      "text": "Hehe, relax. A tasting for me is not about how rare or expensive the dishes are, but rather whether you can indulge your innermost desires in the culinary forays.",
+      "filename": "File:vo_cab_gongzui_greeting_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 1",
+      "text": "Legend has it that Outland cuisines are too rich to be counted. In fact, what we have right now is but a tiny fraction. Just imagine how many are out there for us to taste... It doesn't really befit me to heap praise on something like this, but perhaps it is your presence that intoxicates me so.",
+      "filename": "File:vo_cab_gongzui_body_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 2",
+      "text": "A microcosm of high society like this is naturally redolent of greed. Nevertheless, just as pure souls appear exceptionally fresh and mellow against a decadent backdrop of unfettered desires, dining here can be a uniquely contrasting experience. So, please, feast your senses on these delicacies.",
+      "filename": "File:vo_cab_gongzui_body_002.aac"
+    },
+    {
+      "title": "Idle",
+      "text": "Hmm~ I do enjoy watching you savor the cuisines. I find it most, shall we say, luscious...",
+      "filename": "File:vo_cab_gongzui_idle_001.aac"
+    },
+    {
+      "title": "Annoyed",
+      "text": "Your dressing speaks for you from the outside in. It is a statement of your manners, upbringing and standing. So be warned, I'll have to punish you if you rumple my design~",
+      "filename": "File:vo_cab_gongzui_clicking_001.aac"
+    },
+    {
+      "title": "Special Attention",
+      "text": "Why are you tracing my footsteps so closely? Is it out of a trust for my connoisseurship, or just a sense of duty to chaperone me throughout the night. Here, take my hand, stay by my side, and see what I am seeing...",
+      "filename": "File:vo_cab_gongzui_specialattention_001.aac"
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "default": [
+    {
+      "title": "Obtain the Sinner",
+      "text": "Ladies and gentlemen, this is the blow-by-blow video footage of me being captured by the MBCC! Hey, Chief, look at the camera—three, two, one, cheese!",
+      "filename": "File:vo_bianca_cacha_001.aac"
+    },
+    {
+      "title": "Raise to Phase 1",
+      "text": "Carrying a camera around every day is like a workout routine. Take a look at my mini biceps! Cute, huh?",
+      "filename": "File:vo_bianca_promotion_001.aac"
+    },
+    {
+      "title": "Raise to Phase 3",
+      "text": "Bad guys hiding in the dark, show your true selves in front of the screen! I command you, in the name of the MBCC Chief, look at the camera!",
+      "filename": "File:vo_bianca_promotion2_001.aac"
+    },
+    {
+      "title": "Level Start",
+      "text": "Camera is ready! Come on, give us a smile!",
+      "filename": "File:vo_bianca_battlebegin_001.aac"
+    },
+    {
+      "title": "Win Battles",
+      "text": "Guess what I caught on camera? Ta-da! It's the moment they got blown to smithereens! Cool, huh? I'm going to frame it and hang it above my bed.",
+      "filename": "File:vo_bianca_battlewin_001.aac"
+    },
+    {
+      "title": "Lose Battles",
+      "text": "It's so, so embarrassing. Please delete that last part. Please, please, please...",
+      "filename": "File:vo_bianca_battlelose_001.aac"
+    },
+    {
+      "title": "Ultimate Skill",
+      "text": "Here comes the breaking news!",
+      "filename": "File:bt_bianca_uniqueskill_001.aac"
+    },
+    {
+      "title": "Die in Battles",
+      "text": "Camera, my camera, I'll leave it to you...",
+      "filename": "File:bt_bianca_dead_001.aac"
+    },
+    {
+      "title": "Greeting",
+      "text": "Friends, new and old, I'm your reporter buddy! With me here is the famous Chief of the Minos Bureau of Crisis Control! Don't be shy, Chief, say hello to everyone!",
+      "filename": "File:vo_bianca_greeting_001.aac"
+    },
+    {
+      "title": "Conversation 1",
+      "text": "Hey, you know what? I just had a nightmare where the editor-in-chief was nagging me to hand in a news article. It was terrifying! Thank goodness I'm unemployed now.",
+      "filename": "File:vo_bianca_talk1_001.aac"
+    },
+    {
+      "title": "Conversation 2",
+      "text": "A baddie sneaking around, the justice reporter comes to town, I capture him on tape, I'm sending it out... Tie him up, cut him down,... Lalala...♪",
+      "filename": "File:vo_bianca_talk1_002.aac"
+    },
+    {
+      "title": "Conversation 3",
+      "text": "I know I have to pay for what I did. I've been ready to face the consequences of my actions since I arrived at the Bureau. Punish me, if you so wish. I shall take whatever might come... Could you hit that record button for me first? Thanks!",
+      "filename": "File:vo_bianca_talk1_003.aac"
+    },
+    {
+      "title": "Special Conversation 1",
+      "text": "Apple juice cleanses the soul of all sins, chases away negativity, brings about clarity; it is a source of enlightenment, the deconstruction of the truth, and the creative juice I need to come up with an unconventional take for my next news report. I made up all the things I just said. So, would you like to join me for a glass of apple juice?",
+      "filename": "File:vo_bianca_talk2_001.aac"
+    },
+    {
+      "title": "Special Conversation 2",
+      "text": "No news, sooooo dull! Chief, how about we get some \"pets\" to spice things up? Here is an idea: We lock up those sticky-fingered guys, put them on running wheels, threaten them with a stun gun if they slack off! They're just some nasty scumbags. If we accidentally kill one or two, that will be a great contribution to society!",
+      "filename": "File:vo_bianca_talk2_002.aac"
+    },
+    {
+      "title": "Special Conversation 3",
+      "text": "Exposing the sex scandals of celebrities is child's play. What really gets my blood pumping is digging into those dingy, seedy corners to hunt down the degenerates who think they've escaped punishment, reveling in their murky hideouts. I want to drag those contemptible vermin out of their cesspits and expose them under the blazing sun until they're dried up. Ah, just picturing them as crispy specimens fills me with satisfaction!",
+      "filename": "File:vo_bianca_talk2_003.aac"
+    },
+    {
+      "title": "Full Compliance",
+      "text": "Hey Chief, quick interview time! Any thoughts on your love life? What's your ideal partner like? Is it someone gentle or super energetic? And would you consider someone who rocks a high ponytail and runs around with a camera all day? You know, someone like... me?",
+      "filename": "File:vo_bianca_obeyfull_001.aac"
+    },
+    {
+      "title": "Idle",
+      "text": "Apple juice rules! Cheers! Chief? Wait, there are so many of you! One Chief, two Chiefs, three Chiefs... Haha, they're all mine!",
+      "filename": "File:vo_bianca_idle_001.aac"
+    },
+    {
+      "title": "Annoyed",
+      "text": "W-what are you doing?! Are you...? Oh stop, stop! The cameras are still rolling!",
+      "filename": "File:vo_bianca_clicking_001.aac"
+    },
+    {
+      "title": "Special Attention",
+      "text": "Finally, we have come to this exciting moment. Let's give it up for the winner of this year's Best News Award! Drumroll... Reporter Bianca from the MBCC TV!",
+      "filename": "File:vo_bianca_specialattention_001.aac"
+    },
+    {
+      "title": "Dispatch",
+      "text": "Coming! Let me put on some lipstick first... What? The broadcast van has left?!",
+      "filename": "File:vo_bianca_dispatch_001.aac"
+    },
+    {
+      "title": "Dispatch Complete",
+      "text": "This one is for you, this one too... Eh, why does it feel like I've made a trip for nothing?",
+      "filename": "File:vo_bianca_dispatch2_001.aac"
+    },
+    {
+      "title": "Level Up",
+      "text": "You're totally egging me on to uncover even juicier news, aren't you? Gosh, I'm so touched...",
+      "filename": "File:vo_bianca_levelup_002.aac"
+    },
+    {
+      "title": "Pat Head",
+      "text": "I once caught someone doing the same thing at a crime scene. This suspect put their hand on their enemy's neck, and then... Snap! I've got a high-definition video here. Wanna watch it with me?",
+      "filename": "File:vo_bianca_head_001.aac"
+    },
+    {
+      "title": "Join Team",
+      "text": "Ready? We're going on TV now!",
+      "filename": "File:bt_bianca_jointeam_001.aac"
+    }
+  ],
+  "in_cider_scoop": [
+    {
+      "title": "Level Up",
+      "text": "Woohoo! Gimme another one!",
+      "filename": "File:vo_bianca_pingguoxiaojiedetoutiao_levelup_002.aac"
+    },
+    {
+      "title": "Pat Head",
+      "text": "Hmm? What? Something wrong with my head? Wait... Is it... a twig growing on my head?! Oh, I'm \"twigging,\" hahaha! ...Hey, you could... water it if you want—it'll grow bigger~",
+      "filename": "File:vo_bianca_pingguoxiaojiedetoutiao_head_001.aac"
+    },
+    {
+      "title": "Obtain Attire",
+      "text": "Hehe, Chief, with the two of us invincible inspectors on this case, we'll de-definitely dig up something super-dooper juicy at this party! It's just... I didn't expect the cider here would be soooo tasty!",
+      "filename": "File:vo_bianca_pingguoxiaojiedetoutiao_cacha_001.aac"
+    },
+    {
+      "title": "Greeting",
+      "text": "Whoa! Ashy, you're here! You've gotta try this! Fermented apple juice, 100% organic! No wonder it's Eastside-exclusive. Fancy stuff, huh?",
+      "filename": "File:vo_bianca_pingguoxiaojiedetoutiao_greeting_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 1",
+      "text": "Listen, in a vanity fair like this, you must keep your head clear of all the \"vanity\" and \"luxury\"... Behind it all lie illegal crimes and dirty deals... That's why we're here! My eyes are the best HD lenses—no one escapes the Journalist of Justice!",
+      "filename": "File:vo_bianca_pingguoxiaojiedetoutiao_talk1_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 2",
+      "text": "Hehe, I wasn’t just out there drinking juice. I've got some scoop! First hand, hot off the press! Wanna hear? Come closer, Ashy, I'll tell ya~",
+      "filename": "File:vo_bianca_pingguoxiaojiedetoutiao_talk1_002.aac"
+    },
+    {
+      "title": "Ordinary Contact 3",
+      "text": "Ohh, the crimson delight, the forbidden fruit, the crystal of wisdom, and the key to all desires... You, aren't you curious about what it tastes like? Come on, take a bite, live a little!",
+      "filename": "File:vo_bianca_pingguoxiaojiedetoutiao_hand_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 4",
+      "text": "Ahh, I fell down. I'm stuck! I'm forever imprisoned by this giant, evil couch. Oh no, don't you save me, my friend! ...Unless, we're heading out to dig up something big out there!",
+      "filename": "File:vo_bianca_pingguoxiaojiedetoutiao_leg_001.aac"
+    },
+    {
+      "title": "Idle",
+      "text": "Twinkle, twinkle, little camera, capturing stories near and far~",
+      "filename": "File:vo_bianca_pingguoxiaojiedetoutiao_idle_001.aac"
+    },
+    {
+      "title": "Special Attention",
+      "text": "Whoa, are you recording? Ahem—zoom in on me, please! Bon dinner party, everyone! I, Bianca, the most legendary journalist in DisCity, am here to bring you the breaking news of tonight! Stay tuned!",
+      "filename": "File:vo_bianca_pingguoxiaojiedetoutiao_specialattention_001.aac"
+    }
+  ]
+}

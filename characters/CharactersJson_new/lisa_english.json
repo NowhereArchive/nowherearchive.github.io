@@ -1,0 +1,161 @@
+{
+  "default": [
+    {
+      "title": "Obtain the Sinner",
+      "text": "Arresting someone without evidence? What a good dog you are. I must say, this tasteless dump really suits you.",
+      "filename": "File:vo_monalisa_cacha_001.aac"
+    },
+    {
+      "title": "Raise to Phase 1",
+      "text": "Ugh, don't annoy me with matters unrelated to art.",
+      "filename": "File:vo_monalisa_promotion_001.aac"
+    },
+    {
+      "title": "Raise to Phase 3",
+      "text": "Who cares about powerful illusions? They can never replace real paintbrushes.",
+      "filename": "File:vo_monalisa_promotion2_001.aac"
+    },
+    {
+      "title": "Level Start",
+      "text": "You need to keep up. I'm not going to wait for you if you fall behind.",
+      "filename": "File:vo_monalisa_battlebegin_001.aac"
+    },
+    {
+      "title": "Win Battles",
+      "text": "It is your honor to enjoy my feast for the senses.",
+      "filename": "File:vo_monalisa_battlewin_001.aac"
+    },
+    {
+      "title": "Lose Battles",
+      "text": "What a failure.",
+      "filename": "File:vo_monalisa_battlelose_001.aac"
+    },
+    {
+      "title": "Ultimate Skill",
+      "text": "How tacky! It must be destroyed!",
+      "filename": "File:bt_monalisa_uniqueskill_001.aac"
+    },
+    {
+      "title": "Die in Battles",
+      "text": "Is beauty always fleeting?",
+      "filename": "File:bt_monalisa_dead_001.aac"
+    },
+    {
+      "title": "Greeting",
+      "text": "How are you planning to waste your worthless life today? Actually, there's no need to answer. I'm not interested. It was just a polite greeting on my part.",
+      "filename": "File:vo_monalisa_greeting_001.aac"
+    },
+    {
+      "title": "Conversation 1",
+      "text": "When I got into that car accident, half the Eastside art world secretly cheered. Those crass imbeciles didn't realize that as a painter, I simply stole some of their business, but as a critic, I could destroy them completely.",
+      "filename": "File:vo_monalisa_talk1_001.aac"
+    },
+    {
+      "title": "Conversation 2",
+      "text": "What's the difference between those mindless paintings and that useless head on your shoulders?",
+      "filename": "File:vo_monalisa_talk1_002.aac"
+    },
+    {
+      "title": "Conversation 3",
+      "text": "There is no authoritative standard for artistic expression. It's delusional to think that a few million DisCoins can define the value of a work. These Eastside upstarts are even shallower than you.",
+      "filename": "File:vo_monalisa_talk1_003.aac"
+    },
+    {
+      "title": "Special Conversation 1",
+      "text": "Can I use your art forum account? I just wrote a review, but when I tried to post it, I discovered that my account had been banned.",
+      "filename": "File:vo_monalisa_talk2_001.aac"
+    },
+    {
+      "title": "Special Conversation 2",
+      "text": "Don't give up just because I always say you're worthless! You have merits too! For example, you're... um... you're kind!",
+      "filename": "File:vo_monalisa_talk2_002.aac"
+    },
+    {
+      "title": "Special Conversation 3",
+      "text": "I'm the critic who has made the biggest contribution to improving the art world. How dare they call me a shrew? Fine. I'll be the shrew as long as my words can awaken those incompetent fools.",
+      "filename": "File:vo_monalisa_talk2_003.aac"
+    },
+    {
+      "title": "Full Compliance",
+      "text": "Upon closer inspection, your face is actually quite attractive.... what a pity, we met too late. No time to paint a portrait of you now.",
+      "filename": "File:vo_monalisa_obeyfull_001.aac"
+    },
+    {
+      "title": "Idle",
+      "text": "Sigh! Turned out crooked again... My hand can't even draw a straight line anymore...",
+      "filename": "File:vo_monalisa_idle_001.aac"
+    },
+    {
+      "title": "Annoyed",
+      "text": "You are hopelessly tacky!",
+      "filename": "File:vo_monalisa_clicking_001.aac"
+    },
+    {
+      "title": "Special Attention",
+      "text": "Unless you've suddenly become enlightened enough to discuss the role of color in the emotional expression of the painting <i>Rebecca</i>, don't bother me. I have several critiques to write, and I have no time to waste with you.",
+      "filename": "File:vo_monalisa_specialattention_001.aac"
+    },
+    {
+      "title": "Dispatch",
+      "text": "Just don't take me anywhere tacky.",
+      "filename": "File:vo_monalisa_dispatch_001.aac"
+    },
+    {
+      "title": "Dispatch Complete",
+      "text": "Have you been waiting here all this time? Seems like the position of Chief is an idle job.",
+      "filename": "File:vo_monalisa_dispatch2_001.aac"
+    },
+    {
+      "title": "Level Up",
+      "text": "Thank you... why, is it weird for me to say thank you?",
+      "filename": "File:vo_monalisa_levelup_002.aac"
+    },
+    {
+      "title": "Join Team",
+      "text": "These hideous things really disgust me. Let's get this over with.",
+      "filename": "File:bt_monalisa_jointeam_001.aac"
+    }
+  ],
+  "trail_of_butterfly": [
+    {
+      "title": "Obtain Attire",
+      "text": "Surprised to see me? It's nice and quiet here. I won't be disturbed. It's the perfect place for writing my critiques.",
+      "filename": "File:vo_lisa_tingjiandieying_cacha_001.aac"
+    },
+    {
+      "title": "Level Up",
+      "text": "Comment sent. Now, onto the next one...",
+      "filename": "File:vo_lisa_tingjiandieying_levelup_001.aac"
+    },
+    {
+      "title": "Greeting",
+      "text": "If you're not put off by my comments of you from head to toe, there's an empty chair over there for you.",
+      "filename": "File:vo_lisa_tingjiandieying_greeting_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 1",
+      "text": "The cocoon has turned into a butterfly after a winter on the branch. The once-dead hyacinth is now budding again... So many miracles can happen in the greenhouse... What about in life?",
+      "filename": "File:vo_lisa_tingjiandieying_talk_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 2",
+      "text": "Ha, they call me jealous? Why should I be jealous of those speculators who know nothing other than marketing? All that publicity can't hide the fact that their works are trash.",
+      "filename": "File:vo_lisa_tingjiandieying_talk_002.aac"
+    },
+    {
+      "title": "Idle",
+      "text": "I can see a hint of creativity here... but the use of colors is too boring... It can be bolder...",
+      "filename": "File:vo_lisa_tingjiandieying_idle_001.aac"
+    },
+    {
+      "title": "Annoyed",
+      "text": "The plants here are in need of some fertilizer... I see you're quite the material for it, huh?",
+      "filename": "File:vo_lisa_tingjiandieying_clicking_001.aac"
+    },
+    {
+      "title": "Special Attention",
+      "text": "As the Chief, have you got nothing else to do besides staring at me? Go water the plants if you're so bored. The watering can is right there.",
+      "filename": "File:vo_lisa_tingjiandieying_specialattention_001.aac"
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "default": [
+    {
+      "title": "Obtain the Sinner",
+      "text": "It's not the first time I've been locked up in a place of this sort... Come on, show me how you're going to torture me this time! What kind of crime did those maggots assign to me again?",
+      "filename": "File:vo_dimeng_cacha_001.aac"
+    },
+    {
+      "title": "Raise to Phase 1",
+      "text": "The price has been paid. This is the power I deserve.",
+      "filename": "File:vo_dimeng_promotion_001.aac"
+    },
+    {
+      "title": "Raise to Phase 3",
+      "text": "It's time. I must fulfill my promise.",
+      "filename": "File:vo_dimeng_promotion2_001.aac"
+    },
+    {
+      "title": "Level Start",
+      "text": "Operation ON. Everybody stay alert.",
+      "filename": "File:vo_dimeng_battlebegin_001.aac"
+    },
+    {
+      "title": "Win Battles",
+      "text": "Enemy targets cleared. Operation still on. Stay on your guard.",
+      "filename": "File:vo_dimeng_battlewin_001.aac"
+    },
+    {
+      "title": "Lose Battles",
+      "text": "Haha... In the end, I've been able to protect nothing and no one...",
+      "filename": "File:vo_dimeng_battlelose_001.aac"
+    },
+    {
+      "title": "Ultimate Skill",
+      "text": "Don't dream of getting past me!",
+      "filename": "File:bt_dimeng_uniqueskill_001.aac"
+    },
+    {
+      "title": "Die in Battles",
+      "text": "I've... let you down...",
+      "filename": "File:bt_dimeng_dead_001.aac"
+    },
+    {
+      "title": "Greeting",
+      "text": "Corruptors, thugs and conspirators are still rampaging through the city... You should act now.",
+      "filename": "File:vo_dimeng_greeting_001.aac"
+    },
+    {
+      "title": "Conversation 1",
+      "text": "Maggots have infested this city, pulling strings to manipulate everyone. I want them dead.",
+      "filename": "File:vo_dimeng_talk1_001.aac"
+    },
+    {
+      "title": "Conversation 2",
+      "text": "Never underestimate the darkness lurking beneath this city. That's a lesson that's cost me everything.",
+      "filename": "File:vo_dimeng_talk1_002.aac"
+    },
+    {
+      "title": "Conversation 3",
+      "text": "I should have died on the streets like other Syndicans, but Abel took me from that place. Looking back now, it might have been a mistake...",
+      "filename": "File:vo_dimeng_talk1_003.aac"
+    },
+    {
+      "title": "Special Conversation 1",
+      "text": "It's been eight years, and nothing has changed in the DisCity. Abel, together with his dream, has completely disappeared from people's memories. Sometimes I wonder, what do they actually remember?",
+      "filename": "File:vo_dimeng_talk2_001.aac"
+    },
+    {
+      "title": "Special Conversation 2",
+      "text": "Murdering your own... father, your long-time subordinates, burying everything you cherish... You want to know what that feels like? Haha, you won't like it.",
+      "filename": "File:vo_dimeng_talk2_002.aac"
+    },
+    {
+      "title": "Special Conversation 3",
+      "text": "Fighting alongside you might be the only sensible choice I've made in my whole life.",
+      "filename": "File:vo_dimeng_talk2_003.aac"
+    },
+    {
+      "title": "Full Compliance",
+      "text": "Those whom I could call my friends are all gone now. Try to... stay alive a bit longer. Don't die in front of me.",
+      "filename": "File:vo_dimeng_obeyfull_001.aac"
+    },
+    {
+      "title": "Idle",
+      "text": "Abel, Vera... I won't let you down... not again...",
+      "filename": "File:vo_dimeng_idle_001.aac"
+    },
+    {
+      "title": "Annoyed",
+      "text": "Tungsten carbide armors are indeed very useful. If you like it, you should get one for yourself too.",
+      "filename": "File:vo_dimeng_clicking_001.aac"
+    },
+    {
+      "title": "Special Attention",
+      "text": "Are you monitoring me? Or... do you need someone to keep you safe?",
+      "filename": "File:vo_dimeng_specialattention_001.aac"
+    },
+    {
+      "title": "Dispatch",
+      "text": "Mission received. Drawing up an operation plan now.",
+      "filename": "File:vo_dimeng_dispatch_001.aac"
+    },
+    {
+      "title": "Dispatch Complete",
+      "text": "Mission accomplished. After-action report submitted.",
+      "filename": "File:vo_dimeng_dispatch2_001.aac"
+    },
+    {
+      "title": "Level Up",
+      "text": "I can endure more.",
+      "filename": "File:vo_dimeng_levelup_002.aac"
+    },
+    {
+      "title": "Join Team",
+      "text": "I won't let them lay a hand on you.",
+      "filename": "File:bt_dimeng_jointeam_001.aac"
+    },
+    {
+      "title": "Pat Head",
+      "text": "I... dislike that.",
+      "filename": "File:vo_dimeng_head_001.aac"
+    }
+  ],
+  "under_the_neon_lights": [
+    {
+      "title": "Obtain Attire",
+      "text": "How much longer do we still need to stay here? \"We need to wait for a reply?\" Sigh, alright... in case of an emergency, you can order me to do anything.",
+      "filename": "File:vo_dimeng_nihongzhixia_cacha_001.aac"
+    },
+    {
+      "title": "Greeting",
+      "text": "Time to act. It's easy to lose yourself in this kind of fun. I don't want you to get addicted.",
+      "filename": "File:vo_dimeng_nihongzhixia_greeting_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 1",
+      "text": "\"The dirtiest places hold the most precious intelligence\". I agree with you on this point. But... I still need some time to get used to these blinding neon lights.",
+      "filename": "File:vo_dimeng_nihongzhixia_talk_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 2",
+      "text": "Fight side by side? In such a tiny space, it's best that I handle anything that might happen.",
+      "filename": "File:vo_dimeng_nihongzhixia_talk_002.aac"
+    },
+    {
+      "title": "Idle",
+      "text": "...Stay away, I'm waiting for my... companion to come back.",
+      "filename": "File:vo_dimeng_nihongzhixia_idle_001.aac"
+    },
+    {
+      "title": "Annoyed",
+      "text": "...We're still on a mission. No time for these distractions.",
+      "filename": "File:vo_dimeng_nihongzhixia_clicking_001.aac"
+    },
+    {
+      "title": "Level Up",
+      "text": "I don't need to stand out.",
+      "filename": "File:vo_dimeng_nihongzhixia_levelup_001.aac"
+    },
+    {
+      "title": "Special Attention",
+      "text": "I'll keep you safe and sound so you can complete the mission. I hope you muster enough courage and don't waste too much time.",
+      "filename": "File:vo_dimeng_nihongzhixia_specialattention_001.aac"
+    }
+  ]
+}

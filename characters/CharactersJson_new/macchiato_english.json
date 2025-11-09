@@ -1,0 +1,161 @@
+{
+  "default": [
+    {
+      "title": "Obtain the Sinner",
+      "text": "Hi, I'm Macchiato, client manager at Eastside Bank. Would you like to try our program... ah, you're the Chief here? My apologies. I subconsciously spew these lines whenever I meet someone new. I will definitely cooperate with you.",
+      "filename": "File:vo_aida_cacha_001.aac"
+    },
+    {
+      "title": "Raise to Phase 1",
+      "text": "Is this what you wanted? I see. I will satisfy you.",
+      "filename": "File:vo_aida_promotion_001.aac"
+    },
+    {
+      "title": "Raise to Phase 3",
+      "text": "Get ready for an unprecedented feast for the senses.",
+      "filename": "File:vo_aida_promotion2_001.aac"
+    },
+    {
+      "title": "Level Start",
+      "text": "I will give everyone to motivation to keep going.",
+      "filename": "File:vo_aida_battlebegin_001.aac"
+    },
+    {
+      "title": "Win Battles",
+      "text": "My hand is sore... but I'm very happy.",
+      "filename": "File:vo_aida_battlewin_001.aac"
+    },
+    {
+      "title": "Lose Battles",
+      "text": "What do I do, it's over... I'm going to die...",
+      "filename": "File:vo_aida_battlelose_001.aac"
+    },
+    {
+      "title": "Ultimate Skill",
+      "text": "Feel the joy with your heart...",
+      "filename": "File:bt_aida_uniqueskill_001.aac"
+    },
+    {
+      "title": "Die in Battles",
+      "text": "I can't die... I still have to...",
+      "filename": "File:bt_aida_dead_001.aac"
+    },
+    {
+      "title": "Greeting",
+      "text": "Chief, you're back? I put yesterday's work report on your desk already. Would you like something to drink? Coffee, tea or something else? I'll prepare it for you.",
+      "filename": "File:vo_aida_greeting_001.aac"
+    },
+    {
+      "title": "Conversation 1",
+      "text": "Physical pain is short-lived, but mental pleasure brings long-lasting satisfaction—or so they say. Would you like to try it?",
+      "filename": "File:vo_aida_talk1_001.aac"
+    },
+    {
+      "title": "Conversation 2",
+      "text": "Eastside Bank's new wealth management program is superb! It's low-risk, high-return and boasts an annualized return of 12%. I joined it myself. Chief, are you really not going to consider it?",
+      "filename": "File:vo_aida_talk1_002.aac"
+    },
+    {
+      "title": "Conversation 3",
+      "text": "It's good to have a nine-to-five job. This way, I'll have enough time to pursue my \"hobbies\".",
+      "filename": "File:vo_aida_talk1_003.aac"
+    },
+    {
+      "title": "Special Conversation 1",
+      "text": "When my younger siblings get jobs, I will truly be free. When that day comes, I want to become a truck driver in Sandsea, or a rock drummer in the Syndicate... as long as I can leave Eastside.",
+      "filename": "File:vo_aida_talk2_001.aac"
+    },
+    {
+      "title": "Special Conversation 2",
+      "text": "Life in Eastside is too depressing. Sales quotas, debts, stocks, emotions... Everyone has countless things to worry about. Maybe that's why they need me.",
+      "filename": "File:vo_aida_talk2_002.aac"
+    },
+    {
+      "title": "Special Conversation 3",
+      "text": "This might sound a bit ungrateful, but I dislike the title \"Dominatrix\"... However, if it's what you desire, Chief, I'm willing to be your personal dominatrix.",
+      "filename": "File:vo_aida_talk2_003.aac"
+    },
+    {
+      "title": "Full Compliance",
+      "text": "In the past, I somewhat resisted this power and identity. But ever since you showed up, I realized that satisfaction truly does exist... perhaps I'm addicted to you, dear Chief.",
+      "filename": "File:vo_aida_obeyfull_001.aac"
+    },
+    {
+      "title": "Idle",
+      "text": "Welcome to Eastside Bank! Oh, I mean MBCC... sorry, I was dozing off just now.",
+      "filename": "File:vo_aida_idle_001.aac"
+    },
+    {
+      "title": "Annoyed",
+      "text": "If you're really stressed, I can help you destress.",
+      "filename": "File:vo_aida_clicking_001.aac"
+    },
+    {
+      "title": "Special Attention",
+      "text": "I've never been a secretary before. What do I need to do? Is satisfying all of your needs enough?",
+      "filename": "File:vo_aida_specialattention_001.aac"
+    },
+    {
+      "title": "Dispatch",
+      "text": "I will complete this mission for sure.",
+      "filename": "File:vo_aida_dispatch_001.aac"
+    },
+    {
+      "title": "Dispatch Complete",
+      "text": "Mission accomplished. Who do I find to write off the expenses?",
+      "filename": "File:vo_aida_dispatch2_001.aac"
+    },
+    {
+      "title": "Level Up",
+      "text": "Thank you for your support.",
+      "filename": "File:vo_aida_levelup_002.aac"
+    },
+    {
+      "title": "Join Team",
+      "text": "It might hurt a little. Is that fine?",
+      "filename": "File:bt_aida_jointeam_001.aac"
+    }
+  ],
+  "beguiled_heart": [
+    {
+      "title": "Obtain Attire",
+      "text": "Sure, if that's what you need, I'll raise the whip for you again... to satisfy the deepest desire within you.",
+      "filename": "File:vo_aida_yiluanqingmi_cacha_001.aac"
+    },
+    {
+      "title": "Greeting",
+      "text": "Do you want a reward from me too? That's all right, don't be shy... I will accept every side of you.",
+      "filename": "File:vo_aida_yiluanqingmi_greeting_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 1",
+      "text": "Sure you can't go on? Hang in there a little longer. I promise to take you to heaven at just the right moment... Trust me... I know your limits quite well.",
+      "filename": "File:vo_aida_yiluanqingmi_talk1_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 2",
+      "text": "Here, open your mouth. This is your reward for being obedient and cooperative... Let's enjoy it together.",
+      "filename": "File:vo_aida_yiluanqingmi_talk1_002.aac"
+    },
+    {
+      "title": "Idle",
+      "text": "Ah... Very nice, everyone is sated...",
+      "filename": "File:vo_aida_yiluanqingmi_idle_001.aac"
+    },
+    {
+      "title": "Special Attention",
+      "text": "If you want it, just nod, and I'll show you... the sweetest reward.",
+      "filename": "File:vo_aida_yiluanqingmi_specialattention_001.aac"
+    },
+    {
+      "title": "Level Up",
+      "text": "How about that? Do you feel light as a feather now?",
+      "filename": "File:vo_aida_yiluanqingmi_levelup_001.aac"
+    },
+    {
+      "title": "Annoyed",
+      "text": "Are you so eager? Then get into position, and don't move around...",
+      "filename": "File:vo_aida_yiluanqingmi_clicking_001.aac"
+    }
+  ]
+}

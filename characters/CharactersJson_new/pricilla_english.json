@@ -1,0 +1,213 @@
+{
+  "default": [
+    {
+      "title": "Obtain the Sinner",
+      "text": "Oh my! Many police officers have chased Robber Rabbit, but you're the only one who caught me!",
+      "filename": "File:vo_peggi_cacha_001.aac"
+    },
+    {
+      "title": "Raise to Phase 1",
+      "text": "The next performance will be even more spectacular...",
+      "filename": "File:vo_peggi_promotion_001.aac"
+    },
+    {
+      "title": "Raise to Phase 3",
+      "text": "The lights are set, and the stage is perfect! Are you ready? A spectacular phantom burglary is about to begin!",
+      "filename": "File:vo_peggi_promotion2_001.aac"
+    },
+    {
+      "title": "Level Start",
+      "text": "Let me give you a spoiler: I'm going to run away in a bit! Better catch up to me!",
+      "filename": "File:vo_peggi_battlebegin_001.aac"
+    },
+    {
+      "title": "Win Battles",
+      "text": "Taking back the notice! There was a great response to this mission, too!",
+      "filename": "File:vo_peggi_battlewin_001.aac"
+    },
+    {
+      "title": "Lose Battles",
+      "text": "I'm sorry... I'm sorry... I shouldn't have done that...",
+      "filename": "File:vo_peggi_battlelose_001.aac"
+    },
+    {
+      "title": "Ultimate Skill",
+      "text": "Rob the rich and give to the poor!",
+      "filename": "File:bt_peggi_uniqueskill_001.aac"
+    },
+    {
+      "title": "Die in Battles",
+      "text": "Can you forgive me now...",
+      "filename": "File:bt_peggi_dead_001.aac"
+    },
+    {
+      "title": "Greeting",
+      "text": "Good morning! Good afternoon! Good evening! Hahaha, this means I want to see you all day!",
+      "filename": "File:vo_peggi_greeting_001.aac"
+    },
+    {
+      "title": "Conversation 1",
+      "text": "How trusting the Bureau must be to send their precious Chief to me... Aren't you afraid I'll stuff you in a suitcase and run away?",
+      "filename": "File:vo_peggi_talk1_001.aac"
+    },
+    {
+      "title": "Conversation 2",
+      "text": "When night falls, the whole of DisCity becomes my stage!",
+      "filename": "File:vo_peggi_talk1_002.aac"
+    },
+    {
+      "title": "Conversation 3",
+      "text": "I am the righteous Robber Rabbit, robbing the rich to help the poor! I am not a thief! Don't compare me to that kleptomaniac fox! Teaming up with her was just a coincidence.",
+      "filename": "File:vo_peggi_talk1_003.aac"
+    },
+    {
+      "title": "Special Conversation 1",
+      "text": "Well, I'm not doing this entirely out of righteousness... it's more like belated atonement.",
+      "filename": "File:vo_peggi_talk2_001.aac"
+    },
+    {
+      "title": "Special Conversation 2",
+      "text": "Chief, you should really find some time to control that fox! It sucks for me to be her partner.",
+      "filename": "File:vo_peggi_talk2_002.aac"
+    },
+    {
+      "title": "Special Conversation 3",
+      "text": "I could also just retire and go into hiding... After all, you'll lead us to keep pursuing justice, right Chief?",
+      "filename": "File:vo_peggi_talk2_003.aac"
+    },
+    {
+      "title": "Full Compliance",
+      "text": "We will part someday, too. A free phantom robber won't stay by anyone's side forever... oh, are you sad? There there, I'm not leaving now. I'll stay with you for a bit longer.",
+      "filename": "File:vo_peggi_obeyfull_001.aac"
+    },
+    {
+      "title": "Idle",
+      "text": "The quality of this metal rod is pretty good... if you're bored, how about I dance for you?",
+      "filename": "File:vo_peggi_idle_001.aac"
+    },
+    {
+      "title": "Annoyed",
+      "text": "Hehe, oh Chief, if you make trouble again, I will...",
+      "filename": "File:vo_peggi_clicking_001.aac"
+    },
+    {
+      "title": "Special Attention",
+      "text": "A phantom robber could disappear at any time. Now you see me, now you don't...",
+      "filename": "File:vo_peggi_specialattention_001.aac"
+    },
+    {
+      "title": "Dispatch",
+      "text": "If you let me out... will you be able to catch me again?",
+      "filename": "File:vo_peggi_dispatch_001.aac"
+    },
+    {
+      "title": "Dispatch Complete",
+      "text": "Ugh, there's nothing valuable there anyway...",
+      "filename": "File:vo_peggi_dispatch2_001.aac"
+    },
+    {
+      "title": "Level Up",
+      "text": "I can carry the whole world in my luggage!",
+      "filename": "File:vo_peggi_levelup_002.aac"
+    },
+    {
+      "title": "Join Team",
+      "text": "Oh? Is it my turn to shine?",
+      "filename": "File:bt_peggi_jointeam_001.aac"
+    }
+  ],
+  "night_of_petals": [
+    {
+      "title": "Obtain Attire",
+      "text": "Taking back the notice! So, did you like the shower of petals I gave you?~ Hehe, since you liked it, I'll be keeping your heart~",
+      "filename": "File:vo_peggi_wuyeguiyu_cacha_001.aac"
+    },
+    {
+      "title": "Level Up",
+      "text": "Heart-stealing mission accomplished~",
+      "filename": "File:vo_peggi_wuyeguiyu_levelup_001.aac"
+    },
+    {
+      "title": "Greeting",
+      "text": "Shhh... Be quiet. You don't want irrelevant people to come bother us, do you? Come. This rose is for you.",
+      "filename": "File:vo_peggi_wuyeguiyu_greeting_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 1",
+      "text": "This mask is part of the Phantom Robber's identity. It should never be taken off lightly. But since you've seen my face under the mask, I can't let you off the hook...",
+      "filename": "File:vo_peggi_wuyeguiyu_talk1_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 2",
+      "text": "Cinderella's not the only who fled the ball. There's also the heart-stealing Phantom Robber, who left with a full bag of loot~",
+      "filename": "File:vo_peggi_wuyeguiyu_talk1_002.aac"
+    },
+    {
+      "title": "Idle",
+      "text": "I'm so bored... One petal... Two petals...",
+      "filename": "File:vo_peggi_wuyeguiyu_idle_001.aac"
+    },
+    {
+      "title": "Annoyed",
+      "text": "Hey, stop moving around, will ya? You want to discover my flaws? Hmph... You're just like that damn fox! Anyways, my makeover is perfect...",
+      "filename": "File:vo_peggi_wuyeguiyu_clicking_001.aac"
+    },
+    {
+      "title": "Special Attention",
+      "text": "Don't be shocked. The phantom robber would be willing to get caught for a treasure she desires.",
+      "filename": "File:vo_peggi_wuyeguiyu_specialattention_001.aac"
+    }
+  ],
+  "private_mischief": [
+    {
+      "title": "Level Up",
+      "text": "I've got so many pretty knick-knacks that my house is almost too small to hold them all!!",
+      "filename": "File:vo_peggi_luanshijiaren_levelup_002.aac"
+    },
+    {
+      "title": "Pat Head",
+      "text": "I know, I know, my rabbit ears are fluffy, but haven't you petted them enough? That's not fair! Take this—Robber Rabbit's counterattack! Let me rub your ears too!",
+      "filename": "File:vo_peggi_luanshijiaren_head_001.aac"
+    },
+    {
+      "title": "Obtain Attire",
+      "text": "Hey Chief, wanna have a pajama party? Or better yet... we can make it a \"Phantom Robber Collections Night!\" Sounds fun, right?",
+      "filename": "File:vo_peggi_luanshijiaren_cacha_001.aac"
+    },
+    {
+      "title": "Greeting",
+      "text": "Oh, you're here! Come, take a look at my treasures! Hehe~ If you see something you like, it's yours!",
+      "filename": "File:vo_peggi_luanshijiaren_greeting_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 1",
+      "text": "My room's not messy; it's just... I've got many decorations. See? Aren't they adorable? How can you not love these little doodads!",
+      "filename": "File:vo_peggi_luanshijiaren_talk1_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 2",
+      "text": "Are my collections valuable? Meh. I've seen way fancier and pricier jewels in my heists, but I pick out and keep my little treasures just because they're so cute!",
+      "filename": "File:vo_peggi_luanshijiaren_talk1_002.aac"
+    },
+    {
+      "title": "Ordinary Contact 3",
+      "text": "Hmm, wanna try my lollipop, do you? Hehe, strawberry flavor is quite sweet, but this is the last one. If you want it, you'll have to steal it from the Phantom Robber herself!",
+      "filename": "File:vo_peggi_luanshijiaren_hand_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 4",
+      "text": "Why are you yawning? Tired already? Fine... C'mere, take a nap. Hmm? You awake now?",
+      "filename": "File:vo_peggi_luanshijiaren_leg_001.aac"
+    },
+    {
+      "title": "Idle",
+      "text": "Hey, keep your eyes open~ The night is still young...",
+      "filename": "File:vo_peggi_luanshijiaren_idle_001.aac"
+    },
+    {
+      "title": "Special Attention",
+      "text": "So, which one do you think is the most adorable in my room? Wait, why are you staring like that? Oh~ could your most valuable find be... me?",
+      "filename": "File:vo_peggi_luanshijiaren_specialattention_001.aac"
+    }
+  ]
+}

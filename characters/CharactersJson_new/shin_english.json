@@ -1,0 +1,124 @@
+{
+  "default": [
+    {
+      "title": "Special Attention",
+      "text": "Seeking companionship or keeping watch over a threat or perhaps both. Whatever purpose brought you here, I'm willing to accept it.",
+      "filename": "File:vo_shin_specialattention_001.aac"
+    },
+    {
+      "title": "Greeting",
+      "text": "It feels like we've been apart for quite a while. Is something troubling you? Come, sit down and chat with me.",
+      "filename": "File:vo_shin_greeting_001.aac"
+    },
+    {
+      "title": "Dispatch",
+      "text": "Are you sure you want me to go?",
+      "filename": "File:vo_shin_dispatch_001.aac"
+    },
+    {
+      "title": "Win Battles",
+      "text": "Nothing can stop us now.",
+      "filename": "File:vo_shin_battlewin_001.aac"
+    },
+    {
+      "title": "Dispatch Complete",
+      "text": "I'm back as you wish.",
+      "filename": "File:vo_shin_dispatch2_001.aac"
+    },
+    {
+      "title": "Raise to Phase 3",
+      "text": "At the end of the forbidden path, lies only endless chaos.",
+      "filename": "File:vo_shin_promotion2_001.aac"
+    },
+    {
+      "title": "Level Up",
+      "text": "It has become a part of me.",
+      "filename": "File:vo_shin_levelup_002.aac"
+    },
+    {
+      "title": "Raise to Phase 1",
+      "text": "This power has shaped me.",
+      "filename": "File:vo_shin_promotion_001.aac"
+    },
+    {
+      "title": "Conversation 1",
+      "text": "The calmer the waters, the darker and more profound the secrets that lie beneath. This is the most important lesson shin as an oceanographer has taught her.",
+      "filename": "File:vo_shin_talk1_001.aac"
+    },
+    {
+      "title": "Conversation 2",
+      "text": "And their deaths have long been destined. If you wish to change such fate, then hold fast to this power. No matter where it comes from.",
+      "filename": "File:vo_shin_talk1_002.aac"
+    },
+    {
+      "title": "Conversation 3",
+      "text": "Family, duty, expeditions, all of these feel so distant to me now. I no longer need such things. Only forbidden knowledge and power flow through my flesh and soul. This feeling is beyond compare.",
+      "filename": "File:vo_shin_talk1_003.aac"
+    },
+    {
+      "title": "Pat Head",
+      "text": "Does this comfort you? What a fussy child you are.",
+      "filename": "File:vo_shin_head_001.aac"
+    },
+    {
+      "title": "Idle",
+      "text": "Are you feeling tired? Well, your body is still human after all. It has far too many obvious flaws.",
+      "filename": "File:vo_shin_idle_001.aac"
+    },
+    {
+      "title": "Special Conversation 3",
+      "text": "After all this time, are you still dwelling on what happened to them? Oh, that's alright. When the day comes, that you remember everything, and reclaim your power, you'll understand that you and I are each other's true, kindred spirit.",
+      "filename": "File:vo_shin_talk2_003.aac"
+    },
+    {
+      "title": "Special Conversation 2",
+      "text": "Human minds are far too fragile. They cannot gaze directly upon the truth, buried deep in the abyss, much less bear the curse of omniscience. Only eternal life can carry such power. My very existence is proof of that, don't you think?",
+      "filename": "File:vo_shin_talk2_002.aac"
+    },
+    {
+      "title": "Special Conversation 1",
+      "text": "The Abyss does not breed chaos. Chaos comes from within, existing as a reflection beneath every pristine soul, impossible to ignore or sever. Only by embracing it can we become whole.",
+      "filename": "File:vo_shin_talk2_001.aac"
+    },
+    {
+      "title": "Lose Battles",
+      "text": "It's okay. You still have countless chances.",
+      "filename": "File:vo_shin_battlelose_001.aac"
+    },
+    {
+      "title": "Obtain the Sinner",
+      "text": "You traversed time and brought me back to this world from the bottom of the lightness abyss. I hope that in the near future you won't come to regret this.",
+      "filename": "File:vo_shin_cacha_001.aac"
+    },
+    {
+      "title": "Full Compliance",
+      "text": "Your existence stands from four sites, that even I cannot comprehend. You will ultimately follow its design, accept your true nature, and carry out its will. I look forward to that day.",
+      "filename": "File:vo_shin_obeyfull_001.aac"
+    },
+    {
+      "title": "Level Start",
+      "text": "Reaching the bottom of the abyss.",
+      "filename": "File:vo_shin_battlebegin_001.aac"
+    },
+    {
+      "title": "Annoyed",
+      "text": "Have you noticed? Even though I may not look that different, this body has a long since bore no semblance of a human.",
+      "filename": "File:vo_shin_clicking_001.aac"
+    },
+    {
+      "title": "Ultimate Skill",
+      "text": "Listen to its whispers.",
+      "filename": "File:bt_shin_uniqueskill_001.aac"
+    },
+    {
+      "title": "Die in Battles",
+      "text": "I will return from the abyss... once again.",
+      "filename": "File:bt_shin_dead_001.aac"
+    },
+    {
+      "title": "Join Team",
+      "text": "They will behave.",
+      "filename": "File:bt_shin_jointeam_001.aac"
+    }
+  ]
+}

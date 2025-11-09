@@ -1,0 +1,119 @@
+{
+  "default": [
+    {
+      "title": "Obtain the Sinner",
+      "text": "Nice to meet you. Are you the Chief of MBCC? Before I act, better keep your head on your shoulders. You are worth a lot.",
+      "filename": "File:vo_zuoyi_cacha_001.aac"
+    },
+    {
+      "title": "Raise to Phase 1",
+      "text": "You increase my power even though you know I'm dangerous. Do you think I'm no threat to you?",
+      "filename": "File:vo_zuoyi_promotion_001.aac"
+    },
+    {
+      "title": "Raise to Phase 3",
+      "text": "I am your personal blade. A sharp blade that swings towards the Garden and slices those who used to look down on me to pieces!",
+      "filename": "File:vo_zuoyi_promotion2_001.aac"
+    },
+    {
+      "title": "Level Start",
+      "text": "You won't be able to run away if I find you.",
+      "filename": "File:vo_zuoyi_battlebegin_001.aac"
+    },
+    {
+      "title": "Win Battles",
+      "text": "What a weak opponent... You look down on me?",
+      "filename": "File:vo_zuoyi_battlewin_001.aac"
+    },
+    {
+      "title": "Lose Battles",
+      "text": "Impossible... impossible!",
+      "filename": "File:vo_zuoyi_battlelose_001.aac"
+    },
+    {
+      "title": "Ultimate Skill",
+      "text": "Don't worry, this won't hurt at all.",
+      "filename": "File:bt_zuoyi_uniqueskill_001.aac"
+    },
+    {
+      "title": "Die in Battles",
+      "text": "Weakness... is a sin...",
+      "filename": "File:bt_zuoyi_dead_001.aac"
+    },
+    {
+      "title": "Greeting",
+      "text": "Wow, such tight security! Ha... seems like you recognize my strength.",
+      "filename": "File:vo_zuoyi_greeting_001.aac"
+    },
+    {
+      "title": "Conversation 1",
+      "text": "It's too quiet here. It reminds me of the Garden's ominous atmosphere. In any case, I still prefer it over the chaos and noise of the Syndicate.",
+      "filename": "File:vo_zuoyi_talk1_001.aac"
+    },
+    {
+      "title": "Conversation 2",
+      "text": "Many in the Garden obsess over \"the art of flower arrangement,\" but... I don't get it. Assassination is assassination. Why involve so many unrelated things?",
+      "filename": "File:vo_zuoyi_talk1_002.aac"
+    },
+    {
+      "title": "Conversation 3",
+      "text": "It's so thrilling to hear so-called \"strongmen\" howl... don't you think so?",
+      "filename": "File:vo_zuoyi_talk1_003.aac"
+    },
+    {
+      "title": "Special Conversation 1",
+      "text": "When I was saved by the Garden, I wanted to be a killer just like them. Ha... haha... how dare they say that I am weak! How dare they say that I am not worthy of joining the Garden!",
+      "filename": "File:vo_zuoyi_talk2_001.aac"
+    },
+    {
+      "title": "Special Conversation 2",
+      "text": "\"Gekkabijin\" is the name I gave to myself. Not everyone is qualified to receive a name from the Garden. But now, if I become the strongest killer in the Garden with your power... Can't wait to see the look on that so-called Mentor's face!",
+      "filename": "File:vo_zuoyi_talk2_002.aac"
+    },
+    {
+      "title": "Special Conversation 3",
+      "text": "That \"cherry blossom\" move almost killed me, but with you around... I should be able to handle it easily. Hmph... it should be her turn next!",
+      "filename": "File:vo_zuoyi_talk2_003.aac"
+    },
+    {
+      "title": "Full Compliance",
+      "text": "Thank you, Chief. After I take down all the Garden killers, I will gift you their heads! Then finally... finally I will get to enjoy you!",
+      "filename": "File:vo_zuoyi_obeyfull_001.aac"
+    },
+    {
+      "title": "Idle",
+      "text": "Whenever I think about the beautiful flowers withering away in this city... I become overjoyed!",
+      "filename": "File:vo_zuoyi_idle_001.aac"
+    },
+    {
+      "title": "Annoyed",
+      "text": "Heart, artery, brain... where do you want to be cut open?",
+      "filename": "File:vo_zuoyi_clicking_001.aac"
+    },
+    {
+      "title": "Special Attention",
+      "text": "Do you pay so much attention to me because you're afraid I'll attack you?",
+      "filename": "File:vo_zuoyi_specialattention_001.aac"
+    },
+    {
+      "title": "Dispatch",
+      "text": "You're sending me out? It must be a thrilling mission, right?",
+      "filename": "File:vo_zuoyi_dispatch_001.aac"
+    },
+    {
+      "title": "Dispatch Complete",
+      "text": "Ah... what a bummer. I thought I could meet a worthy foe.",
+      "filename": "File:vo_zuoyi_dispatch2_001.aac"
+    },
+    {
+      "title": "Level Up",
+      "text": "Oh Garden... wait and see.",
+      "filename": "File:vo_zuoyi_levelup_002.aac"
+    },
+    {
+      "title": "Join Team",
+      "text": "I hope my opponent this time can put up a tough fight.",
+      "filename": "File:bt_zuoyi_jointeam_001.aac"
+    }
+  ]
+}

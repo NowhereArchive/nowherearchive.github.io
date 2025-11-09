@@ -1,0 +1,203 @@
+{
+  "default": [
+    {
+      "title": "Obtain the Sinner",
+      "text": "Help! Let me go! A beauty is being kidnapped!",
+      "filename": "File:vo_hella_cacha_001.aac"
+    },
+    {
+      "title": "Raise to Phase 1",
+      "text": "I think I've gotten better at fighting.",
+      "filename": "File:vo_hella_promotion_001.aac"
+    },
+    {
+      "title": "Raise to Phase 3",
+      "text": "I think I'm invincible.",
+      "filename": "File:vo_hella_promotion2_001.aac"
+    },
+    {
+      "title": "Level Start",
+      "text": "Gogogo!",
+      "filename": "File:vo_hella_battlebegin_001.aac"
+    },
+    {
+      "title": "Win Battles",
+      "text": "Whew! Victory at last.",
+      "filename": "File:vo_hella_battlewin_001.aac"
+    },
+    {
+      "title": "Lose Battles",
+      "text": "Sigh, I can still...",
+      "filename": "File:vo_hella_battlelose_001.aac"
+    },
+    {
+      "title": "Ultimate Skill",
+      "text": "It's not over yet!",
+      "filename": "File:bt_hella_uniqueskill_001.aac"
+    },
+    {
+      "title": "Die in Battles",
+      "text": "It hurts...",
+      "filename": "File:bt_hella_dead_001.aac"
+    },
+    {
+      "title": "Greeting",
+      "text": "Chief... can you give the infinitely adorable Hella some pocket money? Oh my gosh, Chief is the best!",
+      "filename": "File:vo_hella_greeting_001.aac"
+    },
+    {
+      "title": "Conversation 1",
+      "text": "What is it, Chief? Uh... your wallet? Hehe, here, take it back, I was just practicing...",
+      "filename": "File:vo_hella_talk1_001.aac"
+    },
+    {
+      "title": "Conversation 2",
+      "text": "Me? Pretending to be cute? Who said that?! Am I not cute?",
+      "filename": "File:vo_hella_talk1_002.aac"
+    },
+    {
+      "title": "Conversation 3",
+      "text": "Don't bring up all that crap from the past with me. I'm not some little girl who cries all day and needs to be comforted. I survived this long thanks to my friggin' self.",
+      "filename": "File:vo_hella_talk1_003.aac"
+    },
+    {
+      "title": "Special Conversation 1",
+      "text": "The weight, size, and feel of this pipe is as if it's custom-made for me, so don't ever ask me to switch weapons. I will never abandon it!",
+      "filename": "File:vo_hella_talk2_001.aac"
+    },
+    {
+      "title": "Special Conversation 2",
+      "text": "I'll take you to hang out with Ninety-Nine when we get the chance. Even though she looks scary, she's actually quite nice.",
+      "filename": "File:vo_hella_talk2_002.aac"
+    },
+    {
+      "title": "Special Conversation 3",
+      "text": "I actually don't like to fight. Even though the chance of dying is small, it's still painful and troublesome... Don't worry, I'm still happy to do things for you. No need to feel guilty.",
+      "filename": "File:vo_hella_talk2_003.aac"
+    },
+    {
+      "title": "Full Compliance",
+      "text": "I've decided, since you stick to me all day long and are impossible to get rid of, I will graciously accept you as my underling. Just don't ever betray me, okay?",
+      "filename": "File:vo_hella_obeyfull_001.aac"
+    },
+    {
+      "title": "Idle",
+      "text": "I'm so sleepy... come here, let me lean on you for a nap...",
+      "filename": "File:vo_hella_idle_001.aac"
+    },
+    {
+      "title": "Annoyed",
+      "text": "Are you giving me a massage?",
+      "filename": "File:vo_hella_clicking_001.aac"
+    },
+    {
+      "title": "Special Attention",
+      "text": "Ha, I knew you'd come find me! Miss me so soon?",
+      "filename": "File:vo_hella_specialattention_001.aac"
+    },
+    {
+      "title": "Dispatch",
+      "text": "Finally, it's my turn to go! Chief, can you give me some more money?",
+      "filename": "File:vo_hella_dispatch_001.aac"
+    },
+    {
+      "title": "Dispatch Complete",
+      "text": "Mission accomplished. Any rewards for me, Chief?",
+      "filename": "File:vo_hella_dispatch2_001.aac"
+    },
+    {
+      "title": "Level Up",
+      "text": "Great!",
+      "filename": "File:vo_hella_levelup_002.aac"
+    },
+    {
+      "title": "Join Team",
+      "text": "Hmm? You really like being with me, don't you?",
+      "filename": "File:bt_hella_jointeam_001.aac"
+    }
+  ],
+  "queen_of_hearts": [
+    {
+      "title": "Obtain Attire",
+      "text": "Who the hell is interrupting my nap time again? Kneel at once! Eh... If it's not Chief? (Giggles) Awesome! Now my croquet match can go as scheduled!",
+      "filename": "File:vo_hella_hongxinnvwang_cacha_001.aac"
+    },
+    {
+      "title": "Greeting",
+      "text": "Don't bring me white flowers. I prefer red roses. If it happens again, I'll... hit your head a hundred times!",
+      "filename": "File:vo_hella_hongxinnvwang_greeting_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 1",
+      "text": "The weight, size, and texture of this scepter, and its shiny luster... It's as if it was tailored for me! And... most importantly, it's got a big head! So big and beautifully awesome!",
+      "filename": "File:vo_hella_hongxinnvwang_talk_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 2",
+      "text": "I want to eat that thing that's a dough topped with lots of fruit and cream! What's it called... some kind of tart...? Right, right! A fruit tart! I want it! Make one for me now!",
+      "filename": "File:vo_hella_hongxinnvwang_talk_002.aac"
+    },
+    {
+      "title": "Idle",
+      "text": "It's almost tea party time! Go and decorate the venue now, Chief... Why? Because you're the only idle servant here with nothing else to do.",
+      "filename": "File:vo_hella_hongxinnvwang_idle_001.aac"
+    },
+    {
+      "title": "Annoyed",
+      "text": "Try that a few more times, and you should worry about your head... Chief!",
+      "filename": "File:vo_hella_hongxinnvwang_clicking_001.aac"
+    },
+    {
+      "title": "Level Up",
+      "text": "Ah! What's with these little animals? They've been giving me trouble the whole day! You're lucky you guys are cute, or I would have...",
+      "filename": "File:vo_hella_hongxinnvwang_levelup_001.aac"
+    },
+    {
+      "title": "Special Attention",
+      "text": "Ahem, to keep our relationship fair and equal, as the Queen, I order you to... Hey! You're trying some funny business with the shackles again!?",
+      "filename": "File:vo_hella_hongxinnvwang_specialattention_001.aac"
+    }
+  ],
+  "northward_to_whitesands": [
+    {
+      "title": "Level Up",
+      "text": "Text not available yet but you can still listen",
+      "filename": "File:vo_hella_shahaiqilv_levelup_001.aac"
+    },
+    {
+      "title": "Obtain Attire",
+      "text": "Text not available yet but you can still listen",
+      "filename": "File:vo_hella_shahaiqilv_cacha_001.aac"
+    },
+    {
+      "title": "Greeting",
+      "text": "Text not available yet but you can still listen",
+      "filename": "File:vo_hella_shahaiqilv_greeting_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 1",
+      "text": "Text not available yet but you can still listen",
+      "filename": "File:vo_hella_shahaiqilv_talk_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 2",
+      "text": "Text not available yet but you can still listen",
+      "filename": "File:vo_hella_shahaiqilv_talk_002.aac"
+    },
+    {
+      "title": "Idle",
+      "text": "Text not available yet but you can still listen",
+      "filename": "File:vo_hella_shahaiqilv_idle_001.aac"
+    },
+    {
+      "title": "Annoyed",
+      "text": "Text not available yet but you can still listen",
+      "filename": "File:vo_hella_shahaiqilv_clicking_001.aac"
+    },
+    {
+      "title": "Special Attention",
+      "text": "Text not available yet but you can still listen",
+      "filename": "File:vo_hella_shahaiqilv_specialattention_001.aac"
+    }
+  ]
+}

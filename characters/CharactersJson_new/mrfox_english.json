@@ -1,0 +1,166 @@
+{
+  "default": [
+    {
+      "title": "Obtain the Sinner",
+      "text": "According to the legislation, I cannot resist your arrest, but I want you to know that you can never trap me if I want to leave.",
+      "filename": "File:vo_kaier_cacha_001.aac"
+    },
+    {
+      "title": "Raise to Phase 1",
+      "text": "Well, would you like to have a little chat with me now?",
+      "filename": "File:vo_kaier_promotion_001.aac"
+    },
+    {
+      "title": "Raise to Phase 3",
+      "text": "Thank you for sending me into the depths of hell.",
+      "filename": "File:vo_kaier_promotion2_001.aac"
+    },
+    {
+      "title": "Level Start",
+      "text": "Don't let me find your legal loophole.",
+      "filename": "File:vo_kaier_battlebegin_001.aac"
+    },
+    {
+      "title": "Win Battles",
+      "text": "Listen to your lawyer, and I will help you win it all.",
+      "filename": "File:vo_kaier_battlewin_001.aac"
+    },
+    {
+      "title": "Lose Battles",
+      "text": "How much money does it take to change your mind?",
+      "filename": "File:vo_kaier_battlelose_001.aac"
+    },
+    {
+      "title": "Ultimate Skill",
+      "text": "Do as I say.",
+      "filename": "File:bt_kaier_uniqueskill_001.aac"
+    },
+    {
+      "title": "Die in Battles",
+      "text": "This is the judgment... I deserve.",
+      "filename": "File:bt_kaier_dead_001.aac"
+    },
+    {
+      "title": "Greeting",
+      "text": "When there is a lawyer, there is strife. Only you can cope so well with having a lawyer as the first person you see each day.",
+      "filename": "File:vo_kaier_greeting_001.aac"
+    },
+    {
+      "title": "Conversation 1",
+      "text": "The scale is the symbol of law, and I can tip it in your favor.",
+      "filename": "File:vo_kaier_talk1_001.aac"
+    },
+    {
+      "title": "Conversation 2",
+      "text": "Mr. Fox? I like the name. It's one of the smartest animals.",
+      "filename": "File:vo_kaier_talk1_002.aac"
+    },
+    {
+      "title": "Conversation 3",
+      "text": "Everyone is born with the right to pursue justice with whatever method is employed.",
+      "filename": "File:vo_kaier_talk1_003.aac"
+    },
+    {
+      "title": "Special Conversation 1",
+      "text": "When gold coins are piled in front of people, many will trade their souls for it... and I gain justice from it.",
+      "filename": "File:vo_kaier_talk2_001.aac"
+    },
+    {
+      "title": "Special Conversation 2",
+      "text": "I am capable of getting you to do anything for me... but I can't bring myself to.",
+      "filename": "File:vo_kaier_talk2_002.aac"
+    },
+    {
+      "title": "Special Conversation 3",
+      "text": "If someone destroys the tender flower buds, they deserve hell no matter who it is, right?",
+      "filename": "File:vo_kaier_talk2_003.aac"
+    },
+    {
+      "title": "Full Compliance",
+      "text": "One day, you will bring punishment upon me, and I shall submit and accept it all.",
+      "filename": "File:vo_kaier_obeyfull_001.aac"
+    },
+    {
+      "title": "Idle",
+      "text": "As it happens, I have a few more files I need to read through. I'll grab a coffee with you later.",
+      "filename": "File:vo_kaier_idle_001.aac"
+    },
+    {
+      "title": "Annoyed",
+      "text": "I have represented and won 38 cases of physical harassment, and you should know this, right?",
+      "filename": "File:vo_kaier_clicking_001.aac"
+    },
+    {
+      "title": "Special Attention",
+      "text": "I thought I would never get to experience this... feeling of special attention here.",
+      "filename": "File:vo_kaier_specialattention_001.aac"
+    },
+    {
+      "title": "Dispatch",
+      "text": "I charge by the hour for working outside the office. It doesn't include additional fees such as consulting fees.",
+      "filename": "File:vo_kaier_dispatch_001.aac"
+    },
+    {
+      "title": "Dispatch Complete",
+      "text": "Job done. The bill will be sent to your email later. Please remember to pay on time.",
+      "filename": "File:vo_kaier_dispatch2_001.aac"
+    },
+    {
+      "title": "Level Up",
+      "text": "Well, if you want to know whether I'm more eloquent, you can find out yourself.",
+      "filename": "File:vo_kaier_levelup_002.aac"
+    },
+    {
+      "title": "Join Team",
+      "text": "The war without gunfire is the war of words.",
+      "filename": "File:bt_kaier_jointeam_001.aac"
+    },
+    {
+      "title": "Pat Head",
+      "text": "",
+      "filename": "File:vo_kaier_head_001.aac"
+    }
+  ],
+  "twilight_game": [
+    {
+      "title": "Obtain Attire",
+      "text": "My dear friend, congratulations on crossing the twilight zone, and welcome to my palace.",
+      "filename": "File:vo_kaier_chenhunyouxi_cacha_001.aac"
+    },
+    {
+      "title": "Level Up",
+      "text": "Let's hear what you think.",
+      "filename": "File:vo_kaier_chenhunyouxi_levelup_001.aac"
+    },
+    {
+      "title": "Greeting",
+      "text": "I offer you my goodwill, my dear friend, but... don't take it too seriously",
+      "filename": "File:vo_kaier_chenhunyouxi_greeting_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 1",
+      "text": "Pleasing poems and sweet serenades gush forth from my mouth and turn into sharp crescents.",
+      "filename": "File:vo_kaier_chenhunyouxi_talk1_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 2",
+      "text": "I control all fairness, justice, metrology, and poetry in this world... Do you... wish to subvert me?",
+      "filename": "File:vo_kaier_chenhunyouxi_talk1_002.aac"
+    },
+    {
+      "title": "Idle",
+      "text": "Don't worry. There's still time for you to find a way to pry the victory from my hands.",
+      "filename": "File:vo_kaier_chenhunyouxi_idle_001.aac"
+    },
+    {
+      "title": "Annoyed",
+      "text": "This is not the way to light a fire...",
+      "filename": "File:vo_kaier_chenhunyouxi_clicking_001.aac"
+    },
+    {
+      "title": "Special Attention",
+      "text": "Can you get the answer you want by just staring at me?",
+      "filename": "File:vo_kaier_chenhunyouxi_specialattention_001.aac"
+    }
+  ]
+}

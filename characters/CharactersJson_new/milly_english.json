@@ -1,0 +1,124 @@
+{
+  "default": [
+    {
+      "title": "Obtain the Sinner",
+      "text": "Oh, I... I'm not ready yet. There's no spotlight. No wine roses. This isn't how I pictured it at all. I've always wanted our first meeting to be something truly special.",
+      "filename": "File:vo_milly_cacha_001.aac"
+    },
+    {
+      "title": "Raise to Phase 1",
+      "text": "Does this count as special treatment? Just for me? That makes me so happy.",
+      "filename": "File:vo_milly_promotion_001.aac"
+    },
+    {
+      "title": "Raise to Phase 3",
+      "text": "When you're by my side, I want you to feel nothing but wonder. Taste nothing but sweet joy. Bask in happiness and a light until the morning comes.",
+      "filename": "File:vo_milly_promotion2_001.aac"
+    },
+    {
+      "title": "Level Start",
+      "text": "Alright, Millie. Don't be nervous. Time to put on your best show.",
+      "filename": "File:vo_milly_battlebegin_001.aac"
+    },
+    {
+      "title": "Win Battles",
+      "text": "Her grand finale! Chief, did you enjoy the show? Did it know you with happiness?",
+      "filename": "File:vo_milly_battlewin_001.aac"
+    },
+    {
+      "title": "Lose Battles",
+      "text": "Ah, don't look. It's too embarrassing. Of all people, I never wanted to fail in front of you.",
+      "filename": "File:vo_milly_battlelose_001.aac"
+    },
+    {
+      "title": "Ultimate Skill",
+      "text": "Nice and serious to love for you!",
+      "filename": "File:bt_milly_uniqueskill_001.aac"
+    },
+    {
+      "title": "Die in Battles",
+      "text": "One in waiting for won't be coming.",
+      "filename": "File:bt_milly_dead_001.aac"
+    },
+    {
+      "title": "Greeting",
+      "text": "whom to come here and hold me? High arms are open for a sweet hug.",
+      "filename": "File:vo_milly_greeting_001.aac"
+    },
+    {
+      "title": "Conversation 1",
+      "text": "I love listening to other people's love stories, especially at night, when confessions turn into the sweetest honey. Can you tell me, what kind of person would you fall in love with, and what kind of person to you wish to fall in love with you?",
+      "filename": "File:vo_milly_talk1_001.aac"
+    },
+    {
+      "title": "Conversation 2",
+      "text": "Everyone says they'll never fall in love. But who knows? Love is like fate. It's never ours to control.",
+      "filename": "File:vo_milly_talk1_002.aac"
+    },
+    {
+      "title": "Conversation 3",
+      "text": "I've read in a book that to love someone is to hold only them in your heart and eyes. Hehe. If that's true, then my heart has no room for anyone else. Come closer. Let me look at you. Let me see who is reflected in your eyes. There's only one person there, right?",
+      "filename": "File:vo_milly_talk1_003.aac"
+    },
+    {
+      "title": "Special Conversation 1",
+      "text": "True love is like a candy wrapped in cellophane. You can't see it clearly until you peel it open. But some people won't unwrap it themselves. Others peel back the wrapper, but pretend they don't like what's inside. They wait until no one's looking to sneak a bite. Only to find the candy has already gone bad.",
+      "filename": "File:vo_milly_talk2_001.aac"
+    },
+    {
+      "title": "Special Conversation 2",
+      "text": "Even though bees know stinging will rip out their insights, they never hesitate to strike if it's for the sake of their beloved. Ah, I think I can relate to that.",
+      "filename": "File:vo_milly_talk2_002.aac"
+    },
+    {
+      "title": "Special Conversation 3",
+      "text": "Love is the brightest spark in life, like a star in the darkest night. It's the only thing that shines, the only thing that's gentle. Just by looking at that star, I can find the courage to keep going. I don't call me silly. I finally caught up to it, you see? Now I'm reunited with my star.",
+      "filename": "File:vo_milly_talk2_003.aac"
+    },
+    {
+      "title": "Full Compliance",
+      "text": "I love you. Not because of what you've done, but because you make me want to become a better person. I know I'm not a smart or a perfect as others, but I'm trying. I'm running toward the light with you. Please, believe me. All the love I give you is real.",
+      "filename": "File:vo_milly_obeyfull_001.aac"
+    },
+    {
+      "title": "Idle",
+      "text": "I'm very good at waiting. It's not that hard. Waiting alone while thinking of you. Believing that someday, kill a pier.",
+      "filename": "File:vo_milly_idle_001.aac"
+    },
+    {
+      "title": "Annoyed",
+      "text": "I know. This is one of those little games that lovers play, isn't it?",
+      "filename": "File:vo_milly_clicking_001.aac"
+    },
+    {
+      "title": "Special Attention",
+      "text": "So, this is what it feels like to look into your eyes. Please, until the night is over, keep looking at me like this. Won't you?",
+      "filename": "File:vo_milly_specialattention_001.aac"
+    },
+    {
+      "title": "Dispatch",
+      "text": "It's been so long since I left the island. I'm a little nervous. Can I stay? A little closer to you?",
+      "filename": "File:vo_milly_dispatch_001.aac"
+    },
+    {
+      "title": "Dispatch Complete",
+      "text": "I've heard so many stories of love received so many gifts. I want you to have all of them.",
+      "filename": "File:vo_milly_dispatch2_001.aac"
+    },
+    {
+      "title": "Level Up",
+      "text": "Anything you give me is the best gift in the world.",
+      "filename": "File:vo_milly_levelup_002.aac"
+    },
+    {
+      "title": "Pat Head",
+      "text": "You like my hair, too? I'm glad! A lot of people like it. But none of them are as gentle as you.",
+      "filename": "File:vo_milly_head_001.aac"
+    },
+    {
+      "title": "Join Team",
+      "text": "I'm so happy you came to watch my performance.",
+      "filename": "File:bt_milly_jointeam_001.aac"
+    }
+  ]
+}

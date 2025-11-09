@@ -1,0 +1,218 @@
+{
+  "default": [
+    {
+      "title": "Obtain the Sinner",
+      "text": "Is this the Minos Bureau of Crisis Control? This time, will the burden named \"Eve\" be introduced to a different story?",
+      "filename": "File:vo_eve_cacha_001.aac"
+    },
+    {
+      "title": "Raise to Phase 1",
+      "text": "No miracles will happen to me anymore, right?",
+      "filename": "File:vo_eve_promotion_001.aac"
+    },
+    {
+      "title": "Raise to Phase 3",
+      "text": "If even a broken body can push beyond its limits, what about a shredded photo? Why can't it be mended then...",
+      "filename": "File:vo_eve_promotion2_001.aac"
+    },
+    {
+      "title": "Level Start",
+      "text": "Why bring me along? I'll only be a burden to everyone.",
+      "filename": "File:vo_eve_battlebegin_001.aac"
+    },
+    {
+      "title": "Win Battles",
+      "text": "Their misfortune has finally ended.",
+      "filename": "File:vo_eve_battlewin_001.aac"
+    },
+    {
+      "title": "Lose Battles",
+      "text": "Hello again... Cruel \"reality\".",
+      "filename": "File:vo_eve_battlelose_001.aac"
+    },
+    {
+      "title": "Ultimate Skill",
+      "text": "Go...",
+      "filename": "File:bt_eve_uniqueskill_001.aac"
+    },
+    {
+      "title": "Die in Battles",
+      "text": "Finally... We're reunited...",
+      "filename": "File:bt_eve_dead_001.aac"
+    },
+    {
+      "title": "Greeting",
+      "text": "You're here too... Don't mind me, I'm just looking for a peaceful place to stay.",
+      "filename": "File:vo_eve_greeting_001.aac"
+    },
+    {
+      "title": "Conversation 1",
+      "text": "My wheelchair always makes me \"set foot\" in faraway places when I'm unaware... It's probably searching for a place called \"home\".",
+      "filename": "File:vo_eve_talk1_001.aac"
+    },
+    {
+      "title": "Conversation 2",
+      "text": "Do you like the chimes of the clock after midnight? I love them. Once it rings, one can pretend dream and reality are the same thing.",
+      "filename": "File:vo_eve_talk1_002.aac"
+    },
+    {
+      "title": "Conversation 3",
+      "text": "I used to think toys would always be by the owner's side. But plastic weathers, porcelain breaks, metal rusts, and people grow up... Turns out \"change\" is the only constant.",
+      "filename": "File:vo_eve_talk1_003.aac"
+    },
+    {
+      "title": "Special Conversation 1",
+      "text": "I once held the sweetest candy in the world, but it's been too long, now it tastes bitterer than medicine. Thank you for reminding me of that sweetness, even just a little.",
+      "filename": "File:vo_eve_talk2_001.aac"
+    },
+    {
+      "title": "Special Conversation 2",
+      "text": "Can I get a share of your smile and hope? I might have started yearning for the world in your eyes... So bright, so warm...",
+      "filename": "File:vo_eve_talk2_002.aac"
+    },
+    {
+      "title": "Special Conversation 3",
+      "text": "If there really exists a night that never dawns, will you be there with me? In the endless night, we can count the stars together... and dream a never-ending dream.",
+      "filename": "File:vo_eve_talk2_003.aac"
+    },
+    {
+      "title": "Full Compliance",
+      "text": "The fairy tale says \"your beloved one is always by your side, you just can't see him/her\"... I reckon the fairy tale is lying again, because this time I see you.",
+      "filename": "File:vo_eve_obeyfull_001.aac"
+    },
+    {
+      "title": "Idle",
+      "text": "There, there, little bear, Eve's here, and always will be... But, Eve won't hear the same words said to her anymore...",
+      "filename": "File:vo_eve_idle_001.aac"
+    },
+    {
+      "title": "Annoyed",
+      "text": "If such contact can satisfy your curiosity, do as you please. Don't pity me, of all the things I've lost, my legs are the least important.",
+      "filename": "File:vo_eve_clicking_001.aac"
+    },
+    {
+      "title": "Special Attention",
+      "text": "Thanks for hanging out with me. If you don't mind, could you push me out for a walk? The outside air helps take my mind off a few things for a while.",
+      "filename": "File:vo_eve_specialattention_001.aac"
+    },
+    {
+      "title": "Dispatch",
+      "text": "There are only limited places a wheelchair can reach. I suggest you do not expect too much from me.",
+      "filename": "File:vo_eve_dispatch_001.aac"
+    },
+    {
+      "title": "Dispatch Complete",
+      "text": "I'm back. If I'm not needed for anything else, please let me rest alone for a while.",
+      "filename": "File:vo_eve_dispatch2_001.aac"
+    },
+    {
+      "title": "Level Up",
+      "text": "Why won't you give up on this useless body...",
+      "filename": "File:vo_eve_levelup_002.aac"
+    },
+    {
+      "title": "Pat Head",
+      "text": "Your hand, can it stay a bit longer? I fear this warmth will be fleeting, just like before...",
+      "filename": "File:vo_eve_head_001.aac"
+    },
+    {
+      "title": "Join Team",
+      "text": "It's time for the toys to meet new friends.",
+      "filename": "File:bt_eve_jointeam_001.aac"
+    }
+  ],
+  "eerie_fables": [
+    {
+      "title": "Level Up",
+      "text": "The curse that bound me is broken now...",
+      "filename": "File:vo_eve_xinghuizhiye_levelup_001.aac"
+    },
+    {
+      "title": "Pat Head",
+      "text": "For countless days and nights trapped in that dreadful orb, I wore this tiara. Its weight—much like the heavy gazes of the crowd at my coronation—kept me from ever removing it... Do you think me foolish as well?",
+      "filename": "File:vo_eve_xinghuizhiye_head_001.aac"
+    },
+    {
+      "title": "Obtain Attire",
+      "text": "It turns out that there really is such a brave knight undaunted by the vengeful witch, striving to break through this transparent barrier from the other side of the crystal ball with me... Just like a fairy tale.",
+      "filename": "File:vo_eve_xinghuizhiye_cacha_001.aac"
+    },
+    {
+      "title": "Greeting",
+      "text": "I am deeply grateful for your succor, my noble champion. But after being sealed within the crystal ball for so long, I fear I have nothing worthy to offer you in return—not even a royal reward. Perhaps, you might accept these jewels instead?",
+      "filename": "File:vo_eve_xinghuizhiye_greeting_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 1",
+      "text": "Whether it's the legendary beauty envied by all or the pure soul coveted by the evil witch, neither holds meaning for me. Yet fate imposed them on me, as a price to trade away my dearest family. Tell me, my noble champion, in all your travels across the continent, have you ever encountered a bargain more cruel than this?",
+      "filename": "File:vo_eve_xinghuizhiye_body_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 2",
+      "text": "In fairy tales, the brave knight rescues the princess, and they live happily ever after, their story ending in joy. But my story seems to have no ending in sight... Where is my \"happily ever after\"? Did you bring it, yet I fail to see it because I'm blindfolded?",
+      "filename": "File:vo_eve_xinghuizhiye_body_002.aac"
+    },
+    {
+      "title": "Ordinary Contact 3",
+      "text": "The witch's curse froze everything, leaving my body as stiff and lifeless as a glass doll. Yet just now, I thought I felt the warmth of your hands.",
+      "filename": "File:vo_eve_xinghuizhiye_hand_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 4",
+      "text": "My servants once promised to bring me a knight, no matter the cost. At the time, I dismissed it as just another harmless white lie, like the fairy tales they used to read to me... But I was wrong. It turned out that even the blade of a plastic sword could protect a princess, and the brave knight from the stories truly did exist.",
+      "filename": "File:vo_eve_xinghuizhiye_background_001.aac"
+    },
+    {
+      "title": "Idle",
+      "text": "Dear little horse, take Eve back home... Back to the rich plains, the endless red pines, the long river that flows in quiet grace. Take her back to that land—so beautiful, yet so unfamiliar, the place she once called home.",
+      "filename": "File:vo_eve_xinghuizhiye_idle_001.aac"
+    },
+    {
+      "title": "Special Attention",
+      "text": "Why do you gaze at me so? If there is worse news, please, do tell. Nothing could be more dreadful than the endless, empty days of imprisonment within that crystal ball.",
+      "filename": "File:vo_eve_xinghuizhiye_specialattention_001.aac"
+    }
+  ],
+  "frostling_whisper": [
+    {
+      "title": "Level Up",
+      "text": "Little bear, little bear, grow up fast, grow up soon...",
+      "filename": "File:vo_eve_cangjimilin_levelup_001.aac"
+    },
+    {
+      "title": "Obtain Attire",
+      "text": "Over the years, this forsaken garden has gradually fallen to the encroaching frost, yet it now welcomes an unexpected visitor... Since you cannot leave for the time being, why not stay and join the final feast before all of nature slumbers?",
+      "filename": "File:vo_eve_cangjimilin_cacha_001.aac"
+    },
+    {
+      "title": "Greeting",
+      "text": "The snowy forest is treacherous to traverse. Please, sit beside me and have a cup of hot tea. If you would... tell me about the world beyond this frozen realm. What is it like now?",
+      "filename": "File:vo_eve_cangjimilin_greeting_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 1",
+      "text": "This feast has always had only two attendees. Myself and my little bear. We've kept each other company and shared warmth amidst the icy rime, until... you joined us.",
+      "filename": "File:vo_eve_cangjimilin_talk1_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 2",
+      "text": "This place is silent, cold, pale, and monotonous, yet they speak of it as if it were a fairy tale winter wonderland... If I am truly the protagonist of a fairy tale, then it must be a tale of heartless tragedy.",
+      "filename": "File:vo_eve_cangjimilin_talk1_002.aac"
+    },
+    {
+      "title": "Idle",
+      "text": "Listen, that's the sound of the frigid winds caressing the treetops... a lullaby for sweet winter dreams.",
+      "filename": "File:vo_eve_cangjimilin_idle_001.aac"
+    },
+    {
+      "title": "Annoyed",
+      "text": "Though my little bear is still but a cub, it already possesses enough strength to serve as my loyal guardian.",
+      "filename": "File:vo_eve_cangjimilin_clicking_001.aac"
+    },
+    {
+      "title": "Special Attention",
+      "text": "The feast is not yet over, and I shall not depart so easily. But perhaps next spring, someone will take my hand and lead me out of this timeworn blanket of ice and snow.",
+      "filename": "File:vo_eve_cangjimilin_specialattention_001.aac"
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "default": [
+    {
+      "title": "Obtain the Sinner",
+      "text": "An arsonist stands before you. Put me behind bars if you can.",
+      "filename": "File:vo_eagle_cacha_001.aac"
+    },
+    {
+      "title": "Raise to Phase 1",
+      "text": "My flames burn ever brighter.",
+      "filename": "File:vo_eagle_promotion_001.aac"
+    },
+    {
+      "title": "Raise to Phase 3",
+      "text": "I won't lose to it again. From now on, I shall command the flames.",
+      "filename": "File:vo_eagle_promotion2_001.aac"
+    },
+    {
+      "title": "Level Start",
+      "text": "As long as I can protect those who I love...",
+      "filename": "File:vo_eagle_battlebegin_001.aac"
+    },
+    {
+      "title": "Win Battles",
+      "text": "But everything has been burned clean.",
+      "filename": "File:vo_eagle_battlewin_001.aac"
+    },
+    {
+      "title": "Lose Battles",
+      "text": "No... no... I've lost control...!",
+      "filename": "File:vo_eagle_battlelose_001.aac"
+    },
+    {
+      "title": "Ultimate Skill",
+      "text": "Taste the wrath of fire!",
+      "filename": "File:bt_eagle_uniqueskill_001.aac"
+    },
+    {
+      "title": "Die in Battles",
+      "text": "The flames... devoured everything after all...",
+      "filename": "File:bt_eagle_dead_001.aac"
+    },
+    {
+      "title": "Greeting",
+      "text": "Did you... come here just to see me? Um... did you bring some crème brûlée?",
+      "filename": "File:vo_eagle_greeting_001.aac"
+    },
+    {
+      "title": "Conversation 1",
+      "text": "Whoa! Do you... do you know what happened to my attackers?",
+      "filename": "File:vo_eagle_talk1_001.aac"
+    },
+    {
+      "title": "Conversation 2",
+      "text": "Stay away from me! I won't pay your medical fees if you get burned.",
+      "filename": "File:vo_eagle_talk1_002.aac"
+    },
+    {
+      "title": "Conversation 3",
+      "text": "My hair looks weird, doesn't it? It looks like it's on fire... Many fear me because of it, but they don't know what flames really look like.",
+      "filename": "File:vo_eagle_talk1_003.aac"
+    },
+    {
+      "title": "Special Conversation 1",
+      "text": "I won't randomly combust! Don't try it anymore!",
+      "filename": "File:vo_eagle_talk2_001.aac"
+    },
+    {
+      "title": "Special Conversation 2",
+      "text": "I hope that everyone I love can be happy and safe... why are you looking at me like that? If you'd like, I'll add you to that category.",
+      "filename": "File:vo_eagle_talk2_002.aac"
+    },
+    {
+      "title": "Special Conversation 3",
+      "text": "After fighting side by side with you for so long, I can now believe that this power can bring happiness to others...",
+      "filename": "File:vo_eagle_talk2_003.aac"
+    },
+    {
+      "title": "Full Compliance",
+      "text": "Someday, when this is all over, I want to make crème brûlée again with my own two hands... will you be the first to give it a taste?",
+      "filename": "File:vo_eagle_obeyfull_001.aac"
+    },
+    {
+      "title": "Idle",
+      "text": "Is the bakery we passed by earlier about to release new products...?",
+      "filename": "File:vo_eagle_idle_001.aac"
+    },
+    {
+      "title": "Annoyed",
+      "text": "Are you treating me like a log? Drilling wood for fire?",
+      "filename": "File:vo_eagle_clicking_001.aac"
+    },
+    {
+      "title": "Special Attention",
+      "text": "No need to watch me like that. My hair makes me stick out enough already. I won't run away.",
+      "filename": "File:vo_eagle_specialattention_001.aac"
+    },
+    {
+      "title": "Dispatch",
+      "text": "You want some info about food?",
+      "filename": "File:vo_eagle_dispatch_001.aac"
+    },
+    {
+      "title": "Dispatch Complete",
+      "text": "I included a food review. Ahem, I just made it.",
+      "filename": "File:vo_eagle_dispatch2_001.aac"
+    },
+    {
+      "title": "Level Up",
+      "text": "Be careful, or the fire will go wild again.",
+      "filename": "File:vo_eagle_levelup_002.aac"
+    },
+    {
+      "title": "Join Team",
+      "text": "You don't have to worry here.",
+      "filename": "File:bt_eagle_jointeam_001.aac"
+    }
+  ],
+  "warm_flame": [
+    {
+      "title": "Obtain Attire",
+      "text": "Is everyone excited about staying up on New Year's Eve? Ahem... Honestly, I'm not that excited. I just happen to be wearing clothes I don't usually wear!",
+      "filename": "File:vo_eagle_wenhuoxinsui_cacha_001.aac"
+    },
+    {
+      "title": "Greeting",
+      "text": "Gotta try some new things in the new year. I... I've invited you over because I want you to try... the new flavor of my pudding.",
+      "filename": "File:vo_eagle_wenhuoxinsui_greeting_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 1",
+      "text": "I... It's been a while, and I've made progress! The Bureau's kitchen is in perfect shape! Even the fire alarm... hasn't been triggered...",
+      "filename": "File:vo_eagle_wenhuoxinsui_body_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 2",
+      "text": "I recreated braised meatballs, mapo tofu, and dumplings all with pudding! You must finish each and everyone of them!",
+      "filename": "File:vo_eagle_wenhuoxinsui_body_002.aac"
+    },
+    {
+      "title": "Ordinary Contact 3",
+      "text": "My mum used to braid my hair when I was little. I think this looks quite festive. What do you think? Does it look good?",
+      "filename": "File:vo_eagle_wenhuoxinsui_righthand_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 4",
+      "text": "The lady in the library once told me a traditional tale. In the story, the queen has a fan that makes flames covering a whole mountain... I wonder if mine works like that too...?",
+      "filename": "File:vo_eagle_wenhuoxinsui_background_001.aac"
+    },
+    {
+      "title": "Idle",
+      "text": "\"Springtime lethargy\" is quite common... But hey, don't start on the first day of the new year! ...Anyway. If you're sleepy, j-just find a spot and take a nap here.",
+      "filename": "File:vo_eagle_wenhuoxinsui_idle_001.aac"
+    },
+    {
+      "title": "Special Attention",
+      "text": "Why are you staring at me? Just say it if you don't like this outfit! So I didn't have to... What do you mean you love it?!",
+      "filename": "File:vo_eagle_wenhuoxinsui_specialattention_001.aac"
+    },
+    {
+      "title": "Level Up",
+      "text": "Ah! ...Didn't you say you wanted to see fireworks? I just set some off for you.",
+      "filename": "File:vo_eagle_wenhuoxinsui_levelup_002.aac"
+    },
+    {
+      "title": "Pat Head",
+      "text": "Wah... You... Forget it! It's a happy day today. I'll let it slide.",
+      "filename": "File:vo_eagle_wenhuoxinsui_head_001.aac"
+    }
+  ],
+  "caramel_starwish": [
+    {
+      "title": "Obtain Attire",
+      "text": "Uh, you must do it like this! Keep stirring as you say your wish out loud... D-don't worry, I won't tell anyone about your wish. I'll guard it as our little secret.",
+      "filename": "File:vo_eagle_jiaotangxingyuan_cacha_001.aac"
+    },
+    {
+      "title": "Greeting",
+      "text": "We made this Christmas pudding together. No... no matter how the taste turns out, you'll finish it, right?",
+      "filename": "File:vo_eagle_jiaotangxingyuan_greeting_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 1",
+      "text": "Every year around this time, Mom and Dad would deck the kitchen with these kinds of decorations. I tried to recreate what the holidays felt like at my home... What do you think?",
+      "filename": "File:vo_eagle_jiaotangxingyuan_body_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 2",
+      "text": "What... what are you standing around for? The Sinner who gave me the recipe said that stirring the batter and making wishes together is the most important step! I... I'm only reminding you because you're clearly going to mess it up, hmph!",
+      "filename": "File:vo_eagle_jiaotangxingyuan_body_002.aac"
+    },
+    {
+      "title": "Idle",
+      "text": "Mmph... The presentation is perfect. The sweetness is just right. The texture is well-balanced too. Miss Faye didn't trick me with substandard stuff this time... But both types of dried fruit are so delicious, which one should I use... Eh?! Where did the rest go?!",
+      "filename": "File:vo_eagle_jiaotangxingyuan_idle_001.aac"
+    },
+    {
+      "title": "Special Attention",
+      "text": "You keep staring at my hair accessory. Are you craving gingerbread? It just so happens that I've written a bakery review rating their gingerbread. Check it out if you want... You think it's cute? W-well, your taste is not that bad then.",
+      "filename": "File:vo_eagle_jiaotangxingyuan_specialattention_001.aac"
+    },
+    {
+      "title": "Level Up",
+      "text": "The bigger the fire, the more likely the wish will come true!",
+      "filename": "File:vo_eagle_jiaotangxingyuan_levelup_001.aac"
+    },
+    {
+      "title": "Annoyed",
+      "text": "This Christmas sweater feels good to the touch, doesn't it? So soft and warm. It reminds me of the sweaters Mom used to knit for me when I was little. They were heavy and unfashionable, but every time I wore them I felt like my mom was giving me a big hug.",
+      "filename": "File:vo_eagle_jiaotangxingyuan_clicking_001.aac"
+    }
+  ]
+}

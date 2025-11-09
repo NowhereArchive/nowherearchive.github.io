@@ -1,0 +1,166 @@
+{
+  "default": [
+    {
+      "title": "Obtain the Sinner",
+      "text": "Leaving the Syndicate mob alone but locking up doctors who can save lives? Humph, what a depraved MBCC.",
+      "filename": "File:vo_xinxiya_cacha_001.aac"
+    },
+    {
+      "title": "Raise to Phase 1",
+      "text": "I can see you've made an effort, but the robotic arm won't fully integrate with the muscle nerves overnight.",
+      "filename": "File:vo_xinxiya_promotion_001.aac"
+    },
+    {
+      "title": "Raise to Phase 3",
+      "text": "The dream of wiping out Mania will soon come true.",
+      "filename": "File:vo_xinxiya_promotion2_001.aac"
+    },
+    {
+      "title": "Level Start",
+      "text": "Don't touch the pollutant. Keep up.",
+      "filename": "File:vo_xinxiya_battlebegin_001.aac"
+    },
+    {
+      "title": "Win Battles",
+      "text": "The surgery was successful.",
+      "filename": "File:vo_xinxiya_battlewin_001.aac"
+    },
+    {
+      "title": "Lose Battles",
+      "text": "Protect the injured first! Retreat!",
+      "filename": "File:vo_xinxiya_battlelose_001.aac"
+    },
+    {
+      "title": "Ultimate Skill",
+      "text": "Lesion removal!",
+      "filename": "File:bt_xinxiya_uniqueskill_001.aac"
+    },
+    {
+      "title": "Die in Battles",
+      "text": "Patients still need me, I... can't fall...",
+      "filename": "File:bt_xinxiya_dead_001.aac"
+    },
+    {
+      "title": "Greeting",
+      "text": "Now that you're here, get working. Don't just stand around and waste time.",
+      "filename": "File:vo_xinxiya_greeting_001.aac"
+    },
+    {
+      "title": "Conversation 1",
+      "text": "When are you going to keep these Sinners in check? Brawling, getting drunk, gambling... It's like a mini version of Syndicate, except no one gets killed.",
+      "filename": "File:vo_xinxiya_talk1_001.aac"
+    },
+    {
+      "title": "Conversation 2",
+      "text": "There is no such thing as a gift of medical talent. I know what I have to do.",
+      "filename": "File:vo_xinxiya_talk1_002.aac"
+    },
+    {
+      "title": "Conversation 3",
+      "text": "People don't fear Mania itself, but the violence and death that it brings, and that is precisely why I must purge sinful thoughts.",
+      "filename": "File:vo_xinxiya_talk1_003.aac"
+    },
+    {
+      "title": "Special Conversation 1",
+      "text": "I have never forced a patient to remove their frontal lobe; they simply chose to live in the face of death.",
+      "filename": "File:vo_xinxiya_talk2_001.aac"
+    },
+    {
+      "title": "Special Conversation 2",
+      "text": "No clinician would want to see patients dying in front of them. Not me, and not Anne. So... forgive her.",
+      "filename": "File:vo_xinxiya_talk2_002.aac"
+    },
+    {
+      "title": "Special Conversation 3",
+      "text": "Turning into a brain-cutting demon to curb Mania is like sacrificing my left arm to stay sane. It's a choice I weighed, and I have nothing to regret.",
+      "filename": "File:vo_xinxiya_talk2_003.aac"
+    },
+    {
+      "title": "Full Compliance",
+      "text": "Since you want to be in this with me, I must warn you—there's no room for regret in frontal lobotomy, and it involves huge risks and blames to take Mania under control. Are you still willing to do this despite that?",
+      "filename": "File:vo_xinxiya_obeyfull_001.aac"
+    },
+    {
+      "title": "Idle",
+      "text": "The criminals are rampant out there, yet the Chief of MBCC is taking a nap at work... It's time to fix DisCity.",
+      "filename": "File:vo_xinxiya_idle_001.aac"
+    },
+    {
+      "title": "Annoyed",
+      "text": "You have excessive dopamine and need a cranial examination. I'm not joking. If you don't believe me... try doing it again.",
+      "filename": "File:vo_xinxiya_clicking_001.aac"
+    },
+    {
+      "title": "Special Attention",
+      "text": "You're the first person without Mania that sees me regularly.",
+      "filename": "File:vo_xinxiya_specialattention_001.aac"
+    },
+    {
+      "title": "Dispatch",
+      "text": "Time is precious in treating Mania. Stop bothering me with trivial matters.",
+      "filename": "File:vo_xinxiya_dispatch_001.aac"
+    },
+    {
+      "title": "Dispatch Complete",
+      "text": "Don't thank me. I'm not interested in anything non-medical.",
+      "filename": "File:vo_xinxiya_dispatch2_001.aac"
+    },
+    {
+      "title": "Level Up",
+      "text": "You're content with this? There's still room for improvement. Keep going.",
+      "filename": "File:vo_xinxiya_levelup_002.aac"
+    },
+    {
+      "title": "Join Team",
+      "text": "I'll just put it out there. I won't save anyone who doesn't follow medical advice.",
+      "filename": "File:bt_xinxiya_jointeam_001.aac"
+    },
+    {
+      "title": "Pat Head",
+      "text": "",
+      "filename": "File:vo_xinxiya_head_001.aac"
+    }
+  ],
+  "dr__ironstein": [
+    {
+      "title": "Obtain Attire",
+      "text": "What are you looking at? Today I'm on special duty, so I look a bit different. Don't worry, come in.",
+      "filename": "File:vo_xinxiya_jinjiguaiyi_cacha_001.aac"
+    },
+    {
+      "title": "Level Up",
+      "text": "Sutures confirmed. Keep going.",
+      "filename": "File:vo_xinxiya_jinjiguaiyi_levelup_001.aac"
+    },
+    {
+      "title": "Greeting",
+      "text": "Lie down over there. Let me see if I need to hammer a few surgical screws into that weak, wobbly body of yours.",
+      "filename": "File:vo_xinxiya_jinjiguaiyi_greeting_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 1",
+      "text": "Anne suggested that I should loosen up a bit and try on some different clothes, so as not to scare the patients and hinder the diagnosis... Hmph, now it seems like a useless gimmick.",
+      "filename": "File:vo_xinxiya_jinjiguaiyi_talk_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 2",
+      "text": "Though we're both medical professionals, I'm not like the scientist in the story who creates monsters from corpses. He wants to create life out of death, while I try to stop death from arriving altogether.",
+      "filename": "File:vo_xinxiya_jinjiguaiyi_talk_002.aac"
+    },
+    {
+      "title": "Idle",
+      "text": "The temperature in the room is fine. Why are all the patients shivering?",
+      "filename": "File:vo_xinxiya_jinjiguaiyi_idle_001.aac"
+    },
+    {
+      "title": "Annoyed",
+      "text": "No need to make a big deal about these stitches. They're just painted on with pharmaceutical ink. If you like them so much, I'll give you some real ones next time.",
+      "filename": "File:vo_xinxiya_jinjiguaiyi_clicking_001.aac"
+    },
+    {
+      "title": "Special Attention",
+      "text": "Indeed, there are treatments that use metal to connect brain tissues so that the brain continues to function. Are you looking at me this way because you want to try it out?",
+      "filename": "File:vo_xinxiya_jinjiguaiyi_specialattention_001.aac"
+    }
+  ]
+}

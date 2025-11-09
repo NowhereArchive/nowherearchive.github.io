@@ -1,0 +1,161 @@
+{
+  "default": [
+    {
+      "title": "Level Start",
+      "text": "Order received, ready to begin.",
+      "filename": "File:vo_renou_battlebegin_001.aac"
+    },
+    {
+      "title": "Obtain the Sinner",
+      "text": "A.I. Maid III Labyrinth at your service.",
+      "filename": "File:vo_renou_cacha_001.aac"
+    },
+    {
+      "title": "Raise to Phase 1",
+      "text": "\"Wear it to become stronger?\" If it can improve the efficiency of my housework, please install it immediately.",
+      "filename": "File:vo_renou_promotion_001.aac"
+    },
+    {
+      "title": "Raise to Phase 3",
+      "text": "Body strength has been upgraded to the max. Labyrinth shall clear all your obstacles.",
+      "filename": "File:vo_renou_promotion2_001.aac"
+    },
+    {
+      "title": "Win Battles",
+      "text": "Clean-up completed. Switching back to home mode.",
+      "filename": "File:vo_renou_battlewin_001.aac"
+    },
+    {
+      "title": "Lose Battles",
+      "text": "Warning: Combat parameters overflowing, emergency retreat protocol enabled.",
+      "filename": "File:vo_renou_battlelose_001.aac"
+    },
+    {
+      "title": "Ultimate Skill",
+      "text": "Battle mode activated.",
+      "filename": "File:bt_renou_uniqueskill_001.aac"
+    },
+    {
+      "title": "Die in Battles",
+      "text": "... not... done yet...",
+      "filename": "File:bt_renou_dead_001.aac"
+    },
+    {
+      "title": "Greeting",
+      "text": "Thank you for choosing A.I. Maid III Labyrinth, please use your voice to assign me a task.",
+      "filename": "File:vo_renou_greeting_001.aac"
+    },
+    {
+      "title": "Conversation 1",
+      "text": "Garbage detected? My apologies. Labyrinth will clear them right away.",
+      "filename": "File:vo_renou_talk1_001.aac"
+    },
+    {
+      "title": "Conversation 2",
+      "text": "How may Labyrinth be of service, Chief? Would you like a cup of tea or something to eat? Or perhaps you'd like Labyrinth massage your shoulders?",
+      "filename": "File:vo_renou_talk1_002.aac"
+    },
+    {
+      "title": "Conversation 3",
+      "text": "Warning! Blade damage threshold exceeded 0.02%. Requesting full replacement to guarantee continued efficiency.",
+      "filename": "File:vo_renou_talk1_003.aac"
+    },
+    {
+      "title": "Special Conversation 1",
+      "text": "Cute maid module activated, enabling custom title function. Chief, would you like me to refer to you with a new title? Your Excellency? Sir? Or perhaps... Master?",
+      "filename": "File:vo_renou_talk2_001.aac"
+    },
+    {
+      "title": "Special Conversation 2",
+      "text": "My apologies, Chief, but Labyrinth does not have a facial expression module installed. But I can tell you that my current mood is very happy.",
+      "filename": "File:vo_renou_talk2_002.aac"
+    },
+    {
+      "title": "Special Conversation 3",
+      "text": "Labyrinth hates the Syndicate, as well as my former self... but Labyrinth won't fret about the past again, because Labyrinth met Chief...",
+      "filename": "File:vo_renou_talk2_003.aac"
+    },
+    {
+      "title": "Full Compliance",
+      "text": "Relationship module downloaded. Please set Labyrinth's relationship level with Chief. Available levels include: \"Love\", \"Love\", \"Love\", and \"Love\".",
+      "filename": "File:vo_renou_obeyfull_001.aac"
+    },
+    {
+      "title": "Idle",
+      "text": "Chief? Chief? Chief? Please don't stand here and distract Labyrinth form her work. Unless there is something I can help you with?",
+      "filename": "File:vo_renou_idle_001.aac"
+    },
+    {
+      "title": "Annoyed",
+      "text": "Sensory system disabled... you may continue now, Chief.",
+      "filename": "File:vo_renou_clicking_001.aac"
+    },
+    {
+      "title": "Special Attention",
+      "text": "Detected signal source: Chief. Please activate the chat module.",
+      "filename": "File:vo_renou_specialattention_001.aac"
+    },
+    {
+      "title": "Dispatch",
+      "text": "Mission received.",
+      "filename": "File:vo_renou_dispatch_001.aac"
+    },
+    {
+      "title": "Dispatch Complete",
+      "text": "Mission accomplished.",
+      "filename": "File:vo_renou_dispatch2_001.aac"
+    },
+    {
+      "title": "Level Up",
+      "text": "Hardware upgrade.",
+      "filename": "File:vo_renou_levelup_002.aac"
+    },
+    {
+      "title": "Join Team",
+      "text": "Mode switch, action, confirm.",
+      "filename": "File:bt_renou_jointeam_001.aac"
+    }
+  ],
+  "fortune_and_prosperity": [
+    {
+      "title": "Obtain Attire",
+      "text": "Welcome to Fulong Restaurant. We have everything from home-style stir-fry to seasonal seafood. [Beep Beep] Dining rules: This is a non-smoking venue. Please do not ring your own food and drink. Thank you for your cooperation.",
+      "filename": "File:vo_renou_fuguixinglong_cacha_001.aac"
+    },
+    {
+      "title": "Greeting",
+      "text": "Hello, dear guest. Please take a seat. Sorry, but Labyrinth busy at the moment. You may scan the QR code on the table to order. Thank you for your cooperation.",
+      "filename": "File:vo_renou_fuguixinglong_greeting_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 1",
+      "text": "During business hours, please don't flag the waitress unless you require service. ''Chief the mission still ongoing. Please don't blow our cover.''",
+      "filename": "File:vo_renou_fuguixinglong_talk_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 2",
+      "text": "Labyrinth is needed here. It's a pleasure for Labyrinth to assist others. Labyrinth likes it here.",
+      "filename": "File:vo_renou_fuguixinglong_talk_002.aac"
+    },
+    {
+      "title": "Idle",
+      "text": "This phase of work is complete. Our revenue today is 7777 Discoins. What a lucky number, Chief!",
+      "filename": "File:vo_renou_fuguixinglong_idle_001.aac"
+    },
+    {
+      "title": "Annoyed",
+      "text": "Please do not hit or slap the waitress. Any damage caused will require ten times the compensation.",
+      "filename": "File:vo_renou_fuguixinglong_clicking_001.aac"
+    },
+    {
+      "title": "Level Up",
+      "text": "Waitering Efficiency is increased.",
+      "filename": "File:vo_renou_fuguixinglong_levelup_002.aac"
+    },
+    {
+      "title": "Special Attention",
+      "text": "Don't worry, Chief. The target has not yet appeared. If there are no other requests, please vacate the doorway so that other guests may enter and exit. Thank you for your cooperation.",
+      "filename": "File:vo_renou_fuguixinglong_specialattention_001.aac"
+    }
+  ]
+}

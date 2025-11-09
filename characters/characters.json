@@ -83,6 +83,18 @@
                     "displayName": "Cageling"
                 }
             ]
+        }, {
+            "name": "augustus",
+            "displayName": "Augustus",
+            "rank": "S",
+            "libram": "WAR",
+            "tendency": "Reticle",
+            "category": "Sinners",
+            "attires": [{
+                    "name": "default",
+                    "displayName": "Default"
+                }
+            ]
         },
         {
             "name": "bai_yi",
@@ -825,6 +837,18 @@
                 {
                     "name": "northward_to_whitesands",
                     "displayName": "Northward To Whitesands"
+                }
+            ]
+        }, {
+            "name": "hellasp",
+            "displayName": "Necresta Hella",
+            "rank": "S",
+            "libram": "FAMINE",
+            "tendency": "Umbra",
+            "category": "Sinners",
+            "attires": [{
+                    "name": "default",
+                    "displayName": "Default"
                 }
             ]
         },
@@ -1879,6 +1903,18 @@
                     "displayName": "Whimsy Escape"
                 }
             ]
+        }, {
+            "name": "siglinde",
+            "displayName": "Siglinde",
+            "rank": "A",
+            "libram": "WAR",
+            "tendency": "Endura",
+            "category": "Sinners",
+            "attires": [{
+                    "name": "default",
+                    "displayName": "Default"
+                }
+            ]
         },
         {
             "name": "stargazer",
@@ -1945,6 +1981,18 @@
                     "displayName": "Luminous Night"
                 }
             ]
+        }, {
+            "name": "synex",
+            "displayName": "Synex",
+            "rank": "S",
+            "libram": "FAMINE",
+            "tendency": "Fury",
+            "category": "Sinners",
+            "attires": [{
+                    "name": "default",
+                    "displayName": "Default"
+                }
+            ]
         },
         {
             "name": "tetra",
@@ -1977,6 +2025,17 @@
                     "displayName": "Default"
                 }
             ]
+        }, {
+            "name": "thani",
+            "displayName": "Thani",
+            "rank": "A",
+            "libram": "FAMINE",
+            "tendency": "Arcane",
+            "category": "Sinners",
+            "attires": [{
+                "name": "default",
+                "displayName": "Default"
+            }]
         },
         {
             "name": "thistle",

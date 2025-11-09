@@ -1,0 +1,161 @@
+{
+  "default": [
+    {
+      "title": "Obtain the Sinner",
+      "text": "Hmph. Finally found me. It's fine. As long as the guitar is still here, anywhere will do.",
+      "filename": "File:vo_geji_cacha_001.aac"
+    },
+    {
+      "title": "Raise to Phase 1",
+      "text": "Yes, that's it! Quick, give me a paper and pen! A new tune came to me, I need to jot it down!",
+      "filename": "File:vo_geji_promotion_001.aac"
+    },
+    {
+      "title": "Raise to Phase 3",
+      "text": "I can wow the audience even with a harp.",
+      "filename": "File:vo_geji_promotion2_001.aac"
+    },
+    {
+      "title": "Level Start",
+      "text": "Go, Krist.",
+      "filename": "File:vo_geji_battlebegin_001.aac"
+    },
+    {
+      "title": "Win Battles",
+      "text": "Done!",
+      "filename": "File:vo_geji_battlewin_001.aac"
+    },
+    {
+      "title": "Lose Battles",
+      "text": "What a **** performance!",
+      "filename": "File:vo_geji_battlelose_001.aac"
+    },
+    {
+      "title": "Ultimate Skill",
+      "text": "Solo time!",
+      "filename": "File:bt_geji_uniqueskill_001.aac"
+    },
+    {
+      "title": "Die in Battles",
+      "text": "Can't even... get into... a 27-year-old club... hahaha...",
+      "filename": "File:bt_geji_dead_001.aac"
+    },
+    {
+      "title": "Greeting",
+      "text": "Good timing. Let me hear your demo.",
+      "filename": "File:vo_geji_greeting_001.aac"
+    },
+    {
+      "title": "Conversation 1",
+      "text": "As long as I'm still alive, those records companies can fuck off. No way in hell would I let them steal Anavrin's songs.",
+      "filename": "File:vo_geji_talk1_001.aac"
+    },
+    {
+      "title": "Conversation 2",
+      "text": "My favorite food? Coffee with milk, and strawberry cake... what did you expect? You thought I could live on alcohol alone?",
+      "filename": "File:vo_geji_talk1_002.aac"
+    },
+    {
+      "title": "Conversation 3",
+      "text": "My dad always used to say that God blessed me with musical talent so I wouldn't take the wrong path... Haha, pity I don't believe in God, nor did I choose the right path.",
+      "filename": "File:vo_geji_talk1_003.aac"
+    },
+    {
+      "title": "Special Conversation 1",
+      "text": "Back then, our lead singer would always holler about burning this city to ashes. Ironically, he became the first of the bunch to burn to ashes.",
+      "filename": "File:vo_geji_talk2_001.aac"
+    },
+    {
+      "title": "Special Conversation 2",
+      "text": "Maybe because it happened so long ago, but I don't hate her so much anymore. As long as she stops plotting against Anavrin, she can do whatever she wants. I won't stop her anymore.",
+      "filename": "File:vo_geji_talk2_002.aac"
+    },
+    {
+      "title": "Special Conversation 3",
+      "text": "When this is all over... If that day comes, I want to keep on performing. Of course, I'll leave you a front row seat. Don't you dare not show up.",
+      "filename": "File:vo_geji_talk2_003.aac"
+    },
+    {
+      "title": "Full Compliance",
+      "text": "In the past few years, all I had was this guitar. Now... I don't want to sound corny, but thank you for being by my side.",
+      "filename": "File:vo_geji_obeyfull_001.aac"
+    },
+    {
+      "title": "Idle",
+      "text": "But I'm a creep, I'm a weirdo. What the hell am I doing here? I don't belong here.",
+      "filename": "File:vo_geji_idle_001.aac"
+    },
+    {
+      "title": "Annoyed",
+      "text": "Get lost!",
+      "filename": "File:vo_geji_clicking_001.aac"
+    },
+    {
+      "title": "Special Attention",
+      "text": "Of course I care about the audience, but don't wag your finger at me and bullshit before the song is even finished. Got it?",
+      "filename": "File:vo_geji_specialattention_001.aac"
+    },
+    {
+      "title": "Dispatch",
+      "text": "Perfect! I can meet some old friends on the way.",
+      "filename": "File:vo_geji_dispatch_001.aac"
+    },
+    {
+      "title": "Dispatch Complete",
+      "text": "Come as you are, as you were, as I want you to be.",
+      "filename": "File:vo_geji_dispatch2_001.aac"
+    },
+    {
+      "title": "Level Up",
+      "text": "New riff, not bad.",
+      "filename": "File:vo_geji_levelup_002.aac"
+    },
+    {
+      "title": "Join Team",
+      "text": "Bass drummer get ready! The performance is about to start.",
+      "filename": "File:bt_geji_jointeam_001.aac"
+    }
+  ],
+  "backstage_break": [
+    {
+      "title": "Level Up",
+      "text": "It's dark chocolate. Want one?",
+      "filename": "File:vo_geji_houtaijianqi_levelup_001.aac"
+    },
+    {
+      "title": "Obtain Attire",
+      "text": "Why are you following me backstage? Ugh, no need to worry about me.",
+      "filename": "File:vo_geji_houtaijianqi_cacha_001.aac"
+    },
+    {
+      "title": "Greeting",
+      "text": "Find yourself a seat, but just a heads-up—I broke a chair in a fight here and can't remember which one.",
+      "filename": "File:vo_geji_houtaijianqi_greeting_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 1",
+      "text": "It's dark, cramped, and cluttered backstage, with music loud enough to deafen.\nBut here, I feel alive.",
+      "filename": "File:vo_geji_houtaijianqi_body_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 2",
+      "text": "Thanks for the bouquet, Chief. Send me a bigger one when I go on a world tour someday.",
+      "filename": "File:vo_geji_houtaijianqi_body_002.aac"
+    },
+    {
+      "title": "Idle",
+      "text": "It's nice to have someone to talk to during breaks.",
+      "filename": "File:vo_geji_houtaijianqi_idle_001.aac"
+    },
+    {
+      "title": "Annoyed",
+      "text": "Heck, I don't have to dress as boring as you to go on stage.",
+      "filename": "File:vo_geji_houtaijianqi_clicking_001.aac"
+    },
+    {
+      "title": "Special Attention",
+      "text": "Nice view from here, huh? You get to take in the whole stage—and me.",
+      "filename": "File:vo_geji_houtaijianqi_specialattention_001.aac"
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "default": [
+    {
+      "title": "Obtain the Sinner",
+      "text": "You actually invited a phantom robber inside... are you expecting me to steal something?",
+      "filename": "File:vo_tetra_cacha_001.aac"
+    },
+    {
+      "title": "Raise to Phase 1",
+      "text": "In these few seconds, I'll be watching you carefully.",
+      "filename": "File:vo_tetra_promotion_001.aac"
+    },
+    {
+      "title": "Raise to Phase 3",
+      "text": "When you catch up with time, you will feel that you can change everything.",
+      "filename": "File:vo_tetra_promotion2_001.aac"
+    },
+    {
+      "title": "Level Start",
+      "text": "I already know the other side's plan like the back of my hand.",
+      "filename": "File:vo_tetra_battlebegin_001.aac"
+    },
+    {
+      "title": "Win Battles",
+      "text": "I planned this operation, so naturally it is foolproof.",
+      "filename": "File:vo_tetra_battlewin_001.aac"
+    },
+    {
+      "title": "Lose Battles",
+      "text": "Time's up! Retreat!",
+      "filename": "File:vo_tetra_battlelose_001.aac"
+    },
+    {
+      "title": "Ultimate Skill",
+      "text": "Time's up!",
+      "filename": "File:bt_tetra_uniqueskill_001.aac"
+    },
+    {
+      "title": "Die in Battles",
+      "text": "Ha... in a way, that's also a type of escape.",
+      "filename": "File:bt_tetra_dead_001.aac"
+    },
+    {
+      "title": "Greeting",
+      "text": "Hello, Chief of MBCC. Let me steal some of your time. Please, stop working for a moment. Let's have a chat.",
+      "filename": "File:vo_tetra_greeting_001.aac"
+    },
+    {
+      "title": "Conversation 1",
+      "text": "When time is frozen, this hourglass is the only timekeeping device that will keep on churning.",
+      "filename": "File:vo_tetra_talk1_001.aac"
+    },
+    {
+      "title": "Conversation 2",
+      "text": "The more constrained I am during the day... the wilder I am at night... hehe...",
+      "filename": "File:vo_tetra_talk1_002.aac"
+    },
+    {
+      "title": "Conversation 3",
+      "text": "Speaking of that little bunny... Don't you think she's interesting? But she leaves behind too many traces. Rather than have someone else catch her, it's better to... tie her to my side.",
+      "filename": "File:vo_tetra_talk1_003.aac"
+    },
+    {
+      "title": "Special Conversation 1",
+      "text": "I'm leaving my back all to Pricilla... isn't it romantic?",
+      "filename": "File:vo_tetra_talk2_001.aac"
+    },
+    {
+      "title": "Special Conversation 2",
+      "text": "Whether it's Eastside or Paradeisos, under the glitzy facade, it's all chains and shackles.",
+      "filename": "File:vo_tetra_talk2_002.aac"
+    },
+    {
+      "title": "Special Conversation 3",
+      "text": "Even though I'm imprisoned here... this place is actually quite free.",
+      "filename": "File:vo_tetra_talk2_003.aac"
+    },
+    {
+      "title": "Full Compliance",
+      "text": "I already have the most precious thing in the world. Guess I'll... wash my hands of my old business, right now, in front of you.",
+      "filename": "File:vo_tetra_obeyfull_001.aac"
+    },
+    {
+      "title": "Idle",
+      "text": "Let times like these last a bit longer.",
+      "filename": "File:vo_tetra_idle_001.aac"
+    },
+    {
+      "title": "Annoyed",
+      "text": "Are you seeking some thrills, Chief?",
+      "filename": "File:vo_tetra_clicking_001.aac"
+    },
+    {
+      "title": "Special Attention",
+      "text": "Don't blink! Be careful. This little fox's tricks can make you run around in circles.",
+      "filename": "File:vo_tetra_specialattention_001.aac"
+    },
+    {
+      "title": "Dispatch",
+      "text": "I can complete your mission perfectly, but... would I do it?",
+      "filename": "File:vo_tetra_dispatch_001.aac"
+    },
+    {
+      "title": "Dispatch Complete",
+      "text": "I got this gift for you along the way. Hmm? It doesn't count as a gift if it's stolen?",
+      "filename": "File:vo_tetra_dispatch2_001.aac"
+    },
+    {
+      "title": "Level Up",
+      "text": "Yes... there's room to improve.",
+      "filename": "File:vo_tetra_levelup_002.aac"
+    },
+    {
+      "title": "Join Team",
+      "text": "I'll give you five seconds to flee.",
+      "filename": "File:bt_tetra_jointeam_001.aac"
+    }
+  ],
+  "edge_of_nightfall": [
+    {
+      "title": "Obtain Attire",
+      "text": "Don't stand there like a fool! If we start running right now, we'll still have a chance to get the stolen treasure back from that bunny thief.",
+      "filename": "File:vo_tetra_yemubianyuan_cacha_001.aac"
+    },
+    {
+      "title": "Level Up",
+      "text": "Everything is under control.",
+      "filename": "File:vo_tetra_yemubianyuan_levelup_001.aac"
+    },
+    {
+      "title": "Greeting",
+      "text": "Did I scare you with my entrance? But it's the fastest route... Besides, it's great fun to make a fuss at this hypocritical and flashy dinner party, isn't it?",
+      "filename": "File:vo_tetra_yemubianyuan_greeting_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 1",
+      "text": "I have no interest in joining your field. I only volunteered to participate because I happened to discover their manhunt plan while upgrading the internal system for the DisCity Public Security Bureau.",
+      "filename": "File:vo_tetra_yemubianyuan_talk1_001.aac"
+    },
+    {
+      "title": "Ordinary Contact 2",
+      "text": "Whoever sent that notice letter is clearly very confident, daringly leaving a trail of flower petals as her escape route... Is she secretly hoping to be caught?",
+      "filename": "File:vo_tetra_yemubianyuan_talk1_002.aac"
+    },
+    {
+      "title": "Idle",
+      "text": "This direction... Ah, off to the terrace as expected. Care to guess why the security there is as loose as a breeze?",
+      "filename": "File:vo_tetra_yemubianyuan_idle_001.aac"
+    },
+    {
+      "title": "Annoyed",
+      "text": "If you don't want to find something missing from your body later, behave yourself. Will ya, Chief?",
+      "filename": "File:vo_tetra_yemubianyuan_clicking_001.aac"
+    },
+    {
+      "title": "Special Attention",
+      "text": "Stay close to me and I will keep you safe in this chaos.",
+      "filename": "File:vo_tetra_yemubianyuan_specialattention_001.aac"
+    }
+  ]
+}
