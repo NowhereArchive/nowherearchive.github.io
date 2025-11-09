@@ -190,7 +190,13 @@
             "rank": "A",
             "libram": "SLOTH",
             "tendency": "Catalyst",
-            "category": "Sinners"
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                }
+            ]
         },
         {
             "name": "chameleon",
