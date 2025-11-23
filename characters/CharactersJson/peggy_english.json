@@ -115,5 +115,47 @@
             "filename": "File:bt_peggy_jointeam_001.aac",
             "text": "The word fail doesn't exist in my dictionary."
         }
+    ],
+    "jifeiyinlang": [{
+            "title": "Level Up",
+            "filename": "File:vo_qiao_jifeiyinlang_levelup_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Obtain Attire",
+            "filename": "File:vo_qiao_jifeiyinlang_cacha_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Greeting",
+            "filename": "File:vo_qiao_jifeiyinlang_greeting_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "filename": "File:vo_qiao_jifeiyinlang_body_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "filename": "File:vo_qiao_jifeiyinlang_body_002.aac",
+            "text": ""
+        },
+        {
+            "title": "Idle",
+            "filename": "File:vo_qiao_jifeiyinlang_idle_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Annoyed",
+            "filename": "File:vo_qiao_jifeiyinlang_clicking_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Special Attention",
+            "filename": "File:vo_qiao_jifeiyinlang_specialattention_001.aac",
+            "text": ""
+        }
     ]
+
 }

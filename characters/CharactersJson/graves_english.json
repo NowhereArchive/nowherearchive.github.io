@@ -110,6 +110,58 @@
         "text": "I always thought such a tender gaze was reserved only for the exchange of wedding vows... Only you look at me this way, as if I were a normal person and not some terrifying monster.",
         "filename": "File:vo_graves_specialattention_001.aac"
       }
+    ],
+    "youtingmeiying": [{
+        "title": "Level Up",
+        "filename": "File:vo_graves_youtingmeiying_levelup_001.aac",
+        "text": ""
+      },
+      {
+        "title": "Obtain Attire",
+        "filename": "File:vo_graves_youtingmeiying_cacha_001.aac",
+        "text": ""
+      },
+      {
+        "title": "Greeting",
+        "filename": "File:vo_graves_youtingmeiying_greeting_001.aac",
+        "text": ""
+      },
+      {
+        "title": "Ordinary Contact 1",
+        "filename": "File:vo_graves_youtingmeiying_body_001.aac",
+        "text": ""
+      },
+      {
+        "title": "Ordinary Contact 2",
+        "filename": "File:vo_graves_youtingmeiying_body_002.aac",
+        "text": ""
+      },
+      {
+        "title": "Ordinary Contact 3",
+        "filename": "File:vo_graves_youtingmeiying_leg_001.aac",
+        "text": ""
+      },
+      {
+        "title": "Ordinary Contact 4",
+        "filename": "File:vo_graves_youtingmeiying_leg_001.aac",
+        "text": ""
+      },
+      {
+        "title": "Idle",
+        "filename": "File:vo_graves_youtingmeiying_idle_001.aac",
+        "text": ""
+      },
+      {
+        "title": "Special Attention",
+        "filename": "File:vo_graves_youtingmeiying_specialattention_001.aac",
+        "text": ""
+      },
+      {
+        "title": "Pat Head",
+        "filename": "File:vo_graves_youtingmeiying_head_001.aac",
+        "text": ""
+      }
     ]
+
   }
   

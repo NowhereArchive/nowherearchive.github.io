@@ -167,5 +167,46 @@
             "text": "In our line of work, face and identity are our biggest secret. You wouldn't want to know what happened to the last person who stared at me like that... But, you'll keep this secret for me, right? After all, I do like your courtyard, and I hope to see you again the next time I come back.",
             "filename": "File:vo_angell_lurking_lotusblade_specialattention_001.aac"
         }
+    ],
+    "chenxiang": [{
+            "title": "Level Up",
+            "filename": "File:vo_angel_chenxiang_levelup_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Obtain Attire",
+            "filename": "File:vo_angel_chenxiang_cacha_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Greeting",
+            "filename": "File:vo_angel_chenxiang_greeting_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "filename": "File:vo_angel_chenxiang_talk1_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "filename": "File:vo_angel_chenxiang_talk1_002.aac",
+            "text": ""
+        },
+        {
+            "title": "Idle",
+            "filename": "File:vo_angel_chenxiang_idle_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Annoyed",
+            "filename": "File:vo_angel_chenxiang_clicking_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Special Attention",
+            "filename": "File:vo_angel_chenxiang_specialattention_001.aac",
+            "text": ""
+        }
     ]
 }

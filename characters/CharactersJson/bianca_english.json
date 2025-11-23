@@ -172,6 +172,46 @@
             "text": "Whoa, are you recording? Ahem—zoom in on me, please! Bon dinner party, everyone! I, Bianca, the most legendary journalist in DisCity, am here to bring you the breaking news of tonight! Stay tuned!",
             "filename": "File:vo_bianca_in_cider_scoop_specialattention_001.aac"
         }
+    ],
+    "tantiaotuokata": [{
+            "title": "Level Up",
+            "filename": "File:vo_bianca_tantiaotuokata_levelup_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Obtain Attire",
+            "filename": "File:vo_bianca_tantiaotuokata_cacha_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Greeting",
+            "filename": "File:vo_bianca_tantiaotuokata_greeting_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "filename": "File:vo_bianca_tantiaotuokata_talk1_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "filename": "File:vo_bianca_tantiaotuokata_talk1_002.aac",
+            "text": ""
+        },
+        {
+            "title": "Idle",
+            "filename": "File:vo_bianca_tantiaotuokata_idle_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Annoyed",
+            "filename": "File:vo_bianca_tantiaotuokata_clicking_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Special Attention",
+            "filename": "File:vo_bianca_tantiaotuokata_specialattention_001.aac",
+            "text": ""
+        }
     ]
-
 }

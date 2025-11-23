@@ -209,5 +209,46 @@
             "text": "You've got your star, why are you still staring at me? Better think about how many more treasures you have left to trade... Remember, next time you come out to play, don't lose your way.",
             "filename": "File:vo_crache_lucida_mystica_specialattention_001.aac"
         }
+    ],
+    "anlv": [{
+            "title": "Level Up",
+            "filename": "File:vo_crache_anlv_levelup_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Obtain Attire",
+            "filename": "File:vo_crache_anlv_cacha_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Greeting",
+            "filename": "File:vo_crache_anlv_greeting_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "filename": "File:vo_crache_anlv_talk1_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "filename": "File:vo_crache_anlv_talk1_002.aac",
+            "text": ""
+        },
+        {
+            "title": "Idle",
+            "filename": "File:vo_crache_anlv_idle_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Annoyed",
+            "filename": "File:vo_crache_anlv_clicking_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Special Attention",
+            "filename": "File:vo_crache_anlv_specialattention_001.aac",
+            "text": ""
+        }
     ]
 }

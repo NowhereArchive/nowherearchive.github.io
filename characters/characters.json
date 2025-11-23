@@ -37,6 +37,10 @@
                 {
                     "name": "lurking_lotusblade",
                     "displayName": "Lurking Lotusblade"
+                },
+                {
+                    "name": "chenxiang",
+                    "displayName": "Thunder Beat"
                 }
             ]
         },
@@ -137,6 +141,10 @@
                 {
                     "name": "in_cider_scoop",
                     "displayName": "In Cider Scoop"
+                },
+                {
+                    "name": "tantiaotuokata",
+                    "displayName": "Bouncing Toccata"
                 }
             ]
         },
@@ -359,6 +367,10 @@
                 {
                     "name": "lucida_mystica",
                     "displayName": "Lucida Mystica"
+                },
+                {
+                    "name": "anlv",
+                    "displayName": "Shadow Groove"
                 }
             ]
         },
@@ -773,6 +785,10 @@
                 {
                     "name": "default",
                     "displayName": "Default"
+                },
+                {
+                    "name": "youtingmeiying",
+                    "displayName": "Reverie Belle"
                 }
             ]
         },
@@ -1657,6 +1673,10 @@
                 {
                     "name": "default",
                     "displayName": "Default"
+                },
+                {
+                    "name": "jifeiyinlang",
+                    "displayName": "Sensory Hyperwave"
                 }
             ]
         },
@@ -2238,6 +2258,10 @@
                 {
                     "name": "default",
                     "displayName": "Default"
+                },
+                {
+                    "name": "xiaoxianchushang",
+                    "displayName": "Fluttered Heartstrings"
                 }
             ]
         },
@@ -2270,6 +2294,10 @@
                 {
                     "name": "xenospace_pythoness",
                     "displayName": "Xenospace Pythoness"
+                },
+                {
+                    "name": "chaopinkuangchao",
+                    "displayName": "Amped Frenzy"
                 }
             ]
         },

@@ -115,5 +115,82 @@
             "text": "Hehe, I see your darting glances and blushing ears... What's with the shyness? Look at me properly—don't you know how much I enjoy gazing at you too?",
             "filename": "File:vo_yingying_specialattention_001.aac"
         }
+    ],
+    "xiaoxianchushang": [{
+            "title": "Level Up",
+            "filename": "File:vo_yingying_xiaoxianchushang_levelup_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Obtain Attire",
+            "filename": "File:vo_yingying_xiaoxianchushang_cacha_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "filename": "File:vo_yingying_xiaoxianchushang_body_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "filename": "File:vo_yingying_xiaoxianchushang_body_002.aac",
+            "text": ""
+        },
+        {
+            "title": "Greeting",
+            "filename": "File:vo_yingying_xiaoxianchushang_greeting_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Idle",
+            "filename": "File:vo_yingying_xiaoxianchushang_idle_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Pat Head",
+            "filename": "File:vo_yingying_xiaoxianchushang_head_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Ordinary Contact 4",
+            "filename": "File:vo_yingying_xiaoxianchushang_background_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Special Attention",
+            "filename": "File:vo_yingying_xiaoxianchushang_specialattention_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Ordinary Contact 3",
+            "filename": "File:vo_yingying_xiaoxianchushang_hand_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Obtain Attire",
+            "filename": "File:vo_yingying_xiaoxianchushang_cacha_001f.aac",
+            "text": ""
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "filename": "File:vo_yingying_xiaoxianchushang_body_001f.aac",
+            "text": ""
+        },
+        {
+            "title": "Greeting",
+            "filename": "File:vo_yingying_xiaoxianchushang_greeting_001f.aac",
+            "text": ""
+        },
+        {
+            "title": "Special Attention",
+            "filename": "File:vo_yingying_xiaoxianchushang_specialattention_001f.aac",
+            "text": ""
+        },
+        {
+            "title": "Ordinary Contact 3",
+            "filename": "File:vo_yingying_xiaoxianchushang_hand_001f.aac",
+            "text": ""
+        }
     ]
+
 }

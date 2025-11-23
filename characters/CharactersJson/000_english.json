@@ -172,5 +172,46 @@
             "filename": "Vo_000_yidumonv_specialattention_001.aac",
             "text": "Now that you've entered the Pythoness's dimension, you must be prepared to stay with me forever, right? Not a word? Cool, I will take it as a yes."
         }
-    ]
+    ],
+    "chaopinkuangchao": [{
+            "title": "Level Up",
+            "filename": "File:vo_zero_chaopinkuangchao_levelup_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Obtain Attire",
+            "filename": "File:vo_zero_chaopinkuangchao_cacha_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Greeting",
+            "filename": "File:vo_zero_chaopinkuangchao_greeting_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "filename": "File:vo_zero_chaopinkuangchao_talk1_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "filename": "File:vo_zero_chaopinkuangchao_talk1_002.aac",
+            "text": ""
+        },
+        {
+            "title": "Idle",
+            "filename": "File:vo_zero_chaopinkuangchao_idle_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Annoyed",
+            "filename": "File:vo_zero_chaopinkuangchao_clicking_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Special Attention",
+            "filename": "File:vo_zero_chaopinkuangchao_specialattention_001.aac",
+            "text": ""
+        }
+    ]    
 }

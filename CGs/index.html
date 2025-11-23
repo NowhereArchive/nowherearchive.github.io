@@ -284,7 +284,7 @@
             </div>
             <div class="hero-controls">
                 <div class="search-container">
-                    <input type="text" id="searchInput" class="search-input" placeholder="Search chapters..." autocomplete="off">
+                    <input type="text" id="searchInput" class="search-input" placeholder="Search CGs..." autocomplete="off">
                     <span class="search-shortcut" title="Press / to search">/</span>
                     <button class="search-button" id="searchButton">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -421,6 +421,45 @@
         if (categories.length > 0) {
             filterChapters(categories[0]);
         }
+
+        // Search functionality
+        const searchInput = document.getElementById('searchInput');
+        const searchButton = document.getElementById('searchButton');
+        const searchShortcut = document.querySelector('.search-shortcut');
+
+        // Focus search on / key press
+        document.addEventListener('keydown', (e) => {
+            if (e.key === '/' && document.activeElement !== searchInput) {
+                e.preventDefault();
+                searchInput.focus();
+            }
+        });
+
+        // Handle search
+        function performSearch() {
+            const searchTerm = searchInput.value.toLowerCase();
+            const cards = document.querySelectorAll('.chapter-card');
+            
+            cards.forEach(card => {
+                const title = card.querySelector('.chapter-title').textContent.toLowerCase();
+                if (title.includes(searchTerm)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Event listeners for search
+        searchInput.addEventListener('input', performSearch);
+        searchButton.addEventListener('click', performSearch);
+        
+        // Clear search when clicking the 'All' tab
+        document.querySelector('.dynamic-tabs button').addEventListener('click', () => {
+            searchInput.value = '';
+            const cards = document.querySelectorAll('.chapter-card');
+            cards.forEach(card => card.style.display = 'block');
+        });
     })
     .catch(error => {
         console.error('Error loading chapters:', error);
