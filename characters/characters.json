@@ -88,6 +88,18 @@
                 }
             ]
         }, {
+            "name": "ark",
+            "displayName": "Ark",
+            "rank": "A",
+            "libram": "LOVE",
+            "tendency": "Fury",
+            "category": "Sinners",
+            "attires": [{
+                    "name": "default",
+                    "displayName": "Default"
+                }
+            ]
+        }, {
             "name": "augustus",
             "displayName": "Augustus",
             "rank": "S",
@@ -205,6 +217,17 @@
                     "displayName": "Default"
                 }
             ]
+        }, {
+            "name": "ceto",
+            "displayName": "Ceto",
+            "rank": "S",
+            "libram": "WAR",
+            "tendency": "Umbra",
+            "category": "Sinners",
+            "attires": [{
+                "name": "default",
+                "displayName": "Default"
+            }]
         },
         {
             "name": "chameleon",
