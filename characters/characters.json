@@ -914,6 +914,19 @@
                     "displayName": "Lambent Wishbearer"
                 }
             ]
+        },{
+            "name": "hilda",
+            "displayName": "Hilda",
+            "rank": "S",
+            "libram": "ANGER",
+            "tendency": "Arcane",
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                }
+            ]
         },
         {
             "name": "horo",

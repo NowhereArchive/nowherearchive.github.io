@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link href="Styles.css" rel="stylesheet">
-    <link href="NavBar.css" rel="stylesheet">
+    <link href="../NavBar.css" rel="stylesheet">
+    <link href="../css/utilities.css" rel="stylesheet">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3M02N0366N"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-702GZFHJQE"></script>
     <script>
@@ -270,7 +271,8 @@
         </div>
     </nav>
     
-    
+    <!-- Breadcrumbs -->
+    <div data-breadcrumbs="CGs"></div>
     
     <section class="hero">
         <div class="hero-content">
@@ -300,6 +302,7 @@
         <div class="center-container" id="chapterGrid"></div>
     </main>
 
+    <script src="../js/utilities.js"></script>
     <script>
         let dropdowns = document.querySelectorAll('.navbar .dropdown-toggler');
         let dropdownIsOpen = false;
@@ -355,7 +358,12 @@
         handleSmallScreens();
 
         fetch('chapters.json')
-    .then(response => response.json())
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+    })
     .then(data => {
         const categories = Object.keys(data);
         const navbarTabs = document.getElementById('navbarTabs');
@@ -377,6 +385,12 @@
         function filterChapters(selectedCategory) {
             const chapterGrid = document.getElementById('chapterGrid');
             chapterGrid.innerHTML = '';
+            
+            // Show loading state
+            let loadingDiv = null;
+            if (typeof showLoading === 'function') {
+                loadingDiv = showLoading(chapterGrid, 'Loading chapters...');
+            }
 
             let chaptersToDisplay = [];
 
@@ -399,7 +413,9 @@
             const heading = document.querySelector('h1');
             heading.innerText = selectedCategory;
 
-            chaptersToDisplay.forEach(chapter => {
+            // Use requestAnimationFrame to ensure loading state is visible
+            requestAnimationFrame(() => {
+                chaptersToDisplay.forEach(chapter => {
                 const chapterCard = document.createElement('div');
                 chapterCard.classList.add('chapter-card');
 
@@ -409,11 +425,17 @@
                     <div class="chapter-title">${chapter.displayName}</div>
                 `;
 
-                chapterCard.onclick = () => {
-                    window.location.href = `chapter.html?name=${chapter.name}`;
-                };
+                    chapterCard.onclick = () => {
+                        window.location.href = `chapter.html?name=${chapter.name}`;
+                    };
 
-                chapterGrid.appendChild(chapterCard);
+                    chapterGrid.appendChild(chapterCard);
+                });
+                
+                // Hide loading state after rendering
+                if (loadingDiv && typeof hideLoading === 'function') {
+                    hideLoading(loadingDiv);
+                }
             });
         }
 
@@ -463,8 +485,13 @@
     })
     .catch(error => {
         console.error('Error loading chapters:', error);
-        document.getElementById('chapterGrid').innerHTML = `
-            <p>Error loading chapters. Please check the console for details.</p>
+        const chapterGrid = document.getElementById('chapterGrid');
+        chapterGrid.innerHTML = `
+            <div class="error-container">
+                <h3>Error Loading Chapters</h3>
+                <p>Failed to load chapter data. Please refresh the page or try again later.</p>
+                <button onclick="location.reload()">Reload Page</button>
+            </div>
         `;
     });
 

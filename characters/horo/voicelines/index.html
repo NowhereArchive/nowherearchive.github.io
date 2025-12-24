@@ -37,6 +37,7 @@
   <title>Horo Voicelines - Path To Nowhere Archive</title>
   <link href="../../Styles.css" rel="stylesheet" />
   <link href="../../NavBar.css" rel="stylesheet" />
+  <link href="../../css/utilities.css" rel="stylesheet" />
   <style>
     .hero-controls {
       max-width: 800px;
@@ -200,6 +201,10 @@
       </div>
     </div>
   </nav>
+  
+  <!-- Breadcrumbs -->
+  <div data-breadcrumbs="characters/horo"></div>
+  
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content">
@@ -207,7 +212,7 @@
       <div class="hero-controls">
         <div class="search-container">
           <input type="text" id="searchInput" class="search-input" placeholder="Search voicelines..."
-            autocomplete="off" />
+            autocomplete="off" aria-label="Search voicelines" />
           <span class="search-shortcut" title="Press / to search">/</span>
           <button class="search-button" id="searchButton">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -228,6 +233,7 @@
 
   <div id="voicelinesContainer"></div>
 
+  <script src="../../js/utilities.js"></script>
   <script>
     const characterName = "horo";
     let language = "english";
@@ -235,14 +241,26 @@
     let attireDisplayNames = {};
 
     async function loadCharacterData() {
-      const response = await fetch('../../characters.json');
-      const data = await response.json();
-      const character = data.characters.find(c => c.name === characterName);
+      try {
+        const response = await fetch('../../characters.json');
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        const character = data.characters.find(c => c.name === characterName);
 
-      if (character && character.attires) {
-        character.attires.forEach(attire => {
-          attireDisplayNames[attire.name] = attire.displayName;
-        });
+        if (character && character.attires) {
+          character.attires.forEach(attire => {
+            attireDisplayNames[attire.name] = attire.displayName;
+          });
+        }
+        return true;
+      } catch (error) {
+        console.error('Error loading character data:', error);
+        if (typeof showError === 'function') {
+          showError('Failed to load character data. Some features may be unavailable.');
+        }
+        return false;
       }
     }
 
@@ -269,8 +287,19 @@
       const voicelines = data[sanitizedAttire];
 
       if (!voicelines) {
-        voicelinesContainer.innerHTML = `<p>No voice lines found for ${sanitizedAttire} in ${sanitizedLanguage}.</p>`;
+        voicelinesContainer.innerHTML = `
+          <div class="error-container">
+            <h3>No Voicelines Found</h3>
+            <p>No voice lines found for ${sanitizedAttire} in ${sanitizedLanguage}.</p>
+          </div>
+        `;
         return;
+      }
+      
+      // Show loading state
+      let loadingDiv = null;
+      if (typeof showLoading === 'function') {
+        loadingDiv = showLoading(voicelinesContainer, 'Loading voicelines...');
       }
 
       const englishVoicelinesFile = `../../CharactersJson/${characterName}_english.json`;
@@ -296,16 +325,26 @@
               voicelinesContainer,
               voicelines,
               sanitizedAttire,
-              englishVoicelineMap
+              englishVoicelineMap,
+              loadingDiv
             );
             filterVoicelines();
           })
           .catch((error) => {
             console.error("Error loading English voicelines:", error);
-            voicelinesContainer.innerHTML = `<p>Error loading English voice lines.</p>`;
+            if (loadingDiv && typeof hideLoading === 'function') {
+              hideLoading(loadingDiv);
+            }
+            voicelinesContainer.innerHTML = `
+              <div class="error-container">
+                <h3>Error Loading Translations</h3>
+                <p>Failed to load English translations. Showing original language only.</p>
+                <button onclick="location.reload()">Reload Page</button>
+              </div>
+            `;
           });
       } else {
-        displayVoicelines(voicelinesContainer, voicelines, sanitizedAttire);
+        displayVoicelines(voicelinesContainer, voicelines, sanitizedAttire, null, loadingDiv);
         filterVoicelines();
       }
     }
@@ -314,8 +353,14 @@
       container,
       voicelines,
       sanitizedAttire,
-      englishVoicelineMap = {}
+      englishVoicelineMap = {},
+      loadingDiv = null
     ) {
+      // Hide loading state if provided
+      if (loadingDiv && typeof hideLoading === 'function') {
+        hideLoading(loadingDiv);
+      }
+      
       container.innerHTML = "";
 
       voicelines.forEach((voiceline) => {
@@ -395,9 +440,16 @@
             navigator.clipboard.writeText(textToCopy).then(() => {
               const originalHTML = copyBtn.innerHTML;
               copyBtn.innerHTML = `<svg viewBox="0 0 24 24" width="16" height="16"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>`;
+              copyBtn.setAttribute('aria-label', 'Copied!');
               setTimeout(() => {
                 copyBtn.innerHTML = originalHTML;
+                copyBtn.setAttribute('aria-label', 'Copy text');
               }, 2000);
+            }).catch(err => {
+              console.error('Failed to copy text:', err);
+              if (typeof showError === 'function') {
+                showError('Failed to copy text to clipboard.');
+              }
             });
           });
         }
@@ -447,15 +499,21 @@
         const progressContainer = lineDiv.querySelector('.progress-container');
         if (progressContainer) {
           progressContainer.addEventListener('click', (e) => {
-            if (!currentAudio) return;
+            if (!currentAudio || !isFinite(currentAudio.duration) || currentAudio.duration <= 0) return;
 
             const rect = progressContainer.getBoundingClientRect();
-            const pos = (e.clientX - rect.left) / rect.width;
+            const pos = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
             currentAudio.currentTime = pos * currentAudio.duration;
 
             const progressBar = progressContainer.querySelector('.progress-bar');
+            const durationDisplay = lineDiv.querySelector('.voiceline-duration');
+            
             if (progressBar) {
               progressBar.style.width = `${pos * 100}%`;
+            }
+            
+            if (durationDisplay) {
+              durationDisplay.textContent = formatTime(currentAudio.currentTime);
             }
           });
         }
@@ -475,6 +533,7 @@
           attire.replace(/_/g, " ").replace(/\b\w/g, (char) => char.toUpperCase());
 
 
+        button.setAttribute('aria-label', `Switch to ${button.innerText} attire`);
         button.onclick = () => {
           const buttons = attireButtonsContainer.getElementsByClassName("attire-button");
           Array.from(buttons).forEach((btn) => btn.classList.remove("active-button"));
@@ -499,17 +558,18 @@
       const languages = ["English", "Japanese", "Chinese", "Korean"];
       const availableLanguages = [];
 
-      languages.forEach((lang) => {
+      const languagePromises = languages.map((lang) => {
         const languageFile = `../../CharactersJson/${characterName}_${sanitizeName(
           lang
         )}.json`;
-        fetch(languageFile)
+        return fetch(languageFile)
           .then((response) => {
             if (response.ok) {
               availableLanguages.push(lang);
               const button = document.createElement("button");
               button.classList.add("language-button");
               button.innerText = lang;
+              button.setAttribute('aria-label', `Switch to ${lang} language`);
               button.onclick = () => {
                 const buttons =
                   languageButtonsContainer.getElementsByClassName(
@@ -526,9 +586,18 @@
               languageButtonsContainer.appendChild(button);
             }
           })
-          .catch((error) =>
-            console.error(`Error loading ${lang} file:`, error)
-          );
+          .catch((error) => {
+            console.error(`Error loading ${lang} file:`, error);
+            // Silently fail for unavailable languages
+          });
+      });
+      
+      // Set first available language as active
+      Promise.all(languagePromises).then(() => {
+        const firstButton = languageButtonsContainer.querySelector('.language-button');
+        if (firstButton) {
+          firstButton.classList.add('active-button');
+        }
       });
     }
 
@@ -543,18 +612,39 @@
 
     async function loadVoicelines() {
       const voicelinesFile = `../../CharactersJson/${characterName}_${language}.json`;
+      const voicelinesContainer = document.getElementById("voicelinesContainer");
+      
+      // Show loading state
+      let loadingDiv = null;
+      if (typeof showLoading === 'function') {
+        loadingDiv = showLoading(voicelinesContainer, 'Loading voicelines...');
+      }
 
       try {
         const response = await fetch(voicelinesFile);
         if (!response.ok) {
-          throw new Error("Error loading voice lines");
+          throw new Error(`HTTP error! status: ${response.status}`);
         }
         const data = await response.json();
+
+        if (loadingDiv && typeof hideLoading === 'function') {
+          hideLoading(loadingDiv);
+        }
 
         createAttireButtons(data);
         renderVoicelines(data, Object.keys(data)[0], language);
       } catch (error) {
         console.error("Error loading voice lines:", error);
+        if (loadingDiv && typeof hideLoading === 'function') {
+          hideLoading(loadingDiv);
+        }
+        voicelinesContainer.innerHTML = `
+          <div class="error-container">
+            <h3>Error Loading Voicelines</h3>
+            <p>Failed to load voice lines. Please check your connection and try again.</p>
+            <button onclick="location.reload()">Reload Page</button>
+          </div>
+        `;
       }
     }
 
@@ -569,35 +659,89 @@
     }
 
     function updateProgress(card) {
+      // Clear any existing interval
       if (currentProgressInterval) clearInterval(currentProgressInterval);
 
-      currentProgressInterval = setInterval(() => {
-        if (currentAudio) {
-          const progress = (currentAudio.currentTime / currentAudio.duration) * 100;
-          const progressBar = card.querySelector('.progress-bar');
-          const durationDisplay = card.querySelector('.voiceline-duration');
-
-          if (progressBar) {
-            progressBar.style.width = `${progress}%`;
-          }
-
-          if (durationDisplay) {
-            durationDisplay.textContent = formatTime(currentAudio.currentTime);
-          }
+      // Function to update progress bar
+      const updateProgressBar = () => {
+        if (!currentAudio || !card) return;
+        
+        const duration = currentAudio.duration;
+        const currentTime = currentAudio.currentTime;
+        
+        // Validate duration (check for NaN, Infinity, or 0)
+        if (!isFinite(duration) || duration <= 0) {
+          return; // Duration not loaded yet or invalid
         }
+        
+        const progress = Math.min(100, Math.max(0, (currentTime / duration) * 100));
+        const progressBar = card.querySelector('.progress-bar');
+        const durationDisplay = card.querySelector('.voiceline-duration');
+
+        if (progressBar) {
+          progressBar.style.width = `${progress}%`;
+        }
+
+        if (durationDisplay) {
+          durationDisplay.textContent = formatTime(currentTime);
+        }
+      };
+
+      // Use timeupdate event for more accurate updates (fires ~4 times per second)
+      const timeUpdateHandler = () => {
+        updateProgressBar();
+      };
+      
+      currentAudio.addEventListener('timeupdate', timeUpdateHandler);
+      
+      // Also use interval as backup (every 100ms for smoother updates)
+      currentProgressInterval = setInterval(() => {
+        updateProgressBar();
       }, 100);
 
+      // Handle audio end - ensure progress reaches 100%
       currentAudio.addEventListener('ended', function onEnd() {
-        clearInterval(currentProgressInterval);
+        // Clear interval
+        if (currentProgressInterval) {
+          clearInterval(currentProgressInterval);
+          currentProgressInterval = null;
+        }
+        
+        // Remove timeupdate listener
+        currentAudio.removeEventListener('timeupdate', timeUpdateHandler);
+        
+        // Ensure progress bar reaches 100%
+        const progressBar = card.querySelector('.progress-bar');
+        if (progressBar) {
+          progressBar.style.width = '100%';
+        }
+        
+        // Update duration display to show final time
+        const durationDisplay = card.querySelector('.voiceline-duration');
+        if (durationDisplay && currentAudio.duration) {
+          durationDisplay.textContent = formatTime(currentAudio.duration);
+        }
+        
+        // Reset play button
         const playBtn = card.querySelector('.play-btn');
         if (playBtn) {
           playBtn.querySelector('.play-icon').style.display = 'block';
           playBtn.querySelector('.pause-icon').style.display = 'none';
         }
-        const progressBar = card.querySelector('.progress-bar');
-        if (progressBar) progressBar.style.width = '0%';
-        currentAudio.removeEventListener('ended', onEnd);
+        
+        // Reset after a brief moment
+        setTimeout(() => {
+          if (progressBar) {
+            progressBar.style.width = '0%';
+          }
+          if (durationDisplay) {
+            durationDisplay.textContent = '0:00';
+          }
+        }, 500);
       }, { once: true });
+      
+      // Store handler for cleanup
+      currentAudio._timeUpdateHandler = timeUpdateHandler;
     }
 
     function playVoice(file, card) {
@@ -609,7 +753,11 @@
             playBtn.querySelector('.play-icon').style.display = 'block';
             playBtn.querySelector('.pause-icon').style.display = 'none';
           }
-          clearInterval(currentProgressInterval);
+          // Clear interval but keep timeupdate listener for when we resume
+          if (currentProgressInterval) {
+            clearInterval(currentProgressInterval);
+            currentProgressInterval = null;
+          }
           return;
         } else if (currentAudio) {
           currentAudio.play();
@@ -645,11 +793,28 @@
         updateProgress(card);
       }).catch(error => {
         console.error('Error playing audio:', error);
+        if (typeof showError === 'function') {
+          showError('Failed to play audio. The file may be unavailable or corrupted.');
+        }
+        // Reset UI on error
+        const playBtn = card.querySelector('.play-btn');
+        if (playBtn) {
+          playBtn.querySelector('.play-icon').style.display = 'block';
+          playBtn.querySelector('.pause-icon').style.display = 'none';
+        }
+        currentAudio = null;
+        currentPlayingCard = null;
       });
     }
 
     function stopVoice() {
       if (currentAudio) {
+        // Remove timeupdate listener if it exists
+        if (currentAudio._timeUpdateHandler) {
+          currentAudio.removeEventListener('timeupdate', currentAudio._timeUpdateHandler);
+          delete currentAudio._timeUpdateHandler;
+        }
+        
         if (currentPlayingCard) {
           const playBtn = currentPlayingCard.querySelector('.play-btn');
           if (playBtn) {
@@ -658,26 +823,44 @@
           }
           const progressBar = currentPlayingCard.querySelector('.progress-bar');
           if (progressBar) progressBar.style.width = '0%';
+          
+          const durationDisplay = currentPlayingCard.querySelector('.voiceline-duration');
+          if (durationDisplay) durationDisplay.textContent = '0:00';
         }
 
         currentAudio.pause();
         currentAudio.currentTime = 0;
         currentAudio = null;
         currentPlayingCard = null;
-        clearInterval(currentProgressInterval);
+        
+        if (currentProgressInterval) {
+          clearInterval(currentProgressInterval);
+          currentProgressInterval = null;
+        }
       }
     }
 
+    // Keyboard shortcuts
     document.addEventListener("keydown", function (event) {
       const searchInput = document.getElementById("searchInput");
+      
+      // Focus search with / or L
       if (
-        (event.key === "l" || event.key === "L") &&
-        document.activeElement !== searchInput
+        (event.key === "/" || event.key === "l" || event.key === "L") &&
+        document.activeElement !== searchInput &&
+        !event.target.matches('input, textarea, [contenteditable]')
       ) {
         event.preventDefault();
         if (searchInput) {
           searchInput.focus();
         }
+      }
+      
+      // Escape to clear search
+      if (event.key === "Escape" && document.activeElement === searchInput) {
+        searchInput.value = '';
+        filterVoicelines();
+        searchInput.blur();
       }
     });
 
@@ -686,18 +869,40 @@
       .addEventListener("input", filterVoicelines);
 
     function filterVoicelines() {
-      const searchValue = document.getElementById("searchInput").value.toLowerCase();
+      const searchValue = document.getElementById("searchInput").value.toLowerCase().trim();
       const voicelines = document.querySelectorAll(".voiceline-card");
+      let visibleCount = 0;
 
       voicelines.forEach((line) => {
-        const lineTitle = line.querySelector(".voiceline-title").innerText.toLowerCase();
-        const lineText = line.querySelector(".voiceline-text").innerText.toLowerCase();
-        const englishText = line.querySelector(".translation-text")?.innerText.toLowerCase();
+        const lineTitle = line.querySelector(".voiceline-title")?.innerText.toLowerCase() || '';
+        const lineText = line.querySelector(".voiceline-text")?.innerText.toLowerCase() || '';
+        const englishText = line.querySelector(".translation-text")?.innerText.toLowerCase() || '';
 
-        const match = lineTitle.includes(searchValue) || lineText.includes(searchValue) || (englishText && englishText.includes(searchValue));
+        const match = !searchValue || 
+          lineTitle.includes(searchValue) || 
+          lineText.includes(searchValue) || 
+          (englishText && englishText.includes(searchValue));
 
         line.style.display = match ? "block" : "none";
+        if (match) visibleCount++;
       });
+      
+      // Show "no results" message if needed
+      const container = document.getElementById("voicelinesContainer");
+      let noResultsMsg = container.querySelector('.no-results-message');
+      
+      if (searchValue && visibleCount === 0) {
+        if (!noResultsMsg) {
+          noResultsMsg = document.createElement('div');
+          noResultsMsg.className = 'no-results-message';
+          noResultsMsg.style.cssText = 'text-align: center; padding: 2rem; color: var(--text-secondary, #a0a0a0);';
+          container.appendChild(noResultsMsg);
+        }
+        noResultsMsg.innerHTML = `<p>No voicelines found matching "${searchValue}"</p>`;
+        noResultsMsg.style.display = 'block';
+      } else if (noResultsMsg) {
+        noResultsMsg.style.display = 'none';
+      }
     }
 
     function handleSmallScreens() {

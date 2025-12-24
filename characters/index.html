@@ -39,7 +39,8 @@
         href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
     <link href="Styles.css" rel="stylesheet">
-    <link href="NavBar.css" rel="stylesheet">
+    <link href="../NavBar.css" rel="stylesheet">
+    <link href="../css/utilities.css" rel="stylesheet">
     <style>
         .center-container {
             display: flex;
@@ -182,6 +183,10 @@
             </div>
         </div>
     </nav>
+    
+    <!-- Breadcrumbs -->
+    <div data-breadcrumbs="characters"></div>
+    
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
@@ -218,6 +223,7 @@
 
     <div class="character-grid" id="characterGrid"></div>
 
+    <script src="../js/utilities.js"></script>
     <script>
         let dropdowns = document.querySelectorAll('.navbar .dropdown-toggler');
         let dropdownIsOpen = false;
@@ -277,7 +283,12 @@
         }
 
         fetch('characters.json')
-            .then(response => response.json())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
             .then(data => {
                 const categories = [...new Set(data.characters.map(character => character.category))];
                 const navbarTabs = document.getElementById('navbarTabs');
@@ -297,6 +308,12 @@
                 function filterCharacters(selectedCategory) {
                     const characterGrid = document.getElementById('characterGrid');
                     characterGrid.innerHTML = '';
+                    
+                    // Show loading state
+                    let loadingDiv = null;
+                    if (typeof showLoading === 'function') {
+                        loadingDiv = showLoading(characterGrid, 'Loading characters...');
+                    }
 
                     let filteredCharacters;
 
@@ -311,7 +328,9 @@
                     const heading = document.querySelector('h1');
                     heading.innerText = selectedCategory;
 
-                    filteredCharacters.forEach(character => {
+                    // Use requestAnimationFrame to ensure loading state is visible
+                    requestAnimationFrame(() => {
+                        filteredCharacters.forEach(character => {
                         const sanitizedName = sanitizeName(character.name);
                         const imagePath = `images/${sanitizedName}/${sanitizedName}.png`;
                         const rankPath = `${character.rank}.png`;
@@ -337,13 +356,17 @@
         </div>
     `;
 
-                        characterDiv.onclick = () => {
-                            window.location.href = `${sanitizedName}/voicelines/`;
-                        };
-                        characterGrid.appendChild(characterDiv);
+                            characterDiv.onclick = () => {
+                                window.location.href = `${sanitizedName}/voicelines/`;
+                            };
+                            characterGrid.appendChild(characterDiv);
+                        });
+                        
+                        // Hide loading state after rendering
+                        if (loadingDiv && typeof hideLoading === 'function') {
+                            hideLoading(loadingDiv);
+                        }
                     });
-
-
                 }
 
                 if (categories.length > 0) {
@@ -359,7 +382,17 @@
                     });
                 });
             })
-            .catch(error => console.error('Error loading characters:', error));
+            .catch(error => {
+                console.error('Error loading characters:', error);
+                const characterGrid = document.getElementById('characterGrid');
+                characterGrid.innerHTML = `
+                    <div class="error-container">
+                        <h3>Error Loading Characters</h3>
+                        <p>Failed to load character data. Please refresh the page or try again later.</p>
+                        <button onclick="location.reload()">Reload Page</button>
+                    </div>
+                `;
+            });
         document.addEventListener('keydown', function (event) {
             const searchInput = document.getElementById('searchInput');
 
