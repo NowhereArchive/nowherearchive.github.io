@@ -4,7 +4,7 @@ import NavBar from "../../components/NavBar.astro";
 import HeroSection from "../../components/HeroSection.astro";
 import { ASSET_CGS_THUMBNAILS_URL, REPO } from "../../config/config";
 
-const chaptersResponse = await fetch(`${REPO}/characters.json`);
+const chaptersResponse = await fetch(`${REPO}/chapters.json`);
 const chapters = await chaptersResponse.json();
 
 const categories = Object.keys(chapters);

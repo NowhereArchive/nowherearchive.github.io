@@ -8,9 +8,6 @@ import {
   ASSET_MAIN_URL,
 } from "../../../../config/config";
 
-const charactersResponse = await fetch(`${REPO}/characters.json`);
-const characters = await charactersResponse.json();
-
 interface Attire {
   name: string;
   displayName: string;
@@ -27,6 +24,8 @@ interface Character {
 }
 
 export async function getStaticPaths() {
+  const charactersResponse = await fetch(`${REPO}/characters.json`);
+  const characters = await charactersResponse.json();
   return (characters as any).characters.map((char: Character) => ({
     params: {
       character: char.name.toLowerCase().replace(/\s+/g, "_"),
