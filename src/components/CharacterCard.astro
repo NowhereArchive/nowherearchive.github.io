@@ -1,0 +1,63 @@
+---
+import "../styles/global.css";
+import { ASSET_LOGOS_URL } from "../config/config.js";
+const {
+  name,
+  displayName,
+  rank,
+  libram,
+  tendency,
+  imagePath,
+  category,
+  sanitizedName,
+} = Astro.props;
+
+const imageClass = category === "Sinners" ? "mugshot" : "characterBackground";
+---
+
+<a href={`/characters/${sanitizedName}/voicelines`}>
+  <div class="character">
+    <div class="image-container">
+      <div class="skeleton"></div>
+      <img class={imageClass} src={imagePath} alt={name} />
+      <div class="small-photo-container">
+        <img class="small-photo rank" src={`${ASSET_LOGOS_URL}/${rank}.png`} />
+        <img
+          class="small-photo libram"
+          src={`${ASSET_LOGOS_URL}/${libram}.png`}
+        />
+        <img
+          class="small-photo tendency"
+          src={`${ASSET_LOGOS_URL}/${tendency}.png`}
+        />
+      </div>
+      <p>{displayName || name}</p>
+    </div>
+  </div>
+</a>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const images = document.querySelectorAll<HTMLImageElement>(
+      ".character img.mugshot, .character img.characterBackground"
+    );
+
+    images.forEach((img) => {
+      img.addEventListener("load", () => {
+        img.style.opacity = "1";
+        const skeleton = img.previousElementSibling as HTMLElement | null;
+        if (skeleton && skeleton.classList.contains("skeleton")) {
+          skeleton.style.display = "none";
+        }
+      });
+
+      if (img.complete) {
+        img.style.opacity = "1";
+        const skeleton = img.previousElementSibling as HTMLElement | null;
+        if (skeleton && skeleton.classList.contains("skeleton")) {
+          skeleton.style.display = "none";
+        }
+      }
+    });
+  });
+</script>

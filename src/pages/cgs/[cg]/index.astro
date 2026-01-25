@@ -1,0 +1,83 @@
+---
+import "../../../styles/global.css";
+import chapters from "../../../data/chapters.json";
+import NavBar from "../../../components/NavBar.astro";
+import { ASSET_CHAPTERS_URL } from "../../../config/config";
+
+interface Chapter {
+  name: string;
+  displayName: string;
+}
+
+export async function getStaticPaths() {
+  const allChapters = Object.entries(chapters).flatMap(
+    ([category, chapterList]) =>
+      (chapterList as any[]).map((chapter) => ({ ...chapter, category })),
+  );
+
+  return allChapters.map((chapter: any) => ({
+    params: {
+      cg: chapter.name,
+    },
+    props: {
+      chapterData: chapter,
+    },
+  }));
+}
+
+const { chapterData } = Astro.props;
+const chapterName = chapterData.name;
+const chapterDisplayName = chapterData.displayName;
+---
+
+<html>
+  <head>
+    <title>{chapterDisplayName} - CGs</title>
+    <meta name="viewport" content="width=device-width" />
+  </head>
+  <body>
+    <NavBar />
+    <div id="imagesContainer" class="images-container"></div>
+    <script>
+      import { doAll } from "../../../utils/global.js";
+      window.addEventListener("DOMContentLoaded", () => doAll());
+    </script>
+    <script define:vars={{ chapterName, ASSET_CHAPTERS_URL }}>
+      async function loadImages() {
+        const imagesFile = `${ASSET_CHAPTERS_URL}/${chapterName}.json`;
+
+        try {
+          const response = await fetch(imagesFile);
+          if (!response.ok) {
+            throw new Error("Error loading images");
+          }
+          const imagesData = await response.json();
+          renderImages(imagesData);
+        } catch (error) {
+          console.error("Error loading images:", error);
+          const imagesContainer = document.getElementById("imagesContainer");
+          if (imagesContainer) {
+            imagesContainer.innerHTML = `<p>Error loading images.</p>`;
+          }
+        }
+      }
+
+      function renderImages(images) {
+        const imagesContainer = document.getElementById("imagesContainer");
+        if (imagesContainer) {
+          imagesContainer.innerHTML = "";
+        }
+
+        images.forEach((image) => {
+          const imageDiv = document.createElement("div");
+          imageDiv.classList.add("image-card");
+          imageDiv.innerHTML = `
+          <img src="${image.fileName}" alt="${image.title}" />
+        `;
+          imagesContainer?.appendChild(imageDiv);
+        });
+      }
+      loadImages();
+    </script>
+  </body>
+</html>

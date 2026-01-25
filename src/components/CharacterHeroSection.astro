@@ -1,0 +1,44 @@
+---
+import "../styles/global.css";
+
+const { CHARACTER_DISPLAY_NAME } = Astro.props;
+---
+
+<section class="hero">
+  <div class="hero-content">
+    <h1 id="characterName">{CHARACTER_DISPLAY_NAME}</h1>
+    <div class="hero-controls">
+      <div class="search-container">
+        <input
+          type="text"
+          id="searchInput"
+          class="search-input"
+          placeholder="Search voicelines..."
+          autocomplete="off"
+          aria-label="Search voicelines"
+        />
+        <span class="search-shortcut" title="Press / to search">/</span>
+        <button class="search-button" id="searchButton">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="button-groups">
+        <div class="language-buttons" id="languageButtonsContainer"></div>
+        <div class="attire-buttons" id="attireButtonsContainer"></div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-overlay"></div>
+</section>
