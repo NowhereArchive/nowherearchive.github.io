@@ -2,14 +2,16 @@
 import CharacterCard from "../../components/CharacterCard.astro";
 import NavBar from "../../components/NavBar.astro";
 import "../../styles/global.css";
-import characters from "../../data/characters.json";
 import HeroSection from "../../components/HeroSection.astro";
-import { ASSET_PRISON_URL } from "../../config/config";
+import { ASSET_PRISON_URL, REPO } from "../../config/config";
 import { sanitizeName } from "../../utils/global";
+
+const charactersResponse = await fetch(`${REPO}/characters.json`);
+const characters = await charactersResponse.json();
 
 const categories = [
   ...new Set(
-    (characters as any).characters.map((character: any) => character.category)
+    (characters as any).characters.map((character: any) => character.category),
   ),
 ];
 ---
@@ -41,24 +43,33 @@ const categories = [
     </HeroSection>
     <div class="character-grid">
       {
-        characters.characters.map((character) => {
-          const sanitizedName = sanitizeName(character.name);
-          const imagePath = `${ASSET_PRISON_URL}/${sanitizedName}/${sanitizedName}.png`;
-          return (
-            <div class="character-wrapper" data-category={character.category}>
-              <CharacterCard
-                name={character.name}
-                displayName={character.displayName}
-                rank={character.rank}
-                libram={character.libram}
-                tendency={character.tendency}
-                imagePath={imagePath}
-                category={character.category}
-                sanitizedName={sanitizedName}
-              />
-            </div>
-          );
-        })
+        characters.characters.map(
+          (character: {
+            name: string;
+            category: string;
+            displayName: string;
+            rank: string;
+            libram: string;
+            tendency: string;
+          }) => {
+            const sanitizedName = sanitizeName(character.name);
+            const imagePath = `${ASSET_PRISON_URL}/${sanitizedName}/${sanitizedName}.png`;
+            return (
+              <div class="character-wrapper" data-category={character.category}>
+                <CharacterCard
+                  name={character.name}
+                  displayName={character.displayName}
+                  rank={character.rank}
+                  libram={character.libram}
+                  tendency={character.tendency}
+                  imagePath={imagePath}
+                  category={character.category}
+                  sanitizedName={sanitizedName}
+                />
+              </div>
+            );
+          },
+        )
       }
     </div>
     <script>
@@ -66,13 +77,13 @@ const categories = [
       doAll();
 
       const tabButtons = document.querySelectorAll(
-        ".tab-button"
+        ".tab-button",
       ) as NodeListOf<HTMLButtonElement>;
       const characterCards = document.querySelectorAll(
-        ".character-wrapper"
+        ".character-wrapper",
       ) as NodeListOf<HTMLElement>;
       const searchInput = document.getElementById(
-        "searchInput"
+        "searchInput",
       ) as HTMLInputElement;
 
       let currentCategory = "all";

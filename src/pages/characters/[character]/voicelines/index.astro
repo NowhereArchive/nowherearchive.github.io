@@ -1,11 +1,15 @@
 ---
 import NavBar from "../../../../components/NavBar.astro";
 import "../../../../styles/global.css";
-import characters from "../../../../data/characters.json";
 import CharacterHeroSection from "../../../../components/CharacterHeroSection.astro";
 import { REPO } from "../../../../config/config.js";
-import { ASSET_MAIN_URL } from "../../../../config/config";
-import { ASSET_CHARACTERS_URL  } from "../../../../config/config";
+import {
+  ASSET_CHARACTERS_URL,
+  ASSET_MAIN_URL,
+} from "../../../../config/config";
+
+const charactersResponse = await fetch(`${REPO}/characters.json`);
+const characters = await charactersResponse.json();
 
 interface Attire {
   name: string;

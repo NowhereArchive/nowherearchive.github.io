@@ -21,7 +21,7 @@ import { ASSET_MAIN_URL } from "../config/config"
     <main class="main-content">
       <h2 class="section-title">Featured Content</h2>
       <div class="grid-container">
-        <a href="characters/" class="container-link">
+        <a href={import.meta.env.BASE_URL + "/characters/"} class="container-link">
           <div class="skeleton"></div>
           <img
             class="image-default"
@@ -36,7 +36,7 @@ import { ASSET_MAIN_URL } from "../config/config"
           />
           <div class="text">Characters Voicelines</div>
         </a>
-        <a href="cgs/" class="container-link">
+        <a href={import.meta.env.BASE_URL + "/cgs/"} class="container-link">
           <div class="skeleton"></div>
           <img
             class="image-default"

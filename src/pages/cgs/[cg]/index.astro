@@ -1,8 +1,10 @@
 ---
 import "../../../styles/global.css";
-import chapters from "../../../data/chapters.json";
 import NavBar from "../../../components/NavBar.astro";
-import { ASSET_CHAPTERS_URL } from "../../../config/config";
+import { ASSET_CHAPTERS_URL, REPO } from "../../../config/config";
+
+const chaptersResponse = await fetch(`${REPO}/characters.json`);
+const chapters = await chaptersResponse.json();
 
 interface Chapter {
   name: string;
