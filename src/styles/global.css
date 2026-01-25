@@ -713,7 +713,7 @@ h1::after {
 }
 
 .mugshot {
-  background-image: url("logos/mugshot.png");
+  background-image: url("https://raw.githubusercontent.com/NowhereArchive/NowhereImages/logos/mugshot.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -723,7 +723,7 @@ h1::after {
 }
 
 .characterBackground {
-  background-image: url("logos/none.png");
+  background-image: url("https://raw.githubusercontent.com/NowhereArchive/NowhereImages/logos/none.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
