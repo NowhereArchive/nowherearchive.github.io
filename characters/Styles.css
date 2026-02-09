@@ -41,7 +41,7 @@ section.hero {
   justify-content: center;
   text-align: center;
   padding: 6rem 2rem 3rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../header.png') no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://raw.githubusercontent.com/NowhereArchive/NowhereImages/main/main/header.png') no-repeat center center/cover;
   margin: 0 0 2rem 0;
   border-bottom: 1px solid rgba(156, 17, 17, 0.3);
   color: white;

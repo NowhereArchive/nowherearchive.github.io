@@ -219,5 +219,47 @@
             "filename": "File:vo_eirene_feishazhinu_specialattention_001.aac",
             "text": "All right, stay here with me for a while. I'll break the plan down for you."
         }
+    ],
+    "yanseweisheng": [
+        {
+            "title": "Obtain Attire",
+            "filename": "File:vo_heli_yanseweisheng_cacha_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Level Up",
+            "filename": "File:vo_heli_yanseweisheng_levelup_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Greeting",
+            "filename": "File:vo_heli_yanseweisheng_greeting_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "filename": "File:vo_heli_yanseweisheng_talk_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "filename": "File:vo_heli_yanseweisheng_talk_002.aac",
+            "text": ""
+        },
+        {
+            "title": "Idle",
+            "filename": "File:vo_heli_yanseweisheng_idle_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Annoyed",
+            "filename": "File:vo_heli_yanseweisheng_clicking_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Special Attention",
+            "filename": "File:vo_heli_yanseweisheng_specialattention_001.aac",
+            "text": ""
+        }
     ]
 }

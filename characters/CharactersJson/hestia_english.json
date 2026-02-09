@@ -172,6 +172,48 @@
             "text": "Your gaze ignites more fiercely than the lantern... resembling a bonfire or a blazing torch. It's like a mortal flame so captivating that even immortals can't bear to look away.",
             "filename": "File:vo_hestia_lambent_wishbearer_specialattention_001.aac"
         }
+    ],
+    "yehuohuanghun": [
+        {
+            "title": "Obtain Attire",
+            "filename": "File:vo_hestia_yehuohuanghun_cacha_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Level Up",
+            "filename": "File:vo_hestia_yehuohuanghun_levelup_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Greeting",
+            "filename": "File:vo_hestia_yehuohuanghun_greeting_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "filename": "File:vo_hestia_yehuohuanghun_talk_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "filename": "File:vo_hestia_yehuohuanghun_talk_002.aac",
+            "text": ""
+        },
+        {
+            "title": "Idle",
+            "filename": "File:vo_hestia_yehuohuanghun_idle_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Annoyed",
+            "filename": "File:vo_hestia_yehuohuanghun_clicking_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Special Attention",
+            "filename": "File:vo_hestia_yehuohuanghun_specialattention_001.aac",
+            "text": ""
+        }
     ]
 
 }

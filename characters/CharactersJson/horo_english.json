@@ -157,5 +157,57 @@
             "filename": "File:vo_horo_jixianyundongjihua_clicking_001.aac",
             "text": "Hey, watch it! This jacket cost me a pretty penny. It's not just any jacket, it's the soul of the Legion! You want to try it on? Alright, considering your respect for the Legion, I'll... Uh... Wait! Let me wash it first..."
         }
+    ],
+    "tianyacishi": [
+        {
+            "title": "Obtain Attire",
+            "filename": "File:vo_mojila_tianyacishi_cacha_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Level Up",
+            "filename": "File:vo_mojila_tianyacishi_levelup_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Greeting",
+            "filename": "File:vo_mojila_tianyacishi_greeting_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Pat Head",
+            "filename": "File:vo_mojila_tianyacishi_head_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "filename": "File:vo_mojila_tianyacishi_body_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "filename": "File:vo_mojila_tianyacishi_body_002.aac",
+            "text": ""
+        },
+        {
+            "title": "Ordinary Contact 3",
+            "filename": "File:vo_mojila_tianyacishi_wine_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Ordinary Contact 4",
+            "filename": "File:vo_mojila_tianyacishi_leg_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Idle",
+            "filename": "File:vo_mojila_tianyacishi_idle_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Special Attention",
+            "filename": "File:vo_mojila_tianyacishi_specialattention_001.aac",
+            "text": ""
+        }
     ]
 }

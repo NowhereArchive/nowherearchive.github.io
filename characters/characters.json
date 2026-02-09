@@ -534,6 +534,10 @@
                 {
                     "name": "lunaria_enigma",
                     "displayName": "Lunaria Enigma"
+                },
+                {
+                    "name": "qingfengruhuai",
+                    "displayName": "Breezy Embrace"
                 }
             ]
         },
@@ -614,6 +618,10 @@
                 {
                     "name": "daughter_of_fraser_city",
                     "displayName": "Daughter Of Fraser City"
+                },
+                {
+                    "name": "yanseweisheng",
+                    "displayName": "Veil of Flame"
                 }
             ]
         },
@@ -912,6 +920,10 @@
                 {
                     "name": "lambent_wishbearer",
                     "displayName": "Lambent Wishbearer"
+                },
+                {
+                    "name": "yehuohuanghun",
+                    "displayName": "Dusk Aglow"
                 }
             ]
         },{
@@ -943,6 +955,10 @@
                 {
                     "name": "limit_breaker",
                     "displayName": "Limit Breaker"
+                },
+                {
+                    "name": "tianyacishi",
+                    "displayName": "Abiding Moment"
                 }
             ]
         },
@@ -957,6 +973,10 @@
                 {
                     "name": "default",
                     "displayName": "Default"
+                },
+                {
+                    "name": "yeyinjinqiang",
+                    "displayName": "Crepuscular Bloom"
                 }
             ]
         },
@@ -1043,6 +1063,10 @@
                 {
                     "name": "default",
                     "displayName": "Default"
+                },
+                {
+                    "name": "roufengyeying",
+                    "displayName": "Gossamer Sway"
                 }
             ]
         },
@@ -1709,6 +1733,10 @@
                 {
                     "name": "default",
                     "displayName": "Default"
+                },
+                {
+                    "name": "guiyishalong",
+                    "displayName": "Salon Rose"
                 }
             ]
         },
@@ -2340,6 +2368,10 @@
                 {
                     "name": "default",
                     "displayName": "Default"
+                },
+                {
+                    "name": "wenjiyaotai",
+                    "displayName": "Celestial Augury"
                 }
             ]
         },
