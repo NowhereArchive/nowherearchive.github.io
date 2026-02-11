@@ -110,5 +110,47 @@
             "text": "I appreciate your concern, my friend, but you really don't need to watch me so closely... I've lived with this misfortune long enough to know how to handle it. Nothing too dire will happen... Probably.",
             "filename": "File:vo_wuhuanzi_specialattention_001.aac"
         }
+    ],
+    "xuanhumuke": [
+        {
+            "title": "Obtain Attire",
+            "filename": "File:vo_wuhuanzi_xuanhumuke_cacha_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Level Up",
+            "filename": "File:vo_wuhuanzi_xuanhumuke_levelup_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Greeting",
+            "filename": "File:vo_wuhuanzi_xuanhumuke_greeting_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Ordinary Contact 1",
+            "filename": "File:vo_wuhuanzi_xuanhumuke_talk1_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Ordinary Contact 2",
+            "filename": "File:vo_wuhuanzi_xuanhumuke_talk1_002.aac",
+            "text": ""
+        },
+        {
+            "title": "Idle",
+            "filename": "File:vo_wuhuanzi_xuanhumuke_idle_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Annoyed",
+            "filename": "File:vo_wuhuanzi_xuanhumuke_clicking_001.aac",
+            "text": ""
+        },
+        {
+            "title": "Special Attention",
+            "filename": "File:vo_wuhuanzi_xuanhumuke_specialattention_001.aac",
+            "text": ""
+        }
     ]
 }
