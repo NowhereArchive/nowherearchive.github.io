@@ -872,6 +872,20 @@
             ]
         },
         {
+            "name": "helga",
+            "displayName": "Helga",
+            "rank": "A",
+            "libram": "FAMINE",
+            "tendency": "Reticle",
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                }
+            ]
+        },
+        {
             "name": "hella",
             "displayName": "Hella",
             "rank": "B",
@@ -1463,6 +1477,20 @@
             ]
         },
         {
+            "name": "margaret",
+            "displayName": "Margaret",
+            "rank": "S",
+            "libram": "DEATH",
+            "tendency": "Catalyst",
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                }
+            ]
+        },
+        {
             "name": "matilda",
             "displayName": "Matilda",
             "rank": "A",
@@ -1926,6 +1954,20 @@
                     "name": "default",
                     "displayName": "Default"
                 }
+            ]
+        },
+        {
+            "name": "rust",
+            "displayName": "Rust",
+            "rank": "S",
+            "libram": "TREACHERY",
+            "tendency": "Endura",
+            "category": "Sinners",
+            "attires": [
+                {
+                    "name": "default",
+                    "displayName": "Default"
+                }   
             ]
         },
         {
