@@ -33,15 +33,15 @@ const defaultDescription =
             name="keywords"
             content="Path to Nowhere, PTN, voicelines, CGs, character database, Sinner, game archive"
         />
+        <link
+            rel="canonical"
+            href={`https://nowherearchive.github.io${Astro.url.pathname}`}
+        />
 
         <!-- Theme Color -->
         <meta name="theme-color" content="#9c1111" />
 
         <!-- Google Analytics -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-3M02N0366N"
-        ></script>
         <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=G-702GZFHJQE"
@@ -52,7 +52,6 @@ const defaultDescription =
                 dataLayer.push(arguments);
             }
             gtag("js", new Date());
-            gtag("config", "G-3M02N0366N");
             gtag("config", "G-702GZFHJQE");
         </script>
     </head>
