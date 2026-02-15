@@ -5,6 +5,7 @@ import "../../styles/global.css";
 import HeroSection from "../../components/HeroSection.astro";
 import { ASSET_PRISON_URL, REPO } from "../../config/config";
 import { sanitizeName } from "../../utils/global";
+import Layout from "../../layouts/Layout.astro";
 
 const charactersResponse = await fetch(`${REPO}/characters.json`);
 const characters = await charactersResponse.json();
@@ -16,118 +17,105 @@ const categories = [
 ];
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>characters</title>
-  </head>
-  <body>
-    <NavBar />
-    <HeroSection showSearch={true} showTabs={true}>
-      <div slot="tabs">
-        <button class="tab-button active" data-category="all"
-          >All Characters</button
-        >
-        {
-          categories.map((category) => (
-            <button class="tab-button" data-category={category}>
-              {category}
-            </button>
-          ))
-        }
-      </div>
-    </HeroSection>
-    <div class="character-grid">
+<Layout title="Characters">
+  <NavBar />
+  <HeroSection showSearch={true} showTabs={true}>
+    <div slot="tabs">
+      <button class="tab-button active" data-category="all"
+        >All Characters</button
+      >
       {
-        characters.characters.map(
-          (character: {
-            name: string;
-            category: string;
-            displayName: string;
-            rank: string;
-            libram: string;
-            tendency: string;
-          }) => {
-            const sanitizedName = sanitizeName(character.name);
-            const imagePath = `${ASSET_PRISON_URL}/${sanitizedName}/${sanitizedName}.png`;
-            return (
-              <div class="character-wrapper" data-category={character.category}>
-                <CharacterCard
-                  name={character.name}
-                  displayName={character.displayName}
-                  rank={character.rank}
-                  libram={character.libram}
-                  tendency={character.tendency}
-                  imagePath={imagePath}
-                  category={character.category}
-                  sanitizedName={sanitizedName}
-                />
-              </div>
-            );
-          },
-        )
+        categories.map((category) => (
+          <button class="tab-button" data-category={category}>
+            {category}
+          </button>
+        ))
       }
     </div>
-    <script>
-      import { doAll } from "../../utils/global.js";
-      doAll();
+  </HeroSection>
+  <div class="character-grid">
+    {
+      characters.characters.map(
+        (character: {
+          name: string;
+          category: string;
+          displayName: string;
+          rank: string;
+          libram: string;
+          tendency: string;
+        }) => {
+          const sanitizedName = sanitizeName(character.name);
+          const imagePath = `${ASSET_PRISON_URL}/${sanitizedName}/${sanitizedName}.png`;
+          return (
+            <div class="character-wrapper" data-category={character.category}>
+              <CharacterCard
+                name={character.name}
+                displayName={character.displayName}
+                rank={character.rank}
+                libram={character.libram}
+                tendency={character.tendency}
+                imagePath={imagePath}
+                category={character.category}
+                sanitizedName={sanitizedName}
+              />
+            </div>
+          );
+        },
+      )
+    }
+  </div>
+  <script>
+    import { doAll } from "../../utils/global.js";
+    doAll();
 
-      const tabButtons = document.querySelectorAll(
-        ".tab-button",
-      ) as NodeListOf<HTMLButtonElement>;
-      const characterCards = document.querySelectorAll(
-        ".character-wrapper",
-      ) as NodeListOf<HTMLElement>;
-      const searchInput = document.getElementById(
-        "searchInput",
-      ) as HTMLInputElement;
+    const tabButtons = document.querySelectorAll(
+      ".tab-button",
+    ) as NodeListOf<HTMLButtonElement>;
+    const characterCards = document.querySelectorAll(
+      ".character-wrapper",
+    ) as NodeListOf<HTMLElement>;
+    const searchInput = document.getElementById(
+      "searchInput",
+    ) as HTMLInputElement;
 
-      let currentCategory = "all";
+    let currentCategory = "all";
 
-      // Category filtering
-      tabButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-          currentCategory = button.dataset.category || "all";
+    tabButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        currentCategory = button.dataset.category || "all";
 
-          tabButtons.forEach((btn) => btn.classList.remove("active"));
-          button.classList.add("active");
+        tabButtons.forEach((btn) => btn.classList.remove("active"));
+        button.classList.add("active");
 
-          filterCharacters();
-        });
+        filterCharacters();
       });
+    });
 
-      // Search filtering
-      if (searchInput) {
-        searchInput.addEventListener("input", () => {
-          filterCharacters();
-        });
-      }
+    if (searchInput) {
+      searchInput.addEventListener("input", () => {
+        filterCharacters();
+      });
+    }
 
-      // Combined filter function
-      function filterCharacters() {
-        const searchValue = searchInput?.value.toLowerCase().trim() || "";
+    function filterCharacters() {
+      const searchValue = searchInput?.value.toLowerCase().trim() || "";
 
-        characterCards.forEach((card) => {
-          const category = card.dataset.category || "";
-          const characterName =
-            card.querySelector("p")?.textContent?.toLowerCase() || "";
+      characterCards.forEach((card) => {
+        const category = card.dataset.category || "";
+        const characterName =
+          card.querySelector("p")?.textContent?.toLowerCase() || "";
 
-          const matchesCategory =
-            currentCategory === "all" || category === currentCategory;
-          const matchesSearch =
-            !searchValue || characterName.includes(searchValue);
+        const matchesCategory =
+          currentCategory === "all" || category === currentCategory;
+        const matchesSearch =
+          !searchValue || characterName.includes(searchValue);
 
-          if (matchesCategory && matchesSearch) {
-            card.style.display = "block";
-          } else {
-            card.style.display = "none";
-          }
-        });
-      }
-    </script>
-  </body>
-</html>
+        if (matchesCategory && matchesSearch) {
+          card.style.display = "block";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    }
+  </script>
+</Layout>

@@ -1,5 +1,4 @@
 export function doAll() {
-    // Add smooth scrolling to all links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -9,7 +8,6 @@ export function doAll() {
         });
     });
 
-    // Navbar scroll effect
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
@@ -19,7 +17,6 @@ export function doAll() {
         }
     });
 
-    // Mobile menu toggle
     const menuToggle = document.querySelector('.navbar-toggler');
     const menu = document.querySelector('.navbar-menu');
 
@@ -28,7 +25,6 @@ export function doAll() {
         menuToggle.classList.toggle('active');
     });
 
-    // Close menu when clicking outside
     document.addEventListener('click', (e) => {
         if (!menu.contains(e.target) && !menuToggle.contains(e.target)) {
             menu.classList.remove('active');
@@ -36,7 +32,6 @@ export function doAll() {
         }
     });
 
-    // Lazy loading for images
     document.addEventListener('DOMContentLoaded', function () {
         const lazyImages = [].slice.call(document.querySelectorAll('img.lazy'));
 
@@ -58,7 +53,6 @@ export function doAll() {
         }
     });
 
-    // Add animation on scroll
     function animateOnScroll() {
         const elements = document.querySelectorAll('.fade-in, .slide-up, .slide-left, .slide-right');
 
@@ -72,22 +66,17 @@ export function doAll() {
         });
     }
 
-    // Initial check
     animateOnScroll();
 
-    // Check on scroll
     window.addEventListener('scroll', animateOnScroll);
 
-    // Search functionality
     const searchInput = document.querySelector('.search-input');
     if (searchInput) {
         searchInput.addEventListener('keyup', function (e) {
             if (e.key === 'Enter') {
                 const searchTerm = this.value.trim();
                 if (searchTerm) {
-                    // Implement your search functionality here
                     console.log('Searching for:', searchTerm);
-                    // Example: window.location.href = `/search?q=${encodeURIComponent(searchTerm)}`;
                 }
             }
         });

@@ -1,7 +1,5 @@
 export function doAll() {
-    // Utility functions for back to top, breadcrumbs, and other shared functionality
 
-    // Back to Top Button
     (function () {
         'use strict';
 
@@ -92,13 +90,11 @@ export function doAll() {
                     const displayName = segment.charAt(0).toUpperCase() + segment.slice(1).replace(/_/g, ' ');
 
                     if (index === paths.length - 1) {
-                        // Last item (current page)
                         item.innerHTML = `
                         <span class="current" itemprop="name">${displayName}</span>
                         <meta itemprop="position" content="${index + 2}">
                     `;
                     } else {
-                        // Link item
                         item.innerHTML = `
                         <a href="${currentPath}" itemprop="item">
                             <span itemprop="name">${displayName}</span>
@@ -115,7 +111,6 @@ export function doAll() {
             });
         }
 
-        // Initialize when DOM is ready
         if (document.readyState === 'loading') {
             document.addEventListener('DOMContentLoaded', generateBreadcrumbs);
         } else {
@@ -123,7 +118,6 @@ export function doAll() {
         }
     })();
 
-    // Error Handler
     (function () {
         'use strict';
 
@@ -138,7 +132,6 @@ export function doAll() {
         `;
             errorContainer.appendChild(errorDiv);
 
-            // Auto-remove after 10 seconds
             setTimeout(() => {
                 if (errorDiv.parentElement) {
                     errorDiv.remove();
@@ -146,22 +139,15 @@ export function doAll() {
             }, 10000);
         };
 
-        // Global error handler for unhandled errors
         window.addEventListener('error', (event) => {
             console.error('Unhandled error:', event.error);
-            // Optionally show user-friendly error message
-            // showError('An unexpected error occurred. Please refresh the page.');
         });
 
-        // Handle promise rejections
         window.addEventListener('unhandledrejection', (event) => {
             console.error('Unhandled promise rejection:', event.reason);
-            // Optionally show user-friendly error message
-            // showError('A network error occurred. Please check your connection.');
         });
     })();
 
-    // Loading State Helper
     (function () {
         'use strict';
 

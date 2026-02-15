@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 
-/* Base Styles */
 :root {
   --primary: #9c1111;
   --primary-dark: #7a0d0d;
@@ -38,7 +37,6 @@ h1 {
   font-size: 2em;
 }
 
-/* Main Content */
 .main-content {
   max-width: 1400px;
   margin: 0 auto;

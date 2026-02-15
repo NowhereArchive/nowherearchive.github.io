@@ -7,7 +7,6 @@ export function doAll() {
     let selectedIndex = -1;
     let currentResults = [];
 
-    // Show loading state
     function showLoading() {
         const searchContainer = document.querySelector('.search-container');
         if (searchContainer && !searchContainer.querySelector('.search-loading')) {
@@ -188,7 +187,6 @@ export function doAll() {
         if (results.length === 0) {
             resultsContainer.innerHTML = `<div class="search-result-item no-results" role="option">No results found for "${query}"</div>`;
         } else {
-            // Show up to 8 results for better UX
             const maxResults = 8;
             const displayResults = results.slice(0, maxResults);
             
@@ -336,7 +334,6 @@ export function doAll() {
         });
     }
 
-    // Add search shortcut (press / to focus search)
     document.addEventListener('keydown', (e) => {
         if (e.key === '/' && document.activeElement !== searchInput) {
             e.preventDefault();

@@ -1,69 +1,63 @@
 ---
 import NavBar from "../components/NavBar.astro";
 import MainHeroSection from "../components/MainHeroSection.astro";
-import "../styles/global.css";
+import { ASSET_MAIN_URL } from "../config/config";
+import Layout from "../layouts/Layout.astro";
 import "../styles/main.css";
-import { ASSET_MAIN_URL } from "../config/config"
+import "../styles/global.css";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <body>
-    <NavBar />
-    <MainHeroSection />
-    <main class="main-content">
-      <h2 class="section-title">Featured Content</h2>
-      <div class="grid-container">
-        <a href={import.meta.env.BASE_URL + "/characters/"} class="container-link">
-          <div class="skeleton"></div>
-          <img
-            class="image-default"
-            src={`${ASSET_MAIN_URL}/Hella1.png`}
-            alt="Hella character from Path To Nowhere"
-            onload="this.style.display='block'; this.previousElementSibling.style.display='none';"
-          />
-          <img
-            class="image-hover"
-            src={`${ASSET_MAIN_URL}/Hella2.png`}
-            alt="Hella character from Path To Nowhere"
-          />
-          <div class="text">Characters Voicelines</div>
-        </a>
-        <a href={import.meta.env.BASE_URL + "/cgs/"} class="container-link">
-          <div class="skeleton"></div>
-          <img
-            class="image-default"
-            src={`${ASSET_MAIN_URL}/Hecate1.png`}
-            alt="Hecate character from Path To Nowhere"
-            onload="this.style.display='block'; this.previousElementSibling.style.display='none';"
-          />
-          <img
-            class="image-hover"
-            src={`${ASSET_MAIN_URL}/Hecate2.png`}
-            alt="Hecate character from Path To Nowhere"
-          />
-          <div class="text">In-Game CGs</div>
-        </a>
-      </div>
-    </main>
-    <script>
-      import { doAll } from "../utils/main.js";
-      doAll();
-    </script>
-    <script>
-      import { doAll } from "../utils/search.js";
-      doAll();
-    </script>
-    <script>
-      import { doAll } from "../utils/utilities.js";
-      doAll();
-    </script>
-  </body>
-</html>
+<Layout
+  title="Path To Nowhere Archive - Character Voicelines & CG Database"
+  description="Complete Path To Nowhere archive featuring all character voicelines, CG galleries, and game content. Listen to Sinner quotes and explore story scenes."
+>
+  <NavBar />
+  <MainHeroSection />
+
+  <main class="main-content">
+    <h2 class="section-title">Featured Content</h2>
+    <div class="grid-container">
+      <a href={"/characters/"} class="container-link">
+        <div class="skeleton"></div>
+        <img
+          class="image-default"
+          src={`${ASSET_MAIN_URL}/Hella1.png`}
+          alt="Hella"
+          onload="this.style.display='block'; this.previousElementSibling.style.display='none';"
+        />
+        <img
+          class="image-hover"
+          src={`${ASSET_MAIN_URL}/Hella2.png`}
+          alt="Hella"
+        />
+        <div class="text">Characters Voicelines</div>
+      </a>
+
+      <a href={"/cgs/"} class="container-link">
+        <div class="skeleton"></div>
+        <img
+          class="image-default"
+          src={`${ASSET_MAIN_URL}/Hecate1.png`}
+          alt="Hecate"
+          onload="this.style.display='block'; this.previousElementSibling.style.display='none';"
+        />
+        <img
+          class="image-hover"
+          src={`${ASSET_MAIN_URL}/Hecate2.png`}
+          alt="Hecate"
+        />
+        <div class="text">In-Game CGs</div>
+      </a>
+    </div>
+  </main>
+
+  <script>
+    import { doAll as initMain } from "../utils/main.js";
+    import { doAll as initSearch } from "../utils/search.js";
+    import { doAll as initUtilities } from "../utils/utilities.js";
+
+    initMain();
+    initSearch();
+    initUtilities();
+  </script>
+</Layout>
