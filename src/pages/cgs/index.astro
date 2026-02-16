@@ -174,8 +174,12 @@ const allChapters = Object.entries(chapters).flatMap(
           currentCategory === "all" || category === currentCategory;
         const matchesSearch = !searchValue || title.includes(searchValue);
 
-        (wrapper as HTMLElement).style.display =
-          matchesCategory && matchesSearch ? "block" : "none";
+        // Hide the parent <a> tag, not the wrapper
+        const linkElement = wrapper.parentElement as HTMLElement;
+        if (linkElement) {
+          linkElement.style.display =
+            matchesCategory && matchesSearch ? "block" : "none";
+        }
       });
     }
   </script>
