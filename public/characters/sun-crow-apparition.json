@@ -1,0 +1,15 @@
+{
+  "id": 117703,
+  "name": "Sun Crow Apparition",
+  "baseAtk": 1,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 92001501,
+      "name": "",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

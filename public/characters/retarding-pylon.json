@@ -1,0 +1,24 @@
+{
+  "id": 113002,
+  "name": "Retarding Pylon",
+  "baseAtk": 500,
+  "grades": [
+    [
+      6,
+      35
+    ],
+    [
+      6,
+      35
+    ]
+  ],
+  "skills": {
+    "skill1": {
+      "id": 30021,
+      "name": "",
+      "damageType": 2,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

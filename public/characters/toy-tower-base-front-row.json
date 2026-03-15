@@ -1,0 +1,36 @@
+{
+  "id": 118203,
+  "name": "Toy tower base (front row)",
+  "baseAtk": 1,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 11740101,
+      "name": "",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "ultimate": {
+      "id": 11820101,
+      "name": "Build [Vent]",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "passive": {
+      "id": 11740109,
+      "name": "",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "exclusive": {
+      "id": 11820102,
+      "name": "Build [Quality Tester]",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

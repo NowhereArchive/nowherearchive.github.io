@@ -1,0 +1,100 @@
+{
+  "id": 110601,
+  "name": "Hamel",
+  "baseAtk": 139,
+  "grades": [
+    [
+      11,
+      50
+    ],
+    [
+      33,
+      100
+    ],
+    [
+      11,
+      25
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 6011,
+      "name": "Requiem",
+      "damageType": 0,
+      "coefs": [
+        4,
+        4.2,
+        4.4,
+        4.6,
+        4.8,
+        5,
+        5.2,
+        5.4,
+        5.7,
+        6
+      ],
+      "maxCoef": 6
+    },
+    "ultimate": {
+      "id": 6012,
+      "name": "Bewitching Dance",
+      "damageType": 0,
+      "coefs": [
+        40,
+        42.700001,
+        45.599998,
+        48.700001,
+        51.900002,
+        55.400002,
+        59.200001,
+        63.200001,
+        67.400002,
+        72
+      ],
+      "maxCoef": 72
+    },
+    "skill1": {
+      "id": 6013,
+      "name": "Infinite Spin",
+      "damageType": 0,
+      "coefs": [
+        60,
+        64,
+        68,
+        73,
+        78,
+        83,
+        89,
+        95,
+        101,
+        108
+      ],
+      "maxCoef": 108
+    },
+    "passive": {
+      "id": 6014,
+      "name": "Life Touch",
+      "damageType": 0,
+      "coefs": [
+        6,
+        6.3,
+        6.6,
+        6.9,
+        7.2,
+        7.5,
+        7.9,
+        8.2,
+        8.6,
+        9
+      ],
+      "maxCoef": 9
+    },
+    "exclusive": {
+      "id": 6015,
+      "name": "Path of Compassion",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

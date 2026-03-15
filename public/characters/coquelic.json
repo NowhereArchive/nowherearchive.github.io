@@ -1,0 +1,104 @@
+{
+  "id": 110604,
+  "name": "Coquelic",
+  "baseAtk": 138,
+  "grades": [
+    [
+      11,
+      50
+    ],
+    [
+      33,
+      100
+    ],
+    [
+      11,
+      25
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 6043,
+      "name": "Thorned Blade",
+      "damageType": 4,
+      "coefs": [
+        63,
+        67,
+        72,
+        77,
+        82,
+        87,
+        93,
+        100,
+        106,
+        113
+      ],
+      "maxCoef": 113
+    },
+    "ultimate": {
+      "id": 6044,
+      "name": "Poppy",
+      "damageType": 0,
+      "coefs": [
+        200,
+        209,
+        219,
+        229,
+        239,
+        251,
+        262,
+        274,
+        287,
+        300
+      ],
+      "maxCoef": 300
+    },
+    "skill1": {
+      "id": 6045,
+      "name": "Floral Sword Slash",
+      "damageType": 0,
+      "coefs": [
+        45,
+        48.599998,
+        52.5,
+        56.700001,
+        61.200001,
+        66.099998,
+        71.400002,
+        77.199997,
+        83.300003,
+        90
+      ],
+      "maxCoef": 90
+    },
+    "passive": {
+      "id": 6046,
+      "name": "Timeless Memory",
+      "damageType": 0,
+      "coefs": [
+        6,
+        6.5,
+        7,
+        7.6,
+        8.2,
+        8.8,
+        9.5,
+        10.3,
+        11.1,
+        12
+      ],
+      "maxCoef": 12
+    },
+    "exclusive": {
+      "id": 6047,
+      "name": "River of Flowers",
+      "damageType": 0,
+      "coefs": [
+        80,
+        90,
+        100
+      ],
+      "maxCoef": 100
+    }
+  }
+}

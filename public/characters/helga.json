@@ -1,0 +1,104 @@
+{
+  "id": 111410,
+  "name": "Helga",
+  "baseAtk": 155,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 14101,
+      "name": "Helga - Normal Attack 1",
+      "damageType": 4,
+      "coefs": [
+        71,
+        77,
+        83,
+        90,
+        97,
+        104,
+        113,
+        122,
+        131,
+        142
+      ],
+      "maxCoef": 142
+    },
+    "ultimate": {
+      "id": 14102,
+      "name": "Helga - Ultimate",
+      "damageType": 4,
+      "coefs": [
+        250,
+        270,
+        292,
+        315,
+        340,
+        367,
+        396,
+        428,
+        463,
+        500
+      ],
+      "maxCoef": 500
+    },
+    "skill1": {
+      "id": 14103,
+      "name": "Helga - Passive",
+      "damageType": 0,
+      "coefs": [
+        5,
+        5.4,
+        5.8,
+        6.3,
+        6.8,
+        7.3,
+        7.9,
+        8.6,
+        9.3,
+        10
+      ],
+      "maxCoef": 10
+    },
+    "passive": {
+      "id": 14104,
+      "name": "Helga - Talent",
+      "damageType": 0,
+      "coefs": [
+        1.5,
+        1.6,
+        1.7,
+        1.8,
+        2,
+        2.2,
+        2.4,
+        2.6,
+        2.8,
+        3
+      ],
+      "maxCoef": 3
+    },
+    "exclusive": {
+      "id": 14105,
+      "name": "Helga - Exclusive Ultimate",
+      "damageType": 4,
+      "coefs": [
+        150,
+        175,
+        200
+      ],
+      "maxCoef": 200
+    }
+  }
+}

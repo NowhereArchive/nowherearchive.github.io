@@ -1,0 +1,33 @@
+{
+  "id": 117509,
+  "name": "Iron",
+  "baseAtk": 150,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 13011,
+      "name": "Dissection",
+      "damageType": 1,
+      "coefs": [
+        97,
+        103,
+        110,
+        117,
+        125,
+        134,
+        143,
+        153,
+        163,
+        174
+      ],
+      "maxCoef": 174
+    },
+    "ultimate": {
+      "id": 91013012,
+      "name": "Precision Scalpel",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

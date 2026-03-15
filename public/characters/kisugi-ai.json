@@ -1,0 +1,93 @@
+{
+  "id": 111611,
+  "name": "Kisugi Ai",
+  "baseAtk": 129,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 16111,
+      "name": "Fine Brew",
+      "damageType": 0,
+      "coefs": [
+        38,
+        41,
+        44,
+        48,
+        52,
+        56,
+        60,
+        65,
+        70,
+        76
+      ],
+      "maxCoef": 76
+    },
+    "ultimate": {
+      "id": 16112,
+      "name": "Double Mix",
+      "damageType": 0,
+      "coefs": [
+        86,
+        92,
+        100,
+        108,
+        118,
+        126,
+        136,
+        148,
+        160,
+        172
+      ],
+      "maxCoef": 172
+    },
+    "skill1": {
+      "id": 16113,
+      "name": "Cupped Nightmare",
+      "damageType": 0,
+      "coefs": [
+        20,
+        21.6,
+        23.299999,
+        25.200001,
+        27.200001,
+        29.4,
+        31.700001,
+        34.299999,
+        37,
+        40
+      ],
+      "maxCoef": 40
+    },
+    "passive": {
+      "id": 16114,
+      "name": "Shake",
+      "damageType": 0,
+      "coefs": [
+        10,
+        10.8,
+        11.7,
+        12.6,
+        13.6,
+        14.7,
+        15.9,
+        17.1,
+        18.5,
+        20
+      ],
+      "maxCoef": 20
+    }
+  }
+}

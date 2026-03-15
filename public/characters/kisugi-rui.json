@@ -1,0 +1,93 @@
+{
+  "id": 110512,
+  "name": "Kisugi Rui",
+  "baseAtk": 154,
+  "grades": [
+    [
+      11,
+      50
+    ],
+    [
+      33,
+      100
+    ],
+    [
+      11,
+      25
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 5121,
+      "name": "Cipherkey",
+      "damageType": 2,
+      "coefs": [
+        56,
+        60,
+        65,
+        71,
+        76,
+        82,
+        89,
+        96,
+        104,
+        112
+      ],
+      "maxCoef": 112
+    },
+    "ultimate": {
+      "id": 5122,
+      "name": "Signature Frequency",
+      "damageType": 2,
+      "coefs": [
+        700,
+        756,
+        817,
+        882,
+        953,
+        1029,
+        1111,
+        1200,
+        1296,
+        1400
+      ],
+      "maxCoef": 1400
+    },
+    "skill1": {
+      "id": 5123,
+      "name": "Song of Tomorrow",
+      "damageType": 0,
+      "coefs": [
+        150,
+        162,
+        175,
+        189,
+        204,
+        220,
+        238,
+        257,
+        278,
+        300
+      ],
+      "maxCoef": 300
+    },
+    "passive": {
+      "id": 5124,
+      "name": "Bandwidth Boost",
+      "damageType": 0,
+      "coefs": [
+        20,
+        21.6,
+        23.299999,
+        25.200001,
+        27.200001,
+        29.4,
+        31.700001,
+        34.299999,
+        37,
+        40
+      ],
+      "maxCoef": 40
+    }
+  }
+}

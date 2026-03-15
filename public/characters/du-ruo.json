@@ -1,0 +1,100 @@
+{
+  "id": 110606,
+  "name": "Du Ruo",
+  "baseAtk": 138,
+  "grades": [
+    [
+      11,
+      50
+    ],
+    [
+      33,
+      100
+    ],
+    [
+      11,
+      25
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 6061,
+      "name": "Adrift Smoke",
+      "damageType": 0,
+      "coefs": [
+        48,
+        50.200001,
+        52.5,
+        54.900002,
+        57.5,
+        60.099998,
+        62.900002,
+        65.800003,
+        68.800003,
+        72
+      ],
+      "maxCoef": 72
+    },
+    "ultimate": {
+      "id": 6062,
+      "name": "Ritual Censer",
+      "damageType": 0,
+      "coefs": [
+        140,
+        146,
+        153,
+        160,
+        168,
+        175,
+        183,
+        192,
+        201,
+        210
+      ],
+      "maxCoef": 210
+    },
+    "skill1": {
+      "id": 6063,
+      "name": "Jaditic Rune",
+      "damageType": 0,
+      "coefs": [
+        300,
+        324,
+        350,
+        378,
+        408,
+        441,
+        476,
+        514,
+        556,
+        600
+      ],
+      "maxCoef": 600
+    },
+    "passive": {
+      "id": 6064,
+      "name": "Myriad Skies",
+      "damageType": 0,
+      "coefs": [
+        2,
+        2.1,
+        2.2,
+        2.3,
+        2.4,
+        2.5,
+        2.6,
+        2.7,
+        2.8,
+        3
+      ],
+      "maxCoef": 3
+    },
+    "exclusive": {
+      "id": 6065,
+      "name": "Life Preservation",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

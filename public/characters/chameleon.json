@@ -1,0 +1,93 @@
+{
+  "id": 111602,
+  "name": "Chameleon",
+  "baseAtk": 121,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 16021,
+      "name": "Mental Sore",
+      "damageType": 2,
+      "coefs": [
+        78,
+        83,
+        89,
+        95,
+        102,
+        108,
+        116,
+        124,
+        132,
+        141
+      ],
+      "maxCoef": 141
+    },
+    "ultimate": {
+      "id": 16022,
+      "name": "Suggestion",
+      "damageType": 0,
+      "coefs": [
+        4,
+        4.2,
+        4.4,
+        4.6,
+        4.8,
+        5,
+        5.2,
+        5.5,
+        5.7,
+        6
+      ],
+      "maxCoef": 6
+    },
+    "skill1": {
+      "id": 16023,
+      "name": "Mass Hypnosis",
+      "damageType": 0,
+      "coefs": [
+        10,
+        10.5,
+        10.9,
+        11.4,
+        12,
+        12.5,
+        13.1,
+        13.7,
+        14.3,
+        15
+      ],
+      "maxCoef": 15
+    },
+    "passive": {
+      "id": 16024,
+      "name": "Transference",
+      "damageType": 0,
+      "coefs": [
+        10,
+        10.5,
+        10.9,
+        11.4,
+        12,
+        12.5,
+        13.1,
+        13.7,
+        14.3,
+        15
+      ],
+      "maxCoef": 15
+    }
+  }
+}

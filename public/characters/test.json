@@ -1,0 +1,29 @@
+{
+  "id": 119500,
+  "name": "test",
+  "baseAtk": 1,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 1310001,
+      "name": "",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "ultimate": {
+      "id": 1310002,
+      "name": "[] Switches the stage.",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "skill1": {
+      "id": 1310003,
+      "name": "",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

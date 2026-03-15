@@ -1,0 +1,100 @@
+{
+  "id": 110501,
+  "name": "Eirene",
+  "baseAtk": 163,
+  "grades": [
+    [
+      11,
+      50
+    ],
+    [
+      33,
+      100
+    ],
+    [
+      11,
+      25
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 5011,
+      "name": "Equilibrium",
+      "damageType": 2,
+      "coefs": [
+        92,
+        98,
+        104,
+        111,
+        119,
+        127,
+        136,
+        145,
+        155,
+        165
+      ],
+      "maxCoef": 165
+    },
+    "ultimate": {
+      "id": 5012,
+      "name": "Contract Destruction",
+      "damageType": 0,
+      "coefs": [
+        700,
+        747,
+        798,
+        852,
+        909,
+        970,
+        1036,
+        1106,
+        1180,
+        1260
+      ],
+      "maxCoef": 1260
+    },
+    "skill1": {
+      "id": 5013,
+      "name": "Hidden Chessmaster",
+      "damageType": 0,
+      "coefs": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        21,
+        22,
+        24,
+        25,
+        27
+      ],
+      "maxCoef": 27
+    },
+    "passive": {
+      "id": 5014,
+      "name": "Conspiracy",
+      "damageType": 0,
+      "coefs": [
+        30,
+        29,
+        28,
+        27,
+        26,
+        25,
+        24,
+        23,
+        22,
+        20
+      ],
+      "maxCoef": 20
+    },
+    "exclusive": {
+      "id": 5015,
+      "name": "Dark Chessmaster",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

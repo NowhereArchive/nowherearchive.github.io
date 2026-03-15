@@ -1,0 +1,93 @@
+{
+  "id": 110407,
+  "name": "Bianca",
+  "baseAtk": 162,
+  "grades": [
+    [
+      11,
+      50
+    ],
+    [
+      33,
+      100
+    ],
+    [
+      11,
+      25
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 4071,
+      "name": "Expose",
+      "damageType": 1,
+      "coefs": [
+        90,
+        97,
+        105,
+        113,
+        122,
+        132,
+        143,
+        154,
+        167,
+        180
+      ],
+      "maxCoef": 180
+    },
+    "ultimate": {
+      "id": 4072,
+      "name": "Focal Point",
+      "damageType": 0,
+      "coefs": [
+        150,
+        162,
+        175,
+        189,
+        204,
+        221,
+        238,
+        257,
+        278,
+        300
+      ],
+      "maxCoef": 300
+    },
+    "skill1": {
+      "id": 4073,
+      "name": "DisCity Correspondent",
+      "damageType": 0,
+      "coefs": [
+        6,
+        6.5,
+        7,
+        7.6,
+        8.2,
+        8.8,
+        9.5,
+        10.3,
+        11.1,
+        12
+      ],
+      "maxCoef": 12
+    },
+    "passive": {
+      "id": 4074,
+      "name": "Close-up Shot",
+      "damageType": 0,
+      "coefs": [
+        4.5,
+        4.9,
+        5.2,
+        5.7,
+        6.1,
+        6.6,
+        7.1,
+        7.7,
+        8.3,
+        9
+      ],
+      "maxCoef": 9
+    }
+  }
+}

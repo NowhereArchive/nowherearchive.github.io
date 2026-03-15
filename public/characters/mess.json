@@ -1,0 +1,104 @@
+{
+  "id": 111206,
+  "name": "Mess",
+  "baseAtk": 149,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 12061,
+      "name": "Forge/Vicious Sword",
+      "damageType": 1,
+      "coefs": [
+        38,
+        40,
+        43,
+        46,
+        49,
+        52,
+        56,
+        59,
+        63,
+        68
+      ],
+      "maxCoef": 68
+    },
+    "ultimate": {
+      "id": 12062,
+      "name": "Vicious Smith",
+      "damageType": 0,
+      "coefs": [
+        10,
+        10.7,
+        11.4,
+        12.2,
+        13,
+        13.9,
+        14.8,
+        15.8,
+        16.9,
+        18
+      ],
+      "maxCoef": 18
+    },
+    "skill1": {
+      "id": 12063,
+      "name": "Compatibility Weapon",
+      "damageType": 0,
+      "coefs": [
+        40,
+        42,
+        44,
+        46,
+        48,
+        50,
+        52,
+        55,
+        57,
+        60
+      ],
+      "maxCoef": 60
+    },
+    "passive": {
+      "id": 12064,
+      "name": "Malice Contagion",
+      "damageType": 0,
+      "coefs": [
+        4,
+        4.2,
+        4.4,
+        4.6,
+        4.8,
+        5,
+        5.2,
+        5.5,
+        5.7,
+        6
+      ],
+      "maxCoef": 6
+    },
+    "exclusive": {
+      "id": 12065,
+      "name": "Furnace of Malice",
+      "damageType": 0,
+      "coefs": [
+        5,
+        6,
+        7
+      ],
+      "maxCoef": 7
+    }
+  }
+}

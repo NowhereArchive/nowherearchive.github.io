@@ -1,0 +1,100 @@
+{
+  "id": 110404,
+  "name": "Dreya",
+  "baseAtk": 152,
+  "grades": [
+    [
+      11,
+      50
+    ],
+    [
+      33,
+      100
+    ],
+    [
+      11,
+      25
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 4041,
+      "name": "Scattered Rain",
+      "damageType": 1,
+      "coefs": [
+        57,
+        61,
+        65,
+        69,
+        74,
+        79,
+        84,
+        90,
+        96,
+        102
+      ],
+      "maxCoef": 102
+    },
+    "ultimate": {
+      "id": 4042,
+      "name": "Colossal Collapse",
+      "damageType": 1,
+      "coefs": [
+        700,
+        756,
+        817,
+        882,
+        953,
+        1029,
+        1111,
+        1200,
+        1296,
+        1400
+      ],
+      "maxCoef": 1400
+    },
+    "skill1": {
+      "id": 4043,
+      "name": "Starquake",
+      "damageType": 0,
+      "coefs": [
+        50,
+        54,
+        58.299999,
+        63,
+        68,
+        73.5,
+        79.400002,
+        85.699997,
+        92.599998,
+        100
+      ],
+      "maxCoef": 100
+    },
+    "passive": {
+      "id": 4044,
+      "name": "Abyssal Drain",
+      "damageType": 0,
+      "coefs": [
+        6,
+        6.5,
+        7,
+        7.6,
+        8.2,
+        8.8,
+        9.5,
+        10.3,
+        11.1,
+        12
+      ],
+      "maxCoef": 12
+    },
+    "exclusive": {
+      "id": 4045,
+      "name": "Tempestuous Pull",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

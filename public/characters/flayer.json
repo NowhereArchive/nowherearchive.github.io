@@ -1,0 +1,22 @@
+{
+  "id": 118519,
+  "name": "Flayer",
+  "baseAtk": 180,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 30000005,
+      "name": "",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "skill1": {
+      "id": 11851903,
+      "name": "",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

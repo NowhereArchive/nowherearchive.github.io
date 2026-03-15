@@ -1,0 +1,69 @@
+{
+  "id": 119001,
+  "name": "Hypatia",
+  "baseAtk": 154,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 19000001,
+      "name": "",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "ultimate": {
+      "id": 4092,
+      "name": "Prayer of Dawn",
+      "damageType": 0,
+      "coefs": [
+        700,
+        756,
+        817,
+        882,
+        953,
+        1029,
+        1111,
+        1200,
+        1296,
+        1400
+      ],
+      "maxCoef": 1400
+    },
+    "skill1": {
+      "id": 4093,
+      "name": "Elem Transmute",
+      "damageType": 0,
+      "coefs": [
+        6,
+        6.5,
+        7,
+        7.6,
+        8.2,
+        8.8,
+        9.5,
+        10.3,
+        11.1,
+        12
+      ],
+      "maxCoef": 12
+    },
+    "passive": {
+      "id": 4094,
+      "name": "Auric Resonance",
+      "damageType": 0,
+      "coefs": [
+        2.5,
+        2.7,
+        2.9,
+        3.1,
+        3.4,
+        3.7,
+        4,
+        4.3,
+        4.6,
+        5
+      ],
+      "maxCoef": 5
+    }
+  }
+}

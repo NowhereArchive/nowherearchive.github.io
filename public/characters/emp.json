@@ -1,0 +1,93 @@
+{
+  "id": 112401,
+  "name": "EMP",
+  "baseAtk": 147,
+  "grades": [
+    [
+      1,
+      5
+    ],
+    [
+      3,
+      10
+    ],
+    [
+      2,
+      5
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 24011,
+      "name": "Electric Arrow",
+      "damageType": 1,
+      "coefs": [
+        128,
+        134,
+        142,
+        149,
+        157,
+        166,
+        174,
+        184,
+        194,
+        204
+      ],
+      "maxCoef": 204
+    },
+    "ultimate": {
+      "id": 24012,
+      "name": "Ultra EM Arrow!",
+      "damageType": 1,
+      "coefs": [
+        800,
+        843,
+        888,
+        936,
+        986,
+        1039,
+        1094,
+        1153,
+        1215,
+        1280
+      ],
+      "maxCoef": 1280
+    },
+    "skill1": {
+      "id": 24013,
+      "name": "Double Arrow",
+      "damageType": 0,
+      "coefs": [
+        45,
+        42,
+        39,
+        37,
+        35,
+        32,
+        30,
+        28,
+        27,
+        25
+      ],
+      "maxCoef": 25
+    },
+    "passive": {
+      "id": 24014,
+      "name": "Hypercharge",
+      "damageType": 0,
+      "coefs": [
+        1,
+        1.1,
+        1.2,
+        1.3,
+        1.4,
+        1.5,
+        1.6,
+        1.7,
+        1.8,
+        2
+      ],
+      "maxCoef": 2
+    }
+  }
+}

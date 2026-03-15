@@ -1,0 +1,29 @@
+{
+  "id": 118535,
+  "name": "Independence Army Cannoneer",
+  "baseAtk": 140,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 11852901,
+      "name": "",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "ultimate": {
+      "id": 11853502,
+      "name": "[Enhanced Dispatch] Consumes a certain amount of supplies to dispatch elite troop units.",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "passive": {
+      "id": 11853503,
+      "name": "[Dispatch] Dispatches standard troop units at regular intervals.",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

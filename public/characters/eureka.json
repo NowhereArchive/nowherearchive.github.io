@@ -1,0 +1,104 @@
+{
+  "id": 111308,
+  "name": "Eureka",
+  "baseAtk": 140,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 13081,
+      "name": "Fault Penetration",
+      "damageType": 1,
+      "coefs": [
+        71,
+        76,
+        81,
+        86,
+        92,
+        98,
+        105,
+        112,
+        120,
+        128
+      ],
+      "maxCoef": 128
+    },
+    "ultimate": {
+      "id": 13082,
+      "name": "Precise Trigger",
+      "damageType": 0,
+      "coefs": [
+        500,
+        533.700012,
+        569.799988,
+        608.200012,
+        649.299988,
+        693.099976,
+        739.900024,
+        789.799988,
+        843.099976,
+        900
+      ],
+      "maxCoef": 900
+    },
+    "skill1": {
+      "id": 13083,
+      "name": "Functional Boost",
+      "damageType": 0,
+      "coefs": [
+        7.5,
+        8.1,
+        8.7,
+        9.4,
+        10.2,
+        11,
+        11.9,
+        12.9,
+        13.9,
+        15
+      ],
+      "maxCoef": 15
+    },
+    "passive": {
+      "id": 13084,
+      "name": "Ultimate Explosion",
+      "damageType": 0,
+      "coefs": [
+        4,
+        4.2,
+        4.4,
+        4.7,
+        5,
+        5.4,
+        5.8,
+        6.2,
+        6.6,
+        7
+      ],
+      "maxCoef": 7
+    },
+    "exclusive": {
+      "id": 13085,
+      "name": "Rebooted Gear",
+      "damageType": 0,
+      "coefs": [
+        10,
+        12.5,
+        15
+      ],
+      "maxCoef": 15
+    }
+  }
+}

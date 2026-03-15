@@ -1,0 +1,104 @@
+{
+  "id": 110203,
+  "name": "Deren",
+  "baseAtk": 155,
+  "grades": [
+    [
+      11,
+      50
+    ],
+    [
+      33,
+      100
+    ],
+    [
+      11,
+      25
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 2031,
+      "name": "Edit",
+      "damageType": 1,
+      "coefs": [
+        72,
+        77,
+        82,
+        88,
+        93,
+        100,
+        106,
+        114,
+        121,
+        130
+      ],
+      "maxCoef": 130
+    },
+    "ultimate": {
+      "id": 2032,
+      "name": "Screenplay",
+      "damageType": 1,
+      "coefs": [
+        405,
+        432,
+        462,
+        493,
+        526,
+        561,
+        599,
+        640,
+        683,
+        729
+      ],
+      "maxCoef": 729
+    },
+    "skill1": {
+      "id": 2033,
+      "name": "24 Frames",
+      "damageType": 0,
+      "coefs": [
+        24,
+        25.6,
+        27.299999,
+        29.200001,
+        31.1,
+        33.200001,
+        35.5,
+        37.900002,
+        40.400002,
+        43.200001
+      ],
+      "maxCoef": 43.200001
+    },
+    "passive": {
+      "id": 2034,
+      "name": "Fast Motion",
+      "damageType": 0,
+      "coefs": [
+        5,
+        5.4,
+        5.8,
+        6.3,
+        6.8,
+        7.3,
+        7.9,
+        8.6,
+        9.3,
+        10
+      ],
+      "maxCoef": 10
+    },
+    "exclusive": {
+      "id": 2035,
+      "name": "Worthless Film",
+      "damageType": 1,
+      "coefs": [
+        200,
+        250,
+        300
+      ],
+      "maxCoef": 300
+    }
+  }
+}

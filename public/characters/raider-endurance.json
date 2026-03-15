@@ -1,0 +1,22 @@
+{
+  "id": 118509,
+  "name": "Raider - Endurance",
+  "baseAtk": 130,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 30000005,
+      "name": "",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "skill1": {
+      "id": 11850905,
+      "name": "[Endurance] Takes 40% less damage.",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

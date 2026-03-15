@@ -1,0 +1,93 @@
+{
+  "id": 111101,
+  "name": "Countess Chelsea",
+  "baseAtk": 100,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 11011,
+      "name": "Crystal Claws",
+      "damageType": 1,
+      "coefs": [
+        93,
+        100,
+        106,
+        114,
+        121,
+        129,
+        138,
+        147,
+        157,
+        168
+      ],
+      "maxCoef": 168
+    },
+    "ultimate": {
+      "id": 11012,
+      "name": "Dear Kitty",
+      "damageType": 0,
+      "coefs": [
+        80,
+        84,
+        88,
+        92,
+        96,
+        100,
+        105,
+        110,
+        115,
+        120
+      ],
+      "maxCoef": 120
+    },
+    "skill1": {
+      "id": 11013,
+      "name": "Behave, Or Get Petrified",
+      "damageType": 0,
+      "coefs": [
+        8,
+        8.5,
+        9.1,
+        9.7,
+        10.4,
+        11.1,
+        11.8,
+        12.6,
+        13.5,
+        14.4
+      ],
+      "maxCoef": 14.4
+    },
+    "passive": {
+      "id": 11014,
+      "name": "Shared Fate",
+      "damageType": 0,
+      "coefs": [
+        10,
+        10.7,
+        11.4,
+        12.2,
+        13,
+        13.9,
+        14.8,
+        15.8,
+        16.9,
+        18
+      ],
+      "maxCoef": 18
+    }
+  }
+}

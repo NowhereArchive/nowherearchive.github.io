@@ -1,0 +1,93 @@
+{
+  "id": 111201,
+  "name": "Ninety-Nine",
+  "baseAtk": 152,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 12011,
+      "name": "Furious Attack",
+      "damageType": 1,
+      "coefs": [
+        108,
+        115,
+        123,
+        131,
+        140,
+        149,
+        159,
+        170,
+        181,
+        194
+      ],
+      "maxCoef": 194
+    },
+    "ultimate": {
+      "id": 12012,
+      "name": "Incinerate",
+      "damageType": 0,
+      "coefs": [
+        20,
+        21.299999,
+        22.799999,
+        24.299999,
+        26,
+        27.700001,
+        29.6,
+        31.6,
+        33.700001,
+        36
+      ],
+      "maxCoef": 36
+    },
+    "skill1": {
+      "id": 12013,
+      "name": "Ebullition",
+      "damageType": 0,
+      "coefs": [
+        2.5,
+        2.7,
+        2.8,
+        3,
+        3.2,
+        3.5,
+        3.7,
+        3.9,
+        4.2,
+        4.5
+      ],
+      "maxCoef": 4.5
+    },
+    "passive": {
+      "id": 12014,
+      "name": "Fury Tendency",
+      "damageType": 0,
+      "coefs": [
+        4,
+        4.3,
+        4.6,
+        4.9,
+        5.2,
+        5.5,
+        5.9,
+        6.3,
+        6.7,
+        7.2
+      ],
+      "maxCoef": 7.2
+    }
+  }
+}

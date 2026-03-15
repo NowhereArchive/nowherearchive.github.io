@@ -1,0 +1,33 @@
+{
+  "id": 117506,
+  "name": "Sumire",
+  "baseAtk": 140,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 13031,
+      "name": "Umbrella Blade",
+      "damageType": 1,
+      "coefs": [
+        68,
+        73,
+        78,
+        83,
+        89,
+        95,
+        101,
+        108,
+        115,
+        123
+      ],
+      "maxCoef": 123
+    },
+    "ultimate": {
+      "id": 91013032,
+      "name": "Impermanence",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

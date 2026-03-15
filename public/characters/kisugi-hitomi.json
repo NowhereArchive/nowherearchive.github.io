@@ -1,0 +1,93 @@
+{
+  "id": 110312,
+  "name": "Kisugi Hitomi",
+  "baseAtk": 165,
+  "grades": [
+    [
+      11,
+      50
+    ],
+    [
+      33,
+      100
+    ],
+    [
+      11,
+      25
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 3121,
+      "name": "Ceto swings her chainsaw, each hit dealing (Attack *%) Physical Damage 3 times.",
+      "damageType": 2,
+      "coefs": [
+        80,
+        86,
+        93,
+        101,
+        109,
+        118,
+        127,
+        137,
+        148,
+        160
+      ],
+      "maxCoef": 160
+    },
+    "ultimate": {
+      "id": 3122,
+      "name": "Ceto swings her chainsaw frantically, dealing (% of Attack damage) Physical Damage to enemies within range 5 times.",
+      "damageType": 2,
+      "coefs": [
+        350,
+        378,
+        408,
+        441,
+        476,
+        514,
+        556,
+        600,
+        648,
+        700
+      ],
+      "maxCoef": 700
+    },
+    "skill1": {
+      "id": 3123,
+      "name": "Every 10 seconds, Ceto turns her next normal attack into dealing damage in 1 grid, dealing (% of her Attack) Physical Damage 4 times.",
+      "damageType": 0,
+      "coefs": [
+        10,
+        10.8,
+        11.7,
+        12.6,
+        13.6,
+        14.7,
+        15.9,
+        17.1,
+        18.5,
+        20
+      ],
+      "maxCoef": 20
+    },
+    "passive": {
+      "id": 3124,
+      "name": "Ceto gains a % damage bonus for each enemy on the battlefield. The bonus can stack up to 6 times.",
+      "damageType": 0,
+      "coefs": [
+        15,
+        16.200001,
+        17.5,
+        18.9,
+        20.4,
+        22,
+        23.799999,
+        25.700001,
+        27.799999,
+        30
+      ],
+      "maxCoef": 30
+    }
+  }
+}

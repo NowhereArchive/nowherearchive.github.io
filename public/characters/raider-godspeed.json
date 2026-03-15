@@ -1,0 +1,22 @@
+{
+  "id": 118507,
+  "name": "Raider - Godspeed",
+  "baseAtk": 130,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 30000005,
+      "name": "",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "skill1": {
+      "id": 11850705,
+      "name": "[Godspeed] Movement Speed briefly increases upon recruitment.",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

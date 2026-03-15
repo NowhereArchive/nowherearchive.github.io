@@ -1,0 +1,93 @@
+{
+  "id": 110511,
+  "name": "Hilda",
+  "baseAtk": 161,
+  "grades": [
+    [
+      11,
+      50
+    ],
+    [
+      33,
+      100
+    ],
+    [
+      11,
+      25
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 5111,
+      "name": "Cipherkey",
+      "damageType": 2,
+      "coefs": [
+        50,
+        54,
+        58,
+        63,
+        68,
+        74,
+        79,
+        86,
+        93,
+        100
+      ],
+      "maxCoef": 100
+    },
+    "ultimate": {
+      "id": 5112,
+      "name": "Signature Frequency",
+      "damageType": 0,
+      "coefs": [
+        720,
+        778,
+        840,
+        907,
+        980,
+        1058,
+        1143,
+        1234,
+        1333,
+        1440
+      ],
+      "maxCoef": 1440
+    },
+    "skill1": {
+      "id": 5113,
+      "name": "Song of Tomorrow",
+      "damageType": 0,
+      "coefs": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        20
+      ],
+      "maxCoef": 20
+    },
+    "passive": {
+      "id": 5114,
+      "name": "Bandwidth Boost",
+      "damageType": 0,
+      "coefs": [
+        80,
+        76,
+        71,
+        68,
+        64,
+        61,
+        58,
+        55,
+        52,
+        50
+      ],
+      "maxCoef": 50
+    }
+  }
+}

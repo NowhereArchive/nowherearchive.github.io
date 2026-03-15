@@ -1,0 +1,93 @@
+{
+  "id": 110609,
+  "name": "Parfait",
+  "baseAtk": 129,
+  "grades": [
+    [
+      11,
+      50
+    ],
+    [
+      33,
+      100
+    ],
+    [
+      11,
+      25
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 6091,
+      "name": "Invest",
+      "damageType": 1,
+      "coefs": [
+        48,
+        52,
+        56,
+        60,
+        65,
+        71,
+        76,
+        82,
+        89,
+        96
+      ],
+      "maxCoef": 96
+    },
+    "ultimate": {
+      "id": 6092,
+      "name": "Credit Speculation",
+      "damageType": 1,
+      "coefs": [
+        1.5,
+        1.6,
+        1.7,
+        1.9,
+        2,
+        2.2,
+        2.4,
+        2.6,
+        2.8,
+        3
+      ],
+      "maxCoef": 3
+    },
+    "skill1": {
+      "id": 6093,
+      "name": "Feedback Loop",
+      "damageType": 0,
+      "coefs": [
+        7.5,
+        8.1,
+        8.7,
+        9.4,
+        10.2,
+        11,
+        11.9,
+        12.9,
+        13.9,
+        15
+      ],
+      "maxCoef": 15
+    },
+    "passive": {
+      "id": 6094,
+      "name": "Irrational Exuberance",
+      "damageType": 0,
+      "coefs": [
+        15,
+        16.200001,
+        17.5,
+        18.9,
+        20.4,
+        22,
+        23.799999,
+        25.700001,
+        27.799999,
+        30
+      ],
+      "maxCoef": 30
+    }
+  }
+}

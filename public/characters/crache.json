@@ -1,0 +1,93 @@
+{
+  "id": 110302,
+  "name": "Crache",
+  "baseAtk": 171,
+  "grades": [
+    [
+      11,
+      50
+    ],
+    [
+      33,
+      100
+    ],
+    [
+      11,
+      25
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 3021,
+      "name": "Shadow Attack",
+      "damageType": 1,
+      "coefs": [
+        92,
+        98,
+        104,
+        112,
+        119,
+        127,
+        136,
+        145,
+        155,
+        165
+      ],
+      "maxCoef": 165
+    },
+    "ultimate": {
+      "id": 3022,
+      "name": "Stealth/Shadow Blade",
+      "damageType": 0,
+      "coefs": [
+        400,
+        427,
+        456,
+        487,
+        519,
+        555,
+        592,
+        632,
+        675,
+        720
+      ],
+      "maxCoef": 720
+    },
+    "skill1": {
+      "id": 3023,
+      "name": "Shadow Doubles",
+      "damageType": 0,
+      "coefs": [
+        210,
+        224,
+        239,
+        256,
+        273,
+        291,
+        311,
+        332,
+        354,
+        378
+      ],
+      "maxCoef": 378
+    },
+    "passive": {
+      "id": 3024,
+      "name": "Blanket of Shadows",
+      "damageType": 0,
+      "coefs": [
+        10,
+        10.5,
+        10.9,
+        11.4,
+        12,
+        12.5,
+        13.1,
+        13.7,
+        14.3,
+        15
+      ],
+      "maxCoef": 15
+    }
+  }
+}

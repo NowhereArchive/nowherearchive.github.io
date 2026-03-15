@@ -1,0 +1,29 @@
+{
+  "id": 117103,
+  "name": "Blazing Stove - Blue",
+  "baseAtk": 1,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 11500001,
+      "name": "",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "ultimate": {
+      "id": 75009913,
+      "name": "Pure Blue Flame",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "skill1": {
+      "id": 75009938,
+      "name": "",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

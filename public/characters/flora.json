@@ -1,0 +1,93 @@
+{
+  "id": 112402,
+  "name": "Flora",
+  "baseAtk": 137,
+  "grades": [
+    [
+      1,
+      5
+    ],
+    [
+      3,
+      10
+    ],
+    [
+      2,
+      5
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 24021,
+      "name": "Water Bomb",
+      "damageType": 1,
+      "coefs": [
+        45,
+        48,
+        51,
+        55,
+        58,
+        62,
+        67,
+        71,
+        76,
+        81
+      ],
+      "maxCoef": 81
+    },
+    "ultimate": {
+      "id": 24022,
+      "name": "Unleash the Waterworks",
+      "damageType": 0,
+      "coefs": [
+        200,
+        213,
+        228,
+        243,
+        260,
+        277,
+        296,
+        316,
+        337,
+        360
+      ],
+      "maxCoef": 360
+    },
+    "skill1": {
+      "id": 24023,
+      "name": "High-pressure Water Bomb",
+      "damageType": 0,
+      "coefs": [
+        10,
+        10.7,
+        11.4,
+        12.2,
+        13,
+        13.9,
+        14.8,
+        15.8,
+        16.9,
+        18
+      ],
+      "maxCoef": 18
+    },
+    "passive": {
+      "id": 24024,
+      "name": "Flame Retardant",
+      "damageType": 0,
+      "coefs": [
+        15,
+        16,
+        17.1,
+        18.200001,
+        19.5,
+        20.799999,
+        22.200001,
+        23.700001,
+        25.299999,
+        27
+      ],
+      "maxCoef": 27
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "id": 111603,
+  "name": "Anne",
+  "baseAtk": 118,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 16031,
+      "name": "Inject",
+      "damageType": 2,
+      "coefs": [
+        89,
+        95,
+        101,
+        108,
+        115,
+        123,
+        132,
+        140,
+        150,
+        160
+      ],
+      "maxCoef": 160
+    },
+    "ultimate": {
+      "id": 16032,
+      "name": "Nurse's Blessing",
+      "damageType": 0,
+      "coefs": [
+        90,
+        94,
+        98,
+        103,
+        108,
+        113,
+        118,
+        123,
+        129,
+        135
+      ],
+      "maxCoef": 135
+    },
+    "skill1": {
+      "id": 16033,
+      "name": "Medical Logistics",
+      "damageType": 0,
+      "coefs": [
+        140,
+        146,
+        153,
+        160,
+        167,
+        175,
+        183,
+        192,
+        201,
+        210
+      ],
+      "maxCoef": 210
+    },
+    "passive": {
+      "id": 16034,
+      "name": "Tender Yet Strict",
+      "damageType": 0,
+      "coefs": [
+        2,
+        2.1,
+        2.2,
+        2.3,
+        2.4,
+        2.5,
+        2.6,
+        2.7,
+        2.8,
+        3
+      ],
+      "maxCoef": 3
+    },
+    "exclusive": {
+      "id": 16035,
+      "name": "Anesthetic Shot",
+      "damageType": 0,
+      "coefs": [
+        6,
+        8,
+        10
+      ],
+      "maxCoef": 10
+    }
+  }
+}

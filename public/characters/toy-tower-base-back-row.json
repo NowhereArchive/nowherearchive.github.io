@@ -1,0 +1,29 @@
+{
+  "id": 118205,
+  "name": "Toy tower base (back row)",
+  "baseAtk": 1,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 11740101,
+      "name": "",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "ultimate": {
+      "id": 11820201,
+      "name": "Build [Nail Gun]",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "passive": {
+      "id": 11740109,
+      "name": "",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

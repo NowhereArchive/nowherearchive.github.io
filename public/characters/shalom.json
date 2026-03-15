@@ -1,0 +1,100 @@
+{
+  "id": 110405,
+  "name": "Shalom",
+  "baseAtk": 159,
+  "grades": [
+    [
+      11,
+      50
+    ],
+    [
+      33,
+      100
+    ],
+    [
+      11,
+      25
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 4051,
+      "name": "Anchor",
+      "damageType": 1,
+      "coefs": [
+        85,
+        91,
+        97,
+        103,
+        110,
+        118,
+        126,
+        134,
+        143,
+        153
+      ],
+      "maxCoef": 153
+    },
+    "ultimate": {
+      "id": 4052,
+      "name": "Reticence",
+      "damageType": 1,
+      "coefs": [
+        120,
+        130,
+        140,
+        151,
+        163,
+        176,
+        190,
+        206,
+        222,
+        240
+      ],
+      "maxCoef": 240
+    },
+    "skill1": {
+      "id": 4053,
+      "name": "Onyx Refraction",
+      "damageType": 0,
+      "coefs": [
+        24,
+        22.700001,
+        21.4,
+        20,
+        18.5,
+        17,
+        15.4,
+        13.7,
+        11.9,
+        10
+      ],
+      "maxCoef": 10
+    },
+    "passive": {
+      "id": 4054,
+      "name": "Error Correction",
+      "damageType": 0,
+      "coefs": [
+        6,
+        6.5,
+        7,
+        7.6,
+        8.2,
+        8.8,
+        9.5,
+        10.3,
+        11.1,
+        12
+      ],
+      "maxCoef": 12
+    },
+    "exclusive": {
+      "id": 4055,
+      "name": "Surveillant",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": 117331,
+  "name": "Shield Generator",
+  "baseAtk": 150,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 76000001,
+      "name": "",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "ultimate": {
+      "id": 76010008,
+      "name": "Energy Shield",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "passive": {
+      "id": 76000003,
+      "name": "Switch the grid beneath to obstacle grid",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

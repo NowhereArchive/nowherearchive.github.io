@@ -1,0 +1,104 @@
+{
+  "id": 111508,
+  "name": "jojo",
+  "baseAtk": 150,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 15081,
+      "name": "JoJo Placeholder",
+      "damageType": 2,
+      "coefs": [
+        77,
+        83,
+        90,
+        97,
+        105,
+        113,
+        122,
+        132,
+        143,
+        154
+      ],
+      "maxCoef": 154
+    },
+    "ultimate": {
+      "id": 15082,
+      "name": "JoJo Placeholder",
+      "damageType": 2,
+      "coefs": [
+        22,
+        23.799999,
+        25.700001,
+        27.700001,
+        29.9,
+        32.299999,
+        34.900002,
+        37.700001,
+        40.700001,
+        44
+      ],
+      "maxCoef": 44
+    },
+    "skill1": {
+      "id": 15083,
+      "name": "JoJo Placeholder",
+      "damageType": 0,
+      "coefs": [
+        71,
+        77,
+        83,
+        89,
+        97,
+        104,
+        113,
+        122,
+        131,
+        142
+      ],
+      "maxCoef": 142
+    },
+    "passive": {
+      "id": 15084,
+      "name": "JoJo Placeholder",
+      "damageType": 0,
+      "coefs": [
+        152,
+        164,
+        177,
+        192,
+        207,
+        223,
+        241,
+        261,
+        281,
+        304
+      ],
+      "maxCoef": 304
+    },
+    "exclusive": {
+      "id": 15085,
+      "name": "Jojo",
+      "damageType": 0,
+      "coefs": [
+        40,
+        50,
+        60
+      ],
+      "maxCoef": 60
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "id": 110204,
+  "name": "Donald",
+  "baseAtk": 155,
+  "grades": [
+    [
+      11,
+      50
+    ],
+    [
+      33,
+      100
+    ],
+    [
+      11,
+      25
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 2041,
+      "name": "Electric Surge",
+      "damageType": 1,
+      "coefs": [
+        71,
+        76.699997,
+        82.800003,
+        89.5,
+        96.599998,
+        104.400002,
+        112.699997,
+        121.699997,
+        131.5,
+        142
+      ],
+      "maxCoef": 142
+    },
+    "ultimate": {
+      "id": 2042,
+      "name": "Thunderous Might",
+      "damageType": 0,
+      "coefs": [
+        150,
+        162,
+        175,
+        189,
+        204,
+        220,
+        238,
+        257,
+        278,
+        300
+      ],
+      "maxCoef": 300
+    },
+    "skill1": {
+      "id": 2044,
+      "name": "Unexpected Thunder",
+      "damageType": 0,
+      "coefs": [
+        330,
+        356,
+        385,
+        416,
+        449,
+        485,
+        524,
+        566,
+        611,
+        660
+      ],
+      "maxCoef": 660
+    },
+    "passive": {
+      "id": 2045,
+      "name": "Electric Conduction",
+      "damageType": 0,
+      "coefs": [
+        50,
+        54,
+        58.299999,
+        63,
+        68,
+        73.5,
+        79.400002,
+        85.699997,
+        92.599998,
+        100
+      ],
+      "maxCoef": 100
+    },
+    "exclusive": {
+      "id": 2043,
+      "name": "Dead End",
+      "damageType": 0,
+      "coefs": [
+        10,
+        17.5,
+        25
+      ],
+      "maxCoef": 25
+    }
+  }
+}

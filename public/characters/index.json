@@ -1,0 +1,1207 @@
+[
+  {
+    "name": "000",
+    "id": 110308,
+    "file": "000.json"
+  },
+  {
+    "name": "2-16 NPC",
+    "id": 114001,
+    "file": "2-16-npc.json"
+  },
+  {
+    "name": "A.S. Warrior",
+    "id": 119502,
+    "file": "as-warrior.json"
+  },
+  {
+    "name": "Adela",
+    "id": 110304,
+    "file": "adela.json"
+  },
+  {
+    "name": "Alchemic Device",
+    "id": 118414,
+    "file": "alchemic-device.json"
+  },
+  {
+    "name": "Angell",
+    "id": 110306,
+    "file": "angell.json"
+  },
+  {
+    "name": "Anne",
+    "id": 111603,
+    "file": "anne.json"
+  },
+  {
+    "name": "Anura",
+    "id": 111304,
+    "file": "anura.json"
+  },
+  {
+    "name": "Ariel",
+    "id": 111601,
+    "file": "ariel.json"
+  },
+  {
+    "name": "Ark",
+    "id": 111213,
+    "file": "ark.json"
+  },
+  {
+    "name": "Artillery - Fire Control",
+    "id": 118518,
+    "file": "artillery-fire-control.json"
+  },
+  {
+    "name": "Artillery - Hawk Eye",
+    "id": 118516,
+    "file": "artillery-hawk-eye.json"
+  },
+  {
+    "name": "Artillery - Synergy",
+    "id": 118517,
+    "file": "artillery-synergy.json"
+  },
+  {
+    "name": "Artist Duck",
+    "id": 118331,
+    "file": "artist-duck.json"
+  },
+  {
+    "name": "Augustus",
+    "id": 110410,
+    "file": "augustus.json"
+  },
+  {
+    "name": "Auto Striker",
+    "id": 118105,
+    "file": "auto-striker.json"
+  },
+  {
+    "name": "Bai Yi",
+    "id": 110301,
+    "file": "bai-yi.json"
+  },
+  {
+    "name": "Ballista",
+    "id": 118125,
+    "file": "ballista.json"
+  },
+  {
+    "name": "Battle Booster",
+    "id": 117351,
+    "file": "battle-booster.json"
+  },
+  {
+    "name": "Bianca",
+    "id": 110407,
+    "file": "bianca.json"
+  },
+  {
+    "name": "Binding Snare",
+    "id": 117391,
+    "file": "binding-snare.json"
+  },
+  {
+    "name": "Blazing Stove - Blue",
+    "id": 117103,
+    "file": "blazing-stove-blue.json"
+  },
+  {
+    "name": "Blazing Stove - Green",
+    "id": 117102,
+    "file": "blazing-stove-green.json"
+  },
+  {
+    "name": "Blazing Stove - Red",
+    "id": 117101,
+    "file": "blazing-stove-red.json"
+  },
+  {
+    "name": "Boss Duck",
+    "id": 118337,
+    "file": "boss-duck.json"
+  },
+  {
+    "name": "Cabernet",
+    "id": 117505,
+    "file": "cabernet.json"
+  },
+  {
+    "name": "Cassia",
+    "id": 111607,
+    "file": "cassia.json"
+  },
+  {
+    "name": "Cassian",
+    "id": 111610,
+    "file": "cassian.json"
+  },
+  {
+    "name": "Ceto",
+    "id": 110311,
+    "file": "ceto.json"
+  },
+  {
+    "name": "Chameleon",
+    "id": 111602,
+    "file": "chameleon.json"
+  },
+  {
+    "name": "Charger",
+    "id": 118107,
+    "file": "charger.json"
+  },
+  {
+    "name": "Che",
+    "id": 117508,
+    "file": "che.json"
+  },
+  {
+    "name": "Christina",
+    "id": 111208,
+    "file": "christina.json"
+  },
+  {
+    "name": "Cinnabar",
+    "id": 111102,
+    "file": "cinnabar.json"
+  },
+  {
+    "name": "Code Duck",
+    "id": 118335,
+    "file": "code-duck.json"
+  },
+  {
+    "name": "Concentrated Beam",
+    "id": 117370,
+    "file": "concentrated-beam.json"
+  },
+  {
+    "name": "Config Duck",
+    "id": 118333,
+    "file": "config-duck.json"
+  },
+  {
+    "name": "Coquelic",
+    "id": 110604,
+    "file": "coquelic.json"
+  },
+  {
+    "name": "Corso",
+    "id": 111207,
+    "file": "corso.json"
+  },
+  {
+    "name": "Countess Chelsea",
+    "id": 111101,
+    "file": "countess-chelsea.json"
+  },
+  {
+    "name": "Crache",
+    "id": 110302,
+    "file": "crache.json"
+  },
+  {
+    "name": "Crate Barricade",
+    "id": 118126,
+    "file": "crate-barricade.json"
+  },
+  {
+    "name": "Creation Cube",
+    "id": 117503,
+    "file": "creation-cube.json"
+  },
+  {
+    "name": "Cross Deceleration Zone",
+    "id": 118103,
+    "file": "cross-deceleration-zone.json"
+  },
+  {
+    "name": "Cursed Lantern",
+    "id": 117712,
+    "file": "cursed-lantern.json"
+  },
+  {
+    "name": "Decoder",
+    "id": 119503,
+    "file": "decoder.json"
+  },
+  {
+    "name": "Demolia",
+    "id": 112102,
+    "file": "demolia.json"
+  },
+  {
+    "name": "Demon",
+    "id": 110101,
+    "file": "demon.json"
+  },
+  {
+    "name": "Deren",
+    "id": 110203,
+    "file": "deren.json"
+  },
+  {
+    "name": "DisCorps Axe Guard",
+    "id": 118527,
+    "file": "discorps-axe-guard.json"
+  },
+  {
+    "name": "DisCorps Breacher",
+    "id": 118528,
+    "file": "discorps-breacher.json"
+  },
+  {
+    "name": "DisCorps Cannoneer",
+    "id": 118529,
+    "file": "discorps-cannoneer.json"
+  },
+  {
+    "name": "DisCorps Soldier",
+    "id": 118526,
+    "file": "discorps-soldier.json"
+  },
+  {
+    "name": "DisWarden - Assault",
+    "id": 118501,
+    "file": "diswarden-assault.json"
+  },
+  {
+    "name": "DisWarden - Elite",
+    "id": 118503,
+    "file": "diswarden-elite.json"
+  },
+  {
+    "name": "DisWarden - Synergy",
+    "id": 118502,
+    "file": "diswarden-synergy.json"
+  },
+  {
+    "name": "Dolly",
+    "id": 111204,
+    "file": "dolly.json"
+  },
+  {
+    "name": "Donald",
+    "id": 110204,
+    "file": "donald.json"
+  },
+  {
+    "name": "Dove",
+    "id": 111108,
+    "file": "dove.json"
+  },
+  {
+    "name": "Dreya",
+    "id": 110404,
+    "file": "dreya.json"
+  },
+  {
+    "name": "Du Ruo",
+    "id": 110606,
+    "file": "du-ruo.json"
+  },
+  {
+    "name": "Dudu",
+    "id": 111605,
+    "file": "dudu.json"
+  },
+  {
+    "name": "Echo",
+    "id": 111507,
+    "file": "echo.json"
+  },
+  {
+    "name": "Eirene",
+    "id": 110501,
+    "file": "eirene.json"
+  },
+  {
+    "name": "Eleven",
+    "id": 110506,
+    "file": "eleven.json"
+  },
+  {
+    "name": "Elvira",
+    "id": 117714,
+    "file": "elvira.json"
+  },
+  {
+    "name": "EM Cannon",
+    "id": 117390,
+    "file": "em-cannon.json"
+  },
+  {
+    "name": "EMP",
+    "id": 112401,
+    "file": "emp.json"
+  },
+  {
+    "name": "Empty Hero",
+    "id": 119501,
+    "file": "empty-hero.json"
+  },
+  {
+    "name": "Empty Summoned Creature",
+    "id": 117603,
+    "file": "empty-summoned-creature.json"
+  },
+  {
+    "name": "Enfer",
+    "id": 110602,
+    "file": "enfer.json"
+  },
+  {
+    "name": "Error Data",
+    "id": 118319,
+    "file": "error-data.json"
+  },
+  {
+    "name": "Etti",
+    "id": 110504,
+    "file": "etti.json"
+  },
+  {
+    "name": "Eureka",
+    "id": 111308,
+    "file": "eureka.json"
+  },
+  {
+    "name": "Eve",
+    "id": 110605,
+    "file": "eve.json"
+  },
+  {
+    "name": "Exit NPC",
+    "id": 117202,
+    "file": "exit-npc.json"
+  },
+  {
+    "name": "Exobird",
+    "id": 117702,
+    "file": "exobird.json"
+  },
+  {
+    "name": "FAC Breacher",
+    "id": 118539,
+    "file": "fac-breacher.json"
+  },
+  {
+    "name": "FAC Cannoneer",
+    "id": 118540,
+    "file": "fac-cannoneer.json"
+  },
+  {
+    "name": "FAC elite axe wielder",
+    "id": 117392,
+    "file": "fac-elite-axe-wielder.json"
+  },
+  {
+    "name": "FAC Shield Guard",
+    "id": 118538,
+    "file": "fac-shield-guard.json"
+  },
+  {
+    "name": "FAC Soldier",
+    "id": 118537,
+    "file": "fac-soldier.json"
+  },
+  {
+    "name": "Field Charging Station",
+    "id": 117341,
+    "file": "field-charging-station.json"
+  },
+  {
+    "name": "Fisher Duck",
+    "id": 118122,
+    "file": "fisher-duck.json"
+  },
+  {
+    "name": "Flayer",
+    "id": 118519,
+    "file": "flayer.json"
+  },
+  {
+    "name": "Flora",
+    "id": 112402,
+    "file": "flora.json"
+  },
+  {
+    "name": "Fog Generator",
+    "id": 118104,
+    "file": "fog-generator.json"
+  },
+  {
+    "name": "Forbidden Breacher",
+    "id": 118543,
+    "file": "forbidden-breacher.json"
+  },
+  {
+    "name": "Forbidden Shield Guard",
+    "id": 118542,
+    "file": "forbidden-shield-guard.json"
+  },
+  {
+    "name": "Forbidden Sniper",
+    "id": 118544,
+    "file": "forbidden-sniper.json"
+  },
+  {
+    "name": "Forbidden Warrior",
+    "id": 118541,
+    "file": "forbidden-warrior.json"
+  },
+  {
+    "name": "Fragile Core",
+    "id": 118108,
+    "file": "fragile-core.json"
+  },
+  {
+    "name": "Garofano",
+    "id": 111307,
+    "file": "garofano.json"
+  },
+  {
+    "name": "Gekkabijin",
+    "id": 112302,
+    "file": "gekkabijin.json"
+  },
+  {
+    "name": "Golan",
+    "id": 111107,
+    "file": "golan.json"
+  },
+  {
+    "name": "Graves",
+    "id": 110309,
+    "file": "graves.json"
+  },
+  {
+    "name": "Guard - Aid",
+    "id": 118506,
+    "file": "guard-aid.json"
+  },
+  {
+    "name": "Guard - Endurance",
+    "id": 118504,
+    "file": "guard-endurance.json"
+  },
+  {
+    "name": "Guard - Synergy",
+    "id": 118505,
+    "file": "guard-synergy.json"
+  },
+  {
+    "name": "Guerrilla Recruit",
+    "id": 118531,
+    "file": "guerrilla-recruit.json"
+  },
+  {
+    "name": "Guerrilla Sapper",
+    "id": 118533,
+    "file": "guerrilla-sapper.json"
+  },
+  {
+    "name": "Guerrilla Shooter",
+    "id": 118536,
+    "file": "guerrilla-shooter.json"
+  },
+  {
+    "name": "Hamel",
+    "id": 110601,
+    "file": "hamel.json"
+  },
+  {
+    "name": "Heavy-armored White Knight Axeman",
+    "id": 118523,
+    "file": "heavy-armored-white-knight-axeman.json"
+  },
+  {
+    "name": "Heavy-armored White Knight Cannoneer",
+    "id": 118522,
+    "file": "heavy-armored-white-knight-cannoneer.json"
+  },
+  {
+    "name": "Hecate",
+    "id": 111504,
+    "file": "hecate.json"
+  },
+  {
+    "name": "Helga",
+    "id": 111410,
+    "file": "helga.json"
+  },
+  {
+    "name": "Hella",
+    "id": 117510,
+    "file": "hella.json"
+  },
+  {
+    "name": "Hestia",
+    "id": 110507,
+    "file": "hestia.json"
+  },
+  {
+    "name": "Hilda",
+    "id": 110511,
+    "file": "hilda.json"
+  },
+  {
+    "name": "Horo",
+    "id": 111205,
+    "file": "horo.json"
+  },
+  {
+    "name": "Hypatia",
+    "id": 119001,
+    "file": "hypatia.json"
+  },
+  {
+    "name": "Hypercube Protective Shield",
+    "id": 117722,
+    "file": "hypercube-protective-shield.json"
+  },
+  {
+    "name": "Ignis",
+    "id": 111502,
+    "file": "ignis.json"
+  },
+  {
+    "name": "Independence Army Axeman",
+    "id": 118532,
+    "file": "independence-army-axeman.json"
+  },
+  {
+    "name": "Independence Army Cannoneer",
+    "id": 118535,
+    "file": "independence-army-cannoneer.json"
+  },
+  {
+    "name": "Independence Army Warrior",
+    "id": 118530,
+    "file": "independence-army-warrior.json"
+  },
+  {
+    "name": "Iridescent Bird",
+    "id": 117701,
+    "file": "iridescent-bird.json"
+  },
+  {
+    "name": "Iron",
+    "id": 117509,
+    "file": "iron.json"
+  },
+  {
+    "name": "Irrheia",
+    "id": 110611,
+    "file": "irrheia.json"
+  },
+  {
+    "name": "Jaguar",
+    "id": 112403,
+    "file": "jaguar.json"
+  },
+  {
+    "name": "Jane",
+    "id": 111407,
+    "file": "jane.json"
+  },
+  {
+    "name": "Jasmine",
+    "id": 110208,
+    "file": "jasmine.json"
+  },
+  {
+    "name": "Jelena",
+    "id": 110608,
+    "file": "jelena.json"
+  },
+  {
+    "name": "Joan",
+    "id": 112502,
+    "file": "joan.json"
+  },
+  {
+    "name": "jojo",
+    "id": 111508,
+    "file": "jojo.json"
+  },
+  {
+    "name": "K.K.",
+    "id": 112101,
+    "file": "kk.json"
+  },
+  {
+    "name": "Kawa-kawa",
+    "id": 111103,
+    "file": "kawa-kawa.json"
+  },
+  {
+    "name": "Kelvin",
+    "id": 112501,
+    "file": "kelvin.json"
+  },
+  {
+    "name": "Kisugi Ai",
+    "id": 111611,
+    "file": "kisugi-ai.json"
+  },
+  {
+    "name": "Kisugi Hitomi",
+    "id": 110312,
+    "file": "kisugi-hitomi.json"
+  },
+  {
+    "name": "Kisugi Rui",
+    "id": 110512,
+    "file": "kisugi-rui.json"
+  },
+  {
+    "name": "Korryn",
+    "id": 110408,
+    "file": "korryn.json"
+  },
+  {
+    "name": "Kyle",
+    "id": 112503,
+    "file": "kyle.json"
+  },
+  {
+    "name": "L.L.",
+    "id": 110607,
+    "file": "ll.json"
+  },
+  {
+    "name": "Labyrinth",
+    "id": 117507,
+    "file": "labyrinth.json"
+  },
+  {
+    "name": "Lady Pearl",
+    "id": 110406,
+    "file": "lady-pearl.json"
+  },
+  {
+    "name": "Lamia",
+    "id": 111506,
+    "file": "lamia.json"
+  },
+  {
+    "name": "Langley",
+    "id": 110402,
+    "file": "langley.json"
+  },
+  {
+    "name": "Letta",
+    "id": 117081,
+    "file": "letta.json"
+  },
+  {
+    "name": "Levy",
+    "id": 111104,
+    "file": "levy.json"
+  },
+  {
+    "name": "Lisa",
+    "id": 112602,
+    "file": "lisa.json"
+  },
+  {
+    "name": "Logistics - Aegis",
+    "id": 118512,
+    "file": "logistics-aegis.json"
+  },
+  {
+    "name": "Logistics - Healing",
+    "id": 118510,
+    "file": "logistics-healing.json"
+  },
+  {
+    "name": "Logistics - Vitality",
+    "id": 118511,
+    "file": "logistics-vitality.json"
+  },
+  {
+    "name": "Luminita",
+    "id": 111110,
+    "file": "luminita.json"
+  },
+  {
+    "name": "Luvia Ray",
+    "id": 111503,
+    "file": "luvia-ray.json"
+  },
+  {
+    "name": "Lynn",
+    "id": 111306,
+    "file": "lynn.json"
+  },
+  {
+    "name": "Lysandra",
+    "id": 111212,
+    "file": "lysandra.json"
+  },
+  {
+    "name": "Macchiato",
+    "id": 112601,
+    "file": "macchiato.json"
+  },
+  {
+    "name": "Magnetofluid Spike",
+    "id": 113010,
+    "file": "magnetofluid-spike.json"
+  },
+  {
+    "name": "Mantis",
+    "id": 110305,
+    "file": "mantis.json"
+  },
+  {
+    "name": "Margaret",
+    "id": 110612,
+    "file": "margaret.json"
+  },
+  {
+    "name": "Matilda",
+    "id": 111404,
+    "file": "matilda.json"
+  },
+  {
+    "name": "Mayor of Tuco",
+    "id": 118413,
+    "file": "mayor-of-tuco.json"
+  },
+  {
+    "name": "McQueen",
+    "id": 111305,
+    "file": "mcqueen.json"
+  },
+  {
+    "name": "Mess",
+    "id": 111206,
+    "file": "mess.json"
+  },
+  {
+    "name": "Milly",
+    "id": 110510,
+    "file": "milly.json"
+  },
+  {
+    "name": "Mira",
+    "id": 111210,
+    "file": "mira.json"
+  },
+  {
+    "name": "Moore",
+    "id": 110105,
+    "file": "moore.json"
+  },
+  {
+    "name": "Mr. Fox",
+    "id": 111604,
+    "file": "mr-fox.json"
+  },
+  {
+    "name": "Necresta·Hella",
+    "id": 110310,
+    "file": "necrestahella.json"
+  },
+  {
+    "name": "Nightingale",
+    "id": 112400,
+    "file": "nightingale.json"
+  },
+  {
+    "name": "Ninety-Nine",
+    "id": 111201,
+    "file": "ninety-nine.json"
+  },
+  {
+    "name": "Nino",
+    "id": 111106,
+    "file": "nino.json"
+  },
+  {
+    "name": "NOX",
+    "id": 110202,
+    "file": "nox.json"
+  },
+  {
+    "name": "Oak Casket",
+    "id": 115071,
+    "file": "oak-casket.json"
+  },
+  {
+    "name": "Oliver",
+    "id": 111505,
+    "file": "oliver.json"
+  },
+  {
+    "name": "OwO",
+    "id": 110102,
+    "file": "owo.json"
+  },
+  {
+    "name": "Pacassi",
+    "id": 111203,
+    "file": "pacassi.json"
+  },
+  {
+    "name": "Parfait",
+    "id": 110609,
+    "file": "parfait.json"
+  },
+  {
+    "name": "Peggy",
+    "id": 112104,
+    "file": "peggy.json"
+  },
+  {
+    "name": "Pepper",
+    "id": 112203,
+    "file": "pepper.json"
+  },
+  {
+    "name": "Pine",
+    "id": 111408,
+    "file": "pine.json"
+  },
+  {
+    "name": "Poffy",
+    "id": 111311,
+    "file": "poffy.json"
+  },
+  {
+    "name": "Pricilla",
+    "id": 111401,
+    "file": "pricilla.json"
+  },
+  {
+    "name": "Pylgia",
+    "id": 110206,
+    "file": "pylgia.json"
+  },
+  {
+    "name": "Rahu",
+    "id": 110103,
+    "file": "rahu.json"
+  },
+  {
+    "name": "Raider - Endurance",
+    "id": 118509,
+    "file": "raider-endurance.json"
+  },
+  {
+    "name": "Raider - Godspeed",
+    "id": 118507,
+    "file": "raider-godspeed.json"
+  },
+  {
+    "name": "Raider - Synergy",
+    "id": 118508,
+    "file": "raider-synergy.json"
+  },
+  {
+    "name": "Raven",
+    "id": 110505,
+    "file": "raven.json"
+  },
+  {
+    "name": "Recycling Station",
+    "id": 117711,
+    "file": "recycling-station.json"
+  },
+  {
+    "name": "Red Chili",
+    "id": 118106,
+    "file": "red-chili.json"
+  },
+  {
+    "name": "Retarding Pylon",
+    "id": 113002,
+    "file": "retarding-pylon.json"
+  },
+  {
+    "name": "Rise",
+    "id": 111209,
+    "file": "rise.json"
+  },
+  {
+    "name": "Rock Duck",
+    "id": 118438,
+    "file": "rock-duck.json"
+  },
+  {
+    "name": "Roulecca",
+    "id": 111402,
+    "file": "roulecca.json"
+  },
+  {
+    "name": "Rumina",
+    "id": 111112,
+    "file": "rumina.json"
+  },
+  {
+    "name": "Rust",
+    "id": 119002,
+    "file": "rust.json"
+  },
+  {
+    "name": "Sable",
+    "id": 117713,
+    "file": "sable.json"
+  },
+  {
+    "name": "Scotch",
+    "id": 118410,
+    "file": "scotch.json"
+  },
+  {
+    "name": "Serpent",
+    "id": 117504,
+    "file": "serpent.json"
+  },
+  {
+    "name": "Shalom",
+    "id": 110405,
+    "file": "shalom.json"
+  },
+  {
+    "name": "Shawn",
+    "id": 111608,
+    "file": "shawn.json"
+  },
+  {
+    "name": "Shield Generator",
+    "id": 117331,
+    "file": "shield-generator.json"
+  },
+  {
+    "name": "Shin",
+    "id": 110610,
+    "file": "shin.json"
+  },
+  {
+    "name": "Shrooma",
+    "id": 111310,
+    "file": "shrooma.json"
+  },
+  {
+    "name": "Siglinde",
+    "id": 111111,
+    "file": "siglinde.json"
+  },
+  {
+    "name": "Special Training 6 - Candelabra",
+    "id": 117099,
+    "file": "special-training-6-candelabra.json"
+  },
+  {
+    "name": "Stargazer",
+    "id": 110503,
+    "file": "stargazer.json"
+  },
+  {
+    "name": "Suffering Pylon",
+    "id": 113001,
+    "file": "suffering-pylon.json"
+  },
+  {
+    "name": "Sumire",
+    "id": 117506,
+    "file": "sumire.json"
+  },
+  {
+    "name": "Summer",
+    "id": 110401,
+    "file": "summer.json"
+  },
+  {
+    "name": "Sun Crow Apparition",
+    "id": 117703,
+    "file": "sun-crow-apparition.json"
+  },
+  {
+    "name": "Support - Armor Break",
+    "id": 118514,
+    "file": "support-armor-break.json"
+  },
+  {
+    "name": "Support - Obliteration",
+    "id": 118515,
+    "file": "support-obliteration.json"
+  },
+  {
+    "name": "Support - Tremor",
+    "id": 118513,
+    "file": "support-tremor.json"
+  },
+  {
+    "name": "Synex",
+    "id": 110209,
+    "file": "synex.json"
+  },
+  {
+    "name": "Teleport (Entrance)",
+    "id": 118101,
+    "file": "teleport-entrance.json"
+  },
+  {
+    "name": "Teleport (Exit)",
+    "id": 118102,
+    "file": "teleport-exit.json"
+  },
+  {
+    "name": "test",
+    "id": 119500,
+    "file": "test.json"
+  },
+  {
+    "name": "Tetra",
+    "id": 111302,
+    "file": "tetra.json"
+  },
+  {
+    "name": "Thalia",
+    "id": 111409,
+    "file": "thalia.json"
+  },
+  {
+    "name": "Thani",
+    "id": 111510,
+    "file": "thani.json"
+  },
+  {
+    "name": "Thistle",
+    "id": 111309,
+    "file": "thistle.json"
+  },
+  {
+    "name": "Tide of Ashes Trigger",
+    "id": 117721,
+    "file": "tide-of-ashes-trigger.json"
+  },
+  {
+    "name": "Toy Factory - Hero Grid",
+    "id": 117441,
+    "file": "toy-factory-hero-grid.json"
+  },
+  {
+    "name": "Toy tower base (auxiliary)",
+    "id": 117469,
+    "file": "toy-tower-base-auxiliary.json"
+  },
+  {
+    "name": "Toy tower base (back row)",
+    "id": 118205,
+    "file": "toy-tower-base-back-row.json"
+  },
+  {
+    "name": "Toy tower base (front row)",
+    "id": 118203,
+    "file": "toy-tower-base-front-row.json"
+  },
+  {
+    "name": "Treble Horn",
+    "id": 118006,
+    "file": "treble-horn.json"
+  },
+  {
+    "name": "Tuco Gunslinger",
+    "id": 118412,
+    "file": "tuco-gunslinger.json"
+  },
+  {
+    "name": "Umbra Config Duck",
+    "id": 118417,
+    "file": "umbra-config-duck.json"
+  },
+  {
+    "name": "Uni",
+    "id": 111105,
+    "file": "uni.json"
+  },
+  {
+    "name": "Vanilla",
+    "id": 110104,
+    "file": "vanilla.json"
+  },
+  {
+    "name": "Vautour Bleu",
+    "id": 110508,
+    "file": "vautour-bleu.json"
+  },
+  {
+    "name": "Victoria",
+    "id": 111501,
+    "file": "victoria.json"
+  },
+  {
+    "name": "Wandering Gunslinger",
+    "id": 118520,
+    "file": "wandering-gunslinger.json"
+  },
+  {
+    "name": "Weapon Tester",
+    "id": 118534,
+    "file": "weapon-tester.json"
+  },
+  {
+    "name": "Wendy",
+    "id": 111202,
+    "file": "wendy.json"
+  },
+  {
+    "name": "WhiteSands Dancer",
+    "id": 118521,
+    "file": "whitesands-dancer.json"
+  },
+  {
+    "name": "Wolverine",
+    "id": 111403,
+    "file": "wolverine.json"
+  },
+  {
+    "name": "Writer Duck",
+    "id": 118338,
+    "file": "writer-duck.json"
+  },
+  {
+    "name": "Wuhuanzi",
+    "id": 111509,
+    "file": "wuhuanzi.json"
+  },
+  {
+    "name": "Yanyan",
+    "id": 111405,
+    "file": "yanyan.json"
+  },
+  {
+    "name": "Yao",
+    "id": 110205,
+    "file": "yao.json"
+  },
+  {
+    "name": "Yingying",
+    "id": 110509,
+    "file": "yingying.json"
+  },
+  {
+    "name": "Yugu",
+    "id": 110106,
+    "file": "yugu.json"
+  },
+  {
+    "name": "Zephyr",
+    "id": 111609,
+    "file": "zephyr.json"
+  },
+  {
+    "name": "Zoya",
+    "id": 110201,
+    "file": "zoya.json"
+  }
+]

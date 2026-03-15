@@ -1,0 +1,93 @@
+{
+  "id": 111403,
+  "name": "Wolverine",
+  "baseAtk": 139,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 14031,
+      "name": "Crossbow Latch",
+      "damageType": 1,
+      "coefs": [
+        111,
+        119,
+        127,
+        135,
+        145,
+        154,
+        165,
+        176,
+        188,
+        200
+      ],
+      "maxCoef": 200
+    },
+    "ultimate": {
+      "id": 14032,
+      "name": "Trap",
+      "damageType": 0,
+      "coefs": [
+        100,
+        107,
+        114,
+        122,
+        130,
+        139,
+        148,
+        158,
+        169,
+        180
+      ],
+      "maxCoef": 180
+    },
+    "skill1": {
+      "id": 14033,
+      "name": "Hunt",
+      "damageType": 0,
+      "coefs": [
+        4,
+        4.3,
+        4.6,
+        4.9,
+        5.2,
+        5.5,
+        5.9,
+        6.3,
+        6.7,
+        7.2
+      ],
+      "maxCoef": 7.2
+    },
+    "passive": {
+      "id": 14034,
+      "name": "Lone Howl",
+      "damageType": 0,
+      "coefs": [
+        10,
+        10.7,
+        11.4,
+        12.2,
+        13,
+        13.9,
+        14.8,
+        15.8,
+        16.9,
+        18
+      ],
+      "maxCoef": 18
+    }
+  }
+}

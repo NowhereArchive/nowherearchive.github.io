@@ -1,0 +1,104 @@
+{
+  "id": 110410,
+  "name": "Augustus",
+  "baseAtk": 156,
+  "grades": [
+    [
+      11,
+      50
+    ],
+    [
+      33,
+      100
+    ],
+    [
+      11,
+      25
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 4101,
+      "name": "Magblade",
+      "damageType": 1,
+      "coefs": [
+        73,
+        78,
+        84,
+        89,
+        95,
+        102,
+        109,
+        116,
+        124,
+        132
+      ],
+      "maxCoef": 132
+    },
+    "ultimate": {
+      "id": 4102,
+      "name": "Magnetic Judgment",
+      "damageType": 0,
+      "coefs": [
+        144,
+        154,
+        165,
+        176,
+        188,
+        200,
+        214,
+        228,
+        244,
+        260
+      ],
+      "maxCoef": 260
+    },
+    "skill1": {
+      "id": 4103,
+      "name": "Hysteresis Echo",
+      "damageType": 0,
+      "coefs": [
+        60,
+        65,
+        70,
+        76,
+        82,
+        88,
+        95,
+        103,
+        111,
+        120
+      ],
+      "maxCoef": 120
+    },
+    "passive": {
+      "id": 4104,
+      "name": "Queen of War",
+      "damageType": 0,
+      "coefs": [
+        15,
+        16,
+        17,
+        19,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30
+      ],
+      "maxCoef": 30
+    },
+    "exclusive": {
+      "id": 4105,
+      "name": "Steel Apocalypse",
+      "damageType": 4,
+      "coefs": [
+        120,
+        180,
+        240
+      ],
+      "maxCoef": 240
+    }
+  }
+}

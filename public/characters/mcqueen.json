@@ -1,0 +1,104 @@
+{
+  "id": 111305,
+  "name": "McQueen",
+  "baseAtk": 142,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 13051,
+      "name": "Cutting",
+      "damageType": 1,
+      "coefs": [
+        56,
+        60,
+        64,
+        68,
+        73,
+        78,
+        83,
+        88,
+        94,
+        101
+      ],
+      "maxCoef": 101
+    },
+    "ultimate": {
+      "id": 13052,
+      "name": "Sculpture",
+      "damageType": 0,
+      "coefs": [
+        125,
+        135,
+        146,
+        157,
+        170,
+        184,
+        198,
+        214,
+        231,
+        250
+      ],
+      "maxCoef": 250
+    },
+    "skill1": {
+      "id": 13053,
+      "name": "Replication Technique",
+      "damageType": 0,
+      "coefs": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        21,
+        22,
+        24,
+        25,
+        27
+      ],
+      "maxCoef": 27
+    },
+    "passive": {
+      "id": 13054,
+      "name": "Deceptive Deals",
+      "damageType": 0,
+      "coefs": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        21,
+        22,
+        24,
+        25,
+        27
+      ],
+      "maxCoef": 27
+    },
+    "exclusive": {
+      "id": 13056,
+      "name": "Verisimilitude",
+      "damageType": 0,
+      "coefs": [
+        50,
+        55,
+        60
+      ],
+      "maxCoef": 60
+    }
+  }
+}

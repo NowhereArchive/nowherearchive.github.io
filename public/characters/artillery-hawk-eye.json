@@ -1,0 +1,22 @@
+{
+  "id": 118516,
+  "name": "Artillery - Hawk Eye",
+  "baseAtk": 140,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 30000005,
+      "name": "",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "skill1": {
+      "id": 11851602,
+      "name": "First Hit Damage Coefficient",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "id": 111105,
+  "name": "Uni",
+  "baseAtk": 102,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 11051,
+      "name": "Visage Alteration",
+      "damageType": 1,
+      "coefs": [
+        96,
+        103,
+        110,
+        117,
+        125,
+        134,
+        143,
+        152,
+        163,
+        173
+      ],
+      "maxCoef": 173
+    },
+    "ultimate": {
+      "id": 11052,
+      "name": "Mirror Refraction",
+      "damageType": 0,
+      "coefs": [
+        70,
+        75.599998,
+        81.699997,
+        88.199997,
+        95.300003,
+        102.900002,
+        111.099998,
+        120,
+        129.600006,
+        140
+      ],
+      "maxCoef": 140
+    },
+    "skill1": {
+      "id": 11053,
+      "name": "Cracked Facade",
+      "damageType": 0,
+      "coefs": [
+        20,
+        21.299999,
+        22.799999,
+        24.299999,
+        26,
+        27.700001,
+        29.6,
+        31.6,
+        33.700001,
+        36
+      ],
+      "maxCoef": 36
+    },
+    "passive": {
+      "id": 11054,
+      "name": "Fragmented Reflection",
+      "damageType": 0,
+      "coefs": [
+        2,
+        2.1,
+        2.2,
+        2.3,
+        2.4,
+        2.5,
+        2.6,
+        2.7,
+        2.8,
+        3
+      ],
+      "maxCoef": 3
+    }
+  }
+}

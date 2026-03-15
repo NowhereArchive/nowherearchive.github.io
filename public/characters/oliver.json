@@ -1,0 +1,93 @@
+{
+  "id": 111505,
+  "name": "Oliver",
+  "baseAtk": 144,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 15051,
+      "name": "Puppet Strings",
+      "damageType": 2,
+      "coefs": [
+        53,
+        56,
+        60,
+        64,
+        68,
+        73,
+        78,
+        83,
+        89,
+        95
+      ],
+      "maxCoef": 95
+    },
+    "ultimate": {
+      "id": 15052,
+      "name": "Puppet Game",
+      "damageType": 0,
+      "coefs": [
+        100,
+        107,
+        114,
+        122,
+        130,
+        139,
+        148,
+        158,
+        169,
+        180
+      ],
+      "maxCoef": 180
+    },
+    "skill1": {
+      "id": 15053,
+      "name": "Special Bond",
+      "damageType": 0,
+      "coefs": [
+        50,
+        53,
+        57,
+        61,
+        65,
+        69,
+        74,
+        79,
+        84,
+        90
+      ],
+      "maxCoef": 90
+    },
+    "passive": {
+      "id": 15054,
+      "name": "Love the New, Loathe the Old",
+      "damageType": 0,
+      "coefs": [
+        110,
+        117,
+        125,
+        134,
+        143,
+        152,
+        163,
+        174,
+        185,
+        198
+      ],
+      "maxCoef": 198
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": 117701,
+  "name": "Iridescent Bird",
+  "baseAtk": 1,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 92001501,
+      "name": "",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "ultimate": {
+      "id": 92000001,
+      "name": "Cumulus",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "id": 111506,
+  "name": "Lamia",
+  "baseAtk": 143,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 15061,
+      "name": "Petrifying Illusion",
+      "damageType": 2,
+      "coefs": [
+        70,
+        76,
+        82,
+        88,
+        95,
+        103,
+        111,
+        120,
+        130,
+        140
+      ],
+      "maxCoef": 140
+    },
+    "ultimate": {
+      "id": 15062,
+      "name": "Hunting Time",
+      "damageType": 0,
+      "coefs": [
+        30,
+        32.400002,
+        35,
+        37.799999,
+        40.799999,
+        44.099998,
+        47.599998,
+        51.400002,
+        55.599998,
+        60
+      ],
+      "maxCoef": 60
+    },
+    "skill1": {
+      "id": 15063,
+      "name": "Predatory Mark",
+      "damageType": 0,
+      "coefs": [
+        5,
+        5.3,
+        5.6,
+        5.9,
+        6.2,
+        6.5,
+        6.8,
+        7.2,
+        7.6,
+        8
+      ],
+      "maxCoef": 8
+    },
+    "passive": {
+      "id": 15064,
+      "name": "Ocean Praise",
+      "damageType": 0,
+      "coefs": [
+        20,
+        21.1,
+        22.200001,
+        23.4,
+        24.6,
+        26,
+        27.4,
+        28.799999,
+        30.4,
+        32
+      ],
+      "maxCoef": 32
+    }
+  }
+}

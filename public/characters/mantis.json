@@ -1,0 +1,104 @@
+{
+  "id": 110305,
+  "name": "Mantis",
+  "baseAtk": 154,
+  "grades": [
+    [
+      11,
+      50
+    ],
+    [
+      33,
+      100
+    ],
+    [
+      11,
+      25
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 3051,
+      "name": "Sever",
+      "damageType": 1,
+      "coefs": [
+        65.599998,
+        70.900002,
+        76.5,
+        82.699997,
+        89.300003,
+        96.400002,
+        104.099998,
+        112.5,
+        121.5,
+        131.199997
+      ],
+      "maxCoef": 131.199997
+    },
+    "ultimate": {
+      "id": 3052,
+      "name": "Aerial Calamity",
+      "damageType": 0,
+      "coefs": [
+        700,
+        756,
+        817,
+        882,
+        953,
+        1029,
+        1111,
+        1200,
+        1296,
+        1400
+      ],
+      "maxCoef": 1400
+    },
+    "skill1": {
+      "id": 3053,
+      "name": "Perforating Sickle",
+      "damageType": 0,
+      "coefs": [
+        3,
+        3.2,
+        3.4,
+        3.6,
+        3.8,
+        4,
+        4.2,
+        4.4,
+        4.7,
+        5
+      ],
+      "maxCoef": 5
+    },
+    "passive": {
+      "id": 3054,
+      "name": "Natural Hunter",
+      "damageType": 0,
+      "coefs": [
+        3,
+        3.1,
+        3.2,
+        3.3,
+        3.4,
+        3.5,
+        3.6,
+        3.7,
+        3.8,
+        4
+      ],
+      "maxCoef": 4
+    },
+    "exclusive": {
+      "id": 3055,
+      "name": "Wilderness Adventurer",
+      "damageType": 0,
+      "coefs": [
+        25,
+        32.5,
+        40
+      ],
+      "maxCoef": 40
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": 119503,
+  "name": "Decoder",
+  "baseAtk": 275,
+  "grades": [],
+  "skills": {
+    "skill1": {
+      "id": 110036902,
+      "name": "",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

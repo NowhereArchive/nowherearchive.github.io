@@ -1,7 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import NavBar from "../../components/NavBar.astro";
-import "../../styles/global.css";
 ---
 
 <Layout
@@ -10,1397 +9,852 @@ import "../../styles/global.css";
 >
   <NavBar />
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Damage Calculator</h1>
-      <p class="hero-sub">Calculate how much damage your sinners deal</p>
+<div class="hero">
+  <h1>Damage Calculator</h1>
+  <div class="hero-sub">Path to Nowhere Damage Calculator</div>
+</div>
+
+<div class="app">
+<div class="cols">
+
+<!-- LEFT COL -->
+<div>
+
+  <!-- CASTER -->
+  <div class="card">
+    <div class="card-head"><div class="stripe red"></div><div class="card-title">Caster</div><div class="card-hint" id="hero-badge">no hero loaded</div></div>
+    <div class="card-body">
+
+      <!-- Character selector -->
+      <div class="field">
+        <div class="flabel"><span class="ln">Select Sinner</span></div>
+        <select id="hero-select">
+          <option value="">— choose a sinner —</option>
+        </select>
+      </div>
+
+      <div class="import-zone" id="hero-drop" onclick="document.getElementById('hero-file').click()">
+        Or drop a character JSON
+        <input type="file" id="hero-file" accept=".json">
+      </div>
+
+      <div class="field">
+        <div class="flabel"><span class="ln">Level</span><span class="lv" id="lv-v">80</span></div>
+        <input type="range" id="level" min="1" max="90" value="80">
+      </div>
+
+      <div class="field">
+        <div class="flabel"><span class="ln">Grade</span></div>
+        <div class="seg" id="grade-seg">
+          <button class="seg-btn on" data-g="0">G0</button>
+          <button class="seg-btn" data-g="1">G1</button>
+          <button class="seg-btn" data-g="2">G2</button>
+          <button class="seg-btn" data-g="3">G3</button>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="flabel"><span class="ln">Compliance flat ATK (from intimacy rewards)</span></div>
+        <input type="number" id="complianceAtk" value="0" min="0">
+      </div>
+
+      <div class="atk-strip">
+        <span class="ak">Base ATK</span><span class="av" id="strip-base">—</span>
+        <span class="arr">+compliance →</span><span class="av" id="strip-stat">—</span>
+        <span class="arr">×in-battle% →</span><span class="av" id="strip-combat">—</span>
+      </div>
+
+      <div class="field">
+        <div class="flabel"><span class="ln">In-battle ATK% bonus (passive skills, not on stat screen)</span><span class="lv" id="atkpct-v">0%</span></div>
+        <input type="range" id="atkPct" min="0" max="100" value="0">
+        <div class="hint">Passive ATK% buffs that fire at battle start — e.g. Shalom S2 +5% + Passive +12% = 17%</div>
+      </div>
+
+      <div class="field">
+        <div class="flabel"><span class="ln">Override stat-screen ATK (leave blank to auto-calculate)</span></div>
+        <input type="number" id="statAtkOverride" placeholder="optional — paste directly from stat screen" min="1">
+      </div>
+
+      <div class="sep"></div>
+
+      <div class="field">
+        <div class="flabel"><span class="ln">Skill Type</span></div>
+        <div class="seg" id="skill-type-seg">
+          <button class="seg-btn on" data-st="normal">Normal Atk</button>
+          <button class="seg-btn" data-st="skill">Active Skill</button>
+          <button class="seg-btn" data-st="ultimate">Ultimate</button>
+          <button class="seg-btn" data-st="any">Any</button>
+        </div>
+        <div class="hint" id="skill-type-note">Normal Attack Damage Bonus applies · Skill Damage Bonus does not</div>
+      </div>
+
+      <div class="field">
+        <div class="flabel"><span class="ln">Skill</span></div>
+        <select id="skill-select">
+          <option value="">— select sinner first —</option>
+        </select>
+      </div>
+
+      <div class="field" id="skill-lv-field">
+        <div class="flabel"><span class="ln">Skill Level</span><span class="lv" id="skill-lv-v">10</span></div>
+        <input type="range" id="skillLv" min="1" max="10" value="10">
+      </div>
+
+      <div class="field">
+        <div class="flabel"><span class="ln">Damage Coefficient % (auto-filled or manual)</span></div>
+        <input type="number" id="skillCo" value="100" min="1" max="2000" step="1" placeholder="e.g. 153">
+      </div>
+
+      <div class="field">
+        <div class="flabel"><span class="ln">Damage Type</span></div>
+        <div class="seg">
+          <button class="seg-btn on" id="dt-ap" onclick="setDT('AP')">Magic · vs MagRes</button>
+          <button class="seg-btn" id="dt-ad" onclick="setDT('AD')">Physical · vs Armor</button>
+          <button class="seg-btn" id="dt-td" onclick="setDT('TD')">True · ignores def</button>
+        </div>
+      </div>
+
+      <div class="sep"></div>
+
+      <div class="field">
+        <div class="flabel"><span class="ln">ATK Speed bonus % (if character converts speed to damage)</span><span class="lv" id="aspd-v">0%</span></div>
+        <input type="range" id="atkSpeed" min="0" max="200" value="0">
+        <div class="hint" id="aspd-hint">Check character characteristic — e.g. Vautour gets 0.3% skill damage per 1% ATK speed</div>
+      </div>
+
+      <div class="field">
+        <div class="flabel"><span class="ln">ATK Speed → Skill Dmg conversion per 1% (0 = off)</span></div>
+        <input type="number" id="aspdConv" value="0" step="0.1" min="0" max="1" placeholder="e.g. 0.3 for Vautour">
+      </div>
+
+      <div class="sep"></div>
+
+      <div class="field">
+        <div class="flabel"><span class="ln">Penetration % (ignores this % of enemy defense)</span><span class="lv" id="pen-v">0%</span></div>
+        <input type="range" id="penPct" min="0" max="100" value="0">
+      </div>
+      <div class="field">
+        <div class="flabel"><span class="ln">Flat Penetration (subtracts directly from enemy defense)</span></div>
+        <input type="number" id="penFlat" value="0" min="0">
+      </div>
+
+      <div class="sep"></div>
+
+      <div class="tog-row">Critical Hit
+        <label class="tog"><input type="checkbox" id="isCrit"><div class="tog-track"></div><div class="tog-thumb"></div></label>
+      </div>
+      <div class="field" style="margin-top:.6rem">
+        <div class="flabel"><span class="ln">Crit Damage Bonus %</span><span class="lv" id="cb-v">150%</span></div>
+        <input type="range" id="critB" min="100" max="500" value="150">
+      </div>
+
     </div>
-  </section>
+  </div>
 
-  <div class="app">
-    <div class="cols">
-      <!-- CASTER LEFT -->
-      <div>
-        <div class="card">
-          <div class="card-head">
-            <div class="stripe red"></div>
-            <div class="card-title">Caster</div>
-            <div class="card-hint" id="hero-badge">no hero loaded</div>
-          </div>
-          <div class="card-body">
-            <div
-              class="import-zone"
-              id="hero-drop"
-              onclick="document.getElementById('hero-file').click()"
-            >
-              Drop hero JSON or click to import
-              <input type="file" id="hero-file" accept=".json" />
-            </div>
+</div>
 
-            <div class="field">
-              <div class="flabel">
-                <span class="ln">Level</span><span class="lv" id="lv-v"
-                  >80</span>
-              </div>
-              <input type="range" id="level" min="1" max="90" value="80" />
-            </div>
+<!-- RIGHT COL -->
+<div>
 
-            <div class="field">
-              <div class="flabel"><span class="ln">Grade</span></div>
-              <div class="seg" id="grade-seg">
-                <button class="seg-btn on" data-g="0">G0</button>
-                <button class="seg-btn" data-g="1">G1</button>
-                <button class="seg-btn" data-g="2">G2</button>
-                <button class="seg-btn" data-g="3">G3</button>
-              </div>
-            </div>
+  <!-- TARGET -->
+  <div class="card">
+    <div class="card-head"><div class="stripe dim"></div><div class="card-title">Target Enemy</div><div class="card-hint" id="mon-badge">no monster loaded</div></div>
+    <div class="card-body">
 
-            <div class="field">
-              <div class="flabel">
-                <span class="ln"
-                  >Compliance flat ATK (from intimacy rewards)</span>
-              </div>
-              <input type="number" id="complianceAtk" value="0" min="0" />
-            </div>
-
-            <div class="atk-strip">
-              <span class="ak">Base ATK</span><span class="av" id="strip-base"
-                >—</span
-              >
-              <span class="arr">+compliance →</span><span
-                class="av"
-                id="strip-stat">—</span
-              >
-              <span class="arr">×in-battle% →</span><span
-                class="av"
-                id="strip-combat">—</span
-              >
-            </div>
-
-            <div class="field">
-              <div class="flabel">
-                <span class="ln"
-                  >In-battle ATK% bonus (passive skills, not on stat screen)</span
-                ><span class="lv" id="atkpct-v">0%</span>
-              </div>
-              <input type="range" id="atkPct" min="0" max="100" value="0" />
-              <div class="hint">
-                Passive ATK% buffs that fire at battle start and aren't shown on
-                the stat screen
-              </div>
-            </div>
-
-            <div class="field">
-              <div class="flabel">
-                <span class="ln"
-                  >Override stat-screen ATK (leave blank to auto-calculate)</span>
-              </div>
-              <input
-                type="number"
-                id="statAtkOverride"
-                placeholder="optional — paste directly from stat screen"
-                min="1"
-              />
-            </div>
-
-            <div class="sep"></div>
-
-            <div class="field">
-              <div class="flabel"><span class="ln">Skill Type</span></div>
-              <div class="seg" id="skill-type-seg">
-                <button class="seg-btn on" data-st="normal">Normal Atk</button>
-                <button class="seg-btn" data-st="skill">Active Skill</button>
-                <button class="seg-btn" data-st="ultimate">Ultimate</button>
-                <button class="seg-btn" data-st="any">Any</button>
-              </div>
-              <div class="hint" id="skill-type-note">
-                Affects which damage bonus types apply
-              </div>
-            </div>
-
-            <div class="field">
-              <div class="flabel">
-                <span class="ln"
-                  >Damage Coefficient % (from skill description)</span>
-              </div>
-              <input
-                type="number"
-                id="skillCo"
-                value="100"
-                min="1"
-                max="2000"
-                step="1"
-                placeholder="e.g. 153"
-              />
-            </div>
-
-            <div class="field">
-              <div class="flabel"><span class="ln">Damage Type</span></div>
-              <div class="seg" id="damage-type-seg">
-                <button class="seg-btn on" id="dt-ap" data-dt="AP"
-                  >Magic · vs MagRes</button
-                >
-                <button class="seg-btn" id="dt-ad" data-dt="AD"
-                  >Physical · vs Armor</button
-                >
-                <button class="seg-btn" id="dt-td" data-dt="TD"
-                  >True · ignores def</button
-                >
-              </div>
-            </div>
-
-            <div class="sep"></div>
-
-            <div class="field">
-              <div class="flabel">
-                <span class="ln"
-                  >ATK Speed bonus % (if character converts speed to damage)</span
-                ><span class="lv" id="aspd-v">0%</span>
-              </div>
-              <input type="range" id="atkSpeed" min="0" max="200" value="0" />
-              <div class="hint" id="aspd-hint">
-                Check character's characteristic — e.g. Vautour gets 0.3% skill
-                damage per 1% ATK speed
-              </div>
-            </div>
-
-            <div class="field">
-              <div class="flabel">
-                <span class="ln"
-                  >ATK Speed → Skill Dmg conversion per 1% (0 = off)</span>
-              </div>
-              <input
-                type="number"
-                id="aspdConv"
-                value="0"
-                step="0.1"
-                min="0"
-                max="1"
-                placeholder="e.g. 0.3 for Vautour"
-              />
-            </div>
-
-            <div class="sep"></div>
-
-            <div class="field">
-              <div class="flabel">
-                <span class="ln"
-                  >Penetration % (ignores this % of enemy defense)</span
-                ><span class="lv" id="pen-v">0%</span>
-              </div>
-              <input type="range" id="penPct" min="0" max="100" value="0" />
-            </div>
-            <div class="field">
-              <div class="flabel">
-                <span class="ln"
-                  >Flat Penetration (subtracts directly from enemy defense)</span>
-              </div>
-              <input type="number" id="penFlat" value="0" min="0" />
-            </div>
-
-            <div class="sep"></div>
-
-            <div class="tog-row">
-              Critical Hit
-              <label class="tog"
-                ><input type="checkbox" id="isCrit" /><div class="tog-track">
-                </div><div class="tog-thumb"></div></label
-              >
-            </div>
-            <div class="field" style="margin-top:.6rem">
-              <div class="flabel">
-                <span class="ln">Crit Damage Bonus %</span><span
-                  class="lv"
-                  id="cb-v">150%</span>
-              </div>
-              <input type="range" id="critB" min="100" max="500" value="150" />
-            </div>
-          </div>
+      <!-- Boss presets -->
+      <div class="field">
+        <div class="flabel"><span class="ln">Quick Select Boss</span></div>
+        <div class="seg" id="boss-presets">
+          <button class="seg-btn" data-armor="500" data-mr="150" data-dt="AP">Rancor Desire</button>
+          <button class="seg-btn" data-armor="150" data-mr="500" data-dt="AD">Apostle of Stardust</button>
+          <button class="seg-btn" data-armor="160" data-mr="160" data-dt="AP">Alchemic Beast</button>
         </div>
-      </div><!-- /caster col -->
+        <div class="hint" id="boss-hint">select a boss to auto-fill defense stats</div>
+      </div>
 
-      <!-- RIGHT COL: TARGET + BONUSES -->
-      <div>
-        <div class="card">
-          <div class="card-head">
-            <div class="stripe dim"></div>
-            <div class="card-title">Target Enemy</div>
-            <div class="card-hint" id="mon-badge">no monster loaded</div>
-          </div>
-          <div class="card-body">
-            <div
-              class="import-zone"
-              id="mon-drop"
-              onclick="document.getElementById('mon-file').click()"
-            >
-              Drop monster JSON or click to import
-              <input type="file" id="mon-file" accept=".json" />
-            </div>
+      <div class="import-zone" id="mon-drop" onclick="document.getElementById('mon-file').click()">
+        Or drop a monster JSON
+        <input type="file" id="mon-file" accept=".json">
+      </div>
 
-            <div class="field">
-              <div class="flabel">
-                <span class="ln">Enemy Level</span><span class="lv" id="ml-v"
-                  >13</span>
-              </div>
-              <input type="range" id="monLv" min="1" max="200" value="13" />
-            </div>
+      <div class="field">
+        <div class="flabel"><span class="ln">Enemy Level</span><span class="lv" id="ml-v">13</span></div>
+        <input type="range" id="monLv" min="1" max="200" value="13">
+      </div>
 
-            <div class="row2">
-              <div class="field">
-                <div class="flabel"><span class="ln">Base Armor</span></div>
-                <input type="number" id="baseArmor" value="500" min="0" />
-              </div>
-              <div class="field">
-                <div class="flabel">
-                  <span class="ln">Base Magic Resist</span>
-                </div>
-                <input type="number" id="baseMR" value="150" min="0" />
-              </div>
-            </div>
-
-            <div class="atk-strip">
-              <span class="ak">Scaled defense</span><span
-                class="av"
-                id="scaled-def-val">—</span
-              >
-              <span class="arr">→ after pen →</span><span
-                class="av"
-                id="eff-def-val">—</span
-              >
-            </div>
-
-            <div class="sep"></div>
-
-            <div
-              class="card-head"
-              style="margin:0 -1.25rem .875rem;padding:.6rem 1.25rem"
-            >
-              <div class="stripe red"></div>
-              <div class="card-title">
-                Enemy Debuffs (target takes more damage)
-              </div>
-            </div>
-
-            <div class="field">
-              <div class="flabel">
-                <span class="ln"
-                  >All damage taken +% (e.g. Shalom S3, 4% per stack)</span
-                ><span class="lv" id="tdr-v">0%</span>
-              </div>
-              <input
-                type="range"
-                id="takeDmgRate"
-                min="0"
-                max="100"
-                value="0"
-              />
-            </div>
-            <div class="field">
-              <div class="flabel">
-                <span class="ln"
-                  >Physical damage taken +% (physical hits only)</span
-                ><span class="lv" id="tpdr-v">0%</span>
-              </div>
-              <input
-                type="range"
-                id="takePDmgRate"
-                min="0"
-                max="100"
-                value="0"
-              />
-            </div>
-            <div class="field">
-              <div class="flabel">
-                <span class="ln">Magic damage taken +% (magic hits only)</span
-                ><span class="lv" id="tmdr-v">0%</span>
-              </div>
-              <input
-                type="range"
-                id="takeMDmgRate"
-                min="0"
-                max="100"
-                value="0"
-              />
-            </div>
-
-            <div class="sep"></div>
-
-            <div class="tog-row">
-              Core is broken
-              <label class="tog"
-                ><input type="checkbox" id="coreBroken" /><div
-                  class="tog-track"
-                >
-                </div><div class="tog-thumb"></div></label
-              >
-            </div>
-            <div class="tog-row">
-              Target is a Boss
-              <label class="tog"
-                ><input type="checkbox" id="isBoss" /><div class="tog-track">
-                </div><div class="tog-thumb"></div></label
-              >
-            </div>
-            <div class="tog-row">
-              Target is an Elite
-              <label class="tog"
-                ><input type="checkbox" id="isElite" /><div class="tog-track">
-                </div><div class="tog-thumb"></div></label
-              >
-            </div>
-          </div>
+      <div class="row2">
+        <div class="field">
+          <div class="flabel"><span class="ln">Base Armor</span></div>
+          <input type="number" id="baseArmor" value="500" min="0">
         </div>
-
-        <!-- DAMAGE BONUSES under target -->
-        <div class="card">
-          <div class="card-head">
-            <div class="stripe red"></div>
-            <div class="card-title">Damage Bonuses</div>
-            <div class="card-hint">
-              same type stacks additively · different types multiply together
-            </div>
-          </div>
-          <div class="card-body" id="mult-container"></div>
-        </div>
-      </div><!-- /right col -->
-    </div><!-- /cols -->
-
-    <!-- RESULTS -->
-    <div class="result-main">
-      <div class="big-nums">
-        <div class="bnum">
-          <div class="bnum-lbl">Hit (floored)</div><div
-            class="bnum-val red"
-            id="o-hit"
-          >
-            —
-          </div><div class="bnum-sub" id="o-co">—</div>
-        </div>
-        <div class="bnum">
-          <div class="bnum-lbl">Pre-floor exact</div><div
-            class="bnum-val white"
-            id="o-raw"
-          >
-            —
-          </div><div class="bnum-sub">float value</div>
-        </div>
-        <div class="bnum">
-          <div class="bnum-lbl">Crit Hit</div><div
-            class="bnum-val dim"
-            id="o-crit"
-          >
-            —
-          </div><div class="bnum-sub" id="o-cn">×1.50</div>
-        </div>
-        <div class="bnum">
-          <div class="bnum-lbl">Min floor?</div><div
-            class="bnum-val soft"
-            id="o-floor"
-          >
-            NO
-          </div><div class="bnum-sub" id="o-floor-sub">—</div>
+        <div class="field">
+          <div class="flabel"><span class="ln">Base Magic Resist</span></div>
+          <input type="number" id="baseMR" value="150" min="0">
         </div>
       </div>
-      <div class="bdown-wrap">
-        <div class="bdown-grid" id="bdown"></div>
+
+      <div class="atk-strip">
+        <span class="ak">Scaled defense</span><span class="av" id="scaled-def-val">—</span>
+        <span class="arr">→ after pen →</span><span class="av" id="eff-def-val">—</span>
       </div>
-      <div class="chain-bar">
-        <div class="chain-lbl">Damage multiplier chain</div>
-        <div class="chain-cats" id="chain-cats"></div>
-        <div class="chain-eq" id="chain-eq"></div>
+
+      <div class="sep"></div>
+
+      <div class="card-head" style="margin:0 -1.25rem .875rem;padding:.6rem 1.25rem">
+        <div class="stripe red"></div><div class="card-title">Enemy Debuffs (target takes more damage)</div>
       </div>
+
+      <div class="field">
+        <div class="flabel"><span class="ln">All damage taken +% (e.g. Shalom S3, 4% per stack)</span><span class="lv" id="tdr-v">0%</span></div>
+        <input type="range" id="takeDmgRate" min="0" max="100" value="0">
+      </div>
+      <div class="field">
+        <div class="flabel"><span class="ln">Physical damage taken +% (physical hits only)</span><span class="lv" id="tpdr-v">0%</span></div>
+        <input type="range" id="takePDmgRate" min="0" max="100" value="0">
+      </div>
+      <div class="field">
+        <div class="flabel"><span class="ln">Magic damage taken +% (magic hits only)</span><span class="lv" id="tmdr-v">0%</span></div>
+        <input type="range" id="takeMDmgRate" min="0" max="100" value="0">
+      </div>
+
+      <div class="sep"></div>
+
+      <div class="tog-row">Core is broken (activates breaking damage bonuses)
+        <label class="tog"><input type="checkbox" id="coreBroken"><div class="tog-track"></div><div class="tog-thumb"></div></label>
+      </div>
+      <div class="tog-row">Target is a Boss
+        <label class="tog"><input type="checkbox" id="isBoss"><div class="tog-track"></div><div class="tog-thumb"></div></label>
+      </div>
+      <div class="tog-row">Target is an Elite
+        <label class="tog"><input type="checkbox" id="isElite"><div class="tog-track"></div><div class="tog-thumb"></div></label>
+      </div>
+
     </div>
-  </div><!-- /app -->
+  </div>
 
-  <style is:global>
-    .hero-sub {
-      font-size: 1rem;
-      color: rgba(255, 255, 255, 0.6);
-      margin-top: 0.5rem;
-      font-weight: 300;
-    }
-    .app {
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 2rem 1.25rem 5rem;
-    }
-    .cols {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.25rem;
-      align-items: start;
-    }
-    @media (max-width: 920px) {
-      .cols {
-        grid-template-columns: 1fr;
-      }
-    }
-    .result-main {
-      margin-top: 1.25rem;
-    }
+  <!-- DAMAGE BONUSES -->
+  <div class="card">
+    <div class="card-head"><div class="stripe red"></div><div class="card-title">Damage Bonuses</div>
+      <div class="card-hint">same type adds together · different types multiply</div></div>
+    <div class="card-body" id="mult-container"></div>
+  </div>
 
-    .card {
-      background: var(--surface);
-      border: 1px solid rgba(255, 255, 255, 0.07);
-      margin-bottom: 1.25rem;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-      overflow: hidden;
-      transition: box-shadow 0.2s ease;
-      border-radius: 8px;
-    }
-    .card:hover {
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    }
-    .card-head {
-      display: flex;
-      align-items: center;
-      gap: 0.625rem;
-      padding: 0.75rem 1.25rem;
-      background: rgba(0, 0, 0, 0.2);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
-    }
-    .card-head .stripe {
-      width: 3px;
-      height: 18px;
-      flex-shrink: 0;
-      border-radius: 2px;
-    }
-    .card-head .stripe.red {
-      background: var(--primary);
-    }
-    .card-head .stripe.dim {
-      background: rgba(255, 255, 255, 0.15);
-    }
-    .card-head .card-title {
-      font-weight: 700;
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--text-secondary);
-    }
-    .card-head .card-hint {
-      margin-left: auto;
-      font-size: 0.7rem;
-      color: rgba(255, 255, 255, 0.25);
-      font-style: italic;
-    }
-    .card-body {
-      padding: 1.25rem;
-    }
+  <!-- RESULTS -->
+  <div class="result-main">
+    <div class="big-nums">
+      <div class="bnum"><div class="bnum-lbl">Hit (floored)</div><div class="bnum-val red" id="o-hit">—</div><div class="bnum-sub" id="o-co">—</div></div>
+      <div class="bnum"><div class="bnum-lbl">Pre-floor exact</div><div class="bnum-val white" id="o-raw">—</div><div class="bnum-sub">float value</div></div>
+      <div class="bnum"><div class="bnum-lbl">Crit Hit</div><div class="bnum-val dim" id="o-crit">—</div><div class="bnum-sub" id="o-cn">×1.50</div></div>
+      <div class="bnum"><div class="bnum-lbl">Min floor?</div><div class="bnum-val soft" id="o-floor">NO</div><div class="bnum-sub" id="o-floor-sub">—</div></div>
+    </div>
+    <div class="bdown-wrap">
+      <div class="bdown-grid" id="bdown"></div>
+    </div>
+    <div class="chain-bar">
+      <div class="chain-lbl">Damage multiplier chain</div>
+      <div class="chain-cats" id="chain-cats"></div>
+      <div class="chain-eq" id="chain-eq"></div>
+    </div>
+  </div>
 
-    .import-zone {
-      border: 1px dashed rgba(255, 255, 255, 0.12);
-      padding: 1rem;
-      text-align: center;
-      cursor: pointer;
-      transition: var(--transition);
-      font-size: 0.8rem;
-      color: var(--text-secondary);
-      margin-bottom: 1rem;
-      letter-spacing: 0.03em;
-      border-radius: 2px;
-    }
-    .import-zone:hover,
-    .import-zone.over {
-      border-color: var(--primary);
-      color: #ff6b6b;
-      background: rgba(156, 17, 17, 0.05);
-    }
-    .import-zone input {
-      display: none;
-    }
+</div>
+</div>
+</div>
 
-    .field {
-      margin-bottom: 0.875rem;
-    }
-    .flabel {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 0.3rem;
-    }
-    .flabel .ln {
-      font-size: 0.72rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--text-secondary);
-      font-weight: 700;
-    }
-    .flabel .lv {
-      font-size: 0.82rem;
-      color: #ff6b6b;
-      font-family: monospace;
-    }
-    .hint {
-      font-size: 0.7rem;
-      color: rgba(255, 255, 255, 0.3);
-      margin-top: 0.2rem;
-      min-height: 1em;
-      font-style: italic;
-    }
+<style is:global>
+:root {
+  --primary: #9c1111;
+  --primary-glow: rgba(156,17,17,0.3);
+  --accent: #ff3a3a;
+  --background: #0a0a0a;
+  --surface: #121212;
+  --surface-light: #1e1e1e;
+  --text: #e0e0e0;
+  --text-secondary: #a0a0a0;
+  --border: rgba(255,255,255,0.07);
+  --border-red: rgba(156,17,17,0.4);
+  --transition: all 0.3s ease;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--background); color: var(--text); font-family: 'Lato', sans-serif; font-size: 14px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
 
-    input[type="range"] {
-      width: 100%;
-      -webkit-appearance: none;
-      height: 2px;
-      background: rgba(255, 255, 255, 0.1);
-      cursor: pointer;
-      outline: none;
-      margin: 0.1rem 0;
-    }
-    input[type="range"]::-webkit-slider-thumb {
-      -webkit-appearance: none;
-      width: 13px;
-      height: 13px;
-      background: var(--primary);
-      border-radius: 50%;
-      cursor: pointer;
-      border: 2px solid var(--background);
-    }
-    input[type="range"]:hover::-webkit-slider-thumb {
-      background: var(--accent);
-    }
-    input[type="number"],
-    input[type="text"],
-    select {
-      width: 100%;
-      background: rgba(0, 0, 0, 0.3);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      color: var(--text);
-      font-family: "Lato", sans-serif;
-      font-size: 0.85rem;
-      padding: 0.45rem 0.75rem;
-      outline: none;
-      transition: border-color 0.2s ease;
-      border-radius: 0;
-      -webkit-appearance: none;
-    }
-    input[type="number"]:focus,
-    input[type="text"]:focus,
-    select:focus {
-      border-color: var(--primary);
-      box-shadow: 0 0 0 2px rgba(156, 17, 17, 0.3);
-    }
-    select option {
-      background: var(--surface-light);
-    }
+.hero { position: relative; padding: 3rem 2rem 2.5rem; text-align: center;
+  background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
+  url('https://raw.githubusercontent.com/NowhereArchive/NowhereImages/main/main/header.png') no-repeat center/cover;
+  border-bottom: 1px solid var(--border-red); }
+.hero h1 { font-size: 3rem; font-weight: 900; letter-spacing: -0.5px;
+  background: linear-gradient(90deg,#fff,#e0e0e0);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: .25rem; }
+.hero-sub { color: rgba(255,255,255,0.5); font-size: .8rem; letter-spacing: .15em; text-transform: uppercase; font-weight: 300; }
+.hero-meta { display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem 2rem; margin-top: 1.25rem;
+  font-size: .75rem; color: rgba(255,255,255,0.4); font-family: monospace; }
+.hero-meta span { color: rgba(255,80,80,0.8); }
 
-    .row2 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0.75rem;
-    }
-    .seg {
-      display: flex;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      overflow: hidden;
-    }
-    .seg-btn {
-      flex: 1;
-      background: transparent;
-      border: none;
-      border-right: 1px solid rgba(255, 255, 255, 0.07);
-      color: var(--text-secondary);
-      font-family: "Lato", sans-serif;
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 0.05em;
-      padding: 0.45rem 0.25rem;
-      cursor: pointer;
-      transition: var(--transition);
-      text-transform: uppercase;
-    }
-    .seg-btn:last-child {
-      border-right: none;
-    }
-    .seg-btn:hover {
-      background: rgba(255, 255, 255, 0.05);
-      color: var(--text);
-    }
-    .seg-btn.on {
-      background: rgba(156, 17, 17, 0.2);
-      color: #ff6b6b;
-    }
+.app { max-width: 1280px; margin: 0 auto; padding: 2rem 1.25rem 5rem; }
+.cols { display: grid; grid-template-columns: 420px 1fr; gap: 1.25rem; align-items: start; }
+@media (max-width: 920px) { .cols { grid-template-columns: 1fr; } }
 
-    .tog-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0.55rem 0;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
-      font-size: 0.72rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--text-secondary);
-      font-weight: 700;
-    }
-    .tog {
-      position: relative;
-      width: 34px;
-      height: 18px;
-      cursor: pointer;
-      flex-shrink: 0;
-    }
-    .tog input {
-      display: none;
-    }
-    .tog-track {
-      position: absolute;
-      inset: 0;
-      background: rgba(255, 255, 255, 0.1);
-      transition: background 0.2s;
-      border-radius: 9px;
-    }
-    .tog input:checked ~ .tog-track {
-      background: rgba(156, 17, 17, 0.4);
-    }
-    .tog-thumb {
-      position: absolute;
-      top: 3px;
-      left: 3px;
-      width: 12px;
-      height: 12px;
-      background: var(--text-secondary);
-      transition: all 0.2s;
-      border-radius: 50%;
-    }
-    .tog input:checked ~ .tog-thumb {
-      left: 19px;
-      background: var(--accent);
-    }
+.card { background: var(--surface); border: 1px solid var(--border); margin-bottom: 1.25rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2); overflow: hidden; transition: box-shadow .2s ease; }
+.card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.3); }
+.card-head { display: flex; align-items: center; gap: .625rem; padding: .75rem 1.25rem;
+  background: rgba(0,0,0,0.2); border-bottom: 1px solid var(--border); }
+.stripe { width: 3px; height: 18px; flex-shrink: 0; }
+.stripe.red { background: var(--primary); }
+.stripe.dim { background: rgba(255,255,255,0.15); }
+.card-title { font-weight: 700; font-size: .8rem; text-transform: uppercase; letter-spacing: .08em; color: var(--text-secondary); }
+.card-hint { margin-left: auto; font-size: .7rem; color: rgba(255,255,255,0.25); font-style: italic; }
+.card-body { padding: 1.25rem; }
 
-    .atk-strip {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.6rem 0.75rem;
-      background: rgba(0, 0, 0, 0.25);
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      font-size: 0.75rem;
-      margin: 0.5rem 0;
-      flex-wrap: wrap;
-      border-radius: 2px;
-    }
-    .atk-strip .ak {
-      color: var(--text-secondary);
-    }
-    .atk-strip .av {
-      color: #ff6b6b;
-      font-family: monospace;
-      font-size: 0.85rem;
-    }
-    .atk-strip .arr {
-      color: rgba(255, 255, 255, 0.2);
-    }
-    .sep {
-      height: 1px;
-      background: rgba(255, 255, 255, 0.05);
-      margin: 0.875rem 0;
-    }
+.import-zone { border: 1px dashed rgba(255,255,255,0.12); padding: 1rem; text-align: center;
+  cursor: pointer; transition: var(--transition); font-size: .8rem; color: var(--text-secondary); margin-bottom: 1rem; }
+.import-zone:hover, .import-zone.over { border-color: var(--primary); color: #ff6b6b; background: rgba(156,17,17,0.05); }
+.import-zone input { display: none; }
 
-    .mult-section {
-      margin-bottom: 0.875rem;
-    }
-    .mult-cat-label {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 0.68rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: rgba(255, 255, 255, 0.25);
-      padding: 0.25rem 0 0.5rem;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
-      margin-bottom: 0.5rem;
-      font-weight: 700;
-    }
-    .mult-cat-label .cat-fx {
-      color: #ff6b6b;
-      font-family: monospace;
-    }
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.3rem;
-      margin-bottom: 0.4rem;
-    }
-    .tag {
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      padding: 0.25rem 0.55rem;
-      font-size: 0.7rem;
-      color: var(--text-secondary);
-      cursor: pointer;
-      transition: var(--transition);
-      display: flex;
-      align-items: center;
-      gap: 0.3rem;
-      border-radius: 2px;
-      user-select: none;
-      font-weight: 700;
-    }
-    .tag:hover {
-      border-color: rgba(255, 255, 255, 0.2);
-      color: var(--text);
-    }
-    .tag.on {
-      background: rgba(156, 17, 17, 0.15);
-      border-color: rgba(156, 17, 17, 0.4);
-      color: #ff6b6b;
-    }
-    .tag .tx {
-      font-size: 0.65rem;
-      opacity: 0.4;
-      cursor: pointer;
-      margin-left: 0.1rem;
-    }
-    .tag .tx:hover {
-      opacity: 0.9;
-    }
-    .add-tag-row {
-      display: flex;
-      gap: 0.4rem;
-      margin-top: 0.5rem;
-      flex-wrap: wrap;
-    }
-    .add-tag-row input[type="text"] {
-      flex: 3;
-      min-width: 100px;
-    }
-    .add-tag-row input[type="number"] {
-      flex: 1.2;
-      min-width: 60px;
-    }
-    .add-tag-row select {
-      flex: 2;
-      min-width: 140px;
-    }
-    .add-tag-btn {
-      background: transparent;
-      border: 1px dashed rgba(255, 255, 255, 0.15);
-      color: var(--text-secondary);
-      font-family: "Lato", sans-serif;
-      font-size: 0.7rem;
-      font-weight: 700;
-      padding: 0.4rem 0.7rem;
-      cursor: pointer;
-      white-space: nowrap;
-      transition: var(--transition);
-      text-transform: uppercase;
-      border-radius: 2px;
-    }
-    .add-tag-btn:hover {
-      border-color: var(--primary);
-      color: #ff6b6b;
-    }
+.field { margin-bottom: .875rem; }
+.flabel { display: flex; justify-content: space-between; align-items: center; margin-bottom: .3rem; }
+.ln { font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; color: var(--text-secondary); font-weight: 700; }
+.lv { font-size: .82rem; color: #ff6b6b; font-family: monospace; }
+.hint { font-size: .7rem; color: rgba(255,255,255,0.3); margin-top: .2rem; font-style: italic; min-height: 1em; }
 
-    .result-main {
-      background: var(--surface);
-      border: 1px solid rgba(255, 255, 255, 0.07);
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-      overflow: hidden;
-      position: relative;
-      border-radius: 8px;
-    }
-    .result-main::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 3px;
-      background: linear-gradient(90deg, var(--primary), var(--accent));
-    }
-    .big-nums {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1px;
-      background: rgba(255, 255, 255, 0.05);
-      margin-top: 3px;
-    }
-    @media (max-width: 600px) {
-      .big-nums {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-    .bnum {
-      background: var(--surface);
-      padding: 1.25rem 0.75rem;
-      text-align: center;
-    }
-    .bnum-lbl {
-      font-size: 0.65rem;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      color: var(--text-secondary);
-      margin-bottom: 0.5rem;
-      font-weight: 700;
-    }
-    .bnum-val {
-      font-size: 2.25rem;
-      font-weight: 900;
-      line-height: 1;
-      letter-spacing: -0.5px;
-    }
-    .bnum-val.red {
-      color: #ff4444;
-    }
-    .bnum-val.white {
-      color: #ffffff;
-    }
-    .bnum-val.dim {
-      color: #ff6b6b;
-    }
-    .bnum-val.soft {
-      color: #cc8888;
-    }
-    .bnum-sub {
-      font-size: 0.65rem;
-      color: var(--text-secondary);
-      margin-top: 0.3rem;
-      font-family: monospace;
-    }
-    .bdown-wrap {
-      padding: 1.25rem;
-    }
-    .bdown-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0 2.5rem;
-      font-size: 0.72rem;
-      font-family: monospace;
-    }
-    @media (max-width: 600px) {
-      .bdown-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-    .brow {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.03);
-      padding: 0.2rem 0;
-    }
-    .brow .bk {
-      color: rgba(255, 255, 255, 0.3);
-    }
-    .brow .bv {
-      font-weight: 400;
-    }
-    .bv.red {
-      color: #ff4444;
-    }
-    .bv.lit {
-      color: #ff8080;
-    }
-    .bv.dim {
-      color: rgba(255, 255, 255, 0.25);
-    }
-    .bv.white {
-      color: #e0e0e0;
-    }
-    .chain-bar {
-      padding: 0.875rem 1.25rem;
-      border-top: 1px solid rgba(255, 255, 255, 0.05);
-      font-size: 0.72rem;
-      font-family: monospace;
-    }
-    .chain-lbl {
-      font-size: 0.65rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: rgba(255, 255, 255, 0.2);
-      margin-bottom: 0.5rem;
-      font-weight: 700;
-    }
-    .chain-cats {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-      margin-bottom: 0.5rem;
-    }
-    .chain-cat {
-      background: rgba(156, 17, 17, 0.1);
-      border: 1px solid rgba(156, 17, 17, 0.4);
-      padding: 0.3rem 0.6rem;
-      font-size: 0.68rem;
-      line-height: 1.7;
-      border-radius: 2px;
-    }
-    .chain-cat .cn {
-      color: rgba(255, 255, 255, 0.3);
-    }
-    .chain-cat .cv {
-      color: #ff6b6b;
-    }
-    .chain-eq {
-      color: rgba(255, 255, 255, 0.4);
-      line-height: 1.8;
-    }
-  </style>
+input[type=range] { width: 100%; -webkit-appearance: none; height: 2px; background: rgba(255,255,255,0.1); cursor: pointer; outline: none; margin: .1rem 0; }
+input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 13px; height: 13px; background: var(--primary); border-radius: 50%; cursor: pointer; border: 2px solid var(--background); }
+input[type=range]:hover::-webkit-slider-thumb { background: var(--accent); }
+input[type=number], input[type=text], select { width: 100%; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); color: var(--text); font-family: 'Lato', sans-serif; font-size: .85rem; padding: .45rem .75rem; outline: none; transition: border-color .2s ease; -webkit-appearance: none; border-radius: 0; }
+input[type=number]:focus, input[type=text]:focus, select:focus { border-color: var(--primary); box-shadow: 0 0 0 2px var(--primary-glow); }
+select option { background: var(--surface-light); }
 
-  <script>
-    const MIN_ATK = 0.05,
-      ATK_A = 231,
-      ATK_B = 8900;
-    const SEG = [20, 40, 70, 90, 110, 130, 150, 160, 170, 180, 190, 200];
-    const LCOEF = [
-      0.0248, 0.0248, 0.0248, 0.0248, 0.0248, 0.0248, 0.0248, 0.0248, 0.0248,
-      0.0248, 0.0248, 0.0248,
-    ];
-    const GREV = [
-      0, 0.21, 0.315, 0.42, 0.42, 0.42, 0.42, 0.42, 0.42, 0.42, 0.42, 0.42,
-    ];
-    const GRADE_COEF = [null, [11, 50], [33, 100], [11, 25]];
+.row2 { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; }
 
-    function monRatios(lv) {
-      let lr = 0,
-        gr = 0,
-        prev = 1;
-      for (let i = 0; i < SEG.length; i++) {
-        const s = SEG[i];
-        if (lv >= s) {
-          lr += (s - prev) * LCOEF[i];
-          gr += GREV[i];
-        } else {
-          lr += (lv - prev) * LCOEF[i];
-          gr += GREV[i] * Math.min((lv - prev) / 5, 1);
-          return [lr, gr];
-        }
-        prev = s;
-      }
-      lr += (lv - SEG[SEG.length - 1]) * LCOEF[LCOEF.length - 1];
-      return [lr, gr];
-    }
-    function monStat(base, lv) {
-      const [lr, gr] = monRatios(lv);
-      return Math.floor(base + base * lr + base * gr);
-    }
-    function calcHeroBaseAtk(base, lv, grade) {
-      const lvPart = Math.floor(base * (1 + (ATK_A / ATK_B) * (lv - 1)));
-      let gPart = 0;
-      for (let g = 1; g <= grade; g++) {
-        const [a, b] = GRADE_COEF[g];
-        gPart += base * (a / b);
-      }
-      return Math.floor(lvPart + gPart);
-    }
+.seg { display: flex; border: 1px solid rgba(255,255,255,0.1); overflow: hidden; }
+.seg-btn { flex: 1; background: transparent; border: none; border-right: 1px solid rgba(255,255,255,0.07); color: var(--text-secondary); font-family: 'Lato', sans-serif; font-size: .72rem; font-weight: 700; letter-spacing: .05em; padding: .45rem .25rem; cursor: pointer; transition: var(--transition); text-transform: uppercase; }
+.seg-btn:last-child { border-right: none; }
+.seg-btn:hover { background: rgba(255,255,255,0.05); color: var(--text); }
+.seg-btn.on { background: rgba(156,17,17,0.2); color: #ff6b6b; }
 
-    let grade = 0,
-      damageType = "AP",
-      skillType = "normal",
-      heroBaseAtk = null;
+.tog-row { display: flex; align-items: center; justify-content: space-between; padding: .55rem 0; border-bottom: 1px solid rgba(255,255,255,0.04); font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; color: var(--text-secondary); font-weight: 700; }
+.tog { position: relative; width: 34px; height: 18px; cursor: pointer; flex-shrink: 0; }
+.tog input { display: none; }
+.tog-track { position: absolute; inset: 0; background: rgba(255,255,255,0.1); transition: background .2s; border-radius: 9px; }
+.tog input:checked ~ .tog-track { background: rgba(156,17,17,0.4); }
+.tog-thumb { position: absolute; top: 3px; left: 3px; width: 12px; height: 12px; background: var(--text-secondary); transition: all .2s; border-radius: 50%; }
+.tog input:checked ~ .tog-thumb { left: 19px; background: var(--accent); }
 
-    const CAT_KEYS = [
-      "General Damage Bonus",
-      "Normal Attack Damage Bonus",
-      "Skill Damage Bonus",
-      "Physical Damage Bonus",
-      "Magic Damage Bonus",
-      "True Damage Bonus",
-      "Breaking Damage Bonus",
-      "Bonus vs Boss",
-      "Bonus vs Elite",
-      "Custom",
-    ];
+.atk-strip { display: flex; align-items: center; gap: .5rem; padding: .6rem .75rem; background: rgba(0,0,0,0.25); border: 1px solid rgba(255,255,255,0.05); font-size: .75rem; margin: .5rem 0; flex-wrap: wrap; }
+.atk-strip .ak { color: var(--text-secondary); }
+.atk-strip .av { color: #ff6b6b; font-family: monospace; font-size: .85rem; }
+.atk-strip .arr { color: rgba(255,255,255,0.2); }
 
-    // Start with no pre-loaded multipliers — users add their own
-    let multipliers = [];
+.sep { height: 1px; background: rgba(255,255,255,0.05); margin: .875rem 0; }
 
-    function calcChain(dt) {
-      const groups = {};
-      const coreBroken = document.getElementById("coreBroken").checked;
-      const isBoss = document.getElementById("isBoss").checked;
-      const isElite = document.getElementById("isElite").checked;
-      const aspdBonus =
-        parseFloat(document.getElementById("atkSpeed").value) || 0;
-      const aspdConv =
-        parseFloat(document.getElementById("aspdConv").value) || 0;
+.mult-section { margin-bottom: .875rem; }
+.mult-cat-label { display: flex; justify-content: space-between; align-items: center; font-size: .68rem; text-transform: uppercase; letter-spacing: .1em; color: rgba(255,255,255,0.25); padding: .25rem 0 .5rem; border-bottom: 1px solid rgba(255,255,255,0.04); margin-bottom: .5rem; font-weight: 700; }
+.cat-fx { color: #ff6b6b; font-family: monospace; }
+.tags { display: flex; flex-wrap: wrap; gap: .3rem; margin-bottom: .4rem; }
+.tag { border: 1px solid rgba(255,255,255,0.1); padding: .25rem .55rem; font-size: .7rem; color: var(--text-secondary); cursor: pointer; transition: var(--transition); display: flex; align-items: center; gap: .3rem; border-radius: 2px; user-select: none; font-weight: 700; }
+.tag:hover { border-color: rgba(255,255,255,0.2); color: var(--text); }
+.tag.on { background: rgba(156,17,17,0.15); border-color: var(--border-red); color: #ff6b6b; }
+.tag .tx { font-size: .65rem; opacity: .4; cursor: pointer; margin-left: .1rem; }
+.tag .tx:hover { opacity: .9; }
+.add-tag-row { display: flex; gap: .4rem; margin-top: .5rem; flex-wrap: wrap; }
+.add-tag-row input[type=text] { flex: 3; min-width: 80px; }
+.add-tag-row input[type=number] { flex: 1.2; min-width: 55px; }
+.add-tag-row select { flex: 2; min-width: 120px; }
+.add-tag-btn { background: transparent; border: 1px dashed rgba(255,255,255,0.15); color: var(--text-secondary); font-family: 'Lato', sans-serif; font-size: .7rem; font-weight: 700; padding: .4rem .7rem; cursor: pointer; white-space: nowrap; transition: var(--transition); text-transform: uppercase; }
+.add-tag-btn:hover { border-color: var(--primary); color: #ff6b6b; }
 
-      multipliers.forEach((m) => {
-        if (!m.on) return;
-        const c = m.cat;
-        if (c === "Normal Attack Damage Bonus" && skillType !== "normal")
-          return;
-        if (
-          c === "Skill Damage Bonus" &&
-          (skillType === "normal" || skillType === "any")
-        )
-          return;
-        if (c === "Physical Damage Bonus" && dt !== "AD") return;
-        if (c === "Magic Damage Bonus" && dt !== "AP") return;
-        if (c === "True Damage Bonus" && dt !== "TD") return;
-        if (c === "Breaking Damage Bonus" && !coreBroken) return;
-        if (c === "Bonus vs Boss" && !isBoss) return;
-        if (c === "Bonus vs Elite" && !isElite) return;
-        groups[c] = (groups[c] || 0) + m.val;
-      });
+.result-main { background: var(--surface); border: 1px solid var(--border); box-shadow: 0 2px 10px rgba(0,0,0,0.2); overflow: hidden; position: relative; }
+.result-main::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg,var(--primary),var(--accent)); }
+.big-nums { display: grid; grid-template-columns: repeat(4,1fr); gap: 1px; background: rgba(255,255,255,0.05); margin-top: 3px; }
+@media (max-width: 600px) { .big-nums { grid-template-columns: 1fr 1fr; } }
+.bnum { background: var(--surface); padding: 1.25rem .75rem; text-align: center; }
+.bnum-lbl { font-size: .65rem; text-transform: uppercase; letter-spacing: .15em; color: var(--text-secondary); margin-bottom: .5rem; font-weight: 700; }
+.bnum-val { font-size: 2.25rem; font-weight: 900; line-height: 1; letter-spacing: -.5px; }
+.bnum-val.red { color: #ff4444; } .bnum-val.white { color: #ffffff; }
+.bnum-val.dim { color: #ff6b6b; } .bnum-val.soft { color: #cc8888; }
+.bnum-sub { font-size: .65rem; color: var(--text-secondary); margin-top: .3rem; font-family: monospace; }
 
-      if (aspdBonus > 0 && aspdConv > 0)
-        groups["Skill Damage Bonus"] =
-          (groups["Skill Damage Bonus"] || 0) + aspdBonus * aspdConv;
+.bdown-wrap { padding: 1.25rem; }
+.bdown-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 2.5rem; font-size: .72rem; font-family: monospace; }
+@media (max-width: 600px) { .bdown-grid { grid-template-columns: 1fr; } }
+.brow { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.03); padding: .2rem 0; }
+.brow .bk { color: rgba(255,255,255,0.3); } .brow .bv { font-weight: 400; }
+.bv.red { color: #ff4444; } .bv.lit { color: #ff8080; } .bv.dim { color: rgba(255,255,255,0.25); } .bv.white { color: #e0e0e0; }
 
-      const tdr = parseFloat(document.getElementById("takeDmgRate").value) || 0;
-      const tpdr =
-        parseFloat(document.getElementById("takePDmgRate").value) || 0;
-      const tmdr =
-        parseFloat(document.getElementById("takeMDmgRate").value) || 0;
-      if (tdr > 0)
-        groups["Enemy takes more damage"] =
-          (groups["Enemy takes more damage"] || 0) + tdr;
-      if (tpdr > 0 && dt === "AD")
-        groups["Enemy takes more physical damage"] =
-          (groups["Enemy takes more physical damage"] || 0) + tpdr;
-      if (tmdr > 0 && dt === "AP")
-        groups["Enemy takes more magic damage"] =
-          (groups["Enemy takes more magic damage"] || 0) + tmdr;
+.chain-bar { padding: .875rem 1.25rem; border-top: 1px solid rgba(255,255,255,0.05); font-size: .72rem; font-family: monospace; }
+.chain-lbl { font-size: .65rem; text-transform: uppercase; letter-spacing: .1em; color: rgba(255,255,255,0.2); margin-bottom: .5rem; font-weight: 700; }
+.chain-cats { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: .5rem; }
+.chain-cat { background: rgba(156,17,17,0.1); border: 1px solid var(--border-red); padding: .3rem .6rem; font-size: .68rem; line-height: 1.7; }
+.chain-cat .cn { color: rgba(255,255,255,0.3); } .chain-cat .cv { color: #ff6b6b; }
+.chain-eq { color: rgba(255,255,255,0.4); line-height: 1.8; }
 
-      let total = 1;
-      const catList = [];
-      Object.entries(groups).forEach(([cat, sum]) => {
-        const f = 1 + sum / 100;
-        total *= f;
-        catList.push({ cat, sum, factor: f });
-      });
-      return { total, catList };
-    }
+.note-bar { padding: .75rem 1.25rem; border-top: 1px solid rgba(255,255,255,0.05); font-size: .7rem; color: rgba(255,255,255,0.3); font-family: monospace; line-height: 1.8; background: rgba(0,0,0,0.15); }
+.note-bar .hl { color: #ff8080; }
+</style>
 
-    function renderMults() {
-      const c = document.getElementById("mult-container");
-      const byCat = {};
-      multipliers.forEach((m, i) => {
-        if (!byCat[m.cat]) byCat[m.cat] = [];
-        byCat[m.cat].push({ ...m, i });
-      });
+<script>
+const MIN_ATK = 0.05, ATK_A = 231, ATK_B = 8900;
+const SEG   = [20,40,70,90,110,130,150,160,170,180,190,200];
+const LCOEF = [.0248,.0248,.0248,.0248,.0248,.0248,.0248,.0248,.0248,.0248,.0248,.0248];
+const GREV  = [0,.21,.315,.42,.42,.42,.42,.42,.42,.42,.42,.42];
+const GRADE_COEF = [null,[11,50],[33,100],[11,25]];
 
-      let html = "";
-      if (multipliers.length === 0) {
-        html += `<div style="font-size:.75rem;color:rgba(255,255,255,0.2);padding:.5rem 0;font-style:italic">
-          No bonuses added yet. Add them below — only enable the ones your sinner actually has.
-        </div>`;
-      } else {
-        Object.entries(byCat).forEach(([cat, items]) => {
-          const sum = items.filter((m) => m.on).reduce((a, m) => a + m.val, 0);
-          html += `<div class="mult-section">
-            <div class="mult-cat-label">
-              <span>${cat}</span>
-              ${sum > 0 ? `<span class="cat-fx">×${(1 + sum / 100).toFixed(3)}</span>` : ""}
-            </div>
-            <div class="tags">`;
-          items.forEach((m) => {
-            html += `<div class="tag ${m.on ? "on" : ""}" data-idx="${m.i}">
-              ${m.name} <span style="opacity:.5">+${m.val}%</span>
-              <span class="tx" data-remove-idx="${m.i}">✕</span>
-            </div>`;
-          });
-          html += `</div></div>`;
-        });
-        html += `<div class="sep"></div>`;
-      }
+// Base path where character JSONs live
+const DATA_BASE = '/characters';
 
-      html += `<div style="font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,0.3);margin-bottom:.5rem;font-weight:700">Add a bonus</div>
-      <div class="add-tag-row">
-        <input type="text" id="new-mult-name" placeholder="e.g. Bond +5%">
-        <input type="number" id="new-mult-val" placeholder="%" value="10" min="0">
-        <select id="new-mult-cat">${CAT_KEYS.map((k) => `<option value="${k}">${k}</option>`).join("")}</select>
-        <button class="add-tag-btn" id="add-mult-btn">+ Add</button>
-      </div>`;
+function monRatios(lv) {
+  let lr=0,gr=0,prev=1;
+  for(let i=0;i<SEG.length;i++){
+    const s=SEG[i];
+    if(lv>=s){lr+=(s-prev)*LCOEF[i];gr+=GREV[i];}
+    else{lr+=(lv-prev)*LCOEF[i];gr+=GREV[i]*Math.min((lv-prev)/5,1);return[lr,gr];}
+    prev=s;
+  }
+  lr+=(lv-SEG[SEG.length-1])*LCOEF[LCOEF.length-1];
+  return[lr,gr];
+}
+function monStat(base,lv){const[lr,gr]=monRatios(lv);return Math.floor(base+base*lr+base*gr);}
+function calcHeroBaseAtk(base,lv,grade){
+  const lvPart=Math.floor(base*(1+(ATK_A/ATK_B)*(lv-1)));
+  let gPart=0;
+  for(let g=1;g<=grade;g++){const[a,b]=GRADE_COEF[g];gPart+=base*(a/b);}
+  return Math.floor(lvPart+gPart);
+}
 
-      c.innerHTML = html;
+let grade=0, damageType='AP', skillType='normal', heroBaseAtk=null;
+let currentHeroSkills = null; // skills object from loaded character JSON
 
-      c.querySelectorAll(".tag").forEach((t) => {
-        t.addEventListener("click", (e) => {
-          if (e.target.classList.contains("tx")) return;
-          multipliers[+t.dataset.idx].on = !multipliers[+t.dataset.idx].on;
-          renderMults();
-          update();
-        });
-      });
-      c.querySelectorAll(".tag .tx").forEach((span) => {
-        span.addEventListener("click", (e) => {
-          e.stopPropagation();
-          multipliers.splice(+span.dataset.removeIdx, 1);
-          renderMults();
-          update();
-        });
-      });
-      document
-        .getElementById("add-mult-btn")
-        ?.addEventListener("click", addMult);
-    }
+// ── Skill selector labels ────────────────────────────────────────────────────
+const SKILL_SLOT_LABELS = {
+  normalAttack: 'Normal Attack',
+  ultimate:     'Ultimate',
+  skill1:       'Active Skill (S1)',
+  passive:      'Passive (S1)',
+  exclusive:    'Exclusive Skill',
+};
 
-    function addMult() {
-      const name =
-        document.getElementById("new-mult-name").value.trim() || "Bonus";
-      const val =
-        parseFloat(document.getElementById("new-mult-val").value) || 0;
-      const cat = document.getElementById("new-mult-cat").value;
-      multipliers.push({ name, val, cat, on: true });
-      renderMults();
-      update();
-    }
-
-    function setDT(type) {
-      damageType = type;
-      ["AP", "AD", "TD"].forEach((t) => {
-        document
-          .getElementById("dt-" + t.toLowerCase())
-          .classList.toggle("on", type === t);
-      });
-      update();
-    }
-
-    function loadHeroJson(d) {
-      heroBaseAtk = d.Attack || null;
-      document.getElementById("hero-badge").textContent =
-        (d.Name || "hero") + " #" + d.ID;
-      update();
-    }
-    function loadMonJson(d) {
-      document.getElementById("mon-badge").textContent =
-        (d.Name || "monster") + " #" + d.ID;
-      if (d.Armor !== undefined)
-        document.getElementById("baseArmor").value = d.Armor;
-      if (d.MagicResist !== undefined)
-        document.getElementById("baseMR").value = d.MagicResist;
-      if (d.ArmorShow !== undefined && d.MagicResistShow !== undefined)
-        setDT(d.ArmorShow >= d.MagicResistShow ? "AP" : "AD");
-      update();
-    }
-    function setupDrop(dropId, fileId, cb) {
-      const z = document.getElementById(dropId);
-      const inp = document.getElementById(fileId);
-      z.addEventListener("dragover", (e) => {
-        e.preventDefault();
-        z.classList.add("over");
-      });
-      z.addEventListener("dragleave", () => z.classList.remove("over"));
-      z.addEventListener("drop", (e) => {
-        e.preventDefault();
-        z.classList.remove("over");
-        if (e.dataTransfer.files[0]) readJson(e.dataTransfer.files[0], cb);
-      });
-      inp.addEventListener("change", () => {
-        if (inp.files[0]) readJson(inp.files[0], cb);
-      });
-    }
-    function readJson(f, cb) {
-      const r = new FileReader();
-      r.onload = (e) => {
-        try {
-          cb(JSON.parse(e.target.result));
-          update();
-        } catch (err) {
-          alert("JSON error: " + err);
-        }
-      };
-      r.readAsText(f);
-    }
-
-    const fmt = (n, d = 2) =>
-      typeof n === "number"
-        ? n.toLocaleString("en-US", { maximumFractionDigits: d })
-        : n;
-    const fmti = (n) => Math.floor(Math.max(1, n)).toLocaleString("en-US");
-    const S = (id) => document.getElementById(id);
-
-    function update() {
-      const level = parseInt(S("level").value);
-      const monLv = parseInt(S("monLv").value);
-      const skillCo = (parseFloat(S("skillCo").value) || 100) / 100;
-      const isCrit = S("isCrit").checked;
-      const critB = parseInt(S("critB").value) / 100;
-      const penPct = parseInt(S("penPct").value);
-      const penFlat = parseFloat(S("penFlat").value) || 0;
-      const atkPct = parseFloat(S("atkPct").value) || 0;
-      const compAtk = parseFloat(S("complianceAtk").value) || 0;
-      const override = S("statAtkOverride").value;
-      const aspdBonus = parseFloat(S("atkSpeed").value) || 0;
-      const aspdConv = parseFloat(S("aspdConv").value) || 0;
-
-      S("lv-v").textContent = level;
-      S("ml-v").textContent = monLv;
-      S("cb-v").textContent = Math.round(critB * 100) + "%";
-      S("pen-v").textContent = penPct + "%";
-      S("atkpct-v").textContent = atkPct + "%";
-      S("tdr-v").textContent = S("takeDmgRate").value + "%";
-      S("tpdr-v").textContent = S("takePDmgRate").value + "%";
-      S("tmdr-v").textContent = S("takeMDmgRate").value + "%";
-      S("aspd-v").textContent = aspdBonus + "%";
-      if (aspdConv > 0 && aspdBonus > 0)
-        S("aspd-hint").textContent =
-          `${aspdBonus}% speed × ${aspdConv} = +${(aspdBonus * aspdConv).toFixed(1)}% skill damage`;
-      else
-        S("aspd-hint").textContent =
-          "Check character characteristic — e.g. Vautour gets 0.3% skill damage per 1% ATK speed";
-
-      const baseAtkCalc = heroBaseAtk
-        ? calcHeroBaseAtk(heroBaseAtk, level, grade)
-        : null;
-      const statAtk =
-        override && override !== ""
-          ? parseFloat(override)
-          : baseAtkCalc !== null
-            ? baseAtkCalc + compAtk
-            : 0;
-      const combatAtk = statAtk * (1 + atkPct / 100);
-
-      S("strip-base").textContent =
-        baseAtkCalc !== null ? fmt(baseAtkCalc, 0) : "—";
-      S("strip-stat").textContent = statAtk > 0 ? fmt(statAtk, 1) : "—";
-      S("strip-combat").textContent = statAtk > 0 ? fmt(combatAtk, 2) : "—";
-
-      const baseArmor = parseFloat(S("baseArmor").value) || 0;
-      const baseMR = parseFloat(S("baseMR").value) || 0;
-      const baseDef =
-        damageType === "AP" ? baseMR : damageType === "AD" ? baseArmor : 0;
-      const scaledDef = damageType === "TD" ? 0 : monStat(baseDef, monLv);
-      const effDef =
-        damageType === "TD"
-          ? 0
-          : Math.max(0, scaledDef * (1 - penPct / 100) - penFlat);
-
-      S("scaled-def-val").textContent = fmt(scaledDef, 0);
-      S("eff-def-val").textContent = fmt(effDef, 1);
-
-      if (statAtk <= 0) {
-        ["o-hit", "o-raw", "o-crit", "o-floor"].forEach(
-          (id) => (S(id).textContent = "—"),
-        );
-        S("o-floor-sub").textContent = "load a hero or enter ATK override";
-        S("bdown").innerHTML = "";
-        S("chain-cats").innerHTML = "";
-        S("chain-eq").innerHTML = "";
-        return;
-      }
-
-      const atkA = combatAtk - effDef,
-        atkB = combatAtk * MIN_ATK;
-      const floorActive = atkA < atkB;
-      const pre = Math.max(atkA, atkB);
-      const { total: mult, catList } = calcChain(damageType);
-      const raw = pre * skillCo * mult;
-      const rawCrit = raw * critB;
-      const hit = isCrit ? rawCrit : raw;
-
-      S("o-hit").textContent = fmti(hit);
-      S("o-co").textContent = "coef " + Math.round(skillCo * 100) + "%";
-      S("o-raw").textContent = raw.toFixed(3);
-      S("o-crit").textContent = fmti(rawCrit);
-      S("o-cn").textContent = "×" + critB.toFixed(2);
-      S("o-floor").textContent = floorActive ? "YES" : "NO";
-      S("o-floor-sub").textContent = floorActive
-        ? "min = atk×0.05 = " + atkB.toFixed(1)
-        : "pre = " + atkA.toFixed(1);
-
-      const [lr, gr] = monRatios(monLv);
-      const rows = [
-        ["Stat-screen ATK", fmt(statAtk, 1), "white"],
-        ["In-battle ATK%", "+" + atkPct + "%", ""],
-        ["Combat ATK", fmt(combatAtk, 2), "red"],
-        ["Skill coefficient", Math.round(skillCo * 100) + "%", ""],
-        ["base = atk × coef", fmt(combatAtk * skillCo, 2), ""],
-        [
-          "Damage type",
-          damageType === "AP"
-            ? "Magic (vs MagRes)"
-            : damageType === "AD"
-              ? "Physical (vs Armor)"
-              : "True",
-          "",
-        ],
-        ["Base enemy defense", fmt(baseDef, 0), "dim"],
-        ["Monster level ratio", (lr * 100).toFixed(2) + "%", "dim"],
-        ["Monster grade revision", (gr * 100).toFixed(2) + "%", "dim"],
-        ["Scaled defense", fmt(scaledDef, 0), "white"],
-        ["Pen % removed", fmt(scaledDef * (penPct / 100), 1), ""],
-        ["Flat pen removed", fmt(penFlat, 0), ""],
-        ["Effective defense", fmt(effDef, 1), "white"],
-        ["pre = max(atk−def, atk×0.05)", fmt(pre, 2), "red"],
-        [
-          "MIN floor active?",
-          floorActive ? "YES" : "no",
-          floorActive ? "red" : "dim",
-        ],
-        ["Total multiplier", (mult * 100).toFixed(2) + "%", "lit"],
-        ["Hit (no crit)", fmti(raw), "red"],
-        ["Hit (crit)", fmti(rawCrit), "lit"],
-      ];
-      const h = Math.ceil(rows.length / 2);
-      let l = "",
-        r = "";
-      rows.forEach(([k, v, c], i) => {
-        const row = `<div class="brow"><span class="bk">${k}</span><span class="bv ${c}">${v}</span></div>`;
-        if (i < h) l += row;
-        else r += row;
-      });
-      S("bdown").innerHTML = `<div>${l}</div><div>${r}</div>`;
-
-      let cats = "",
-        eq = `<span style="color:rgba(255,255,255,0.2)">pre × coef</span>`;
-      catList.forEach(({ cat, sum, factor }) => {
-        cats += `<div class="chain-cat"><div class="cn">${cat}</div><div class="cv">+${sum.toFixed(1)}% → ×${factor.toFixed(3)}</div></div>`;
-        eq += ` <span style="color:rgba(255,255,255,0.2)">×</span> <span style="color:#ff6b6b">${factor.toFixed(3)}</span>`;
-      });
-      if (isCrit)
-        eq += ` <span style="color:rgba(255,255,255,0.2)">×</span> <span style="color:#ff4444">CRIT(${critB.toFixed(2)})</span>`;
-      eq +=
-        ` <span style="color:rgba(255,255,255,0.2)">=</span> <span style="color:#ff4444">${raw.toFixed(3)}</span>` +
-        ` <span style="color:rgba(255,255,255,0.2)">→ floor →</span> <span style="color:#ff4444">${fmti(raw)}</span>`;
-
-      S("chain-cats").innerHTML =
-        cats ||
-        '<span style="color:rgba(255,255,255,0.2);font-size:.7rem">no bonuses active</span>';
-      S("chain-eq").innerHTML = eq;
-    }
-
-    setupDrop("hero-drop", "hero-file", loadHeroJson);
-    setupDrop("mon-drop", "mon-file", loadMonJson);
-    renderMults();
-
-    document.querySelectorAll("#grade-seg .seg-btn").forEach((b) =>
-      b.addEventListener("click", () => {
-        document
-          .querySelectorAll("#grade-seg .seg-btn")
-          .forEach((x) => x.classList.remove("on"));
-        b.classList.add("on");
-        grade = +b.dataset.g;
-        update();
-      }),
-    );
-
-    document.querySelectorAll("#skill-type-seg .seg-btn").forEach((b) =>
-      b.addEventListener("click", () => {
-        document
-          .querySelectorAll("#skill-type-seg .seg-btn")
-          .forEach((x) => x.classList.remove("on"));
-        b.classList.add("on");
-        skillType = b.dataset.st;
-        const notes = {
-          normal:
-            "Normal Attack Damage Bonus applies · Skill Damage Bonus does not",
-          skill:
-            "Skill Damage Bonus applies · Normal Attack Damage Bonus does not",
-          ultimate:
-            "Skill Damage Bonus applies · Normal Attack Damage Bonus does not",
-          any: "All damage bonus types apply",
-        };
-        S("skill-type-note").textContent = notes[skillType];
-        update();
-      }),
-    );
-
-    document.querySelectorAll("#damage-type-seg .seg-btn").forEach((b) =>
-      b.addEventListener("click", () => {
-        setDT(b.dataset.dt);
-      }),
-    );
-
-    document.querySelectorAll("input, select").forEach((el) => {
-      el.addEventListener("input", update);
-      el.addEventListener("change", update);
+// ── Load character index and populate dropdown ────────────────────────────────
+async function loadIndex() {
+  try {
+    const res = await fetch(`${DATA_BASE}/index.json`);
+    if(!res.ok) return;
+    const index = await res.json();
+    const sel = document.getElementById('hero-select');
+    index.forEach(entry => {
+      const opt = document.createElement('option');
+      opt.value = entry.file;
+      opt.textContent = entry.name;
+      sel.appendChild(opt);
     });
+  } catch(e) {
+    console.warn('Could not load character index:', e);
+  }
+}
 
-    update();
-  </script>
+// ── Load a character JSON by filename and apply it ────────────────────────────
+async function loadCharacterFile(filename) {
+  try {
+    const res = await fetch(`${DATA_BASE}/${filename}`);
+    if(!res.ok) return;
+    const data = await res.json();
+    applyHeroData(data);
+  } catch(e) {
+    console.warn('Could not load character:', e);
+  }
+}
+
+function applyHeroData(data) {
+  heroBaseAtk       = data.baseAtk || null;
+  currentHeroSkills = data.skills  || null;
+  document.getElementById('hero-badge').textContent = data.name + ' #' + data.id;
+
+  // Populate skill dropdown
+  const skillSel = document.getElementById('skill-select');
+  skillSel.innerHTML = '';
+  if(currentHeroSkills) {
+    Object.entries(currentHeroSkills).forEach(([slot, skill]) => {
+      if(!skill || !skill.id) return;
+      const label = SKILL_SLOT_LABELS[slot] || slot;
+      const name  = skill.name ? ` — ${skill.name}` : '';
+      const opt   = document.createElement('option');
+      opt.value   = slot;
+      opt.textContent = label + name;
+      skillSel.appendChild(opt);
+    });
+    // Auto-select normal attack
+    skillSel.value = 'normalAttack';
+    applySelectedSkill();
+  }
+
+  update();
+}
+
+function applySelectedSkill() {
+  const slot = document.getElementById('skill-select').value;
+  if(!currentHeroSkills || !slot) return;
+  const skill = currentHeroSkills[slot];
+  if(!skill) return;
+
+  // Set skill type segment
+  const typeMap = {
+    normalAttack: 'normal',
+    ultimate:     'ultimate',
+    skill1:       'skill',
+    passive:      'skill',
+    exclusive:    'skill',
+  };
+  skillType = typeMap[slot] || 'any';
+  document.querySelectorAll('#skill-type-seg .seg-btn').forEach(b => {
+    b.classList.toggle('on', b.dataset.st === skillType);
+  });
+  document.getElementById('skill-type-note').textContent = {
+    normal:  'Normal Attack Damage Bonus applies · Skill Damage Bonus does not',
+    skill:   'Skill Damage Bonus applies · Normal Attack Damage Bonus does not',
+    ultimate:'Skill Damage Bonus applies · Normal Attack Damage Bonus does not',
+    any:     'All damage bonus types apply',
+  }[skillType] || '';
+
+  // Set damage type
+  if(skill.damageType !== undefined) {
+    // DamageType bitmask: bit 1 (value &1) = AP/magic, bit 2 (value &2) = AD/physical
+    // 0 = no damage (passive etc), 1 = AP, 2 = AD, 3 = both, 34 = NormalAtk+AD, etc.
+    const dt = skill.damageType;
+    if(dt === 0 || (!(dt & 1) && !(dt & 2))) {
+      // no damage — leave as is
+    } else if(dt & 2) {
+      setDT('AD');
+    } else if(dt & 1) {
+      setDT('AP');
+    }
+  }
+
+  // Set skill level max and update coef
+  const coefs = skill.coefs || [];
+  const lvSlider = document.getElementById('skillLv');
+  lvSlider.max   = coefs.length > 0 ? coefs.length : 10;
+  lvSlider.value = lvSlider.max; // default to max level
+  document.getElementById('skill-lv-v').textContent = lvSlider.value;
+
+  updateSkillCoef();
+}
+
+function updateSkillCoef() {
+  const slot = document.getElementById('skill-select').value;
+  if(!currentHeroSkills || !slot) return;
+  const skill = currentHeroSkills[slot];
+  if(!skill || !skill.coefs || skill.coefs.length === 0) return;
+
+  const lv  = parseInt(document.getElementById('skillLv').value);
+  const idx = Math.min(lv - 1, skill.coefs.length - 1);
+  const coef = skill.coefs[idx];
+  if(coef !== null && coef !== undefined) {
+    document.getElementById('skillCo').value = Math.round(coef * 10) / 10;
+  }
+  document.getElementById('skill-lv-v').textContent = lv;
+  update();
+}
+
+const CAT_KEYS = [
+  'Damage Bonus (general)',
+  'Normal Attack Damage Bonus',
+  'Skill Damage Bonus',
+  'Physical Damage Bonus',
+  'Magic Damage Bonus',
+  'True Damage Bonus',
+  'Breaking Damage Bonus',
+  'Bonus vs Boss',
+  'Bonus vs Elite',
+  'Custom',
+];
+
+let multipliers = [];
+
+function calcChain(dt) {
+  const groups = {};
+  const coreBroken = document.getElementById('coreBroken').checked;
+  const isBoss     = document.getElementById('isBoss').checked;
+  const isElite    = document.getElementById('isElite').checked;
+  const aspdBonus  = parseFloat(document.getElementById('atkSpeed').value)||0;
+  const aspdConv   = parseFloat(document.getElementById('aspdConv').value)||0;
+
+  multipliers.forEach(m => {
+    if(!m.on) return;
+    const c = m.cat;
+    if(c==='Normal Attack Damage Bonus' && skillType!=='normal') return;
+    if(c==='Skill Damage Bonus' && (skillType==='normal'||skillType==='any')) return;
+    if(c==='Physical Damage Bonus' && dt!=='AD') return;
+    if(c==='Magic Damage Bonus'    && dt!=='AP') return;
+    if(c==='True Damage Bonus'     && dt!=='TD') return;
+    if(c==='Breaking Damage Bonus' && !coreBroken) return;
+    if(c==='Bonus vs Boss'  && !isBoss)  return;
+    if(c==='Bonus vs Elite' && !isElite) return;
+    groups[c] = (groups[c]||0) + m.val;
+  });
+
+  if(aspdBonus>0 && aspdConv>0)
+    groups['Skill Damage Bonus'] = (groups['Skill Damage Bonus']||0) + aspdBonus*aspdConv;
+
+  const tdr  = parseFloat(document.getElementById('takeDmgRate').value)||0;
+  const tpdr = parseFloat(document.getElementById('takePDmgRate').value)||0;
+  const tmdr = parseFloat(document.getElementById('takeMDmgRate').value)||0;
+  if(tdr>0)             groups['Enemy takes more damage']          = (groups['Enemy takes more damage']||0)+tdr;
+  if(tpdr>0&&dt==='AD') groups['Enemy takes more physical damage'] = (groups['Enemy takes more physical damage']||0)+tpdr;
+  if(tmdr>0&&dt==='AP') groups['Enemy takes more magic damage']    = (groups['Enemy takes more magic damage']||0)+tmdr;
+
+  let total=1;
+  const catList=[];
+  Object.entries(groups).forEach(([cat,sum])=>{
+    const f=1+sum/100; total*=f; catList.push({cat,sum,factor:f});
+  });
+  return{total,catList};
+}
+
+function renderMults() {
+  const c = document.getElementById('mult-container');
+  const byCat = {};
+  multipliers.forEach((m,i)=>{ if(!byCat[m.cat]) byCat[m.cat]=[]; byCat[m.cat].push({...m,i}); });
+
+  let html = '';
+  if(multipliers.length === 0){
+    html += `<div style="font-size:.75rem;color:rgba(255,255,255,0.2);padding:.5rem 0;font-style:italic">No bonuses added yet. Add them below — only enable the ones your sinner actually has.</div>`;
+  } else {
+    Object.entries(byCat).forEach(([cat,items])=>{
+      const sum = items.filter(m=>m.on).reduce((a,m)=>a+m.val,0);
+      html += `<div class="mult-section">
+        <div class="mult-cat-label"><span>${cat}</span>${sum>0?`<span class="cat-fx">×${(1+sum/100).toFixed(3)}</span>`:''}</div>
+        <div class="tags">`;
+      items.forEach(m=>{
+        html += `<div class="tag ${m.on?'on':''}" data-idx="${m.i}">${m.name} <span style="opacity:.5">+${m.val}%</span><span class="tx" data-remove="${m.i}">✕</span></div>`;
+      });
+      html += `</div></div>`;
+    });
+    html += `<div class="sep"></div>`;
+  }
+
+  html += `<div style="font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,0.2);margin-bottom:.5rem;font-weight:700">Add a bonus</div>
+  <div class="add-tag-row">
+    <input type="text" id="new-mult-name" placeholder="e.g. Bond +5%">
+    <input type="number" id="new-mult-val" placeholder="%" value="10" min="0">
+    <select id="new-mult-cat">${CAT_KEYS.map(k=>`<option value="${k}">${k}</option>`).join('')}</select>
+    <button class="add-tag-btn" id="add-mult-btn">+ Add</button>
+  </div>`;
+
+  c.innerHTML = html;
+
+  c.querySelectorAll('.tag').forEach(t=>{
+    t.addEventListener('click', e=>{
+      if(e.target.dataset.remove !== undefined) return;
+      multipliers[+t.dataset.idx].on = !multipliers[+t.dataset.idx].on;
+      renderMults(); update();
+    });
+  });
+  c.querySelectorAll('[data-remove]').forEach(btn=>{
+    btn.addEventListener('click', e=>{ e.stopPropagation(); multipliers.splice(+btn.dataset.remove,1); renderMults(); update(); });
+  });
+  document.getElementById('add-mult-btn')?.addEventListener('click', ()=>{
+    const name = document.getElementById('new-mult-name').value.trim()||'Bonus';
+    const val  = parseFloat(document.getElementById('new-mult-val').value)||0;
+    const cat  = document.getElementById('new-mult-cat').value;
+    multipliers.push({name,val,cat,on:true});
+    renderMults(); update();
+  });
+}
+
+function setDT(type) {
+  damageType = type;
+  ['AP','AD','TD'].forEach(t=>{ document.getElementById('dt-'+t.toLowerCase()).classList.toggle('on',type===t); });
+  update();
+}
+
+function loadHeroJson(d) {
+  applyHeroData(d);
+}
+
+function loadMonJson(d) {
+  document.getElementById('mon-badge').textContent = (d.Name||'monster')+' #'+d.ID;
+  if(d.Armor       !== undefined) document.getElementById('baseArmor').value = d.Armor;
+  if(d.MagicResist !== undefined) document.getElementById('baseMR').value    = d.MagicResist;
+  if(d.ArmorShow !== undefined && d.MagicResistShow !== undefined)
+    setDT(d.ArmorShow >= d.MagicResistShow ? 'AP' : 'AD');
+  update();
+}
+function setupDrop(dropId, fileId, cb) {
+  const z=document.getElementById(dropId), inp=document.getElementById(fileId);
+  z.addEventListener('dragover', e=>{e.preventDefault(); z.classList.add('over')});
+  z.addEventListener('dragleave', ()=>z.classList.remove('over'));
+  z.addEventListener('drop', e=>{e.preventDefault(); z.classList.remove('over'); if(e.dataTransfer.files[0]) readJson(e.dataTransfer.files[0],cb)});
+  inp.addEventListener('change', ()=>{ if(inp.files[0]) readJson(inp.files[0],cb) });
+}
+function readJson(f,cb){const r=new FileReader();r.onload=e=>{try{cb(JSON.parse(e.target.result));update();}catch(err){alert('JSON error: '+err)}};r.readAsText(f);}
+
+const fmt  = (n,d=2)=>typeof n==='number'?n.toLocaleString('en-US',{maximumFractionDigits:d}):n;
+const fmti = n=>Math.floor(Math.max(1,n)).toLocaleString('en-US');
+const S    = id=>document.getElementById(id);
+
+function update() {
+  const level    = parseInt(S('level').value);
+  const monLv    = parseInt(S('monLv').value);
+  const skillCo  = (parseFloat(S('skillCo').value)||100) / 100;
+  const isCrit   = S('isCrit').checked;
+  const critB    = parseInt(S('critB').value)/100;
+  const penPct   = parseInt(S('penPct').value);
+  const penFlat  = parseFloat(S('penFlat').value)||0;
+  const atkPct   = parseFloat(S('atkPct').value)||0;
+  const compAtk  = parseFloat(S('complianceAtk').value)||0;
+  const override = S('statAtkOverride').value;
+  const aspdBonus= parseFloat(S('atkSpeed').value)||0;
+  const aspdConv = parseFloat(S('aspdConv').value)||0;
+
+  S('lv-v').textContent    = level;
+  S('ml-v').textContent    = monLv;
+  S('cb-v').textContent    = Math.round(critB*100)+'%';
+  S('pen-v').textContent   = penPct+'%';
+  S('atkpct-v').textContent= atkPct+'%';
+  S('tdr-v').textContent   = S('takeDmgRate').value+'%';
+  S('tpdr-v').textContent  = S('takePDmgRate').value+'%';
+  S('tmdr-v').textContent  = S('takeMDmgRate').value+'%';
+  S('aspd-v').textContent  = aspdBonus+'%';
+  S('aspd-hint').textContent = aspdConv>0&&aspdBonus>0
+    ? `${aspdBonus}% speed × ${aspdConv} = +${(aspdBonus*aspdConv).toFixed(1)}% skill damage`
+    : 'Check character characteristic — e.g. Vautour gets 0.3% skill damage per 1% ATK speed';
+
+  const baseAtkCalc = heroBaseAtk ? calcHeroBaseAtk(heroBaseAtk, level, grade) : null;
+  const statAtk = override && override !== ''
+    ? parseFloat(override)
+    : (baseAtkCalc !== null ? baseAtkCalc + compAtk : 0);
+  const combatAtk = statAtk * (1 + atkPct/100);
+
+  S('strip-base').textContent   = baseAtkCalc !== null ? fmt(baseAtkCalc,0) : '—';
+  S('strip-stat').textContent   = statAtk > 0 ? fmt(statAtk,1) : '—';
+  S('strip-combat').textContent = statAtk > 0 ? fmt(combatAtk,2) : '—';
+
+  const baseArmor = parseFloat(S('baseArmor').value)||0;
+  const baseMR    = parseFloat(S('baseMR').value)||0;
+  const baseDef   = damageType==='AP' ? baseMR : damageType==='AD' ? baseArmor : 0;
+  const scaledDef = damageType==='TD' ? 0 : monStat(baseDef, monLv);
+  const effDef    = damageType==='TD' ? 0 : Math.max(0, scaledDef*(1-penPct/100)-penFlat);
+
+  S('scaled-def-val').textContent = fmt(scaledDef,0);
+  S('eff-def-val').textContent    = fmt(effDef,1);
+
+  if(statAtk <= 0){
+    ['o-hit','o-raw','o-crit','o-floor'].forEach(id=>S(id).textContent='—');
+    S('o-floor-sub').textContent = 'load a hero or enter ATK override';
+    S('bdown').innerHTML = S('chain-cats').innerHTML = S('chain-eq').innerHTML = '';
+    S('formula-note').innerHTML = '';
+    return;
+  }
+
+  const atkA = combatAtk - effDef, atkB = combatAtk * MIN_ATK;
+  const floorActive = atkA < atkB;
+  const pre = Math.max(atkA, atkB);
+  const {total:mult, catList} = calcChain(damageType);
+  const raw     = pre * skillCo * mult;
+  const rawCrit = raw * critB;
+  const hit     = isCrit ? rawCrit : raw;
+
+  S('o-hit').textContent   = fmti(hit);
+  S('o-co').textContent    = 'coef ' + Math.round(skillCo*100) + '%';
+  S('o-raw').textContent   = raw.toFixed(3);
+  S('o-crit').textContent  = fmti(rawCrit);
+  S('o-cn').textContent    = '×' + critB.toFixed(2);
+  S('o-floor').textContent = floorActive ? 'YES' : 'NO';
+  S('o-floor-sub').textContent = floorActive ? 'min = atk×0.05 = '+atkB.toFixed(1) : 'pre = '+atkA.toFixed(1);
+
+  const [lr,gr] = monRatios(monLv);
+  const rows = [
+    ['Stat-screen ATK',              fmt(statAtk,1),              'white'],
+    ['In-battle ATK%',               '+'+atkPct+'%',              ''],
+    ['Combat ATK',                   fmt(combatAtk,2),            'red'],
+    ['Skill coefficient',            Math.round(skillCo*100)+'%', ''],
+    ['base = atk × coef',            fmt(combatAtk*skillCo,2),    ''],
+    ['Damage type',                  damageType==='AP'?'Magic (vs MagRes)':damageType==='AD'?'Physical (vs Armor)':'True',''],
+    ['Base enemy defense',           fmt(baseDef,0),              'dim'],
+    ['Monster level ratio',          (lr*100).toFixed(2)+'%',     'dim'],
+    ['Monster grade revision',       (gr*100).toFixed(2)+'%',     'dim'],
+    ['Scaled defense',               fmt(scaledDef,0),            'white'],
+    ['Pen % removed',                fmt(scaledDef*(penPct/100),1),''],
+    ['Flat pen removed',             fmt(penFlat,0),              ''],
+    ['Effective defense',            fmt(effDef,1),               'white'],
+    ['pre = max(atk−def, atk×0.05)',fmt(pre,2),                  'red'],
+    ['MIN floor active?',            floorActive?'YES':'no',      floorActive?'red':'dim'],
+    ['Total multiplier',             (mult*100).toFixed(2)+'%',   'lit'],
+    ['Hit (no crit)',                fmti(raw),                   'red'],
+    ['Hit (crit)',                   fmti(rawCrit),               'lit'],
+  ];
+  const h = Math.ceil(rows.length/2);
+  let l='', r='';
+  rows.forEach(([k,v,c],i)=>{
+    const row=`<div class="brow"><span class="bk">${k}</span><span class="bv ${c}">${v}</span></div>`;
+    if(i<h) l+=row; else r+=row;
+  });
+  S('bdown').innerHTML = `<div>${l}</div><div>${r}</div>`;
+
+  let cats='', eq=`<span style="color:rgba(255,255,255,0.2)">pre × coef</span>`;
+  catList.forEach(({cat,sum,factor})=>{
+    cats += `<div class="chain-cat"><div class="cn">${cat}</div><div class="cv">+${sum.toFixed(1)}% → ×${factor.toFixed(3)}</div></div>`;
+    eq   += ` <span style="color:rgba(255,255,255,0.2)">×</span> <span style="color:#ff6b6b">${factor.toFixed(3)}</span>`;
+  });
+  if(isCrit) eq += ` <span style="color:rgba(255,255,255,0.2)">×</span> <span style="color:#ff4444">CRIT(${critB.toFixed(2)})</span>`;
+  eq += ` <span style="color:rgba(255,255,255,0.2)">=</span> <span style="color:#ff4444">${raw.toFixed(3)}</span>`
+      + ` <span style="color:rgba(255,255,255,0.2)">→ floor →</span> <span style="color:#ff4444">${fmti(raw)}</span>`;
+
+  S('chain-cats').innerHTML = cats || '<span style="color:rgba(255,255,255,0.2);font-size:.7rem">no bonuses active</span>';
+  S('chain-eq').innerHTML   = eq;
+  S('formula-note').innerHTML = `<span class="hl">Formula:</span> floor( max(combatATK − effDef, combatATK×0.05) × skillCoef × bonuses )<br><span class="hl">Same-type bonuses add together. Different types multiply against each other.</span>`;
+}
+
+setupDrop('hero-drop','hero-file',loadHeroJson);
+setupDrop('mon-drop', 'mon-file', loadMonJson);
+renderMults();
+loadIndex();
+
+document.querySelectorAll('#boss-presets .seg-btn').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('#boss-presets .seg-btn').forEach(x => x.classList.remove('on'));
+  b.classList.add('on');
+  document.getElementById('baseArmor').value = b.dataset.armor;
+  document.getElementById('baseMR').value    = b.dataset.mr;
+  document.getElementById('mon-badge').textContent = b.textContent.trim();
+  const hints = {
+    'Rancor Desire':       'Physical (high armor, low MR) — use Magic damage',
+    'Apostle of Stardust': 'Magic (low armor, high MR) — use Physical damage',
+    'Alchemic Beast':      'S rank in both — tough regardless of damage type',
+  };
+  document.getElementById('boss-hint').textContent = hints[b.textContent.trim()] || '';
+  setDT(b.dataset.dt);
+  update();
+}));
+
+document.getElementById('hero-select').addEventListener('change', e => {
+  if(e.target.value) loadCharacterFile(e.target.value);
+});
+document.getElementById('skill-select').addEventListener('change', () => {
+  applySelectedSkill();
+  update();
+});
+document.getElementById('skillLv').addEventListener('input', updateSkillCoef);
+
+document.querySelectorAll('#grade-seg .seg-btn').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('#grade-seg .seg-btn').forEach(x=>x.classList.remove('on'));
+  b.classList.add('on'); grade=+b.dataset.g; update();
+}));
+document.querySelectorAll('#skill-type-seg .seg-btn').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('#skill-type-seg .seg-btn').forEach(x=>x.classList.remove('on'));
+  b.classList.add('on'); skillType=b.dataset.st;
+  const notes = {
+    normal:  'Normal Attack Damage Bonus applies · Skill Damage Bonus does not',
+    skill:   'Skill Damage Bonus applies · Normal Attack Damage Bonus does not',
+    ultimate:'Skill Damage Bonus applies · Normal Attack Damage Bonus does not',
+    any:     'All damage bonus types apply',
+  };
+  S('skill-type-note').textContent = notes[skillType];
+  update();
+}));
+document.querySelectorAll('input, select').forEach(el=>{
+  el.addEventListener('input',  update);
+  el.addEventListener('change', update);
+});
+update();
+</script>
+
 </Layout>

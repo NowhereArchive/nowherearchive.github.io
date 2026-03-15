@@ -1,0 +1,16 @@
+{
+  "id": 117392,
+  "name": "FAC elite axe wielder",
+  "baseAtk": 300,
+  "grades": [
+    [
+      6,
+      35
+    ],
+    [
+      6,
+      35
+    ]
+  ],
+  "skills": {}
+}

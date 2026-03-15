@@ -1,0 +1,104 @@
+{
+  "id": 110510,
+  "name": "Milly",
+  "baseAtk": 178,
+  "grades": [
+    [
+      11,
+      50
+    ],
+    [
+      33,
+      100
+    ],
+    [
+      11,
+      25
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 5101,
+      "name": "Stinger's Kiss",
+      "damageType": 2,
+      "coefs": [
+        55,
+        59,
+        64,
+        69,
+        75,
+        81,
+        87,
+        94,
+        102,
+        110
+      ],
+      "maxCoef": 110
+    },
+    "ultimate": {
+      "id": 5102,
+      "name": "Glazed Dance",
+      "damageType": 0,
+      "coefs": [
+        188,
+        203,
+        219,
+        236,
+        255,
+        276,
+        298,
+        321,
+        347,
+        375
+      ],
+      "maxCoef": 375
+    },
+    "skill1": {
+      "id": 5103,
+      "name": "Bewitching Waltz",
+      "damageType": 0,
+      "coefs": [
+        50,
+        54,
+        58,
+        63,
+        68,
+        73,
+        79,
+        86,
+        93,
+        100
+      ],
+      "maxCoef": 100
+    },
+    "passive": {
+      "id": 5104,
+      "name": "Sweet Nothings",
+      "damageType": 0,
+      "coefs": [
+        50,
+        54,
+        58,
+        63,
+        68,
+        73,
+        79,
+        86,
+        93,
+        100
+      ],
+      "maxCoef": 100
+    },
+    "exclusive": {
+      "id": 5105,
+      "name": "Liberation",
+      "damageType": 0,
+      "coefs": [
+        250,
+        375,
+        500
+      ],
+      "maxCoef": 500
+    }
+  }
+}

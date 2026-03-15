@@ -1,0 +1,104 @@
+{
+  "id": 110304,
+  "name": "Adela",
+  "baseAtk": 155,
+  "grades": [
+    [
+      11,
+      50
+    ],
+    [
+      33,
+      100
+    ],
+    [
+      11,
+      25
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 3041,
+      "name": "Trimming",
+      "damageType": 1,
+      "coefs": [
+        70,
+        75,
+        80,
+        85,
+        91,
+        97,
+        104,
+        111,
+        118,
+        126
+      ],
+      "maxCoef": 126
+    },
+    "ultimate": {
+      "id": 3042,
+      "name": "Mad Hairdresser",
+      "damageType": 1,
+      "coefs": [
+        600,
+        648,
+        700,
+        756,
+        816,
+        882,
+        952,
+        1029,
+        1111,
+        1200
+      ],
+      "maxCoef": 1200
+    },
+    "skill1": {
+      "id": 3043,
+      "name": "Blade and Hair",
+      "damageType": 0,
+      "coefs": [
+        20,
+        21.6,
+        23.299999,
+        25.200001,
+        27.200001,
+        29.4,
+        31.700001,
+        34.299999,
+        37,
+        40
+      ],
+      "maxCoef": 40
+    },
+    "passive": {
+      "id": 3044,
+      "name": "Farewell Misgivings",
+      "damageType": 0,
+      "coefs": [
+        5,
+        5.4,
+        5.8,
+        6.3,
+        6.8,
+        7.3,
+        7.9,
+        8.6,
+        9.3,
+        10
+      ],
+      "maxCoef": 10
+    },
+    "exclusive": {
+      "id": 3045,
+      "name": "Fog Stealth",
+      "damageType": 0,
+      "coefs": [
+        200,
+        300,
+        400
+      ],
+      "maxCoef": 400
+    }
+  }
+}

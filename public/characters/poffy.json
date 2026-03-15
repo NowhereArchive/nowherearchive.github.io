@@ -1,0 +1,104 @@
+{
+  "id": 111311,
+  "name": "Poffy",
+  "baseAtk": 149,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 13111,
+      "name": "Sugary Punch",
+      "damageType": 1,
+      "coefs": [
+        90,
+        97,
+        105,
+        113,
+        122,
+        132,
+        143,
+        154,
+        167,
+        180
+      ],
+      "maxCoef": 180
+    },
+    "ultimate": {
+      "id": 13112,
+      "name": "Sweet Snare",
+      "damageType": 1,
+      "coefs": [
+        580,
+        626,
+        677,
+        730,
+        789,
+        852,
+        921,
+        994,
+        1074,
+        1160
+      ],
+      "maxCoef": 1160
+    },
+    "skill1": {
+      "id": 13113,
+      "name": "Fondant Turbine",
+      "damageType": 0,
+      "coefs": [
+        30,
+        32.400002,
+        35,
+        37.799999,
+        40.799999,
+        44.099998,
+        47.599998,
+        51.400002,
+        55.599998,
+        60
+      ],
+      "maxCoef": 60
+    },
+    "passive": {
+      "id": 13114,
+      "name": "Emergency Snack",
+      "damageType": 0,
+      "coefs": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        20,
+        21,
+        23,
+        25
+      ],
+      "maxCoef": 25
+    },
+    "exclusive": {
+      "id": 13115,
+      "name": "Gulp",
+      "damageType": 0,
+      "coefs": [
+        4,
+        7,
+        10
+      ],
+      "maxCoef": 10
+    }
+  }
+}

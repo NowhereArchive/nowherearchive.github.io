@@ -1,0 +1,29 @@
+{
+  "id": 118526,
+  "name": "DisCorps Soldier",
+  "baseAtk": 165,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 11852601,
+      "name": "",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "ultimate": {
+      "id": 11852602,
+      "name": "test",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "passive": {
+      "id": 11852603,
+      "name": "test",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

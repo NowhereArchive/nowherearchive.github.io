@@ -1,0 +1,93 @@
+{
+  "id": 111409,
+  "name": "Thalia",
+  "baseAtk": 165,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 14091,
+      "name": "Keen Eye",
+      "damageType": 1,
+      "coefs": [
+        80,
+        86,
+        93,
+        101,
+        109,
+        118,
+        127,
+        137,
+        148,
+        160
+      ],
+      "maxCoef": 160
+    },
+    "ultimate": {
+      "id": 14092,
+      "name": "Transparent Dealings",
+      "damageType": 1,
+      "coefs": [
+        450,
+        486,
+        525,
+        567,
+        612,
+        661,
+        714,
+        772,
+        833,
+        900
+      ],
+      "maxCoef": 900
+    },
+    "skill1": {
+      "id": 14093,
+      "name": "Free with Purchase",
+      "damageType": 0,
+      "coefs": [
+        7.5,
+        8.1,
+        8.7,
+        9.4,
+        10.2,
+        11,
+        11.9,
+        12.9,
+        13.9,
+        15
+      ],
+      "maxCoef": 15
+    },
+    "passive": {
+      "id": 14094,
+      "name": "Gilded Temptation",
+      "damageType": 0,
+      "coefs": [
+        7.5,
+        8.1,
+        8.7,
+        9.4,
+        10.2,
+        11,
+        11.9,
+        12.9,
+        13.9,
+        15
+      ],
+      "maxCoef": 15
+    }
+  }
+}

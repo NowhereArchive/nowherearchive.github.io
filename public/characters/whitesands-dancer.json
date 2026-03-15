@@ -1,0 +1,22 @@
+{
+  "id": 118521,
+  "name": "WhiteSands Dancer",
+  "baseAtk": 220,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 30000005,
+      "name": "",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "skill1": {
+      "id": 11852104,
+      "name": "",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

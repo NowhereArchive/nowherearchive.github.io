@@ -1,0 +1,15 @@
+{
+  "id": 118319,
+  "name": "Error Data",
+  "baseAtk": 1,
+  "grades": [],
+  "skills": {
+    "passive": {
+      "id": 11744101,
+      "name": "",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

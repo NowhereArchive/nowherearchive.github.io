@@ -1,0 +1,104 @@
+{
+  "id": 111609,
+  "name": "Zephyr",
+  "baseAtk": 124,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 16091,
+      "name": "Forced Landing",
+      "damageType": 2,
+      "coefs": [
+        84,
+        91,
+        98,
+        106,
+        114,
+        123,
+        133,
+        144,
+        156,
+        168
+      ],
+      "maxCoef": 168
+    },
+    "ultimate": {
+      "id": 16092,
+      "name": "Air Raid Siren",
+      "damageType": 0,
+      "coefs": [
+        1690,
+        1825,
+        1971,
+        2129,
+        2300,
+        2484,
+        2683,
+        2897,
+        3129,
+        3380
+      ],
+      "maxCoef": 3380
+    },
+    "skill1": {
+      "id": 16093,
+      "name": "Flight Mode",
+      "damageType": 0,
+      "coefs": [
+        15,
+        16.200001,
+        17.5,
+        18.9,
+        20.4,
+        22,
+        23.799999,
+        25.700001,
+        27.799999,
+        30
+      ],
+      "maxCoef": 30
+    },
+    "passive": {
+      "id": 16094,
+      "name": "Signal Deflection",
+      "damageType": 0,
+      "coefs": [
+        5,
+        5.4,
+        5.8,
+        6.3,
+        6.8,
+        7.3,
+        7.9,
+        8.6,
+        9.3,
+        10
+      ],
+      "maxCoef": 10
+    },
+    "exclusive": {
+      "id": 16095,
+      "name": "Mayhem Route",
+      "damageType": 0,
+      "coefs": [
+        200,
+        350,
+        500
+      ],
+      "maxCoef": 500
+    }
+  }
+}

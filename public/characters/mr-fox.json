@@ -1,0 +1,93 @@
+{
+  "id": 111604,
+  "name": "Mr. Fox",
+  "baseAtk": 116,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 16041,
+      "name": "Accuse",
+      "damageType": 2,
+      "coefs": [
+        105,
+        112,
+        120,
+        128,
+        136,
+        146,
+        155,
+        166,
+        177,
+        189
+      ],
+      "maxCoef": 189
+    },
+    "ultimate": {
+      "id": 16042,
+      "name": "Defend",
+      "damageType": 0,
+      "coefs": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28.5,
+        30
+      ],
+      "maxCoef": 30
+    },
+    "skill1": {
+      "id": 16043,
+      "name": "Public Trial",
+      "damageType": 0,
+      "coefs": [
+        2,
+        2.2,
+        2.4,
+        2.6,
+        2.8,
+        3,
+        3.2,
+        3.4,
+        3.6,
+        4
+      ],
+      "maxCoef": 4
+    },
+    "passive": {
+      "id": 16044,
+      "name": "Interrogate",
+      "damageType": 0,
+      "coefs": [
+        10,
+        10.5,
+        10.9,
+        11.4,
+        12,
+        12.5,
+        13.1,
+        13.7,
+        14.3,
+        15
+      ],
+      "maxCoef": 15
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": 118515,
+  "name": "Support - Obliteration",
+  "baseAtk": 140,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 30000005,
+      "name": "",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "skill1": {
+      "id": 11851502,
+      "name": "[Obliteration] Every 10 seconds, deals (Max HP *10%) True Damage to all enemy units on the field, up to 5 times.",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "passive": {
+      "id": 11851304,
+      "name": "",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

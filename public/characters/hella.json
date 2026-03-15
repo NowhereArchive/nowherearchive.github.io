@@ -1,0 +1,40 @@
+{
+  "id": 117510,
+  "name": "Hella",
+  "baseAtk": 100,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 22011,
+      "name": "Pipe Strike",
+      "damageType": 1,
+      "coefs": [
+        113,
+        121,
+        129,
+        138,
+        147,
+        157,
+        168,
+        179,
+        191,
+        204
+      ],
+      "maxCoef": 204
+    },
+    "ultimate": {
+      "id": 50063001,
+      "name": "Pipe Strike",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "skill1": {
+      "id": 50063002,
+      "name": "",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

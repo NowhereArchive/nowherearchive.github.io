@@ -1,0 +1,29 @@
+{
+  "id": 117351,
+  "name": "Battle Booster",
+  "baseAtk": 150,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 76000001,
+      "name": "",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "ultimate": {
+      "id": 76010010,
+      "name": "Berserk Signal",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "passive": {
+      "id": 76000002,
+      "name": "Switch the grid beneath to obstacle grid",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

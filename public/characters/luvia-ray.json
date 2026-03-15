@@ -1,0 +1,104 @@
+{
+  "id": 111503,
+  "name": "Luvia Ray",
+  "baseAtk": 139,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 15031,
+      "name": "Two-way Lightning",
+      "damageType": 2,
+      "coefs": [
+        67,
+        71,
+        76,
+        81,
+        87,
+        92,
+        99,
+        105,
+        112,
+        120
+      ],
+      "maxCoef": 120
+    },
+    "ultimate": {
+      "id": 15032,
+      "name": "Photoelectric Switch",
+      "damageType": 0,
+      "coefs": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        21,
+        22,
+        24,
+        25,
+        27
+      ],
+      "maxCoef": 27
+    },
+    "skill1": {
+      "id": 15033,
+      "name": "Lightning Strike",
+      "damageType": 0,
+      "coefs": [
+        8,
+        8.5,
+        9.1,
+        9.7,
+        10.4,
+        11.1,
+        11.8,
+        12.6,
+        13.5,
+        14.4
+      ],
+      "maxCoef": 14.4
+    },
+    "passive": {
+      "id": 15034,
+      "name": "Electric Spark",
+      "damageType": 0,
+      "coefs": [
+        5,
+        5.3,
+        5.7,
+        6.1,
+        6.5,
+        6.9,
+        7.4,
+        7.9,
+        8.4,
+        9
+      ],
+      "maxCoef": 9
+    },
+    "exclusive": {
+      "id": 15035,
+      "name": "Bipolar Thunderstorm",
+      "damageType": 0,
+      "coefs": [
+        10,
+        12,
+        15
+      ],
+      "maxCoef": 15
+    }
+  }
+}

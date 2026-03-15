@@ -1,0 +1,104 @@
+{
+  "id": 110608,
+  "name": "Jelena",
+  "baseAtk": 131,
+  "grades": [
+    [
+      11,
+      50
+    ],
+    [
+      33,
+      100
+    ],
+    [
+      11,
+      25
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 6081,
+      "name": "Plummet",
+      "damageType": 2,
+      "coefs": [
+        66,
+        71,
+        77,
+        83,
+        90,
+        97,
+        105,
+        113,
+        122,
+        132
+      ],
+      "maxCoef": 132
+    },
+    "ultimate": {
+      "id": 6082,
+      "name": "Weep",
+      "damageType": 0,
+      "coefs": [
+        5,
+        5.4,
+        5.8,
+        6.3,
+        6.8,
+        7.3,
+        7.9,
+        8.6,
+        9.3,
+        10
+      ],
+      "maxCoef": 10
+    },
+    "skill1": {
+      "id": 6083,
+      "name": "Merciful Wail",
+      "damageType": 0,
+      "coefs": [
+        3.5,
+        3.8,
+        4.1,
+        4.4,
+        4.8,
+        5.1,
+        5.6,
+        6,
+        6.5,
+        7
+      ],
+      "maxCoef": 7
+    },
+    "passive": {
+      "id": 6084,
+      "name": "Overcast",
+      "damageType": 0,
+      "coefs": [
+        1.5,
+        1.6,
+        1.7,
+        1.9,
+        2,
+        2.2,
+        2.4,
+        2.6,
+        2.8,
+        3
+      ],
+      "maxCoef": 3
+    },
+    "exclusive": {
+      "id": 6085,
+      "name": "Rain-Drenched Heart",
+      "damageType": 0,
+      "coefs": [
+        10,
+        12,
+        15
+      ],
+      "maxCoef": 15
+    }
+  }
+}

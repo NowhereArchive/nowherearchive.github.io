@@ -1,0 +1,22 @@
+{
+  "id": 118505,
+  "name": "Guard - Synergy",
+  "baseAtk": 100,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 30000005,
+      "name": "",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "skill1": {
+      "id": 11850505,
+      "name": "[Coordination] Recruits 1 additional unit of the same name.",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

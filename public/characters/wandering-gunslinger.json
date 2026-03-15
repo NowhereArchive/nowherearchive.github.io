@@ -1,0 +1,22 @@
+{
+  "id": 118520,
+  "name": "Wandering Gunslinger",
+  "baseAtk": 240,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 30000005,
+      "name": "",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "skill1": {
+      "id": 11852007,
+      "name": "",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

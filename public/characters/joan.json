@@ -1,0 +1,93 @@
+{
+  "id": 112502,
+  "name": "Joan",
+  "baseAtk": 136,
+  "grades": [
+    [
+      1,
+      5
+    ],
+    [
+      3,
+      10
+    ],
+    [
+      2,
+      5
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 25021,
+      "name": "Chord",
+      "damageType": 2,
+      "coefs": [
+        70,
+        75,
+        80,
+        85,
+        91,
+        97,
+        104,
+        111,
+        118,
+        126
+      ],
+      "maxCoef": 126
+    },
+    "ultimate": {
+      "id": 25022,
+      "name": "Marcato Frenzy",
+      "damageType": 0,
+      "coefs": [
+        30,
+        32,
+        34.200001,
+        36.5,
+        39,
+        41.599998,
+        44.400002,
+        47.400002,
+        50.599998,
+        54
+      ],
+      "maxCoef": 54
+    },
+    "skill1": {
+      "id": 25023,
+      "name": "Resonance Effect",
+      "damageType": 0,
+      "coefs": [
+        250,
+        267,
+        285,
+        304,
+        325,
+        347,
+        370,
+        395,
+        422,
+        450
+      ],
+      "maxCoef": 450
+    },
+    "passive": {
+      "id": 25024,
+      "name": "Triple Chord",
+      "damageType": 0,
+      "coefs": [
+        10,
+        10.7,
+        11.4,
+        12.2,
+        13,
+        13.9,
+        14.8,
+        15.8,
+        16.9,
+        18
+      ],
+      "maxCoef": 18
+    }
+  }
+}

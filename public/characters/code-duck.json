@@ -1,0 +1,29 @@
+{
+  "id": 118335,
+  "name": "Code Duck",
+  "baseAtk": 150,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 97002501,
+      "name": "",
+      "damageType": 2,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "ultimate": {
+      "id": 97002502,
+      "name": "GM Command",
+      "damageType": 4,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "exclusive": {
+      "id": 97002504,
+      "name": "Coding Errors?",
+      "damageType": 4,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

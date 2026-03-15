@@ -1,0 +1,16 @@
+{
+  "id": 113010,
+  "name": "Magnetofluid Spike",
+  "baseAtk": 1,
+  "grades": [
+    [
+      6,
+      35
+    ],
+    [
+      6,
+      35
+    ]
+  ],
+  "skills": {}
+}

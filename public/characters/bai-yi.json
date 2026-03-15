@@ -1,0 +1,93 @@
+{
+  "id": 110301,
+  "name": "Bai Yi",
+  "baseAtk": 147,
+  "grades": [
+    [
+      11,
+      50
+    ],
+    [
+      33,
+      100
+    ],
+    [
+      11,
+      25
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 3011,
+      "name": "Shadow Attack",
+      "damageType": 1,
+      "coefs": [
+        60,
+        64,
+        68,
+        72,
+        77,
+        83,
+        88,
+        94,
+        100,
+        107
+      ],
+      "maxCoef": 107
+    },
+    "ultimate": {
+      "id": 3012,
+      "name": "Tempest",
+      "damageType": 0,
+      "coefs": [
+        200,
+        214,
+        228,
+        243,
+        260,
+        277,
+        296,
+        316,
+        337,
+        360
+      ],
+      "maxCoef": 360
+    },
+    "skill1": {
+      "id": 3013,
+      "name": "Efficient Raid",
+      "damageType": 0,
+      "coefs": [
+        6,
+        6.4,
+        6.8,
+        7.3,
+        7.8,
+        8.3,
+        8.9,
+        9.5,
+        10.1,
+        10.8
+      ],
+      "maxCoef": 10.8
+    },
+    "passive": {
+      "id": 3014,
+      "name": "Warmup Exercise",
+      "damageType": 0,
+      "coefs": [
+        20,
+        21.6,
+        23.299999,
+        25.200001,
+        27.200001,
+        29.4,
+        31.700001,
+        34.299999,
+        37,
+        40
+      ],
+      "maxCoef": 40
+    }
+  }
+}

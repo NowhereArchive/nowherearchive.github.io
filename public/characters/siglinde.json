@@ -1,0 +1,93 @@
+{
+  "id": 111111,
+  "name": "Siglinde",
+  "baseAtk": 106,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 11111,
+      "name": "Pulse Interference",
+      "damageType": 4,
+      "coefs": [
+        64,
+        69,
+        75,
+        81,
+        87,
+        94,
+        102,
+        110,
+        119,
+        128
+      ],
+      "maxCoef": 128
+    },
+    "ultimate": {
+      "id": 11112,
+      "name": "Radioactive Recoil",
+      "damageType": 0,
+      "coefs": [
+        180,
+        194,
+        210,
+        227,
+        245,
+        265,
+        286,
+        309,
+        333,
+        360
+      ],
+      "maxCoef": 360
+    },
+    "skill1": {
+      "id": 11113,
+      "name": "Signal Hijack",
+      "damageType": 0,
+      "coefs": [
+        15,
+        16.200001,
+        17.5,
+        18.9,
+        20.4,
+        22.1,
+        23.799999,
+        25.700001,
+        27.799999,
+        30
+      ],
+      "maxCoef": 30
+    },
+    "passive": {
+      "id": 11114,
+      "name": "Barrier Domain",
+      "damageType": 0,
+      "coefs": [
+        2,
+        2.16,
+        2.33,
+        2.52,
+        2.72,
+        2.94,
+        3.18,
+        3.43,
+        3.7,
+        4
+      ],
+      "maxCoef": 4
+    }
+  }
+}

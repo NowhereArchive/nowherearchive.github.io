@@ -1,0 +1,33 @@
+{
+  "id": 117504,
+  "name": "Serpent",
+  "baseAtk": 156,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 3031,
+      "name": "Blade of Fang",
+      "damageType": 2,
+      "coefs": [
+        80,
+        85,
+        91,
+        97,
+        104,
+        111,
+        118,
+        126,
+        135,
+        144
+      ],
+      "maxCoef": 144
+    },
+    "ultimate": {
+      "id": 91003032,
+      "name": "Serpent Constriction",
+      "damageType": 2,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

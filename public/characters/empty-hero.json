@@ -1,0 +1,22 @@
+{
+  "id": 119501,
+  "name": "Empty Hero",
+  "baseAtk": 1,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 1310001,
+      "name": "",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "skill1": {
+      "id": 1310102,
+      "name": "[] Upon entering, remains in place and gains a shield that significantly reduces damage. This shield loses 1 stack per second.",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

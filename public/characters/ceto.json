@@ -1,0 +1,93 @@
+{
+  "id": 110311,
+  "name": "Ceto",
+  "baseAtk": 144,
+  "grades": [
+    [
+      11,
+      50
+    ],
+    [
+      33,
+      100
+    ],
+    [
+      11,
+      25
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 3111,
+      "name": "Rapid Cut",
+      "damageType": 4,
+      "coefs": [
+        77,
+        83,
+        90,
+        97,
+        105,
+        114,
+        123,
+        132,
+        143,
+        155
+      ],
+      "maxCoef": 155
+    },
+    "ultimate": {
+      "id": 3112,
+      "name": "Farewell",
+      "damageType": 1,
+      "coefs": [
+        270,
+        292,
+        316,
+        341,
+        368,
+        398,
+        429,
+        464,
+        501,
+        541
+      ],
+      "maxCoef": 541
+    },
+    "skill1": {
+      "id": 3113,
+      "name": "Speed Cut",
+      "damageType": 0,
+      "coefs": [
+        108,
+        117,
+        126,
+        136,
+        147,
+        159,
+        172,
+        185,
+        200,
+        216
+      ],
+      "maxCoef": 216
+    },
+    "passive": {
+      "id": 3114,
+      "name": "Fear Feaster",
+      "damageType": 0,
+      "coefs": [
+        5,
+        5.4,
+        5.8,
+        6.3,
+        6.8,
+        7.3,
+        7.9,
+        8.6,
+        9.3,
+        10
+      ],
+      "maxCoef": 10
+    }
+  }
+}

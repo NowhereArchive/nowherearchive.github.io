@@ -1,0 +1,22 @@
+{
+  "id": 118511,
+  "name": "Logistics - Vitality",
+  "baseAtk": 120,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 30000005,
+      "name": "",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "skill1": {
+      "id": 11851103,
+      "name": "[] Summons 1 mob every 7 seconds, up to 3 times. Becomes Invincible while summoning.",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

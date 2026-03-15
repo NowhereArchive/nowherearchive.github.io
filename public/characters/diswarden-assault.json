@@ -1,0 +1,22 @@
+{
+  "id": 118501,
+  "name": "DisWarden - Assault",
+  "baseAtk": 165,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 30000005,
+      "name": "",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "skill1": {
+      "id": 11850104,
+      "name": "[Assault] Starts the battle with higher Attack and HP.",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

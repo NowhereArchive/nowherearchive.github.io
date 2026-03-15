@@ -1,0 +1,104 @@
+{
+  "id": 111404,
+  "name": "Matilda",
+  "baseAtk": 142,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 14041,
+      "name": "Shoot",
+      "damageType": 1,
+      "coefs": [
+        78,
+        84,
+        89,
+        95,
+        102,
+        109,
+        116,
+        124,
+        132,
+        141
+      ],
+      "maxCoef": 141
+    },
+    "ultimate": {
+      "id": 14042,
+      "name": "Chariot Hunter",
+      "damageType": 1,
+      "coefs": [
+        800,
+        854,
+        912,
+        973,
+        1039,
+        1109,
+        1184,
+        1264,
+        1349,
+        1440
+      ],
+      "maxCoef": 1440
+    },
+    "skill1": {
+      "id": 14043,
+      "name": "Pre-Aiming",
+      "damageType": 0,
+      "coefs": [
+        50,
+        54,
+        58,
+        63,
+        68,
+        73,
+        79,
+        86,
+        93,
+        100
+      ],
+      "maxCoef": 100
+    },
+    "passive": {
+      "id": 14044,
+      "name": "Tactical Reload",
+      "damageType": 0,
+      "coefs": [
+        4,
+        4.3,
+        4.7,
+        5,
+        5.4,
+        5.9,
+        6.3,
+        6.9,
+        7.4,
+        8
+      ],
+      "maxCoef": 8
+    },
+    "exclusive": {
+      "id": 14045,
+      "name": "Full Firepower",
+      "damageType": 0,
+      "coefs": [
+        35,
+        30,
+        25
+      ],
+      "maxCoef": 25
+    }
+  }
+}

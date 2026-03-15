@@ -1,0 +1,39 @@
+{
+  "id": 112503,
+  "name": "Kyle",
+  "baseAtk": 120,
+  "grades": [
+    [
+      1,
+      5
+    ],
+    [
+      3,
+      10
+    ],
+    [
+      2,
+      5
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 25011,
+      "name": "Ice Crystal",
+      "damageType": 2,
+      "coefs": [
+        114,
+        122,
+        130,
+        139,
+        148,
+        158,
+        169,
+        181,
+        193,
+        206
+      ],
+      "maxCoef": 206
+    }
+  }
+}

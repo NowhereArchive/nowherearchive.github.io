@@ -1,0 +1,29 @@
+{
+  "id": 118541,
+  "name": "Forbidden Warrior",
+  "baseAtk": 165,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 11852601,
+      "name": "",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "ultimate": {
+      "id": 11854102,
+      "name": "[Enhanced Dispatch] Consumes a certain amount of supplies to dispatch elite troop units.",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "passive": {
+      "id": 11854103,
+      "name": "[Dispatch] Dispatches standard troop units at regular intervals.",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

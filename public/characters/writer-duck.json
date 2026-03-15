@@ -1,0 +1,22 @@
+{
+  "id": 118338,
+  "name": "Writer Duck",
+  "baseAtk": 150,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 97002601,
+      "name": "",
+      "damageType": 2,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "ultimate": {
+      "id": 97002602,
+      "name": "Final Ripple",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

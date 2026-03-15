@@ -1,0 +1,34 @@
+{
+  "id": 117081,
+  "name": "Letta",
+  "baseAtk": 100,
+  "grades": [
+    [
+      6,
+      35
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 73010001,
+      "name": "[Cutthroat] Deals damage to the current target 5 times in a row.",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "ultimate": {
+      "id": 73010002,
+      "name": "[Brighten] Brightens the grid.",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "exclusive": {
+      "id": 73010003,
+      "name": "",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

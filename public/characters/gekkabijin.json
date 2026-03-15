@@ -1,0 +1,93 @@
+{
+  "id": 112302,
+  "name": "Gekkabijin",
+  "baseAtk": 142,
+  "grades": [
+    [
+      1,
+      5
+    ],
+    [
+      3,
+      10
+    ],
+    [
+      2,
+      5
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 23021,
+      "name": "Blades of Revenge",
+      "damageType": 1,
+      "coefs": [
+        80,
+        85,
+        91,
+        97,
+        103,
+        110,
+        118,
+        126,
+        134,
+        143
+      ],
+      "maxCoef": 143
+    },
+    "ultimate": {
+      "id": 23022,
+      "name": "Headhunt",
+      "damageType": 1,
+      "coefs": [
+        300,
+        320,
+        342,
+        365,
+        390,
+        416,
+        444,
+        474,
+        506,
+        540
+      ],
+      "maxCoef": 540
+    },
+    "skill1": {
+      "id": 23023,
+      "name": "Hit List",
+      "damageType": 0,
+      "coefs": [
+        400,
+        427,
+        456,
+        487,
+        519,
+        554,
+        592,
+        632,
+        674,
+        720
+      ],
+      "maxCoef": 720
+    },
+    "passive": {
+      "id": 23024,
+      "name": "Target Locked",
+      "damageType": 0,
+      "coefs": [
+        10,
+        10.7,
+        11.4,
+        12.2,
+        13,
+        13.9,
+        14.8,
+        15.8,
+        16.9,
+        18
+      ],
+      "maxCoef": 18
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "id": 112203,
+  "name": "Pepper",
+  "baseAtk": 131,
+  "grades": [
+    [
+      1,
+      5
+    ],
+    [
+      3,
+      10
+    ],
+    [
+      2,
+      5
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 22031,
+      "name": "Loosen the Soil",
+      "damageType": 1,
+      "coefs": [
+        87,
+        93,
+        99,
+        105,
+        113,
+        120,
+        128,
+        137,
+        146,
+        156
+      ],
+      "maxCoef": 156
+    },
+    "ultimate": {
+      "id": 22032,
+      "name": "The Mower",
+      "damageType": 0,
+      "coefs": [
+        50,
+        53,
+        56,
+        58,
+        62,
+        65,
+        68,
+        72,
+        76,
+        80
+      ],
+      "maxCoef": 80
+    },
+    "skill1": {
+      "id": 22033,
+      "name": "Leaf Infection",
+      "damageType": 0,
+      "coefs": [
+        40,
+        43,
+        46,
+        49,
+        52,
+        55,
+        59,
+        63,
+        67,
+        72
+      ],
+      "maxCoef": 72
+    },
+    "passive": {
+      "id": 22034,
+      "name": "Crop Management",
+      "damageType": 0,
+      "coefs": [
+        5,
+        5.3,
+        5.7,
+        6.1,
+        6.5,
+        6.9,
+        7.4,
+        7.9,
+        8.4,
+        9
+      ],
+      "maxCoef": 9
+    }
+  }
+}

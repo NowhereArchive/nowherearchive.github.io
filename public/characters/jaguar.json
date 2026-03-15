@@ -1,0 +1,39 @@
+{
+  "id": 112403,
+  "name": "Jaguar",
+  "baseAtk": 181,
+  "grades": [
+    [
+      1,
+      5
+    ],
+    [
+      3,
+      10
+    ],
+    [
+      2,
+      5
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 24011,
+      "name": "Electric Arrow",
+      "damageType": 1,
+      "coefs": [
+        128,
+        134,
+        142,
+        149,
+        157,
+        166,
+        174,
+        184,
+        194,
+        204
+      ],
+      "maxCoef": 204
+    }
+  }
+}

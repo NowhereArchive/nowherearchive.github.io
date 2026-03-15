@@ -1,0 +1,104 @@
+{
+  "id": 111107,
+  "name": "Golan",
+  "baseAtk": 106,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 11071,
+      "name": "Parasol Strike",
+      "damageType": 1,
+      "coefs": [
+        87.199997,
+        93.099998,
+        99.400002,
+        106.099998,
+        113.199997,
+        120.900002,
+        129,
+        137.800003,
+        147.100006,
+        157
+      ],
+      "maxCoef": 157
+    },
+    "ultimate": {
+      "id": 11072,
+      "name": "Strike Back at Will",
+      "damageType": 0,
+      "coefs": [
+        12,
+        12.7,
+        13.4,
+        14.2,
+        15.1,
+        15.9,
+        16.9,
+        17.9,
+        18.9,
+        20
+      ],
+      "maxCoef": 20
+    },
+    "skill1": {
+      "id": 11073,
+      "name": "Street Brawl",
+      "damageType": 0,
+      "coefs": [
+        20,
+        19,
+        18,
+        17,
+        16,
+        15,
+        14,
+        13,
+        12,
+        10
+      ],
+      "maxCoef": 10
+    },
+    "passive": {
+      "id": 11074,
+      "name": "Material Inheritance",
+      "damageType": 0,
+      "coefs": [
+        8,
+        8.6,
+        9.2,
+        9.9,
+        10.6,
+        11.3,
+        12.2,
+        13,
+        14,
+        15
+      ],
+      "maxCoef": 15
+    },
+    "exclusive": {
+      "id": 11075,
+      "name": "Ostrich Freedom",
+      "damageType": 1,
+      "coefs": [
+        40,
+        60,
+        80
+      ],
+      "maxCoef": 80
+    }
+  }
+}

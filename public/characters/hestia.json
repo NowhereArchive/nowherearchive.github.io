@@ -1,0 +1,100 @@
+{
+  "id": 110507,
+  "name": "Hestia",
+  "baseAtk": 167,
+  "grades": [
+    [
+      11,
+      50
+    ],
+    [
+      33,
+      100
+    ],
+    [
+      11,
+      25
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 5071,
+      "name": "Sacred Flambeau",
+      "damageType": 2,
+      "coefs": [
+        81,
+        87,
+        94,
+        102,
+        110,
+        119,
+        129,
+        139,
+        150,
+        162
+      ],
+      "maxCoef": 162
+    },
+    "ultimate": {
+      "id": 5072,
+      "name": "Igneous Illumination",
+      "damageType": 0,
+      "coefs": [
+        24,
+        25.9,
+        28,
+        30.200001,
+        32.700001,
+        35.5,
+        38.099998,
+        41.099998,
+        44.400002,
+        48
+      ],
+      "maxCoef": 48
+    },
+    "skill1": {
+      "id": 5073,
+      "name": "Furnace Flame",
+      "damageType": 0,
+      "coefs": [
+        24,
+        25.9,
+        28,
+        30.200001,
+        32.700001,
+        35.299999,
+        38.099998,
+        41.099998,
+        44.400002,
+        48
+      ],
+      "maxCoef": 48
+    },
+    "passive": {
+      "id": 5074,
+      "name": "Pyrophoric Breach",
+      "damageType": 0,
+      "coefs": [
+        30,
+        33,
+        37,
+        41,
+        45,
+        50,
+        55,
+        61,
+        68,
+        75
+      ],
+      "maxCoef": 75
+    },
+    "exclusive": {
+      "id": 5075,
+      "name": "Wildfire",
+      "damageType": 2,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "id": 111112,
+  "name": "Rumina",
+  "baseAtk": 99,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 11121,
+      "name": "Alchemic Smelt",
+      "damageType": 2,
+      "coefs": [
+        50,
+        54,
+        58,
+        63,
+        68,
+        74,
+        79,
+        86,
+        93,
+        100
+      ],
+      "maxCoef": 100
+    },
+    "ultimate": {
+      "id": 11122,
+      "name": "Prayer of Dawn",
+      "damageType": 0,
+      "coefs": [
+        2,
+        2.16,
+        2.33,
+        2.52,
+        2.72,
+        2.94,
+        3.18,
+        3.43,
+        3.7,
+        4
+      ],
+      "maxCoef": 4
+    },
+    "skill1": {
+      "id": 11123,
+      "name": "Elem Transmute",
+      "damageType": 0,
+      "coefs": [
+        2,
+        2.16,
+        2.33,
+        2.52,
+        2.72,
+        2.94,
+        3.18,
+        3.43,
+        3.7,
+        4
+      ],
+      "maxCoef": 4
+    },
+    "passive": {
+      "id": 11124,
+      "name": "Auric Resonance",
+      "damageType": 0,
+      "coefs": [
+        2,
+        2.16,
+        2.33,
+        2.52,
+        2.72,
+        2.94,
+        3.18,
+        3.43,
+        3.7,
+        4
+      ],
+      "maxCoef": 4
+    },
+    "exclusive": {
+      "id": 11125,
+      "name": "Prayer of Dawn",
+      "damageType": 0,
+      "coefs": [
+        15,
+        20,
+        25
+      ],
+      "maxCoef": 25
+    }
+  }
+}

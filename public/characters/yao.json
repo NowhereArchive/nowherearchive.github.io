@@ -1,0 +1,104 @@
+{
+  "id": 110205,
+  "name": "Yao",
+  "baseAtk": 153,
+  "grades": [
+    [
+      11,
+      50
+    ],
+    [
+      33,
+      100
+    ],
+    [
+      11,
+      25
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 2051,
+      "name": "Flame Slash",
+      "damageType": 2,
+      "coefs": [
+        94,
+        101,
+        109,
+        118,
+        127,
+        138,
+        149,
+        160,
+        173,
+        187
+      ],
+      "maxCoef": 187
+    },
+    "ultimate": {
+      "id": 2055,
+      "name": "Sacrifice/Falling Sun",
+      "damageType": 0,
+      "coefs": [
+        40,
+        41.799999,
+        43.799999,
+        45.799999,
+        47.900002,
+        50.099998,
+        52.400002,
+        54.799999,
+        57.400002,
+        60
+      ],
+      "maxCoef": 60
+    },
+    "skill1": {
+      "id": 2057,
+      "name": "Sun Crow's Flame",
+      "damageType": 0,
+      "coefs": [
+        234,
+        253,
+        273,
+        295,
+        318,
+        344,
+        371,
+        401,
+        433,
+        468
+      ],
+      "maxCoef": 468
+    },
+    "passive": {
+      "id": 2058,
+      "name": "Omniluminous",
+      "damageType": 0,
+      "coefs": [
+        35,
+        37.799999,
+        40.799999,
+        44.099998,
+        47.599998,
+        51.400002,
+        55.599998,
+        60,
+        64.800003,
+        70
+      ],
+      "maxCoef": 70
+    },
+    "exclusive": {
+      "id": 2059,
+      "name": "Blazing Covenant",
+      "damageType": 2,
+      "coefs": [
+        500,
+        750,
+        1000
+      ],
+      "maxCoef": 1000
+    }
+  }
+}

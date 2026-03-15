@@ -1,0 +1,104 @@
+{
+  "id": 111607,
+  "name": "Cassia",
+  "baseAtk": 124,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 16071,
+      "name": "Mauve Aroma",
+      "damageType": 2,
+      "coefs": [
+        83.699997,
+        87.599998,
+        91.599998,
+        95.800003,
+        100.300003,
+        104.900002,
+        109.699997,
+        114.800003,
+        120,
+        125.599998
+      ],
+      "maxCoef": 125.599998
+    },
+    "ultimate": {
+      "id": 16072,
+      "name": "Fragrance",
+      "damageType": 0,
+      "coefs": [
+        20,
+        21.299999,
+        22.6,
+        24.1,
+        25.6,
+        27.299999,
+        29,
+        30.9,
+        32.900002,
+        35
+      ],
+      "maxCoef": 35
+    },
+    "skill1": {
+      "id": 16073,
+      "name": "Solidify Youth",
+      "damageType": 0,
+      "coefs": [
+        6,
+        6.4,
+        6.7,
+        7.1,
+        7.5,
+        8,
+        8.4,
+        8.9,
+        9.4,
+        10
+      ],
+      "maxCoef": 10
+    },
+    "passive": {
+      "id": 16074,
+      "name": "Exotic Fragrance",
+      "damageType": 0,
+      "coefs": [
+        50,
+        54,
+        58.299999,
+        63,
+        68,
+        73.5,
+        79.400002,
+        85.699997,
+        92.599998,
+        100
+      ],
+      "maxCoef": 100
+    },
+    "exclusive": {
+      "id": 16075,
+      "name": "Scented Atonement",
+      "damageType": 0,
+      "coefs": [
+        4,
+        5,
+        6
+      ],
+      "maxCoef": 6
+    }
+  }
+}

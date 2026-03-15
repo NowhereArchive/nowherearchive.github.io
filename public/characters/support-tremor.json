@@ -1,0 +1,29 @@
+{
+  "id": 118513,
+  "name": "Support - Tremor",
+  "baseAtk": 140,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 30000005,
+      "name": "",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "skill1": {
+      "id": 11851302,
+      "name": "[Tremor] Every 10 seconds, stuns all enemy units on the field for 3 seconds, up to 5 times.",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "passive": {
+      "id": 11851304,
+      "name": "",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

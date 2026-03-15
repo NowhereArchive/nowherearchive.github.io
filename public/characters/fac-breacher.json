@@ -1,0 +1,29 @@
+{
+  "id": 118539,
+  "name": "FAC Breacher",
+  "baseAtk": 130,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 11852801,
+      "name": "",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "ultimate": {
+      "id": 11853902,
+      "name": "[Enhanced Dispatch] Consumes a certain amount of supplies to dispatch elite troop units.",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "passive": {
+      "id": 11853903,
+      "name": "[Dispatch] Dispatches standard troop units at regular intervals.",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

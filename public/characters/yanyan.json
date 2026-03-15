@@ -1,0 +1,104 @@
+{
+  "id": 111405,
+  "name": "Yanyan",
+  "baseAtk": 148,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 14051,
+      "name": "Pellet of Fire",
+      "damageType": 2,
+      "coefs": [
+        94.199997,
+        100.5,
+        107.300003,
+        114.599998,
+        122.300003,
+        130.600006,
+        139.399994,
+        148.800003,
+        158.800003,
+        169.5
+      ],
+      "maxCoef": 169.5
+    },
+    "ultimate": {
+      "id": 14052,
+      "name": "Ablaze Prairie",
+      "damageType": 0,
+      "coefs": [
+        20,
+        21,
+        23,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36
+      ],
+      "maxCoef": 36
+    },
+    "skill1": {
+      "id": 14053,
+      "name": "Thermal Feedback",
+      "damageType": 0,
+      "coefs": [
+        20,
+        21.6,
+        23.299999,
+        25.200001,
+        27.200001,
+        29.4,
+        31.700001,
+        34.299999,
+        37,
+        40
+      ],
+      "maxCoef": 40
+    },
+    "passive": {
+      "id": 14054,
+      "name": "Reignition",
+      "damageType": 0,
+      "coefs": [
+        25,
+        26.700001,
+        28.5,
+        30.4,
+        32.5,
+        34.700001,
+        37,
+        39.5,
+        42.5,
+        45
+      ],
+      "maxCoef": 45
+    },
+    "exclusive": {
+      "id": 14055,
+      "name": "Endless Pursuit",
+      "damageType": 0,
+      "coefs": [
+        500,
+        600,
+        700
+      ],
+      "maxCoef": 700
+    }
+  }
+}

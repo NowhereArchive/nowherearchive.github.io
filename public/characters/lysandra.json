@@ -1,0 +1,93 @@
+{
+  "id": 111212,
+  "name": "Lysandra",
+  "baseAtk": 142,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 12121,
+      "name": "Piercing Strike",
+      "damageType": 2,
+      "coefs": [
+        76,
+        82,
+        89,
+        96,
+        103,
+        112,
+        121,
+        130,
+        141,
+        152
+      ],
+      "maxCoef": 152
+    },
+    "ultimate": {
+      "id": 12122,
+      "name": "Shattershock",
+      "damageType": 2,
+      "coefs": [
+        404,
+        436,
+        471,
+        509,
+        550,
+        594,
+        641,
+        693,
+        748,
+        808
+      ],
+      "maxCoef": 808
+    },
+    "skill1": {
+      "id": 12123,
+      "name": "Emergency Protocol",
+      "damageType": 0,
+      "coefs": [
+        7.5,
+        8.1,
+        8.7,
+        9.4,
+        10.2,
+        11,
+        11.9,
+        12.9,
+        13.9,
+        15
+      ],
+      "maxCoef": 15
+    },
+    "passive": {
+      "id": 12124,
+      "name": "Instant Overhaul",
+      "damageType": 0,
+      "coefs": [
+        15,
+        16.200001,
+        17.5,
+        18.9,
+        20.4,
+        22,
+        23.799999,
+        25.700001,
+        27.799999,
+        30
+      ],
+      "maxCoef": 30
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "id": 110306,
+  "name": "Angell",
+  "baseAtk": 156,
+  "grades": [
+    [
+      11,
+      50
+    ],
+    [
+      33,
+      100
+    ],
+    [
+      11,
+      25
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 3061,
+      "name": "Unsheathe",
+      "damageType": 1,
+      "coefs": [
+        90,
+        97.199997,
+        105,
+        113.400002,
+        122.5,
+        132.300003,
+        142.899994,
+        154.300003,
+        166.699997,
+        180
+      ],
+      "maxCoef": 180
+    },
+    "ultimate": {
+      "id": 3062,
+      "name": "Sword of Conquest",
+      "damageType": 1,
+      "coefs": [
+        200,
+        216,
+        234,
+        252,
+        272,
+        294,
+        318,
+        342,
+        370,
+        400
+      ],
+      "maxCoef": 400
+    },
+    "skill1": {
+      "id": 3063,
+      "name": "Flaw Exploitation",
+      "damageType": 0,
+      "coefs": [
+        3.5,
+        3.8,
+        4.1,
+        4.4,
+        4.8,
+        5.1,
+        5.6,
+        6,
+        6.5,
+        7
+      ],
+      "maxCoef": 7
+    },
+    "passive": {
+      "id": 3064,
+      "name": "Invisible",
+      "damageType": 0,
+      "coefs": [
+        20,
+        20.9,
+        21.9,
+        22.9,
+        23.9,
+        25.1,
+        26.200001,
+        27.4,
+        28.700001,
+        30
+      ],
+      "maxCoef": 30
+    },
+    "exclusive": {
+      "id": 3065,
+      "name": "Liminal Space",
+      "damageType": 1,
+      "coefs": [
+        1000,
+        1250,
+        1500
+      ],
+      "maxCoef": 1500
+    }
+  }
+}

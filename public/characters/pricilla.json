@@ -1,0 +1,93 @@
+{
+  "id": 111401,
+  "name": "Pricilla",
+  "baseAtk": 151,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 14011,
+      "name": "Notice Letter",
+      "damageType": 1,
+      "coefs": [
+        56,
+        60,
+        64,
+        68,
+        73,
+        78,
+        83,
+        88,
+        94,
+        101
+      ],
+      "maxCoef": 101
+    },
+    "ultimate": {
+      "id": 14012,
+      "name": "Curtain Call",
+      "damageType": 0,
+      "coefs": [
+        40,
+        43,
+        46,
+        49,
+        52,
+        55,
+        59,
+        63,
+        67,
+        72
+      ],
+      "maxCoef": 72
+    },
+    "skill1": {
+      "id": 14013,
+      "name": "Heart-stealing Magic",
+      "damageType": 0,
+      "coefs": [
+        40,
+        43,
+        46,
+        49,
+        52,
+        55,
+        59,
+        63,
+        67,
+        72
+      ],
+      "maxCoef": 72
+    },
+    "passive": {
+      "id": 14014,
+      "name": "Exclusive Stage",
+      "damageType": 0,
+      "coefs": [
+        45,
+        41.299999,
+        37.299999,
+        33.099998,
+        28.6,
+        23.799999,
+        18.6,
+        13.1,
+        7.3,
+        1
+      ],
+      "maxCoef": 1
+    }
+  }
+}

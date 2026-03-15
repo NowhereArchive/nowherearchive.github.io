@@ -1,0 +1,26 @@
+{
+  "id": 113001,
+  "name": "Suffering Pylon",
+  "baseAtk": 500,
+  "grades": [
+    [
+      6,
+      35
+    ],
+    [
+      6,
+      35
+    ]
+  ],
+  "skills": {
+    "skill1": {
+      "id": 30011,
+      "name": "",
+      "damageType": 1,
+      "coefs": [
+        0
+      ],
+      "maxCoef": 0
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "id": 111208,
+  "name": "Christina",
+  "baseAtk": 149,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 12081,
+      "name": "Righteous Obliteration",
+      "damageType": 1,
+      "coefs": [
+        69,
+        74,
+        79,
+        84,
+        90,
+        96,
+        103,
+        110,
+        117,
+        125
+      ],
+      "maxCoef": 125
+    },
+    "ultimate": {
+      "id": 12082,
+      "name": "Truth Revealed",
+      "damageType": 1,
+      "coefs": [
+        750,
+        801,
+        855,
+        912,
+        974,
+        1040,
+        1110,
+        1185,
+        1265,
+        1350
+      ],
+      "maxCoef": 1350
+    },
+    "skill1": {
+      "id": 12083,
+      "name": "Enemy of Evil",
+      "damageType": 0,
+      "coefs": [
+        87,
+        93,
+        99,
+        106,
+        113,
+        120,
+        128,
+        137,
+        146,
+        156
+      ],
+      "maxCoef": 156
+    },
+    "passive": {
+      "id": 12084,
+      "name": "Righteous Triumph",
+      "damageType": 0,
+      "coefs": [
+        6,
+        6.4,
+        6.7,
+        7.1,
+        7.5,
+        8,
+        8.4,
+        8.9,
+        9.4,
+        10
+      ],
+      "maxCoef": 10
+    }
+  }
+}

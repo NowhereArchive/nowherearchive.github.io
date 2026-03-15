@@ -1,0 +1,29 @@
+{
+  "id": 115071,
+  "name": "Oak Casket",
+  "baseAtk": 157,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 10200011,
+      "name": "",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "skill1": {
+      "id": 10200012,
+      "name": "",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "passive": {
+      "id": 10200010,
+      "name": "",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

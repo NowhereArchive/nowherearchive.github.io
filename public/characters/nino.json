@@ -1,0 +1,104 @@
+{
+  "id": 111106,
+  "name": "Nino",
+  "baseAtk": 99,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 11061,
+      "name": "Lævateinn",
+      "damageType": 1,
+      "coefs": [
+        60,
+        64,
+        69,
+        73,
+        78,
+        84,
+        89,
+        95,
+        102,
+        108
+      ],
+      "maxCoef": 108
+    },
+    "ultimate": {
+      "id": 11062,
+      "name": "Live Start!",
+      "damageType": 0,
+      "coefs": [
+        333.299988,
+        355.799988,
+        379.799988,
+        405.5,
+        432.799988,
+        462.100006,
+        493.200012,
+        526.5,
+        562.099976,
+        600
+      ],
+      "maxCoef": 600
+    },
+    "skill1": {
+      "id": 11063,
+      "name": "Live Chat Compilation",
+      "damageType": 0,
+      "coefs": [
+        1.5,
+        1.6,
+        1.7,
+        1.8,
+        2,
+        2.2,
+        2.4,
+        2.6,
+        2.8,
+        3
+      ],
+      "maxCoef": 3
+    },
+    "passive": {
+      "id": 11064,
+      "name": "Compulsory Viewing",
+      "damageType": 0,
+      "coefs": [
+        200,
+        209.199997,
+        218.899994,
+        228.899994,
+        239.5,
+        250.5,
+        262.100006,
+        274.200012,
+        286.799988,
+        300
+      ],
+      "maxCoef": 300
+    },
+    "exclusive": {
+      "id": 11065,
+      "name": "Game and Reality",
+      "damageType": 1,
+      "coefs": [
+        600,
+        800,
+        1000
+      ],
+      "maxCoef": 1000
+    }
+  }
+}

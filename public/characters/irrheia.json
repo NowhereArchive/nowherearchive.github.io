@@ -1,0 +1,93 @@
+{
+  "id": 110611,
+  "name": "Irrheia",
+  "baseAtk": 135,
+  "grades": [
+    [
+      11,
+      50
+    ],
+    [
+      33,
+      100
+    ],
+    [
+      11,
+      25
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 6111,
+      "name": "Irrheia - Normal Attack 1",
+      "damageType": 2,
+      "coefs": [
+        54,
+        58,
+        63,
+        68,
+        74,
+        79,
+        86,
+        93,
+        100,
+        108
+      ],
+      "maxCoef": 108
+    },
+    "ultimate": {
+      "id": 6112,
+      "name": "Irrheia - Ultimate",
+      "damageType": 0,
+      "coefs": [
+        5,
+        5.4,
+        5.8,
+        6.3,
+        6.8,
+        7.4,
+        7.9,
+        8.6,
+        9.3,
+        10
+      ],
+      "maxCoef": 10
+    },
+    "skill1": {
+      "id": 6113,
+      "name": "Irrheia - Passive",
+      "damageType": 0,
+      "coefs": [
+        40,
+        43,
+        47,
+        50,
+        54,
+        59,
+        64,
+        69,
+        74,
+        80
+      ],
+      "maxCoef": 80
+    },
+    "passive": {
+      "id": 6114,
+      "name": "Irrheia - Talent",
+      "damageType": 0,
+      "coefs": [
+        5,
+        5.4,
+        5.8,
+        6.3,
+        6.8,
+        7.4,
+        7.9,
+        8.6,
+        9.3,
+        10
+      ],
+      "maxCoef": 10
+    }
+  }
+}

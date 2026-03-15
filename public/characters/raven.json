@@ -1,0 +1,100 @@
+{
+  "id": 110505,
+  "name": "Raven",
+  "baseAtk": 155,
+  "grades": [
+    [
+      11,
+      50
+    ],
+    [
+      33,
+      100
+    ],
+    [
+      11,
+      25
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 5051,
+      "name": "Feather Fall",
+      "damageType": 2,
+      "coefs": [
+        58,
+        62,
+        66,
+        71,
+        75,
+        81,
+        86,
+        92,
+        98,
+        105
+      ],
+      "maxCoef": 105
+    },
+    "ultimate": {
+      "id": 5052,
+      "name": "Stanza",
+      "damageType": 2,
+      "coefs": [
+        500,
+        540,
+        583,
+        630,
+        680,
+        735,
+        794,
+        857,
+        926,
+        1000
+      ],
+      "maxCoef": 1000
+    },
+    "skill1": {
+      "id": 5053,
+      "name": "Rhyme",
+      "damageType": 0,
+      "coefs": [
+        20,
+        20,
+        20,
+        17,
+        17,
+        17,
+        17,
+        14,
+        14,
+        14
+      ],
+      "maxCoef": 14
+    },
+    "passive": {
+      "id": 5054,
+      "name": "Elegy",
+      "damageType": 0,
+      "coefs": [
+        6,
+        6.5,
+        7,
+        7.6,
+        8.2,
+        8.8,
+        9.5,
+        10.3,
+        11.1,
+        12
+      ],
+      "maxCoef": 12
+    },
+    "exclusive": {
+      "id": 5055,
+      "name": "A Nib That Cuts",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

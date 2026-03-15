@@ -1,0 +1,29 @@
+{
+  "id": 118333,
+  "name": "Config Duck",
+  "baseAtk": 150,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 97002301,
+      "name": "",
+      "damageType": 2,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "ultimate": {
+      "id": 97002304,
+      "name": "Version Day",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "exclusive": {
+      "id": 97002303,
+      "name": "Balance Update",
+      "damageType": 4,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

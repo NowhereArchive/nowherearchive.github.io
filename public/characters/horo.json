@@ -1,0 +1,93 @@
+{
+  "id": 111205,
+  "name": "Horo",
+  "baseAtk": 149,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 12058,
+      "name": "Heavy Axe",
+      "damageType": 1,
+      "coefs": [
+        103,
+        110,
+        117,
+        125,
+        134,
+        143,
+        152,
+        163,
+        174,
+        185
+      ],
+      "maxCoef": 185
+    },
+    "ultimate": {
+      "id": 12052,
+      "name": "Earthquake",
+      "damageType": 1,
+      "coefs": [
+        600,
+        640,
+        684,
+        730,
+        779,
+        832,
+        888,
+        948,
+        1012,
+        1080
+      ],
+      "maxCoef": 1080
+    },
+    "skill1": {
+      "id": 12053,
+      "name": "Strength Battle Mark",
+      "damageType": 0,
+      "coefs": [
+        13,
+        13.6,
+        14.2,
+        14.9,
+        15.6,
+        16.299999,
+        17,
+        17.799999,
+        18.6,
+        19.5
+      ],
+      "maxCoef": 19.5
+    },
+    "passive": {
+      "id": 12054,
+      "name": "Devour",
+      "damageType": 0,
+      "coefs": [
+        2,
+        2.1,
+        2.2,
+        2.3,
+        2.4,
+        2.5,
+        2.6,
+        2.7,
+        2.8,
+        3
+      ],
+      "maxCoef": 3
+    }
+  }
+}

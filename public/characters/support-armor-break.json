@@ -1,0 +1,29 @@
+{
+  "id": 118514,
+  "name": "Support - Armor Break",
+  "baseAtk": 140,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 30000005,
+      "name": "",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "skill1": {
+      "id": 11851402,
+      "name": "[Armor Penetration] Every 10 seconds, reduces Defense and Magic Resistance of all enemy units on the field by 100% for 3 seconds, up to 5 times.",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "passive": {
+      "id": 11851304,
+      "name": "",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

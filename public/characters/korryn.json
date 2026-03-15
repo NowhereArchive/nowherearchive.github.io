@@ -1,0 +1,102 @@
+{
+  "id": 110408,
+  "name": "Korryn",
+  "baseAtk": 189,
+  "grades": [
+    [
+      11,
+      50
+    ],
+    [
+      33,
+      100
+    ],
+    [
+      11,
+      25
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 4081,
+      "name": "Hunt",
+      "damageType": 1,
+      "coefs": [
+        88,
+        95,
+        103,
+        111,
+        120,
+        129,
+        140,
+        151,
+        163,
+        176
+      ],
+      "maxCoef": 176
+    },
+    "ultimate": {
+      "id": 4082,
+      "name": "Desert Huntfire",
+      "damageType": 0,
+      "coefs": [
+        90,
+        97,
+        105,
+        113,
+        122,
+        132,
+        143,
+        154,
+        167,
+        180
+      ],
+      "maxCoef": 180
+    },
+    "skill1": {
+      "id": 4083,
+      "name": "Shootout Hour",
+      "damageType": 0,
+      "coefs": [
+        15,
+        14.4,
+        13.9,
+        13.3,
+        12.8,
+        12.2,
+        11.7,
+        11.1,
+        10.6,
+        10
+      ],
+      "maxCoef": 10
+    },
+    "passive": {
+      "id": 4084,
+      "name": "Flawless Aim",
+      "damageType": 0,
+      "coefs": [
+        3,
+        3.2,
+        3.5,
+        3.8,
+        4.1,
+        4.4,
+        4.8,
+        5.1,
+        5.6,
+        6
+      ],
+      "maxCoef": 6
+    },
+    "exclusive": {
+      "id": 4085,
+      "name": "Duel at Sunset",
+      "damageType": 0,
+      "coefs": [
+        150
+      ],
+      "maxCoef": 150
+    }
+  }
+}

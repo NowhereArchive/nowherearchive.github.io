@@ -1,0 +1,93 @@
+{
+  "id": 111203,
+  "name": "Pacassi",
+  "baseAtk": 137,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 12031,
+      "name": "Fission",
+      "damageType": 2,
+      "coefs": [
+        84,
+        90,
+        96,
+        102,
+        109,
+        116,
+        124,
+        133,
+        142,
+        151
+      ],
+      "maxCoef": 151
+    },
+    "ultimate": {
+      "id": 12032,
+      "name": "Thermonuclear Reaction",
+      "damageType": 2,
+      "coefs": [
+        100,
+        107,
+        114,
+        122,
+        130,
+        139,
+        148,
+        158,
+        169,
+        180
+      ],
+      "maxCoef": 180
+    },
+    "skill1": {
+      "id": 12033,
+      "name": "Chain Reaction",
+      "damageType": 0,
+      "coefs": [
+        35,
+        37,
+        40,
+        43,
+        45,
+        49,
+        52,
+        55,
+        59,
+        63
+      ],
+      "maxCoef": 63
+    },
+    "passive": {
+      "id": 12034,
+      "name": "Field Interference",
+      "damageType": 0,
+      "coefs": [
+        5,
+        5.4,
+        5.8,
+        6.3,
+        6.8,
+        7.3,
+        7.9,
+        8.6,
+        9.3,
+        10
+      ],
+      "maxCoef": 10
+    }
+  }
+}

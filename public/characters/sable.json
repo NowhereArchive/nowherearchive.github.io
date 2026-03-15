@@ -1,0 +1,15 @@
+{
+  "id": 117713,
+  "name": "Sable",
+  "baseAtk": 800,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 15000003,
+      "name": "",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": 118438,
+  "name": "Rock Duck",
+  "baseAtk": 1,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 97002401,
+      "name": "",
+      "damageType": 2,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "ultimate": {
+      "id": 97002402,
+      "name": "In My BGM",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

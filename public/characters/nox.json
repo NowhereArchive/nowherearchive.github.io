@@ -1,0 +1,93 @@
+{
+  "id": 110202,
+  "name": "NOX",
+  "baseAtk": 145,
+  "grades": [
+    [
+      11,
+      50
+    ],
+    [
+      33,
+      100
+    ],
+    [
+      11,
+      25
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 2021,
+      "name": "Destruction",
+      "damageType": 1,
+      "coefs": [
+        90,
+        96,
+        102,
+        109,
+        116,
+        124,
+        132,
+        141,
+        151,
+        161
+      ],
+      "maxCoef": 161
+    },
+    "ultimate": {
+      "id": 2022,
+      "name": "Touch of Despair",
+      "damageType": 0,
+      "coefs": [
+        158,
+        169,
+        180,
+        192,
+        205,
+        219,
+        234,
+        250,
+        267,
+        285
+      ],
+      "maxCoef": 285
+    },
+    "skill1": {
+      "id": 2023,
+      "name": "Soul Corruption",
+      "damageType": 0,
+      "coefs": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        22,
+        24,
+        27,
+        30
+      ],
+      "maxCoef": 30
+    },
+    "passive": {
+      "id": 2024,
+      "name": "Nether Intimidation",
+      "damageType": 0,
+      "coefs": [
+        15,
+        16,
+        17.1,
+        18.200001,
+        19.5,
+        20.799999,
+        22.200001,
+        23.700001,
+        25.299999,
+        27
+      ],
+      "maxCoef": 27
+    }
+  }
+}

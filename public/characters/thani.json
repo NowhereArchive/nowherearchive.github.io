@@ -1,0 +1,104 @@
+{
+  "id": 111510,
+  "name": "Thani",
+  "baseAtk": 160,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 15101,
+      "name": "Cauterize",
+      "damageType": 2,
+      "coefs": [
+        54,
+        60,
+        66,
+        72,
+        78,
+        84,
+        90,
+        96,
+        102,
+        108
+      ],
+      "maxCoef": 108
+    },
+    "ultimate": {
+      "id": 15102,
+      "name": "Focused Detonation",
+      "damageType": 2,
+      "coefs": [
+        720,
+        800,
+        880,
+        960,
+        1040,
+        1120,
+        1200,
+        1280,
+        1360,
+        1440
+      ],
+      "maxCoef": 1440
+    },
+    "skill1": {
+      "id": 15103,
+      "name": "Excessive Reaction",
+      "damageType": 0,
+      "coefs": [
+        15,
+        16.700001,
+        18.299999,
+        20,
+        21.700001,
+        23.299999,
+        25,
+        26.700001,
+        28.299999,
+        30
+      ],
+      "maxCoef": 30
+    },
+    "passive": {
+      "id": 15104,
+      "name": "Telepathy",
+      "damageType": 0,
+      "coefs": [
+        12,
+        13.3,
+        14.7,
+        16,
+        17.299999,
+        18.700001,
+        20,
+        21.299999,
+        22.700001,
+        24
+      ],
+      "maxCoef": 24
+    },
+    "exclusive": {
+      "id": 15105,
+      "name": "Side Effects",
+      "damageType": 0,
+      "coefs": [
+        30,
+        45,
+        60
+      ],
+      "maxCoef": 60
+    }
+  }
+}

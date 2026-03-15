@@ -1,0 +1,15 @@
+{
+  "id": 118410,
+  "name": "Scotch",
+  "baseAtk": 450,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 98001513,
+      "name": "",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

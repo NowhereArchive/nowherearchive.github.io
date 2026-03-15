@@ -1,0 +1,93 @@
+{
+  "id": 110508,
+  "name": "Vautour Bleu",
+  "baseAtk": 169,
+  "grades": [
+    [
+      11,
+      50
+    ],
+    [
+      33,
+      100
+    ],
+    [
+      11,
+      25
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 5081,
+      "name": "Desolate Smoke",
+      "damageType": 2,
+      "coefs": [
+        92,
+        99,
+        107,
+        116,
+        125,
+        135,
+        146,
+        158,
+        170,
+        184
+      ],
+      "maxCoef": 184
+    },
+    "ultimate": {
+      "id": 5082,
+      "name": "Dreamfall Retribution",
+      "damageType": 0,
+      "coefs": [
+        102,
+        110,
+        119,
+        129,
+        139,
+        150,
+        162,
+        175,
+        189,
+        204
+      ],
+      "maxCoef": 204
+    },
+    "skill1": {
+      "id": 5083,
+      "name": "Decayed Remains",
+      "damageType": 0,
+      "coefs": [
+        1.5,
+        1.6,
+        1.7,
+        1.9,
+        2,
+        2.2,
+        2.4,
+        2.6,
+        2.8,
+        3
+      ],
+      "maxCoef": 3
+    },
+    "passive": {
+      "id": 5084,
+      "name": "Bonebane Clash",
+      "damageType": 0,
+      "coefs": [
+        10,
+        10.8,
+        11.7,
+        12.6,
+        13.6,
+        14.7,
+        15.9,
+        17.1,
+        18.5,
+        20
+      ],
+      "maxCoef": 20
+    }
+  }
+}

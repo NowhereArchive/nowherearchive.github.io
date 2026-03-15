@@ -1,0 +1,100 @@
+{
+  "id": 111310,
+  "name": "Shrooma",
+  "baseAtk": 143,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 13101,
+      "name": "Pour Out",
+      "damageType": 0,
+      "coefs": [
+        59,
+        63.700001,
+        68.800003,
+        74.300003,
+        80.300003,
+        86.699997,
+        93.699997,
+        101.199997,
+        109.300003,
+        118
+      ],
+      "maxCoef": 118
+    },
+    "ultimate": {
+      "id": 13102,
+      "name": "Spore Eruption",
+      "damageType": 0,
+      "coefs": [
+        574,
+        620,
+        670,
+        723,
+        781,
+        843,
+        911,
+        984,
+        1063,
+        1148
+      ],
+      "maxCoef": 1148
+    },
+    "skill1": {
+      "id": 13103,
+      "name": "Anonymous Breeding",
+      "damageType": 0,
+      "coefs": [
+        3,
+        3.2,
+        3.5,
+        3.8,
+        4.1,
+        4.4,
+        4.8,
+        5.1,
+        5.6,
+        6
+      ],
+      "maxCoef": 6
+    },
+    "passive": {
+      "id": 13104,
+      "name": "Eco Adaptation",
+      "damageType": 0,
+      "coefs": [
+        14.7,
+        16.4,
+        18.1,
+        19.799999,
+        21.5,
+        23.200001,
+        24.9,
+        26.6,
+        28.299999,
+        30
+      ],
+      "maxCoef": 30
+    },
+    "exclusive": {
+      "id": 13105,
+      "name": "Fungal Bed",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

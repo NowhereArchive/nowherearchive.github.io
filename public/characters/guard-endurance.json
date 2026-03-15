@@ -1,0 +1,22 @@
+{
+  "id": 118504,
+  "name": "Guard - Endurance",
+  "baseAtk": 100,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 30000005,
+      "name": "",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "skill1": {
+      "id": 11850405,
+      "name": "[] Summons 1 mob every 7 seconds, up to 3 times. Becomes Invincible while summoning.",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

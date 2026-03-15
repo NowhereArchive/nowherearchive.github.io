@@ -1,0 +1,29 @@
+{
+  "id": 117102,
+  "name": "Blazing Stove - Green",
+  "baseAtk": 1,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 11500001,
+      "name": "",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "ultimate": {
+      "id": 75009912,
+      "name": "Emerald Flame",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "skill1": {
+      "id": 75009938,
+      "name": "",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

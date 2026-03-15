@@ -1,0 +1,104 @@
+{
+  "id": 111608,
+  "name": "Shawn",
+  "baseAtk": 122,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 16081,
+      "name": "Heartbreak",
+      "damageType": 1,
+      "coefs": [
+        80,
+        86.400002,
+        93.300003,
+        100.800003,
+        108.900002,
+        117.599998,
+        127,
+        137.199997,
+        148.100006,
+        160
+      ],
+      "maxCoef": 160
+    },
+    "ultimate": {
+      "id": 16082,
+      "name": "Online Romance",
+      "damageType": 1,
+      "coefs": [
+        450,
+        486,
+        525,
+        567,
+        612,
+        661,
+        714,
+        771,
+        833,
+        900
+      ],
+      "maxCoef": 900
+    },
+    "skill1": {
+      "id": 16084,
+      "name": "Infatuation",
+      "damageType": 0,
+      "coefs": [
+        3,
+        3.2,
+        3.4,
+        3.6,
+        3.8,
+        4,
+        4.2,
+        4.4,
+        4.6,
+        5
+      ],
+      "maxCoef": 5
+    },
+    "passive": {
+      "id": 16085,
+      "name": "Solace of Love",
+      "damageType": 0,
+      "coefs": [
+        60,
+        65,
+        70,
+        76,
+        82,
+        89,
+        96,
+        103,
+        111,
+        120
+      ],
+      "maxCoef": 120
+    },
+    "exclusive": {
+      "id": 16086,
+      "name": "Deceptive Love",
+      "damageType": 0,
+      "coefs": [
+        6,
+        8,
+        10
+      ],
+      "maxCoef": 10
+    }
+  }
+}

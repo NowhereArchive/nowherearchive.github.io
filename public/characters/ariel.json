@@ -1,0 +1,93 @@
+{
+  "id": 111601,
+  "name": "Ariel",
+  "baseAtk": 128,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 16011,
+      "name": "Mercy",
+      "damageType": 2,
+      "coefs": [
+        112,
+        120,
+        128,
+        136,
+        145,
+        155,
+        166,
+        177,
+        189,
+        202
+      ],
+      "maxCoef": 202
+    },
+    "ultimate": {
+      "id": 16012,
+      "name": "Abyssal Glimmer",
+      "damageType": 0,
+      "coefs": [
+        90,
+        94,
+        98,
+        103,
+        108,
+        113,
+        118,
+        123,
+        129,
+        135
+      ],
+      "maxCoef": 135
+    },
+    "skill1": {
+      "id": 16013,
+      "name": "Heal Up",
+      "damageType": 0,
+      "coefs": [
+        50,
+        52,
+        54,
+        57,
+        60,
+        63,
+        66,
+        69,
+        72,
+        75
+      ],
+      "maxCoef": 75
+    },
+    "passive": {
+      "id": 16014,
+      "name": "Benediction",
+      "damageType": 0,
+      "coefs": [
+        2,
+        2.1,
+        2.2,
+        2.3,
+        2.4,
+        2.5,
+        2.6,
+        2.7,
+        2.9,
+        3
+      ],
+      "maxCoef": 3
+    }
+  }
+}

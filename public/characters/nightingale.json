@@ -1,0 +1,30 @@
+{
+  "id": 112400,
+  "name": "Nightingale",
+  "baseAtk": 170,
+  "grades": [
+    [
+      1,
+      5
+    ],
+    [
+      3,
+      10
+    ],
+    [
+      2,
+      5
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 24001,
+      "name": "Normal Attack",
+      "damageType": 1,
+      "coefs": [
+        100
+      ],
+      "maxCoef": 100
+    }
+  }
+}

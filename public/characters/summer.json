@@ -1,0 +1,104 @@
+{
+  "id": 110401,
+  "name": "Summer",
+  "baseAtk": 154,
+  "grades": [
+    [
+      11,
+      50
+    ],
+    [
+      33,
+      100
+    ],
+    [
+      11,
+      25
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 4011,
+      "name": "Laser Emitter",
+      "damageType": 1,
+      "coefs": [
+        50,
+        54,
+        57,
+        61,
+        65,
+        70,
+        75,
+        80,
+        85,
+        91
+      ],
+      "maxCoef": 91
+    },
+    "ultimate": {
+      "id": 4012,
+      "name": "Fantastic Creation",
+      "damageType": 0,
+      "coefs": [
+        15,
+        16,
+        17.1,
+        18.200001,
+        19.5,
+        20.799999,
+        22.200001,
+        23.700001,
+        25.299999,
+        27
+      ],
+      "maxCoef": 27
+    },
+    "skill1": {
+      "id": 4013,
+      "name": "Creation Order",
+      "damageType": 0,
+      "coefs": [
+        10,
+        10.7,
+        11.4,
+        12.2,
+        13,
+        13.9,
+        14.8,
+        15.8,
+        16.9,
+        18
+      ],
+      "maxCoef": 18
+    },
+    "passive": {
+      "id": 4014,
+      "name": "Battle Statistics Plugin",
+      "damageType": 0,
+      "coefs": [
+        4,
+        4.3,
+        4.6,
+        4.9,
+        5.2,
+        5.5,
+        5.9,
+        6.3,
+        6.7,
+        7.2
+      ],
+      "maxCoef": 7.2
+    },
+    "exclusive": {
+      "id": 4015,
+      "name": "Overload",
+      "damageType": 0,
+      "coefs": [
+        10,
+        12.5,
+        15
+      ],
+      "maxCoef": 15
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": 118331,
+  "name": "Artist Duck",
+  "baseAtk": 150,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 97002101,
+      "name": "",
+      "damageType": 2,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "ultimate": {
+      "id": 97002104,
+      "name": "Random Doodle",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

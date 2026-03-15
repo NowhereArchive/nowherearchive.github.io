@@ -1,0 +1,104 @@
+{
+  "id": 110209,
+  "name": "Synex",
+  "baseAtk": 149,
+  "grades": [
+    [
+      11,
+      50
+    ],
+    [
+      33,
+      100
+    ],
+    [
+      11,
+      25
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 2091,
+      "name": "Clawstorm",
+      "damageType": 4,
+      "coefs": [
+        71,
+        76,
+        81,
+        87,
+        92,
+        99,
+        105,
+        112,
+        120,
+        128
+      ],
+      "maxCoef": 128
+    },
+    "ultimate": {
+      "id": 2092,
+      "name": "Carnival of Ruin",
+      "damageType": 0,
+      "coefs": [
+        55,
+        60,
+        64,
+        70,
+        75,
+        81,
+        88,
+        95,
+        102,
+        110
+      ],
+      "maxCoef": 110
+    },
+    "skill1": {
+      "id": 2093,
+      "name": "Umbral Laceration",
+      "damageType": 0,
+      "coefs": [
+        182,
+        197,
+        213,
+        230,
+        248,
+        268,
+        289,
+        313,
+        338,
+        365
+      ],
+      "maxCoef": 365
+    },
+    "passive": {
+      "id": 2094,
+      "name": "Resonant Corrosion",
+      "damageType": 0,
+      "coefs": [
+        0.5,
+        0.54,
+        0.58,
+        0.63,
+        0.68,
+        0.73,
+        0.79,
+        0.86,
+        0.93,
+        1
+      ],
+      "maxCoef": 1
+    },
+    "exclusive": {
+      "id": 2095,
+      "name": "Fangs and Shackles",
+      "damageType": 4,
+      "coefs": [
+        500,
+        750,
+        1000
+      ],
+      "maxCoef": 1000
+    }
+  }
+}

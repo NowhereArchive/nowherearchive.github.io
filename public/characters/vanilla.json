@@ -1,0 +1,104 @@
+{
+  "id": 110104,
+  "name": "Vanilla",
+  "baseAtk": 103,
+  "grades": [
+    [
+      11,
+      50
+    ],
+    [
+      33,
+      100
+    ],
+    [
+      11,
+      25
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 1041,
+      "name": "Exoskeleton Arm",
+      "damageType": 1,
+      "coefs": [
+        85,
+        92,
+        99,
+        107,
+        116,
+        125,
+        135,
+        146,
+        157,
+        170
+      ],
+      "maxCoef": 170
+    },
+    "ultimate": {
+      "id": 1042,
+      "name": "Potential Charge",
+      "damageType": 0,
+      "coefs": [
+        75,
+        81,
+        87.5,
+        94.5,
+        102.099998,
+        110.199997,
+        119.099998,
+        128.600006,
+        138.899994,
+        150
+      ],
+      "maxCoef": 150
+    },
+    "skill1": {
+      "id": 1043,
+      "name": "Meshing Gears",
+      "damageType": 0,
+      "coefs": [
+        12.5,
+        13.5,
+        14.6,
+        15.7,
+        17,
+        18.4,
+        19.799999,
+        21.4,
+        23.1,
+        25
+      ],
+      "maxCoef": 25
+    },
+    "passive": {
+      "id": 1044,
+      "name": "One-Way Drivetrain",
+      "damageType": 0,
+      "coefs": [
+        15,
+        16.200001,
+        17.5,
+        18.9,
+        20.4,
+        22,
+        23.799999,
+        25.700001,
+        27.799999,
+        30
+      ],
+      "maxCoef": 30
+    },
+    "exclusive": {
+      "id": 1045,
+      "name": "Eternity Leap",
+      "damageType": 1,
+      "coefs": [
+        100,
+        125,
+        150
+      ],
+      "maxCoef": 150
+    }
+  }
+}

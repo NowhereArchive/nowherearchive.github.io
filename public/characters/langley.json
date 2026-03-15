@@ -1,0 +1,93 @@
+{
+  "id": 110402,
+  "name": "Langley",
+  "baseAtk": 156,
+  "grades": [
+    [
+      11,
+      50
+    ],
+    [
+      33,
+      100
+    ],
+    [
+      11,
+      25
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 4021,
+      "name": "Immediate Execution",
+      "damageType": 1,
+      "coefs": [
+        113,
+        121,
+        129,
+        137,
+        147,
+        157,
+        167,
+        178,
+        190,
+        203
+      ],
+      "maxCoef": 203
+    },
+    "ultimate": {
+      "id": 4022,
+      "name": "Gunfire Edict",
+      "damageType": 1,
+      "coefs": [
+        180,
+        192,
+        205,
+        219,
+        234,
+        250,
+        266,
+        284,
+        304,
+        324
+      ],
+      "maxCoef": 324
+    },
+    "skill1": {
+      "id": 4023,
+      "name": "Causality",
+      "damageType": 0,
+      "coefs": [
+        35,
+        37.400002,
+        39.900002,
+        42.599998,
+        45.400002,
+        48.5,
+        51.799999,
+        55.299999,
+        59,
+        63
+      ],
+      "maxCoef": 63
+    },
+    "passive": {
+      "id": 4024,
+      "name": "Execution of Fate",
+      "damageType": 0,
+      "coefs": [
+        200,
+        213,
+        228,
+        243,
+        260,
+        277,
+        296,
+        316,
+        337,
+        360
+      ],
+      "maxCoef": 360
+    }
+  }
+}

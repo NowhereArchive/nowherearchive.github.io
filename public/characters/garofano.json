@@ -1,0 +1,104 @@
+{
+  "id": 111307,
+  "name": "Garofano",
+  "baseAtk": 136,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 13071,
+      "name": "Hidden Needles",
+      "damageType": 1,
+      "coefs": [
+        74,
+        79,
+        85,
+        91,
+        97,
+        103,
+        110,
+        118,
+        125,
+        134
+      ],
+      "maxCoef": 134
+    },
+    "ultimate": {
+      "id": 13072,
+      "name": "Pinpoint",
+      "damageType": 1,
+      "coefs": [
+        450,
+        486,
+        525,
+        567,
+        612,
+        661,
+        714,
+        772,
+        833,
+        900
+      ],
+      "maxCoef": 900
+    },
+    "skill1": {
+      "id": 13073,
+      "name": "Piercing Gaze",
+      "damageType": 0,
+      "coefs": [
+        5,
+        5.4,
+        5.8,
+        6.3,
+        6.8,
+        7.3,
+        7.9,
+        8.6,
+        9.3,
+        10
+      ],
+      "maxCoef": 10
+    },
+    "passive": {
+      "id": 13074,
+      "name": "Piercing Erosion",
+      "damageType": 0,
+      "coefs": [
+        60,
+        64.800003,
+        70,
+        75.599998,
+        81.599998,
+        88.199997,
+        95.199997,
+        102.900002,
+        111.099998,
+        120
+      ],
+      "maxCoef": 120
+    },
+    "exclusive": {
+      "id": 13075,
+      "name": "Heart's Lament",
+      "damageType": 0,
+      "coefs": [
+        500,
+        750,
+        1000
+      ],
+      "maxCoef": 1000
+    }
+  }
+}

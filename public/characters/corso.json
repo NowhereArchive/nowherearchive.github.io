@@ -1,0 +1,104 @@
+{
+  "id": 111207,
+  "name": "Corso",
+  "baseAtk": 148,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 12071,
+      "name": "Velocious Smash",
+      "damageType": 1,
+      "coefs": [
+        78,
+        83,
+        89,
+        94,
+        101,
+        108,
+        115,
+        123,
+        131,
+        140
+      ],
+      "maxCoef": 140
+    },
+    "ultimate": {
+      "id": 12072,
+      "name": "Boundless Combat",
+      "damageType": 0,
+      "coefs": [
+        12,
+        12,
+        12,
+        11,
+        11,
+        11,
+        10,
+        10,
+        10,
+        10
+      ],
+      "maxCoef": 10
+    },
+    "skill1": {
+      "id": 12073,
+      "name": "Deceptive Foray",
+      "damageType": 0,
+      "coefs": [
+        300,
+        320,
+        342,
+        365,
+        390,
+        416,
+        444,
+        474,
+        506,
+        540
+      ],
+      "maxCoef": 540
+    },
+    "passive": {
+      "id": 12078,
+      "name": "Material Empowerment",
+      "damageType": 0,
+      "coefs": [
+        4,
+        4.2,
+        4.4,
+        4.6,
+        4.8,
+        5,
+        5.2,
+        5.5,
+        5.7,
+        6
+      ],
+      "maxCoef": 6
+    },
+    "exclusive": {
+      "id": 12079,
+      "name": "Winner Takes All",
+      "damageType": 0,
+      "coefs": [
+        3,
+        2,
+        2
+      ],
+      "maxCoef": 2
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": 118527,
+  "name": "DisCorps Axe Guard",
+  "baseAtk": 100,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 11852701,
+      "name": "",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "ultimate": {
+      "id": 11852702,
+      "name": "test",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "passive": {
+      "id": 11852703,
+      "name": "test",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

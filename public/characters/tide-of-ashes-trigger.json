@@ -1,0 +1,29 @@
+{
+  "id": 117721,
+  "name": "Tide of Ashes Trigger",
+  "baseAtk": 200,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 133000001,
+      "name": "",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "ultimate": {
+      "id": 133000003,
+      "name": "[Tide of Ashes] When activated, triggers the Tide of Ashes, continuously dealing damage to all units. When deactivated, the Tide of Ashes ends.",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "passive": {
+      "id": 133000000,
+      "name": "",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

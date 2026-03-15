@@ -1,0 +1,104 @@
+{
+  "id": 111108,
+  "name": "Dove",
+  "baseAtk": 99,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 11081,
+      "name": "Paperblade",
+      "damageType": 2,
+      "coefs": [
+        62,
+        67,
+        72,
+        78,
+        84,
+        91,
+        98,
+        106,
+        115,
+        124
+      ],
+      "maxCoef": 124
+    },
+    "ultimate": {
+      "id": 11082,
+      "name": "Protective Epistle",
+      "damageType": 0,
+      "coefs": [
+        190,
+        205,
+        222,
+        239,
+        259,
+        279,
+        302,
+        326,
+        352,
+        380
+      ],
+      "maxCoef": 380
+    },
+    "skill1": {
+      "id": 11083,
+      "name": "Missive Wisdom",
+      "damageType": 0,
+      "coefs": [
+        1.5,
+        1.6,
+        1.7,
+        1.9,
+        2,
+        2.2,
+        2.4,
+        2.6,
+        2.8,
+        3
+      ],
+      "maxCoef": 3
+    },
+    "passive": {
+      "id": 11084,
+      "name": "Self Defense",
+      "damageType": 0,
+      "coefs": [
+        224,
+        242,
+        261,
+        282,
+        305,
+        329,
+        356,
+        384,
+        415,
+        448
+      ],
+      "maxCoef": 448
+    },
+    "exclusive": {
+      "id": 11085,
+      "name": "Blind Faith",
+      "damageType": 2,
+      "coefs": [
+        150,
+        300,
+        450
+      ],
+      "maxCoef": 450
+    }
+  }
+}

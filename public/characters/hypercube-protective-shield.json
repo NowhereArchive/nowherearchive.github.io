@@ -1,0 +1,29 @@
+{
+  "id": 117722,
+  "name": "Hypercube Protective Shield",
+  "baseAtk": 200,
+  "grades": [],
+  "skills": {
+    "normalAttack": {
+      "id": 133000001,
+      "name": "",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "ultimate": {
+      "id": 133000002,
+      "name": "[Energy Shield] Generates an energy shield that blocks a certain amount of damage for allied Sinners.",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    },
+    "passive": {
+      "id": 133000000,
+      "name": "",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null
+    }
+  }
+}

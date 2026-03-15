@@ -1,0 +1,104 @@
+{
+  "id": 110101,
+  "name": "Demon",
+  "baseAtk": 104,
+  "grades": [
+    [
+      11,
+      50
+    ],
+    [
+      33,
+      100
+    ],
+    [
+      11,
+      25
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 1011,
+      "name": "Shield Combat",
+      "damageType": 1,
+      "coefs": [
+        110,
+        117,
+        125,
+        133,
+        142,
+        152,
+        162,
+        174,
+        185,
+        198
+      ],
+      "maxCoef": 198
+    },
+    "ultimate": {
+      "id": 1012,
+      "name": "Frontline Defense",
+      "damageType": 0,
+      "coefs": [
+        22,
+        24,
+        25,
+        27,
+        28,
+        30,
+        32,
+        34,
+        37,
+        40
+      ],
+      "maxCoef": 40
+    },
+    "skill1": {
+      "id": 1013,
+      "name": "Battle Persistence",
+      "damageType": 0,
+      "coefs": [
+        10,
+        10.7,
+        11.4,
+        12.2,
+        13,
+        13.9,
+        14.8,
+        15.8,
+        16.9,
+        18
+      ],
+      "maxCoef": 18
+    },
+    "passive": {
+      "id": 1014,
+      "name": "Never Give Up",
+      "damageType": 0,
+      "coefs": [
+        7,
+        7.5,
+        8,
+        8.5,
+        9.1,
+        9.7,
+        10.4,
+        11.1,
+        11.8,
+        12.6
+      ],
+      "maxCoef": 12.6
+    },
+    "exclusive": {
+      "id": 1015,
+      "name": "Shield of Flesh",
+      "damageType": 0,
+      "coefs": [
+        50,
+        60,
+        70
+      ],
+      "maxCoef": 70
+    }
+  }
+}

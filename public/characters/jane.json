@@ -1,0 +1,93 @@
+{
+  "id": 111407,
+  "name": "Jane",
+  "baseAtk": 155,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 14071,
+      "name": "Jane - Type I Shell",
+      "damageType": 1,
+      "coefs": [
+        81,
+        87,
+        94,
+        102,
+        110,
+        119,
+        129,
+        139,
+        150,
+        162
+      ],
+      "maxCoef": 162
+    },
+    "ultimate": {
+      "id": 14075,
+      "name": "Mayhem Bomb",
+      "damageType": 1,
+      "coefs": [
+        293,
+        316,
+        342,
+        369,
+        399,
+        431,
+        465,
+        502,
+        543,
+        586
+      ],
+      "maxCoef": 586
+    },
+    "skill1": {
+      "id": 14073,
+      "name": "Quavery Raid",
+      "damageType": 0,
+      "coefs": [
+        162,
+        175,
+        189,
+        204,
+        220,
+        238,
+        257,
+        278,
+        300,
+        324
+      ],
+      "maxCoef": 324
+    },
+    "passive": {
+      "id": 14074,
+      "name": "Criminal Palpitations",
+      "damageType": 0,
+      "coefs": [
+        10,
+        10.8,
+        11.7,
+        12.6,
+        13.6,
+        14.7,
+        15.9,
+        17.1,
+        18.5,
+        20
+      ],
+      "maxCoef": 20
+    }
+  }
+}

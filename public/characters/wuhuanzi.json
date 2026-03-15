@@ -1,0 +1,93 @@
+{
+  "id": 111509,
+  "name": "Wuhuanzi",
+  "baseAtk": 158,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 15091,
+      "name": "Talismanic Strike",
+      "damageType": 2,
+      "coefs": [
+        58,
+        63,
+        68,
+        74,
+        79,
+        86,
+        93,
+        100,
+        108,
+        116
+      ],
+      "maxCoef": 116
+    },
+    "ultimate": {
+      "id": 15092,
+      "name": "Tempestuous Flick",
+      "damageType": 2,
+      "coefs": [
+        370,
+        400,
+        432,
+        466,
+        503,
+        544,
+        587,
+        634,
+        685,
+        740
+      ],
+      "maxCoef": 740
+    },
+    "skill1": {
+      "id": 15093,
+      "name": "Phantom Talismans",
+      "damageType": 0,
+      "coefs": [
+        90,
+        97.199997,
+        105,
+        113.400002,
+        122.5,
+        132.300003,
+        142.899994,
+        154.300003,
+        166.699997,
+        180
+      ],
+      "maxCoef": 180
+    },
+    "passive": {
+      "id": 15094,
+      "name": "Nadir's Edge",
+      "damageType": 0,
+      "coefs": [
+        1.5,
+        1.6,
+        1.7,
+        1.9,
+        2,
+        2.2,
+        2.4,
+        2.6,
+        2.8,
+        3
+      ],
+      "maxCoef": 3
+    }
+  }
+}

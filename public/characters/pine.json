@@ -1,0 +1,104 @@
+{
+  "id": 111408,
+  "name": "Pine",
+  "baseAtk": 155,
+  "grades": [
+    [
+      21,
+      100
+    ],
+    [
+      63,
+      200
+    ],
+    [
+      21,
+      50
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 14081,
+      "name": "Probe",
+      "damageType": 1,
+      "coefs": [
+        82,
+        89,
+        96,
+        103,
+        112,
+        121,
+        130,
+        141,
+        152,
+        164
+      ],
+      "maxCoef": 164
+    },
+    "ultimate": {
+      "id": 14082,
+      "name": "Exclusive Scoop",
+      "damageType": 1,
+      "coefs": [
+        610,
+        659,
+        712,
+        769,
+        830,
+        897,
+        968,
+        1046,
+        1130,
+        1220
+      ],
+      "maxCoef": 1220
+    },
+    "skill1": {
+      "id": 14083,
+      "name": "Insider News",
+      "damageType": 0,
+      "coefs": [
+        340,
+        367.200012,
+        396.600006,
+        428.399994,
+        462.700012,
+        499.700012,
+        539.700012,
+        582.900024,
+        629.599976,
+        680
+      ],
+      "maxCoef": 680
+    },
+    "passive": {
+      "id": 14084,
+      "name": "Full Control",
+      "damageType": 0,
+      "coefs": [
+        10,
+        10.8,
+        11.7,
+        12.6,
+        13.6,
+        14.7,
+        15.9,
+        17.1,
+        18.5,
+        20
+      ],
+      "maxCoef": 20
+    },
+    "exclusive": {
+      "id": 14085,
+      "name": "Storm Eye",
+      "damageType": 0,
+      "coefs": [
+        40,
+        60,
+        80
+      ],
+      "maxCoef": 80
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "id": 110503,
+  "name": "Stargazer",
+  "baseAtk": 150,
+  "grades": [
+    [
+      11,
+      50
+    ],
+    [
+      33,
+      100
+    ],
+    [
+      11,
+      25
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 5031,
+      "name": "Celestial Phenomenon",
+      "damageType": 2,
+      "coefs": [
+        71,
+        75,
+        80,
+        86,
+        92,
+        98,
+        104,
+        111,
+        119,
+        127
+      ],
+      "maxCoef": 127
+    },
+    "ultimate": {
+      "id": 5032,
+      "name": "Victory Star",
+      "damageType": 0,
+      "coefs": [
+        130,
+        139,
+        148,
+        158,
+        169,
+        180,
+        192,
+        205,
+        219,
+        234
+      ],
+      "maxCoef": 234
+    },
+    "skill1": {
+      "id": 5033,
+      "name": "Astral Guidance",
+      "damageType": 0,
+      "coefs": [
+        4,
+        4.3,
+        4.6,
+        4.9,
+        5.2,
+        5.5,
+        5.9,
+        6.3,
+        6.7,
+        7.2
+      ],
+      "maxCoef": 7.2
+    },
+    "passive": {
+      "id": 5034,
+      "name": "Realm of Truth",
+      "damageType": 0,
+      "coefs": [
+        200,
+        214,
+        228,
+        243,
+        260,
+        277,
+        296,
+        316,
+        337,
+        360
+      ],
+      "maxCoef": 360
+    },
+    "exclusive": {
+      "id": 5037,
+      "name": "Dreamland",
+      "damageType": 0,
+      "coefs": [
+        20,
+        23,
+        26
+      ],
+      "maxCoef": 26
+    }
+  }
+}

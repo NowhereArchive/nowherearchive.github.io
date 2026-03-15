@@ -1,0 +1,104 @@
+{
+  "id": 110509,
+  "name": "Yingying",
+  "baseAtk": 163,
+  "grades": [
+    [
+      11,
+      50
+    ],
+    [
+      33,
+      100
+    ],
+    [
+      11,
+      25
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 5091,
+      "name": "Vine Dance",
+      "damageType": 2,
+      "coefs": [
+        55,
+        59,
+        64,
+        69,
+        75,
+        81,
+        87,
+        94,
+        102,
+        110
+      ],
+      "maxCoef": 110
+    },
+    "ultimate": {
+      "id": 5092,
+      "name": "Entwine/Celestium",
+      "damageType": 0,
+      "coefs": [
+        25,
+        27,
+        29.200001,
+        31.5,
+        34,
+        36.700001,
+        39.700001,
+        42.900002,
+        46.299999,
+        50
+      ],
+      "maxCoef": 50
+    },
+    "skill1": {
+      "id": 5093,
+      "name": "Enlace",
+      "damageType": 0,
+      "coefs": [
+        90,
+        97.199997,
+        105,
+        113.400002,
+        122.5,
+        132.300003,
+        142.899994,
+        154.300003,
+        166.699997,
+        180
+      ],
+      "maxCoef": 180
+    },
+    "passive": {
+      "id": 5094,
+      "name": "Mauve Aroma",
+      "damageType": 0,
+      "coefs": [
+        15,
+        16,
+        17,
+        19,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30
+      ],
+      "maxCoef": 30
+    },
+    "exclusive": {
+      "id": 5095,
+      "name": "Soulful Glimpse",
+      "damageType": 0,
+      "coefs": [
+        1,
+        2,
+        3
+      ],
+      "maxCoef": 3
+    }
+  }
+}

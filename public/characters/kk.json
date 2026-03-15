@@ -1,0 +1,93 @@
+{
+  "id": 112101,
+  "name": "K.K.",
+  "baseAtk": 101,
+  "grades": [
+    [
+      1,
+      5
+    ],
+    [
+      3,
+      10
+    ],
+    [
+      2,
+      5
+    ]
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 21011,
+      "name": "Street Fight",
+      "damageType": 1,
+      "coefs": [
+        88,
+        95,
+        100,
+        107,
+        115,
+        123,
+        130,
+        140,
+        150,
+        160
+      ],
+      "maxCoef": 160
+    },
+    "ultimate": {
+      "id": 21012,
+      "name": "Defensive Stance",
+      "damageType": 0,
+      "coefs": [
+        20,
+        21.299999,
+        22.799999,
+        24.299999,
+        26,
+        27.700001,
+        29.6,
+        31.6,
+        33.700001,
+        36
+      ],
+      "maxCoef": 36
+    },
+    "skill1": {
+      "id": 21013,
+      "name": "Pain Tolerance",
+      "damageType": 0,
+      "coefs": [
+        0.5,
+        0.5,
+        0.6,
+        0.6,
+        0.6,
+        0.7,
+        0.7,
+        0.8,
+        0.8,
+        0.9
+      ],
+      "maxCoef": 0.9
+    },
+    "passive": {
+      "id": 21014,
+      "name": "Solid Defense",
+      "damageType": 0,
+      "coefs": [
+        3,
+        3.2,
+        3.4,
+        3.6,
+        3.9,
+        4.2,
+        4.4,
+        4.7,
+        5.1,
+        5.4
+      ],
+      "maxCoef": 5.4
+    }
+  }
+}
