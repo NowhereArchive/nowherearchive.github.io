@@ -65,7 +65,7 @@ import NavBar from "../../components/NavBar.astro";
       </div>
 
       <div class="field">
-        <div class="flabel"><span class="ln">In-battle ATK% bonus (passive skills, not on stat screen)</span><span class="lv" id="atkpct-v">0%</span></div>
+        <div class="flabel"><span class="ln">In-battle ATK% bonus</span><span class="lv" id="atkpct-v">0%</span></div>
         <input type="range" id="atkPct" min="0" max="100" value="0">
         <div class="hint">Passive ATK% buffs that fire at battle start — e.g. Shalom S2 +5% + Passive +12% = 17%</div>
       </div>
@@ -73,6 +73,7 @@ import NavBar from "../../components/NavBar.astro";
       <div class="field">
         <div class="flabel"><span class="ln">Override stat-screen ATK (leave blank to auto-calculate)</span></div>
         <input type="number" id="statAtkOverride" placeholder="optional — paste directly from stat screen" min="1">
+        <div class="hint">This number should exclude crimebrand stats. If a crimebrand gives for example 6% attack, you should add that to the In-battle ATK% bonus</div>
       </div>
 
       <div class="sep"></div>
