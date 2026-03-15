@@ -255,7 +255,7 @@ import NavBar from "../../components/NavBar.astro";
       <div class="chain-cats" id="chain-cats"></div>
       <div class="chain-eq" id="chain-eq"></div>
     </div>
-  </div>
+    </div>
 
 </div>
 </div>
@@ -284,7 +284,7 @@ body { background: var(--background); color: var(--text); font-family: 'Lato', s
   border-bottom: 1px solid var(--border-red); }
 .hero h1 { font-size: 3rem; font-weight: 900; letter-spacing: -0.5px;
   background: linear-gradient(90deg,#fff,#e0e0e0);
-  -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: .25rem; }
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: .25rem; padding-top: 40px;}
 .hero-sub { color: rgba(255,255,255,0.5); font-size: .8rem; letter-spacing: .15em; text-transform: uppercase; font-weight: 300; }
 .hero-meta { display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem 2rem; margin-top: 1.25rem;
   font-size: .75rem; color: rgba(255,255,255,0.4); font-family: monospace; }
@@ -633,7 +633,7 @@ function renderMults() {
 
   html += `<div style="font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,0.2);margin-bottom:.5rem;font-weight:700">Add a bonus</div>
   <div class="add-tag-row">
-    <input type="text" id="new-mult-name" placeholder="e.g. Bond +5%">
+    <input type="text" id="new-mult-name" placeholder="e.g. Mania Intensify +10%">
     <input type="number" id="new-mult-val" placeholder="%" value="10" min="0">
     <select id="new-mult-cat">${CAT_KEYS.map(k=>`<option value="${k}">${k}</option>`).join('')}</select>
     <button class="add-tag-btn" id="add-mult-btn">+ Add</button>
