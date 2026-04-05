@@ -1,5 +1,5 @@
 export const ASSET_BASE_URL = 'https://raw.githubusercontent.com/NowhereArchive';
-export const ASSET_AUDIO_URL = `${ASSET_BASE_URL}/NowhereAudiosBak/main/audio`;
+export const ASSET_AUDIO_URL = `${ASSET_BASE_URL}/NowhereAudios/main/audio`;
 export const ASSET_IMAGES_URL = `${ASSET_BASE_URL}/NowhereImages/main`;
 export const ASSET_PRISON_URL = `${ASSET_IMAGES_URL}/prison`;
 export const ASSET_LOGOS_URL = `${ASSET_IMAGES_URL}/logos`;

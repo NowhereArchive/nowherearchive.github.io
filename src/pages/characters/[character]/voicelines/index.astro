@@ -24,6 +24,7 @@ interface Character {
   tendency: string;
   category: string;
   attires: Attire[];
+  note?: string;
 }
 
 export async function getStaticPaths() {
@@ -52,6 +53,12 @@ const slug = characterData.slug;
   <NavBar />
 
   <CharacterHeroSection CHARACTER_DISPLAY_NAME={characterDisplayName} />
+
+  {characterData.note && (
+    <div class="character-note">
+      <p>{characterData.note}</p>
+    </div>
+  )}
 
   <div id="voicelinesContainer"></div>
   <script
@@ -105,6 +112,10 @@ const slug = characterData.slug;
 
     function sanitizeName(name) {
       return name.toLowerCase().replace(/\s+/g, "_");
+    }
+
+    function sanitizeNameForGitHub(name) {
+      return name.toLowerCase().replace(/\./g, "").replace(/\s+/g, "_");
     }
 
     function trimFilePrefix(filename) {
@@ -202,7 +213,8 @@ const slug = characterData.slug;
       voicelines.forEach((voiceline) => {
         const trimmedFilename = trimFilePrefix(voiceline.filename);
         console.log(sanitizedAttire);
-        const sanitizedAudioFile = `${ASSET_AUDIO_URL}/${characterName}/${language}/${sanitizedAttire}/${sanitizeName(
+        const sanitizedName = sanitizeNameForGitHub(characterDisplayName).toLowerCase();
+        const sanitizedAudioFile = `${ASSET_AUDIO_URL}/${sanitizedName}/${language}/${sanitizedAttire}/${sanitizeName(
           trimmedFilename,
         )}`;
 
