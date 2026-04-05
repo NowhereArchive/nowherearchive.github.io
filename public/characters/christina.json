@@ -16,7 +16,104 @@
       50
     ]
   ],
+  "chains": [
+    {
+      "id": 120801,
+      "name": "Shackles Sync I",
+      "description": "Damage increases by 8%.",
+      "effects": [
+        {
+          "propertyId": 17,
+          "key": "dmgBonus",
+          "label": "Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Damage Bonus (general)",
+          "add": 8,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 120802,
+      "name": "Evil Begets Evil",
+      "description": "[Suspect] Duration increases by 3 seconds.",
+      "effects": []
+    },
+    {
+      "id": 120803,
+      "name": "Shackles Sync II",
+      "description": "Damage increases by 8%.",
+      "effects": [
+        {
+          "propertyId": 17,
+          "key": "dmgBonus",
+          "label": "Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Damage Bonus (general)",
+          "add": 8,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 120804,
+      "name": "Detective Inspiration",
+      "description": "[Truth Revealed] Energy Consumption is reduced by 3 points.",
+      "effects": []
+    },
+    {
+      "id": 120805,
+      "name": "Shackles Sync III",
+      "description": "Damage increases by 8%.",
+      "effects": [
+        {
+          "propertyId": 17,
+          "key": "dmgBonus",
+          "label": "Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Damage Bonus (general)",
+          "add": 8,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
   "skills": {
+    "characteristic": {
+      "id": 12087,
+      "name": "Shackles Processing",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 1208706,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 57,
+              "key": "breakingDmgBonus",
+              "label": "Breaking Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Breaking Damage Bonus",
+              "add": 5,
+              "isPercent": true
+            },
+            {
+              "propertyId": 17,
+              "key": "dmgBonus",
+              "label": "Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Damage Bonus (general)",
+              "add": 5,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
     "normalAttack": {
       "id": 12081,
       "name": "Righteous Obliteration",
@@ -33,7 +130,9 @@
         117,
         125
       ],
-      "maxCoef": 125
+      "maxCoef": 125,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 12082,
@@ -51,7 +150,9 @@
         1265,
         1350
       ],
-      "maxCoef": 1350
+      "maxCoef": 1350,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 12083,
@@ -69,25 +170,44 @@
         146,
         156
       ],
-      "maxCoef": 156
+      "maxCoef": 156,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 1208301,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "[Truth Revealed] Marks the enemy with the highest HP within range as [Suspect] for 10 seconds. Each time Christina deals Normal Attack Damage to the [Suspect], she deals an additional (Attack* ?%) damage. This effect can be triggered a maximum of once per second.",
+          "scripted": true,
+          "scriptName": "common.damagemarkbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 1208302,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "[Truth Revealed] Marks the enemy with the highest HP within range as [Suspect] for 10 seconds. Each time Christina deals Normal Attack Damage to the [Suspect], she deals an additional (Attack* ?%) damage. This effect can be triggered a maximum of once per second.",
+          "scripted": true,
+          "scriptName": "skill.replace",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 12084,
       "name": "Righteous Triumph",
       "damageType": 0,
-      "coefs": [
-        6,
-        6.4,
-        6.7,
-        7.1,
-        7.5,
-        8,
-        8.4,
-        8.9,
-        9.4,
-        10
-      ],
-      "maxCoef": 10
+      "buffs": [
+        {
+          "statusId": 1208401,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Each time Christina takes damage from the [Suspect], she recovers ?% HP. This effect can be triggered a maximum of once per second.",
+          "scripted": true,
+          "scriptName": "common.damagemarkbuff",
+          "maxLevelEffects": []
+        }
+      ]
     }
   }
 }

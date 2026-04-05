@@ -16,7 +16,66 @@
       50
     ]
   ],
+  "chains": [
+    {
+      "id": 130201,
+      "name": "Standstill",
+      "description": "After Tetra moves, the next normal attack will be guaranteed to be a CRIT hit.",
+      "effects": []
+    },
+    {
+      "id": 130202,
+      "name": "Shackles Sync I",
+      "description": "CRIT Damage +10%",
+      "effects": [
+        {
+          "propertyId": 7,
+          "key": "critDmg",
+          "label": "Crit Damage Bonus",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 130203,
+      "name": "Time Thief",
+      "description": "When the enemy is stunned, Tetra gains a 20% Attack bonus for 5 seconds.",
+      "effects": []
+    },
+    {
+      "id": 130204,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption reduced by 3 points",
+      "effects": []
+    },
+    {
+      "id": 130205,
+      "name": "Shackles Sync II",
+      "description": "CRIT Damage +10%",
+      "effects": [
+        {
+          "propertyId": 7,
+          "key": "critDmg",
+          "label": "Crit Damage Bonus",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
   "skills": {
+    "characteristic": {
+      "id": 13020,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": []
+    },
     "normalAttack": {
       "id": 13021,
       "name": "Fox Trick",
@@ -33,7 +92,9 @@
         168,
         180
       ],
-      "maxCoef": 180
+      "maxCoef": 180,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 13022,
@@ -51,7 +112,9 @@
         843,
         900
       ],
-      "maxCoef": 900
+      "maxCoef": 900,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 13023,
@@ -69,25 +132,44 @@
         6.7,
         7.2
       ],
-      "maxCoef": 7.2
+      "maxCoef": 7.2,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 130231,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Tetra gains a ?% CRIT Rate bonus after using her Ultimate. The effect stacks up to 5 stacks and lasts till the end of the battle.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 13024,
       "name": "Fox's Shadow",
       "damageType": 0,
-      "coefs": [
-        20,
-        19,
-        18,
-        17,
-        16,
-        15,
-        14,
-        13,
-        12,
-        10
-      ],
-      "maxCoef": 10
+      "buffs": [
+        {
+          "statusId": 130241,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Tetra's critical hits stun enemies for 2 seconds. The effect has a ?-second cooldown.",
+          "scripted": true,
+          "scriptName": "normalattack.addbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 1302000,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Tetra's critical hits stun enemies for 2 seconds. The effect has a ?-second cooldown.",
+          "scripted": true,
+          "scriptName": "common.stateaddbuff",
+          "maxLevelEffects": []
+        }
+      ]
     }
   }
 }

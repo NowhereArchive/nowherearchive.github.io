@@ -16,7 +16,95 @@
       50
     ]
   ],
+  "chains": [
+    {
+      "id": 110801,
+      "name": "Shackles Sync I",
+      "description": "HP increases by 5%.",
+      "effects": [
+        {
+          "propertyId": 1,
+          "key": "hp",
+          "label": "HP",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 110802,
+      "name": "One Written Dream",
+      "description": "Attribute bonus provided by [Letter] increases by 30%.",
+      "effects": []
+    },
+    {
+      "id": 110803,
+      "name": "Shackles Sync II",
+      "description": "HP increases by 5%.",
+      "effects": [
+        {
+          "propertyId": 1,
+          "key": "hp",
+          "label": "HP",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 110804,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption is reduced by 5 points.",
+      "effects": []
+    },
+    {
+      "id": 110805,
+      "name": "Shackles Sync III",
+      "description": "HP increases by 5%.",
+      "effects": [
+        {
+          "propertyId": 1,
+          "key": "hp",
+          "label": "HP",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
   "skills": {
+    "characteristic": {
+      "id": 11080,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 110800,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "dove.chains",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 110805,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
     "normalAttack": {
       "id": 11081,
       "name": "Paperblade",
@@ -33,7 +121,9 @@
         115,
         124
       ],
-      "maxCoef": 124
+      "maxCoef": 124,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 11082,
@@ -51,7 +141,19 @@
         352,
         380
       ],
-      "maxCoef": 380
+      "maxCoef": 380,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 110821,
+          "targetCamps": 2,
+          "target": "self",
+          "description": "Dove applies a (Magic Resistance *?%) Magic Shield to the target Sinner and increases the bonuses they receive from [Letters] by 50% for 10 seconds.",
+          "scripted": true,
+          "scriptName": "common.shield",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "skill1": {
       "id": 11083,
@@ -69,25 +171,25 @@
         2.8,
         3
       ],
-      "maxCoef": 3
+      "maxCoef": 3,
+      "coefSource": "Data",
+      "buffs": []
     },
     "passive": {
       "id": 11084,
       "name": "Self Defense",
       "damageType": 0,
-      "coefs": [
-        224,
-        242,
-        261,
-        282,
-        305,
-        329,
-        356,
-        384,
-        415,
-        448
-      ],
-      "maxCoef": 448
+      "buffs": [
+        {
+          "statusId": 110841,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "For every 5 [Letters] Dove delivers, she gains a (Magic Resistance *?%) Magic Shield that lasts until the end of the battle.",
+          "scripted": true,
+          "scriptName": "dove.talent",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "exclusive": {
       "id": 11085,
@@ -98,7 +200,9 @@
         300,
         450
       ],
-      "maxCoef": 450
+      "maxCoef": 450,
+      "coefSource": "Data",
+      "buffs": []
     }
   }
 }

@@ -3,13 +3,24 @@
   "name": "Toy Factory - Hero Grid",
   "baseAtk": 1,
   "grades": [],
+  "chains": [],
+  "phasePassives": [],
   "skills": {
     "passive": {
       "id": 11744101,
-      "name": "",
+      "name": "Passive (S1)",
       "damageType": 0,
-      "coefs": [],
-      "maxCoef": null
+      "buffs": [
+        {
+          "statusId": 117401092,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": []
+        }
+      ]
     }
   }
 }

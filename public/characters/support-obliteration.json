@@ -3,27 +3,61 @@
   "name": "Support - Obliteration",
   "baseAtk": 140,
   "grades": [],
+  "chains": [],
+  "phasePassives": [],
   "skills": {
     "normalAttack": {
       "id": 30000005,
-      "name": "",
+      "name": "Normal Attack",
       "damageType": 1,
       "coefs": [],
-      "maxCoef": null
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 11851502,
       "name": "[Obliteration] Every 10 seconds, deals (Max HP *10%) True Damage to all enemy units on the field, up to 5 times.",
       "damageType": 0,
       "coefs": [],
-      "maxCoef": null
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 11851505,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "[Obliteration] Every 10 seconds, deals (Max HP *10%) True Damage to all enemy units on the field, up to 5 times.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 11851506,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "[Obliteration] Every 10 seconds, deals (Max HP *10%) True Damage to all enemy units on the field, up to 5 times.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 11851304,
-      "name": "",
+      "name": "Passive (S1)",
       "damageType": 0,
-      "coefs": [],
-      "maxCoef": null
+      "buffs": [
+        {
+          "statusId": 11851308,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
     }
   }
 }

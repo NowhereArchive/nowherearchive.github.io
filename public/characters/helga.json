@@ -16,7 +16,104 @@
       50
     ]
   ],
+  "chains": [
+    {
+      "id": 141001,
+      "name": "",
+      "description": "",
+      "effects": [
+        {
+          "propertyId": 7,
+          "key": "critDmg",
+          "label": "Crit Damage Bonus",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 141002,
+      "name": "",
+      "description": "",
+      "effects": []
+    },
+    {
+      "id": 141003,
+      "name": "",
+      "description": "",
+      "effects": [
+        {
+          "propertyId": 7,
+          "key": "critDmg",
+          "label": "Crit Damage Bonus",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 141004,
+      "name": "",
+      "description": "",
+      "effects": []
+    },
+    {
+      "id": 141005,
+      "name": "",
+      "description": "",
+      "effects": [
+        {
+          "propertyId": 7,
+          "key": "critDmg",
+          "label": "Crit Damage Bonus",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
   "skills": {
+    "characteristic": {
+      "id": 14100,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 141000,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 57,
+              "key": "breakingDmgBonus",
+              "label": "Breaking Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Breaking Damage Bonus",
+              "add": 5,
+              "isPercent": true
+            },
+            {
+              "propertyId": 17,
+              "key": "dmgBonus",
+              "label": "Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Damage Bonus (general)",
+              "add": 5,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
     "normalAttack": {
       "id": 14101,
       "name": "Helga - Normal Attack 1",
@@ -33,7 +130,9 @@
         131,
         142
       ],
-      "maxCoef": 142
+      "maxCoef": 142,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 14102,
@@ -51,7 +150,9 @@
         463,
         500
       ],
-      "maxCoef": 500
+      "maxCoef": 500,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 14103,
@@ -69,25 +170,44 @@
         9.3,
         10
       ],
-      "maxCoef": 10
+      "maxCoef": 10,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 141011,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 141021,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 14104,
       "name": "Helga - Talent",
       "damageType": 0,
-      "coefs": [
-        1.5,
-        1.6,
-        1.7,
-        1.8,
-        2,
-        2.2,
-        2.4,
-        2.6,
-        2.8,
-        3
-      ],
-      "maxCoef": 3
+      "buffs": [
+        {
+          "statusId": 141041,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "heerjia.talent",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "exclusive": {
       "id": 14105,
@@ -98,7 +218,9 @@
         175,
         200
       ],
-      "maxCoef": 200
+      "maxCoef": 200,
+      "coefSource": "Data",
+      "buffs": []
     }
   }
 }

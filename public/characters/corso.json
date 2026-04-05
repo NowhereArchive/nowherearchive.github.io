@@ -16,7 +16,130 @@
       50
     ]
   ],
+  "chains": [
+    {
+      "id": 12071,
+      "name": "Shackles Sync I",
+      "description": "Energy Recovery +7.5%",
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 7.5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 12072,
+      "name": "Sheer Recklessness",
+      "description": "[Boundless Combat]'s number of charges is increased by 1.",
+      "effects": []
+    },
+    {
+      "id": 12073,
+      "name": "Shackles Sync II",
+      "description": "Energy Recovery +7.5%",
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 7.5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 12074,
+      "name": "Energy Overflowing",
+      "description": "Corso gains 10 Energy at the start of a battle.",
+      "effects": []
+    },
+    {
+      "id": 12075,
+      "name": "Shackles Sync III",
+      "description": "Energy Recovery +7.5%",
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 7.5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 120706,
+      "effects": [
+        {
+          "propertyId": 57,
+          "key": "breakingDmgBonus",
+          "label": "Breaking Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Breaking Damage Bonus",
+          "add": 10,
+          "isPercent": true
+        },
+        {
+          "propertyId": 17,
+          "key": "dmgBonus",
+          "label": "Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Damage Bonus (general)",
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
   "skills": {
+    "characteristic": {
+      "id": 120700,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 1207171,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 57,
+              "key": "breakingDmgBonus",
+              "label": "Breaking Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Breaking Damage Bonus",
+              "add": 5,
+              "isPercent": true
+            },
+            {
+              "propertyId": 17,
+              "key": "dmgBonus",
+              "label": "Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Damage Bonus (general)",
+              "add": 5,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
     "normalAttack": {
       "id": 12071,
       "name": "Velocious Smash",
@@ -33,25 +156,29 @@
         131,
         140
       ],
-      "maxCoef": 140
+      "maxCoef": 140,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 12072,
       "name": "Boundless Combat",
       "damageType": 0,
       "coefs": [
-        12,
-        12,
-        12,
-        11,
-        11,
-        11,
         10,
-        10,
-        10,
-        10
+        10.8,
+        11.7,
+        12.6,
+        13.6,
+        14.7,
+        15.9,
+        17.1,
+        18.5,
+        20
       ],
-      "maxCoef": 10
+      "maxCoef": 20,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 12073,
@@ -69,25 +196,35 @@
         506,
         540
       ],
-      "maxCoef": 540
+      "maxCoef": 540,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 1207121,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When Corso is carrying [Secret Weapons], she'll throw 1 recently obtained [Secret Weapon] at the closest enemy after her next movement. Different [Secret Weapons] come with different effects. If at the moment of throwing she owns 3 weapons of the same type, she'll cast all of them at once. Each [Secret Weapon] will then deal 50% more damage and come with an enhanced effect.\nThrowing Dagger: Deals (Attack *?%) Physical Damage to enemies. The enhanced throwing dagger guarantees CRIT.\nHand Grenade: Deals (Attack *?%) Physical Damage to all enemies within the 3x3 square around the target enemy. The enhanced hand grenade additionally stuns all enemies within the skill's range for 4 seconds.\nCoin: Deals (Attack *?%) Physical Damage to enemies and attaches 5 stacks of [Electrocution] mark. The enhanced coin additionally attaches 10 stacks of [Electrocution] mark.",
+          "scripted": true,
+          "scriptName": "corso.passive",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 12078,
       "name": "Material Empowerment",
       "damageType": 0,
-      "coefs": [
-        4,
-        4.2,
-        4.4,
-        4.6,
-        4.8,
-        5,
-        5.2,
-        5.5,
-        5.7,
-        6
-      ],
-      "maxCoef": 6
+      "buffs": [
+        {
+          "statusId": 1207175,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Each time Corso casts a [Secret Weapon], she gains a ?% Attack boost. The effect stacks up to 3 times and lasts for 8 seconds.",
+          "scripted": true,
+          "scriptName": "corso.talent",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "exclusive": {
       "id": 12079,
@@ -98,7 +235,174 @@
         2,
         2
       ],
-      "maxCoef": 2
+      "maxCoef": 2,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "extra1": {
+      "id": 12070,
+      "name": "Extra Skill 1",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 1207101,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "corso.chains",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "extra2": {
+      "id": 12074,
+      "name": "Extra Skill 2",
+      "damageType": 1,
+      "coefs": [
+        300,
+        320,
+        342,
+        365,
+        390,
+        416,
+        444,
+        474,
+        506,
+        540
+      ],
+      "maxCoef": 540,
+      "coefSource": "AttackPowerCo",
+      "buffs": [],
+      "isSummonSkill": true,
+      "summonScalesFromMaster": true
+    },
+    "extra3": {
+      "id": 12075,
+      "name": "Extra Skill 3",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 1207142,
+          "targetCamps": 1,
+          "target": "enemy",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.triggerfield",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "extra4": {
+      "id": 12076,
+      "name": "Extra Skill 4",
+      "damageType": 1,
+      "coefs": [
+        200,
+        213,
+        228,
+        243,
+        260,
+        277,
+        296,
+        316,
+        337,
+        360
+      ],
+      "maxCoef": 360,
+      "coefSource": "AttackPowerCo",
+      "buffs": [
+        {
+          "statusId": 1207112,
+          "targetCamps": 1,
+          "target": "enemy",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ],
+      "isSummonSkill": true,
+      "summonScalesFromMaster": true
+    },
+    "extra5": {
+      "id": 12077,
+      "name": "Extra Skill 5",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 1207144,
+          "targetCamps": 1,
+          "target": "enemy",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.triggerfield",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "extra6": {
+      "id": 120701,
+      "name": "Extra Skill 6",
+      "damageType": 1,
+      "coefs": [
+        450,
+        480,
+        513,
+        547.5,
+        585,
+        624,
+        666,
+        711,
+        759,
+        810
+      ],
+      "maxCoef": 810,
+      "coefSource": "AttackPowerCo",
+      "buffs": [],
+      "isSummonSkill": true,
+      "summonScalesFromMaster": true
+    },
+    "extra7": {
+      "id": 120702,
+      "name": "Extra Skill 7",
+      "damageType": 1,
+      "coefs": [
+        300,
+        319.5,
+        342,
+        364.5,
+        390,
+        415.5,
+        444,
+        474,
+        505.5,
+        540
+      ],
+      "maxCoef": 540,
+      "coefSource": "AttackPowerCo",
+      "buffs": [
+        {
+          "statusId": 1207112,
+          "targetCamps": 1,
+          "target": "enemy",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ],
+      "isSummonSkill": true,
+      "summonScalesFromMaster": true
     }
   }
 }

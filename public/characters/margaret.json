@@ -16,7 +16,82 @@
       25
     ]
   ],
+  "chains": [
+    {
+      "id": 61201,
+      "name": "Radiance",
+      "description": "Radiance",
+      "effects": []
+    },
+    {
+      "id": 61202,
+      "name": "Energy Boost I",
+      "description": "Energy Boost I",
+      "effects": []
+    },
+    {
+      "id": 61203,
+      "name": "Counsel",
+      "description": "Counsel",
+      "effects": []
+    },
+    {
+      "id": 61204,
+      "name": "Reciprocity",
+      "description": "Reciprocity",
+      "effects": []
+    },
+    {
+      "id": 61205,
+      "name": "Energy Boost II",
+      "description": "Energy Boost II",
+      "effects": []
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 61200,
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 15,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
   "skills": {
+    "characteristic": {
+      "id": 6120,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 1608303,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.aura",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 1608304,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
     "normalAttack": {
       "id": 6121,
       "name": "Margaret - Normal Attack 1",
@@ -33,7 +108,9 @@
         104,
         112
       ],
-      "maxCoef": 112
+      "maxCoef": 112,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 6122,
@@ -51,7 +128,9 @@
         237,
         256
       ],
-      "maxCoef": 256
+      "maxCoef": 256,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 6123,
@@ -69,25 +148,15 @@
         8.88,
         9.6
       ],
-      "maxCoef": 9.6
+      "maxCoef": 9.6,
+      "coefSource": "Data",
+      "buffs": []
     },
     "passive": {
       "id": 6124,
       "name": "Margaret - Talent",
       "damageType": 0,
-      "coefs": [
-        5,
-        5.4,
-        5.83,
-        6.3,
-        6.8,
-        7.35,
-        7.93,
-        8.57,
-        9.25,
-        10
-      ],
-      "maxCoef": 10
+      "buffs": []
     }
   }
 }

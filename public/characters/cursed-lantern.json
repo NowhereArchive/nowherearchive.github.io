@@ -3,13 +3,17 @@
   "name": "Cursed Lantern",
   "baseAtk": 1,
   "grades": [],
+  "chains": [],
+  "phasePassives": [],
   "skills": {
     "normalAttack": {
       "id": 11500001,
-      "name": "",
+      "name": "Normal Attack",
       "damageType": 0,
       "coefs": [],
-      "maxCoef": null
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
     }
   }
 }

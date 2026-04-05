@@ -16,7 +16,112 @@
       50
     ]
   ],
+  "chains": [
+    {
+      "id": 140701,
+      "name": "Shackles Sync I",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 140702,
+      "name": "Gunfire Modification",
+      "description": "The effect of [Criminal Palpitations] also applies to [Jane - Type I Shell].",
+      "effects": []
+    },
+    {
+      "id": 140703,
+      "name": "Shackles Sync II",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 140704,
+      "name": "Notorious",
+      "description": "For each enemy death on the field, recovers 1 Energy. Can be triggered up to 3 times per second.",
+      "effects": []
+    },
+    {
+      "id": 140705,
+      "name": "Shackles Sync III",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 15,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 140700,
+      "effects": [
+        {
+          "propertyId": 55,
+          "key": "noWeakDmgBonus",
+          "label": "No Weakness Damage Bonus",
+          "statScreen": false,
+          "calcCat": "No Weakness Damage Bonus",
+          "add": 15,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
   "skills": {
+    "characteristic": {
+      "id": 14070,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 140704,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 17,
+              "key": "dmgBonus",
+              "label": "Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Damage Bonus (general)",
+              "add": 5,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
     "normalAttack": {
       "id": 14071,
       "name": "Jane - Type I Shell",
@@ -33,7 +138,19 @@
         150,
         162
       ],
-      "maxCoef": 162
+      "maxCoef": 162,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 140710,
+          "targetCamps": 1,
+          "target": "enemy",
+          "description": "Jane attacks with a grenade launcher, firing a grenade at the target's grid each time. When the grenade lands, it deals (Attack *?%) Physical Damage to all enemies within the single grid.",
+          "scripted": true,
+          "scriptName": "common.triggerfield",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "ultimate": {
       "id": 14075,
@@ -51,7 +168,9 @@
         543,
         586
       ],
-      "maxCoef": 586
+      "maxCoef": 586,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 14073,
@@ -69,25 +188,45 @@
         300,
         324
       ],
-      "maxCoef": 324
+      "maxCoef": 324,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 140730,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When dealing damage to the enemy for the first time, additionally deals (Attack *?%) Physical Damage, counting as Normal Attack Damage.",
+          "scripted": true,
+          "scriptName": "jane.passive",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 14074,
       "name": "Criminal Palpitations",
       "damageType": 0,
+      "buffs": []
+    },
+    "extra1": {
+      "id": 14072,
+      "name": "Jane - Type II Shell",
+      "damageType": 1,
       "coefs": [
-        10,
-        10.8,
-        11.7,
-        12.6,
-        13.6,
-        14.7,
-        15.9,
-        17.1,
-        18.5,
-        20
+        293,
+        316,
+        342,
+        369,
+        399,
+        431,
+        465,
+        502,
+        543,
+        586
       ],
-      "maxCoef": 20
+      "maxCoef": 586,
+      "coefSource": "Data",
+      "buffs": []
     }
   }
 }

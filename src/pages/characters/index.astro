@@ -38,18 +38,20 @@ const categories = [
       characters.characters.map(
         (character: {
           name: string;
+          slug: string;
           category: string;
           displayName: string;
           rank: string;
           libram: string;
           tendency: string;
         }) => {
-          const sanitizedName = sanitizeName(character.name);
+          const sanitizedName = sanitizeName(character.slug);
           const imagePath = `${ASSET_PRISON_URL}/${sanitizedName}/${sanitizedName}.png`;
           return (
             <div class="character-wrapper" data-category={character.category}>
               <CharacterCard
                 name={character.name}
+                slug={character.slug}
                 displayName={character.displayName}
                 rank={character.rank}
                 libram={character.libram}

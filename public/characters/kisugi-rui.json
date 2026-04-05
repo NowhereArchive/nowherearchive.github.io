@@ -16,7 +16,76 @@
       25
     ]
   ],
+  "chains": [
+    {
+      "id": 51201,
+      "name": "Shackles 1",
+      "description": "",
+      "effects": []
+    },
+    {
+      "id": 51202,
+      "name": "Shackles 2",
+      "description": "",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 51203,
+      "name": "Shackles 3",
+      "description": "",
+      "effects": []
+    },
+    {
+      "id": 51204,
+      "name": "Shackles 4",
+      "description": "",
+      "effects": []
+    },
+    {
+      "id": 51205,
+      "name": "Shackles 5",
+      "description": "",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
   "skills": {
+    "characteristic": {
+      "id": 5120,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 51200,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.energyfull",
+          "maxLevelEffects": []
+        }
+      ]
+    },
     "normalAttack": {
       "id": 5121,
       "name": "Cipherkey",
@@ -33,7 +102,19 @@
         104,
         112
       ],
-      "maxCoef": 112
+      "maxCoef": 112,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 51211,
+          "targetCamps": 1,
+          "target": "enemy",
+          "description": "",
+          "scripted": true,
+          "scriptName": "catseye.callingcard",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "ultimate": {
       "id": 5122,
@@ -51,7 +132,19 @@
         1296,
         1400
       ],
-      "maxCoef": 1400
+      "maxCoef": 1400,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 51211,
+          "targetCamps": 1,
+          "target": "enemy",
+          "description": "",
+          "scripted": true,
+          "scriptName": "catseye.callingcard",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "skill1": {
       "id": 5123,
@@ -69,25 +162,34 @@
         278,
         300
       ],
-      "maxCoef": 300
+      "maxCoef": 300,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 51230,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "catseye.artwork",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 51232,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "catseye.mieupassive",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 5124,
       "name": "Bandwidth Boost",
       "damageType": 0,
-      "coefs": [
-        20,
-        21.6,
-        23.299999,
-        25.200001,
-        27.200001,
-        29.4,
-        31.700001,
-        34.299999,
-        37,
-        40
-      ],
-      "maxCoef": 40
+      "buffs": []
     }
   }
 }

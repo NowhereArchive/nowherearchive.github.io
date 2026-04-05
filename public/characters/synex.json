@@ -16,7 +16,121 @@
       25
     ]
   ],
+  "chains": [
+    {
+      "id": 20901,
+      "name": "Calamity Messenger",
+      "description": "When passive [Umbral Laceration] hits, additionally recovers (Attack *200%) HP. The [Rift] mark inflicted now lasts for the entire battle.",
+      "effects": []
+    },
+    {
+      "id": 20902,
+      "name": "Shackles Sync I",
+      "description": "Attack increases by 5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 20903,
+      "name": "Chaos Vessel",
+      "description": "At the start of the battle, Synex reduces the damage taken by allied Sinners in front of her from [Rift] mark bearers by 15%, and increases the damage dealt by allied Sinners behind her to [Rift] mark bearers by 15% for the entire battle. If either effect cannot be granted to allied Sinners, Synex gains it instead.",
+      "effects": []
+    },
+    {
+      "id": 20904,
+      "name": "Energy Overflowing",
+      "description": "At the start of the battle, Synex gains 15 Energy.",
+      "effects": []
+    },
+    {
+      "id": 20905,
+      "name": "Shackles Sync II",
+      "description": "Attack increases by 5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
   "skills": {
+    "characteristic": {
+      "id": 2090,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 20900,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 57,
+              "key": "breakingDmgBonus",
+              "label": "Breaking Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Breaking Damage Bonus",
+              "add": 5,
+              "isPercent": true
+            },
+            {
+              "propertyId": 17,
+              "key": "dmgBonus",
+              "label": "Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Damage Bonus (general)",
+              "add": 5,
+              "isPercent": true
+            }
+          ]
+        },
+        {
+          "statusId": 20924,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.removebuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 20925,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.removebuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 20912,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.removebuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
     "normalAttack": {
       "id": 2091,
       "name": "Clawstorm",
@@ -33,7 +147,9 @@
         120,
         128
       ],
-      "maxCoef": 128
+      "maxCoef": 128,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 2092,
@@ -51,7 +167,38 @@
         102,
         110
       ],
-      "maxCoef": 110
+      "maxCoef": 110,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 20921,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Synex enters the [Blood Oath] state and enhances her normal attack for 20 seconds, during which Energy cannot be automatically recovered.\nEnhanced normal attack effect: Now deals (Attack *?%) True Damage 3 times to a single enemy per hit, and increases Attack Speed by 25% until the [Blood Oath] state ends, stacking up to 4 times.",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": [
+            {
+              "propertyId": 13,
+              "key": "energySpeed",
+              "label": "Energy Speed",
+              "statScreen": true,
+              "calcCat": null,
+              "add": -500,
+              "isPercent": true
+            }
+          ]
+        },
+        {
+          "statusId": 20922,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Synex enters the [Blood Oath] state and enhances her normal attack for 20 seconds, during which Energy cannot be automatically recovered.\nEnhanced normal attack effect: Now deals (Attack *?%) True Damage 3 times to a single enemy per hit, and increases Attack Speed by 25% until the [Blood Oath] state ends, stacking up to 4 times.",
+          "scripted": true,
+          "scriptName": "normalattack.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "skill1": {
       "id": 2093,
@@ -69,25 +216,34 @@
         338,
         365
       ],
-      "maxCoef": 365
+      "maxCoef": 365,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 20931,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Every 8 times Synex performs normal attack, she unleashes a special attack, dealing (Attack *?%) True Damage to all enemies within the skill range and inflicting a [Rift] mark. This skill's casting speed is affected by Attack Speed.",
+          "scripted": true,
+          "scriptName": "normalattack.addbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 20934,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Every 8 times Synex performs normal attack, she unleashes a special attack, dealing (Attack *?%) True Damage to all enemies within the skill range and inflicting a [Rift] mark. This skill's casting speed is affected by Attack Speed.",
+          "scripted": true,
+          "scriptName": "common.addbuffaftercasterbuffstart",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 2094,
       "name": "Resonant Corrosion",
       "damageType": 0,
-      "coefs": [
-        0.5,
-        0.54,
-        0.58,
-        0.63,
-        0.68,
-        0.73,
-        0.79,
-        0.86,
-        0.93,
-        1
-      ],
-      "maxCoef": 1
+      "buffs": []
     },
     "exclusive": {
       "id": 2095,
@@ -98,7 +254,53 @@
         750,
         1000
       ],
-      "maxCoef": 1000
+      "maxCoef": 1000,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "extra1": {
+      "id": 2096,
+      "name": "Extra Skill 1",
+      "damageType": 4,
+      "coefs": [
+        182,
+        197,
+        213,
+        230,
+        248,
+        268,
+        289,
+        313,
+        338,
+        365
+      ],
+      "maxCoef": 365,
+      "coefSource": "AttackPowerCo",
+      "buffs": [],
+      "isSummonSkill": true,
+      "summonScalesFromMaster": true
+    },
+    "extra2": {
+      "id": 2097,
+      "name": "Extra Skill 2",
+      "damageType": 4,
+      "coefs": [
+        55,
+        60,
+        64,
+        70,
+        75,
+        81,
+        88,
+        95,
+        102,
+        110
+      ],
+      "maxCoef": 110,
+      "coefSource": "AttackPowerCo",
+      "buffs": [],
+      "isSummonSkill": true,
+      "summonScalesFromMaster": true
     }
   }
 }

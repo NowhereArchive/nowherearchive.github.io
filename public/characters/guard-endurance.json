@@ -3,20 +3,55 @@
   "name": "Guard - Endurance",
   "baseAtk": 100,
   "grades": [],
+  "chains": [],
+  "phasePassives": [],
   "skills": {
     "normalAttack": {
       "id": 30000005,
-      "name": "",
+      "name": "Normal Attack",
       "damageType": 1,
       "coefs": [],
-      "maxCoef": null
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 11850405,
       "name": "[] Summons 1 mob every 7 seconds, up to 3 times. Becomes Invincible while summoning.",
       "damageType": 1,
       "coefs": [],
-      "maxCoef": null
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 11850405,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "[] Summons 1 mob every 7 seconds, up to 3 times. Becomes Invincible while summoning.",
+          "scripted": true,
+          "scriptName": "common.triggersummon",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 30000003,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "[] Summons 1 mob every 7 seconds, up to 3 times. Becomes Invincible while summoning.",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": [
+            {
+              "propertyId": 1,
+              "key": "hp",
+              "label": "HP",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 50,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
     }
   }
 }

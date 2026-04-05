@@ -3,6 +3,8 @@
   "name": "Serpent",
   "baseAtk": 156,
   "grades": [],
+  "chains": [],
+  "phasePassives": [],
   "skills": {
     "normalAttack": {
       "id": 3031,
@@ -20,14 +22,18 @@
         135,
         144
       ],
-      "maxCoef": 144
+      "maxCoef": 144,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 91003032,
       "name": "Serpent Constriction",
       "damageType": 2,
       "coefs": [],
-      "maxCoef": null
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
     }
   }
 }

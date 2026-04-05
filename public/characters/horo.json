@@ -16,24 +16,130 @@
       50
     ]
   ],
+  "chains": [
+    {
+      "id": 120501,
+      "name": "Decimate",
+      "description": "While [Battle Mark] lasts, Horo gets 20% Physical Penetration.",
+      "effects": []
+    },
+    {
+      "id": 120502,
+      "name": "Shackles Sync I",
+      "description": "Damage increase 5%",
+      "effects": [
+        {
+          "propertyId": 17,
+          "key": "dmgBonus",
+          "label": "Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Damage Bonus (general)",
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 120503,
+      "name": "Plunder",
+      "description": "Gains 1 extra energy every time [Sweep] is used.",
+      "effects": []
+    },
+    {
+      "id": 120504,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption is reduced by 3 points.",
+      "effects": []
+    },
+    {
+      "id": 120505,
+      "name": "Shackles Sync II",
+      "description": "Damage increase 5%",
+      "effects": [
+        {
+          "propertyId": 17,
+          "key": "dmgBonus",
+          "label": "Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Damage Bonus (general)",
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 120506,
+      "effects": [
+        {
+          "propertyId": 45,
+          "key": "property_45",
+          "label": "Property 45",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
   "skills": {
+    "characteristic": {
+      "id": 12050,
+      "name": "Extra Passive",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 120506,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 120509,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 1,
+              "key": "hp",
+              "label": "HP",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 10,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
     "normalAttack": {
       "id": 12058,
       "name": "Heavy Axe",
       "damageType": 1,
       "coefs": [
-        103,
-        110,
-        117,
-        125,
-        134,
-        143,
-        152,
-        163,
-        174,
-        185
+        300,
+        320,
+        342,
+        365,
+        390,
+        416,
+        444,
+        474,
+        506,
+        540
       ],
-      "maxCoef": 185
+      "maxCoef": 540,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 12052,
@@ -51,7 +157,9 @@
         1012,
         1080
       ],
-      "maxCoef": 1080
+      "maxCoef": 1080,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 12053,
@@ -69,25 +177,57 @@
         18.6,
         19.5
       ],
-      "maxCoef": 19.5
+      "maxCoef": 19.5,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 120531,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Horo activates her [Battle Mark] every 6 times she deals damage. An activated mark reduces damage Horo takes by ?% and turns her every third normal attack into [Sweep], dealing Physical Damage to enemies within a 3x2 area in front of her. The effect is removed if she deals no damage in 6 seconds. The Damage Coefficient of [Sweep] increases with her Normal Attack level.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 12054,
       "name": "Devour",
       "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 1205419,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "For each enemy hit by [Sweep], Horo restores ?% of her Max HP. This is effective to up to 6 enemies at a time.",
+          "scripted": true,
+          "scriptName": "skill.replace",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "extra1": {
+      "id": 12051,
+      "name": "Heavy Axe",
+      "damageType": 1,
       "coefs": [
-        2,
-        2.1,
-        2.2,
-        2.3,
-        2.4,
-        2.5,
-        2.6,
-        2.7,
-        2.8,
-        3
+        103,
+        110,
+        117,
+        125,
+        134,
+        143,
+        152,
+        163,
+        174,
+        185
       ],
-      "maxCoef": 3
+      "maxCoef": 185,
+      "coefSource": "AttackPowerCo",
+      "buffs": [],
+      "isSummonSkill": true,
+      "summonScalesFromMaster": true
     }
   }
 }

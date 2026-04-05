@@ -3,6 +3,8 @@
   "name": "Labyrinth",
   "baseAtk": 136,
   "grades": [],
+  "chains": [],
+  "phasePassives": [],
   "skills": {
     "normalAttack": {
       "id": 23011,
@@ -20,14 +22,18 @@
         165,
         176
       ],
-      "maxCoef": 176
+      "maxCoef": 176,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 91023012,
       "name": "Purge Order",
       "damageType": 1,
       "coefs": [],
-      "maxCoef": null
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 23013,
@@ -45,7 +51,19 @@
         11.5,
         12
       ],
-      "maxCoef": 12
+      "maxCoef": 12,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 230131,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When causing damage from behind the enemies, Labyrinth gains a ?% Attack increase.",
+          "scripted": true,
+          "scriptName": "renou.passive",
+          "maxLevelEffects": []
+        }
+      ]
     }
   }
 }

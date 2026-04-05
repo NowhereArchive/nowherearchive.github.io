@@ -3,6 +3,8 @@
   "name": "Cabernet",
   "baseAtk": 128,
   "grades": [],
+  "chains": [],
+  "phasePassives": [],
   "skills": {
     "normalAttack": {
       "id": 6031,
@@ -20,14 +22,18 @@
         142,
         152
       ],
-      "maxCoef": 152
+      "maxCoef": 152,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 91006032,
       "name": "Thirst and Hunger",
       "damageType": 0,
       "coefs": [],
-      "maxCoef": null
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
     }
   }
 }

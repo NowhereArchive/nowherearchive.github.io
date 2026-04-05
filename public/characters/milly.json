@@ -16,7 +16,66 @@
       25
     ]
   ],
+  "chains": [
+    {
+      "id": 51001,
+      "name": "Sugar Snare",
+      "description": "When [Sweet Burst] or [Honeytrap] is triggered, the other effect is also triggered simultaneously. The triggered effect ignores [Passive] and [Talent] cooldowns.",
+      "effects": []
+    },
+    {
+      "id": 51002,
+      "name": "Shackles Sync I",
+      "description": "Attack increases by 5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 51003,
+      "name": "Transient Joy",
+      "description": "When [Passive] or [Talent] reaches maximum stacks, Milly increases the buff effects they provide by 50%.",
+      "effects": []
+    },
+    {
+      "id": 51004,
+      "name": "Energy Overflowing",
+      "description": "At the start of the battle, Milly gains 15 Energy.",
+      "effects": []
+    },
+    {
+      "id": 51005,
+      "name": "Shackles Sync II",
+      "description": "Attack increases by 5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
   "skills": {
+    "characteristic": {
+      "id": 5100,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": []
+    },
     "normalAttack": {
       "id": 5101,
       "name": "Stinger's Kiss",
@@ -33,25 +92,29 @@
         102,
         110
       ],
-      "maxCoef": 110
+      "maxCoef": 110,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 5102,
       "name": "Glazed Dance",
       "damageType": 0,
       "coefs": [
-        188,
-        203,
-        219,
-        236,
-        255,
-        276,
-        298,
-        321,
-        347,
-        375
+        600,
+        648,
+        700,
+        756,
+        816,
+        882,
+        952,
+        1029,
+        1111,
+        1200
       ],
-      "maxCoef": 375
+      "maxCoef": 1200,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 5103,
@@ -69,25 +132,35 @@
         93,
         100
       ],
-      "maxCoef": 100
+      "maxCoef": 100,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 51030,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When an enemy with the [Honey] mark receives skill damage from an allied unit, [Sweet Duet] is triggered once.\n[Sweet Duet]: Milly deals (Attack *?%) Magic Damage to the enemy with the [Honey] mark and increases the Magic Damage of 1 allied Sinner by ?%, stacking up to 10 times. [Sweet Duet] prioritizes allied Sinners with the highest Attack who haven't reached the maximum stack count. This effect can be triggered up to twice per second.",
+          "scripted": true,
+          "scriptName": "milly.passive",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 5104,
       "name": "Sweet Nothings",
       "damageType": 0,
-      "coefs": [
-        50,
-        54,
-        58,
-        63,
-        68,
-        73,
-        79,
-        86,
-        93,
-        100
-      ],
-      "maxCoef": 100
+      "buffs": [
+        {
+          "statusId": 51040,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When an enemy with the [Honey] mark receives Normal Attack Damage from an allied unit, [Honeytrap] is triggered once.\n[Honeytrap]: Milly deals (Attack *?%) Magic Damage to the enemy with the [Honey] mark and increases the Magic Damage taken by that enemy by ?%, stacking up to 30 times. When the [Honey] mark is transferred, this effect is transferred with it. [Honeytrap] can be triggered up to twice per second.",
+          "scripted": true,
+          "scriptName": "milly.passive",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "exclusive": {
       "id": 5105,
@@ -98,7 +171,9 @@
         375,
         500
       ],
-      "maxCoef": 500
+      "maxCoef": 500,
+      "coefSource": "Data",
+      "buffs": []
     }
   }
 }

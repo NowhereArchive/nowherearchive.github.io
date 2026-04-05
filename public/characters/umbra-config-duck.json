@@ -3,20 +3,30 @@
   "name": "Umbra Config Duck",
   "baseAtk": 150,
   "grades": [],
+  "chains": [],
+  "phasePassives": [],
   "skills": {
     "normalAttack": {
       "id": 97002301,
-      "name": "",
+      "name": "Normal Attack",
       "damageType": 2,
-      "coefs": [],
-      "maxCoef": null
+      "coefs": [
+        100
+      ],
+      "maxCoef": 100,
+      "coefSource": "AttackPowerCo",
+      "buffs": []
     },
     "ultimate": {
       "id": 110007011,
       "name": "Config Rage",
       "damageType": 4,
-      "coefs": [],
-      "maxCoef": null
+      "coefs": [
+        100
+      ],
+      "maxCoef": 100,
+      "coefSource": "AttackPowerCo",
+      "buffs": []
     }
   }
 }

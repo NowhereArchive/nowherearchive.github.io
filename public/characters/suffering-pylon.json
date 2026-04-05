@@ -12,15 +12,17 @@
       35
     ]
   ],
+  "chains": [],
+  "phasePassives": [],
   "skills": {
     "skill1": {
       "id": 30011,
-      "name": "",
+      "name": "Active Skill (S1)",
       "damageType": 1,
-      "coefs": [
-        0
-      ],
-      "maxCoef": 0
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
     }
   }
 }

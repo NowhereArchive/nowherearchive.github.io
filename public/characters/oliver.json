@@ -16,7 +16,66 @@
       50
     ]
   ],
+  "chains": [
+    {
+      "id": 150501,
+      "name": "Everlasting Love",
+      "description": "The [Puppet] mark added by [Puppet Game] is extended by 3 seconds.",
+      "effects": []
+    },
+    {
+      "id": 150502,
+      "name": "Shackles Sync I",
+      "description": "Magic Penetration +7.5%",
+      "effects": [
+        {
+          "propertyId": 10,
+          "key": "mpenPct",
+          "label": "Magic Pen %",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 7.5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 150503,
+      "name": "Lucky Toy",
+      "description": "Each time an enemy marked with [Puppet] appears on the battlefield, Oliver gains a 5% Magic Penetration bonus, capped at 5 stacks.",
+      "effects": []
+    },
+    {
+      "id": 150504,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption reduced by 3 points",
+      "effects": []
+    },
+    {
+      "id": 150505,
+      "name": "Shackles Sync II",
+      "description": "Magic Penetration +7.5%",
+      "effects": [
+        {
+          "propertyId": 10,
+          "key": "mpenPct",
+          "label": "Magic Pen %",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 7.5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
   "skills": {
+    "characteristic": {
+      "id": 15050,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": []
+    },
     "normalAttack": {
       "id": 15051,
       "name": "Puppet Strings",
@@ -33,7 +92,9 @@
         89,
         95
       ],
-      "maxCoef": 95
+      "maxCoef": 95,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 15052,
@@ -51,7 +112,9 @@
         169,
         180
       ],
-      "maxCoef": 180
+      "maxCoef": 180,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 15053,
@@ -69,25 +132,44 @@
         84,
         90
       ],
-      "maxCoef": 90
+      "maxCoef": 90,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 150531,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "On hit, [Puppet Strings] applies [Puppet] to enemies, dealing (Attack *?%) Magic Damage per second for 6 seconds.",
+          "scripted": true,
+          "scriptName": "normalattack.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 15054,
       "name": "Love the New, Loathe the Old",
       "damageType": 0,
-      "coefs": [
-        110,
-        117,
-        125,
-        134,
-        143,
-        152,
-        163,
-        174,
-        185,
-        198
-      ],
-      "maxCoef": 198
+      "buffs": [
+        {
+          "statusId": 150541,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When an enemy recovers from the [Puppet] effect, Oliver deals (?% of Attack damage) Magic Damage to this enemy.",
+          "scripted": true,
+          "scriptName": "geji.passive",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 1505000,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When an enemy recovers from the [Puppet] effect, Oliver deals (?% of Attack damage) Magic Damage to this enemy.",
+          "scripted": true,
+          "scriptName": "common.stateaddbuff",
+          "maxLevelEffects": []
+        }
+      ]
     }
   }
 }

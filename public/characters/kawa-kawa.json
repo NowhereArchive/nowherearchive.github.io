@@ -16,7 +16,85 @@
       50
     ]
   ],
+  "chains": [
+    {
+      "id": 110301,
+      "name": "First Step",
+      "description": "At the start of the battle, Kawa-kawa immediately places a [Protective Beacon] on his current grid.",
+      "effects": []
+    },
+    {
+      "id": 110302,
+      "name": "Shackles Sync I",
+      "description": "Healing Effect +5%",
+      "effects": [
+        {
+          "propertyId": 43,
+          "key": "property_43",
+          "label": "Property 43",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 110303,
+      "name": "Shelter",
+      "description": "For every [Protective Beacon] on the battlefield, Kawa-kawa gains a 3% received healing effect increase bonus, capped at 6 stacks.",
+      "effects": []
+    },
+    {
+      "id": 110304,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption reduced by 3 points",
+      "effects": []
+    },
+    {
+      "id": 110305,
+      "name": "Shackles Sync II",
+      "description": "Healing Effect +5%",
+      "effects": [
+        {
+          "propertyId": 43,
+          "key": "property_43",
+          "label": "Property 43",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
   "skills": {
+    "characteristic": {
+      "id": 11030,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 110300,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 4,
+              "key": "magicResist",
+              "label": "Magic Resist",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 5,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
     "normalAttack": {
       "id": 11031,
       "name": "Defensive Counterattack",
@@ -33,7 +111,9 @@
         130,
         139
       ],
-      "maxCoef": 139
+      "maxCoef": 139,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 11032,
@@ -51,7 +131,9 @@
         1.8,
         2
       ],
-      "maxCoef": 2
+      "maxCoef": 2,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 11033,
@@ -69,25 +151,73 @@
         18.5,
         19.799999
       ],
-      "maxCoef": 19.799999
+      "maxCoef": 19.799999,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 110331,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "After Kawa-kawa performs [Protective Beacon], all [Protective Beacon] are activated and recovers the allied Sinners with the Beacons ?% Max HP.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 11034,
       "name": "Windproof Pulse",
       "damageType": 0,
-      "coefs": [
-        2,
-        2.1,
-        2.3,
-        2.4,
-        2.6,
-        2.8,
-        3,
-        3.2,
-        3.4,
-        3.6
-      ],
-      "maxCoef": 3.6
+      "buffs": [
+        {
+          "statusId": 110341,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Each [Protective Beacon] on the battlefield gives Kawa-kawa ?% Magic Resistance bonus. The effect can stack up to 6 times.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": [
+            {
+              "propertyId": 4,
+              "key": "magicResist",
+              "label": "Magic Resist",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 10,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "extra1": {
+      "id": 11037,
+      "name": "Extra Skill 1",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 110345,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "extra2": {
+      "id": 11036,
+      "name": "Extra Skill 2",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
     }
   }
 }

@@ -16,7 +16,93 @@
       25
     ]
   ],
+  "chains": [
+    {
+      "id": 60601,
+      "name": "Fiery Cauldron",
+      "description": "When Du Ruo is present on the battlefield, all allied units gain a 20% damage boost for 15 seconds after entering the battle.",
+      "effects": []
+    },
+    {
+      "id": 60602,
+      "name": "Shackles Sync I",
+      "description": "Energy Recovery speed +7.5%.",
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 7.5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 60603,
+      "name": "Emerald Mist",
+      "description": "[Offering] deals 50% more damage. When [Offering] hits only one enemy, the damage dealt further increases by 100%.",
+      "effects": []
+    },
+    {
+      "id": 60604,
+      "name": "Mystical Pond",
+      "description": "Each time an allied Sinner dies, Du Ruo gains 50 energy. This effect can only be triggered once per battle.",
+      "effects": []
+    },
+    {
+      "id": 60605,
+      "name": "Shackles Sync II",
+      "description": "Energy Recovery speed +7.5%.",
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 7.5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 60600,
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 15,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
   "skills": {
+    "characteristic": {
+      "id": 6060,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 60600,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.energyfull",
+          "maxLevelEffects": []
+        }
+      ]
+    },
     "normalAttack": {
       "id": 6061,
       "name": "Adrift Smoke",
@@ -33,7 +119,9 @@
         68.800003,
         72
       ],
-      "maxCoef": 72
+      "maxCoef": 72,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 6062,
@@ -51,7 +139,19 @@
         201,
         210
       ],
-      "maxCoef": 210
+      "maxCoef": 210,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 60624,
+          "targetCamps": 2,
+          "target": "self",
+          "description": "Du Ruo grants an allied Sinner [Offering] for 6 seconds. [Ritual Censer] can be charged up to twice.\n[Offering]: Activates every 2 seconds, restoring (Du Ruo's Attack *?%) HP for all allied units within the surrounding 3x3 square. If the Sinner receives [Offering] again during its effective period, they die instantly.",
+          "scripted": true,
+          "scriptName": "geji.marking",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "skill1": {
       "id": 6063,
@@ -69,32 +169,34 @@
         556,
         600
       ],
-      "maxCoef": 600
+      "maxCoef": 600,
+      "coefSource": "Data",
+      "buffs": []
     },
     "passive": {
       "id": 6064,
       "name": "Myriad Skies",
       "damageType": 0,
-      "coefs": [
-        2,
-        2.1,
-        2.2,
-        2.3,
-        2.4,
-        2.5,
-        2.6,
-        2.7,
-        2.8,
-        3
-      ],
-      "maxCoef": 3
+      "buffs": [
+        {
+          "statusId": 60641,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Each time [Offering] is granted, Du Ruo gains an Attack boost of ?%, stacking up to 6 times and lasting for the entire battle.",
+          "scripted": true,
+          "scriptName": "duruo.talent",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "exclusive": {
       "id": 6065,
       "name": "Life Preservation",
       "damageType": 0,
       "coefs": [],
-      "maxCoef": null
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
     }
   }
 }

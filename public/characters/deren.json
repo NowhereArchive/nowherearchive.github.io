@@ -16,7 +16,120 @@
       25
     ]
   ],
+  "chains": [
+    {
+      "id": 20301,
+      "name": "Montage",
+      "description": "[24 Frames] produces one stack of [Interfere] at the start of a battle, and the upper limit of stack number is increased by 1.",
+      "effects": []
+    },
+    {
+      "id": 20302,
+      "name": "Shackles Sync I",
+      "description": "CRIT Rate is increased by 8%.",
+      "effects": [
+        {
+          "propertyId": 5,
+          "key": "critRate",
+          "label": "Crit Rate",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 8,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 20303,
+      "name": "Long Take",
+      "description": "[Fast Motion] gains an effect: With each stack of [Interfere] produced, the damage dealt by all allied Sinners +3%.",
+      "effects": []
+    },
+    {
+      "id": 20304,
+      "name": "Energy Overflowing",
+      "description": "Deren gains 18 energy at the start of a battle.",
+      "effects": []
+    },
+    {
+      "id": 20305,
+      "name": "Shackles Sync II",
+      "description": "CRIT Rate is increased by 8%.",
+      "effects": [
+        {
+          "propertyId": 5,
+          "key": "critRate",
+          "label": "Crit Rate",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 8,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 20306,
+      "effects": [
+        {
+          "propertyId": 17,
+          "key": "dmgBonus",
+          "label": "Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Damage Bonus (general)",
+          "add": 10,
+          "isPercent": true
+        },
+        {
+          "propertyId": 57,
+          "key": "breakingDmgBonus",
+          "label": "Breaking Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Breaking Damage Bonus",
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
   "skills": {
+    "characteristic": {
+      "id": 2030,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 20301,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 17,
+              "key": "dmgBonus",
+              "label": "Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Damage Bonus (general)",
+              "add": 5,
+              "isPercent": true
+            },
+            {
+              "propertyId": 57,
+              "key": "breakingDmgBonus",
+              "label": "Breaking Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Breaking Damage Bonus",
+              "add": 5,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
     "normalAttack": {
       "id": 2031,
       "name": "Edit",
@@ -33,7 +146,9 @@
         121,
         130
       ],
-      "maxCoef": 130
+      "maxCoef": 130,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 2032,
@@ -51,43 +166,64 @@
         683,
         729
       ],
-      "maxCoef": 729
+      "maxCoef": 729,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 2033,
       "name": "24 Frames",
       "damageType": 0,
       "coefs": [
-        24,
-        25.6,
-        27.299999,
-        29.200001,
-        31.1,
-        33.200001,
-        35.5,
-        37.900002,
-        40.400002,
-        43.200001
+        135,
+        144,
+        154,
+        164,
+        175,
+        187,
+        200,
+        213,
+        228,
+        243
       ],
-      "maxCoef": 43.200001
+      "maxCoef": 243,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 20331,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "These actions by Deren begin to interfere with reality: \"survive more than 24 seconds in the battle\", \"perform Normal Attack 12 times\", and \"use Ultimate 3 times.\" Reaching certain counts of [Interfere] can give Deren different buffs in this battle.\n[Interfere] *1: [Edit] now allows Deren to attack rapidly instead and its Damage Coefficient increases by ?%.\n[Interfere] *2: [Screenplay] now allows Deren to move to the target grid instead and deal Physical Damage and 1 Core Damage to all enemies in the two grids in front. Its Damage Coefficient increases by ?%. Can be charged up to 2 times. CRIT is now possible with this Ultimate. CRIT effect depends on Deren's CRIT Rate and CRIT Damage bonus.\n[Interfere] *3: Each time after Deren moves, she gains a ?% Attack Speed boost for 10 seconds.",
+          "scripted": true,
+          "scriptName": "deren.passive",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 20336,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "These actions by Deren begin to interfere with reality: \"survive more than 24 seconds in the battle\", \"perform Normal Attack 12 times\", and \"use Ultimate 3 times.\" Reaching certain counts of [Interfere] can give Deren different buffs in this battle.\n[Interfere] *1: [Edit] now allows Deren to attack rapidly instead and its Damage Coefficient increases by ?%.\n[Interfere] *2: [Screenplay] now allows Deren to move to the target grid instead and deal Physical Damage and 1 Core Damage to all enemies in the two grids in front. Its Damage Coefficient increases by ?%. Can be charged up to 2 times. CRIT is now possible with this Ultimate. CRIT effect depends on Deren's CRIT Rate and CRIT Damage bonus.\n[Interfere] *3: Each time after Deren moves, she gains a ?% Attack Speed boost for 10 seconds.",
+          "scripted": true,
+          "scriptName": "deren.passive1",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 2034,
       "name": "Fast Motion",
       "damageType": 0,
-      "coefs": [
-        5,
-        5.4,
-        5.8,
-        6.3,
-        6.8,
-        7.3,
-        7.9,
-        8.6,
-        9.3,
-        10
-      ],
-      "maxCoef": 10
+      "buffs": [
+        {
+          "statusId": 20341,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "For each stack of [Interfere], Deren gains a ?% CRIT Rate boost and ?% CRIT Damage boost.",
+          "scripted": true,
+          "scriptName": "deren.chains",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "exclusive": {
       "id": 2035,
@@ -98,7 +234,9 @@
         250,
         300
       ],
-      "maxCoef": 300
+      "maxCoef": 300,
+      "coefSource": "Data",
+      "buffs": []
     }
   }
 }

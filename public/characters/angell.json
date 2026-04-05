@@ -16,7 +16,102 @@
       25
     ]
   ],
+  "chains": [
+    {
+      "id": 30601,
+      "name": "Confrontation",
+      "description": "[Sword of Conquest] deals two additional hits of damage without consuming [Blade Shades].",
+      "effects": []
+    },
+    {
+      "id": 30602,
+      "name": "Shackles Sync I",
+      "description": "Attack Speed +8%.",
+      "effects": [
+        {
+          "propertyId": 11,
+          "key": "atkSpeed",
+          "label": "ATK Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 8,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 30603,
+      "name": "Super Sense",
+      "description": "[Blade Shade] collection period reduces by 3 seconds. [Flaw Exploitation] reduces the [Blade Shade] collection period by 0.3 seconds more each time.",
+      "effects": []
+    },
+    {
+      "id": 30604,
+      "name": "Energy Overflowing",
+      "description": "At the start of the battle, Angell gains 15 Energy.",
+      "effects": []
+    },
+    {
+      "id": 30605,
+      "name": "Shackles Sync II",
+      "description": "Attack Speed +8%.",
+      "effects": [
+        {
+          "propertyId": 11,
+          "key": "atkSpeed",
+          "label": "ATK Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 8,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 30606,
+      "effects": [
+        {
+          "propertyId": 17,
+          "key": "dmgBonus",
+          "label": "Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Damage Bonus (general)",
+          "add": 10,
+          "isPercent": true
+        },
+        {
+          "propertyId": 57,
+          "key": "breakingDmgBonus",
+          "label": "Breaking Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Breaking Damage Bonus",
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
   "skills": {
+    "characteristic": {
+      "id": 3060,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 30607,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "angel.passive",
+          "maxLevelEffects": []
+        }
+      ]
+    },
     "normalAttack": {
       "id": 3061,
       "name": "Unsheathe",
@@ -33,7 +128,9 @@
         166.699997,
         180
       ],
-      "maxCoef": 180
+      "maxCoef": 180,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 3062,
@@ -51,7 +148,9 @@
         370,
         400
       ],
-      "maxCoef": 400
+      "maxCoef": 400,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 3063,
@@ -69,25 +168,35 @@
         6.5,
         7
       ],
-      "maxCoef": 7
+      "maxCoef": 7,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 30631,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "For each [Blade Shade] collected, Angell gains a ?% Damage boost, stacking up to 6 times. Once a certain number of [Blade Shades] are collected, Angell receives additional buffs in this battle.\n3 [Blade Shades] Collected: Each attack reduces the collection period of [Blade Shades] by 0.2 seconds.\n6 [Blade Shades] Collected: Slashes twice rapidly after every two normal attacks.",
+          "scripted": true,
+          "scriptName": "angel.achievement",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 3064,
       "name": "Invisible",
       "damageType": 0,
-      "coefs": [
-        20,
-        20.9,
-        21.9,
-        22.9,
-        23.9,
-        25.1,
-        26.200001,
-        27.4,
-        28.700001,
-        30
-      ],
-      "maxCoef": 30
+      "buffs": [
+        {
+          "statusId": 30651,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Has a ?% chance to be immune to the Damage when attacked by an enemy.",
+          "scripted": true,
+          "scriptName": "common.dodge",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "exclusive": {
       "id": 3065,
@@ -98,7 +207,9 @@
         1250,
         1500
       ],
-      "maxCoef": 1500
+      "maxCoef": 1500,
+      "coefSource": "Data",
+      "buffs": []
     }
   }
 }

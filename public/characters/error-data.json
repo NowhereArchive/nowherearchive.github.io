@@ -3,13 +3,33 @@
   "name": "Error Data",
   "baseAtk": 1,
   "grades": [],
+  "chains": [],
+  "phasePassives": [],
   "skills": {
     "passive": {
       "id": 11744101,
-      "name": "",
+      "name": "Passive (S1)",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 117401092,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "extra1": {
+      "id": 97006102,
+      "name": "Extra Skill 1",
       "damageType": 0,
       "coefs": [],
-      "maxCoef": null
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
     }
   }
 }

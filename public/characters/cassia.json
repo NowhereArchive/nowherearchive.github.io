@@ -16,7 +16,85 @@
       50
     ]
   ],
+  "chains": [
+    {
+      "id": 160701,
+      "name": "Aftertaste Harmony",
+      "description": "[Fragrance] Duration is extended by 4 seconds.",
+      "effects": []
+    },
+    {
+      "id": 160702,
+      "name": "Shackles Sync I",
+      "description": "Energy Recovery +7.5%",
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 7.5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 160703,
+      "name": "Ultimate Aroma",
+      "description": "[Resource Grab] Recovers an extra 1 Energy.",
+      "effects": []
+    },
+    {
+      "id": 160704,
+      "name": "Energy Overflowing",
+      "description": "At the start of the battle, Cassia gains 10 Energy.",
+      "effects": []
+    },
+    {
+      "id": 160705,
+      "name": "Shackles Sync II",
+      "description": "Energy Recovery +7.5%",
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 7.5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
   "skills": {
+    "characteristic": {
+      "id": 16070,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 160700,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 13,
+              "key": "energySpeed",
+              "label": "Energy Speed",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 10,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
     "normalAttack": {
       "id": 16071,
       "name": "Mauve Aroma",
@@ -33,7 +111,9 @@
         120,
         125.599998
       ],
-      "maxCoef": 125.599998
+      "maxCoef": 125.599998,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 16072,
@@ -51,43 +131,64 @@
         32.900002,
         35
       ],
-      "maxCoef": 35
+      "maxCoef": 35,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 16073,
       "name": "Solidify Youth",
       "damageType": 0,
       "coefs": [
-        6,
-        6.4,
-        6.7,
-        7.1,
-        7.5,
-        8,
-        8.4,
-        8.9,
-        9.4,
-        10
+        60,
+        64,
+        67,
+        71,
+        75,
+        80,
+        84,
+        89,
+        94,
+        100
       ],
-      "maxCoef": 10
+      "maxCoef": 100,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 160731,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "For every 20% Max HP an allied Sinner consumes by themselves in battle, the buff effects of [Fragrance] they receive increase by ?%, up to ?%.",
+          "scripted": true,
+          "scriptName": "cassia.passive",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 160732,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "For every 20% Max HP an allied Sinner consumes by themselves in battle, the buff effects of [Fragrance] they receive increase by ?%, up to ?%.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 16074,
       "name": "Exotic Fragrance",
       "damageType": 0,
-      "coefs": [
-        50,
-        54,
-        58.299999,
-        63,
-        68,
-        73.5,
-        79.400002,
-        85.699997,
-        92.599998,
-        100
-      ],
-      "maxCoef": 100
+      "buffs": [
+        {
+          "statusId": 160741,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Whenever allied Sinners consume HP by themselves, there is a 30% chance they will recover ?% of the consumed HP.",
+          "scripted": true,
+          "scriptName": "cassia.talent",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "exclusive": {
       "id": 16075,
@@ -98,7 +199,9 @@
         5,
         6
       ],
-      "maxCoef": 6
+      "maxCoef": 6,
+      "coefSource": "Data",
+      "buffs": []
     }
   }
 }

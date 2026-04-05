@@ -16,7 +16,76 @@
       25
     ]
   ],
+  "chains": [
+    {
+      "id": 30201,
+      "name": "Shackles Sync I",
+      "description": "Ultimate damage +10%",
+      "effects": [
+        {
+          "propertyId": 30,
+          "key": "skillDmgBonus",
+          "label": "Skill Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Skill Damage Bonus",
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 30202,
+      "name": "Deadly Shadows",
+      "description": "[Blanket of Shadows] increases up to 3 times.",
+      "effects": []
+    },
+    {
+      "id": 30203,
+      "name": "Shackles Sync II",
+      "description": "Ultimate damage +10%",
+      "effects": [
+        {
+          "propertyId": 30,
+          "key": "skillDmgBonus",
+          "label": "Skill Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Skill Damage Bonus",
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 30204,
+      "name": "Shadow Legion",
+      "description": "At the start of the battle, the whole team gains a 4% extra Damage bonus for each Umbra Sinner, capped at 12%.",
+      "effects": []
+    },
+    {
+      "id": 30205,
+      "name": "Shackles Sync III",
+      "description": "Ultimate damage +10%",
+      "effects": [
+        {
+          "propertyId": 30,
+          "key": "skillDmgBonus",
+          "label": "Skill Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Skill Damage Bonus",
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
   "skills": {
+    "characteristic": {
+      "id": 3020,
+      "name": "Extra Passive",
+      "damageType": 0,
+      "buffs": []
+    },
     "normalAttack": {
       "id": 3021,
       "name": "Shadow Attack",
@@ -33,7 +102,9 @@
         155,
         165
       ],
-      "maxCoef": 165
+      "maxCoef": 165,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 3022,
@@ -51,7 +122,46 @@
         675,
         720
       ],
-      "maxCoef": 720
+      "maxCoef": 720,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 30221,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "[Shadow Stealth]: Crache hides in shadow, during which she can't perform normal attacks, block enemies, or be targeted by enemies. She quits [Shadow Stealth] when she moves or casts [Shadow Blade].\n[Shadow Blade]: Crache can only cast [Shadow Blade] when she is in [Shadow Stealth], dealing (?% of her Attack) Physical Damage and 1 Core Damage to enemies within the 4 grids straight to her front.\nFor each second [Shadow Stealth] lasts, Crache gains a 5.5% Ultimate damage bonus, which can stack up to 60%.",
+          "scripted": true,
+          "scriptName": "skill.replace",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 30222,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "[Shadow Stealth]: Crache hides in shadow, during which she can't perform normal attacks, block enemies, or be targeted by enemies. She quits [Shadow Stealth] when she moves or casts [Shadow Blade].\n[Shadow Blade]: Crache can only cast [Shadow Blade] when she is in [Shadow Stealth], dealing (?% of her Attack) Physical Damage and 1 Core Damage to enemies within the 4 grids straight to her front.\nFor each second [Shadow Stealth] lasts, Crache gains a 5.5% Ultimate damage bonus, which can stack up to 60%.",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 30223,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "[Shadow Stealth]: Crache hides in shadow, during which she can't perform normal attacks, block enemies, or be targeted by enemies. She quits [Shadow Stealth] when she moves or casts [Shadow Blade].\n[Shadow Blade]: Crache can only cast [Shadow Blade] when she is in [Shadow Stealth], dealing (?% of her Attack) Physical Damage and 1 Core Damage to enemies within the 4 grids straight to her front.\nFor each second [Shadow Stealth] lasts, Crache gains a 5.5% Ultimate damage bonus, which can stack up to 60%.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 30225,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "[Shadow Stealth]: Crache hides in shadow, during which she can't perform normal attacks, block enemies, or be targeted by enemies. She quits [Shadow Stealth] when she moves or casts [Shadow Blade].\n[Shadow Blade]: Crache can only cast [Shadow Blade] when she is in [Shadow Stealth], dealing (?% of her Attack) Physical Damage and 1 Core Damage to enemies within the 4 grids straight to her front.\nFor each second [Shadow Stealth] lasts, Crache gains a 5.5% Ultimate damage bonus, which can stack up to 60%.",
+          "scripted": true,
+          "scriptName": "common.addextrablocked",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "skill1": {
       "id": 3023,
@@ -69,25 +179,35 @@
         354,
         378
       ],
-      "maxCoef": 378
+      "maxCoef": 378,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 30231,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "While in [Shadow Stealth], Crache creates a shadow every 6 seconds. When she casts [Shadow Blade], each shadow deals ?% additional Physical Damage. There can be up to 2 active shadows at a time. While [Shadow Stealth] is inactive, for every 10 seconds, a shadow disappears.",
+          "scripted": true,
+          "scriptName": "crache.passive",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 3024,
       "name": "Blanket of Shadows",
       "damageType": 0,
-      "coefs": [
-        10,
-        10.5,
-        10.9,
-        11.4,
-        12,
-        12.5,
-        13.1,
-        13.7,
-        14.3,
-        15
-      ],
-      "maxCoef": 15
+      "buffs": [
+        {
+          "statusId": 30241,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "For each shadow lost during the battle, Crache's Ultimate damage increases by ?%. The effect can stack up to 2 times.",
+          "scripted": true,
+          "scriptName": "crache.talent",
+          "maxLevelEffects": []
+        }
+      ]
     }
   }
 }

@@ -3,5 +3,7 @@
   "name": "Charger",
   "baseAtk": 1,
   "grades": [],
+  "chains": [],
+  "phasePassives": [],
   "skills": {}
 }

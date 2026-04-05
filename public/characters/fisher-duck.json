@@ -3,27 +3,35 @@
   "name": "Fisher Duck",
   "baseAtk": 800,
   "grades": [],
+  "chains": [],
+  "phasePassives": [],
   "skills": {
     "normalAttack": {
       "id": 96000001,
       "name": "Normal Attack",
       "damageType": 1,
       "coefs": [],
-      "maxCoef": null
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 96000002,
       "name": "All in One",
       "damageType": 1,
       "coefs": [],
-      "maxCoef": null
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
     },
     "exclusive": {
       "id": 96000003,
       "name": "Fishy Torpedo",
       "damageType": 1,
       "coefs": [],
-      "maxCoef": null
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
     }
   }
 }

@@ -3,20 +3,55 @@
   "name": "Raider - Synergy",
   "baseAtk": 130,
   "grades": [],
+  "chains": [],
+  "phasePassives": [],
   "skills": {
     "normalAttack": {
       "id": 30000005,
-      "name": "",
+      "name": "Normal Attack",
       "damageType": 1,
       "coefs": [],
-      "maxCoef": null
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 11850805,
       "name": "[Coordination] Recruits 1 additional unit of the same name.",
       "damageType": 1,
       "coefs": [],
-      "maxCoef": null
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 11850805,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "[Coordination] Recruits 1 additional unit of the same name.",
+          "scripted": true,
+          "scriptName": "common.triggersummon",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 30000003,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "[Coordination] Recruits 1 additional unit of the same name.",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": [
+            {
+              "propertyId": 1,
+              "key": "hp",
+              "label": "HP",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 50,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
     }
   }
 }

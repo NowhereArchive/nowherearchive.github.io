@@ -16,6 +16,132 @@
       5
     ]
   ],
+  "chains": [
+    {
+      "id": 7,
+      "name": "Shackles 7",
+      "description": "Talent: Also increases CRIT Rate by 10% for 10 seconds.",
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 3,
+          "isPercent": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Shackles 8",
+      "description": "Talent: When a target marked with Causality dies, deals AoE damage of 1 grid once.",
+      "effects": [
+        {
+          "propertyId": 1,
+          "key": "hp",
+          "label": "HP",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        },
+        {
+          "propertyId": 17,
+          "key": "dmgBonus",
+          "label": "Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Damage Bonus (general)",
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Shackles 9",
+      "description": "Ultimate: Attacks one more time.",
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 3,
+          "isPercent": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Shackles 10",
+      "description": "Passive: The damage dealt by Causality is modified to be true damage.",
+      "effects": [
+        {
+          "propertyId": 1,
+          "key": "hp",
+          "label": "HP",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        },
+        {
+          "propertyId": 17,
+          "key": "dmgBonus",
+          "label": "Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Damage Bonus (general)",
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Shackles 11",
+      "description": "Talent: Also increases CRIT Rate by 10% for 10 seconds.",
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 3,
+          "isPercent": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Shackles 12",
+      "description": "Talent: When a target marked with Causality dies, deals AoE damage of 1 grid once.",
+      "effects": [
+        {
+          "propertyId": 1,
+          "key": "hp",
+          "label": "HP",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        },
+        {
+          "propertyId": 17,
+          "key": "dmgBonus",
+          "label": "Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Damage Bonus (general)",
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
   "skills": {
     "normalAttack": {
       "id": 24011,
@@ -33,7 +159,9 @@
         194,
         204
       ],
-      "maxCoef": 204
+      "maxCoef": 204,
+      "coefSource": "Data",
+      "buffs": []
     }
   }
 }

@@ -16,7 +16,139 @@
       50
     ]
   ],
+  "chains": [
+    {
+      "id": 111101,
+      "name": "Shackles Sync I",
+      "description": "Defense increases by 10%.",
+      "effects": [
+        {
+          "propertyId": 3,
+          "key": "armor",
+          "label": "Armor",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 111102,
+      "name": "Resonance Corruption",
+      "description": "Passive [Signal Hijack]'s effects are enhanced, additionally reducing the Movement Speed of enemies within the skill's range by 30% and reducing their damage by 20%.",
+      "effects": []
+    },
+    {
+      "id": 111103,
+      "name": "Shackles Sync II",
+      "description": "Defense increases by 10%.",
+      "effects": [
+        {
+          "propertyId": 3,
+          "key": "armor",
+          "label": "Armor",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 111104,
+      "name": "Frequency Expansion",
+      "description": "At the start of battle, Siglinde additionally gains 10 stacks of [Shattered Blade].",
+      "effects": []
+    },
+    {
+      "id": 111105,
+      "name": "Shackles Sync III",
+      "description": "Defense increases by 10%.",
+      "effects": [
+        {
+          "propertyId": 3,
+          "key": "armor",
+          "label": "Armor",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 111106,
+      "effects": [
+        {
+          "propertyId": 3,
+          "key": "armor",
+          "label": "Armor",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
   "skills": {
+    "characteristic": {
+      "id": 11110,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 111107,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.changeblades",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 111100,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.changeblades",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 111108,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.changeblades",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 111119,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.removebuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 111120,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.removebuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
     "normalAttack": {
       "id": 11111,
       "name": "Pulse Interference",
@@ -33,7 +165,9 @@
         119,
         128
       ],
-      "maxCoef": 128
+      "maxCoef": 128,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 11112,
@@ -51,7 +185,9 @@
         333,
         360
       ],
-      "maxCoef": 360
+      "maxCoef": 360,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 11113,
@@ -69,25 +205,34 @@
         27.799999,
         30
       ],
-      "maxCoef": 30
+      "maxCoef": 30,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 111131,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "While in the [Radioactive] state, all enemies within the skill range take ?% more [Shattered Blade] damage until they leave the area or the Ultimate ends.",
+          "scripted": true,
+          "scriptName": "common.triggerfield",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 11114,
       "name": "Barrier Domain",
       "damageType": 0,
-      "coefs": [
-        2,
-        2.16,
-        2.33,
-        2.52,
-        2.72,
-        2.94,
-        3.18,
-        3.43,
-        3.7,
-        4
-      ],
-      "maxCoef": 4
+      "buffs": []
+    },
+    "extra1": {
+      "id": 11116,
+      "name": "Extra Skill 1",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
     }
   }
 }

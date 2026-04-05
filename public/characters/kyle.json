@@ -16,6 +16,8 @@
       5
     ]
   ],
+  "chains": [],
+  "phasePassives": [],
   "skills": {
     "normalAttack": {
       "id": 25011,
@@ -33,7 +35,9 @@
         193,
         206
       ],
-      "maxCoef": 206
+      "maxCoef": 206,
+      "coefSource": "Data",
+      "buffs": []
     }
   }
 }

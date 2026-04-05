@@ -16,7 +16,95 @@
       50
     ]
   ],
+  "chains": [
+    {
+      "id": 130601,
+      "name": "Shackles Sync I",
+      "description": "CRIT Rate is increased by 8%.",
+      "effects": [
+        {
+          "propertyId": 5,
+          "key": "critRate",
+          "label": "Crit Rate",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 8,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 130602,
+      "name": "Multiple Exposure",
+      "description": "When [Don't Look At Me!] is used, all allied Sinners gain a CRIT Damage increase of 40%.",
+      "effects": []
+    },
+    {
+      "id": 130603,
+      "name": "Shackles Sync II",
+      "description": "CRIT Rate is increased by 8%.",
+      "effects": [
+        {
+          "propertyId": 5,
+          "key": "critRate",
+          "label": "Crit Rate",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 8,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 130604,
+      "name": "Zoom",
+      "description": "[Don't Look At Me!] Laser's Energy Consumption is reduced to 6 points per second.",
+      "effects": []
+    },
+    {
+      "id": 130605,
+      "name": "Shackles Sync III",
+      "description": "CRIT Rate is increased by 8%.",
+      "effects": [
+        {
+          "propertyId": 5,
+          "key": "critRate",
+          "label": "Crit Rate",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 8,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
   "skills": {
+    "characteristic": {
+      "id": 13060,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 130607,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "lynn.chain",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 130600,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.changeenergy",
+          "maxLevelEffects": []
+        }
+      ]
+    },
     "normalAttack": {
       "id": 13061,
       "name": "Stay Back!",
@@ -33,25 +121,66 @@
         129,
         138
       ],
-      "maxCoef": 138
+      "maxCoef": 138,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 13062,
       "name": "Don't Look At Me!",
       "damageType": 0,
       "coefs": [
-        80,
-        85,
-        91,
-        97,
-        104,
-        111,
-        118,
-        126,
-        135,
-        144
+        160,
+        171,
+        182,
+        195,
+        208,
+        222,
+        237,
+        253,
+        270,
+        288
       ],
-      "maxCoef": 144
+      "maxCoef": 288,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 130661,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Lynn takes off her helmet and emits an all-piercing laser from her eyes, dealing (Attack *?%) Physical Damage each second to all enemies within range and applies a stack of [Light Speck]. [Light Speck] lasts for 4 seconds. For every 3 stacks of [Light Speck] the enemy gets, Lynn deals (Attack *?%) Physical Damage and 1 Core Damage to them.\nWhile using [Don't Look At Me!], Lynn spends 7 Energy each second and does not restore Energy automatically. When she's out of Energy, suffers any control effect or performs other actions, the skill stops.\nCRIT is possible with [Don't Look At Me!]. CRIT effect depends on Lynn's CRIT Rate and CRIT Damage bonus.",
+          "scripted": true,
+          "scriptName": "dudu.marking",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 130663,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Lynn takes off her helmet and emits an all-piercing laser from her eyes, dealing (Attack *?%) Physical Damage each second to all enemies within range and applies a stack of [Light Speck]. [Light Speck] lasts for 4 seconds. For every 3 stacks of [Light Speck] the enemy gets, Lynn deals (Attack *?%) Physical Damage and 1 Core Damage to them.\nWhile using [Don't Look At Me!], Lynn spends 7 Energy each second and does not restore Energy automatically. When she's out of Energy, suffers any control effect or performs other actions, the skill stops.\nCRIT is possible with [Don't Look At Me!]. CRIT effect depends on Lynn's CRIT Rate and CRIT Damage bonus.",
+          "scripted": true,
+          "scriptName": "common.changeenergy",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 130662,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Lynn takes off her helmet and emits an all-piercing laser from her eyes, dealing (Attack *?%) Physical Damage each second to all enemies within range and applies a stack of [Light Speck]. [Light Speck] lasts for 4 seconds. For every 3 stacks of [Light Speck] the enemy gets, Lynn deals (Attack *?%) Physical Damage and 1 Core Damage to them.\nWhile using [Don't Look At Me!], Lynn spends 7 Energy each second and does not restore Energy automatically. When she's out of Energy, suffers any control effect or performs other actions, the skill stops.\nCRIT is possible with [Don't Look At Me!]. CRIT effect depends on Lynn's CRIT Rate and CRIT Damage bonus.",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 13,
+              "key": "energySpeed",
+              "label": "Energy Speed",
+              "statScreen": true,
+              "calcCat": null,
+              "add": -500,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
     },
     "skill1": {
       "id": 13063,
@@ -69,25 +198,94 @@
         11.1,
         12
       ],
-      "maxCoef": 12
+      "maxCoef": 12,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 130631,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "While using [Don't Look At Me!], Lynn gains a ?% CRIT Rate boost each second. The effect can be stacked up to 4 times.",
+          "scripted": true,
+          "scriptName": "mess.passive2",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 130633,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "While using [Don't Look At Me!], Lynn gains a ?% CRIT Rate boost each second. The effect can be stacked up to 4 times.",
+          "scripted": true,
+          "scriptName": "mess.passive2",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 13064,
       "name": "Get Away!",
       "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 130641,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Lynn gains a ?% CRIT Damage boost. For every enemy carrying [Light Speck] that dies, Lynn gains ? Energy.",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 7,
+              "key": "critDmg",
+              "label": "Crit Damage Bonus",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 30,
+              "isPercent": true
+            }
+          ]
+        },
+        {
+          "statusId": 130642,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Lynn gains a ?% CRIT Damage boost. For every enemy carrying [Light Speck] that dies, Lynn gains ? Energy.",
+          "scripted": true,
+          "scriptName": "common.dieaddbuffself",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "extra1": {
+      "id": 13066,
+      "name": "Extra Skill 1",
+      "damageType": 1,
       "coefs": [
-        15,
-        16.200001,
-        17.5,
-        18.9,
-        20.4,
-        22,
-        23.799999,
-        25.700001,
-        27.799999,
-        30
+        80,
+        85,
+        91,
+        97,
+        104,
+        111,
+        118,
+        126,
+        135,
+        144
       ],
-      "maxCoef": 30
+      "maxCoef": 144,
+      "coefSource": "AttackPowerCo",
+      "buffs": [
+        {
+          "statusId": 130622,
+          "targetCamps": 1,
+          "target": "enemy",
+          "description": "",
+          "scripted": true,
+          "scriptName": "geji.marking",
+          "maxLevelEffects": []
+        }
+      ],
+      "isSummonSkill": true,
+      "summonScalesFromMaster": true
     }
   }
 }

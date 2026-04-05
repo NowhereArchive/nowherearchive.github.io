@@ -3,20 +3,28 @@
   "name": "Rock Duck",
   "baseAtk": 1,
   "grades": [],
+  "chains": [],
+  "phasePassives": [],
   "skills": {
     "normalAttack": {
       "id": 97002401,
-      "name": "",
+      "name": "Normal Attack",
       "damageType": 2,
-      "coefs": [],
-      "maxCoef": null
+      "coefs": [
+        100
+      ],
+      "maxCoef": 100,
+      "coefSource": "AttackPowerCo",
+      "buffs": []
     },
     "ultimate": {
       "id": 97002402,
       "name": "In My BGM",
       "damageType": 0,
       "coefs": [],
-      "maxCoef": null
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
     }
   }
 }

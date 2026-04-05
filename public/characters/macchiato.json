@@ -16,7 +16,85 @@
       5
     ]
   ],
+  "chains": [
+    {
+      "id": 260101,
+      "name": "Delayed Gratification",
+      "description": "[Motivate] State duration is extended by 4 seconds.",
+      "effects": []
+    },
+    {
+      "id": 260102,
+      "name": "Shackles Sync I",
+      "description": "Healing Effect +5%",
+      "effects": [
+        {
+          "propertyId": 43,
+          "key": "property_43",
+          "label": "Property 43",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 260103,
+      "name": "Delight",
+      "description": "While [Motivated], recovers 3% of Max HP upon taking damage.",
+      "effects": []
+    },
+    {
+      "id": 260104,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption reduced by 3 points",
+      "effects": []
+    },
+    {
+      "id": 260105,
+      "name": "Shackles Sync II",
+      "description": "Healing Effect +5%",
+      "effects": [
+        {
+          "propertyId": 43,
+          "key": "property_43",
+          "label": "Property 43",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
   "skills": {
+    "characteristic": {
+      "id": 26010,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 260100,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 13,
+              "key": "energySpeed",
+              "label": "Energy Speed",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 10,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
     "normalAttack": {
       "id": 26011,
       "name": "Lash",
@@ -33,7 +111,9 @@
         135,
         144
       ],
-      "maxCoef": 144
+      "maxCoef": 144,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 26012,
@@ -51,7 +131,9 @@
         4.8,
         5
       ],
-      "maxCoef": 5
+      "maxCoef": 5,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 26013,
@@ -69,25 +151,54 @@
         1.8,
         2
       ],
-      "maxCoef": 2
+      "maxCoef": 2,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 260131,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When dealing damage to enemies, Macchiato gives them [Torture]. Any allied Sinner hitting an enemy with [Torture] restores ?% of Max HP.",
+          "scripted": true,
+          "scriptName": "normalattack.addbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 260133,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When dealing damage to enemies, Macchiato gives them [Torture]. Any allied Sinner hitting an enemy with [Torture] restores ?% of Max HP.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 26014,
       "name": "Pain Normalization",
       "damageType": 0,
-      "coefs": [
-        15,
-        15.7,
-        16.4,
-        17.200001,
-        18,
-        18.799999,
-        19.700001,
-        20.6,
-        21.5,
-        22.5
-      ],
-      "maxCoef": 22.5
+      "buffs": [
+        {
+          "statusId": 260141,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When [Motivated], the Sinner receives an extra ?% damage reduction bonus.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": [
+            {
+              "propertyId": 43,
+              "key": "property_43",
+              "label": "Property 43",
+              "statScreen": false,
+              "calcCat": null,
+              "add": 10,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
     }
   }
 }

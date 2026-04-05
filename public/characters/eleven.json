@@ -16,7 +16,93 @@
       25
     ]
   ],
+  "chains": [
+    {
+      "id": 50601,
+      "name": "Heartfelt Voice",
+      "description": "For every 1 [Strange Entity] present, all [Strange Entities]' Magic Damage +5%.",
+      "effects": []
+    },
+    {
+      "id": 50602,
+      "name": "Shackles Sync I",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 50603,
+      "name": "Harsh Rebuke",
+      "description": "Whenever an allied unit inflicts Fear on enemies,the duration of [Strange Entities]' existence +3s. This effect can be triggered up to 1 time per second.",
+      "effects": []
+    },
+    {
+      "id": 50604,
+      "name": "Energy Overflowing",
+      "description": "At the start of the battle, Eleven gains 15 Energy.",
+      "effects": []
+    },
+    {
+      "id": 50605,
+      "name": "Shackles Sync II",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 50607,
+      "effects": [
+        {
+          "propertyId": 51,
+          "key": "summonDmgBonus",
+          "label": "Summon Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Summon Damage Bonus",
+          "add": 15,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
   "skills": {
+    "characteristic": {
+      "id": 5068,
+      "name": "Initial Attribute",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 506801,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.stateaddbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
     "normalAttack": {
       "id": 5061,
       "name": "Late Night Call",
@@ -33,7 +119,9 @@
         124.900002,
         134.899994
       ],
-      "maxCoef": 134.899994
+      "maxCoef": 134.899994,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 5062,
@@ -51,7 +139,9 @@
         740.700012,
         800
       ],
-      "maxCoef": 800
+      "maxCoef": 800,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 5065,
@@ -69,36 +159,48 @@
         127.300003,
         137.5
       ],
-      "maxCoef": 137.5
+      "maxCoef": 137.5,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 506501,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "[Frequency Modulation] summons a [Strange Entity] in the target grid.\n\n[Strange Entity]: Upon being summoned, it inflicts Fear on all nearby enemies within a 3x3 square for a while. It inherits 100% of Eleven's Attack, dealing (Attack *?%) Magic Damage with each normal attack. It cannot block enemies, nor can it be targeted by enemies. It lasts 15 seconds. Up to 4 [Strange Entities] can exist at a time.",
+          "scripted": true,
+          "scriptName": "skill.replace",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 5066,
       "name": "Melodic Resonance",
       "damageType": 2,
-      "coefs": [
-        135,
-        145.800003,
-        157.5,
-        170.100006,
-        183.699997,
-        198.399994,
-        214.300003,
-        231.5,
-        250,
-        270
-      ],
-      "maxCoef": 270
+      "buffs": [
+        {
+          "statusId": 506601,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Whenever an allied unit inflicts Fear on enemies, all [Strange Entities] on the field attack all enemies within range, dealing (Attack of [Strange Entity] *?%) Magic Damage. This effect can be triggered up to 1 time per second.",
+          "scripted": true,
+          "scriptName": "hertz.talent",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "exclusive": {
       "id": 5067,
       "name": "Manual Mute",
       "damageType": 0,
       "coefs": [
-        4,
-        6,
-        8
+        10,
+        12.5,
+        15
       ],
-      "maxCoef": 8
+      "maxCoef": 15,
+      "coefSource": "Data",
+      "buffs": []
     }
   }
 }

@@ -6,6 +6,7 @@ import { REPO } from "../../../../config/config.js";
 import {
   ASSET_CHARACTERS_URL,
   ASSET_MAIN_URL,
+  ASSET_AUDIO_URL,
 } from "../../../../config/config";
 import Layout from "../../../../layouts/Layout.astro";
 
@@ -16,6 +17,7 @@ interface Attire {
 
 interface Character {
   name: string;
+  slug: string;
   displayName: string;
   rank: string;
   libram: string;
@@ -29,7 +31,7 @@ export async function getStaticPaths() {
   const characters = await charactersResponse.json();
   return (characters as any).characters.map((char: Character) => ({
     params: {
-      character: char.name.toLowerCase().replace(/\s+/g, "_"),
+      character: char.slug,
     },
     props: {
       characterData: char,
@@ -40,6 +42,7 @@ export async function getStaticPaths() {
 const { characterData }: { characterData: Character } = Astro.props;
 const characterName = characterData.name;
 const characterDisplayName = characterData.displayName || characterData.name;
+const slug = characterData.slug;
 ---
 
 <Layout
@@ -54,10 +57,12 @@ const characterDisplayName = characterData.displayName || characterData.name;
   <script
     define:vars={{
       characterName,
+      slug,
       characterDisplayName,
       REPO,
       ASSET_MAIN_URL,
       ASSET_CHARACTERS_URL,
+      ASSET_AUDIO_URL,
     }}
   >
     let language = "english";
@@ -127,7 +132,7 @@ const characterDisplayName = characterData.displayName || characterData.name;
         loadingDiv = showLoading(voicelinesContainer, "Loading voicelines...");
       }
 
-      const englishVoicelinesFile = `${ASSET_CHARACTERS_URL}/${characterName}_english.json`;
+      const englishVoicelinesFile = `${ASSET_CHARACTERS_URL}/${slug}_english.json`;
       const englishVoicelineMap = {};
 
       if (sanitizedLanguage !== "english") {
@@ -143,7 +148,8 @@ const characterDisplayName = characterData.displayName || characterData.name;
 
             if (englishVoicelines) {
               englishVoicelines.forEach((voiceline) => {
-                englishVoicelineMap[voiceline.title] = voiceline.text;
+                const key = trimFilePrefix(voiceline.filename);
+                englishVoicelineMap[key] = voiceline.text;
               });
             }
             displayVoicelines(
@@ -196,14 +202,15 @@ const characterDisplayName = characterData.displayName || characterData.name;
       voicelines.forEach((voiceline) => {
         const trimmedFilename = trimFilePrefix(voiceline.filename);
         console.log(sanitizedAttire);
-        const sanitizedAudioFile = `https://raw.githubusercontent.com/NowhereArchive/NowhereAudios/main/audio/${characterName}/${language}/${sanitizedAttire}/${sanitizeName(
+        const sanitizedAudioFile = `${ASSET_AUDIO_URL}/${characterName}/${language}/${sanitizedAttire}/${sanitizeName(
           trimmedFilename,
         )}`;
 
         const lineDiv = document.createElement("div");
         lineDiv.className = "voiceline-card";
+        const translationKey = trimmedFilename;
         const hasTranslation =
-          language !== "english" && englishVoicelineMap[voiceline.title];
+          language !== "english" && englishVoicelineMap[translationKey];
 
         lineDiv.innerHTML = `
       <div class="voiceline-header">
@@ -241,7 +248,7 @@ const characterDisplayName = characterData.displayName || characterData.name;
           </div>
           <div class="voiceline-translation" style="display: none;">
             <div class="translation-label">English:</div>
-            <div class="translation-text">${englishVoicelineMap[voiceline.title]}</div>
+            <div class="translation-text">${englishVoicelineMap[translationKey]}</div>
           </div>`
             : ""
         }
@@ -429,7 +436,7 @@ const characterDisplayName = characterData.displayName || characterData.name;
       const availableLanguages = [];
 
       const languagePromises = languages.map((lang) => {
-        const languageFile = `${ASSET_CHARACTERS_URL}/${characterName}_${sanitizeName(
+        const languageFile = `${ASSET_CHARACTERS_URL}/${slug}_${sanitizeName(
           lang,
         )}.json`;
         return fetch(languageFile)
@@ -480,7 +487,7 @@ const characterDisplayName = characterData.displayName || characterData.name;
     }
 
     async function loadVoicelines() {
-      const voicelinesFile = `${ASSET_CHARACTERS_URL}/${characterName}_${language}.json`;
+      const voicelinesFile = `${ASSET_CHARACTERS_URL}/${slug}_${language}.json`;
       const voicelinesContainer = document.getElementById(
         "voicelinesContainer",
       );

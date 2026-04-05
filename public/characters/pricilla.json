@@ -16,7 +16,94 @@
       50
     ]
   ],
+  "chains": [
+    {
+      "id": 140101,
+      "name": "Clever Magic",
+      "description": "[Magic Bullets] Trigger probability is increased to 20%.",
+      "effects": []
+    },
+    {
+      "id": 140102,
+      "name": "Shackles Sync I",
+      "description": "Attack Speed +5%",
+      "effects": [
+        {
+          "propertyId": 11,
+          "key": "atkSpeed",
+          "label": "ATK Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 140103,
+      "name": "Bunny Time",
+      "description": "[Exclusive Stage] Attack Speed bonus is increased to 120%.",
+      "effects": []
+    },
+    {
+      "id": 140104,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption reduced by 3 points",
+      "effects": []
+    },
+    {
+      "id": 140105,
+      "name": "Shackles Sync II",
+      "description": "Attack Speed +5%",
+      "effects": [
+        {
+          "propertyId": 11,
+          "key": "atkSpeed",
+          "label": "ATK Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
   "skills": {
+    "characteristic": {
+      "id": 14010,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 140100,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 57,
+              "key": "breakingDmgBonus",
+              "label": "Breaking Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Breaking Damage Bonus",
+              "add": 5,
+              "isPercent": true
+            },
+            {
+              "propertyId": 17,
+              "key": "dmgBonus",
+              "label": "Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Damage Bonus (general)",
+              "add": 5,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
     "normalAttack": {
       "id": 14011,
       "name": "Notice Letter",
@@ -33,7 +120,9 @@
         94,
         101
       ],
-      "maxCoef": 101
+      "maxCoef": 101,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 14012,
@@ -51,7 +140,46 @@
         67,
         72
       ],
-      "maxCoef": 72
+      "maxCoef": 72,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 1401210,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Pricilla decides to end the performance with a spectacular gun show. She pulls out two submachine guns and unleashes a hail of bullets. For the next 14 seconds, her normal attack turns to a 2-hit one, each hit dealing (?% of her Attack) Physical Damage, during which she can't automatically recover Energy.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 140122,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Pricilla decides to end the performance with a spectacular gun show. She pulls out two submachine guns and unleashes a hail of bullets. For the next 14 seconds, her normal attack turns to a 2-hit one, each hit dealing (?% of her Attack) Physical Damage, during which she can't automatically recover Energy.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 1401211,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Pricilla decides to end the performance with a spectacular gun show. She pulls out two submachine guns and unleashes a hail of bullets. For the next 14 seconds, her normal attack turns to a 2-hit one, each hit dealing (?% of her Attack) Physical Damage, during which she can't automatically recover Energy.",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 13,
+              "key": "energySpeed",
+              "label": "Energy Speed",
+              "statScreen": true,
+              "calcCat": null,
+              "add": -500,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
     },
     "skill1": {
       "id": 14013,
@@ -69,25 +197,76 @@
         67,
         72
       ],
-      "maxCoef": 72
+      "maxCoef": 72,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 140131,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Pricilla's normal attacks have a 15% chance to fire [Magic Bullets], dealing (?% of her Attack) extra Physical Damage.",
+          "scripted": true,
+          "scriptName": "peggi.passive",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 140133,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Pricilla's normal attacks have a 15% chance to fire [Magic Bullets], dealing (?% of her Attack) extra Physical Damage.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 14014,
       "name": "Exclusive Stage",
       "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 140141,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "During the [Curtain Call], Pricilla's Attack Speed is increased by 100% but her Normal Attack Damage is reduced by ?%.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": [
+            {
+              "propertyId": 11,
+              "key": "atkSpeed",
+              "label": "ATK Speed",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 15,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "extra1": {
+      "id": 14015,
+      "name": "Extra Skill 1",
+      "damageType": 1,
       "coefs": [
-        45,
-        41.299999,
-        37.299999,
-        33.099998,
-        28.6,
-        23.799999,
-        18.6,
-        13.1,
-        7.3,
-        1
+        40,
+        43,
+        46,
+        49,
+        52,
+        55,
+        59,
+        63,
+        67,
+        72
       ],
-      "maxCoef": 1
+      "maxCoef": 72,
+      "coefSource": "AttackPowerCo",
+      "buffs": [],
+      "isSummonSkill": true,
+      "summonScalesFromMaster": true
     }
   }
 }

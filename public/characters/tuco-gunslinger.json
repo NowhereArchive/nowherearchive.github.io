@@ -3,13 +3,19 @@
   "name": "Tuco Gunslinger",
   "baseAtk": 600,
   "grades": [],
+  "chains": [],
+  "phasePassives": [],
   "skills": {
     "normalAttack": {
       "id": 98000402,
-      "name": "",
+      "name": "Normal Attack",
       "damageType": 1,
-      "coefs": [],
-      "maxCoef": null
+      "coefs": [
+        100
+      ],
+      "maxCoef": 100,
+      "coefSource": "AttackPowerCo",
+      "buffs": []
     }
   }
 }

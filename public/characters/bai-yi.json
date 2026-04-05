@@ -16,7 +16,76 @@
       25
     ]
   ],
+  "chains": [
+    {
+      "id": 30101,
+      "name": "Fleet-footed",
+      "description": "After the start of the battle, recovers 1 Movement Count every 15 seconds.",
+      "effects": []
+    },
+    {
+      "id": 30102,
+      "name": "Shackles Sync I",
+      "description": "CRIT Rate increased by 8%",
+      "effects": [
+        {
+          "propertyId": 5,
+          "key": "critRate",
+          "label": "Crit Rate",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 8,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 30103,
+      "name": "Draw Sword",
+      "description": "[Poised] The required immobility duration is reduced to 8 seconds.",
+      "effects": []
+    },
+    {
+      "id": 30104,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption reduced by 3 points",
+      "effects": []
+    },
+    {
+      "id": 30105,
+      "name": "Shackles Sync II",
+      "description": "CRIT Rate increased by 8%",
+      "effects": [
+        {
+          "propertyId": 5,
+          "key": "critRate",
+          "label": "Crit Rate",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 8,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
   "skills": {
+    "characteristic": {
+      "id": 3010,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 30100,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "linglan.damagetimes",
+          "maxLevelEffects": []
+        }
+      ]
+    },
     "normalAttack": {
       "id": 3011,
       "name": "Shadow Attack",
@@ -33,7 +102,9 @@
         100,
         107
       ],
-      "maxCoef": 107
+      "maxCoef": 107,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 3012,
@@ -51,7 +122,9 @@
         337,
         360
       ],
-      "maxCoef": 360
+      "maxCoef": 360,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 3013,
@@ -69,25 +142,45 @@
         10.1,
         10.8
       ],
-      "maxCoef": 10.8
+      "maxCoef": 10.8,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 30131,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Bai Yi becomes [Poised] if she has stayed put for 10 second. The effect can stack up to 2 times.\nMoving when she's [Poised] grants Bai Yi a (?% *number of [Poised] stacks) Attack bonus for 10 seconds.",
+          "scripted": true,
+          "scriptName": "linglan.passive",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 3014,
       "name": "Warmup Exercise",
       "damageType": 0,
-      "coefs": [
-        20,
-        21.6,
-        23.299999,
-        25.200001,
-        27.200001,
-        29.4,
-        31.700001,
-        34.299999,
-        37,
-        40
-      ],
-      "maxCoef": 40
+      "buffs": [
+        {
+          "statusId": 30141,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Bai Yi's CRIT Rate increases by ?%. When dealing a critical hit, she gains 1 Energy (she can do this once every 4 seconds).",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": [
+            {
+              "propertyId": 5,
+              "key": "critRate",
+              "label": "Crit Rate",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 40,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
     }
   }
 }

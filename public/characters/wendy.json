@@ -16,7 +16,121 @@
       50
     ]
   ],
+  "chains": [
+    {
+      "id": 120201,
+      "name": "Shackles Sync I",
+      "description": "Damage increase 5%",
+      "effects": [
+        {
+          "propertyId": 17,
+          "key": "dmgBonus",
+          "label": "Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Damage Bonus (general)",
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 120202,
+      "name": "Deadly Combo",
+      "description": "[Speed Cut]'s cooldown is refreshed when it kills an enemy.",
+      "effects": []
+    },
+    {
+      "id": 120203,
+      "name": "Shackles Sync II",
+      "description": "Damage increase 5%",
+      "effects": [
+        {
+          "propertyId": 17,
+          "key": "dmgBonus",
+          "label": "Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Damage Bonus (general)",
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 120204,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption is reduced by 3 points.",
+      "effects": []
+    },
+    {
+      "id": 120205,
+      "name": "Shackles Sync III",
+      "description": "Damage increase 5%",
+      "effects": [
+        {
+          "propertyId": 17,
+          "key": "dmgBonus",
+          "label": "Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Damage Bonus (general)",
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 120206,
+      "effects": [
+        {
+          "propertyId": 55,
+          "key": "noWeakDmgBonus",
+          "label": "No Weakness Damage Bonus",
+          "statScreen": false,
+          "calcCat": "No Weakness Damage Bonus",
+          "add": 20,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
   "skills": {
+    "characteristic": {
+      "id": 12020,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 120201,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 1,
+              "key": "hp",
+              "label": "HP",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 10,
+              "isPercent": true
+            },
+            {
+              "propertyId": 17,
+              "key": "dmgBonus",
+              "label": "Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Damage Bonus (general)",
+              "add": 5,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
     "normalAttack": {
       "id": 12021,
       "name": "Rapid Cut",
@@ -33,7 +147,9 @@
         55,
         59
       ],
-      "maxCoef": 59
+      "maxCoef": 59,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 12022,
@@ -51,7 +167,9 @@
         253,
         270
       ],
-      "maxCoef": 270
+      "maxCoef": 270,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 12023,
@@ -69,25 +187,54 @@
         58,
         62
       ],
-      "maxCoef": 62
+      "maxCoef": 62,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 120231,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Every 10 seconds, Wendy turns her next normal attack into dealing damage in 1 grid, dealing (?% of her Attack) Physical Damage 4 times.",
+          "scripted": true,
+          "scriptName": "wendy.passive",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 12024,
       "name": "Fear Feaster",
       "damageType": 0,
-      "coefs": [
-        5,
-        5.3,
-        5.7,
-        6.1,
-        6.5,
-        6.9,
-        7.4,
-        7.9,
-        8.4,
-        9
-      ],
-      "maxCoef": 9
+      "buffs": [
+        {
+          "statusId": 120241,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Wendy gains a ?% damage bonus for each enemy on the battlefield. The bonus can stack up to 6 times.",
+          "scripted": true,
+          "scriptName": "common.enemycountaddproperty",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "extra1": {
+      "id": 12026,
+      "name": "Extra Skill 1",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 120232,
+          "targetCamps": 1,
+          "target": "enemy",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.triggerfield",
+          "maxLevelEffects": []
+        }
+      ]
     }
   }
 }

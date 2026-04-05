@@ -3,6 +3,8 @@
   "name": "Hella",
   "baseAtk": 100,
   "grades": [],
+  "chains": [],
+  "phasePassives": [],
   "skills": {
     "normalAttack": {
       "id": 22011,
@@ -20,21 +22,49 @@
         191,
         204
       ],
-      "maxCoef": 204
+      "maxCoef": 204,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 50063001,
       "name": "Pipe Strike",
       "damageType": 1,
-      "coefs": [],
-      "maxCoef": null
+      "coefs": [
+        1
+      ],
+      "maxCoef": 1,
+      "coefSource": "AttackPowerCo",
+      "buffs": [
+        {
+          "statusId": 50063001,
+          "targetCamps": 1,
+          "target": "enemy",
+          "description": "Hella attacks with the water pipe she carries, stunning the ducks within the cross area for 10 seconds.",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "skill1": {
       "id": 50063002,
-      "name": "",
+      "name": "Active Skill (S1)",
       "damageType": 0,
       "coefs": [],
-      "maxCoef": null
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 50063000,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.changeenergy",
+          "maxLevelEffects": []
+        }
+      ]
     }
   }
 }

@@ -16,7 +16,76 @@
       50
     ]
   ],
+  "chains": [
+    {
+      "id": 160401,
+      "name": "Adjourned Trial",
+      "description": "[Defend] Effect duration is extended by 2 seconds.",
+      "effects": []
+    },
+    {
+      "id": 160402,
+      "name": "Shackles Sync I",
+      "description": "Energy Recovery +7.5%",
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 7.5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 160403,
+      "name": "Seek Justice",
+      "description": "When Mr. Fox is on the battlefield, damage from all allied Sinners to enemies in Breaking state is increased by 10%.",
+      "effects": []
+    },
+    {
+      "id": 160404,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption reduced by 3 points",
+      "effects": []
+    },
+    {
+      "id": 160405,
+      "name": "Shackles Sync II",
+      "description": "Energy Recovery +7.5%",
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 7.5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
   "skills": {
+    "characteristic": {
+      "id": 16040,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 160400,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "normalattack.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
     "normalAttack": {
       "id": 16041,
       "name": "Accuse",
@@ -33,7 +102,9 @@
         177,
         189
       ],
-      "maxCoef": 189
+      "maxCoef": 189,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 16042,
@@ -51,7 +122,29 @@
         28.5,
         30
       ],
-      "maxCoef": 30
+      "maxCoef": 30,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 160421,
+          "targetCamps": 2,
+          "target": "self",
+          "description": "Mr. Fox manipulates words, reducing damage taken by all allies by ?% and making them immune to control effect for 6 seconds.",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": [
+            {
+              "propertyId": 21,
+              "key": "takeDmgReduce",
+              "label": "Take Damage Reduce",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 30,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
     },
     "skill1": {
       "id": 16043,
@@ -69,25 +162,45 @@
         3.6,
         4
       ],
-      "maxCoef": 4
+      "maxCoef": 4,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 160441,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When Mr. Fox is on the battlefield, the duration of enemies' [Break] state is extended by ? second(s).",
+          "scripted": true,
+          "scriptName": "kaier.talent",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 16044,
       "name": "Interrogate",
       "damageType": 0,
-      "coefs": [
-        10,
-        10.5,
-        10.9,
-        11.4,
-        12,
-        12.5,
-        13.1,
-        13.7,
-        14.3,
-        15
-      ],
-      "maxCoef": 15
+      "buffs": [
+        {
+          "statusId": 160431,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When enemies perform skills, Mr. Fox reduces the damage they deal by ?% for 4 seconds.",
+          "scripted": true,
+          "scriptName": "skill.addbuff",
+          "maxLevelEffects": [
+            {
+              "propertyId": 13,
+              "key": "energySpeed",
+              "label": "Energy Speed",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 15,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
     }
   }
 }

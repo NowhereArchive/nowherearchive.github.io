@@ -3,5 +3,7 @@
   "name": "Fragile Core",
   "baseAtk": 1,
   "grades": [],
+  "chains": [],
+  "phasePassives": [],
   "skills": {}
 }

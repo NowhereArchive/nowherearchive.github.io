@@ -16,7 +16,85 @@
       5
     ]
   ],
+  "chains": [
+    {
+      "id": 210201,
+      "name": "Comeback",
+      "description": "[Rally] The number of recharges increased by 1",
+      "effects": []
+    },
+    {
+      "id": 210202,
+      "name": "Shackles Sync I",
+      "description": "Healing received +5%",
+      "effects": [
+        {
+          "propertyId": 45,
+          "key": "property_45",
+          "label": "Property 45",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 210203,
+      "name": "Bounce Back",
+      "description": "After Demolia uses [Rally], she recovers 2% of her Max HP per second for 5 seconds.",
+      "effects": []
+    },
+    {
+      "id": 210204,
+      "name": "Emotion Resonance",
+      "description": "[Rally] Energy Consumption reduced by 3 points",
+      "effects": []
+    },
+    {
+      "id": 210205,
+      "name": "Shackles Sync II",
+      "description": "Healing received +5%",
+      "effects": [
+        {
+          "propertyId": 45,
+          "key": "property_45",
+          "label": "Property 45",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
   "skills": {
+    "characteristic": {
+      "id": 21020,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 210200,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 1,
+              "key": "hp",
+              "label": "HP",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 10,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
     "normalAttack": {
       "id": 21021,
       "name": "Thud!",
@@ -33,7 +111,9 @@
         201,
         215
       ],
-      "maxCoef": 215
+      "maxCoef": 215,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 21022,
@@ -51,7 +131,9 @@
         43,
         45
       ],
-      "maxCoef": 45
+      "maxCoef": 45,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 21023,
@@ -69,25 +151,45 @@
         8.4,
         9
       ],
-      "maxCoef": 9
+      "maxCoef": 9,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 210231,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "For each enemy she blocks, Demolia gains a ?% bonus in healing received. The effect can stack up to 3 times.",
+          "scripted": true,
+          "scriptName": "common.blockedaddbuff",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 21024,
       "name": "Unity",
       "damageType": 0,
-      "coefs": [
-        4,
-        4.3,
-        4.6,
-        4.9,
-        5.2,
-        5.5,
-        5.9,
-        6.3,
-        6.7,
-        7.2
-      ],
-      "maxCoef": 7.2
+      "buffs": [
+        {
+          "statusId": 210241,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When an allied Sinner uses their Ultimate, Demolia instantly restores ?% of her Max HP. The effect has a 3-second cooldown.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": [
+            {
+              "propertyId": 1,
+              "key": "hp",
+              "label": "HP",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 15,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
     }
   }
 }

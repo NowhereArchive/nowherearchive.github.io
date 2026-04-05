@@ -16,7 +16,94 @@
       50
     ]
   ],
+  "chains": [
+    {
+      "id": 150201,
+      "name": "Conflagration",
+      "description": "[Overload Spark] Effect duration is extended by 3 seconds.",
+      "effects": []
+    },
+    {
+      "id": 150202,
+      "name": "Shackles Sync I",
+      "description": "Ultimate damage +10%",
+      "effects": [
+        {
+          "propertyId": 30,
+          "key": "skillDmgBonus",
+          "label": "Skill Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Skill Damage Bonus",
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 150203,
+      "name": "Eternal Flame",
+      "description": "Ignis gains a 4% Attack bonus uses after using [Overload Spark], capped at 3 stacks and lasts for the rest of the battle.",
+      "effects": []
+    },
+    {
+      "id": 150204,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption reduced by 3 points",
+      "effects": []
+    },
+    {
+      "id": 150205,
+      "name": "Shackles Sync II",
+      "description": "Ultimate damage +10%",
+      "effects": [
+        {
+          "propertyId": 30,
+          "key": "skillDmgBonus",
+          "label": "Skill Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Skill Damage Bonus",
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
   "skills": {
+    "characteristic": {
+      "id": 15020,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 150200,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 57,
+              "key": "breakingDmgBonus",
+              "label": "Breaking Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Breaking Damage Bonus",
+              "add": 5,
+              "isPercent": true
+            },
+            {
+              "propertyId": 17,
+              "key": "dmgBonus",
+              "label": "Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Damage Bonus (general)",
+              "add": 5,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
     "normalAttack": {
       "id": 15021,
       "name": "Blaze",
@@ -33,7 +120,9 @@
         137,
         148
       ],
-      "maxCoef": 148
+      "maxCoef": 148,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 15022,
@@ -51,7 +140,29 @@
         296,
         320
       ],
-      "maxCoef": 320
+      "maxCoef": 320,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 150221,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Ignis breaks the limits, turning [Blaze] into [Meteorite] for 12 seconds. Upon landing, a meteorite deals (?% of Attack damage) Magic Damage to all enemies within a cross area. During the effect, she can't automatically recover her energy.",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": [
+            {
+              "propertyId": 13,
+              "key": "energySpeed",
+              "label": "Energy Speed",
+              "statScreen": true,
+              "calcCat": null,
+              "add": -500,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
     },
     "skill1": {
       "id": 15023,
@@ -69,25 +180,63 @@
         185,
         200
       ],
-      "maxCoef": 200
+      "maxCoef": 200,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 150231,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "After attacking with [Blaze] or [Meteorite] 5 times, Ignis summons 1 extra meteorite, dealing (?% of her Attack) Magic Damage to enemies within 1 grid.",
+          "scripted": true,
+          "scriptName": "common.triggerfield",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 15024,
       "name": "Uncontrollable Blaze",
       "damageType": 0,
-      "coefs": [
-        15,
-        16.200001,
-        17.5,
-        18.9,
-        20.4,
-        22,
-        23.799999,
-        25.700001,
-        27.799999,
-        30
-      ],
-      "maxCoef": 30
+      "buffs": [
+        {
+          "statusId": 150241,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "On hit, [Meteorite] starts to [Burn] the enemies, dealing (?%) Magic Damage per second for 5 seconds.",
+          "scripted": true,
+          "scriptName": "common.damagemarkbuff",
+          "maxLevelEffects": [
+            {
+              "propertyId": 2,
+              "key": "atk",
+              "label": "ATK",
+              "statScreen": false,
+              "calcCat": null,
+              "add": 10,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "extra1": {
+      "id": 15026,
+      "name": "Extra Skill 1",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "extra2": {
+      "id": 15025,
+      "name": "Extra Skill 2",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
     }
   }
 }

@@ -3,27 +3,127 @@
   "name": "Alchemic Device",
   "baseAtk": 1,
   "grades": [],
+  "chains": [],
+  "phasePassives": [],
   "skills": {
     "normalAttack": {
       "id": 98011401,
-      "name": "",
+      "name": "Normal Attack",
       "damageType": 0,
       "coefs": [],
-      "maxCoef": null
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 98011403,
       "name": "Aurum Secretum Resonance",
       "damageType": 0,
       "coefs": [],
-      "maxCoef": null
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 98011401,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When activated, removes [Dodge] from all mobs and triggers effects based on the equipped Alchemic Stones.",
+          "scripted": true,
+          "scriptName": "common.triggerfield",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 98011405,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When activated, removes [Dodge] from all mobs and triggers effects based on the equipped Alchemic Stones.",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 98011406,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When activated, removes [Dodge] from all mobs and triggers effects based on the equipped Alchemic Stones.",
+          "scripted": true,
+          "scriptName": "common.removebuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 98010001,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When activated, removes [Dodge] from all mobs and triggers effects based on the equipped Alchemic Stones.",
+          "scripted": true,
+          "scriptName": "common.removebuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 98011415,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When activated, removes [Dodge] from all mobs and triggers effects based on the equipped Alchemic Stones.",
+          "scripted": true,
+          "scriptName": "common.triggerfield",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "skill1": {
       "id": 98011402,
       "name": "Switch the grid beneath to obstacle grid",
       "damageType": 0,
       "coefs": [],
-      "maxCoef": null
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 98011407,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Switch the grid beneath to obstacle grid",
+          "scripted": true,
+          "scriptName": "jiushijiu.passive2",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 98011404,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Switch the grid beneath to obstacle grid",
+          "scripted": true,
+          "scriptName": "common.changeenergy",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 98011411,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Switch the grid beneath to obstacle grid",
+          "scripted": true,
+          "scriptName": "common.addbuffbybuffend",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 98011413,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Switch the grid beneath to obstacle grid",
+          "scripted": true,
+          "scriptName": "common.changeenergy",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 98011403,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Switch the grid beneath to obstacle grid",
+          "scripted": true,
+          "scriptName": "grid.replace",
+          "maxLevelEffects": []
+        }
+      ]
     }
   }
 }

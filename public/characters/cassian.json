@@ -16,7 +16,112 @@
       50
     ]
   ],
+  "chains": [
+    {
+      "id": 161001,
+      "name": "Shackles Sync I",
+      "description": "Energy Recovery Speed increases by 10%.",
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 161002,
+      "name": "Aftertaste",
+      "description": "The [Perpetrator] mark's duration is extended by 5 seconds.",
+      "effects": []
+    },
+    {
+      "id": 161003,
+      "name": "Shackles Sync II",
+      "description": "Energy Recovery Speed increases by 10%.",
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 161004,
+      "name": "Energy Overflowing",
+      "description": "At the start of the battle, Cassian gains 15 Energy.",
+      "effects": []
+    },
+    {
+      "id": 161005,
+      "name": "Shackles Sync III",
+      "description": "Energy Recovery Speed increases by 10%.",
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 161006,
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 15,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
   "skills": {
+    "characteristic": {
+      "id": 16100,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 161010,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "cassian.triggergoatdie",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 161000,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "cassian.markscapegoat",
+          "maxLevelEffects": []
+        }
+      ]
+    },
     "normalAttack": {
       "id": 16101,
       "name": "Fine Brew",
@@ -33,7 +138,9 @@
         83,
         90
       ],
-      "maxCoef": 90
+      "maxCoef": 90,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 16102,
@@ -51,7 +158,9 @@
         23,
         25
       ],
-      "maxCoef": 25
+      "maxCoef": 25,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 16103,
@@ -69,32 +178,34 @@
         13.9,
         15
       ],
-      "maxCoef": 15
+      "maxCoef": 15,
+      "coefSource": "Data",
+      "buffs": []
     },
     "passive": {
       "id": 16104,
       "name": "Shake",
       "damageType": 0,
-      "coefs": [
-        2.5,
-        2.7,
-        2.9,
-        3.1,
-        3.4,
-        3.7,
-        4,
-        4.3,
-        4.6,
-        5
-      ],
-      "maxCoef": 5
+      "buffs": [
+        {
+          "statusId": 161040,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When an allied Sinner is revived, all allied Sinners' damage increases by ?%, stacking up to 3 times.",
+          "scripted": true,
+          "scriptName": "cassian.talent",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "exclusive": {
       "id": 16105,
       "name": "Honor",
       "damageType": 0,
       "coefs": [],
-      "maxCoef": null
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
     }
   }
 }

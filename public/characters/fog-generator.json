@@ -3,5 +3,7 @@
   "name": "Fog Generator",
   "baseAtk": 1,
   "grades": [],
+  "chains": [],
+  "phasePassives": [],
   "skills": {}
 }

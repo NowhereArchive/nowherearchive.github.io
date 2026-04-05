@@ -16,7 +16,95 @@
       50
     ]
   ],
+  "chains": [
+    {
+      "id": 151001,
+      "name": "Shackles Sync I",
+      "description": "Attack increases by 5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 151002,
+      "name": "Targeted Confrontation",
+      "description": "When the Ultimate hits only 1 enemy, deals 1 additional Core Damage.",
+      "effects": []
+    },
+    {
+      "id": 151003,
+      "name": "Shackles Sync II",
+      "description": "Attack increases by 5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 151004,
+      "name": "Energy Overflowing",
+      "description": "24 seconds after entering battle, Thani gains 36 Energy.",
+      "effects": []
+    },
+    {
+      "id": 151005,
+      "name": "Shackles Sync III",
+      "description": "Attack increases by 5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
   "skills": {
+    "characteristic": {
+      "id": 15100,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 151000,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 13,
+              "key": "energySpeed",
+              "label": "Energy Speed",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 10,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
     "normalAttack": {
       "id": 15101,
       "name": "Cauterize",
@@ -33,7 +121,9 @@
         102,
         108
       ],
-      "maxCoef": 108
+      "maxCoef": 108,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 15102,
@@ -51,7 +141,9 @@
         1360,
         1440
       ],
-      "maxCoef": 1440
+      "maxCoef": 1440,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 15103,
@@ -69,25 +161,53 @@
         28.299999,
         30
       ],
-      "maxCoef": 30
+      "maxCoef": 30,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 151030,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Whenever Wuhuanzi uses normal attack, [Talisman] deals (Attack *?%) Magic Damage twice to all enemies within a single grid. There is a ?% chance of triggering [Karmic Shift], dealing damage only once.",
+          "scripted": true,
+          "scriptName": "skill.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 15104,
       "name": "Telepathy",
       "damageType": 0,
-      "coefs": [
-        12,
-        13.3,
-        14.7,
-        16,
-        17.299999,
-        18.700001,
-        20,
-        21.299999,
-        22.700001,
-        24
-      ],
-      "maxCoef": 24
+      "buffs": [
+        {
+          "statusId": 151040,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When [Karmic Shift] fails to be triggered, Attack increases by ?%, stacking up to ? times and lasting for ? seconds. When the duration ends, one stack is removed.",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 19,
+              "key": "mDmgBonus",
+              "label": "Magic Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Magic Damage Bonus",
+              "add": 24,
+              "isPercent": true
+            }
+          ]
+        },
+        {
+          "statusId": 151041,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When [Karmic Shift] fails to be triggered, Attack increases by ?%, stacking up to ? times and lasting for ? seconds. When the duration ends, one stack is removed.",
+          "scripted": true,
+          "scriptName": "skill.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "exclusive": {
       "id": 15105,
@@ -98,7 +218,19 @@
         45,
         60
       ],
-      "maxCoef": 60
+      "maxCoef": 60,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 151050,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "[Contract Destruction] Cores of Destruction deployed at a grid with no targets will remain on the battlefield and wait until an enemy approaches to trigger their effect based on the target's type. Use this again to cancel the effect.",
+          "scripted": true,
+          "scriptName": "skill.replace",
+          "maxLevelEffects": []
+        }
+      ]
     }
   }
 }

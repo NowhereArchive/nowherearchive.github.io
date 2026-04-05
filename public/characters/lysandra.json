@@ -16,7 +16,95 @@
       50
     ]
   ],
+  "chains": [
+    {
+      "id": 121201,
+      "name": "Shackles Sync I",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 121202,
+      "name": "Resonance Effect",
+      "description": "The effects of [Shattershock], [Emergency Protocol], and [Instant Overhaul] additionally apply to the owner of [Aurum Secretum Tech] type summoned creatures.",
+      "effects": []
+    },
+    {
+      "id": 121203,
+      "name": "Shackles Sync II",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 121204,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption is reduced by 5 points.",
+      "effects": []
+    },
+    {
+      "id": 121205,
+      "name": "Shackles Sync III",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
   "skills": {
+    "characteristic": {
+      "id": 12120,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 121201,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 2,
+              "key": "atk",
+              "label": "ATK",
+              "statScreen": false,
+              "calcCat": null,
+              "add": 5,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
     "normalAttack": {
       "id": 12121,
       "name": "Piercing Strike",
@@ -33,7 +121,9 @@
         141,
         152
       ],
-      "maxCoef": 152
+      "maxCoef": 152,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 12122,
@@ -51,7 +141,9 @@
         748,
         808
       ],
-      "maxCoef": 808
+      "maxCoef": 808,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 12123,
@@ -69,25 +161,44 @@
         13.9,
         15
       ],
-      "maxCoef": 15
+      "maxCoef": 15,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 121231,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When Lysandra or allied [Aurum Secretum Tech] type summoned creatures hit enemies with normal attack, they recover (Lysandra's Attack *?%) HP. This effect can be triggered up to 3 times per second.",
+          "scripted": true,
+          "scriptName": "lysandra.passive",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 121232,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When Lysandra or allied [Aurum Secretum Tech] type summoned creatures hit enemies with normal attack, they recover (Lysandra's Attack *?%) HP. This effect can be triggered up to 3 times per second.",
+          "scripted": true,
+          "scriptName": "lysandra.passivemonitor",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 12124,
       "name": "Instant Overhaul",
       "damageType": 0,
-      "coefs": [
-        15,
-        16.200001,
-        17.5,
-        18.9,
-        20.4,
-        22,
-        23.799999,
-        25.700001,
-        27.799999,
-        30
-      ],
-      "maxCoef": 30
+      "buffs": [
+        {
+          "statusId": 121243,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Allied [Aurum Secretum Tech] type summoned creatures gain a ?% Attack Speed boost.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
     }
   }
 }

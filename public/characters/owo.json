@@ -16,7 +16,95 @@
       25
     ]
   ],
+  "chains": [
+    {
+      "id": 10201,
+      "name": "Guard Safety",
+      "description": "The lion head [Seven Star] produces a [Lion Godspeed] buff. The buff is not stackable.",
+      "effects": []
+    },
+    {
+      "id": 10202,
+      "name": "Shackles Sync I",
+      "description": "Defense is increased by 5%.",
+      "effects": [
+        {
+          "propertyId": 3,
+          "key": "armor",
+          "label": "Armor",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 10203,
+      "name": "Revive the Spirit",
+      "description": "All allied Sinners within the range of [Star of Fortune] gain an Attack increase of 12% for 10 seconds. The buff is not stackable.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 12,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 10204,
+      "name": "Emotion Resonance",
+      "description": "[Star of Fortune] Energy Consumption is reduced by 3 points.",
+      "effects": []
+    },
+    {
+      "id": 10205,
+      "name": "Shackles Sync II",
+      "description": "Defense is increased by 5%.",
+      "effects": [
+        {
+          "propertyId": 3,
+          "key": "armor",
+          "label": "Armor",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
   "skills": {
+    "characteristic": {
+      "id": 1020,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 10200,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "owo.passive",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 10211,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.enterstageaddbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
     "normalAttack": {
       "id": 1021,
       "name": "Lion Dance",
@@ -33,7 +121,9 @@
         166,
         177
       ],
-      "maxCoef": 177
+      "maxCoef": 177,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 1022,
@@ -51,7 +141,28 @@
         27.799999,
         30
       ],
-      "maxCoef": 30
+      "maxCoef": 30,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 10221,
+          "targetCamps": 3,
+          "target": "other",
+          "description": "OwO jumps high up, and lands down, dealing 1 point of Core Damage to all enemies within range and granting a ?% CRIT Rate bonus to all allied Sinners within range for 10 seconds.",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 5,
+              "key": "critRate",
+              "label": "Crit Rate",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 30,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
     },
     "skill1": {
       "id": 1023,
@@ -69,25 +180,35 @@
         22.200001,
         24
       ],
-      "maxCoef": 24
+      "maxCoef": 24,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 10231,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "In the presence of the lion head [Seven Star], OwO gains a ?% Defense bonus.",
+          "scripted": true,
+          "scriptName": "owo.passive1",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 1024,
       "name": "Lion Godspeed",
       "damageType": 0,
-      "coefs": [
-        4,
-        4.3,
-        4.7,
-        5,
-        5.4,
-        5.9,
-        6.3,
-        6.9,
-        7.4,
-        8
-      ],
-      "maxCoef": 8
+      "buffs": [
+        {
+          "statusId": 10241,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "All allied units within OwO's 3x3 square gain a ?% Attack bonus.",
+          "scripted": true,
+          "scriptName": "owo.aura",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "exclusive": {
       "id": 1025,
@@ -98,7 +219,9 @@
         8,
         10
       ],
-      "maxCoef": 10
+      "maxCoef": 10,
+      "coefSource": "Data",
+      "buffs": []
     }
   }
 }

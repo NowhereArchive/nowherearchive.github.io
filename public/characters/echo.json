@@ -16,7 +16,111 @@
       50
     ]
   ],
+  "chains": [
+    {
+      "id": 150701,
+      "name": "Encore Song List",
+      "description": "[Sonorous Roar] lasts 2 seconds longer.",
+      "effects": []
+    },
+    {
+      "id": 150702,
+      "name": "Shackles Sync I",
+      "description": "Skill Damage increases by 10%.",
+      "effects": [
+        {
+          "propertyId": 30,
+          "key": "skillDmgBonus",
+          "label": "Skill Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Skill Damage Bonus",
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 150703,
+      "name": "Mental Contamination",
+      "description": "[Sonorous Roar] additionally stuns all enemies within range for 2 seconds, with each enemy being affected only once.",
+      "effects": []
+    },
+    {
+      "id": 150704,
+      "name": "Singing While Playing",
+      "description": "Ultimate Energy Consumption reduced by 3 points",
+      "effects": []
+    },
+    {
+      "id": 150705,
+      "name": "Shackles Sync II",
+      "description": "Skill Damage increases by 10%.",
+      "effects": [
+        {
+          "propertyId": 30,
+          "key": "skillDmgBonus",
+          "label": "Skill Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Skill Damage Bonus",
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 150700,
+      "effects": [
+        {
+          "propertyId": 17,
+          "key": "dmgBonus",
+          "label": "Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Damage Bonus (general)",
+          "add": 10,
+          "isPercent": true
+        },
+        {
+          "propertyId": 57,
+          "key": "breakingDmgBonus",
+          "label": "Breaking Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Breaking Damage Bonus",
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
   "skills": {
+    "characteristic": {
+      "id": 15070,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 150711,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "echo.passive",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 150712,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.changeenergy",
+          "maxLevelEffects": []
+        }
+      ]
+    },
     "normalAttack": {
       "id": 15071,
       "name": "Street Tune",
@@ -33,7 +137,9 @@
         138,
         148
       ],
-      "maxCoef": 148
+      "maxCoef": 148,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 15072,
@@ -51,7 +157,9 @@
         219.199997,
         234
       ],
-      "maxCoef": 234
+      "maxCoef": 234,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 15073,
@@ -69,25 +177,25 @@
         38,
         40
       ],
-      "maxCoef": 40
+      "maxCoef": 40,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 150731,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When no enemies are present within Echo's Normal Attack range, she gains a ?% increase in Skill Damage.",
+          "scripted": true,
+          "scriptName": "langhuan.passive",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 15074,
       "name": "Bewitching Melody",
       "damageType": 0,
-      "coefs": [
-        15.6,
-        16.5,
-        17.299999,
-        18.299999,
-        19.299999,
-        20.299999,
-        21.4,
-        22.5,
-        23.700001,
-        25
-      ],
-      "maxCoef": 25
+      "buffs": []
     }
   }
 }

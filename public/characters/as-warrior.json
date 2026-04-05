@@ -3,5 +3,7 @@
   "name": "A.S. Warrior",
   "baseAtk": 275,
   "grades": [],
+  "chains": [],
+  "phasePassives": [],
   "skills": {}
 }

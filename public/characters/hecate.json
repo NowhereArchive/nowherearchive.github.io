@@ -16,7 +16,76 @@
       50
     ]
   ],
+  "chains": [
+    {
+      "id": 150401,
+      "name": "Bad Dream",
+      "description": "Every time Ultimate is released, the next damage from [Lightless Mirror] increases 10%, up to 30%.",
+      "effects": []
+    },
+    {
+      "id": 150402,
+      "name": "Shackles Sync I",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 150403,
+      "name": "Shadow in Dream",
+      "description": "Hecate's and Nightmare's damage taken is reduced by an extra 15% when fighting units afflicted with [Dream].",
+      "effects": []
+    },
+    {
+      "id": 150404,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption reduced by 3 points",
+      "effects": []
+    },
+    {
+      "id": 150405,
+      "name": "Shackles Sync II",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
   "skills": {
+    "characteristic": {
+      "id": 15040,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 150461,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "hekadi.expressivepassive",
+          "maxLevelEffects": []
+        }
+      ]
+    },
     "normalAttack": {
       "id": 15041,
       "name": "Delusion",
@@ -33,7 +102,9 @@
         177,
         189
       ],
-      "maxCoef": 189
+      "maxCoef": 189,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 15042,
@@ -51,7 +122,9 @@
         1057,
         1134
       ],
-      "maxCoef": 1134
+      "maxCoef": 1134,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 15043,
@@ -69,36 +142,57 @@
         1.7,
         1.8
       ],
-      "maxCoef": 1.8
+      "maxCoef": 1.8,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 150431,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When Hecate and Nightmare deal damage to an enemy, the enemy falls into a [Dream]. Each stack of [Dream] increases the damage caused by Hecate and Nightmare by ?%. [Dream] can stack up to 10 times.",
+          "scripted": true,
+          "scriptName": "common.damagemarkbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 150433,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When Hecate and Nightmare deal damage to an enemy, the enemy falls into a [Dream]. Each stack of [Dream] increases the damage caused by Hecate and Nightmare by ?%. [Dream] can stack up to 10 times.",
+          "scripted": true,
+          "scriptName": "common.damagemarkbuff",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 15044,
       "name": "Ghastly Shadow",
       "damageType": 0,
-      "coefs": [
-        10,
-        10.7,
-        11.4,
-        12.2,
-        13,
-        13.9,
-        14.8,
-        15.8,
-        16.9,
-        18
-      ],
-      "maxCoef": 18
+      "buffs": [
+        {
+          "statusId": 150442,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "At the start of the battle, all allies gain a ?% Magic Penetration bonus.",
+          "scripted": true,
+          "scriptName": "common.triggerfield",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "exclusive": {
       "id": 15045,
       "name": "Forbidden Nightmare",
       "damageType": 0,
       "coefs": [
-        120,
-        135,
-        150
+        160,
+        180,
+        200
       ],
-      "maxCoef": 150
+      "maxCoef": 200,
+      "coefSource": "Data",
+      "buffs": []
     }
   }
 }

@@ -16,7 +16,120 @@
       25
     ]
   ],
+  "chains": [
+    {
+      "id": 40801,
+      "name": "Shotgun Blast",
+      "description": "[Flawless Aim]'s effect is no longer affected by the number of enemies on the field and is always at maximum stacks. Maximum stacks are now 8.",
+      "effects": []
+    },
+    {
+      "id": 40802,
+      "name": "Shackles Sync I",
+      "description": "Physical Damage increases by 8%.",
+      "effects": [
+        {
+          "propertyId": 18,
+          "key": "pDmgBonus",
+          "label": "Physical Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Physical Damage Bonus",
+          "add": 8,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 40803,
+      "name": "Wasteland Clash",
+      "description": "Normal attack deals 25% more damage to the first enemy hit.",
+      "effects": []
+    },
+    {
+      "id": 40804,
+      "name": "Energy Overflowing",
+      "description": "At the start of the battle, Korryn gains 18 Energy.",
+      "effects": []
+    },
+    {
+      "id": 40805,
+      "name": "Shackles Sync II",
+      "description": "Physical Damage increases by 8%.",
+      "effects": [
+        {
+          "propertyId": 18,
+          "key": "pDmgBonus",
+          "label": "Physical Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Physical Damage Bonus",
+          "add": 8,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 40800,
+      "effects": [
+        {
+          "propertyId": 17,
+          "key": "dmgBonus",
+          "label": "Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Damage Bonus (general)",
+          "add": 10,
+          "isPercent": true
+        },
+        {
+          "propertyId": 57,
+          "key": "breakingDmgBonus",
+          "label": "Breaking Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Breaking Damage Bonus",
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
   "skills": {
+    "characteristic": {
+      "id": 4080,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 40801,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 17,
+              "key": "dmgBonus",
+              "label": "Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Damage Bonus (general)",
+              "add": 5,
+              "isPercent": true
+            },
+            {
+              "propertyId": 57,
+              "key": "breakingDmgBonus",
+              "label": "Breaking Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Breaking Damage Bonus",
+              "add": 5,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
     "normalAttack": {
       "id": 4081,
       "name": "Hunt",
@@ -33,70 +146,142 @@
         163,
         176
       ],
-      "maxCoef": 176
+      "maxCoef": 176,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 4082,
       "name": "Desert Huntfire",
       "damageType": 0,
       "coefs": [
-        90,
-        97,
-        105,
-        113,
-        122,
-        132,
-        143,
-        154,
-        167,
-        180
+        290,
+        313,
+        338,
+        365,
+        395,
+        426,
+        460,
+        497,
+        537,
+        580
       ],
-      "maxCoef": 180
+      "maxCoef": 580,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 40821,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Korryn gains a ? Physical Penetration boost. Her normal attacks now transpierce all enemies caught in the entire row and the attack interval increases slightly, dealing (Attack *?%) Physical Damage per hit. This effect lasts for 10 seconds, during which she cannot automatically recover Energy.",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": [
+            {
+              "propertyId": 13,
+              "key": "energySpeed",
+              "label": "Energy Speed",
+              "statScreen": true,
+              "calcCat": null,
+              "add": -500,
+              "isPercent": true
+            }
+          ]
+        },
+        {
+          "statusId": 40822,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Korryn gains a ? Physical Penetration boost. Her normal attacks now transpierce all enemies caught in the entire row and the attack interval increases slightly, dealing (Attack *?%) Physical Damage per hit. This effect lasts for 10 seconds, during which she cannot automatically recover Energy.",
+          "scripted": true,
+          "scriptName": "korryn.skillreplace",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 40823,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Korryn gains a ? Physical Penetration boost. Her normal attacks now transpierce all enemies caught in the entire row and the attack interval increases slightly, dealing (Attack *?%) Physical Damage per hit. This effect lasts for 10 seconds, during which she cannot automatically recover Energy.",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 36,
+              "key": "penFlat",
+              "label": "Armor Pen (flat)",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 180,
+              "isPercent": false
+            }
+          ]
+        }
+      ]
     },
     "skill1": {
       "id": 4083,
       "name": "Shootout Hour",
       "damageType": 0,
       "coefs": [
-        15,
-        14.4,
-        13.9,
-        13.3,
-        12.8,
-        12.2,
-        11.7,
-        11.1,
-        10.6,
-        10
+        25,
+        28,
+        30.5,
+        33.5,
+        36,
+        39,
+        41.5,
+        44.5,
+        47,
+        50
       ],
-      "maxCoef": 10
+      "maxCoef": 50,
+      "coefSource": "Data",
+      "buffs": []
     },
     "passive": {
       "id": 4084,
       "name": "Flawless Aim",
       "damageType": 0,
-      "coefs": [
-        3,
-        3.2,
-        3.5,
-        3.8,
-        4.1,
-        4.4,
-        4.8,
-        5.1,
-        5.6,
-        6
-      ],
-      "maxCoef": 6
+      "buffs": [
+        {
+          "statusId": 40841,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Korryn gains an Attack bonus based on the number of enemies on the field. For each enemy, her Attack increases by ?%. This effect can stack up to 5 times.",
+          "scripted": true,
+          "scriptName": "korryn.talent",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "exclusive": {
       "id": 4085,
       "name": "Duel at Sunset",
       "damageType": 0,
       "coefs": [
-        150
+        800
       ],
-      "maxCoef": 150
+      "maxCoef": 800,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 40851,
+          "targetCamps": 1,
+          "target": "enemy",
+          "description": "New Exclusive Ultimate [Duel at Sunset]. Korryn deals (Attack *?%) Physical Damage and 1 Core Damage to the enemy with the highest Max HP within a single grid, reducing their Defense by ? for 15 seconds.",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 3,
+              "key": "armor",
+              "label": "Armor",
+              "statScreen": true,
+              "calcCat": null,
+              "add": -150,
+              "isPercent": false
+            }
+          ]
+        }
+      ]
     }
   }
 }

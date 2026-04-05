@@ -16,7 +16,83 @@
       25
     ]
   ],
+  "chains": [
+    {
+      "id": 30801,
+      "name": "Anonymous Visit",
+      "description": "Energy gained through [Frenzy Overflow] +1. After use, 000 gains a 15% Attack Speed bonus for 6 seconds.",
+      "effects": []
+    },
+    {
+      "id": 30802,
+      "name": "Shackles Sync I",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 30803,
+      "name": "Data Hijack",
+      "description": "The original Damage Coefficient of [Gh0st Invasion] increases by 10%, and the duration extends by 4 seconds.",
+      "effects": []
+    },
+    {
+      "id": 30804,
+      "name": "Energy Overflowing",
+      "description": "At the start of the battle, 000 gains 18 Energy.",
+      "effects": []
+    },
+    {
+      "id": 30805,
+      "name": "Shackles Sync II",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 30800,
+      "effects": [
+        {
+          "propertyId": 11,
+          "key": "atkSpeed",
+          "label": "ATK Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 15,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
   "skills": {
+    "characteristic": {
+      "id": 3080,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": []
+    },
     "normalAttack": {
       "id": 3081,
       "name": "Hack",
@@ -33,7 +109,9 @@
         131,
         142
       ],
-      "maxCoef": 142
+      "maxCoef": 142,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 3082,
@@ -51,7 +129,9 @@
         1722,
         1860
       ],
-      "maxCoef": 1860
+      "maxCoef": 1860,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 3083,
@@ -69,12 +149,30 @@
         28.4,
         30
       ],
-      "maxCoef": 30
+      "maxCoef": 30,
+      "coefSource": "Data",
+      "buffs": []
     },
     "passive": {
       "id": 3084,
       "name": "Frenzy Overflow",
       "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 30841,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Upon performing [Hack] 9 times, 000 manipulates her data halos to slash nearby enemies, dealing (Attack *?%) Physical Damage to all enemies within range, and gains 1 Energy. The skill's activation speed is affected by Attack Speed bonuses.",
+          "scripted": true,
+          "scriptName": "zero.talent",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "extra1": {
+      "id": 3089,
+      "name": "Extra Skill 1",
+      "damageType": 65,
       "coefs": [
         264,
         285,
@@ -87,7 +185,11 @@
         489,
         528
       ],
-      "maxCoef": 528
+      "maxCoef": 528,
+      "coefSource": "AttackPowerCo",
+      "buffs": [],
+      "isSummonSkill": true,
+      "summonScalesFromMaster": true
     }
   }
 }

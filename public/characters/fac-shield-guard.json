@@ -3,27 +3,61 @@
   "name": "FAC Shield Guard",
   "baseAtk": 100,
   "grades": [],
+  "chains": [],
+  "phasePassives": [],
   "skills": {
     "normalAttack": {
       "id": 11852701,
-      "name": "",
+      "name": "Normal Attack",
       "damageType": 1,
       "coefs": [],
-      "maxCoef": null
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 11853802,
       "name": "[Enhanced Dispatch] Consumes a certain amount of supplies to dispatch elite troop units.",
       "damageType": 0,
       "coefs": [],
-      "maxCoef": null
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 118538021,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "[Enhanced Dispatch] Consumes a certain amount of supplies to dispatch elite troop units.",
+          "scripted": true,
+          "scriptName": "common.triggersummon",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 11853803,
       "name": "[Dispatch] Dispatches standard troop units at regular intervals.",
       "damageType": 0,
-      "coefs": [],
-      "maxCoef": null
+      "buffs": [
+        {
+          "statusId": 118538031,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "[Dispatch] Dispatches standard troop units at regular intervals.",
+          "scripted": true,
+          "scriptName": "common.triggersummon",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 118538032,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "[Dispatch] Dispatches standard troop units at regular intervals.",
+          "scripted": true,
+          "scriptName": "common.triggersummon",
+          "maxLevelEffects": []
+        }
+      ]
     }
   }
 }

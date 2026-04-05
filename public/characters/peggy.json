@@ -16,7 +16,85 @@
       5
     ]
   ],
+  "chains": [
+    {
+      "id": 210401,
+      "name": "Once More",
+      "description": "[Sound Barrier] Shield duration extended by 4 seconds",
+      "effects": []
+    },
+    {
+      "id": 210402,
+      "name": "Shackles Sync I",
+      "description": "Shield Effect Increase5%",
+      "effects": [
+        {
+          "propertyId": 47,
+          "key": "property_47",
+          "label": "Property 47",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 210403,
+      "name": "Audio Mixing",
+      "description": "When Peggy is under the protection of any shield, she will gain the healing effect of [Inspire]. When her HP is below 50%, the healing effect of [Inspire] will increase by 50%.",
+      "effects": []
+    },
+    {
+      "id": 210404,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption reduced by 3 points",
+      "effects": []
+    },
+    {
+      "id": 210405,
+      "name": "Shackles Sync II",
+      "description": "Shield Effect Increase5%",
+      "effects": [
+        {
+          "propertyId": 47,
+          "key": "property_47",
+          "label": "Property 47",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
   "skills": {
+    "characteristic": {
+      "id": 21040,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 210400,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 47,
+              "key": "property_47",
+              "label": "Property 47",
+              "statScreen": false,
+              "calcCat": null,
+              "add": 10,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
     "normalAttack": {
       "id": 21041,
       "name": "Beat",
@@ -33,7 +111,9 @@
         159,
         169
       ],
-      "maxCoef": 169
+      "maxCoef": 169,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 21042,
@@ -51,7 +131,19 @@
         42.200001,
         45
       ],
-      "maxCoef": 45
+      "maxCoef": 45,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 210421,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Peggy hypes up the crowd with the most creative chorus, gaining a [Sound Barrier] shield equaling to ?% of her Max HP. The shield lasts 9 seconds.",
+          "scripted": true,
+          "scriptName": "common.shield",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "skill1": {
       "id": 21043,
@@ -69,25 +161,45 @@
         1.8,
         2
       ],
-      "maxCoef": 2
+      "maxCoef": 2,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 210441,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When Peggy is protected by [Sound Barrier], she recovers ?% of her Max HP per second.",
+          "scripted": true,
+          "scriptName": "qiao.talent",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 21044,
       "name": "Epic Lyrics",
       "damageType": 0,
-      "coefs": [
-        10,
-        10.7,
-        11.4,
-        12.2,
-        13,
-        13.9,
-        14.8,
-        15.8,
-        16.9,
-        18
-      ],
-      "maxCoef": 18
+      "buffs": [
+        {
+          "statusId": 210431,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When [Beat] hits an enemy, there's a 20% chance that Peggy gains a shield equaling to ?% of her Max HP for 5 seconds. The effect has a 15-second cooldown.",
+          "scripted": true,
+          "scriptName": "normalattack.addbuff",
+          "maxLevelEffects": [
+            {
+              "propertyId": 47,
+              "key": "property_47",
+              "label": "Property 47",
+              "statScreen": false,
+              "calcCat": null,
+              "add": 15,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
     }
   }
 }

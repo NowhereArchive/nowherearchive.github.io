@@ -3,5 +3,7 @@
   "name": "Teleport (Exit)",
   "baseAtk": 1,
   "grades": [],
+  "chains": [],
+  "phasePassives": [],
   "skills": {}
 }

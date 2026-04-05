@@ -16,7 +16,76 @@
       5
     ]
   ],
+  "chains": [
+    {
+      "id": 260201,
+      "name": "Light Color",
+      "description": "After an [Inspiration Maze] disappears, a [Void Maze] will appear at the same location, halving the Movement Speed Reduction effect for 20 seconds.",
+      "effects": []
+    },
+    {
+      "id": 260202,
+      "name": "Shackles Sync I",
+      "description": "Energy Recovery +7.5%",
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 7.5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 260203,
+      "name": "Portray",
+      "description": "[Butterfly] Mark becomes stackable, up to 2 stacks.",
+      "effects": []
+    },
+    {
+      "id": 260204,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption reduced by 3 points",
+      "effects": []
+    },
+    {
+      "id": 260205,
+      "name": "Shackles Sync II",
+      "description": "Energy Recovery +7.5%",
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 7.5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
   "skills": {
+    "characteristic": {
+      "id": 26020,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 260200,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "normalattack.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
     "normalAttack": {
       "id": 26021,
       "name": "Consonance",
@@ -33,7 +102,9 @@
         135,
         144
       ],
-      "maxCoef": 144
+      "maxCoef": 144,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 26022,
@@ -51,7 +122,9 @@
         28.5,
         30
       ],
-      "maxCoef": 30
+      "maxCoef": 30,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 26023,
@@ -69,25 +142,45 @@
         1.8,
         2
       ],
-      "maxCoef": 2
+      "maxCoef": 2,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 260241,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Enemies entering an [Inspiration Maze] become immobile for ? second(s).",
+          "scripted": true,
+          "scriptName": "common.triggerfield",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 26024,
       "name": "Void Butterfly",
       "damageType": 0,
-      "coefs": [
-        10,
-        10.5,
-        10.9,
-        11.4,
-        12,
-        12.5,
-        13.1,
-        13.7,
-        14.3,
-        15
-      ],
-      "maxCoef": 15
+      "buffs": [
+        {
+          "statusId": 260231,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Enemies entering an [Inspiration Maze] each receives a [Butterfly] mark that reduces their Movement Speed by ?% for the rest of the battle.",
+          "scripted": true,
+          "scriptName": "common.triggerfield",
+          "maxLevelEffects": [
+            {
+              "propertyId": 13,
+              "key": "energySpeed",
+              "label": "Energy Speed",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 15,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
     }
   }
 }

@@ -3,20 +3,55 @@
   "name": "DisWarden - Elite",
   "baseAtk": 150,
   "grades": [],
+  "chains": [],
+  "phasePassives": [],
   "skills": {
     "normalAttack": {
       "id": 30000005,
-      "name": "",
+      "name": "Normal Attack",
       "damageType": 1,
       "coefs": [],
-      "maxCoef": null
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 11850304,
       "name": "[] Summons 1 mob every 7 seconds, up to 5 times. Becomes Invincible while summoning.",
       "damageType": 1,
       "coefs": [],
-      "maxCoef": null
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 11850304,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "[] Summons 1 mob every 7 seconds, up to 5 times. Becomes Invincible while summoning.",
+          "scripted": true,
+          "scriptName": "common.triggersummon",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 30000003,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "[] Summons 1 mob every 7 seconds, up to 5 times. Becomes Invincible while summoning.",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": [
+            {
+              "propertyId": 1,
+              "key": "hp",
+              "label": "HP",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 50,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
     }
   }
 }

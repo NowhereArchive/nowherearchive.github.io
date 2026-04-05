@@ -3,6 +3,8 @@
   "name": "Iron",
   "baseAtk": 150,
   "grades": [],
+  "chains": [],
+  "phasePassives": [],
   "skills": {
     "normalAttack": {
       "id": 13011,
@@ -20,14 +22,18 @@
         163,
         174
       ],
-      "maxCoef": 174
+      "maxCoef": 174,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 91013012,
       "name": "Precision Scalpel",
       "damageType": 1,
       "coefs": [],
-      "maxCoef": null
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
     }
   }
 }

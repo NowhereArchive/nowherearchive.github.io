@@ -16,7 +16,66 @@
       50
     ]
   ],
+  "chains": [
+    {
+      "id": 120301,
+      "name": "Decay",
+      "description": "[Thermonuclear Reaction] Duration of the [Radiation Field] generated is extended by 5 seconds.",
+      "effects": []
+    },
+    {
+      "id": 120302,
+      "name": "Shackles Sync I",
+      "description": "Ultimate damage +10%",
+      "effects": [
+        {
+          "propertyId": 30,
+          "key": "skillDmgBonus",
+          "label": "Skill Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Skill Damage Bonus",
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 120303,
+      "name": "Annihilation Radiation",
+      "description": "[Field Interference] Damage increases 30%",
+      "effects": []
+    },
+    {
+      "id": 120304,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption reduced by 3 points",
+      "effects": []
+    },
+    {
+      "id": 120305,
+      "name": "Shackles Sync II",
+      "description": "Ultimate damage +10%",
+      "effects": [
+        {
+          "propertyId": 30,
+          "key": "skillDmgBonus",
+          "label": "Skill Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Skill Damage Bonus",
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
   "skills": {
+    "characteristic": {
+      "id": 12030,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": []
+    },
     "normalAttack": {
       "id": 12031,
       "name": "Fission",
@@ -33,7 +92,9 @@
         142,
         151
       ],
-      "maxCoef": 151
+      "maxCoef": 151,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 12032,
@@ -51,7 +112,9 @@
         169,
         180
       ],
-      "maxCoef": 180
+      "maxCoef": 180,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 12033,
@@ -69,25 +132,71 @@
         59,
         63
       ],
-      "maxCoef": 63
+      "maxCoef": 63,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 120331,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "At the start of the battle, Pacassi creates a [Secondary Radiation Field] that moves with her and deals (?% of Attack damage) Magic Damage to enemies within her grid per second. [Secondary Radiation Field]'s damage can stack with that of [Radiation Field].",
+          "scripted": true,
+          "scriptName": "common.triggerfield",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 12034,
       "name": "Field Interference",
       "damageType": 0,
-      "coefs": [
-        5,
-        5.4,
-        5.8,
-        6.3,
-        6.8,
-        7.3,
-        7.9,
-        8.6,
-        9.3,
-        10
-      ],
-      "maxCoef": 10
+      "buffs": [
+        {
+          "statusId": 120341,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "After enemies enter a Radiation Field, the damage they take from it is increased by ?% each time. The bonus can stack to up to ?%.",
+          "scripted": true,
+          "scriptName": "pajiaxi.talent",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 1203001,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "After enemies enter a Radiation Field, the damage they take from it is increased by ?% each time. The bonus can stack to up to ?%.",
+          "scripted": true,
+          "scriptName": "common.enhancefield",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 1203002,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "After enemies enter a Radiation Field, the damage they take from it is increased by ?% each time. The bonus can stack to up to ?%.",
+          "scripted": true,
+          "scriptName": "common.enhancefield",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 1203003,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "After enemies enter a Radiation Field, the damage they take from it is increased by ?% each time. The bonus can stack to up to ?%.",
+          "scripted": true,
+          "scriptName": "common.enhancefield",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 1203004,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "After enemies enter a Radiation Field, the damage they take from it is increased by ?% each time. The bonus can stack to up to ?%.",
+          "scripted": true,
+          "scriptName": "common.enhancefield",
+          "maxLevelEffects": []
+        }
+      ]
     }
   }
 }

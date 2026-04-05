@@ -16,7 +16,129 @@
       50
     ]
   ],
+  "chains": [
+    {
+      "id": 140501,
+      "name": "Revelation",
+      "description": "[Reignition]'s trigger probability increases by 15%.",
+      "effects": []
+    },
+    {
+      "id": 140502,
+      "name": "Shackles Sync I",
+      "description": "Attack Speed +5%.",
+      "effects": [
+        {
+          "propertyId": 11,
+          "key": "atkSpeed",
+          "label": "ATK Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 140503,
+      "name": "Singe",
+      "description": "[Ablaze Prairie] no longer requires full energy to cast. In [Burnout] state, Yanyan's total damage dealt to enemies with [Burn] marks increases by 20%.",
+      "effects": []
+    },
+    {
+      "id": 140504,
+      "name": "Energy Overflowing",
+      "description": "At the start of the battle, Yanyan gains 10 energy.",
+      "effects": []
+    },
+    {
+      "id": 140505,
+      "name": "Shackles Sync II",
+      "description": "Attack Speed +5%.",
+      "effects": [
+        {
+          "propertyId": 11,
+          "key": "atkSpeed",
+          "label": "ATK Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 140500,
+      "effects": [
+        {
+          "propertyId": 17,
+          "key": "dmgBonus",
+          "label": "Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Damage Bonus (general)",
+          "add": 10,
+          "isPercent": true
+        },
+        {
+          "propertyId": 57,
+          "key": "breakingDmgBonus",
+          "label": "Breaking Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Breaking Damage Bonus",
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
   "skills": {
+    "characteristic": {
+      "id": 14050,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 140501,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 17,
+              "key": "dmgBonus",
+              "label": "Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Damage Bonus (general)",
+              "add": 5,
+              "isPercent": true
+            },
+            {
+              "propertyId": 57,
+              "key": "breakingDmgBonus",
+              "label": "Breaking Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Breaking Damage Bonus",
+              "add": 5,
+              "isPercent": true
+            }
+          ]
+        },
+        {
+          "statusId": 130600,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.changeenergy",
+          "maxLevelEffects": []
+        }
+      ]
+    },
     "normalAttack": {
       "id": 14051,
       "name": "Pellet of Fire",
@@ -33,25 +155,102 @@
         158.800003,
         169.5
       ],
-      "maxCoef": 169.5
+      "maxCoef": 169.5,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 14052,
       "name": "Ablaze Prairie",
       "damageType": 0,
       "coefs": [
-        20,
-        21,
-        23,
-        24,
-        26,
-        28,
-        30,
-        32,
-        34,
-        36
+        100,
+        105,
+        109,
+        114,
+        120,
+        125,
+        131,
+        137,
+        143,
+        150
       ],
-      "maxCoef": 36
+      "maxCoef": 150,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 140521,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Yanyan enters the [Burnout] state. The ultimate can only be activated when energy is full. Activation does not consume energy, and there is a cooldown period after each use. In this state, Yanyan loses 4 energy per second and no longer naturally recovers energy over time. When using this ultimate again or when Yanyan's energy reaches zero, she will exit the [Burnout] state.\n[Burnout]: Yanyan receives a ?% Normal Attack Damage boost. Her normal attack now prioritizes enemies with the [Burn] mark, dealing an additional damage equivalent to ?% of the total damage all the [Burn] marks on the enemy is supposed to cause during the effective period. After that, she removes all the [Burn] marks on the enemy.",
+          "scripted": true,
+          "scriptName": "skill.replace",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 140522,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Yanyan enters the [Burnout] state. The ultimate can only be activated when energy is full. Activation does not consume energy, and there is a cooldown period after each use. In this state, Yanyan loses 4 energy per second and no longer naturally recovers energy over time. When using this ultimate again or when Yanyan's energy reaches zero, she will exit the [Burnout] state.\n[Burnout]: Yanyan receives a ?% Normal Attack Damage boost. Her normal attack now prioritizes enemies with the [Burn] mark, dealing an additional damage equivalent to ?% of the total damage all the [Burn] marks on the enemy is supposed to cause during the effective period. After that, she removes all the [Burn] marks on the enemy.",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 140523,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Yanyan enters the [Burnout] state. The ultimate can only be activated when energy is full. Activation does not consume energy, and there is a cooldown period after each use. In this state, Yanyan loses 4 energy per second and no longer naturally recovers energy over time. When using this ultimate again or when Yanyan's energy reaches zero, she will exit the [Burnout] state.\n[Burnout]: Yanyan receives a ?% Normal Attack Damage boost. Her normal attack now prioritizes enemies with the [Burn] mark, dealing an additional damage equivalent to ?% of the total damage all the [Burn] marks on the enemy is supposed to cause during the effective period. After that, she removes all the [Burn] marks on the enemy.",
+          "scripted": true,
+          "scriptName": "skill.replace",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 140524,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Yanyan enters the [Burnout] state. The ultimate can only be activated when energy is full. Activation does not consume energy, and there is a cooldown period after each use. In this state, Yanyan loses 4 energy per second and no longer naturally recovers energy over time. When using this ultimate again or when Yanyan's energy reaches zero, she will exit the [Burnout] state.\n[Burnout]: Yanyan receives a ?% Normal Attack Damage boost. Her normal attack now prioritizes enemies with the [Burn] mark, dealing an additional damage equivalent to ?% of the total damage all the [Burn] marks on the enemy is supposed to cause during the effective period. After that, she removes all the [Burn] marks on the enemy.",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 13,
+              "key": "energySpeed",
+              "label": "Energy Speed",
+              "statScreen": true,
+              "calcCat": null,
+              "add": -500,
+              "isPercent": true
+            }
+          ]
+        },
+        {
+          "statusId": 140525,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Yanyan enters the [Burnout] state. The ultimate can only be activated when energy is full. Activation does not consume energy, and there is a cooldown period after each use. In this state, Yanyan loses 4 energy per second and no longer naturally recovers energy over time. When using this ultimate again or when Yanyan's energy reaches zero, she will exit the [Burnout] state.\n[Burnout]: Yanyan receives a ?% Normal Attack Damage boost. Her normal attack now prioritizes enemies with the [Burn] mark, dealing an additional damage equivalent to ?% of the total damage all the [Burn] marks on the enemy is supposed to cause during the effective period. After that, she removes all the [Burn] marks on the enemy.",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 26,
+              "key": "normalDmgBonus",
+              "label": "Normal Attack Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Normal Attack Damage Bonus",
+              "add": 36,
+              "isPercent": true
+            }
+          ]
+        },
+        {
+          "statusId": 140526,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Yanyan enters the [Burnout] state. The ultimate can only be activated when energy is full. Activation does not consume energy, and there is a cooldown period after each use. In this state, Yanyan loses 4 energy per second and no longer naturally recovers energy over time. When using this ultimate again or when Yanyan's energy reaches zero, she will exit the [Burnout] state.\n[Burnout]: Yanyan receives a ?% Normal Attack Damage boost. Her normal attack now prioritizes enemies with the [Burn] mark, dealing an additional damage equivalent to ?% of the total damage all the [Burn] marks on the enemy is supposed to cause during the effective period. After that, she removes all the [Burn] marks on the enemy.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "skill1": {
       "id": 14053,
@@ -69,25 +268,44 @@
         37,
         40
       ],
-      "maxCoef": 40
+      "maxCoef": 40,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 140531,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Receives a ?% Attack Speed boost. Each time Yanyan removes a [Burn] mark from an enemy, she recovers 1 energy.",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 11,
+              "key": "atkSpeed",
+              "label": "ATK Speed",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 40,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
     },
     "passive": {
       "id": 14054,
       "name": "Reignition",
       "damageType": 0,
-      "coefs": [
-        25,
-        26.700001,
-        28.5,
-        30.4,
-        32.5,
-        34.700001,
-        37,
-        39.5,
-        42.5,
-        45
-      ],
-      "maxCoef": 45
+      "buffs": [
+        {
+          "statusId": 140541,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Yanyan's normal attack has a ?% chance to rebound once within the diamond-shaped area, prioritizing enemies with the [Burn] mark.",
+          "scripted": true,
+          "scriptName": "yanyan.talent",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "exclusive": {
       "id": 14055,
@@ -98,7 +316,82 @@
         600,
         700
       ],
-      "maxCoef": 700
+      "maxCoef": 700,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "extra1": {
+      "id": 140500,
+      "name": "Extra Skill 1",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 1405001,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "yanyan.detonate",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 1405002,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "lynn.chain",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 1405003,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "lynn.chain",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 1405004,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "lynn.chain",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 1405005,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "lynn.chain",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 1405006,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "lynn.chain",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 1405007,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "lynn.chain",
+          "maxLevelEffects": []
+        }
+      ]
     }
   }
 }

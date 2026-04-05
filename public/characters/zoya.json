@@ -16,7 +16,129 @@
       25
     ]
   ],
+  "chains": [
+    {
+      "id": 20101,
+      "name": "All-out",
+      "description": "[Legion's Arrival] Duration is extended by 5 seconds.",
+      "effects": []
+    },
+    {
+      "id": 20102,
+      "name": "Shackles Sync I",
+      "description": "Normal ATK Damage +5%",
+      "effects": [
+        {
+          "propertyId": 26,
+          "key": "normalDmgBonus",
+          "label": "Normal Attack Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Normal Attack Damage Bonus",
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 20103,
+      "name": "Head-to-head",
+      "description": "Zoya gets 20% increase in Damage when there's only 1 enemy within her cross area.",
+      "effects": []
+    },
+    {
+      "id": 20104,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption is reduced by 5 points.",
+      "effects": []
+    },
+    {
+      "id": 20105,
+      "name": "Shackles Sync II",
+      "description": "Normal ATK Damage +5%",
+      "effects": [
+        {
+          "propertyId": 26,
+          "key": "normalDmgBonus",
+          "label": "Normal Attack Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Normal Attack Damage Bonus",
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 20106,
+      "effects": [
+        {
+          "propertyId": 17,
+          "key": "dmgBonus",
+          "label": "Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Damage Bonus (general)",
+          "add": 10,
+          "isPercent": true
+        },
+        {
+          "propertyId": 57,
+          "key": "breakingDmgBonus",
+          "label": "Breaking Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Breaking Damage Bonus",
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
   "skills": {
+    "characteristic": {
+      "id": 2010,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 20101,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 20102,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 17,
+              "key": "dmgBonus",
+              "label": "Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Damage Bonus (general)",
+              "add": 5,
+              "isPercent": true
+            },
+            {
+              "propertyId": 57,
+              "key": "breakingDmgBonus",
+              "label": "Breaking Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Breaking Damage Bonus",
+              "add": 5,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
     "normalAttack": {
       "id": 2011,
       "name": "Assault",
@@ -33,7 +155,9 @@
         140,
         150
       ],
-      "maxCoef": 150
+      "maxCoef": 150,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 2012,
@@ -51,7 +175,29 @@
         843,
         900
       ],
-      "maxCoef": 900
+      "maxCoef": 900,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 20122,
+          "targetCamps": 1,
+          "target": "enemy",
+          "description": "Zoya goes all out, dealing (?% of her Attack) Physical Damage to a 3x3 square around her, temporarily terrifying all enemies in the range and gaining [Legion's Arrival].\n[Legion's Arrival]: Switching the fighting strategy, increasing the number of hits and Normal Attack Damage Coefficient, at the expense of some Attack Speed. Lasts for 15 seconds, during which Zoya can't automatically recover her energy.",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": [
+            {
+              "propertyId": 12,
+              "key": "moveSpeed",
+              "label": "Move Speed",
+              "statScreen": true,
+              "calcCat": null,
+              "add": -75,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
     },
     "skill1": {
       "id": 2013,
@@ -69,25 +215,79 @@
         43,
         45
       ],
-      "maxCoef": 45
+      "maxCoef": 45,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 20131,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Every third attack deals an extra (2% of the target's HP) True Damage. (The damage dealt will not exceed ?% of Zoya's Attack.)",
+          "scripted": true,
+          "scriptName": "normalattack.basicdamageextra",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 2014,
       "name": "Fiery Invasion",
       "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 20141,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Zoya's Attack Speed increases by ?% each time she attacks the same enemy. The effect can stack up to 15 times.",
+          "scripted": true,
+          "scriptName": "common.damagemarkbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "extra1": {
+      "id": 2015,
+      "name": "Assault",
+      "damageType": 1,
       "coefs": [
-        1,
-        1.1,
-        1.2,
-        1.3,
-        1.4,
-        1.5,
-        1.6,
-        1.7,
-        1.8,
-        2
+        249,
+        266,
+        284,
+        303,
+        324,
+        346,
+        369,
+        394,
+        421,
+        449
       ],
-      "maxCoef": 2
+      "maxCoef": 449,
+      "coefSource": "AttackPowerCo",
+      "buffs": [],
+      "isSummonSkill": true,
+      "summonScalesFromMaster": true
+    },
+    "extra2": {
+      "id": 2019,
+      "name": "Extra Skill 2",
+      "damageType": 1,
+      "coefs": [
+        167,
+        178,
+        187,
+        203,
+        217,
+        231,
+        247,
+        263,
+        281,
+        300
+      ],
+      "maxCoef": 300,
+      "coefSource": "AttackPowerCo",
+      "buffs": [],
+      "isSummonSkill": true,
+      "summonScalesFromMaster": true
     }
   }
 }

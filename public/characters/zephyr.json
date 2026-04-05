@@ -16,7 +16,112 @@
       50
     ]
   ],
+  "chains": [
+    {
+      "id": 160901,
+      "name": "Shackles Sync I",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 160902,
+      "name": "Signal Interference",
+      "description": "[Signal Barrier] additionally reduces healing effects by 20%.",
+      "effects": []
+    },
+    {
+      "id": 160903,
+      "name": "Shackles Sync II",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 160904,
+      "name": "Energy Overflowing",
+      "description": "At the start of the battle, Zephyr gains 15 Energy.",
+      "effects": []
+    },
+    {
+      "id": 160905,
+      "name": "Shackles Sync III",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 160906,
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 15,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
   "skills": {
+    "characteristic": {
+      "id": 16090,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 160900,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 13,
+              "key": "energySpeed",
+              "label": "Energy Speed",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 10,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
     "normalAttack": {
       "id": 16091,
       "name": "Forced Landing",
@@ -33,7 +138,9 @@
         156,
         168
       ],
-      "maxCoef": 168
+      "maxCoef": 168,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 16092,
@@ -51,7 +158,19 @@
         3129,
         3380
       ],
-      "maxCoef": 3380
+      "maxCoef": 3380,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 160921,
+          "targetCamps": 1,
+          "target": "enemy",
+          "description": "Zephyr deals (Attack *?%) Magic Damage to all enemies within range. Over the next 3 seconds, the enemies will gradually recover HP equal to 35% of the damage dealt by this hit. [Air Raid Siren] can be charged up to 2 times.",
+          "scripted": true,
+          "scriptName": "zephyr.marking",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "skill1": {
       "id": 16093,
@@ -69,25 +188,44 @@
         27.799999,
         30
       ],
-      "maxCoef": 30
+      "maxCoef": 30,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 160931,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When casting [Air Raid Siren] or [Mayhem Route], applies [Signal Barrier] to enemies, reducing their healing received by ?% for 10 seconds.",
+          "scripted": true,
+          "scriptName": "zephyr.passive",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 160933,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When casting [Air Raid Siren] or [Mayhem Route], applies [Signal Barrier] to enemies, reducing their healing received by ?% for 10 seconds.",
+          "scripted": true,
+          "scriptName": "zephyr.passive",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 16094,
       "name": "Signal Deflection",
       "damageType": 0,
-      "coefs": [
-        5,
-        5.4,
-        5.8,
-        6.3,
-        6.8,
-        7.3,
-        7.9,
-        8.6,
-        9.3,
-        10
-      ],
-      "maxCoef": 10
+      "buffs": [
+        {
+          "statusId": 160940,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When enemies with [Signal Barrier] receive healing, their damage dealt decreases by ?%. This effect stacks up to 3 times and lasts for 5 seconds.",
+          "scripted": true,
+          "scriptName": "zephyr.talent",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "exclusive": {
       "id": 16095,
@@ -98,7 +236,9 @@
         350,
         500
       ],
-      "maxCoef": 500
+      "maxCoef": 500,
+      "coefSource": "Data",
+      "buffs": []
     }
   }
 }

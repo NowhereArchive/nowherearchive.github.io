@@ -16,7 +16,130 @@
       25
     ]
   ],
+  "chains": [
+    {
+      "id": 40401,
+      "name": "Quality Constraint",
+      "description": "When Dreya deals damage to an enemy, for each [Life Loss] state they carry, their damage taken is increased by 4%.",
+      "effects": []
+    },
+    {
+      "id": 40402,
+      "name": "Shackles Sync I",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 40403,
+      "name": "Action at a Distance",
+      "description": "In [Corruption State], [Colossal Collapse]'s coefficient to calculate total damage is increased by 10%.",
+      "effects": []
+    },
+    {
+      "id": 40404,
+      "name": "Quantum Inflation",
+      "description": "Dreya gains 30 M-value at the start of a battle.",
+      "effects": []
+    },
+    {
+      "id": 40405,
+      "name": "Shackles Sync II",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
   "skills": {
+    "characteristic": {
+      "id": 4040,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 40401,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "dreya.passive",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 40492,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.stateaddbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 40493,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.stateaddbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 40494,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.stateaddbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 40495,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.stateaddbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 40450,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "dreya.exclusive",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 404001,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "dreya.detonate",
+          "maxLevelEffects": []
+        }
+      ]
+    },
     "normalAttack": {
       "id": 4041,
       "name": "Scattered Rain",
@@ -33,7 +156,9 @@
         96,
         102
       ],
-      "maxCoef": 102
+      "maxCoef": 102,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 4042,
@@ -51,7 +176,9 @@
         1296,
         1400
       ],
-      "maxCoef": 1400
+      "maxCoef": 1400,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 4043,
@@ -69,32 +196,81 @@
         92.599998,
         100
       ],
-      "maxCoef": 100
+      "maxCoef": 100,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 40431,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "For every 8 times Dreya deals Normal Attack, she inflicts a [Life Loss] state on all enemies in her attack range.\n[Life Loss]: Deals (Attack *?%) Physical Damage per second for 10 seconds.",
+          "scripted": true,
+          "scriptName": "dreya.passive1",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 4044,
       "name": "Abyssal Drain",
       "damageType": 0,
-      "coefs": [
-        6,
-        6.5,
-        7,
-        7.6,
-        8.2,
-        8.8,
-        9.5,
-        10.3,
-        11.1,
-        12
-      ],
-      "maxCoef": 12
+      "buffs": [
+        {
+          "statusId": 40441,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Gains a ?% Attack boost. The damage intervals of all [Life Loss] states inflicted by allied units on the field shorten by ? seconds.",
+          "scripted": true,
+          "scriptName": "dreya.talent",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 40442,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Gains a ?% Attack boost. The damage intervals of all [Life Loss] states inflicted by allied units on the field shorten by ? seconds.",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 2,
+              "key": "atk",
+              "label": "ATK",
+              "statScreen": false,
+              "calcCat": null,
+              "add": 12,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
     },
     "exclusive": {
       "id": 4045,
       "name": "Tempestuous Pull",
       "damageType": 0,
       "coefs": [],
-      "maxCoef": null
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "extra3": {
+      "id": 40401,
+      "name": "Extra Skill 3",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 404002,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "dreya.detonate",
+          "maxLevelEffects": []
+        }
+      ]
     }
   }
 }

@@ -16,7 +16,94 @@
       5
     ]
   ],
+  "chains": [
+    {
+      "id": 240201,
+      "name": "Water Cannon",
+      "description": "[Unleash the Waterworks] Effect duration extended by 4 seconds",
+      "effects": []
+    },
+    {
+      "id": 240202,
+      "name": "Shackles Sync I",
+      "description": "CRIT Rate +5%",
+      "effects": [
+        {
+          "propertyId": 5,
+          "key": "critRate",
+          "label": "Crit Rate",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 240203,
+      "name": "Fire Rescue",
+      "description": "When Flora performs a critical hit, the trigger intervals of [High-pressure Water Bomb] and [Super High-pressure Water Bomb] are reduced by 1.",
+      "effects": []
+    },
+    {
+      "id": 240204,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption reduced by 3 points",
+      "effects": []
+    },
+    {
+      "id": 240205,
+      "name": "Shackles Sync II",
+      "description": "CRIT Rate +5%",
+      "effects": [
+        {
+          "propertyId": 5,
+          "key": "critRate",
+          "label": "Crit Rate",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
   "skills": {
+    "characteristic": {
+      "id": 24020,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 240200,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 57,
+              "key": "breakingDmgBonus",
+              "label": "Breaking Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Breaking Damage Bonus",
+              "add": 5,
+              "isPercent": true
+            },
+            {
+              "propertyId": 17,
+              "key": "dmgBonus",
+              "label": "Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Damage Bonus (general)",
+              "add": 5,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
     "normalAttack": {
       "id": 24021,
       "name": "Water Bomb",
@@ -33,7 +120,9 @@
         76,
         81
       ],
-      "maxCoef": 81
+      "maxCoef": 81,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 24022,
@@ -51,7 +140,37 @@
         337,
         360
       ],
-      "maxCoef": 360
+      "maxCoef": 360,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 2402210,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Flora unleashes the waterworks, turning her normal attacks into [High-pressure Water Bombs] for 10 seconds, dealing (?% of her Attack) Physical Damage to an enemy. During the effect, Flora's attack frequency is decreased, and she can't automatically recover her energy.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 2402211,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Flora unleashes the waterworks, turning her normal attacks into [High-pressure Water Bombs] for 10 seconds, dealing (?% of her Attack) Physical Damage to an enemy. During the effect, Flora's attack frequency is decreased, and she can't automatically recover her energy.",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 13,
+              "key": "energySpeed",
+              "label": "Energy Speed",
+              "statScreen": true,
+              "calcCat": null,
+              "add": -500,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
     },
     "skill1": {
       "id": 24023,
@@ -69,25 +188,85 @@
         16.9,
         18
       ],
-      "maxCoef": 18
+      "maxCoef": 18,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 240232,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Flora's CRIT Rate is increased by ?%. Her every fifth normal attack is turned into a [High-pressure Water Bomb].",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 5,
+              "key": "critRate",
+              "label": "Crit Rate",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 18,
+              "isPercent": true
+            }
+          ]
+        },
+        {
+          "statusId": 240231,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Flora's CRIT Rate is increased by ?%. Her every fifth normal attack is turned into a [High-pressure Water Bomb].",
+          "scripted": true,
+          "scriptName": "fuluola.passive",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 24024,
       "name": "Flame Retardant",
       "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 240241,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When [Unleash the Waterworks] is in effect, Flora gains ?% of CRIT rate bonus.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": [
+            {
+              "propertyId": 5,
+              "key": "critRate",
+              "label": "Crit Rate",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 10,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "extra2": {
+      "id": 24025,
+      "name": "Extra Skill 2",
+      "damageType": 1,
       "coefs": [
-        15,
-        16,
-        17.1,
-        18.200001,
-        19.5,
-        20.799999,
-        22.200001,
-        23.700001,
-        25.299999,
-        27
+        200,
+        213,
+        228,
+        243,
+        260,
+        277,
+        296,
+        316,
+        337,
+        360
       ],
-      "maxCoef": 27
+      "maxCoef": 360,
+      "coefSource": "AttackPowerCo",
+      "buffs": [],
+      "isSummonSkill": true,
+      "summonScalesFromMaster": true
     }
   }
 }

@@ -16,7 +16,95 @@
       50
     ]
   ],
+  "chains": [
+    {
+      "id": 160501,
+      "name": "Shackles Sync I",
+      "description": "Healing rate increases by 5%.",
+      "effects": [
+        {
+          "propertyId": 43,
+          "key": "property_43",
+          "label": "Property 43",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 160502,
+      "name": "Euphonious Echoes",
+      "description": "[Triumphant Silence] lasts 2  seconds longer.",
+      "effects": []
+    },
+    {
+      "id": 160503,
+      "name": "Shackles Sync II",
+      "description": "Healing rate increases by 5%.",
+      "effects": [
+        {
+          "propertyId": 43,
+          "key": "property_43",
+          "label": "Property 43",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 160504,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption is reduced by 3 points.",
+      "effects": []
+    },
+    {
+      "id": 160505,
+      "name": "Shackles Sync III",
+      "description": "Healing rate increases by 5%.",
+      "effects": [
+        {
+          "propertyId": 43,
+          "key": "property_43",
+          "label": "Property 43",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
   "skills": {
+    "characteristic": {
+      "id": 16050,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 160500,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "dudu.chains",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 160504,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.energyfull",
+          "maxLevelEffects": []
+        }
+      ]
+    },
     "normalAttack": {
       "id": 16051,
       "name": "Musical Performance",
@@ -33,7 +121,9 @@
         37.299999,
         39
       ],
-      "maxCoef": 39
+      "maxCoef": 39,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 16052,
@@ -51,7 +141,9 @@
         502,
         525
       ],
-      "maxCoef": 525
+      "maxCoef": 525,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 16053,
@@ -69,25 +161,15 @@
         9,
         10
       ],
-      "maxCoef": 10
+      "maxCoef": 10,
+      "coefSource": "Data",
+      "buffs": []
     },
     "passive": {
       "id": 16054,
       "name": "Triumphant Silence",
       "damageType": 0,
-      "coefs": [
-        13.3,
-        13.9,
-        14.6,
-        15.3,
-        16,
-        16.700001,
-        17.5,
-        18.299999,
-        19.1,
-        20
-      ],
-      "maxCoef": 20
+      "buffs": []
     },
     "exclusive": {
       "id": 16055,
@@ -98,7 +180,9 @@
         3.5,
         4
       ],
-      "maxCoef": 4
+      "maxCoef": 4,
+      "coefSource": "Data",
+      "buffs": []
     }
   }
 }

@@ -16,7 +16,120 @@
       25
     ]
   ],
+  "chains": [
+    {
+      "id": 40501,
+      "name": "Guidance Assistance",
+      "description": "[Onyx Refraction] refracts an extra time.",
+      "effects": []
+    },
+    {
+      "id": 40502,
+      "name": "Shackles Sync I",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 40503,
+      "name": "Command Execution",
+      "description": "When Shalom deals Normal Attack Damage to enemies, the damage they suffer +4%. Up to 5 stacks and lasts 10 seconds.",
+      "effects": []
+    },
+    {
+      "id": 40504,
+      "name": "Energy Overflowing",
+      "description": "At the start of the battle, Shalom gains 18 points of Energy.",
+      "effects": []
+    },
+    {
+      "id": 40505,
+      "name": "Shackles Sync II",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 40506,
+      "effects": [
+        {
+          "propertyId": 17,
+          "key": "dmgBonus",
+          "label": "Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Damage Bonus (general)",
+          "add": 10,
+          "isPercent": true
+        },
+        {
+          "propertyId": 57,
+          "key": "breakingDmgBonus",
+          "label": "Breaking Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Breaking Damage Bonus",
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
   "skills": {
+    "characteristic": {
+      "id": 4050,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 40500,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 17,
+              "key": "dmgBonus",
+              "label": "Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Damage Bonus (general)",
+              "add": 5,
+              "isPercent": true
+            },
+            {
+              "propertyId": 57,
+              "key": "breakingDmgBonus",
+              "label": "Breaking Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Breaking Damage Bonus",
+              "add": 5,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
     "normalAttack": {
       "id": 4051,
       "name": "Anchor",
@@ -33,25 +146,29 @@
         143,
         153
       ],
-      "maxCoef": 153
+      "maxCoef": 153,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 4052,
       "name": "Reticence",
       "damageType": 1,
       "coefs": [
-        120,
-        130,
-        140,
-        151,
-        163,
-        176,
-        190,
-        206,
-        222,
-        240
+        720,
+        778,
+        840,
+        907,
+        980,
+        1058,
+        1143,
+        1234,
+        1333,
+        1440
       ],
-      "maxCoef": 240
+      "maxCoef": 1440,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 4053,
@@ -69,32 +186,54 @@
         11.9,
         10
       ],
-      "maxCoef": 10
+      "maxCoef": 10,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 40531,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "[Anchor] Damage dealt is refracted across a diamond-shaped range, up to 3 refractions. Refracted damage lessens by ?% with each refraction.",
+          "scripted": true,
+          "scriptName": "shalom.passive",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 4054,
       "name": "Error Correction",
       "damageType": 0,
-      "coefs": [
-        6,
-        6.5,
-        7,
-        7.6,
-        8.2,
-        8.8,
-        9.5,
-        10.3,
-        11.1,
-        12
-      ],
-      "maxCoef": 12
+      "buffs": [
+        {
+          "statusId": 40541,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Gains an Attack boost of ?%. When [Reticence] strikes an enemy, one additional [Anchor] damage is dealt. Each range strike can deal up to ? times.",
+          "scripted": true,
+          "scriptName": "shalom.talent",
+          "maxLevelEffects": [
+            {
+              "propertyId": 2,
+              "key": "atk",
+              "label": "ATK",
+              "statScreen": false,
+              "calcCat": null,
+              "add": 12,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
     },
     "exclusive": {
       "id": 4055,
       "name": "Surveillant",
       "damageType": 0,
       "coefs": [],
-      "maxCoef": null
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
     }
   }
 }

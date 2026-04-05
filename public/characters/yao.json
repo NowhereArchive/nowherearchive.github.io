@@ -16,7 +16,111 @@
       25
     ]
   ],
+  "chains": [
+    {
+      "id": 20501,
+      "name": "Catastrophic Fate",
+      "description": "[Sacrifice] The Attack boost obtained by swallowing an allied Sinner increases by 20%.",
+      "effects": []
+    },
+    {
+      "id": 20502,
+      "name": "Shackles Sync I",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 20503,
+      "name": "Ethereal Glow",
+      "description": "When an enemy is branded with the [Burn] mark, the damage they take increases by 15%. This effect lasts for the entire battle.",
+      "effects": []
+    },
+    {
+      "id": 20504,
+      "name": "Energy Overflowing",
+      "description": "At the start of the battle, Yao gains 18 energy.",
+      "effects": []
+    },
+    {
+      "id": 20505,
+      "name": "Shackles Sync II",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 20500,
+      "effects": [
+        {
+          "propertyId": 17,
+          "key": "dmgBonus",
+          "label": "Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Damage Bonus (general)",
+          "add": 10,
+          "isPercent": true
+        },
+        {
+          "propertyId": 57,
+          "key": "breakingDmgBonus",
+          "label": "Breaking Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Breaking Damage Bonus",
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
   "skills": {
+    "characteristic": {
+      "id": 2050,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 20500,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "yao.energyfull",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 20561,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "yao.extradamage",
+          "maxLevelEffects": []
+        }
+      ]
+    },
     "normalAttack": {
       "id": 2051,
       "name": "Flame Slash",
@@ -33,25 +137,29 @@
         173,
         187
       ],
-      "maxCoef": 187
+      "maxCoef": 187,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 2055,
       "name": "Sacrifice/Falling Sun",
       "damageType": 0,
       "coefs": [
-        40,
-        41.799999,
-        43.799999,
-        45.799999,
-        47.900002,
-        50.099998,
-        52.400002,
-        54.799999,
-        57.400002,
-        60
+        300,
+        324,
+        350,
+        378,
+        408,
+        441,
+        476,
+        514,
+        556,
+        600
       ],
-      "maxCoef": 60
+      "maxCoef": 600,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 2057,
@@ -69,25 +177,35 @@
         433,
         468
       ],
-      "maxCoef": 468
+      "maxCoef": 468,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 20571,
+          "targetCamps": 2,
+          "target": "self",
+          "description": "Each slash of [Falling Sun] applies a [Burn] Mark. After every 4 normal attacks, Yao's next normal attack deals ?% more damage and applies a [Burn] Mark.\n[Burn]: Deals (Attack *?%) Magic Damage per second for 2 seconds.",
+          "scripted": true,
+          "scriptName": "yao.passive",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 2058,
       "name": "Omniluminous",
       "damageType": 0,
-      "coefs": [
-        35,
-        37.799999,
-        40.799999,
-        44.099998,
-        47.599998,
-        51.400002,
-        55.599998,
-        60,
-        64.800003,
-        70
-      ],
-      "maxCoef": 70
+      "buffs": [
+        {
+          "statusId": 20581,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "After the battle starts, all allied Sinners gain a ?% [Burn] damage boost.",
+          "scripted": true,
+          "scriptName": "common.triggerfield",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "exclusive": {
       "id": 2059,
@@ -98,7 +216,75 @@
         750,
         1000
       ],
-      "maxCoef": 1000
+      "maxCoef": 1000,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "extra1": {
+      "id": 2054,
+      "name": "Extra Skill 1",
+      "damageType": 2,
+      "coefs": [
+        94,
+        101,
+        109,
+        118,
+        127,
+        138,
+        149,
+        160,
+        173,
+        187
+      ],
+      "maxCoef": 187,
+      "coefSource": "AttackPowerCo",
+      "buffs": [],
+      "isSummonSkill": true,
+      "summonScalesFromMaster": true
+    },
+    "extra2": {
+      "id": 2053,
+      "name": "Extra Skill 2",
+      "damageType": 2,
+      "coefs": [
+        94,
+        101,
+        109,
+        118,
+        127,
+        138,
+        149,
+        160,
+        173,
+        187
+      ],
+      "maxCoef": 187,
+      "coefSource": "AttackPowerCo",
+      "buffs": [],
+      "isSummonSkill": true,
+      "summonScalesFromMaster": true
+    },
+    "extra3": {
+      "id": 2052,
+      "name": "Extra Skill 3",
+      "damageType": 2,
+      "coefs": [
+        94,
+        101,
+        109,
+        118,
+        127,
+        138,
+        149,
+        160,
+        173,
+        187
+      ],
+      "maxCoef": 187,
+      "coefSource": "AttackPowerCo",
+      "buffs": [],
+      "isSummonSkill": true,
+      "summonScalesFromMaster": true
     }
   }
 }

@@ -16,7 +16,102 @@
       25
     ]
   ],
+  "chains": [
+    {
+      "id": 30901,
+      "name": "Unwavering Loyalty",
+      "description": "Each stack of [Lonesome Specter] provides an additional 2.5% damage increase against enemies with broken cores.",
+      "effects": []
+    },
+    {
+      "id": 30902,
+      "name": "Shackles Sync I",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 30903,
+      "name": "Soul Kiss",
+      "description": "For each [Umbra Core] broken on the field, Graves gains a 2.5% increase in Attack Speed and Attack while in the [Cupid's Grace] state, stacking up to 12 times.",
+      "effects": []
+    },
+    {
+      "id": 30904,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption is reduced by 5 points.",
+      "effects": []
+    },
+    {
+      "id": 30905,
+      "name": "Shackles Sync II",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 30900,
+      "effects": [
+        {
+          "propertyId": 17,
+          "key": "dmgBonus",
+          "label": "Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Damage Bonus (general)",
+          "add": 10,
+          "isPercent": true
+        },
+        {
+          "propertyId": 57,
+          "key": "breakingDmgBonus",
+          "label": "Breaking Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Breaking Damage Bonus",
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
   "skills": {
+    "characteristic": {
+      "id": 3090,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 30900,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "graves.superweaknesscreator",
+          "maxLevelEffects": []
+        }
+      ]
+    },
     "normalAttack": {
       "id": 3091,
       "name": "Adoration",
@@ -33,7 +128,9 @@
         176,
         190
       ],
-      "maxCoef": 190
+      "maxCoef": 190,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 3092,
@@ -51,7 +148,9 @@
         1926,
         2080
       ],
-      "maxCoef": 2080
+      "maxCoef": 2080,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 3093,
@@ -69,25 +168,35 @@
         555.5,
         600
       ],
-      "maxCoef": 600
+      "maxCoef": 600,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 30931,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Whenever an [Umbra Core] on an enemy is broken, Graves applies 1 stack of [Vow] to them. When the enemy enters the core break state, all [Vow] stacks are removed, and for each stack removed, the enemy takes (Graves's Attack *?%) Physical Damage.",
+          "scripted": true,
+          "scriptName": "graves.passive",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 3094,
       "name": "Lonesome Specter",
       "damageType": 0,
-      "coefs": [
-        1.2,
-        1.3,
-        1.4,
-        1.5,
-        1.7,
-        1.8,
-        2,
-        2.1,
-        2.3,
-        2.5
-      ],
-      "maxCoef": 2.5
+      "buffs": [
+        {
+          "statusId": 30940,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Whenever an allied Sinner (except Graves herself) breaks an [Umbra Core], both that Sinner and Graves receive an Attack bonus of ?%, stacking up to 12 times and lasting until the end of the battle. If Graves breaks the core herself, she gains 2 stacks instead.",
+          "scripted": true,
+          "scriptName": "graves.talent",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "exclusive": {
       "id": 3095,
@@ -98,7 +207,29 @@
         600,
         900
       ],
-      "maxCoef": 900
+      "maxCoef": 900,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "extra1": {
+      "id": 3096,
+      "name": "Adoration",
+      "damageType": 1,
+      "coefs": [
+        95,
+        103,
+        111,
+        120,
+        129,
+        140,
+        151,
+        163,
+        176,
+        190
+      ],
+      "maxCoef": 190,
+      "coefSource": "Data",
+      "buffs": []
     }
   }
 }

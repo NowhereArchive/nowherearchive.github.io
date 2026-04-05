@@ -16,7 +16,120 @@
       25
     ]
   ],
+  "chains": [
+    {
+      "id": 40701,
+      "name": "Live Broadcast",
+      "description": "[Close-up Shot] can now be stacked up to 15 times and lasts until the end of the battle.",
+      "effects": []
+    },
+    {
+      "id": 40702,
+      "name": "Shackles Sync I",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 40703,
+      "name": "Exclusive Interview",
+      "description": "Bianca gains 24 Physical Penetration for each successful removal of an enemy's [Weakspot] mark, lasting 5 seconds. Can be stacked up to 5 times.",
+      "effects": []
+    },
+    {
+      "id": 40704,
+      "name": "Energy Overflowing",
+      "description": "At the start of the battle, Bianca gains 15 Energy.",
+      "effects": []
+    },
+    {
+      "id": 40705,
+      "name": "Shackles Sync II",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 40700,
+      "effects": [
+        {
+          "propertyId": 92,
+          "key": "flawLegacyDmg",
+          "label": "Flaw Legacy Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Flaw Legacy Damage Bonus",
+          "add": 20,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
   "skills": {
+    "characteristic": {
+      "id": 4070,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 40706,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 17,
+              "key": "dmgBonus",
+              "label": "Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Damage Bonus (general)",
+              "add": 5,
+              "isPercent": true
+            },
+            {
+              "propertyId": 57,
+              "key": "breakingDmgBonus",
+              "label": "Breaking Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Breaking Damage Bonus",
+              "add": 5,
+              "isPercent": true
+            }
+          ]
+        },
+        {
+          "statusId": 1608303,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.aura",
+          "maxLevelEffects": []
+        }
+      ]
+    },
     "normalAttack": {
       "id": 4071,
       "name": "Expose",
@@ -33,7 +146,9 @@
         167,
         180
       ],
-      "maxCoef": 180
+      "maxCoef": 180,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 4072,
@@ -51,7 +166,46 @@
         278,
         300
       ],
-      "maxCoef": 300
+      "maxCoef": 300,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 40700,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Normal attack changes to [Zoom In] and the attack interval lengthens. The Ultimate lasts for 12 seconds, during which Bianca cannot automatically recover Energy. \n[Zoom In]: Deals (Attack *?%) Physical Damage to all enemies within the normal attack range.",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 40705,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Normal attack changes to [Zoom In] and the attack interval lengthens. The Ultimate lasts for 12 seconds, during which Bianca cannot automatically recover Energy. \n[Zoom In]: Deals (Attack *?%) Physical Damage to all enemies within the normal attack range.",
+          "scripted": true,
+          "scriptName": "skill.replace",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 40744,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Normal attack changes to [Zoom In] and the attack interval lengthens. The Ultimate lasts for 12 seconds, during which Bianca cannot automatically recover Energy. \n[Zoom In]: Deals (Attack *?%) Physical Damage to all enemies within the normal attack range.",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 13,
+              "key": "energySpeed",
+              "label": "Energy Speed",
+              "statScreen": true,
+              "calcCat": null,
+              "add": -500,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
     },
     "skill1": {
       "id": 4073,
@@ -69,25 +223,53 @@
         11.1,
         12
       ],
-      "maxCoef": 12
+      "maxCoef": 12,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 40701,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Attack increases by ?%. While [Focal Point] is active, removes the [Weakspot] mark from an enemy within the normal attack range every 1.5 seconds. If successful, actives the [Zoom In] effect once.",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 2,
+              "key": "atk",
+              "label": "ATK",
+              "statScreen": false,
+              "calcCat": null,
+              "add": 12,
+              "isPercent": true
+            }
+          ]
+        },
+        {
+          "statusId": 40703,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Attack increases by ?%. While [Focal Point] is active, removes the [Weakspot] mark from an enemy within the normal attack range every 1.5 seconds. If successful, actives the [Zoom In] effect once.",
+          "scripted": true,
+          "scriptName": "common.triggerfield",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 4074,
       "name": "Close-up Shot",
       "damageType": 0,
-      "coefs": [
-        4.5,
-        4.9,
-        5.2,
-        5.7,
-        6.1,
-        6.6,
-        7.1,
-        7.7,
-        8.3,
-        9
-      ],
-      "maxCoef": 9
+      "buffs": [
+        {
+          "statusId": 40709,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When an enemy takes damage from [Zoom In], they will subsequently take ?% more damage from [Expose] and [Zoom In] for 10 seconds. The effect can be stacked up to 10 times.",
+          "scripted": true,
+          "scriptName": "common.addbuffaftercasterbuffstart",
+          "maxLevelEffects": []
+        }
+      ]
     }
   }
 }

@@ -3,6 +3,8 @@
   "name": "Sumire",
   "baseAtk": 140,
   "grades": [],
+  "chains": [],
+  "phasePassives": [],
   "skills": {
     "normalAttack": {
       "id": 13031,
@@ -20,14 +22,18 @@
         115,
         123
       ],
-      "maxCoef": 123
+      "maxCoef": 123,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 91013032,
       "name": "Impermanence",
       "damageType": 1,
       "coefs": [],
-      "maxCoef": null
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
     }
   }
 }

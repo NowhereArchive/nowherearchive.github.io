@@ -16,7 +16,104 @@
       50
     ]
   ],
+  "chains": [
+    {
+      "id": 120901,
+      "name": "Shackles Sync I",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 120902,
+      "name": "Furious Resolve",
+      "description": "Up to 3 [Lightsabers] can exist on the field.",
+      "effects": []
+    },
+    {
+      "id": 120903,
+      "name": "Shackles Sync II",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 120904,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption is reduced by 3 points.",
+      "effects": []
+    },
+    {
+      "id": 120905,
+      "name": "Shackles Sync III",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
   "skills": {
+    "characteristic": {
+      "id": 12090,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 120971,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 57,
+              "key": "breakingDmgBonus",
+              "label": "Breaking Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Breaking Damage Bonus",
+              "add": 5,
+              "isPercent": true
+            },
+            {
+              "propertyId": 17,
+              "key": "dmgBonus",
+              "label": "Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Damage Bonus (general)",
+              "add": 5,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
     "normalAttack": {
       "id": 12091,
       "name": "Light Slash",
@@ -33,25 +130,29 @@
         178,
         192
       ],
-      "maxCoef": 192
+      "maxCoef": 192,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 12092,
       "name": "Penalty",
       "damageType": 1,
       "coefs": [
-        198,
-        213.899994,
-        231,
-        249.5,
-        269.399994,
-        291,
-        314.299988,
-        339.5,
-        366.600006,
-        396
+        242,
+        261.399994,
+        282.299988,
+        304.899994,
+        329.299988,
+        355.700012,
+        384.200012,
+        414.899994,
+        448.100006,
+        484
       ],
-      "maxCoef": 396
+      "maxCoef": 484,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 12094,
@@ -69,25 +170,44 @@
         794.400024,
         858
       ],
-      "maxCoef": 858
+      "maxCoef": 858,
+      "coefSource": "Data",
+      "buffs": []
     },
     "passive": {
       "id": 12095,
       "name": "Digiblade Radiance",
       "damageType": 0,
-      "coefs": [
-        130,
-        140.399994,
-        151.600006,
-        163.800003,
-        176.899994,
-        191.100006,
-        206.399994,
-        222.899994,
-        240.699997,
-        260
-      ],
-      "maxCoef": 260
+      "buffs": [
+        {
+          "statusId": 120951,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Rise empowers her next normal attack to deal ?% more damage upon picking up a [Lightsaber].\n\nRise empowers her next normal attack to deal ?% more damage upon detonating a [Lightsaber].",
+          "scripted": true,
+          "scriptName": "rise.talent",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "extra1": {
+      "id": 12096,
+      "name": "Extra Skill 1",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 120941,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.triggerfield",
+          "maxLevelEffects": []
+        }
+      ]
     }
   }
 }

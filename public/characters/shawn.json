@@ -16,7 +16,93 @@
       50
     ]
   ],
+  "chains": [
+    {
+      "id": 160801,
+      "name": "Shackles Sync I",
+      "description": "Energy Recovery +7.5%",
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 7.5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 160802,
+      "name": "Chaotic Mind",
+      "description": "[Fascination]'s effect lasts 3 seconds longer.",
+      "effects": []
+    },
+    {
+      "id": 160803,
+      "name": "Shackles Sync II",
+      "description": "Energy Recovery +7.5%",
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 7.5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 160804,
+      "name": "Energy Overflowing",
+      "description": "At the start of the battle, Shawn gains 10 Energy.",
+      "effects": []
+    },
+    {
+      "id": 160805,
+      "name": "Shackles Sync III",
+      "description": "Energy Recovery +7.5%",
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 7.5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 160806,
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 15,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
   "skills": {
+    "characteristic": {
+      "id": 16088,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": []
+    },
     "normalAttack": {
       "id": 16081,
       "name": "Heartbreak",
@@ -33,7 +119,9 @@
         148.100006,
         160
       ],
-      "maxCoef": 160
+      "maxCoef": 160,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 16082,
@@ -51,7 +139,19 @@
         833,
         900
       ],
-      "maxCoef": 900
+      "maxCoef": 900,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 130706,
+          "targetCamps": 1,
+          "target": "enemy",
+          "description": "Shawn deals (Attack *?%) Physical Damage to all enemies within the skill range, applying a [Weakspot] mark to them. [Online Romance] can be charged up to 2 times.",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "skill1": {
       "id": 16084,
@@ -69,25 +169,35 @@
         4.6,
         5
       ],
-      "maxCoef": 5
+      "maxCoef": 5,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 1608401,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "After hitting an enemy with [Online Romance], the enemy receives the [Fascination] effect for ? seconds.\n[Fascination]: When a [Weakspot] mark is removed, it will be reapplied.",
+          "scripted": true,
+          "scriptName": "skill.replace",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 16085,
       "name": "Solace of Love",
       "damageType": 0,
-      "coefs": [
-        60,
-        65,
-        70,
-        76,
-        82,
-        89,
-        96,
-        103,
-        111,
-        120
-      ],
-      "maxCoef": 120
+      "buffs": [
+        {
+          "statusId": 1608502,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When an allied Sinner applies a [Weakspot] mark, Shawn enables all allied Sinners to recover HP equal to (Attack *?%). This effect can be triggered up to once every second.",
+          "scripted": true,
+          "scriptName": "common.stateaddbuff",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "exclusive": {
       "id": 16086,
@@ -98,7 +208,19 @@
         8,
         10
       ],
-      "maxCoef": 10
+      "maxCoef": 10,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 1608601,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Every 2 seconds, Shawn applies a [Weakspot] mark to an enemy, prioritizing those closest to her unmarked with [Weakspot]. This effect lasts for ? seconds. [Deceptive Love] has a 15-second cooldown after each use and can only be used twice per battle.",
+          "scripted": true,
+          "scriptName": "shawn.exclusive",
+          "maxLevelEffects": []
+        }
+      ]
     }
   }
 }

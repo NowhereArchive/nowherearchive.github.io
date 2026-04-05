@@ -16,7 +16,94 @@
       25
     ]
   ],
+  "chains": [
+    {
+      "id": 31101,
+      "name": "Shackles 1",
+      "description": "Shackles 1",
+      "effects": []
+    },
+    {
+      "id": 31102,
+      "name": "Shackles 2",
+      "description": "Shackles 2",
+      "effects": [
+        {
+          "propertyId": 82,
+          "key": "tdDmgBonus",
+          "label": "True Damage Bonus",
+          "statScreen": false,
+          "calcCat": "True Damage Bonus",
+          "add": 8,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 31103,
+      "name": "Shackles 3",
+      "description": "Shackles 3",
+      "effects": []
+    },
+    {
+      "id": 31104,
+      "name": "Shackles 4",
+      "description": "Shackles 4",
+      "effects": []
+    },
+    {
+      "id": 31105,
+      "name": "Shackles 5",
+      "description": "Shackles 5",
+      "effects": [
+        {
+          "propertyId": 82,
+          "key": "tdDmgBonus",
+          "label": "True Damage Bonus",
+          "statScreen": false,
+          "calcCat": "True Damage Bonus",
+          "add": 8,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
   "skills": {
+    "characteristic": {
+      "id": 3110,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 31101,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.changeblades",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 31102,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.changeblades",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 31104,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "ceto.feature",
+          "maxLevelEffects": []
+        }
+      ]
+    },
     "normalAttack": {
       "id": 3111,
       "name": "Rapid Cut",
@@ -33,7 +120,9 @@
         143,
         155
       ],
-      "maxCoef": 155
+      "maxCoef": 155,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 3112,
@@ -51,7 +140,9 @@
         501,
         541
       ],
-      "maxCoef": 541
+      "maxCoef": 541,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 3113,
@@ -69,25 +160,25 @@
         200,
         216
       ],
-      "maxCoef": 216
+      "maxCoef": 216,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 31131,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Every 10 seconds, Ceto turns her next normal attack into dealing damage in 1 grid, dealing (?% of her Attack) Physical Damage 4 times.",
+          "scripted": true,
+          "scriptName": "ceto.passive",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 3114,
       "name": "Fear Feaster",
       "damageType": 0,
-      "coefs": [
-        5,
-        5.4,
-        5.8,
-        6.3,
-        6.8,
-        7.3,
-        7.9,
-        8.6,
-        9.3,
-        10
-      ],
-      "maxCoef": 10
+      "buffs": []
     }
   }
 }

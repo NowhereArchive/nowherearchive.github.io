@@ -16,7 +16,65 @@
       5
     ]
   ],
+  "chains": [
+    {
+      "id": 250101,
+      "name": "Liquid Nitrogen",
+      "description": "[Frigid Zone] Duration extended by 2 seconds",
+      "effects": []
+    },
+    {
+      "id": 250102,
+      "name": "Streamline",
+      "description": "[Frigid Zone] Speed reduction effect increased by 10%",
+      "effects": []
+    },
+    {
+      "id": 250103,
+      "name": "Freezer",
+      "description": "[Frost] When this mark takes effect, the attacker is frozen for 2 seconds",
+      "effects": []
+    },
+    {
+      "id": 250104,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption reduced by 3 points",
+      "effects": []
+    },
+    {
+      "id": 250105,
+      "name": "Streamline",
+      "description": "[Frigid Zone] Speed reduction effect increased by 10%",
+      "effects": []
+    }
+  ],
+  "phasePassives": [],
   "skills": {
+    "characteristic": {
+      "id": 25010,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 250100,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "normalattack.addbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 2501005,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "geji.passive",
+          "maxLevelEffects": []
+        }
+      ]
+    },
     "normalAttack": {
       "id": 25011,
       "name": "Ice Crystal",
@@ -33,7 +91,9 @@
         193,
         206
       ],
-      "maxCoef": 206
+      "maxCoef": 206,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 25012,
@@ -51,7 +111,9 @@
         304,
         324
       ],
-      "maxCoef": 324
+      "maxCoef": 324,
+      "coefSource": "Data",
+      "buffs": []
     },
     "skill1": {
       "id": 25013,
@@ -69,25 +131,35 @@
         28.5,
         30
       ],
-      "maxCoef": 30
+      "maxCoef": 30,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 250131,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Kelvin creates a diamond-shaped [Low Temperature Field] around herself. The Movement Speed of enemies inside it will be reduced by ?%.",
+          "scripted": true,
+          "scriptName": "common.triggerfield",
+          "maxLevelEffects": []
+        }
+      ]
     },
     "passive": {
       "id": 25014,
       "name": "Frost",
       "damageType": 0,
-      "coefs": [
-        28,
-        29.9,
-        31.9,
-        34.099998,
-        36.400002,
-        38.799999,
-        41.400002,
-        44.200001,
-        47.200001,
-        50.400002
-      ],
-      "maxCoef": 50.400002
+      "buffs": [
+        {
+          "statusId": 250141,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "During a battle, Kelvin automatically covers an allied Sinner with lowest percentage of HP with [Frost], gaining ?% damage reduction. After taking damage, [Frost] is removed. The effect has a 15-second cooldown.",
+          "scripted": true,
+          "scriptName": "common.specifytargetaddbuff",
+          "maxLevelEffects": []
+        }
+      ]
     }
   }
 }

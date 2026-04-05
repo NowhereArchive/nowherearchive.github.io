@@ -3,6 +3,8 @@
   "name": "Che",
   "baseAtk": 140,
   "grades": [],
+  "chains": [],
+  "phasePassives": [],
   "skills": {
     "normalAttack": {
       "id": 22021,
@@ -20,14 +22,18 @@
         142,
         151
       ],
-      "maxCoef": 151
+      "maxCoef": 151,
+      "coefSource": "Data",
+      "buffs": []
     },
     "ultimate": {
       "id": 91022022,
       "name": "Happy Hunting",
       "damageType": 1,
       "coefs": [],
-      "maxCoef": null
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
     }
   }
 }
