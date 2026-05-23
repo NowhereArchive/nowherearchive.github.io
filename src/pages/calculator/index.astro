@@ -15,7 +15,17 @@ import "../../styles/calculator.css";
     <div class="hero-sub">Path to Nowhere Damage Calculator</div>
   </div>
 
+  <!-- ═══ TABS ═══ -->
+  <div class="tabs-container">
+    <div class="tabs-nav">
+      <button class="tab-btn on" data-tab="damage">Damage Calculator</button>
+      <button class="tab-btn" data-tab="speed">Attack Speed</button>
+    </div>
+  </div>
+
   <div class="app">
+    <!-- ═══ DAMAGE TAB ═══ -->
+    <div class="tab-content active" data-tab="damage">
     <div class="cols">
       <!-- ═══ LEFT COL ═══ -->
       <div>
@@ -468,6 +478,141 @@ import "../../styles/calculator.css";
         </div>
       </div>
     </div>
+    </div>
+
+    <!-- ═══ SPEED TAB ═══ -->
+    <div class="tab-content" data-tab="speed">
+    <!-- ═══ ATTACK SPEED SECTION ═══ -->
+    <div class="atk-speed-section">
+      <div class="card">
+        <div class="card-head">
+          <div class="stripe red"></div>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <div class="card-title">Attack Speed</div>
+            <button id="as-help-btn" class="card-help-btn" title="Show explanation">?</button>
+          </div>
+          <div class="card-hint">breakpoint calculator · 15 fps logic engine</div>
+        </div>
+        <div class="card-body">
+
+          <div class="row2">
+            <div class="field">
+              <div class="flabel"><span class="ln">Base attack speed</span></div>
+              <input type="number" id="as-base" value="1.5" min="0.01" step="0.0001" placeholder="e.g. 1.8" />
+              <div class="hint" id="as-base-note"></div>
+            </div>
+            <div class="field">
+              <div class="flabel"><span class="ln">Total attack speed bonus %</span></div>
+              <input type="number" id="as-bonus" value="0" min="0" step="0.1" placeholder="e.g. 50 for +50%" />
+              <div class="hint">all percentage bonuses are additive</div>
+            </div>
+          </div>
+          <div class="field" style="margin-top:.75rem">
+            <div class="flabel"><span class="ln">Flat attack speed bonus</span></div>
+            <input type="number" id="as-flat" value="0" min="0" step="0.01" placeholder="e.g. 0.2" />
+            <div class="hint">Added to base before % multiplier</div>
+          </div>
+
+          <div class="atk-strip" id="as-result-strip">
+            <span class="ak">Final speed</span>
+            <span class="av" id="as-final">—</span>
+            <span class="arr">→ frames per attack →</span>
+            <span class="av red" id="as-frames">—</span>
+          </div>
+
+          <div class="sep"></div>
+
+          <!-- Breakpoint display -->
+          <div class="flabel" style="margin-bottom:.5rem">
+            <span class="ln">Current breakpoint</span>
+          </div>
+          <div id="as-bp-current"></div>
+
+          <div class="sep"></div>
+
+          <!-- Worth it checker -->
+          <div class="flabel" style="margin-bottom:.4rem">
+            <span class="ln">Would it push me over?</span>
+          </div>
+          <div class="row2">
+            <div class="field">
+              <div class="flabel"><span class="ln">Check this bonus %</span></div>
+              <input type="number" id="as-check" value="10" min="0" step="0.1" placeholder="e.g. 10" />
+            </div>
+            <div class="field" style="justify-content:flex-end">
+              <div id="as-check-result"></div>
+            </div>
+          </div>
+
+          <div class="sep"></div>
+
+          <!-- Nearby breakpoints -->
+          <div class="flabel" style="margin-bottom:.5rem">
+            <span class="ln">Nearby breakpoints</span>
+          </div>
+          <div id="as-bp-list"></div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══ ATTACK SPEED HELP MODAL ═══ -->
+    <div id="as-help-modal" class="modal-overlay" style="display:none">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">Attack Speed Breakpoints</div>
+          <button id="as-help-close" class="modal-close">✕</button>
+        </div>
+        <div class="modal-body">
+          <p>The frame rate of normal attacks in battles is 15. This means:</p>
+          <ul style="margin: 0.5rem 0 1rem 1.5rem; line-height: 1.6;">
+            <li>If your attack speed is <strong>1.0</strong>, one attack takes <strong>15 frames</strong></li>
+            <li>If your attack speed is <strong>15.0</strong>, one attack takes <strong>1 frame</strong></li>
+            <li>Higher speed = fewer frames per attack</li>
+          </ul>
+
+          <p><strong>The problem:</strong> Attack speed buffs only matter if they push you to a faster frame tier. In between breakpoints, bonuses do nothing.</p>
+
+          <p><strong>Example:</strong> Your sinner has attack speed 1.01 (which takes 15 frames). You want to add a Crimebrand buff. Would a 5% buff help?</p>
+
+          <p><strong>Calculation:</strong> <code style="font-family: monospace; background: rgba(255,255,255,0.05); padding: 0.2rem 0.4rem; border-radius: 2px;">1.01 × 1.05 = 1.0605</code></p>
+
+          <p>According to the table below, to reach <strong>14 frames</strong> you need speed ≥ <strong>1.07142</strong>. Your new speed (1.0605) is still below that threshold, so <strong>the buff does nothing</strong>,you're still at 15 frames.</p>
+
+          <p><strong>But with a 10% buff:</strong> <code style="font-family: monospace; background: rgba(255,255,255,0.05); padding: 0.2rem 0.4rem; border-radius: 2px;">1.01 × 1.10 = 1.111</code></p>
+
+          <p>Now 1.111 is above 1.07142, so you break into <strong>14 frames</strong>.</p>
+
+          <p style="margin-top: 1rem; margin-bottom: 0.5rem; font-weight: 700; font-size: 0.85rem;">Frame breakpoints (No fancy formula is needed for the Breakpoint, just 15 ÷ frame):</p>
+
+
+          <div style="overflow-y: auto; max-height: 250px; font-size: 0.75rem;">
+            <table style="width: 100%; border-collapse: collapse;">
+              <thead>
+                <tr style="position: sticky; top: 0; background: rgba(0,0,0,0.7); border-bottom: 1px solid rgba(255,255,255,0.1);">
+                  <th style="padding: 0.4rem; text-align: left;">Frame</th>
+                  <th style="padding: 0.4rem; text-align: left;">Min Speed</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td style="padding: 0.3rem 0.4rem;">1</td><td style="padding: 0.3rem 0.4rem; font-family: monospace;">15.00000</td></tr>
+                <tr><td style="padding: 0.3rem 0.4rem;">2</td><td style="padding: 0.3rem 0.4rem; font-family: monospace;">7.50000</td></tr>
+                <tr><td style="padding: 0.3rem 0.4rem;">3</td><td style="padding: 0.3rem 0.4rem; font-family: monospace;">5.00000</td></tr>
+                <tr><td style="padding: 0.3rem 0.4rem;">4</td><td style="padding: 0.3rem 0.4rem; font-family: monospace;">3.75000</td></tr>
+                <tr><td style="padding: 0.3rem 0.4rem;">5</td><td style="padding: 0.3rem 0.4rem; font-family: monospace;">3.00000</td></tr>
+                <tr><td style="padding: 0.3rem 0.4rem;">10</td><td style="padding: 0.3rem 0.4rem; font-family: monospace;">1.50000</td></tr>
+                <tr><td style="padding: 0.3rem 0.4rem;">14</td><td style="padding: 0.3rem 0.4rem; font-family: monospace;">1.07142</td></tr>
+                <tr><td style="padding: 0.3rem 0.4rem;">15</td><td style="padding: 0.3rem 0.4rem; font-family: monospace;">1.00000</td></tr>
+                <tr><td style="padding: 0.3rem 0.4rem;">16</td><td style="padding: 0.3rem 0.4rem; font-family: monospace;">0.93750</td></tr>
+                <tr><td style="padding: 0.3rem 0.4rem;">20</td><td style="padding: 0.3rem 0.4rem; font-family: monospace;">0.75000</td></tr>
+                <tr><td style="padding: 0.3rem 0.4rem;">30</td><td style="padding: 0.3rem 0.4rem; font-family: monospace;">0.50000</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
 
     <!-- ═══ TEAM PANEL ═══ -->
     <!--
@@ -490,6 +635,57 @@ import "../../styles/calculator.css";
   </div>
 
   <style is:global>
+    /* ── Tabs ────────────────────────────────────────── */
+    .tabs-container {
+      padding: 0 1rem 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      margin-bottom: 1.25rem;
+    }
+
+    .tabs-nav {
+      display: flex;
+      gap: 0.5rem;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .tab-btn {
+      padding: 0.75rem 1.25rem;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-bottom: none;
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      cursor: pointer;
+      transition: all 0.2s;
+      border-radius: 4px 4px 0 0;
+    }
+
+    .tab-btn:hover {
+      background: rgba(255, 255, 255, 0.08);
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .tab-btn.on {
+      background: rgba(156, 17, 17, 0.15);
+      border-color: rgba(255, 107, 107, 0.3);
+      color: #ff6b6b;
+      font-weight: 700;
+    }
+
+    .tab-content {
+      display: none !important;
+      width: 100%;
+    }
+
+    .tab-content.active {
+      display: block !important;
+      width: 100%;
+    }
+
     /* ── Advanced disclosure ─────────────────────── */
     .advanced-wrap {
       margin: 0.5rem 0;
@@ -665,6 +861,205 @@ import "../../styles/calculator.css";
       font-style: italic;
       padding: 0.5rem 0;
       text-align: center;
+    }
+
+    /* ── Attack speed section ──────────────────────────────── */
+    .atk-speed-section {
+      margin-top: 1.25rem;
+    }
+
+    .as-bp-row {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      padding: .4rem 0;
+      border-bottom: 1px solid rgba(255,255,255,.04);
+      font-size: .72rem;
+    }
+    .as-bp-row:last-child { border-bottom: none; }
+
+    .as-bp-frames {
+      min-width: 72px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: var(--text-secondary, rgba(255,255,255,.5));
+    }
+    .as-bp-row.as-current .as-bp-frames { color: #4ade80; }
+    .as-bp-row.as-next    .as-bp-frames { color: #facc15; }
+
+    .as-bp-thresh {
+      min-width: 56px;
+      font-family: monospace;
+      color: rgba(255,255,255,.35);
+    }
+
+    .as-bp-track {
+      flex: 1;
+      height: 4px;
+      background: rgba(255,255,255,.07);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    .as-bp-fill {
+      height: 100%;
+      border-radius: 2px;
+      background: rgba(255,255,255,.15);
+      transition: width .2s;
+    }
+    .as-bp-row.as-current .as-bp-fill { background: #4ade80; }
+    .as-bp-row.as-next    .as-bp-fill { background: rgba(250,204,21,.5); }
+
+    .as-bp-label {
+      min-width: 110px;
+      text-align: right;
+      color: rgba(255,255,255,.25);
+      font-style: italic;
+    }
+    .as-bp-row.as-current .as-bp-label { color: #4ade80; font-style: normal; font-weight: 700; }
+    .as-bp-row.as-next    .as-bp-label { color: #facc15; font-style: normal; }
+
+    /* current breakpoint summary box */
+    .as-current-box {
+      background: rgba(74,222,128,.06);
+      border: 1px solid rgba(74,222,128,.18);
+      padding: .6rem .875rem;
+      font-size: .72rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem 1.5rem;
+    }
+    .as-box-item { display: flex; flex-direction: column; gap: .15rem; }
+    .as-box-lbl  { color: rgba(255,255,255,.3); font-size: .62rem; text-transform: uppercase; letter-spacing: .08em; }
+    .as-box-val  { color: #e2e8f0; font-weight: 700; font-size: .9rem; }
+    .as-box-val.green { color: #4ade80; }
+    .as-box-val.yellow { color: #facc15; }
+
+    /* worth-it result */
+    .as-check-box {
+      padding: .5rem .875rem;
+      font-size: .72rem;
+      border: 1px solid;
+      display: flex;
+      flex-direction: column;
+      gap: .15rem;
+    }
+    .as-check-box.yes { background: rgba(74,222,128,.06); border-color: rgba(74,222,128,.3); }
+    .as-check-box.no  { background: rgba(255,107,107,.06); border-color: rgba(255,107,107,.2); }
+    .as-check-box .as-box-lbl { color: rgba(255,255,255,.3); font-size: .62rem; text-transform: uppercase; letter-spacing: .08em; }
+    .as-check-box .result-line { font-weight: 700; font-size: .82rem; }
+    .as-check-box.yes .result-line { color: #4ade80; }
+    .as-check-box.no  .result-line { color: #ff6b6b; }
+    .as-check-box .detail-line { color: rgba(255,255,255,.4); font-size: .68rem; margin-top: .1rem; }
+
+    /* ── Help button ────────────────────────────────── */
+    .card-help-btn {
+      width: 22px;
+      height: 22px;
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 50%;
+      background: rgba(255,255,255,0.05);
+      color: rgba(255,255,255,0.5);
+      font-size: 0.75rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      flex-shrink: 0;
+    }
+    .card-help-btn:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: rgba(255,255,255,0.4);
+      color: rgba(255,255,255,0.8);
+    }
+
+    /* ── Modal overlay ──────────────────────────────── */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      backdrop-filter: blur(2px);
+    }
+    body.modal-open {
+      overflow: hidden;
+    }
+
+    .modal-content {
+      background: #0a0a0a;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 4px;
+      max-width: 500px;
+      width: 90%;
+      max-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.8);
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      position: relative;
+    }
+
+    .modal-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #e2e8f0;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .modal-close {
+      background: none;
+      border: none;
+      color: rgba(255,255,255,0.4);
+      font-size: 1.5rem;
+      cursor: pointer;
+      padding: 0;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: color 0.15s;
+    }
+    .modal-close:hover {
+      color: rgba(255,255,255,0.8);
+    }
+
+    .modal-body {
+      padding: 1.25rem;
+      overflow-y: auto;
+      color: rgba(255,255,255,0.8);
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
+
+    .modal-body p {
+      margin: 0.75rem 0;
+    }
+
+    .modal-body strong {
+      color: #e2e8f0;
+      font-weight: 600;
+    }
+
+    .modal-body code {
+      font-family: monospace;
     }
   </style>
 
@@ -1080,6 +1475,7 @@ import "../../styles/calculator.css";
     // ── Team panel ─────────────────────────────────────────────────────────────
     function initTeamGrid() {
       const grid = document.getElementById("team-grid");
+      if (!grid) return; // Skip if team grid doesn't exist
       grid.innerHTML = "";
       for (let i = 0; i < MAX_TEAM; i++) {
         const card = document.createElement("div");
@@ -1824,6 +2220,33 @@ import "../../styles/calculator.css";
       S("chain-eq").innerHTML = eq;
     }
 
+    // ── Tabs ──────────────────────────────────────────────────────────────────
+    function switchTab(tabName) {
+      document.querySelectorAll('.tab-content').forEach(tab => {
+        tab.classList.remove('active');
+      });
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('on');
+      });
+      const tabEl = document.querySelector(`.tab-content[data-tab="${tabName}"]`);
+      const btnEl = document.querySelector(`.tab-btn[data-tab="${tabName}"]`);
+      if (tabEl) tabEl.classList.add('active');
+      if (btnEl) btnEl.classList.add('on');
+    }
+
+    // Initialize tabs — use DOMContentLoaded
+    function initTabs() {
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.addEventListener('click', () => switchTab(btn.dataset.tab));
+      });
+      switchTab('damage');
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initTabs);
+    } else {
+      initTabs();
+    }
+
     // ── Init ───────────────────────────────────────────────────────────────────
     renderMults();
     loadIndex();
@@ -1897,5 +2320,149 @@ import "../../styles/calculator.css";
       el.addEventListener("change", update);
     });
     update();
+
+    /* ── Attack Speed Calculator ──────────────────────────────────────────── */
+    (function () {
+      /* ── constants ─────────────────────────────────────── */
+      const RATE = 15;
+
+      /* ── helpers ───────────────────────────────────────── */
+      function frames(spd)      { return Math.ceil(RATE / spd); }
+      function breakpoint(n)    { return RATE / n; }
+      function r(n, d = 4)      { return parseFloat(n.toFixed(d)); }
+      function pct(n, d = 2)    { return r(n, d) + '%'; }
+
+      /* ── help modal ────────────────────────────────────── */
+      const modal = document.getElementById('as-help-modal');
+      const helpBtn = document.getElementById('as-help-btn');
+      const closeBtn = document.getElementById('as-help-close');
+
+      helpBtn?.addEventListener('click', () => {
+        modal.style.display = 'flex';
+        document.body.classList.add('modal-open');
+      });
+
+      closeBtn?.addEventListener('click', () => {
+        modal.style.display = 'none';
+        document.body.classList.remove('modal-open');
+      });
+
+      modal?.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.style.display = 'none';
+          document.body.classList.remove('modal-open');
+        }
+      });
+
+      /* ── main update ───────────────────────────────────── */
+      function update() {
+        const base  = parseFloat(document.getElementById('as-base').value)  || 1;
+        const bonus    = parseFloat(document.getElementById('as-bonus').value) || 0;
+        const flat     = parseFloat(document.getElementById('as-flat').value) || 0;
+        const checkVal = parseFloat(document.getElementById('as-check').value) || 0;
+
+        const speed = (base + flat) * (1 + bonus / 100);
+        const f     = frames(speed);
+        const bp    = breakpoint(f);
+        const bpNext = f > 1 ? breakpoint(f - 1) : null;
+
+        /* clear hint */
+        const noteEl = document.getElementById('as-base-note');
+        noteEl.textContent = '';
+
+        /* strip */
+        document.getElementById('as-final').textContent  = r(speed, 4);
+        document.getElementById('as-frames').textContent = f + (f === 1 ? ' frame' : ' frames');
+
+        /* current breakpoint box */
+        const effBase = base + flat;
+        const bonusNeeded = bpNext
+          ? r((bpNext / effBase - 1) * 100 - bonus, 2)
+          : null;
+
+        document.getElementById('as-bp-current').innerHTML = `
+          <div class="as-current-box">
+            <div class="as-box-item">
+              <div class="as-box-lbl">Frames / attack</div>
+              <div class="as-box-val green">${f}</div>
+            </div>
+            
+            <div class="as-box-item">
+              <div class="as-box-lbl">Breakpoint min speed</div>
+              <div class="as-box-val">${r(bp, 4)}</div>
+            </div>
+            ${bpNext !== null ? `
+            <div class="as-box-item">
+              <div class="as-box-lbl">Next breakpoint</div>
+              <div class="as-box-val yellow">${r(bpNext, 4)}</div>
+            </div>
+            <div class="as-box-item">
+              <div class="as-box-lbl">Bonus needed</div>
+              <div class="as-box-val yellow">+${bonusNeeded}%</div>
+            </div>` : `
+            <div class="as-box-item">
+              <div class="as-box-lbl">Next breakpoint</div>
+              <div class="as-box-val" style="color:rgba(255,255,255,.3)">max tier</div>
+            </div>`}
+          </div>`;
+
+        /* worth-it checker */
+        if (bpNext !== null) {
+          const newSpeed = effBase * (1 + (bonus + checkVal) / 100);
+          const newFrames = frames(newSpeed);
+          const pushes = newFrames < f;
+          const howManyTiers = f - newFrames;
+          document.getElementById('as-check-result').innerHTML = `
+            <div class="as-check-box ${pushes ? 'yes' : 'no'}">
+              <div class="as-box-lbl">Adding +${r(checkVal, 2)}%</div>
+              <div class="result-line">${pushes
+                ? `Yes — drops to ${newFrames} frame${newFrames > 1 ? 's' : ''} (+${howManyTiers} tier${howManyTiers > 1 ? 's' : ''})`
+                : `No — still at ${f} frames`}</div>
+              <div class="detail-line">${pushes
+                ? `New speed: ${r(newSpeed, 4)} ≥ ${r(bpNext, 4)}`
+                : `Need +${bonusNeeded}%, have +${r(checkVal, 2)}% (short by ${r(bonusNeeded - checkVal, 2)}%)`}</div>
+            </div>`;
+        } else {
+          document.getElementById('as-check-result').innerHTML = `
+            <div class="as-check-box no">
+              <div class="as-box-lbl">Adding +${r(checkVal, 2)}%</div>
+              <div class="result-line">Already at max tier (1 frame)</div>
+              <div class="detail-line">no further breakpoints</div>
+            </div>`;
+        }
+
+        /* nearby breakpoints list */
+        const SHOW = 4;
+        let html = '';
+        for (let i = f + SHOW; i >= Math.max(f - SHOW, 1); i--) {
+          const thr    = breakpoint(i);
+          const isCur  = i === f;
+          const isNext = bpNext !== null && i === f - 1;
+          const prog   = Math.min(speed / thr, 1) * 100;
+          const neededHere = !isCur && thr > speed
+            ? r((thr / base - 1) * 100 - bonus, 2)
+            : null;
+          const labelTxt = isCur
+            ? '✓ current'
+            : neededHere !== null
+              ? `need +${neededHere}%`
+              : 'passed';
+          html += `
+            <div class="as-bp-row ${isCur ? 'as-current' : ''} ${isNext ? 'as-next' : ''}">
+              <div class="as-bp-frames">${i} frame${i > 1 ? 's' : ''}</div>
+              <div class="as-bp-thresh">≥ ${r(thr, 4)}</div>
+              <div class="as-bp-track"><div class="as-bp-fill" style="width:${r(prog, 1)}%"></div></div>
+              <div class="as-bp-label">${labelTxt}</div>
+            </div>`;
+        }
+        document.getElementById('as-bp-list').innerHTML = html;
+      }
+
+      /* ── listeners ─────────────────────────────────────── */
+      ['as-base', 'as-bonus', 'as-flat', 'as-check'].forEach(id =>
+        document.getElementById(id).addEventListener('input', update)
+      );
+      update();
+    })();
   </script>
 </Layout>
