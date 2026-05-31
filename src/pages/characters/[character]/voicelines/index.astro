@@ -6,7 +6,7 @@ import { REPO } from "../../../../config/config.js";
 import {
   ASSET_CHARACTERS_URL,
   ASSET_MAIN_URL,
-  ASSET_AUDIO_URL,
+  ASSET_AUDIO_URLS,
 } from "../../../../config/config";
 import Layout from "../../../../layouts/Layout.astro";
 
@@ -69,9 +69,8 @@ const slug = characterData.slug;
       REPO,
       ASSET_MAIN_URL,
       ASSET_CHARACTERS_URL,
-      ASSET_AUDIO_URL,
-    }}
-  >
+      ASSET_AUDIO_URLS,
+    }}>
     let language = "english";
 
     let attireDisplayNames = {};
@@ -214,9 +213,8 @@ const slug = characterData.slug;
         const trimmedFilename = trimFilePrefix(voiceline.filename);
         console.log(sanitizedAttire);
         const sanitizedName = sanitizeNameForGitHub(characterDisplayName).toLowerCase();
-        const sanitizedAudioFile = `${ASSET_AUDIO_URL}/${sanitizedName}/${language}/${sanitizedAttire}/${sanitizeName(
-          trimmedFilename,
-        )}`;
+        const audioBaseUrl = ASSET_AUDIO_URLS[language] || ASSET_AUDIO_URLS.english;
+        const sanitizedAudioFile = `${audioBaseUrl}/${sanitizedName}/${language}/${sanitizedAttire}/${sanitizeName(trimmedFilename)}`;
 
         const lineDiv = document.createElement("div");
         lineDiv.className = "voiceline-card";
