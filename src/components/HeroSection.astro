@@ -160,6 +160,22 @@ const { showSearch = false, showTabs = false } = Astro.props;
     box-shadow: 0 0 0 3px rgba(156, 17, 17, 0.3);
   }
 
+  @media (max-width: 768px) {
+    .search-input {
+      padding: 0.625rem 1rem;
+      padding-right: 3.5rem;
+      font-size: 0.95rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .search-input {
+      padding: 0.5rem 0.75rem;
+      padding-right: 2.75rem;
+      font-size: 0.875rem;
+    }
+  }
+
   .search-button {
     position: absolute;
     right: 0.5rem;

@@ -72,6 +72,7 @@ const slug = characterData.slug;
       ASSET_AUDIO_URLS,
     }}>
     let language = "english";
+    let currentAttire = null;
 
     let attireDisplayNames = {};
 
@@ -426,6 +427,7 @@ const slug = characterData.slug;
           );
 
           button.classList.add("active-button");
+          currentAttire = attire;
 
           const searchValue = document.getElementById("searchInput").value;
 
@@ -502,6 +504,21 @@ const slug = characterData.slug;
         "voicelinesContainer",
       );
 
+      const skeletonCount = Math.max(3, Math.ceil(window.innerHeight / 100));
+      voicelinesContainer.innerHTML = Array.from({ length: skeletonCount }, () =>
+        `<div class="voiceline-skeleton">
+          <div class="skeleton-header"></div>
+          <div class="skeleton-body">
+            <div class="skeleton-line w-60"></div>
+            <div class="skeleton-line w-40"></div>
+          </div>
+          <div class="skeleton-footer">
+            <div class="skeleton-circle"></div>
+            <div class="skeleton-line w-80"></div>
+          </div>
+        </div>`
+      ).join("");
+
       let loadingDiv = null;
       if (typeof showLoading === "function") {
         loadingDiv = showLoading(voicelinesContainer, "Loading voicelines...");
@@ -518,8 +535,18 @@ const slug = characterData.slug;
           hideLoading(loadingDiv);
         }
 
+        const attireKeys = Object.keys(data);
+        if (!currentAttire || !attireKeys.includes(currentAttire)) {
+          currentAttire = attireKeys[0];
+        }
         createAttireButtons(data);
-        renderVoicelines(data, Object.keys(data)[0], language);
+        const attireBtns = document.getElementById("attireButtonsContainer").getElementsByClassName("attire-button");
+        const attireNames = Object.keys(data);
+        const currentIdx = attireNames.indexOf(currentAttire);
+        if (currentIdx >= 0 && attireBtns[currentIdx]) {
+          attireBtns[currentIdx].classList.add("active-button");
+        }
+        renderVoicelines(data, currentAttire, language);
       } catch (error) {
         console.error("Error loading voice lines:", error);
         if (loadingDiv && typeof hideLoading === "function") {

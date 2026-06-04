@@ -19,7 +19,7 @@ const imageClass = category === "Sinners" ? "mugshot" : "characterBackground";
   <div class="character">
     <div class="image-container">
       <div class="skeleton"></div>
-      <img class={imageClass} src={imagePath} alt={name} />
+      <img class={imageClass} src={imagePath} alt={name} loading="lazy" />
       <div class="small-photo-container">
         <img class="small-photo rank" src={`${ASSET_LOGOS_URL}/${rank}.png`} />
         <img

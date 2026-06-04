@@ -15,6 +15,20 @@ const categories = [
     (characters as any).characters.map((character: any) => character.category),
   ),
 ];
+
+const tendencies = [
+  ...new Set(
+    (characters as any).characters.map((character: any) => character.tendency),
+  ),
+];
+
+const librams = [
+  ...new Set(
+    (characters as any).characters.map((character: any) => character.libram),
+  ),
+];
+
+const ranks = ["S", "A", "B"];
 ---
 
 <Layout title="Characters">
@@ -33,7 +47,134 @@ const categories = [
       }
     </div>
   </HeroSection>
-  <div class="character-grid">
+
+  <!-- Subtle Filter Toggle + Results Bar -->
+  <div class="filter-bar" id="filterBar">
+    <div class="filter-bar-inner">
+      <button class="filter-toggle-btn" id="filterToggle" aria-expanded="false" aria-controls="filterPanel">
+        <svg class="filter-toggle-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="4" y1="6" x2="20" y2="6"></line>
+          <line x1="7" y1="12" x2="17" y2="12"></line>
+          <line x1="10" y1="18" x2="14" y2="18"></line>
+        </svg>
+        <span>Filters &amp; Sort</span>
+        <span class="filter-badge" id="filterBadge"></span>
+        <svg class="filter-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m6 9 6 6 6-6"></path>
+        </svg>
+      </button>
+
+      <!-- Active Filter Chips (shown inline when panel is closed) -->
+      <div class="active-filters-inline" id="activeFiltersInline"></div>
+
+      <span class="results-count" id="resultsCount"></span>
+    </div>
+
+    <!-- Collapsible Filter Panel -->
+    <div class="filter-panel" id="filterPanel">
+      <div class="filter-panel-inner">
+        <!-- Sort -->
+        <div class="filter-group">
+          <label class="filter-label">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M11 5h10"></path><path d="M11 9h7"></path><path d="M11 13h4"></path><path d="M3 17l3 3 3-3"></path><path d="M6 18V4"></path>
+            </svg>
+            Sort
+          </label>
+          <div class="custom-select" id="sortWrapper">
+            <button class="custom-select-trigger" id="sortTrigger" type="button" data-value="default">
+              <span class="custom-select-text">Default</span>
+              <svg class="custom-select-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+            </button>
+            <div class="custom-select-dropdown" id="sortDropdown">
+              <div class="custom-select-option selected" data-value="default">Default</div>
+              <div class="custom-select-option" data-value="az">A → Z</div>
+              <div class="custom-select-option" data-value="za">Z → A</div>
+              <div class="custom-select-option" data-value="tendency">By Tendency</div>
+              <div class="custom-select-option" data-value="libram">By Libram</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rank Filter -->
+        <div class="filter-group">
+          <label class="filter-label">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+            Rank
+          </label>
+          <div class="custom-select" id="rankWrapper">
+            <button class="custom-select-trigger" id="rankTrigger" type="button" data-value="all">
+              <span class="custom-select-text">All</span>
+              <svg class="custom-select-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+            </button>
+            <div class="custom-select-dropdown" id="rankDropdown">
+              <div class="custom-select-option selected" data-value="all">All</div>
+              {ranks.map((rank) => (
+                <div class="custom-select-option" data-value={rank}>{rank}</div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <!-- Tendency Filter -->
+        <div class="filter-group">
+          <label class="filter-label">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+              <path d="m9 12 2 2 4-4"></path>
+            </svg>
+            Tendency
+          </label>
+          <div class="custom-select" id="tendencyWrapper">
+            <button class="custom-select-trigger" id="tendencyTrigger" type="button" data-value="all">
+              <span class="custom-select-text">All</span>
+              <svg class="custom-select-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+            </button>
+            <div class="custom-select-dropdown" id="tendencyDropdown">
+              <div class="custom-select-option selected" data-value="all">All</div>
+              {tendencies.map((tendency) => (
+                <div class="custom-select-option" data-value={tendency}>{tendency}</div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <!-- Libram Filter -->
+        <div class="filter-group">
+          <label class="filter-label">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path>
+            </svg>
+            Libram
+          </label>
+          <div class="custom-select" id="libramWrapper">
+            <button class="custom-select-trigger" id="libramTrigger" type="button" data-value="all">
+              <span class="custom-select-text">All</span>
+              <svg class="custom-select-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+            </button>
+            <div class="custom-select-dropdown" id="libramDropdown">
+              <div class="custom-select-option selected" data-value="all">All</div>
+              {librams.map((libram) => (
+                <div class="custom-select-option" data-value={libram}>{libram}</div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <!-- Reset Button -->
+        <button class="filter-reset-btn" id="resetFilters" title="Reset all filters">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><path d="M3 3v5h5"></path>
+          </svg>
+          Reset
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="character-grid" id="characterGrid">
     {
       characters.characters.map(
         (character: {
@@ -48,7 +189,14 @@ const categories = [
           const sanitizedName = sanitizeName(character.slug);
           const imagePath = `${ASSET_PRISON_URL}/${sanitizedName}/${sanitizedName}.png`;
           return (
-            <div class="character-wrapper" data-category={character.category}>
+            <div
+              class="character-wrapper"
+              data-category={character.category}
+              data-tendency={character.tendency}
+              data-libram={character.libram}
+              data-rank={character.rank}
+              data-name={character.displayName || character.name}
+            >
               <CharacterCard
                 name={character.name}
                 slug={character.slug}
@@ -66,58 +214,842 @@ const categories = [
       )
     }
   </div>
+
+  <!-- No Results State -->
+  <div class="no-results-state" id="noResultsState">
+    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="11" cy="11" r="8"></circle>
+      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      <line x1="8" y1="8" x2="14" y2="14"></line>
+      <line x1="14" y1="8" x2="8" y2="14"></line>
+    </svg>
+    <p class="no-results-title">No characters found</p>
+    <p class="no-results-subtitle">Try adjusting your filters or search query</p>
+    <button class="no-results-reset" id="noResultsReset">Clear All Filters</button>
+  </div>
+
   <script>
     import { doAll } from "../../utils/global.js";
     doAll();
 
-    const tabButtons = document.querySelectorAll(
-      ".tab-button",
-    ) as NodeListOf<HTMLButtonElement>;
-    const characterCards = document.querySelectorAll(
-      ".character-wrapper",
-    ) as NodeListOf<HTMLElement>;
-    const searchInput = document.getElementById(
-      "searchInput",
-    ) as HTMLInputElement;
+    // ===== DOM References =====
+    const tabButtons = document.querySelectorAll(".tab-button") as NodeListOf<HTMLButtonElement>;
+    const characterCards = document.querySelectorAll(".character-wrapper") as NodeListOf<HTMLElement>;
+    const searchInput = document.getElementById("searchInput") as HTMLInputElement;
+    const resetBtn = document.getElementById("resetFilters") as HTMLButtonElement;
+    const resultsCount = document.getElementById("resultsCount") as HTMLElement;
+    const noResultsState = document.getElementById("noResultsState") as HTMLElement;
+    const noResultsReset = document.getElementById("noResultsReset") as HTMLButtonElement;
+    const characterGrid = document.getElementById("characterGrid") as HTMLElement;
+    const filterToggle = document.getElementById("filterToggle") as HTMLButtonElement;
+    const filterPanel = document.getElementById("filterPanel") as HTMLElement;
+    const filterBadge = document.getElementById("filterBadge") as HTMLElement;
+    const activeFiltersInline = document.getElementById("activeFiltersInline") as HTMLElement;
 
     let currentCategory = "all";
 
-    tabButtons.forEach((button) => {
-      button.addEventListener("click", () => {
-        currentCategory = button.dataset.category || "all";
+    // ===== Custom Select System =====
+    interface CustomSelect {
+      wrapper: HTMLElement;
+      trigger: HTMLButtonElement;
+      dropdown: HTMLElement;
+      options: NodeListOf<HTMLElement>;
+      value: string;
+    }
 
-        tabButtons.forEach((btn) => btn.classList.remove("active"));
-        button.classList.add("active");
+    function initCustomSelect(wrapperId: string, triggerId: string, dropdownId: string): CustomSelect {
+      const wrapper = document.getElementById(wrapperId) as HTMLElement;
+      const trigger = document.getElementById(triggerId) as HTMLButtonElement;
+      const dropdown = document.getElementById(dropdownId) as HTMLElement;
+      const options = dropdown.querySelectorAll(".custom-select-option") as NodeListOf<HTMLElement>;
+      const cs: CustomSelect = { wrapper, trigger, dropdown, options, value: trigger.dataset.value || "all" };
 
-        filterCharacters();
+      trigger.addEventListener("click", (e) => {
+        e.stopPropagation();
+        closeAllDropdowns(cs);
+        wrapper.classList.toggle("open");
       });
-    });
 
-    if (searchInput) {
-      searchInput.addEventListener("input", () => {
-        filterCharacters();
+      options.forEach((opt) => {
+        opt.addEventListener("click", (e) => {
+          e.stopPropagation();
+          const val = opt.dataset.value || "all";
+          cs.value = val;
+          trigger.dataset.value = val;
+          trigger.querySelector(".custom-select-text")!.textContent = opt.textContent;
+          options.forEach((o) => o.classList.remove("selected"));
+          opt.classList.add("selected");
+          wrapper.classList.remove("open");
+          applyAll();
+        });
+      });
+
+      return cs;
+    }
+
+    const allCustomSelects: CustomSelect[] = [];
+    function closeAllDropdowns(except?: CustomSelect) {
+      allCustomSelects.forEach((cs) => {
+        if (cs !== except) cs.wrapper.classList.remove("open");
       });
     }
 
-    function filterCharacters() {
+    document.addEventListener("click", () => closeAllDropdowns());
+
+    const sortCS = initCustomSelect("sortWrapper", "sortTrigger", "sortDropdown");
+    const rankCS = initCustomSelect("rankWrapper", "rankTrigger", "rankDropdown");
+    const tendencyCS = initCustomSelect("tendencyWrapper", "tendencyTrigger", "tendencyDropdown");
+    const libramCS = initCustomSelect("libramWrapper", "libramTrigger", "libramDropdown");
+    allCustomSelects.push(sortCS, rankCS, tendencyCS, libramCS);
+
+    // ===== Filter Toggle (collapsible panel) =====
+    let panelOpen = false;
+    filterToggle.addEventListener("click", () => {
+      panelOpen = !panelOpen;
+      filterPanel.classList.toggle("open", panelOpen);
+      filterToggle.classList.toggle("active", panelOpen);
+      filterToggle.setAttribute("aria-expanded", String(panelOpen));
+      if (!panelOpen) {
+        closeAllDropdowns();
+      }
+    });
+
+    // ===== URL State Persistence =====
+    function readStateFromURL() {
+      const params = new URLSearchParams(window.location.search);
+      const cat = params.get("category") || "all";
+      const sort = params.get("sort") || "default";
+      const tendency = params.get("tendency") || "all";
+      const libram = params.get("libram") || "all";
+      const rank = params.get("rank") || "all";
+      const search = params.get("q") || "";
+
+      currentCategory = cat;
+      setCustomSelectValue(sortCS, sort);
+      setCustomSelectValue(rankCS, rank);
+      setCustomSelectValue(tendencyCS, tendency);
+      setCustomSelectValue(libramCS, libram);
+      if (searchInput) searchInput.value = search;
+
+      tabButtons.forEach((btn) => {
+        btn.classList.toggle("active", (btn.dataset.category || "all") === cat);
+      });
+
+      // Auto-open panel if any filters are active from URL
+      const hasFilters = sort !== "default" || tendency !== "all" || libram !== "all" || rank !== "all";
+      if (hasFilters) {
+        panelOpen = true;
+        filterPanel.classList.add("open");
+        filterToggle.classList.add("active");
+        filterToggle.setAttribute("aria-expanded", "true");
+      }
+    }
+
+    function setCustomSelectValue(cs: CustomSelect, value: string) {
+      cs.value = value;
+      cs.trigger.dataset.value = value;
+      cs.options.forEach((opt) => {
+        const isMatch = opt.dataset.value === value;
+        opt.classList.toggle("selected", isMatch);
+        if (isMatch) {
+          cs.trigger.querySelector(".custom-select-text")!.textContent = opt.textContent;
+        }
+      });
+    }
+
+    function writeStateToURL() {
+      const params = new URLSearchParams();
+      if (currentCategory !== "all") params.set("category", currentCategory);
+      if (sortCS.value !== "default") params.set("sort", sortCS.value);
+      if (rankCS.value !== "all") params.set("rank", rankCS.value);
+      if (tendencyCS.value !== "all") params.set("tendency", tendencyCS.value);
+      if (libramCS.value !== "all") params.set("libram", libramCS.value);
+      const q = searchInput?.value.trim();
+      if (q) params.set("q", q);
+
+      const newUrl = params.toString()
+        ? `${window.location.pathname}?${params.toString()}`
+        : window.location.pathname;
+      history.replaceState(null, "", newUrl);
+    }
+
+    // ===== Tab Buttons =====
+    tabButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        currentCategory = button.dataset.category || "all";
+        tabButtons.forEach((btn) => btn.classList.remove("active"));
+        button.classList.add("active");
+        applyAll();
+      });
+    });
+
+    // ===== Search =====
+    if (searchInput) {
+      let debounceTimer: ReturnType<typeof setTimeout>;
+      searchInput.addEventListener("input", () => {
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(() => applyAll(), 150);
+      });
+    }
+
+    // ===== Keyboard shortcut: "/" to focus search =====
+    document.addEventListener("keydown", (e) => {
+      if (
+        e.key === "/" &&
+        document.activeElement !== searchInput &&
+        !(document.activeElement as HTMLElement)?.closest("input, select, textarea, [contenteditable]")
+      ) {
+        e.preventDefault();
+        searchInput?.focus();
+      }
+    });
+
+    // ===== Reset =====
+    function resetAll() {
+      currentCategory = "all";
+      setCustomSelectValue(sortCS, "default");
+      setCustomSelectValue(rankCS, "all");
+      setCustomSelectValue(tendencyCS, "all");
+      setCustomSelectValue(libramCS, "all");
+      if (searchInput) searchInput.value = "";
+      tabButtons.forEach((btn) => {
+        btn.classList.toggle("active", (btn.dataset.category || "all") === "all");
+      });
+      applyAll();
+    }
+    resetBtn.addEventListener("click", resetAll);
+    noResultsReset.addEventListener("click", resetAll);
+
+    // ===== Active Filter Chips (inline in bar) =====
+    function renderActiveFilters() {
+      const chips: { label: string; value: string; clear: string }[] = [];
+
+      if (currentCategory !== "all") {
+        chips.push({ label: "Category", value: currentCategory, clear: "category" });
+      }
+      if (rankCS.value !== "all") {
+        chips.push({ label: "Rank", value: rankCS.value, clear: "rank" });
+      }
+      if (tendencyCS.value !== "all") {
+        chips.push({ label: "Tendency", value: tendencyCS.value, clear: "tendency" });
+      }
+      if (libramCS.value !== "all") {
+        chips.push({ label: "Libram", value: libramCS.value, clear: "libram" });
+      }
+      if (searchInput?.value.trim()) {
+        chips.push({ label: "Search", value: `"${searchInput.value.trim()}"`, clear: "search" });
+      }
+
+      // Badge count (excluding search, that's always visible)
+      const filterCount = chips.filter(c => c.clear !== "search").length;
+      if (filterCount > 0) {
+        filterBadge.textContent = String(filterCount);
+        filterBadge.classList.add("visible");
+      } else {
+        filterBadge.textContent = "";
+        filterBadge.classList.remove("visible");
+      }
+
+      // Inline chips
+      const html = chips
+        .map(
+          (c) =>
+            `<span class="filter-chip" data-clear="${c.clear}"><span class="chip-label">${c.label}:</span> ${c.value}<button class="chip-dismiss" aria-label="Remove ${c.label} filter"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button></span>`,
+        )
+        .join("");
+
+      activeFiltersInline.innerHTML = html;
+      activeFiltersInline.style.display = chips.length ? "flex" : "none";
+
+      activeFiltersInline.querySelectorAll(".filter-chip").forEach((chip) => {
+        chip.addEventListener("click", () => {
+          const clearType = (chip as HTMLElement).dataset.clear;
+          if (clearType === "category") {
+            currentCategory = "all";
+            tabButtons.forEach((btn) =>
+              btn.classList.toggle("active", (btn.dataset.category || "all") === "all"),
+            );
+          } else if (clearType === "rank") {
+            setCustomSelectValue(rankCS, "all");
+          } else if (clearType === "tendency") {
+            setCustomSelectValue(tendencyCS, "all");
+          } else if (clearType === "libram") {
+            setCustomSelectValue(libramCS, "all");
+          } else if (clearType === "search") {
+            if (searchInput) searchInput.value = "";
+          }
+          applyAll();
+        });
+      });
+    }
+
+    // ===== Sort Logic =====
+    function sortCards() {
+      const grid = characterGrid;
+      const cards = Array.from(characterCards);
+      const sortValue = sortCS.value;
+
+      if (sortValue === "default") {
+        cards
+          .sort((a, b) => {
+            const aIdx = parseInt(a.dataset.originalIndex || "0");
+            const bIdx = parseInt(b.dataset.originalIndex || "0");
+            return aIdx - bIdx;
+          })
+          .forEach((card) => grid.appendChild(card));
+        return;
+      }
+
+      cards.sort((a, b) => {
+        const aName = (a.dataset.name || "").toLowerCase();
+        const bName = (b.dataset.name || "").toLowerCase();
+
+        switch (sortValue) {
+          case "az":
+            return aName.localeCompare(bName);
+          case "za":
+            return bName.localeCompare(aName);
+          case "tendency":
+            return (a.dataset.tendency || "").localeCompare(b.dataset.tendency || "") || aName.localeCompare(bName);
+          case "libram":
+            return (a.dataset.libram || "").localeCompare(b.dataset.libram || "") || aName.localeCompare(bName);
+          default:
+            return 0;
+        }
+      });
+
+      cards.forEach((card) => grid.appendChild(card));
+    }
+
+    // ===== Filter + Sort + Count =====
+    function applyAll() {
       const searchValue = searchInput?.value.toLowerCase().trim() || "";
+      const tendencyValue = tendencyCS.value;
+      const libramValue = libramCS.value;
+      const rankValue = rankCS.value;
+
+      let visibleCount = 0;
 
       characterCards.forEach((card) => {
         const category = card.dataset.category || "";
-        const characterName =
-          card.querySelector("p")?.textContent?.toLowerCase() || "";
+        const tendency = card.dataset.tendency || "";
+        const libram = card.dataset.libram || "";
+        const rank = card.dataset.rank || "";
+        const characterName = (card.dataset.name || "").toLowerCase();
 
         const matchesCategory =
           currentCategory === "all" || category === currentCategory;
         const matchesSearch =
           !searchValue || characterName.includes(searchValue);
+        const matchesTendency =
+          tendencyValue === "all" || tendency === tendencyValue;
+        const matchesLibram =
+          libramValue === "all" || libram === libramValue;
+        const matchesRank =
+          rankValue === "all" || rank === rankValue;
 
-        if (matchesCategory && matchesSearch) {
-          card.style.display = "block";
+        if (matchesCategory && matchesSearch && matchesTendency && matchesLibram && matchesRank) {
+          card.style.display = "";
+          card.classList.remove("card-hidden");
+          card.classList.add("card-visible");
+          visibleCount++;
         } else {
           card.style.display = "none";
+          card.classList.remove("card-visible");
+          card.classList.add("card-hidden");
         }
       });
+
+      sortCards();
+
+      const total = characterCards.length;
+      if (visibleCount === total) {
+        resultsCount.textContent = `${total} characters`;
+      } else {
+        resultsCount.textContent = `${visibleCount} of ${total}`;
+      }
+
+      noResultsState.style.display = visibleCount === 0 ? "flex" : "none";
+      characterGrid.style.display = visibleCount === 0 ? "none" : "";
+
+      renderActiveFilters();
+      writeStateToURL();
     }
+
+    characterCards.forEach((card, i) => {
+      card.dataset.originalIndex = String(i);
+    });
+
+    readStateFromURL();
+    applyAll();
   </script>
+
+  <style>
+    .filter-bar {
+      position: relative;
+      z-index: 10;
+      max-width: 1400px;
+      margin: 0 auto 0.75rem;
+      padding: 0 20px;
+      animation: fadeInUp 0.6s ease-out 0.2s both;
+    }
+
+    .filter-bar-inner {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .filter-toggle-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.5rem 0.85rem;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      color: rgba(255, 255, 255, 0.55);
+      font-size: 0.8rem;
+      font-family: 'Lato', sans-serif;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      letter-spacing: 0.3px;
+      white-space: nowrap;
+      position: relative;
+    }
+
+    .filter-toggle-btn:hover {
+      background: rgba(255, 255, 255, 0.07);
+      border-color: rgba(255, 255, 255, 0.14);
+      color: rgba(255, 255, 255, 0.75);
+    }
+
+    .filter-toggle-btn.active {
+      background: rgba(156, 17, 17, 0.12);
+      border-color: rgba(156, 17, 17, 0.3);
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .filter-toggle-icon {
+      opacity: 0.7;
+      flex-shrink: 0;
+    }
+
+    .filter-chevron {
+      opacity: 0.4;
+      transition: transform 0.3s ease;
+      flex-shrink: 0;
+    }
+
+    .filter-toggle-btn.active .filter-chevron {
+      transform: rotate(180deg);
+    }
+
+    .filter-badge {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      min-width: 16px;
+      height: 16px;
+      padding: 0 4px;
+      background: #9c1111;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 0.65rem;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    .filter-badge.visible {
+      display: inline-flex;
+    }
+
+    .filter-bar .results-count {
+      margin-left: auto;
+      color: rgba(255, 255, 255, 0.3);
+      font-size: 0.75rem;
+      font-weight: 400;
+      letter-spacing: 0.3px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .active-filters-inline {
+      display: none;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      align-items: center;
+    }
+
+    .active-filters-inline :global(.filter-chip) {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      padding: 0.2rem 0.4rem 0.2rem 0.55rem;
+      background: rgba(156, 17, 17, 0.12);
+      border: 1px solid rgba(156, 17, 17, 0.22);
+      border-radius: 6px;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.72rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      user-select: none;
+    }
+
+    .active-filters-inline :global(.filter-chip:hover) {
+      background: rgba(156, 17, 17, 0.22);
+      border-color: rgba(156, 17, 17, 0.4);
+    }
+
+    .active-filters-inline :global(.chip-label) {
+      color: rgba(255, 255, 255, 0.4);
+      font-weight: 600;
+      font-size: 0.66rem;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+
+    .active-filters-inline :global(.chip-dismiss) {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 15px;
+      height: 15px;
+      padding: 0;
+      background: transparent;
+      border: none;
+      border-radius: 3px;
+      color: rgba(255, 255, 255, 0.35);
+      cursor: pointer;
+      transition: all 0.15s ease;
+      flex-shrink: 0;
+    }
+
+    .active-filters-inline :global(.chip-dismiss:hover) {
+      background: rgba(255, 255, 255, 0.08);
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .active-filters-inline :global(.chip-dismiss svg) {
+      display: block;
+    }
+
+    .filter-panel {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+                  opacity 0.3s ease,
+                  margin 0.35s ease;
+      opacity: 0;
+      margin-top: 0;
+    }
+
+    .filter-panel.open {
+      max-height: 200px;
+      opacity: 1;
+      margin-top: 0.6rem;
+      overflow: visible;
+    }
+
+    .filter-panel-inner {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      padding: 0.75rem 1rem;
+      background: linear-gradient(145deg, rgba(22, 22, 22, 0.95), rgba(16, 16, 16, 0.95));
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3),
+                  inset 0 1px 0 rgba(255, 255, 255, 0.03);
+    }
+
+    .filter-group {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .filter-label {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      color: rgba(255, 255, 255, 0.4);
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+      white-space: nowrap;
+      user-select: none;
+    }
+
+    .filter-label svg {
+      opacity: 0.5;
+    }
+
+    .custom-select {
+      position: relative;
+      min-width: 90px;
+    }
+
+    .custom-select-trigger {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      width: 100%;
+      padding: 0.4rem 0.55rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 6px;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.8rem;
+      font-family: 'Lato', sans-serif;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-align: left;
+      white-space: nowrap;
+    }
+
+    .custom-select-trigger:hover {
+      border-color: rgba(255, 255, 255, 0.15);
+      background: rgba(255, 255, 255, 0.07);
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .custom-select.open .custom-select-trigger {
+      border-color: rgba(156, 17, 17, 0.5);
+      background: rgba(255, 255, 255, 0.07);
+      box-shadow: 0 0 0 2px rgba(156, 17, 17, 0.15);
+    }
+
+    .custom-select-text {
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .custom-select-arrow {
+      opacity: 0.35;
+      flex-shrink: 0;
+      transition: transform 0.25s ease;
+    }
+
+    .custom-select.open .custom-select-arrow {
+      transform: rotate(180deg);
+      opacity: 0.6;
+    }
+
+    .custom-select-dropdown {
+      position: absolute;
+      top: calc(100% + 4px);
+      left: 0;
+      min-width: 100%;
+      max-height: 0;
+      overflow: hidden;
+      background: rgba(20, 20, 20, 0.98);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5),
+                  0 2px 8px rgba(0, 0, 0, 0.3);
+      z-index: 100;
+      opacity: 0;
+      transform: translateY(-4px);
+      transition: max-height 0.25s ease,
+                  opacity 0.2s ease,
+                  transform 0.2s ease;
+      backdrop-filter: blur(20px);
+    }
+
+    .custom-select.open .custom-select-dropdown {
+      max-height: 240px;
+      overflow-y: auto;
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .custom-select-option {
+      padding: 0.45rem 0.7rem;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: all 0.12s ease;
+      white-space: nowrap;
+      border-left: 2px solid transparent;
+    }
+
+    .custom-select-option:hover {
+      background: rgba(255, 255, 255, 0.06);
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .custom-select-option.selected {
+      color: rgba(255, 255, 255, 0.95);
+      background: rgba(156, 17, 17, 0.15);
+      border-left-color: #9c1111;
+    }
+
+    /* Dropdown scrollbar */
+    .custom-select-dropdown::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    .custom-select-dropdown::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    .custom-select-dropdown::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 2px;
+    }
+
+    .custom-select-dropdown::-webkit-scrollbar-thumb:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .filter-reset-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      margin-left: auto;
+      padding: 0.4rem 0.7rem;
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 6px;
+      color: rgba(255, 255, 255, 0.35);
+      font-size: 0.75rem;
+      font-family: 'Lato', sans-serif;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .filter-reset-btn:hover {
+      color: rgba(255, 107, 107, 0.8);
+      border-color: rgba(255, 107, 107, 0.2);
+      background: rgba(255, 107, 107, 0.05);
+    }
+
+    .filter-reset-btn svg {
+      opacity: 0.6;
+    }
+
+    .no-results-state {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 2rem;
+      text-align: center;
+      animation: fadeIn 0.4s ease;
+    }
+
+    .no-results-state svg {
+      color: rgba(156, 17, 17, 0.3);
+      margin-bottom: 1.25rem;
+    }
+
+    .no-results-title {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 0 0 0.35rem;
+    }
+
+    .no-results-subtitle {
+      color: rgba(255, 255, 255, 0.3);
+      font-size: 0.85rem;
+      margin: 0 0 1.5rem;
+    }
+
+    .no-results-reset {
+      padding: 0.5rem 1.25rem;
+      background: rgba(156, 17, 17, 0.15);
+      border: 1px solid rgba(156, 17, 17, 0.3);
+      border-radius: 6px;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.82rem;
+      font-family: 'Lato', sans-serif;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .no-results-reset:hover {
+      background: rgba(156, 17, 17, 0.25);
+      border-color: rgba(156, 17, 17, 0.5);
+      color: rgba(255, 255, 255, 0.9);
+      transform: translateY(-1px);
+    }
+
+    .character-wrapper {
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .character-wrapper.card-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 768px) {
+      .filter-bar-inner {
+        gap: 0.5rem;
+      }
+
+      .active-filters-inline {
+        flex-basis: 100%;
+        order: 3;
+      }
+
+      .filter-bar .results-count {
+        font-size: 0.7rem;
+      }
+
+      .filter-panel-inner {
+        padding: 0.65rem 0.75rem;
+        gap: 0.65rem;
+      }
+
+      .filter-group {
+        flex: 1 1 calc(50% - 0.5rem);
+        min-width: 0;
+      }
+
+      .custom-select {
+        flex: 1;
+        min-width: 0;
+      }
+
+      .filter-reset-btn {
+        margin-left: 0;
+        flex: 1 1 100%;
+        justify-content: center;
+      }
+
+      .filter-label {
+        font-size: 0.65rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .filter-panel-inner {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .filter-group {
+        flex: 1 1 100%;
+        width: 100%;
+      }
+
+      .custom-select {
+        flex: 1;
+      }
+
+      .filter-panel.open {
+        max-height: 350px;
+      }
+    }
+  </style>
 </Layout>
