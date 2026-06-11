@@ -100,8 +100,8 @@ export function doAll() {
     });
 
     // Function to navigate to character page
-    function navigateToCharacter(characterName) {
-        window.location.href = `characters/${characterName}/voicelines`;
+    function navigateToCharacter(characterSlug) {
+        window.location.href = `characters/${characterSlug}/voicelines`;
     }
 
     // Function to navigate to chapter page
@@ -152,7 +152,7 @@ export function doAll() {
                 name: char.name,
                 displayName: char.displayName,
                 subtitle: char.rank || char.category || '',
-                action: () => navigateToCharacter(char.name)
+                action: () => navigateToCharacter(char.slug)
             })),
             ...chapterResults.map(chapter => ({
                 type: 'cg',
