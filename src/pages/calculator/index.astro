@@ -33,7 +33,7 @@ import "../../styles/calculator.css";
           <div class="card-head">
             <div class="stripe red"></div>
             <div class="card-title">Caster</div>
-            <div class="card-hint" id="hero-badge">no hero loaded</div>
+            <div class="card-hint" id="hero-badge">no sinner loaded</div>
           </div>
           <div class="card-body">
             <div class="field">
@@ -495,22 +495,23 @@ import "../../styles/calculator.css";
         </div>
         <div class="card-body">
 
-          <div class="row2">
-            <div class="field">
-              <div class="flabel"><span class="ln">Base attack speed</span></div>
-              <input type="number" id="as-base" value="1.5" min="0.01" step="0.0001" placeholder="e.g. 1.8" />
-              <div class="hint" id="as-base-note"></div>
-            </div>
+          <div class="field">
+            <div class="flabel"><span class="ln">Base attack speed</span></div>
+            <input type="number" id="as-base" value="1.5" min="0.01" step="0.0001" placeholder="e.g. 1.8" />
+            <div class="hint" id="as-base-note"></div>
+          </div>
+
+          <div class="row2" style="margin-top:.5rem">
             <div class="field">
               <div class="flabel"><span class="ln">Total attack speed bonus %</span></div>
-              <input type="number" id="as-bonus" value="0" min="0" step="0.1" placeholder="e.g. 50 for +50%" />
-              <div class="hint">all percentage bonuses are additive</div>
+              <div id="as-bonus-container"></div>
+              <div class="hint">click to toggle · X to remove</div>
             </div>
-          </div>
-          <div class="field" style="margin-top:.75rem">
-            <div class="flabel"><span class="ln">Flat attack speed bonus</span></div>
-            <input type="number" id="as-flat" value="0" min="0" step="0.01" placeholder="e.g. 0.2" />
-            <div class="hint">Added to base before % multiplier</div>
+            <div class="field">
+              <div class="flabel"><span class="ln">Flat attack speed bonus</span></div>
+              <div id="as-flat-container"></div>
+              <div class="hint">added to base before % multiplier</div>
+            </div>
           </div>
 
           <div class="atk-strip" id="as-result-strip">
@@ -2332,6 +2333,10 @@ import "../../styles/calculator.css";
       function r(n, d = 4)      { return parseFloat(n.toFixed(d)); }
       function pct(n, d = 2)    { return r(n, d) + '%'; }
 
+      /* ── multi-entry state ─────────────────────────────── */
+      const asBonuses = [];  // { name, val, on }
+      const asFlats   = [];  // { name, val, on }
+
       /* ── help modal ────────────────────────────────────── */
       const modal = document.getElementById('as-help-modal');
       const helpBtn = document.getElementById('as-help-btn');
@@ -2354,11 +2359,100 @@ import "../../styles/calculator.css";
         }
       });
 
+      /* ── renderers ─────────────────────────────────────── */
+      function renderBonuses() {
+        const c = document.getElementById('as-bonus-container');
+        let html = '';
+        html += `<div class="add-tag-row" style="margin-bottom:.3rem">
+          <input type="text" class="as-bonus-name" placeholder="label (e.g. CB 5%)" style="flex:1;min-width:60px">
+          <input type="number" class="as-bonus-val" placeholder="%" value="10" min="0" step="0.1" style="width:55px">
+          <button class="add-tag-btn as-add-bonus-btn">+ Add</button>
+        </div>`;
+        html += `<div class="tags">`;
+        asBonuses.forEach((m, i) => {
+          html += `<div class="tag ${m.on ? 'on' : ''}" data-idx="${i}">${m.name} <span style="opacity:.5">+${m.val}%</span><span class="tx" data-remove-bonus="${i}">X</span></div>`;
+        });
+        html += `</div>`;
+        c.innerHTML = html;
+
+        c.querySelectorAll('.tag').forEach(t => {
+          t.addEventListener('click', e => {
+            if (e.target.dataset.removeBonus !== undefined) return;
+            asBonuses[+t.dataset.idx].on = !asBonuses[+t.dataset.idx].on;
+            renderBonuses();
+            asUpdate();
+          });
+        });
+        c.querySelectorAll('[data-remove-bonus]').forEach(btn => {
+          btn.addEventListener('click', e => {
+            e.stopPropagation();
+            asBonuses.splice(+btn.dataset.removeBonus, 1);
+            renderBonuses();
+            asUpdate();
+          });
+        });
+        c.querySelector('.as-add-bonus-btn')?.addEventListener('click', () => {
+          const name = c.querySelector('.as-bonus-name').value.trim() || 'Bonus';
+          const val = parseFloat(c.querySelector('.as-bonus-val').value) || 0;
+          asBonuses.push({ name, val, on: true });
+          renderBonuses();
+          asUpdate();
+        });
+      }
+
+      function renderFlats() {
+        const c = document.getElementById('as-flat-container');
+        let html = '';
+        html += `<div class="add-tag-row" style="margin-bottom:.3rem">
+          <input type="text" class="as-flat-name" placeholder="label" style="flex:1;min-width:60px">
+          <input type="number" class="as-flat-val" placeholder="flat" value="0.1" min="0" step="0.01" style="width:55px">
+          <button class="add-tag-btn as-add-flat-btn">+ Add</button>
+        </div>`;
+        html += `<div class="tags">`;
+        asFlats.forEach((m, i) => {
+          html += `<div class="tag ${m.on ? 'on' : ''}" data-idx="${i}">${m.name} <span style="opacity:.5">+${m.val}</span><span class="tx" data-remove-flat="${i}">X</span></div>`;
+        });
+        html += `</div>`;
+        c.innerHTML = html;
+
+        c.querySelectorAll('.tag').forEach(t => {
+          t.addEventListener('click', e => {
+            if (e.target.dataset.removeFlat !== undefined) return;
+            asFlats[+t.dataset.idx].on = !asFlats[+t.dataset.idx].on;
+            renderFlats();
+            asUpdate();
+          });
+        });
+        c.querySelectorAll('[data-remove-flat]').forEach(btn => {
+          btn.addEventListener('click', e => {
+            e.stopPropagation();
+            asFlats.splice(+btn.dataset.removeFlat, 1);
+            renderFlats();
+            asUpdate();
+          });
+        });
+        c.querySelector('.as-add-flat-btn')?.addEventListener('click', () => {
+          const name = c.querySelector('.as-flat-name').value.trim() || 'Flat';
+          const val = parseFloat(c.querySelector('.as-flat-val').value) || 0;
+          asFlats.push({ name, val, on: true });
+          renderFlats();
+          asUpdate();
+        });
+      }
+
+      /* ── aggregate ──────────────────────────────────────── */
+      function totalBonus() {
+        return asBonuses.filter(m => m.on).reduce((s, m) => s + m.val, 0);
+      }
+      function totalFlat() {
+        return asFlats.filter(m => m.on).reduce((s, m) => s + m.val, 0);
+      }
+
       /* ── main update ───────────────────────────────────── */
-      function update() {
-        const base  = parseFloat(document.getElementById('as-base').value)  || 1;
-        const bonus    = parseFloat(document.getElementById('as-bonus').value) || 0;
-        const flat     = parseFloat(document.getElementById('as-flat').value) || 0;
+      function asUpdate() {
+        const base  = parseFloat(document.getElementById('as-base').value) || 1;
+        const bonus    = totalBonus();
+        const flat     = totalFlat();
         const checkVal = parseFloat(document.getElementById('as-check').value) || 0;
 
         const speed = (base + flat) * (1 + bonus / 100);
@@ -2386,7 +2480,7 @@ import "../../styles/calculator.css";
               <div class="as-box-lbl">Frames / attack</div>
               <div class="as-box-val green">${f}</div>
             </div>
-            
+
             <div class="as-box-item">
               <div class="as-box-lbl">Breakpoint min speed</div>
               <div class="as-box-val">${r(bp, 4)}</div>
@@ -2440,7 +2534,7 @@ import "../../styles/calculator.css";
           const isNext = bpNext !== null && i === f - 1;
           const prog   = Math.min(speed / thr, 1) * 100;
           const neededHere = !isCur && thr > speed
-            ? r((thr / base - 1) * 100 - bonus, 2)
+            ? r((thr / effBase - 1) * 100 - bonus, 2)
             : null;
           const labelTxt = isCur
             ? '✓ current'
@@ -2459,10 +2553,12 @@ import "../../styles/calculator.css";
       }
 
       /* ── listeners ─────────────────────────────────────── */
-      ['as-base', 'as-bonus', 'as-flat', 'as-check'].forEach(id =>
-        document.getElementById(id).addEventListener('input', update)
-      );
-      update();
+      document.getElementById('as-base').addEventListener('input', asUpdate);
+      document.getElementById('as-check').addEventListener('input', asUpdate);
+
+      renderBonuses();
+      renderFlats();
+      asUpdate();
     })();
   </script>
 </Layout>
