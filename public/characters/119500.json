@@ -1,0 +1,37 @@
+{
+  "id": 119500,
+  "name": "test",
+  "baseAtk": 1,
+  "upgrade": [],
+  "chains": [],
+  "phasePassives": [],
+  "skills": {
+    "normalAttack": {
+      "id": 1310001,
+      "name": "Normal Attack",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 1310002,
+      "name": "[] Switches the stage.",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 1310003,
+      "name": "Active Skill (S1)",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    }
+  }
+}

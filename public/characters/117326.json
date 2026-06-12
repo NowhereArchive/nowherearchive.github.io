@@ -1,0 +1,109 @@
+{
+  "id": 117326,
+  "name": "Binding Snare",
+  "baseAtk": 150,
+  "upgrade": [],
+  "chains": [],
+  "phasePassives": [],
+  "skills": {
+    "normalAttack": {
+      "id": 76000001,
+      "name": "Normal Attack",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 76000006,
+      "name": "Imprison Mine",
+      "damageType": 4,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 760000061,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "[Area Lockdown] Seals off the grid, trapping enemies within. Enemies can't enter or exit the grid for the duration.",
+          "scripted": true,
+          "scriptName": "grid.replace",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 760000062,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "[Area Lockdown] Seals off the grid, trapping enemies within. Enemies can't enter or exit the grid for the duration.",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 760000063,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "[Area Lockdown] Seals off the grid, trapping enemies within. Enemies can't enter or exit the grid for the duration.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "skill1": {
+      "id": 76000007,
+      "name": "Imprison Mine",
+      "damageType": 4,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 760000064,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Disable Imprison effect",
+          "scripted": true,
+          "scriptName": "grid.replace",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 76000003,
+      "name": "Switch the grid beneath to obstacle grid",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 760000012,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Switch the grid beneath to obstacle grid",
+          "scripted": true,
+          "scriptName": "grid.replace",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 760000013,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Switch the grid beneath to obstacle grid",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 760000014,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Switch the grid beneath to obstacle grid",
+          "scripted": true,
+          "scriptName": "common.targetmonitoring",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

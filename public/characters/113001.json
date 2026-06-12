@@ -1,0 +1,42 @@
+{
+  "id": 113001,
+  "name": "Suffering Pylon",
+  "baseAtk": 500,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": [
+        6,
+        35
+      ],
+      "attackCoefficient": [
+        1,
+        89
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        6,
+        35
+      ],
+      "attackCoefficient": [
+        1,
+        89
+      ]
+    }
+  ],
+  "chains": [],
+  "phasePassives": [],
+  "skills": {
+    "skill1": {
+      "id": 30011,
+      "name": "Active Skill (S1)",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    }
+  }
+}

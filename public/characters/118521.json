@@ -1,0 +1,57 @@
+{
+  "id": 118521,
+  "name": "WhiteSands Dancer",
+  "baseAtk": 220,
+  "upgrade": [],
+  "chains": [],
+  "phasePassives": [],
+  "skills": {
+    "normalAttack": {
+      "id": 30000005,
+      "name": "Normal Attack",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 11852104,
+      "name": "Active Skill (S1)",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 11852108,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.triggersummon",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 30000003,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": [
+            {
+              "propertyId": 1,
+              "key": "hp",
+              "label": "HP",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 50,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

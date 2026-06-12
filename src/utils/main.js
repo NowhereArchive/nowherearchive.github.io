@@ -17,21 +17,6 @@ export function doAll() {
         }
     });
 
-    const menuToggle = document.querySelector('.navbar-toggler');
-    const menu = document.querySelector('.navbar-menu');
-
-    menuToggle.addEventListener('click', () => {
-        menu.classList.toggle('active');
-        menuToggle.classList.toggle('active');
-    });
-
-    document.addEventListener('click', (e) => {
-        if (!menu.contains(e.target) && !menuToggle.contains(e.target)) {
-            menu.classList.remove('active');
-            menuToggle.classList.remove('active');
-        }
-    });
-
     document.addEventListener('DOMContentLoaded', function () {
         const lazyImages = [].slice.call(document.querySelectorAll('img.lazy'));
 

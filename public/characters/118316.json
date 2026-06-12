@@ -1,0 +1,28 @@
+{
+  "id": 118316,
+  "name": "Rock Duck",
+  "baseAtk": 150,
+  "upgrade": [],
+  "chains": [],
+  "phasePassives": [],
+  "skills": {
+    "normalAttack": {
+      "id": 97004401,
+      "name": "Normal Attack",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 97004403,
+      "name": "Musical Resonance",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    }
+  }
+}

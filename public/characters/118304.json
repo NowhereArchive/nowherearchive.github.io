@@ -1,0 +1,64 @@
+{
+  "id": 118304,
+  "name": "Rock Duck",
+  "baseAtk": 150,
+  "upgrade": [
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        11,
+        50
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        33,
+        100
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        11,
+        25
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    }
+  ],
+  "chains": [],
+  "phasePassives": [],
+  "skills": {
+    "normalAttack": {
+      "id": 97002401,
+      "name": "Normal Attack",
+      "damageType": 2,
+      "coefs": [
+        100
+      ],
+      "maxCoef": 100,
+      "coefSource": "AttackPowerCo",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 97002402,
+      "name": "In My BGM",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    }
+  }
+}

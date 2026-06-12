@@ -1,0 +1,217 @@
+{
+  "id": 111605,
+  "name": "Dudu",
+  "baseAtk": 120,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        21,
+        100
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        63,
+        200
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        21,
+        50
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 160501,
+      "name": "Shackles Sync I",
+      "description": "Healing rate increases by 5%.",
+      "effects": [
+        {
+          "propertyId": 43,
+          "key": "property_43",
+          "label": "Property 43",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 160502,
+      "name": "Euphonious Echoes",
+      "description": "[Triumphant Silence] lasts 2  seconds longer.",
+      "effects": []
+    },
+    {
+      "id": 160503,
+      "name": "Shackles Sync II",
+      "description": "Healing rate increases by 5%.",
+      "effects": [
+        {
+          "propertyId": 43,
+          "key": "property_43",
+          "label": "Property 43",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 160504,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption is reduced by 3 points.",
+      "effects": []
+    },
+    {
+      "id": 160505,
+      "name": "Shackles Sync III",
+      "description": "Healing rate increases by 5%.",
+      "effects": [
+        {
+          "propertyId": 43,
+          "key": "property_43",
+          "label": "Property 43",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "characteristic": {
+      "id": 16050,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 160500,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "dudu.chains",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 160504,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.energyfull",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 16051,
+      "name": "Musical Performance",
+      "damageType": 0,
+      "coefs": [
+        26,
+        27.200001,
+        28.5,
+        29.799999,
+        31.1,
+        32.599998,
+        34.099998,
+        35.599998,
+        37.299999,
+        39
+      ],
+      "maxCoef": 39,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 16052,
+      "name": "Song of Phoenix",
+      "damageType": 0,
+      "coefs": [
+        350,
+        366,
+        383,
+        401,
+        419,
+        438,
+        459,
+        480,
+        502,
+        525
+      ],
+      "maxCoef": 525,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 16053,
+      "name": "Come Home to Roost",
+      "damageType": 0,
+      "coefs": [
+        5,
+        5.5,
+        6,
+        6.5,
+        7,
+        7.5,
+        8,
+        8.5,
+        9,
+        10
+      ],
+      "maxCoef": 10,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "passive": {
+      "id": 16054,
+      "name": "Triumphant Silence",
+      "damageType": 0,
+      "buffs": []
+    },
+    "exclusive": {
+      "id": 16055,
+      "name": "King of Birds",
+      "damageType": 0,
+      "coefs": [
+        3,
+        3.5,
+        4
+      ],
+      "maxCoef": 4,
+      "coefSource": "Data",
+      "buffs": []
+    }
+  }
+}

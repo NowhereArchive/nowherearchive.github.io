@@ -1,0 +1,63 @@
+{
+  "id": 118513,
+  "name": "Support - Tremor",
+  "baseAtk": 140,
+  "upgrade": [],
+  "chains": [],
+  "phasePassives": [],
+  "skills": {
+    "normalAttack": {
+      "id": 30000005,
+      "name": "Normal Attack",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 11851302,
+      "name": "[Tremor] Every 10 seconds, stuns all enemy units on the field for 3 seconds, up to 5 times.",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 11851305,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "[Tremor] Every 10 seconds, stuns all enemy units on the field for 3 seconds, up to 5 times.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 11851306,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "[Tremor] Every 10 seconds, stuns all enemy units on the field for 3 seconds, up to 5 times.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 11851304,
+      "name": "Passive (S1)",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 11851308,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

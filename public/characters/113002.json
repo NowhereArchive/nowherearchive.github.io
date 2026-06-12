@@ -1,0 +1,52 @@
+{
+  "id": 113002,
+  "name": "Retarding Pylon",
+  "baseAtk": 500,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": [
+        6,
+        35
+      ],
+      "attackCoefficient": [
+        1,
+        89
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        6,
+        35
+      ],
+      "attackCoefficient": [
+        1,
+        89
+      ]
+    }
+  ],
+  "chains": [],
+  "phasePassives": [],
+  "skills": {
+    "skill1": {
+      "id": 30021,
+      "name": "Active Skill (S1)",
+      "damageType": 2,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 300211,
+          "targetCamps": 1,
+          "target": "enemy",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.triggerfield",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

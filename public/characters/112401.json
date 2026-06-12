@@ -1,0 +1,212 @@
+{
+  "id": 112401,
+  "name": "EMP",
+  "baseAtk": 147,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        21,
+        890
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        1,
+        5
+      ],
+      "attackCoefficient": [
+        21,
+        890
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        3,
+        10
+      ],
+      "attackCoefficient": [
+        21,
+        890
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        2,
+        5
+      ],
+      "attackCoefficient": [
+        21,
+        890
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 240101,
+      "name": "One Stone, Two Birds",
+      "description": "[Ultra EM Arrow] deals extra 50% Physical Damage, to all enemies in the target grid. (This damage doesn't have CRIT bonus)",
+      "effects": []
+    },
+    {
+      "id": 240102,
+      "name": "Shackles Sync I",
+      "description": "CRIT Damage +10%",
+      "effects": [
+        {
+          "propertyId": 7,
+          "key": "critDmg",
+          "label": "Crit Damage Bonus",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 240103,
+      "name": "Bull's-eye",
+      "description": "Killing an enemy makes the next [Ultra EM Arrow] a CRIT hit.",
+      "effects": []
+    },
+    {
+      "id": 240104,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption reduced by 3 points",
+      "effects": []
+    },
+    {
+      "id": 240105,
+      "name": "Shackles Sync II",
+      "description": "CRIT Damage +10%",
+      "effects": [
+        {
+          "propertyId": 7,
+          "key": "critDmg",
+          "label": "Crit Damage Bonus",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 240106,
+      "effects": [
+        {
+          "propertyId": 9,
+          "key": "penPct",
+          "label": "Armor Pen %",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 15,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "characteristic": {
+      "id": 24010,
+      "name": "Extra Passive",
+      "damageType": 0,
+      "buffs": []
+    },
+    "normalAttack": {
+      "id": 24011,
+      "name": "Electric Arrow",
+      "damageType": 1,
+      "coefs": [
+        128,
+        134,
+        142,
+        149,
+        157,
+        166,
+        174,
+        184,
+        194,
+        204
+      ],
+      "maxCoef": 204,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 24012,
+      "name": "Ultra EM Arrow!",
+      "damageType": 1,
+      "coefs": [
+        800,
+        843,
+        888,
+        936,
+        986,
+        1039,
+        1094,
+        1153,
+        1215,
+        1280
+      ],
+      "maxCoef": 1280,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 24013,
+      "name": "Double Arrow",
+      "damageType": 0,
+      "coefs": [
+        45,
+        42,
+        39,
+        37,
+        35,
+        32,
+        30,
+        28,
+        27,
+        25
+      ],
+      "maxCoef": 25,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 240131,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "The charge of [Ultra EM Arrow!] is refreshed when it scores a kill. The effect has a ?-second cooldown.",
+          "scripted": true,
+          "scriptName": "aimiliya.passive",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 24014,
+      "name": "Hypercharge",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 240141,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "For each enemy she kills, EMP gains a ?% Attack bonus. The bonus lasts for the whole battle, and can stack up to 6 times.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

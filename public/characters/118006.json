@@ -1,0 +1,57 @@
+{
+  "id": 118006,
+  "name": "Treble Horn",
+  "baseAtk": 1,
+  "upgrade": [],
+  "chains": [],
+  "phasePassives": [],
+  "skills": {
+    "normalAttack": {
+      "id": 11500001,
+      "name": "Normal Attack",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 78020002,
+      "name": "Powerful Sonics",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 780200006,
+          "targetCamps": 1,
+          "target": "enemy",
+          "description": "[Powerful Sonics] Emits Powerful Sonics in a chosen direction and pushes away the nearest red Noise Box within a two-grid range by two grids.",
+          "scripted": true,
+          "scriptName": "common.changeenergy",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "skill1": {
+      "id": 78020004,
+      "name": "Active Skill (S1)",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 780200006,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.changeenergy",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

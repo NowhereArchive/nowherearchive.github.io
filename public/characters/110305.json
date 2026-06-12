@@ -1,0 +1,279 @@
+{
+  "id": 110305,
+  "name": "Mantis",
+  "baseAtk": 154,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        11,
+        50
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        33,
+        100
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        11,
+        25
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 30501,
+      "name": "Piercing Instinct",
+      "description": "[Perforating Sickle]'s CRIT Rate increase effect can be stacked 4 extra times, and another 2 extra times each time [Aerial Calamity] hits an allied Sinner.",
+      "effects": []
+    },
+    {
+      "id": 30502,
+      "name": "Shackles Sync I",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 30503,
+      "name": "Predator",
+      "description": "After Mantis deals damage, the M-Value she gains increases by 1, and her maximum per-second gain increases by 5.",
+      "effects": []
+    },
+    {
+      "id": 30504,
+      "name": "Energy Overflowing",
+      "description": "At the start of the battle, Mantis gains 15 Energy.",
+      "effects": []
+    },
+    {
+      "id": 30505,
+      "name": "Shackles Sync II",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 30500,
+      "effects": [
+        {
+          "propertyId": 5,
+          "key": "critRate",
+          "label": "Crit Rate",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "characteristic": {
+      "id": 3050,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 30561,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.changeragevalue",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 30567,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.stateaddbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 30568,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.stateaddbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 30569,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.stateaddbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 30570,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.stateaddbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 30576,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.stateaddbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 30577,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.removebuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 3051,
+      "name": "Sever",
+      "damageType": 1,
+      "coefs": [
+        80.5,
+        86.900002,
+        93.900002,
+        101.400002,
+        109.5,
+        118.300003,
+        127.800003,
+        138,
+        149.100006,
+        161
+      ],
+      "maxCoef": 161,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 3052,
+      "name": "Aerial Calamity",
+      "damageType": 0,
+      "coefs": [
+        1050,
+        1134,
+        1225,
+        1323,
+        1429,
+        1543,
+        1667,
+        1800,
+        1944,
+        2100
+      ],
+      "maxCoef": 2100,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 3053,
+      "name": "Perforating Sickle",
+      "damageType": 0,
+      "coefs": [
+        3,
+        3.2,
+        3.4,
+        3.6,
+        3.8,
+        4,
+        4.2,
+        4.4,
+        4.7,
+        5
+      ],
+      "maxCoef": 5,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 30563,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Gain ?% CRIT Rate increase every time [Aerial Calamity] hits an enemy. This effect can be stacked up to 8 times.",
+          "scripted": true,
+          "scriptName": "mantis.passive",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 3054,
+      "name": "Natural Hunter",
+      "damageType": 0,
+      "buffs": []
+    },
+    "exclusive": {
+      "id": 3055,
+      "name": "Wilderness Adventurer",
+      "damageType": 0,
+      "coefs": [
+        250,
+        325,
+        400
+      ],
+      "maxCoef": 400,
+      "coefSource": "Data",
+      "buffs": []
+    }
+  }
+}

@@ -1,0 +1,270 @@
+{
+  "id": 110108,
+  "name": "Lichen",
+  "baseAtk": 109,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        11,
+        50
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        33,
+        100
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        11,
+        25
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 10801,
+      "name": "1",
+      "description": "1",
+      "effects": []
+    },
+    {
+      "id": 10802,
+      "name": "Shackles Sync I",
+      "description": "2",
+      "effects": [
+        {
+          "propertyId": 4,
+          "key": "magicResist",
+          "label": "Magic Resist",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 10803,
+      "name": "2",
+      "description": "3",
+      "effects": []
+    },
+    {
+      "id": 10804,
+      "name": "3",
+      "description": "4",
+      "effects": []
+    },
+    {
+      "id": 10805,
+      "name": "Shackles Sync II",
+      "description": "5",
+      "effects": [
+        {
+          "propertyId": 4,
+          "key": "magicResist",
+          "label": "Magic Resist",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "characteristic": {
+      "id": 1080,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 10800,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.changeunsealedvalue",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 10809,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "lichen.attributeexchange",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 10814,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.removebuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 10815,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.stateaddbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 1081,
+      "name": "Lichen - Normal Attack",
+      "damageType": 0,
+      "coefs": [
+        50,
+        54,
+        58,
+        63,
+        68,
+        73,
+        79,
+        86,
+        93,
+        100
+      ],
+      "maxCoef": 100,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 10812,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "1",
+          "scripted": true,
+          "scriptName": "common.triggerfield",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 10816,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "1",
+          "scripted": true,
+          "scriptName": "common.triggerfield",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "ultimate": {
+      "id": 1082,
+      "name": "Lichen - Ultimate",
+      "damageType": 0,
+      "coefs": [
+        15,
+        16.200001,
+        17.5,
+        18.9,
+        20.4,
+        22,
+        23.799999,
+        25.700001,
+        27.799999,
+        30
+      ],
+      "maxCoef": 30,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 10822,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "1",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 10823,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "1",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "skill1": {
+      "id": 1083,
+      "name": "Lichen - Passive",
+      "damageType": 0,
+      "coefs": [
+        20,
+        21.6,
+        23.299999,
+        25.200001,
+        27.200001,
+        29.4,
+        31.700001,
+        34.299999,
+        37,
+        40
+      ],
+      "maxCoef": 40,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 10826,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "1",
+          "scripted": true,
+          "scriptName": "lichen.passive",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 1084,
+      "name": "Lichen - Talent",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 10841,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "1",
+          "scripted": true,
+          "scriptName": "lichen.talent",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

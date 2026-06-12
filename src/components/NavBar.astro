@@ -27,23 +27,24 @@
 </nav>
 
 <script>
-  function handleSmallScreens() {
+  document.addEventListener("DOMContentLoaded", () => {
     const navbarToggler = document.querySelector(".navbar-toggler");
-    if (!navbarToggler) return;
-    
-    navbarToggler.addEventListener("click", () => {
-      const navbarMenu = document.querySelector(".navbar-menu");
-      if (!navbarMenu) return;
+    const navbarMenu = document.querySelector(".navbar-menu");
+    if (!navbarToggler || !navbarMenu) return;
 
-      if (!navbarMenu.classList.contains("active")) {
-        navbarMenu.classList.add("active");
-      } else {
+    navbarToggler.addEventListener("click", (e) => {
+      e.stopPropagation();
+      navbarMenu.classList.toggle("active");
+      navbarToggler.classList.toggle("active");
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!navbarMenu.contains(e.target) && !navbarToggler.contains(e.target)) {
         navbarMenu.classList.remove("active");
+        navbarToggler.classList.remove("active");
       }
     });
-  }
-
-  handleSmallScreens();
+  });
 </script>
 
 <style>

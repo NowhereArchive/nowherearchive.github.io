@@ -1,0 +1,293 @@
+{
+  "id": 111109,
+  "name": "jojo",
+  "baseAtk": 98,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        21,
+        100
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        63,
+        200
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        21,
+        50
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 110901,
+      "name": "jojo",
+      "description": "jojo",
+      "effects": [
+        {
+          "propertyId": 1,
+          "key": "hp",
+          "label": "HP",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 110902,
+      "name": "jojo",
+      "description": "jojo",
+      "effects": []
+    },
+    {
+      "id": 110903,
+      "name": "jojo",
+      "description": "jojo",
+      "effects": [
+        {
+          "propertyId": 1,
+          "key": "hp",
+          "label": "HP",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 110904,
+      "name": "jojo",
+      "description": "jojo",
+      "effects": []
+    },
+    {
+      "id": 110905,
+      "name": "jojo",
+      "description": "jojo",
+      "effects": [
+        {
+          "propertyId": 1,
+          "key": "hp",
+          "label": "HP",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "characteristic": {
+      "id": 11090,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 110900,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 1,
+              "key": "hp",
+              "label": "HP",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 10,
+              "isPercent": true
+            }
+          ]
+        },
+        {
+          "statusId": 110920,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "anasui.chains",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 11091,
+      "name": "JoJo Placeholder",
+      "damageType": 1,
+      "coefs": [
+        72,
+        78,
+        84,
+        91,
+        98,
+        106,
+        114,
+        123,
+        133,
+        144
+      ],
+      "maxCoef": 144,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 11092,
+      "name": "Diver Down",
+      "damageType": 0,
+      "coefs": [
+        10,
+        10.8,
+        11.7,
+        12.6,
+        13.6,
+        14.7,
+        15.9,
+        17.1,
+        18.5,
+        20
+      ],
+      "maxCoef": 20,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 11093,
+      "name": "JoJo Placeholder",
+      "damageType": 0,
+      "coefs": [
+        15,
+        16.200001,
+        17.5,
+        18.9,
+        20.4,
+        22,
+        23.799999,
+        25.700001,
+        27.799999,
+        30
+      ],
+      "maxCoef": 30,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 110930,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "test",
+          "scripted": true,
+          "scriptName": "ll.passive",
+          "maxLevelEffects": [
+            {
+              "propertyId": 21,
+              "key": "takeDmgReduce",
+              "label": "Take Damage Reduce",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 30,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "passive": {
+      "id": 11094,
+      "name": "JoJo Placeholder",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 110943,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "test",
+          "scripted": true,
+          "scriptName": "ll.passive",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 110945,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "test",
+          "scripted": true,
+          "scriptName": "common.addbuffaftercasterbuffstart",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "exclusive": {
+      "id": 11095,
+      "name": "Cast-Iron Resolve",
+      "damageType": 1,
+      "coefs": [
+        20,
+        35,
+        50
+      ],
+      "maxCoef": 50,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "extra1": {
+      "id": 11096,
+      "name": "Extra Skill 1",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 110923,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "ll.passive",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 110925,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "ll.passive",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

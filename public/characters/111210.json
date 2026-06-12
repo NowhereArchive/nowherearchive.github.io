@@ -1,0 +1,373 @@
+{
+  "id": 111210,
+  "name": "Mira",
+  "baseAtk": 134,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        21,
+        100
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        63,
+        200
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        21,
+        50
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 121001,
+      "name": "Shackles Sync I",
+      "description": "Attack Speed +8%.",
+      "effects": [
+        {
+          "propertyId": 11,
+          "key": "atkSpeed",
+          "label": "ATK Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 8,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 121002,
+      "name": "Eye for an Eye",
+      "description": "After Mira takes damage from flying objects, there is a 50% chance of gaining an additional stack of [Counterattack] effect.",
+      "effects": []
+    },
+    {
+      "id": 121003,
+      "name": "Shackles Sync II",
+      "description": "Attack Speed +8%.",
+      "effects": [
+        {
+          "propertyId": 11,
+          "key": "atkSpeed",
+          "label": "ATK Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 8,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 121004,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption is reduced by 5 points.",
+      "effects": []
+    },
+    {
+      "id": 121005,
+      "name": "Shackles Sync III",
+      "description": "Attack Speed +8%.",
+      "effects": [
+        {
+          "propertyId": 11,
+          "key": "atkSpeed",
+          "label": "ATK Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 8,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "characteristic": {
+      "id": 12100,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 1210001,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": [
+            {
+              "propertyId": 21,
+              "key": "takeDmgReduce",
+              "label": "Take Damage Reduce",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 15,
+              "isPercent": true
+            }
+          ]
+        },
+        {
+          "statusId": 1210203,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.addbuffbybuffend",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 12101,
+      "name": "Ambush",
+      "damageType": 1,
+      "coefs": [
+        64,
+        69,
+        75,
+        81,
+        87,
+        94,
+        102,
+        110,
+        119,
+        128
+      ],
+      "maxCoef": 128,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 12102,
+      "name": "Closing Act",
+      "damageType": 1,
+      "coefs": [
+        3,
+        3.2,
+        3.5,
+        3.8,
+        4.1,
+        4.4,
+        4.8,
+        5.1,
+        5.6,
+        6
+      ],
+      "maxCoef": 6,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 1210213,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Mira enters outburst mode for 10 seconds, during which she cannot automatically recover Energy. While in outburst mode, each normal attack increases her damage dealt by ?%. This effect stacks up to 10 times and lasts until outburst mode ends.",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 13,
+              "key": "energySpeed",
+              "label": "Energy Speed",
+              "statScreen": true,
+              "calcCat": null,
+              "add": -500,
+              "isPercent": true
+            }
+          ]
+        },
+        {
+          "statusId": 1210222,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Mira enters outburst mode for 10 seconds, during which she cannot automatically recover Energy. While in outburst mode, each normal attack increases her damage dealt by ?%. This effect stacks up to 10 times and lasts until outburst mode ends.",
+          "scripted": true,
+          "scriptName": "normalattack.addbuff",
+          "maxLevelEffects": [
+            {
+              "propertyId": 13,
+              "key": "energySpeed",
+              "label": "Energy Speed",
+              "statScreen": true,
+              "calcCat": null,
+              "add": -500,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "skill1": {
+      "id": 12103,
+      "name": "Counterattack",
+      "damageType": 0,
+      "coefs": [
+        27,
+        29.200001,
+        31.5,
+        34,
+        36.700001,
+        39.700001,
+        42.900002,
+        46.299999,
+        50,
+        54
+      ],
+      "maxCoef": 54,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 1210301,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Each time Mira takes damage, she performs a quick strike along with the next normal attack, dealing (Attack *?%) additional Physical Damage. This effect can stack up to 5 times and each use consumes 1 stack.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 1210303,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Each time Mira takes damage, she performs a quick strike along with the next normal attack, dealing (Attack *?%) additional Physical Damage. This effect can stack up to 5 times and each use consumes 1 stack.",
+          "scripted": true,
+          "scriptName": "rahu.passive",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 1210305,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Each time Mira takes damage, she performs a quick strike along with the next normal attack, dealing (Attack *?%) additional Physical Damage. This effect can stack up to 5 times and each use consumes 1 stack.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 1210306,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Each time Mira takes damage, she performs a quick strike along with the next normal attack, dealing (Attack *?%) additional Physical Damage. This effect can stack up to 5 times and each use consumes 1 stack.",
+          "scripted": true,
+          "scriptName": "common.addbuffbybuffend",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 1210004,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Each time Mira takes damage, she performs a quick strike along with the next normal attack, dealing (Attack *?%) additional Physical Damage. This effect can stack up to 5 times and each use consumes 1 stack.",
+          "scripted": true,
+          "scriptName": "common.addbuffaftercasterbuffstart",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 1210005,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Each time Mira takes damage, she performs a quick strike along with the next normal attack, dealing (Attack *?%) additional Physical Damage. This effect can stack up to 5 times and each use consumes 1 stack.",
+          "scripted": true,
+          "scriptName": "common.addbuffaftercasterbuffstart",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 12104,
+      "name": "Perfect Deception",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 1210401,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Mira's Defense and Magic Resistance increase by ?%. Damage taken from projectiles is reduced by ?%.",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 3,
+              "key": "armor",
+              "label": "Armor",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 20,
+              "isPercent": true
+            },
+            {
+              "propertyId": 4,
+              "key": "magicResist",
+              "label": "Magic Resist",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 20,
+              "isPercent": true
+            }
+          ]
+        },
+        {
+          "statusId": 1210402,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Mira's Defense and Magic Resistance increase by ?%. Damage taken from projectiles is reduced by ?%.",
+          "scripted": true,
+          "scriptName": "mira.talent",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 1210008,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Mira's Defense and Magic Resistance increase by ?%. Damage taken from projectiles is reduced by ?%.",
+          "scripted": true,
+          "scriptName": "mira.passive",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "extra1": {
+      "id": 12105,
+      "name": "Ambush",
+      "damageType": 1,
+      "coefs": [
+        64,
+        69,
+        75,
+        81,
+        87,
+        94,
+        102,
+        110,
+        119,
+        128
+      ],
+      "maxCoef": 128,
+      "coefSource": "Data",
+      "buffs": []
+    }
+  }
+}

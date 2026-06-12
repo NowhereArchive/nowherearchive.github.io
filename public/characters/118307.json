@@ -1,0 +1,28 @@
+{
+  "id": 118307,
+  "name": "Artist Duck",
+  "baseAtk": 150,
+  "upgrade": [],
+  "chains": [],
+  "phasePassives": [],
+  "skills": {
+    "normalAttack": {
+      "id": 97004101,
+      "name": "Normal Attack",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 97004102,
+      "name": "Colorful Strokes",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    }
+  }
+}

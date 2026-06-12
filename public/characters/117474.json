@@ -1,0 +1,72 @@
+{
+  "id": 117474,
+  "name": "Toy tower base (back row)",
+  "baseAtk": 1,
+  "upgrade": [],
+  "chains": [],
+  "phasePassives": [],
+  "skills": {
+    "normalAttack": {
+      "id": 11740101,
+      "name": "Normal Attack",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 11740108,
+      "name": "Build [Nail Gun]",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 117401027,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Consumes 50 [Parts] to place a [Nail Gun]. [Nail Gun] has a long-range, capable of dealing massive damage to enemies along a straight line.",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 117401082,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Consumes 50 [Parts] to place a [Nail Gun]. [Nail Gun] has a long-range, capable of dealing massive damage to enemies along a straight line.",
+          "scripted": true,
+          "scriptName": "skill.replace",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 117401034,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Consumes 50 [Parts] to place a [Nail Gun]. [Nail Gun] has a long-range, capable of dealing massive damage to enemies along a straight line.",
+          "scripted": true,
+          "scriptName": "common.addextrablocked",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 11740109,
+      "name": "Passive (S1)",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 117401092,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

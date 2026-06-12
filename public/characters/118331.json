@@ -1,0 +1,30 @@
+{
+  "id": 118331,
+  "name": "Artist Duck",
+  "baseAtk": 150,
+  "upgrade": [],
+  "chains": [],
+  "phasePassives": [],
+  "skills": {
+    "normalAttack": {
+      "id": 97002101,
+      "name": "Normal Attack",
+      "damageType": 2,
+      "coefs": [
+        100
+      ],
+      "maxCoef": 100,
+      "coefSource": "AttackPowerCo",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 97002104,
+      "name": "Random Doodle",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    }
+  }
+}

@@ -1,0 +1,259 @@
+{
+  "id": 112301,
+  "name": "Labyrinth",
+  "baseAtk": 136,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        21,
+        890
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        1,
+        5
+      ],
+      "attackCoefficient": [
+        21,
+        890
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        3,
+        10
+      ],
+      "attackCoefficient": [
+        21,
+        890
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        2,
+        5
+      ],
+      "attackCoefficient": [
+        21,
+        890
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 230101,
+      "name": "Shackles Sync I",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 230102,
+      "name": "Active Camouflage",
+      "description": "The Damage of Labyrinth's Backstab attack is reduced, making it a two-hit combo. (Damage Coefficient increases alongside normal attack level.)",
+      "effects": []
+    },
+    {
+      "id": 230103,
+      "name": "Shackles Sync II",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 230104,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption is reduced by 3 points.",
+      "effects": []
+    },
+    {
+      "id": 230105,
+      "name": "Shackles Sync III",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "characteristic": {
+      "id": 23010,
+      "name": "Default Passive",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 230101,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.changeenergy",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 23011,
+      "name": "Standard Process",
+      "damageType": 1,
+      "coefs": [
+        98,
+        104,
+        111,
+        119,
+        127,
+        135,
+        144,
+        154,
+        165,
+        176
+      ],
+      "maxCoef": 176,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 23012,
+      "name": "Purge Order",
+      "damageType": 1,
+      "coefs": [
+        120,
+        128,
+        137,
+        146,
+        156,
+        166,
+        178,
+        190,
+        202,
+        216
+      ],
+      "maxCoef": 216,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 23013,
+      "name": "Bioelectricity",
+      "damageType": 0,
+      "coefs": [
+        8,
+        8.4,
+        8.8,
+        9.2,
+        9.6,
+        10,
+        10.5,
+        11,
+        11.5,
+        12
+      ],
+      "maxCoef": 12,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 230131,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When causing damage from behind the enemies, Labyrinth gains a ?% Attack increase.",
+          "scripted": true,
+          "scriptName": "renou.passive",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 23014,
+      "name": "Combat Form",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 230140,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "After performing [Purge Order], Labyrinth gets ?% attack increase for 5 seconds. The effect can stack up to 2 times.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "extra1": {
+      "id": 23015,
+      "name": "Exclusive Backstab",
+      "damageType": 1,
+      "coefs": [
+        98,
+        104,
+        111,
+        119,
+        127,
+        135,
+        144,
+        154,
+        165,
+        176
+      ],
+      "maxCoef": 176,
+      "coefSource": "AttackPowerCo",
+      "buffs": [],
+      "isSummonSkill": true,
+      "summonScalesFromMaster": true
+    },
+    "extra2": {
+      "id": 23016,
+      "name": "Shackle Backstab",
+      "damageType": 1,
+      "coefs": [
+        59,
+        62,
+        67,
+        71,
+        76,
+        81,
+        87,
+        92,
+        99,
+        105
+      ],
+      "maxCoef": 105,
+      "coefSource": "AttackPowerCo",
+      "buffs": [],
+      "isSummonSkill": true,
+      "summonScalesFromMaster": true
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "id": 118337,
+  "name": "Boss Duck",
+  "baseAtk": 9999,
+  "upgrade": [],
+  "chains": [],
+  "phasePassives": [],
+  "skills": {
+    "normalAttack": {
+      "id": 97002201,
+      "name": "Normal Attack",
+      "damageType": 2,
+      "coefs": [
+        100
+      ],
+      "maxCoef": 100,
+      "coefSource": "AttackPowerCo",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 97002202,
+      "name": "Pie in the Sky",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 970022021,
+          "targetCamps": 2,
+          "target": "self",
+          "description": "All allied units enter into vigorous state, gaining immunity to control effects and reduced damage taken for 5 seconds.\nEnters the field with full ultimate energy.",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 970022022,
+          "targetCamps": 2,
+          "target": "self",
+          "description": "All allied units enter into vigorous state, gaining immunity to control effects and reduced damage taken for 5 seconds.\nEnters the field with full ultimate energy.",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 21,
+              "key": "takeDmgReduce",
+              "label": "Take Damage Reduce",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 30,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "exclusive": {
+      "id": 97002203,
+      "name": "Year-End Bonus",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    }
+  }
+}

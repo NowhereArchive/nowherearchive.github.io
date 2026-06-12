@@ -1,0 +1,100 @@
+{
+  "id": 117415,
+  "name": "Toy tower base (auxiliary)",
+  "baseAtk": 1,
+  "upgrade": [],
+  "chains": [],
+  "phasePassives": [],
+  "skills": {
+    "normalAttack": {
+      "id": 11740101,
+      "name": "Normal Attack",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 11740105,
+      "name": "Build [Quality Tester]",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 117401024,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Consumes 50 [Parts] to place a [Quality Tester]. After a short delay, [Quality Tester] stuns all enemies on the field.",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 117401052,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Consumes 50 [Parts] to place a [Quality Tester]. After a short delay, [Quality Tester] stuns all enemies on the field.",
+          "scripted": true,
+          "scriptName": "skill.replace",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 117401034,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Consumes 50 [Parts] to place a [Quality Tester]. After a short delay, [Quality Tester] stuns all enemies on the field.",
+          "scripted": true,
+          "scriptName": "common.addextrablocked",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 11740109,
+      "name": "Passive (S1)",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 117401092,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "exclusive": {
+      "id": 11740106,
+      "name": "Build [Crusher]",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 117401025,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Consumes 50 [Parts] to place a [Crusher]. [Crusher] will immediately eliminates all enemies on the same grid and prevents other enemies from passing through.",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 117401062,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Consumes 50 [Parts] to place a [Crusher]. [Crusher] will immediately eliminates all enemies on the same grid and prevents other enemies from passing through.",
+          "scripted": true,
+          "scriptName": "skill.replace",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

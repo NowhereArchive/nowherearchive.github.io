@@ -1,0 +1,111 @@
+{
+  "id": 118306,
+  "name": "Writer Duck",
+  "baseAtk": 150,
+  "upgrade": [
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        11,
+        50
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        33,
+        100
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        11,
+        25
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    }
+  ],
+  "chains": [],
+  "phasePassives": [],
+  "skills": {
+    "normalAttack": {
+      "id": 97002601,
+      "name": "Normal Attack",
+      "damageType": 2,
+      "coefs": [
+        100
+      ],
+      "maxCoef": 100,
+      "coefSource": "AttackPowerCo",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 97002602,
+      "name": "Final Ripple",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 920026021,
+          "targetCamps": 2,
+          "target": "self",
+          "description": "Grants a Sinner invincibility, increasing Attack and Energy Recovery Speed for 15 seconds, after which the unit dies and boosts Attack, Attack Speed, and CRIT Rate for all allied units for 15 seconds. (Buff effect is activated even if the unit dies halfway.) \nEnters the field with full ultimate energy.",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": [
+            {
+              "propertyId": 2,
+              "key": "atk",
+              "label": "ATK",
+              "statScreen": false,
+              "calcCat": null,
+              "add": 25,
+              "isPercent": true
+            }
+          ]
+        },
+        {
+          "statusId": 920026022,
+          "targetCamps": 2,
+          "target": "self",
+          "description": "Grants a Sinner invincibility, increasing Attack and Energy Recovery Speed for 15 seconds, after which the unit dies and boosts Attack, Attack Speed, and CRIT Rate for all allied units for 15 seconds. (Buff effect is activated even if the unit dies halfway.) \nEnters the field with full ultimate energy.",
+          "scripted": true,
+          "scriptName": "common.changeenergy",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 920026023,
+          "targetCamps": 2,
+          "target": "self",
+          "description": "Grants a Sinner invincibility, increasing Attack and Energy Recovery Speed for 15 seconds, after which the unit dies and boosts Attack, Attack Speed, and CRIT Rate for all allied units for 15 seconds. (Buff effect is activated even if the unit dies halfway.) \nEnters the field with full ultimate energy.",
+          "scripted": true,
+          "scriptName": "common.instantkill",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 920026026,
+          "targetCamps": 2,
+          "target": "self",
+          "description": "Grants a Sinner invincibility, increasing Attack and Energy Recovery Speed for 15 seconds, after which the unit dies and boosts Attack, Attack Speed, and CRIT Rate for all allied units for 15 seconds. (Buff effect is activated even if the unit dies halfway.) \nEnters the field with full ultimate energy.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

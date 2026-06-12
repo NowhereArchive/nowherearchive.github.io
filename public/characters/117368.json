@@ -1,0 +1,119 @@
+{
+  "id": 117368,
+  "name": "Concentrated Beam",
+  "baseAtk": 200,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        11,
+        50
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        33,
+        100
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        11,
+        25
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    }
+  ],
+  "chains": [],
+  "phasePassives": [],
+  "skills": {
+    "normalAttack": {
+      "id": 76000001,
+      "name": "Normal Attack",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 76010004,
+      "name": "Concentrated Beam",
+      "damageType": 4,
+      "coefs": [
+        80,
+        160,
+        240,
+        300,
+        300
+      ],
+      "maxCoef": 300,
+      "coefSource": "AttackPowerCo",
+      "buffs": [
+        {
+          "statusId": 760100041,
+          "targetCamps": 1,
+          "target": "enemy",
+          "description": "[Concentrated Beam] Deals multiple hits to all enemies in a single row.",
+          "scripted": false,
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 76000002,
+      "name": "Switch the grid beneath to obstacle grid",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 760000011,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Switch the grid beneath to obstacle grid",
+          "scripted": true,
+          "scriptName": "grid.replace",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 760000013,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Switch the grid beneath to obstacle grid",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 760000014,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Switch the grid beneath to obstacle grid",
+          "scripted": true,
+          "scriptName": "common.targetmonitoring",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "id": 110411,
+  "name": "Clementine",
+  "baseAtk": 155,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        11,
+        50
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        33,
+        100
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        11,
+        25
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 41101,
+      "name": "",
+      "description": "",
+      "effects": []
+    },
+    {
+      "id": 41102,
+      "name": "",
+      "description": "",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 41103,
+      "name": "",
+      "description": "",
+      "effects": []
+    },
+    {
+      "id": 41104,
+      "name": "",
+      "description": "",
+      "effects": []
+    },
+    {
+      "id": 41105,
+      "name": "",
+      "description": "",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "characteristic": {
+      "id": 4110,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 41100,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "secretland.damagetypeaddbuff",
+          "maxLevelEffects": [
+            {
+              "propertyId": 17,
+              "key": "dmgBonus",
+              "label": "Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Damage Bonus (general)",
+              "add": 5,
+              "isPercent": true
+            },
+            {
+              "propertyId": 57,
+              "key": "breakingDmgBonus",
+              "label": "Breaking Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Breaking Damage Bonus",
+              "add": 5,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 4111,
+      "name": "Normal Attack",
+      "damageType": 1,
+      "coefs": [
+        76,
+        82,
+        89,
+        96,
+        103,
+        112,
+        121,
+        130,
+        141,
+        152
+      ],
+      "maxCoef": 152,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 4112,
+      "name": "Ultimate",
+      "damageType": 0,
+      "coefs": [
+        60,
+        65,
+        70,
+        76,
+        82,
+        88,
+        95,
+        103,
+        111,
+        120
+      ],
+      "maxCoef": 120,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 4113,
+      "name": "Passive",
+      "damageType": 0,
+      "coefs": [
+        200,
+        216,
+        233,
+        252,
+        272,
+        294,
+        318,
+        343,
+        370,
+        400
+      ],
+      "maxCoef": 400,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "passive": {
+      "id": 4114,
+      "name": "Passive",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 41140,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Clementine gains an Attack bonus based on the number of enemies on the field. For each enemy, her Attack increases by ?%. This effect can stack up to 5 times.",
+          "scripted": true,
+          "scriptName": "kelaimenting.talent",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,335 @@
+{
+  "id": 110210,
+  "name": "Xiaofeng",
+  "baseAtk": 157,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        11,
+        50
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        33,
+        100
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        11,
+        25
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 21001,
+      "name": "Shackles 1",
+      "description": "Shackles 1",
+      "effects": []
+    },
+    {
+      "id": 21002,
+      "name": "Shackles 2",
+      "description": "Shackles 2",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 21003,
+      "name": "Shackles 3",
+      "description": "Shackles 3",
+      "effects": []
+    },
+    {
+      "id": 21004,
+      "name": "Shackles 4",
+      "description": "Shackles 4",
+      "effects": []
+    },
+    {
+      "id": 21005,
+      "name": "Shackles 5",
+      "description": "Shackles 5",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "characteristic": {
+      "id": 2100,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 21001,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 57,
+              "key": "breakingDmgBonus",
+              "label": "Breaking Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Breaking Damage Bonus",
+              "add": 5,
+              "isPercent": true
+            },
+            {
+              "propertyId": 17,
+              "key": "dmgBonus",
+              "label": "Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Damage Bonus (general)",
+              "add": 5,
+              "isPercent": true
+            }
+          ]
+        },
+        {
+          "statusId": 21002,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "xiaofeng.chains",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 21007,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "skill.replace",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 21008,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "secretland.damagetypeaddbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 2101,
+      "name": "Rockbreaker",
+      "damageType": 1,
+      "coefs": [
+        92,
+        99,
+        107,
+        116,
+        125,
+        135,
+        146,
+        158,
+        170,
+        184
+      ],
+      "maxCoef": 184,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 2102,
+      "name": "Rending Gale",
+      "damageType": 1,
+      "coefs": [
+        180,
+        194,
+        210,
+        227,
+        245,
+        265,
+        286,
+        309,
+        333,
+        360
+      ],
+      "maxCoef": 360,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 2103,
+      "name": "Tigersprint",
+      "damageType": 0,
+      "coefs": [
+        30,
+        32.400002,
+        35,
+        37.799999,
+        40.799999,
+        44.099998,
+        47.599998,
+        51.400002,
+        55.599998,
+        60
+      ],
+      "maxCoef": 60,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 21031,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Every 8 times Xiaofeng performs normal attack, she unleashes a special attack, dealing (Attack *?%) True Damage to all enemies within the skill range and inflicting a [Rift] mark. This skill's casting speed is affected by Attack Speed.",
+          "scripted": true,
+          "scriptName": "xiaofeng.passive",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 2104,
+      "name": "Heaven Domination",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 21041,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Each time a [Rift] mark bearer takes True Damage, the True Damage they take increases by ?%, lasting until the [Rift] mark disappears, stacking up to 20 times.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "exclusive": {
+      "id": 2105,
+      "name": "Mountain Lord's Roar",
+      "damageType": 0,
+      "coefs": [
+        20,
+        30,
+        40
+      ],
+      "maxCoef": 40,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 21051,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Xiaofeng manifests giant claws to attack, each claw dealing (Attack *?%) True Damage to all enemies within range on each side. Enemies are squeezed into the three grids in front of Xiaofeng, [Stunned] for 1 second, and inflicted with a [Rift] mark.",
+          "scripted": true,
+          "scriptName": "skill.replace",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 21052,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Xiaofeng manifests giant claws to attack, each claw dealing (Attack *?%) True Damage to all enemies within range on each side. Enemies are squeezed into the three grids in front of Xiaofeng, [Stunned] for 1 second, and inflicted with a [Rift] mark.",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 21056,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Xiaofeng manifests giant claws to attack, each claw dealing (Attack *?%) True Damage to all enemies within range on each side. Enemies are squeezed into the three grids in front of Xiaofeng, [Stunned] for 1 second, and inflicted with a [Rift] mark.",
+          "scripted": true,
+          "scriptName": "xiaofeng.exclusive",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "extra2": {
+      "id": 2109,
+      "name": "Extra Skill 2",
+      "damageType": 1,
+      "coefs": [
+        180,
+        194,
+        210,
+        227,
+        245,
+        265,
+        286,
+        309,
+        333,
+        360
+      ],
+      "maxCoef": 360,
+      "coefSource": "AttackPowerCo",
+      "buffs": [],
+      "isSummonSkill": true,
+      "summonScalesFromMaster": true
+    },
+    "extra3": {
+      "id": 21091,
+      "name": "Extra Skill 3",
+      "damageType": 1,
+      "coefs": [
+        180,
+        194,
+        210,
+        227,
+        245,
+        265,
+        286,
+        309,
+        333,
+        360
+      ],
+      "maxCoef": 360,
+      "coefSource": "AttackPowerCo",
+      "buffs": [],
+      "isSummonSkill": true,
+      "summonScalesFromMaster": true
+    }
+  }
+}

@@ -1,0 +1,244 @@
+{
+  "id": 118602,
+  "name": "Nightingale",
+  "baseAtk": 147,
+  "upgrade": [],
+  "chains": [
+    {
+      "id": 1,
+      "name": "Shackles 1",
+      "description": "Ultimate: Attacks one more time.",
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 3,
+          "isPercent": false
+        },
+        {
+          "propertyId": 1,
+          "key": "hp",
+          "label": "HP",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        },
+        {
+          "propertyId": 17,
+          "key": "dmgBonus",
+          "label": "Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Damage Bonus (general)",
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Shackles 2",
+      "description": "Passive: The damage dealt by Causality is modified to be true damage.",
+      "effects": [
+        {
+          "propertyId": 1,
+          "key": "hp",
+          "label": "HP",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        },
+        {
+          "propertyId": 17,
+          "key": "dmgBonus",
+          "label": "Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Damage Bonus (general)",
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Shackles 3",
+      "description": "Talent: Also increases CRIT Rate by 10% for 10 seconds.",
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 3,
+          "isPercent": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Shackles 4",
+      "description": "Talent: When a target marked with Causality dies, deals AoE damage of 1 grid once.",
+      "effects": [
+        {
+          "propertyId": 1,
+          "key": "hp",
+          "label": "HP",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        },
+        {
+          "propertyId": 17,
+          "key": "dmgBonus",
+          "label": "Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Damage Bonus (general)",
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Shackles 5",
+      "description": "Ultimate: Attacks one more time.",
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 3,
+          "isPercent": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Shackles 6",
+      "description": "Passive: The damage dealt by Causality is modified to be true damage.",
+      "effects": [
+        {
+          "propertyId": 1,
+          "key": "hp",
+          "label": "HP",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        },
+        {
+          "propertyId": 17,
+          "key": "dmgBonus",
+          "label": "Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Damage Bonus (general)",
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "ultimate": {
+      "id": 11860202,
+      "name": "Ultimate",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 11860204,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "teddybear.passive",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 11860202,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "teddybear.passive",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 11860203,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "teddybear.passive",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 11860207,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.triggerfield",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 11860214,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.removebuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "exclusive": {
+      "id": 11860204,
+      "name": "Exclusive Skill",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 11860201,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.removefield",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 11860206,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.removefield",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 11860212,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.removebuff",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "id": 110608,
+  "name": "Jelena",
+  "baseAtk": 131,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        11,
+        50
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        33,
+        100
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        11,
+        25
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 60801,
+      "name": "Pamper",
+      "description": "At the start of the battle, Jelena applies [Raindrop] to the allied Sinner with the highest Attack within the range of her front and both sides, lasting for the entire battle. Up to 2 Sinners can have [Raindrop] at the same time.",
+      "effects": []
+    },
+    {
+      "id": 60802,
+      "name": "Shackles Sync I",
+      "description": "Energy Recovery Speed increases by 10%.",
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 60803,
+      "name": "Let the Sun In",
+      "description": "The Attack increase upper limit for [Merciful Wail] increases by 15%, and it will not be removed when [Invigorate] ends.",
+      "effects": []
+    },
+    {
+      "id": 60804,
+      "name": "Energy Overflowing",
+      "description": "Jelena gains 18 Energy at the start of the battle.",
+      "effects": []
+    },
+    {
+      "id": 60805,
+      "name": "Shackles Sync II",
+      "description": "Energy Recovery Speed increases by 10%.",
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 60800,
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 15,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "characteristic": {
+      "id": 6080,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": []
+    },
+    "normalAttack": {
+      "id": 6081,
+      "name": "Plummet",
+      "damageType": 2,
+      "coefs": [
+        66,
+        71,
+        77,
+        83,
+        90,
+        97,
+        105,
+        113,
+        122,
+        132
+      ],
+      "maxCoef": 132,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 6082,
+      "name": "Weep",
+      "damageType": 0,
+      "coefs": [
+        20,
+        21.6,
+        23.299999,
+        25.200001,
+        27.200001,
+        29.4,
+        31.700001,
+        34.299999,
+        37,
+        40
+      ],
+      "maxCoef": 40,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 6083,
+      "name": "Merciful Wail",
+      "damageType": 0,
+      "coefs": [
+        12.5,
+        13.5,
+        14.6,
+        15.7,
+        17,
+        18.4,
+        19.799999,
+        21.4,
+        23.1,
+        25
+      ],
+      "maxCoef": 25,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "passive": {
+      "id": 6084,
+      "name": "Overcast",
+      "damageType": 0,
+      "buffs": []
+    },
+    "exclusive": {
+      "id": 6085,
+      "name": "Rain-Drenched Heart",
+      "damageType": 0,
+      "coefs": [
+        10,
+        12,
+        15
+      ],
+      "maxCoef": 15,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "extra1": {
+      "id": 6086,
+      "name": "Extra Skill 1",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 60821,
+          "targetCamps": 4,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "jelena.commandspell",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

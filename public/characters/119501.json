@@ -1,0 +1,47 @@
+{
+  "id": 119501,
+  "name": "Empty Hero",
+  "baseAtk": 1,
+  "upgrade": [],
+  "chains": [],
+  "phasePassives": [],
+  "skills": {
+    "normalAttack": {
+      "id": 1310001,
+      "name": "Normal Attack",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 1310102,
+      "name": "[] Upon entering, remains in place and gains a shield that significantly reduces damage. This shield loses 1 stack per second.",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 13101021,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "[] Upon entering, remains in place and gains a shield that significantly reduces damage. This shield loses 1 stack per second.",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 13101022,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "[] Upon entering, remains in place and gains a shield that significantly reduces damage. This shield loses 1 stack per second.",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

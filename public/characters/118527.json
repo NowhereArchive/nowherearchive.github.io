@@ -1,0 +1,63 @@
+{
+  "id": 118527,
+  "name": "DisCorps Axe Guard",
+  "baseAtk": 100,
+  "upgrade": [],
+  "chains": [],
+  "phasePassives": [],
+  "skills": {
+    "normalAttack": {
+      "id": 11852701,
+      "name": "Normal Attack",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 11852702,
+      "name": "test",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 118527021,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "test",
+          "scripted": true,
+          "scriptName": "common.triggersummon",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 11852703,
+      "name": "test",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 118527031,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "test",
+          "scripted": true,
+          "scriptName": "common.triggersummon",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 118527032,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "test",
+          "scripted": true,
+          "scriptName": "common.triggersummon",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

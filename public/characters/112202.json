@@ -1,0 +1,231 @@
+{
+  "id": 112202,
+  "name": "Che",
+  "baseAtk": 140,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        21,
+        890
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        1,
+        5
+      ],
+      "attackCoefficient": [
+        21,
+        890
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        3,
+        10
+      ],
+      "attackCoefficient": [
+        21,
+        890
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        2,
+        5
+      ],
+      "attackCoefficient": [
+        21,
+        890
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 220201,
+      "name": "Prolonged Hunt",
+      "description": "[Track] Mark duration extended by 4 seconds",
+      "effects": []
+    },
+    {
+      "id": 220202,
+      "name": "Shackles Sync I",
+      "description": "Attack Speed +5%",
+      "effects": [
+        {
+          "propertyId": 11,
+          "key": "atkSpeed",
+          "label": "ATK Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 220203,
+      "name": "Efficient Hunter",
+      "description": "Che's normal attack adds a third stage, using both a short knife and hand axe to attack.",
+      "effects": []
+    },
+    {
+      "id": 220204,
+      "name": "Energy Overflowing",
+      "description": "At the start of the battle, Che gains 10 points of Energy",
+      "effects": []
+    },
+    {
+      "id": 220205,
+      "name": "Shackles Sync II",
+      "description": "Attack Speed +5%",
+      "effects": [
+        {
+          "propertyId": 11,
+          "key": "atkSpeed",
+          "label": "ATK Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "characteristic": {
+      "id": 22020,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": []
+    },
+    "normalAttack": {
+      "id": 22021,
+      "name": "Double Blades",
+      "damageType": 1,
+      "coefs": [
+        84,
+        90,
+        96,
+        102,
+        109,
+        116,
+        124,
+        133,
+        142,
+        151
+      ],
+      "maxCoef": 151,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 22022,
+      "name": "Happy Hunting",
+      "damageType": 1,
+      "coefs": [
+        400,
+        427,
+        456,
+        487,
+        519,
+        554,
+        592,
+        632,
+        674,
+        720
+      ],
+      "maxCoef": 720,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 22023,
+      "name": "Jay the Dagger",
+      "damageType": 0,
+      "coefs": [
+        2.5,
+        2.7,
+        2.8,
+        3,
+        3.2,
+        3.5,
+        3.7,
+        3.9,
+        4.2,
+        4.5
+      ],
+      "maxCoef": 4.5,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 220231,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When Che's dagger hits an enemy he is [Tracking], that enemy takes ?% additional damage. The effect can stack up to 5 stacks, and lasts for 5 seconds.",
+          "scripted": true,
+          "scriptName": "normalattack.addbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 220232,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When Che's dagger hits an enemy he is [Tracking], that enemy takes ?% additional damage. The effect can stack up to 5 stacks, and lasts for 5 seconds.",
+          "scripted": true,
+          "scriptName": "normalattack.addbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 220233,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When Che's dagger hits an enemy he is [Tracking], that enemy takes ?% additional damage. The effect can stack up to 5 stacks, and lasts for 5 seconds.",
+          "scripted": true,
+          "scriptName": "normalattack.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 22024,
+      "name": "Jon the Axe",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 220241,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When Che's axe hits an enemy he is [Tracking], there's a ?% chance he gets 1 Energy.",
+          "scripted": true,
+          "scriptName": "normalattack.addbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 220242,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When Che's axe hits an enemy he is [Tracking], there's a ?% chance he gets 1 Energy.",
+          "scripted": true,
+          "scriptName": "normalattack.addbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 220243,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When Che's axe hits an enemy he is [Tracking], there's a ?% chance he gets 1 Energy.",
+          "scripted": true,
+          "scriptName": "normalattack.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

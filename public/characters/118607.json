@@ -1,0 +1,32 @@
+{
+  "id": 118607,
+  "name": "Code Duck",
+  "baseAtk": 150,
+  "upgrade": [],
+  "chains": [],
+  "phasePassives": [],
+  "skills": {
+    "normalAttack": {
+      "id": 97002501,
+      "name": "Normal Attack",
+      "damageType": 2,
+      "coefs": [
+        100
+      ],
+      "maxCoef": 100,
+      "coefSource": "AttackPowerCo",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 11860102,
+      "name": "GM Command",
+      "damageType": 4,
+      "coefs": [
+        100
+      ],
+      "maxCoef": 100,
+      "coefSource": "AttackPowerCo",
+      "buffs": []
+    }
+  }
+}

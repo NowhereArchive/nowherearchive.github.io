@@ -1,0 +1,254 @@
+{
+  "id": 111106,
+  "name": "Nino",
+  "baseAtk": 99,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        21,
+        100
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        63,
+        200
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        21,
+        50
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 110601,
+      "name": "Shackles Sync I",
+      "description": "Defense is increased by 5%",
+      "effects": [
+        {
+          "propertyId": 3,
+          "key": "armor",
+          "label": "Armor",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 110602,
+      "name": "Trolling Expert",
+      "description": "Each time Nino takes damage, she recovers 1 extra point of Energy.",
+      "effects": []
+    },
+    {
+      "id": 110603,
+      "name": "Shackles Sync II",
+      "description": "Defense is increased by 5%",
+      "effects": [
+        {
+          "propertyId": 3,
+          "key": "armor",
+          "label": "Armor",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 110604,
+      "name": "Internet Addiction",
+      "description": "The energy needed to trigger [Live Chat Compilation] is reduced by 5 points.",
+      "effects": []
+    },
+    {
+      "id": 110605,
+      "name": "Shackles Sync III",
+      "description": "Defense is increased by 5%",
+      "effects": [
+        {
+          "propertyId": 3,
+          "key": "armor",
+          "label": "Armor",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 110606,
+      "effects": [
+        {
+          "propertyId": 3,
+          "key": "armor",
+          "label": "Armor",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "characteristic": {
+      "id": 11060,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 110606,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 11061,
+      "name": "Lævateinn",
+      "damageType": 1,
+      "coefs": [
+        60,
+        64,
+        69,
+        73,
+        78,
+        84,
+        89,
+        95,
+        102,
+        108
+      ],
+      "maxCoef": 108,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 11062,
+      "name": "Live Start!",
+      "damageType": 0,
+      "coefs": [
+        333.299988,
+        355.799988,
+        379.799988,
+        405.5,
+        432.799988,
+        462.100006,
+        493.200012,
+        526.5,
+        562.099976,
+        600
+      ],
+      "maxCoef": 600,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 11063,
+      "name": "Live Chat Compilation",
+      "damageType": 0,
+      "coefs": [
+        1.5,
+        1.6,
+        1.7,
+        1.8,
+        2,
+        2.2,
+        2.4,
+        2.6,
+        2.8,
+        3
+      ],
+      "maxCoef": 3,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 110631,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Nino gains a ?% Defense boost for every 30 Energy she obtains (including the excess Energy), stacking up to 5 times.",
+          "scripted": true,
+          "scriptName": "lynn.exclusive",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 11064,
+      "name": "Compulsory Viewing",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 110641,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "For every 30 Energy Nino consumes, her next normal attack will recover (Defense *?%) HP. This effect can stack up to 3 times.",
+          "scripted": true,
+          "scriptName": "secretland.energyconsumeaddbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 110643,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "For every 30 Energy Nino consumes, her next normal attack will recover (Defense *?%) HP. This effect can stack up to 3 times.",
+          "scripted": true,
+          "scriptName": "nino.talent",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "exclusive": {
+      "id": 11065,
+      "name": "Game and Reality",
+      "damageType": 1,
+      "coefs": [
+        600,
+        800,
+        1000
+      ],
+      "maxCoef": 1000,
+      "coefSource": "Data",
+      "buffs": []
+    }
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "id": 111308,
+  "name": "Eureka",
+  "baseAtk": 140,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        21,
+        100
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        63,
+        200
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        21,
+        50
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 130801,
+      "name": "Shackles Sync I",
+      "description": "Damage dealt by summoned creatures increases by 10%.",
+      "effects": [
+        {
+          "propertyId": 51,
+          "key": "summonDmgBonus",
+          "label": "Summon Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Summon Damage Bonus",
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 130802,
+      "name": "Strange Muse",
+      "description": "The effect of [Ultimate Explosion] can stack up to 4 times, and the duration is extended by 4 seconds.",
+      "effects": []
+    },
+    {
+      "id": 130803,
+      "name": "Shackles Sync II",
+      "description": "Damage dealt by summoned creatures increases by 10%.",
+      "effects": [
+        {
+          "propertyId": 51,
+          "key": "summonDmgBonus",
+          "label": "Summon Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Summon Damage Bonus",
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 130804,
+      "name": "Energy Overflowing",
+      "description": "At the start of the battle, Eureka gains 10 Energy.",
+      "effects": []
+    },
+    {
+      "id": 130805,
+      "name": "Shackles Sync III",
+      "description": "Damage dealt by summoned creatures increases by 10%.",
+      "effects": [
+        {
+          "propertyId": 51,
+          "key": "summonDmgBonus",
+          "label": "Summon Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Summon Damage Bonus",
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 130800,
+      "effects": [
+        {
+          "propertyId": 51,
+          "key": "summonDmgBonus",
+          "label": "Summon Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Summon Damage Bonus",
+          "add": 15,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "characteristic": {
+      "id": 13080,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 130808,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "eureka.chains",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 13081,
+      "name": "Fault Penetration",
+      "damageType": 1,
+      "coefs": [
+        71,
+        76,
+        81,
+        86,
+        92,
+        98,
+        105,
+        112,
+        120,
+        128
+      ],
+      "maxCoef": 128,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 13082,
+      "name": "Precise Trigger",
+      "damageType": 0,
+      "coefs": [
+        500,
+        533.700012,
+        569.799988,
+        608.200012,
+        649.299988,
+        693.099976,
+        739.900024,
+        789.799988,
+        843.099976,
+        900
+      ],
+      "maxCoef": 900,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 13083,
+      "name": "Functional Boost",
+      "damageType": 0,
+      "coefs": [
+        30,
+        32.400002,
+        34.799999,
+        37.599998,
+        40.799999,
+        44,
+        47.599998,
+        51.599998,
+        55.599998,
+        60
+      ],
+      "maxCoef": 60,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 130831,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "[Mini Mine] Gains different levels of enhancement based on its quantity.\nWhen there is one on the field, deals ?% more damage.\nWhen there are two on the field, deals ?% more damage.\nWhen there are three on the field, deals ?% more damage.",
+          "scripted": true,
+          "scriptName": "eureka.passive",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 13084,
+      "name": "Ultimate Explosion",
+      "damageType": 0,
+      "buffs": []
+    },
+    "exclusive": {
+      "id": 13085,
+      "name": "Rebooted Gear",
+      "damageType": 0,
+      "coefs": [
+        10,
+        12.5,
+        15
+      ],
+      "maxCoef": 15,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 130851,
+          "targetCamps": 1,
+          "target": "enemy",
+          "description": "Gains ?% Attack bonus. New Exclusive Ultimate [Rebooted Gear]. Eureka triggers all [Mini Mines] on the field directly. [Rebooted Gear] has a 4-second cooldown after each use.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

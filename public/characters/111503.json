@@ -1,0 +1,381 @@
+{
+  "id": 111503,
+  "name": "Luvia Ray",
+  "baseAtk": 139,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        21,
+        100
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        63,
+        200
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        21,
+        50
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 150301,
+      "name": "Shackles Sync I",
+      "description": "Attack Speed +5%",
+      "effects": [
+        {
+          "propertyId": 11,
+          "key": "atkSpeed",
+          "label": "ATK Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 150302,
+      "name": "Ad Hoc Audition",
+      "description": "[Overload] lasts 3s longer.",
+      "effects": []
+    },
+    {
+      "id": 150303,
+      "name": "Shackles Sync II",
+      "description": "Attack Speed +5%",
+      "effects": [
+        {
+          "propertyId": 11,
+          "key": "atkSpeed",
+          "label": "ATK Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 150304,
+      "name": "Dream Stage",
+      "description": "Gains [Overload] once at the start of a battle.",
+      "effects": []
+    },
+    {
+      "id": 150305,
+      "name": "Shackles Sync III",
+      "description": "Attack Speed +5%",
+      "effects": [
+        {
+          "propertyId": 11,
+          "key": "atkSpeed",
+          "label": "ATK Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 150306,
+      "effects": [
+        {
+          "propertyId": 17,
+          "key": "dmgBonus",
+          "label": "Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Damage Bonus (general)",
+          "add": 10,
+          "isPercent": true
+        },
+        {
+          "propertyId": 57,
+          "key": "breakingDmgBonus",
+          "label": "Breaking Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Breaking Damage Bonus",
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "characteristic": {
+      "id": 15030,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 150301,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 150303,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 17,
+              "key": "dmgBonus",
+              "label": "Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Damage Bonus (general)",
+              "add": 5,
+              "isPercent": true
+            },
+            {
+              "propertyId": 57,
+              "key": "breakingDmgBonus",
+              "label": "Breaking Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Breaking Damage Bonus",
+              "add": 5,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 15031,
+      "name": "Two-way Lightning",
+      "damageType": 2,
+      "coefs": [
+        100,
+        107,
+        114,
+        122,
+        130,
+        139,
+        148,
+        158,
+        169,
+        180
+      ],
+      "maxCoef": 180,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 15032,
+      "name": "Photoelectric Switch",
+      "damageType": 0,
+      "coefs": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        21,
+        22,
+        24,
+        25,
+        27
+      ],
+      "maxCoef": 27,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 150321,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Luvia and Ray gain a ?% Attack speed bonus. When using this Ultimate, Luvia Ray switches to the other personality.",
+          "scripted": true,
+          "scriptName": "skill.replace",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 150322,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Luvia and Ray gain a ?% Attack speed bonus. When using this Ultimate, Luvia Ray switches to the other personality.",
+          "scripted": true,
+          "scriptName": "skill.replace",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "skill1": {
+      "id": 15033,
+      "name": "Lightning Strike",
+      "damageType": 0,
+      "coefs": [
+        8,
+        8.5,
+        9.1,
+        9.7,
+        10.4,
+        11.1,
+        11.8,
+        12.6,
+        13.5,
+        14.4
+      ],
+      "maxCoef": 14.4,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 150331,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Luvia and Ray accumulate electricity when dealing damage. When fully charged, they become [Overloaded], gaining a ?% Attack bonus and deal guaranteed critical hits that attach [Electrocution] to enemies for 10 seconds.\n[Electrocution]: lasts for 10 seconds. Enemies with [Electrocution] are shocked when taking Ultimate damage, receiving (30% of the damage dealer's Attack) Magic Damage.",
+          "scripted": true,
+          "scriptName": "luweiya.passive",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 150336,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Luvia and Ray accumulate electricity when dealing damage. When fully charged, they become [Overloaded], gaining a ?% Attack bonus and deal guaranteed critical hits that attach [Electrocution] to enemies for 10 seconds.\n[Electrocution]: lasts for 10 seconds. Enemies with [Electrocution] are shocked when taking Ultimate damage, receiving (30% of the damage dealer's Attack) Magic Damage.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 15034,
+      "name": "Electric Spark",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 150341,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Luvia and Ray gain a ?% Attack Speed bonus for each time they become [Overloaded]. The effect can stack to up to 3 times.",
+          "scripted": true,
+          "scriptName": "common.stateaddbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "exclusive": {
+      "id": 15035,
+      "name": "Bipolar Thunderstorm",
+      "damageType": 0,
+      "coefs": [
+        10,
+        12,
+        15
+      ],
+      "maxCoef": 15,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "extra1": {
+      "id": 15037,
+      "name": "Extra Skill 1",
+      "damageType": 2,
+      "coefs": [
+        67,
+        71,
+        76,
+        81,
+        87,
+        92,
+        99,
+        105,
+        112,
+        120
+      ],
+      "maxCoef": 120,
+      "coefSource": "AttackPowerCo",
+      "buffs": [],
+      "isSummonSkill": true,
+      "summonScalesFromMaster": true
+    },
+    "extra2": {
+      "id": 15038,
+      "name": "Extra Skill 2",
+      "damageType": 2,
+      "coefs": [
+        100,
+        107,
+        114,
+        122,
+        130,
+        139,
+        148,
+        158,
+        169,
+        180
+      ],
+      "maxCoef": 180,
+      "coefSource": "AttackPowerCo",
+      "buffs": [],
+      "isSummonSkill": true,
+      "summonScalesFromMaster": true
+    },
+    "extra3": {
+      "id": 150300,
+      "name": "Extra Skill 3",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 150302,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 11,
+              "key": "atkSpeed",
+              "label": "ATK Speed",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 27,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

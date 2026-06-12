@@ -1,0 +1,63 @@
+{
+  "id": 118514,
+  "name": "Support - Armor Break",
+  "baseAtk": 140,
+  "upgrade": [],
+  "chains": [],
+  "phasePassives": [],
+  "skills": {
+    "normalAttack": {
+      "id": 30000005,
+      "name": "Normal Attack",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 11851402,
+      "name": "[Armor Penetration] Every 10 seconds, reduces Defense and Magic Resistance of all enemy units on the field by 100% for 3 seconds, up to 5 times.",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 11851405,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "[Armor Penetration] Every 10 seconds, reduces Defense and Magic Resistance of all enemy units on the field by 100% for 3 seconds, up to 5 times.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 11851406,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "[Armor Penetration] Every 10 seconds, reduces Defense and Magic Resistance of all enemy units on the field by 100% for 3 seconds, up to 5 times.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 11851304,
+      "name": "Passive (S1)",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 11851308,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

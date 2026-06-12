@@ -1,0 +1,272 @@
+{
+  "id": 111606,
+  "name": "Letta",
+  "baseAtk": 122,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        21,
+        100
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        63,
+        200
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        21,
+        50
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 160601,
+      "name": "Shackles Sync I",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 160602,
+      "name": "Hazy Protection",
+      "description": "The [Guiding Safelight] carrier takes 10% less damage.",
+      "effects": []
+    },
+    {
+      "id": 160603,
+      "name": "Shackles Sync II",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 160604,
+      "name": "Energy Overflowing",
+      "description": "Letta gains 15 Energy at the start of a battle.",
+      "effects": []
+    },
+    {
+      "id": 160605,
+      "name": "Shackles Sync III",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 160606,
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 15,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "characteristic": {
+      "id": 16060,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 160606,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "letta.passive",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 160621,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "letta.chains",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 16061,
+      "name": "\"Sleepwalking\"",
+      "damageType": 0,
+      "coefs": [
+        12,
+        12.6,
+        13.1,
+        13.7,
+        14.4,
+        15,
+        15.7,
+        16.4,
+        17.200001,
+        18
+      ],
+      "maxCoef": 18,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 16062,
+      "name": "Somber Light",
+      "damageType": 0,
+      "coefs": [
+        62.5,
+        65.900002,
+        69.400002,
+        73.099998,
+        77,
+        81.099998,
+        85.5,
+        90.099998,
+        94.900002,
+        100
+      ],
+      "maxCoef": 100,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 16063,
+      "name": "United As One",
+      "damageType": 0,
+      "coefs": [
+        10,
+        10,
+        10,
+        12,
+        12,
+        12,
+        15,
+        15,
+        15,
+        15
+      ],
+      "maxCoef": 15,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 160631,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Attack increases by ?%. At the start of the battle, Letta gains ? Energy.",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 2,
+              "key": "atk",
+              "label": "ATK",
+              "statScreen": false,
+              "calcCat": null,
+              "add": 12,
+              "isPercent": true
+            }
+          ]
+        },
+        {
+          "statusId": 160632,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Attack increases by ?%. At the start of the battle, Letta gains ? Energy.",
+          "scripted": true,
+          "scriptName": "common.changeenergy",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 16064,
+      "name": "Mysterious Alley",
+      "damageType": 0,
+      "buffs": []
+    },
+    "exclusive": {
+      "id": 16065,
+      "name": "Fognight Hideout",
+      "damageType": 0,
+      "coefs": [
+        20,
+        30,
+        40
+      ],
+      "maxCoef": 40,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 160651,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Letta gathers the enchanted light in the surroundings and restores ? Energy. [Fognight Hideout] can only be used twice in every battle.",
+          "scripted": true,
+          "scriptName": "common.changeenergy",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

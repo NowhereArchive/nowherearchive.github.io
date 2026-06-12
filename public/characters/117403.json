@@ -1,0 +1,100 @@
+{
+  "id": 117403,
+  "name": "Toy tower base (front row)",
+  "baseAtk": 1,
+  "upgrade": [],
+  "chains": [],
+  "phasePassives": [],
+  "skills": {
+    "normalAttack": {
+      "id": 11740101,
+      "name": "Normal Attack",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 11740103,
+      "name": "Build [Gauge]",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 117401022,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Consumes 50 [Parts] to place a [Gauge]. [Gauge] can block 2 enemies.",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 117401032,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Consumes 50 [Parts] to place a [Gauge]. [Gauge] can block 2 enemies.",
+          "scripted": true,
+          "scriptName": "skill.replace",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 117401033,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Consumes 50 [Parts] to place a [Gauge]. [Gauge] can block 2 enemies.",
+          "scripted": true,
+          "scriptName": "common.addextrablocked",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 11740109,
+      "name": "Passive (S1)",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 117401092,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "exclusive": {
+      "id": 11740104,
+      "name": "Build [Vent]",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 117401023,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Consumes 50 [Parts] to place a [Vent]. [Vent] increases the damage taken by enemies passing through its 3x3 area, significantly so for enemies with Shield.",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 117401042,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Consumes 50 [Parts] to place a [Vent]. [Vent] increases the damage taken by enemies passing through its 3x3 area, significantly so for enemies with Shield.",
+          "scripted": true,
+          "scriptName": "skill.replace",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,341 @@
+{
+  "id": 111206,
+  "name": "Mess",
+  "baseAtk": 149,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        21,
+        100
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        63,
+        200
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        21,
+        50
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 120601,
+      "name": "Shackles Sync I",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 120602,
+      "name": "Tempered Malice",
+      "description": "[Malice Contagion] raises 2 allied Sinners' Attack within range.",
+      "effects": []
+    },
+    {
+      "id": 120603,
+      "name": "Shackles Sync II",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 120604,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption is reduced by 3 points.",
+      "effects": []
+    },
+    {
+      "id": 120605,
+      "name": "Shackles Sync III",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "characteristic": {
+      "id": 12060,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 120601,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 17,
+              "key": "dmgBonus",
+              "label": "Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Damage Bonus (general)",
+              "add": 5,
+              "isPercent": true
+            },
+            {
+              "propertyId": 57,
+              "key": "breakingDmgBonus",
+              "label": "Breaking Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Breaking Damage Bonus",
+              "add": 5,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 12061,
+      "name": "Forge/Vicious Sword",
+      "damageType": 1,
+      "coefs": [
+        189,
+        201,
+        215,
+        230,
+        245,
+        262,
+        279,
+        298,
+        318,
+        340
+      ],
+      "maxCoef": 340,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 12062,
+      "name": "Vicious Smith",
+      "damageType": 0,
+      "coefs": [
+        10,
+        10.7,
+        11.4,
+        12.2,
+        13,
+        13.9,
+        14.8,
+        15.8,
+        16.9,
+        18
+      ],
+      "maxCoef": 18,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 120622,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Mess gains ?% Attack bonus.\nWhen using this Ultimate, she switches her weapon to [Smith's Hammer]/[Vicious Sword].\nMess's Attack increases after attacking with [Smith's Hammer] and decreases after attacking with [Vicious Sword]. Each increase/decrease is 5%/10%. The range of Attack change caused by this effect is limited to within +50%/-50%.",
+          "scripted": true,
+          "scriptName": "skill.replace",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 120623,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Mess gains ?% Attack bonus.\nWhen using this Ultimate, she switches her weapon to [Smith's Hammer]/[Vicious Sword].\nMess's Attack increases after attacking with [Smith's Hammer] and decreases after attacking with [Vicious Sword]. Each increase/decrease is 5%/10%. The range of Attack change caused by this effect is limited to within +50%/-50%.",
+          "scripted": true,
+          "scriptName": "skill.replace",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 120625,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Mess gains ?% Attack bonus.\nWhen using this Ultimate, she switches her weapon to [Smith's Hammer]/[Vicious Sword].\nMess's Attack increases after attacking with [Smith's Hammer] and decreases after attacking with [Vicious Sword]. Each increase/decrease is 5%/10%. The range of Attack change caused by this effect is limited to within +50%/-50%.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "skill1": {
+      "id": 12063,
+      "name": "Compatibility Weapon",
+      "damageType": 0,
+      "coefs": [
+        40,
+        42,
+        44,
+        46,
+        48,
+        50,
+        52,
+        55,
+        57,
+        60
+      ],
+      "maxCoef": 60,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 120632,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "After switching weapon to [Smith's Hammer], Mess gains ?% Attack Speed bonus for 6 seconds.\nAfter switching weapon to [Vicious Sword], Mess's next ? attacks will not lower her Attack.",
+          "scripted": true,
+          "scriptName": "mess.passive",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 120633,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "After switching weapon to [Smith's Hammer], Mess gains ?% Attack Speed bonus for 6 seconds.\nAfter switching weapon to [Vicious Sword], Mess's next ? attacks will not lower her Attack.",
+          "scripted": true,
+          "scriptName": "mess.passive2",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 120634,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "After switching weapon to [Smith's Hammer], Mess gains ?% Attack Speed bonus for 6 seconds.\nAfter switching weapon to [Vicious Sword], Mess's next ? attacks will not lower her Attack.",
+          "scripted": true,
+          "scriptName": "mess.passive2",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 12064,
+      "name": "Malice Contagion",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 120643,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "After switching weapon to [Vicious Sword], Mess raises Attack of 1 random allied Sinner within the 3x3 square around her by ?% of Mess's Attack for 15 seconds.",
+          "scripted": true,
+          "scriptName": "mess.passive2",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "exclusive": {
+      "id": 12065,
+      "name": "Furnace of Malice",
+      "damageType": 0,
+      "coefs": [
+        5,
+        6,
+        7
+      ],
+      "maxCoef": 7,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 120651,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Mess lowers Attack of all non-summoned creature units except for herself by 5% and gains ?% Attack bonus for each unit. The effect stacks up to 9 times and lasts for 15 seconds. [Malice Furnace] can only be used once in every battle.",
+          "scripted": true,
+          "scriptName": "mess.exclusive",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "extra1": {
+      "id": 120600,
+      "name": "Extra Skill 1",
+      "damageType": 0,
+      "coefs": [
+        10,
+        10.7,
+        11.4,
+        12.2,
+        13,
+        13.9,
+        14.8,
+        15.8,
+        16.9,
+        18
+      ],
+      "maxCoef": 18,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 120621,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 2,
+              "key": "atk",
+              "label": "ATK",
+              "statScreen": false,
+              "calcCat": null,
+              "add": 18,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

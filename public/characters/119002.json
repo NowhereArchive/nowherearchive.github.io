@@ -1,0 +1,94 @@
+{
+  "id": 119002,
+  "name": "Rust",
+  "baseAtk": 104,
+  "upgrade": [],
+  "chains": [],
+  "phasePassives": [],
+  "skills": {
+    "normalAttack": {
+      "id": 19000001,
+      "name": "Normal Attack",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 1072,
+      "name": "Crimson Rite",
+      "damageType": 1,
+      "coefs": [
+        80,
+        86.400002,
+        93.900002,
+        100.800003,
+        108.900002,
+        117.599998,
+        127,
+        137.199997,
+        148.100006,
+        160
+      ],
+      "maxCoef": 160,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 1073,
+      "name": "Humility",
+      "damageType": 0,
+      "coefs": [
+        160,
+        172.800003,
+        186.600006,
+        201.600006,
+        217.699997,
+        235.199997,
+        254,
+        274.299988,
+        296.299988,
+        320
+      ],
+      "maxCoef": 320,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 10731,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "After Rust deals damage with four normal attacks, the next normal attack triggers [Mesh].\n[Mesh]: Deals (Max HP *?%) Physical Damage to all enemies within the 3x3 square in front. Meanwhile, he gains 5 M-Value.\n[Corruption State]: After using [Kinetic Release], [Mesh] is automatically triggered once every second for 2 seconds.",
+          "scripted": true,
+          "scriptName": "rust.passive",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 1074,
+      "name": "Bone-Etched Verse",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 10741,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Damage dealt by [Mesh] increases by ?%. When [Mesh] hits only one enemy, the damage dealt is additionally increased by ?%.",
+          "scripted": true,
+          "scriptName": "rahu.talent",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 10742,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Damage dealt by [Mesh] increases by ?%. When [Mesh] hits only one enemy, the damage dealt is additionally increased by ?%.",
+          "scripted": true,
+          "scriptName": "rahu.talent",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

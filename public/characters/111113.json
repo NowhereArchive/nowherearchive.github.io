@@ -1,0 +1,241 @@
+{
+  "id": 111113,
+  "name": "Ayiguo",
+  "baseAtk": 102,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        21,
+        100
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        63,
+        200
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        21,
+        50
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 111301,
+      "name": "",
+      "description": "",
+      "effects": [
+        {
+          "propertyId": 4,
+          "key": "magicResist",
+          "label": "Magic Resist",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 111302,
+      "name": "",
+      "description": "",
+      "effects": []
+    },
+    {
+      "id": 111303,
+      "name": "",
+      "description": "",
+      "effects": [
+        {
+          "propertyId": 4,
+          "key": "magicResist",
+          "label": "Magic Resist",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 111304,
+      "name": "",
+      "description": "",
+      "effects": []
+    },
+    {
+      "id": 111305,
+      "name": "",
+      "description": "",
+      "effects": [
+        {
+          "propertyId": 4,
+          "key": "magicResist",
+          "label": "Magic Resist",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 111306,
+      "effects": [
+        {
+          "propertyId": 4,
+          "key": "magicResist",
+          "label": "Magic Resist",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "characteristic": {
+      "id": 11130,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 111300,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 4,
+              "key": "magicResist",
+              "label": "Magic Resist",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 5,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 11131,
+      "name": "Silkbite",
+      "damageType": 2,
+      "coefs": [
+        57,
+        62,
+        66,
+        72,
+        78,
+        84,
+        90,
+        98,
+        106,
+        114
+      ],
+      "maxCoef": 114,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 11132,
+      "name": "Soul Snare",
+      "damageType": 0,
+      "coefs": [
+        250,
+        270,
+        292,
+        315,
+        340,
+        367,
+        397,
+        429,
+        463,
+        500
+      ],
+      "maxCoef": 500,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 111321,
+          "targetCamps": 2,
+          "target": "self",
+          "description": "",
+          "scripted": true,
+          "scriptName": "ayiguo.phantomthreads",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "skill1": {
+      "id": 11133,
+      "name": "Venomous Regen",
+      "damageType": 0,
+      "coefs": [
+        150,
+        162,
+        175,
+        189,
+        204,
+        220,
+        238,
+        257,
+        278,
+        300
+      ],
+      "maxCoef": 300,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 111331,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.aura",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 11134,
+      "name": "Envenomed Pulse",
+      "damageType": 0,
+      "buffs": []
+    }
+  }
+}

@@ -1,0 +1,218 @@
+{
+  "id": 110211,
+  "name": "Murphy",
+  "baseAtk": 152,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        11,
+        50
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        33,
+        100
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        11,
+        25
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 21101,
+      "name": "Shackles 1",
+      "description": "Shackles 1",
+      "effects": []
+    },
+    {
+      "id": 21102,
+      "name": "Shackles 2",
+      "description": "Shackles 2",
+      "effects": [
+        {
+          "propertyId": 11,
+          "key": "atkSpeed",
+          "label": "ATK Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 8,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 21103,
+      "name": "Shackles 3",
+      "description": "Shackles 3",
+      "effects": []
+    },
+    {
+      "id": 21104,
+      "name": "Shackles 4",
+      "description": "Shackles 4",
+      "effects": []
+    },
+    {
+      "id": 21105,
+      "name": "Shackles 5",
+      "description": "Shackles 5",
+      "effects": [
+        {
+          "propertyId": 11,
+          "key": "atkSpeed",
+          "label": "ATK Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 8,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "characteristic": {
+      "id": 2110,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 21100,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "mofei.feature",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 2111,
+      "name": "###",
+      "damageType": 4,
+      "coefs": [
+        80,
+        86,
+        93,
+        101,
+        109,
+        118,
+        127,
+        137,
+        148,
+        160
+      ],
+      "maxCoef": 160,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 2112,
+      "name": "###",
+      "damageType": 0,
+      "coefs": [
+        512,
+        553,
+        597,
+        645,
+        697,
+        753,
+        813,
+        878,
+        948,
+        1024
+      ],
+      "maxCoef": 1024,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 2113,
+      "name": "###",
+      "damageType": 0,
+      "coefs": [
+        20,
+        21.6,
+        23.299999,
+        25.200001,
+        27.200001,
+        29.4,
+        31.700001,
+        34.299999,
+        37,
+        40
+      ],
+      "maxCoef": 40,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 21131,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Every 10 seconds, Ceto turns her next normal attack into dealing damage in 1 grid, dealing (?% of her Attack) Physical Damage 4 times.",
+          "scripted": true,
+          "scriptName": "common.addbuffaftercasterbuffstart",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 2114,
+      "name": "Surely It Can't Get Worse?",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 21140,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Ceto gains a ?% damage bonus for each enemy on the battlefield. The bonus can stack up to 6 times.",
+          "scripted": true,
+          "scriptName": "mofei.talent",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "exclusive": {
+      "id": 2115,
+      "name": "###",
+      "damageType": 0,
+      "coefs": [
+        30,
+        40,
+        50
+      ],
+      "maxCoef": 50,
+      "coefSource": "Data",
+      "buffs": []
+    }
+  }
+}

@@ -1,0 +1,266 @@
+{
+  "id": 111110,
+  "name": "Luminita",
+  "baseAtk": 101,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        21,
+        100
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        63,
+        200
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        21,
+        50
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 111001,
+      "name": "Shackles Sync I",
+      "description": "Defense increases by 10%.",
+      "effects": [
+        {
+          "propertyId": 3,
+          "key": "armor",
+          "label": "Armor",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 111002,
+      "name": "Property Sales Commission",
+      "description": "Allied Sinners deal 10% more damage to [Stunned] or [Suppressed] enemies.",
+      "effects": []
+    },
+    {
+      "id": 111003,
+      "name": "Shackles Sync II",
+      "description": "Defense increases by 10%.",
+      "effects": [
+        {
+          "propertyId": 3,
+          "key": "armor",
+          "label": "Armor",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 111004,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption is reduced by 5 points.",
+      "effects": []
+    },
+    {
+      "id": 111005,
+      "name": "Shackles Sync III",
+      "description": "Defense increases by 10%.",
+      "effects": [
+        {
+          "propertyId": 3,
+          "key": "armor",
+          "label": "Armor",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "characteristic": {
+      "id": 11100,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 111000,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 3,
+              "key": "armor",
+              "label": "Armor",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 5,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 11101,
+      "name": "Fresh Offer",
+      "damageType": 1,
+      "coefs": [
+        52,
+        56,
+        61,
+        66,
+        71,
+        76,
+        83,
+        89,
+        96,
+        104
+      ],
+      "maxCoef": 104,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 11102,
+      "name": "Property Contract",
+      "damageType": 0,
+      "coefs": [
+        200,
+        216,
+        233,
+        252,
+        272,
+        294,
+        317,
+        343,
+        370,
+        400
+      ],
+      "maxCoef": 400,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 111021,
+          "targetCamps": 1,
+          "target": "enemy",
+          "description": "Luminita deals (Attack * ?%) Physical Damage to all enemies within the skill range and applies [Stun] for ? seconds.",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "skill1": {
+      "id": 11103,
+      "name": "Home Insurance",
+      "damageType": 0,
+      "coefs": [
+        65,
+        70,
+        76,
+        82,
+        89,
+        96,
+        103,
+        111,
+        120,
+        130
+      ],
+      "maxCoef": 130,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 111031,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When Luminita casts [Property Contract], for each enemy stunned, she gains a (Defense *?%) Shield (stacking up to Defense *1300%). This effect can be triggered up to 3 times per use of the Ultimate.",
+          "scripted": true,
+          "scriptName": "luminita.passive",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 11104,
+      "name": "Asset Freeze",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 111041,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When the [Stun] or [Suppression] status ends for enemies, reduces their Attack Speed by ?% and Movement Speed by ?% for 5 seconds.",
+          "scripted": true,
+          "scriptName": "common.aura",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "exclusive": {
+      "id": 11105,
+      "name": "Forced Deal",
+      "damageType": 0,
+      "coefs": [
+        200,
+        350,
+        500
+      ],
+      "maxCoef": 500,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 111054,
+          "targetCamps": 1,
+          "target": "enemy",
+          "description": "New Exclusive Ultimate [Forced Deal]. Luminita increases damage taken by the enemy with the highest Max HP within the 3x3 square in front of her by ?% for 10 seconds and suppresses them for ? seconds. During suppression, Luminita is unable to attack, while the enemy cannot act and takes (Luminita's Attack *?%) Physical Damage per second. [Forced Deal] can only be used once per battle.",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 20,
+              "key": "takeDmgBonus",
+              "label": "Enemy Takes More Damage",
+              "statScreen": false,
+              "calcCat": "Enemy takes more damage",
+              "add": 20,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,254 @@
+{
+  "id": 110207,
+  "name": "jojo",
+  "baseAtk": 157,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        11,
+        50
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        33,
+        100
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        11,
+        25
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 20701,
+      "name": "jojo",
+      "description": "jojo",
+      "effects": []
+    },
+    {
+      "id": 20702,
+      "name": "jojo",
+      "description": "jojo",
+      "effects": [
+        {
+          "propertyId": 5,
+          "key": "critRate",
+          "label": "Crit Rate",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 20703,
+      "name": "jojo",
+      "description": "jojo",
+      "effects": []
+    },
+    {
+      "id": 20704,
+      "name": "jojo",
+      "description": "jojo",
+      "effects": []
+    },
+    {
+      "id": 20705,
+      "name": "jojo",
+      "description": "jojo",
+      "effects": [
+        {
+          "propertyId": 5,
+          "key": "critRate",
+          "label": "Crit Rate",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "characteristic": {
+      "id": 2070,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 20700,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 17,
+              "key": "dmgBonus",
+              "label": "Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Damage Bonus (general)",
+              "add": 5,
+              "isPercent": true
+            },
+            {
+              "propertyId": 57,
+              "key": "breakingDmgBonus",
+              "label": "Breaking Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Breaking Damage Bonus",
+              "add": 5,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 2071,
+      "name": "JoJo Placeholder",
+      "damageType": 1,
+      "coefs": [
+        88,
+        95,
+        103,
+        111,
+        120,
+        129,
+        140,
+        151,
+        163,
+        176
+      ],
+      "maxCoef": 176,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 2072,
+      "name": "JoJo Placeholder",
+      "damageType": 1,
+      "coefs": [
+        600,
+        648,
+        700,
+        756,
+        816,
+        882,
+        952,
+        1029,
+        1111,
+        1200
+      ],
+      "maxCoef": 1200,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 2073,
+      "name": "JoJo Placeholder",
+      "damageType": 0,
+      "coefs": [
+        720,
+        778,
+        840,
+        907,
+        980,
+        1058,
+        1143,
+        1234,
+        1333,
+        1440
+      ],
+      "maxCoef": 1440,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 20730,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "test",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 5,
+              "key": "critRate",
+              "label": "Crit Rate",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 30,
+              "isPercent": true
+            }
+          ]
+        },
+        {
+          "statusId": 20731,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "test",
+          "scripted": true,
+          "scriptName": "jotaro.passive",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 2074,
+      "name": "JoJo Placeholder",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 207410,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "test",
+          "scripted": true,
+          "scriptName": "common.addbuffaftermakedamage",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "exclusive": {
+      "id": 2075,
+      "name": "Star Platinum - World",
+      "damageType": 0,
+      "coefs": [
+        10,
+        20,
+        30
+      ],
+      "maxCoef": 30,
+      "coefSource": "Data",
+      "buffs": []
+    }
+  }
+}

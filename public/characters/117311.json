@@ -1,0 +1,110 @@
+{
+  "id": 117311,
+  "name": "EM Cannon",
+  "baseAtk": 180,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        11,
+        50
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        33,
+        100
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        11,
+        25
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    }
+  ],
+  "chains": [],
+  "phasePassives": [],
+  "skills": {
+    "normalAttack": {
+      "id": 76000001,
+      "name": "Normal Attack",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 76000005,
+      "name": "EM Cannon",
+      "damageType": 4,
+      "coefs": [
+        800,
+        1200,
+        1600,
+        2000,
+        2500
+      ],
+      "maxCoef": 2500,
+      "coefSource": "AttackPowerCo",
+      "buffs": []
+    },
+    "passive": {
+      "id": 76000002,
+      "name": "Switch the grid beneath to obstacle grid",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 760000011,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Switch the grid beneath to obstacle grid",
+          "scripted": true,
+          "scriptName": "grid.replace",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 760000013,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Switch the grid beneath to obstacle grid",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 760000014,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Switch the grid beneath to obstacle grid",
+          "scripted": true,
+          "scriptName": "common.targetmonitoring",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": 118409,
+  "name": "Mayor of Tuco",
+  "baseAtk": 475,
+  "upgrade": [],
+  "chains": [],
+  "phasePassives": [],
+  "skills": {
+    "normalAttack": {
+      "id": 98000505,
+      "name": "Normal Attack",
+      "damageType": 1,
+      "coefs": [
+        120
+      ],
+      "maxCoef": 120,
+      "coefSource": "AttackPowerCo",
+      "buffs": []
+    }
+  }
+}

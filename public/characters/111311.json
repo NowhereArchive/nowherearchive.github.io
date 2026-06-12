@@ -1,0 +1,218 @@
+{
+  "id": 111311,
+  "name": "Poffy",
+  "baseAtk": 149,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        21,
+        100
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        63,
+        200
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        21,
+        50
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 131101,
+      "name": "Shackles Sync I",
+      "description": "Energy Recovery Speed increases by 10%.",
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 131102,
+      "name": "Law of Gluttony",
+      "description": "[Fondant Turbine] The effect's wear-off time is extended by 4 seconds. [Emergency Snack] Maximum stack limit is increased by 3.",
+      "effects": []
+    },
+    {
+      "id": 131103,
+      "name": "Shackles Sync II",
+      "description": "Energy Recovery Speed increases by 10%.",
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 131104,
+      "name": "Lingering Sweetness",
+      "description": "When the [Donut] dies or is removed, allied [Immortal] Sinners gain 4 Energy.",
+      "effects": []
+    },
+    {
+      "id": 131105,
+      "name": "Shackles Sync III",
+      "description": "Energy Recovery Speed increases by 10%.",
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "characteristic": {
+      "id": 13110,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": []
+    },
+    "normalAttack": {
+      "id": 13111,
+      "name": "Sugary Punch",
+      "damageType": 1,
+      "coefs": [
+        90,
+        97,
+        105,
+        113,
+        122,
+        132,
+        143,
+        154,
+        167,
+        180
+      ],
+      "maxCoef": 180,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 13112,
+      "name": "Sweet Snare",
+      "damageType": 1,
+      "coefs": [
+        580,
+        626,
+        677,
+        730,
+        789,
+        852,
+        921,
+        994,
+        1074,
+        1160
+      ],
+      "maxCoef": 1160,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 13113,
+      "name": "Fondant Turbine",
+      "damageType": 0,
+      "coefs": [
+        30,
+        32.400002,
+        35,
+        37.799999,
+        40.799999,
+        44.099998,
+        47.599998,
+        51.400002,
+        55.599998,
+        60
+      ],
+      "maxCoef": 60,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "passive": {
+      "id": 13114,
+      "name": "Emergency Snack",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 131139,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Allied [Immortal] Sinners gain ? Physical Penetration for every 30 M-Value obtained (including overflow), stacking up to 6 times.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "exclusive": {
+      "id": 13115,
+      "name": "Gulp",
+      "damageType": 0,
+      "coefs": [
+        4,
+        7,
+        10
+      ],
+      "maxCoef": 10,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 131161,
+          "targetCamps": 2,
+          "target": "self",
+          "description": "New Exclusive Ultimate [Gulp]. Poffy fully replenishes the M-Value consumed by all allied Sinners on the field within ? seconds. [Gulp] can only be used once per battle.",
+          "scripted": true,
+          "scriptName": "poffy.returnrage",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": 111391,
+  "name": "Clementine",
+  "baseAtk": 156,
+  "upgrade": [],
+  "chains": [
+    {
+      "id": 41101,
+      "name": "",
+      "description": "",
+      "effects": []
+    },
+    {
+      "id": 41102,
+      "name": "",
+      "description": "",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 41103,
+      "name": "",
+      "description": "",
+      "effects": []
+    },
+    {
+      "id": 41104,
+      "name": "",
+      "description": "",
+      "effects": []
+    },
+    {
+      "id": 41105,
+      "name": "",
+      "description": "",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "normalAttack": {
+      "id": 19000001,
+      "name": "Normal Attack",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 13901011,
+      "name": "Colored Pencil: Red",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 139010005,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "After using this skill, paint the selected grid and all adjacent grids of the same color [Red].",
+          "scripted": true,
+          "scriptName": "common.directormoverecovery",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

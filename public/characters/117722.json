@@ -1,0 +1,72 @@
+{
+  "id": 117722,
+  "name": "Hypercube Protective Shield",
+  "baseAtk": 200,
+  "upgrade": [],
+  "chains": [],
+  "phasePassives": [],
+  "skills": {
+    "normalAttack": {
+      "id": 133000001,
+      "name": "Normal Attack",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 133000002,
+      "name": "[Energy Shield] Generates an energy shield that blocks a certain amount of damage for allied Sinners.",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 1330000051,
+          "targetCamps": 2,
+          "target": "self",
+          "description": "[Energy Shield] Generates an energy shield that blocks a certain amount of damage for allied Sinners.",
+          "scripted": true,
+          "scriptName": "common.shield",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 133000000,
+      "name": "Passive (S1)",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 1330000056,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 1330000057,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "grid.replace",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 1330000058,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.changeenergy",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

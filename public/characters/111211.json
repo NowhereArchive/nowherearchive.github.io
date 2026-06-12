@@ -1,0 +1,310 @@
+{
+  "id": 111211,
+  "name": "jojo",
+  "baseAtk": 144,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        21,
+        100
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        63,
+        200
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        21,
+        50
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 121101,
+      "name": "jojo",
+      "description": "jojo",
+      "effects": []
+    },
+    {
+      "id": 121102,
+      "name": "jojo",
+      "description": "jojo",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 121103,
+      "name": "jojo",
+      "description": "jojo",
+      "effects": []
+    },
+    {
+      "id": 121104,
+      "name": "jojo",
+      "description": "jojo",
+      "effects": []
+    },
+    {
+      "id": 121105,
+      "name": "jojo",
+      "description": "jojo",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 121106,
+      "effects": [
+        {
+          "propertyId": 57,
+          "key": "breakingDmgBonus",
+          "label": "Breaking Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Breaking Damage Bonus",
+          "add": 10,
+          "isPercent": true
+        },
+        {
+          "propertyId": 17,
+          "key": "dmgBonus",
+          "label": "Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Damage Bonus (general)",
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "characteristic": {
+      "id": 12110,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 121100,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 2,
+              "key": "atk",
+              "label": "ATK",
+              "statScreen": false,
+              "calcCat": null,
+              "add": 10,
+              "isPercent": true
+            }
+          ]
+        },
+        {
+          "statusId": 121128,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.addbuffbybuffend",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 12111,
+      "name": "JoJo Placeholder",
+      "damageType": 1,
+      "coefs": [
+        69,
+        75,
+        80,
+        87,
+        94,
+        101,
+        110,
+        118,
+        128,
+        138
+      ],
+      "maxCoef": 138,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 12112,
+      "name": "JoJo Placeholder",
+      "damageType": 0,
+      "coefs": [
+        200,
+        216,
+        233,
+        252,
+        272,
+        294,
+        318,
+        343,
+        370,
+        400
+      ],
+      "maxCoef": 400,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 121123,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "test",
+          "scripted": true,
+          "scriptName": "normalattack.addbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 121121,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "test",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 121122,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "test",
+          "scripted": true,
+          "scriptName": "skill.replace",
+          "maxLevelEffects": [
+            {
+              "propertyId": 13,
+              "key": "energySpeed",
+              "label": "Energy Speed",
+              "statScreen": true,
+              "calcCat": null,
+              "add": -500,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "skill1": {
+      "id": 12113,
+      "name": "JoJo Placeholder",
+      "damageType": 0,
+      "coefs": [
+        40,
+        41.799999,
+        43.799999,
+        45.799999,
+        47.900002,
+        50.099998,
+        52.400002,
+        54.799999,
+        57.400002,
+        60
+      ],
+      "maxCoef": 60,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 121131,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "test",
+          "scripted": true,
+          "scriptName": "normalattack.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 12114,
+      "name": "JoJo Placeholder",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 121141,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "test",
+          "scripted": true,
+          "scriptName": "ermes.talent",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "exclusive": {
+      "id": 12115,
+      "name": "Approval for Revenge",
+      "damageType": 1,
+      "coefs": [
+        500,
+        750,
+        1000
+      ],
+      "maxCoef": 1000,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 121151,
+          "targetCamps": 1,
+          "target": "enemy",
+          "description": "test",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

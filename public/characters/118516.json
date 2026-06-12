@@ -1,0 +1,57 @@
+{
+  "id": 118516,
+  "name": "Artillery - Hawk Eye",
+  "baseAtk": 140,
+  "upgrade": [],
+  "chains": [],
+  "phasePassives": [],
+  "skills": {
+    "normalAttack": {
+      "id": 30000005,
+      "name": "Normal Attack",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 11851602,
+      "name": "[Hawk Eye] Attack range expands.",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 11851602,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "[Hawk Eye] Attack range expands.",
+          "scripted": true,
+          "scriptName": "common.triggersummon",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 30000003,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "[Hawk Eye] Attack range expands.",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": [
+            {
+              "propertyId": 1,
+              "key": "hp",
+              "label": "HP",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 50,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

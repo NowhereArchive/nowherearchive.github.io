@@ -1,0 +1,21 @@
+{
+  "id": 118125,
+  "name": "Ballista",
+  "baseAtk": 1200,
+  "upgrade": [],
+  "chains": [],
+  "phasePassives": [],
+  "skills": {
+    "normalAttack": {
+      "id": 134000001,
+      "name": "Normal Attack",
+      "damageType": 1,
+      "coefs": [
+        200
+      ],
+      "maxCoef": 200,
+      "coefSource": "AttackPowerCo",
+      "buffs": []
+    }
+  }
+}

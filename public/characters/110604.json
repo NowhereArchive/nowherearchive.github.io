@@ -1,0 +1,280 @@
+{
+  "id": 110604,
+  "name": "Coquelic",
+  "baseAtk": 138,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        11,
+        50
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        33,
+        100
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        11,
+        25
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 60401,
+      "name": "Pistil",
+      "description": "Each time Coquelic casts an Ultimate, she will gain an extra [Floral Sword Slash] effect.",
+      "effects": []
+    },
+    {
+      "id": 60402,
+      "name": "Shackles Sync I",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 60403,
+      "name": "Budding Flower",
+      "description": "The trigger interval of [Floral Sword Slash] is reduced to 10 seconds.",
+      "effects": []
+    },
+    {
+      "id": 60404,
+      "name": "Floral Language",
+      "description": "At the start of the battle, Coquelic automatically enters [Scarlet Flower] state herself.",
+      "effects": []
+    },
+    {
+      "id": 60405,
+      "name": "Shackles Sync II",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 60400,
+      "effects": [
+        {
+          "propertyId": 17,
+          "key": "dmgBonus",
+          "label": "Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Damage Bonus (general)",
+          "add": 10,
+          "isPercent": true
+        },
+        {
+          "propertyId": 57,
+          "key": "breakingDmgBonus",
+          "label": "Breaking Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Breaking Damage Bonus",
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "characteristic": {
+      "id": 6042,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 60426,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.energyfull",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 60441,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "coquelicot.chains",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 6043,
+      "name": "Thorned Blade",
+      "damageType": 4,
+      "coefs": [
+        63,
+        67,
+        72,
+        77,
+        82,
+        87,
+        93,
+        100,
+        106,
+        113
+      ],
+      "maxCoef": 113,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 6044,
+      "name": "Poppy",
+      "damageType": 0,
+      "coefs": [
+        200,
+        209,
+        219,
+        229,
+        239,
+        251,
+        262,
+        274,
+        287,
+        300
+      ],
+      "maxCoef": 300,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 6045,
+      "name": "Floral Sword Slash",
+      "damageType": 0,
+      "coefs": [
+        45,
+        48.599998,
+        52.5,
+        56.700001,
+        61.200001,
+        66.099998,
+        71.400002,
+        77.199997,
+        83.300003,
+        90
+      ],
+      "maxCoef": 90,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 60451,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Every 15 seconds, Coquelic's next Normal Attack becomes a Multi-Slash Attack. This effect can be stacked up to 3 times, consuming 1 stack each time it is used. [Floral Sword Slash] starts with 5 slashes. For each allied unit carrying [Scarlet Flower] on the field, Coquelic will deal an additional slash, up to 10 slashes. Each slash deals (Attack *?%) True Damage (which counts as Normal Attack Damage and will not cause CRIT Hits).",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 6046,
+      "name": "Timeless Memory",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 60461,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Gain an Attack boost of ?%. Coquelic gains 1 point of Energy for each slash of [Floral Sword Slash].",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 2,
+              "key": "atk",
+              "label": "ATK",
+              "statScreen": false,
+              "calcCat": null,
+              "add": 12,
+              "isPercent": true
+            }
+          ]
+        },
+        {
+          "statusId": 60462,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Gain an Attack boost of ?%. Coquelic gains 1 point of Energy for each slash of [Floral Sword Slash].",
+          "scripted": true,
+          "scriptName": "coquelicot.talent",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "exclusive": {
+      "id": 6047,
+      "name": "River of Flowers",
+      "damageType": 0,
+      "coefs": [
+        80,
+        90,
+        100
+      ],
+      "maxCoef": 100,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "extra2": {
+      "id": 6048,
+      "name": "Slash Skill",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    }
+  }
+}

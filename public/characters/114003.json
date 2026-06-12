@@ -1,0 +1,32 @@
+{
+  "id": 114003,
+  "name": "FAC elite axe wielder",
+  "baseAtk": 100,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": [
+        6,
+        35
+      ],
+      "attackCoefficient": [
+        1,
+        89
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        6,
+        35
+      ],
+      "attackCoefficient": [
+        1,
+        89
+      ]
+    }
+  ],
+  "chains": [],
+  "phasePassives": [],
+  "skills": {}
+}

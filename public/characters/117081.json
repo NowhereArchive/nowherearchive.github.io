@@ -1,0 +1,59 @@
+{
+  "id": 117081,
+  "name": "Letta",
+  "baseAtk": 100,
+  "upgrade": [
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        6,
+        35
+      ],
+      "attackCoefficient": [
+        1,
+        89
+      ]
+    }
+  ],
+  "chains": [],
+  "phasePassives": [],
+  "skills": {
+    "normalAttack": {
+      "id": 73010001,
+      "name": "[Cutthroat] Deals damage to the current target 5 times in a row.",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 73010002,
+      "name": "[Brighten] Brightens the grid.",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "exclusive": {
+      "id": 73010003,
+      "name": "Exclusive Skill",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 730100002,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "letta.chains",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

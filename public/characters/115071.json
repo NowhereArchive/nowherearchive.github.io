@@ -1,0 +1,34 @@
+{
+  "id": 115071,
+  "name": "Oak Casket",
+  "baseAtk": 157,
+  "upgrade": [],
+  "chains": [],
+  "phasePassives": [],
+  "skills": {
+    "normalAttack": {
+      "id": 10200011,
+      "name": "Normal Attack",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 10200012,
+      "name": "Active Skill (S1)",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "passive": {
+      "id": 10200010,
+      "name": "Passive (S1)",
+      "damageType": 0,
+      "buffs": []
+    }
+  }
+}

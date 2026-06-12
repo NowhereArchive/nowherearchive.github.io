@@ -1,0 +1,255 @@
+{
+  "id": 111410,
+  "name": "Helga",
+  "baseAtk": 155,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        21,
+        100
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        63,
+        200
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        21,
+        50
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 141001,
+      "name": "",
+      "description": "",
+      "effects": [
+        {
+          "propertyId": 7,
+          "key": "critDmg",
+          "label": "Crit Damage Bonus",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 141002,
+      "name": "",
+      "description": "",
+      "effects": []
+    },
+    {
+      "id": 141003,
+      "name": "",
+      "description": "",
+      "effects": [
+        {
+          "propertyId": 7,
+          "key": "critDmg",
+          "label": "Crit Damage Bonus",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 141004,
+      "name": "",
+      "description": "",
+      "effects": []
+    },
+    {
+      "id": 141005,
+      "name": "",
+      "description": "",
+      "effects": [
+        {
+          "propertyId": 7,
+          "key": "critDmg",
+          "label": "Crit Damage Bonus",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "characteristic": {
+      "id": 14100,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 141000,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 57,
+              "key": "breakingDmgBonus",
+              "label": "Breaking Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Breaking Damage Bonus",
+              "add": 5,
+              "isPercent": true
+            },
+            {
+              "propertyId": 17,
+              "key": "dmgBonus",
+              "label": "Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Damage Bonus (general)",
+              "add": 5,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 14101,
+      "name": "Helga - Normal Attack 1",
+      "damageType": 4,
+      "coefs": [
+        71,
+        77,
+        83,
+        90,
+        97,
+        104,
+        113,
+        122,
+        131,
+        142
+      ],
+      "maxCoef": 142,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 14102,
+      "name": "Helga - Ultimate",
+      "damageType": 4,
+      "coefs": [
+        250,
+        270,
+        292,
+        315,
+        340,
+        367,
+        396,
+        428,
+        463,
+        500
+      ],
+      "maxCoef": 500,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 14103,
+      "name": "Helga - Passive",
+      "damageType": 0,
+      "coefs": [
+        5,
+        5.4,
+        5.8,
+        6.3,
+        6.8,
+        7.3,
+        7.9,
+        8.6,
+        9.3,
+        10
+      ],
+      "maxCoef": 10,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 141011,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 141021,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 14104,
+      "name": "Helga - Talent",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 141041,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "heerjia.talent",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "exclusive": {
+      "id": 14105,
+      "name": "Helga - Exclusive Ultimate",
+      "damageType": 4,
+      "coefs": [
+        150,
+        175,
+        200
+      ],
+      "maxCoef": 200,
+      "coefSource": "Data",
+      "buffs": []
+    }
+  }
+}

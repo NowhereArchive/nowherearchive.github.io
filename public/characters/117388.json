@@ -1,0 +1,77 @@
+{
+  "id": 117388,
+  "name": "EM Cannon",
+  "baseAtk": 180,
+  "upgrade": [],
+  "chains": [],
+  "phasePassives": [],
+  "skills": {
+    "normalAttack": {
+      "id": 76000001,
+      "name": "Normal Attack",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 76010005,
+      "name": "EM Bomb",
+      "damageType": 4,
+      "coefs": [
+        800,
+        1600,
+        2400,
+        2000,
+        2500
+      ],
+      "maxCoef": 2500,
+      "coefSource": "AttackPowerCo",
+      "buffs": [
+        {
+          "statusId": 760100051,
+          "targetCamps": 1,
+          "target": "enemy",
+          "description": "[EM Bomb] Deals massive damage to all enemies within the target grid and breaks the core.",
+          "scripted": false,
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 76000002,
+      "name": "Switch the grid beneath to obstacle grid",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 760000011,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Switch the grid beneath to obstacle grid",
+          "scripted": true,
+          "scriptName": "grid.replace",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 760000013,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Switch the grid beneath to obstacle grid",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 760000014,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Switch the grid beneath to obstacle grid",
+          "scripted": true,
+          "scriptName": "common.targetmonitoring",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

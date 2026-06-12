@@ -1,0 +1,263 @@
+{
+  "id": 110410,
+  "name": "Augustus",
+  "baseAtk": 156,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        11,
+        50
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        33,
+        100
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        11,
+        25
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 41001,
+      "name": "Shackles 1",
+      "description": "During [Full Blast], the castle performs an additional [Trajectory Strike] with each round of attack without consuming ammo. This extra [Trajectory Strike] damage is reduced by 50%.",
+      "effects": []
+    },
+    {
+      "id": 41002,
+      "name": "Shackles 2",
+      "description": "True Damage increases by 10%.",
+      "effects": []
+    },
+    {
+      "id": 41003,
+      "name": "Shackles 3",
+      "description": "[Full Blast]'s interval is reduced by 0.2 seconds. [Trajectory Strike]'s Damage Coefficient increases to 1.25 times.",
+      "effects": []
+    },
+    {
+      "id": 41004,
+      "name": "Shackles 4",
+      "description": "Initially gains 15 stacks of Overheat and 20 Sword Blades. Overheat stack limit is increased to 45.",
+      "effects": []
+    },
+    {
+      "id": 41005,
+      "name": "Shackles 5",
+      "description": "True Damage increases by 10%.",
+      "effects": []
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "characteristic": {
+      "id": 4100,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 41001,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 41002,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": [
+            {
+              "propertyId": 13,
+              "key": "energySpeed",
+              "label": "Energy Speed",
+              "statScreen": true,
+              "calcCat": null,
+              "add": -500,
+              "isPercent": true
+            }
+          ]
+        },
+        {
+          "statusId": 41004,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "augustus.feature",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 410012,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.changeblades",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 41008,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.stateaddbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 410081,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.stateaddbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 4101,
+      "name": "Magblade",
+      "damageType": 1,
+      "coefs": [
+        73,
+        78,
+        84,
+        89,
+        95,
+        102,
+        109,
+        116,
+        124,
+        132
+      ],
+      "maxCoef": 132,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 41011,
+          "targetCamps": 1,
+          "target": "enemy",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.triggerfield",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "ultimate": {
+      "id": 4102,
+      "name": "Magnetic Judgment",
+      "damageType": 0,
+      "coefs": [
+        144,
+        154,
+        165,
+        176,
+        188,
+        200,
+        214,
+        228,
+        244,
+        260
+      ],
+      "maxCoef": 260,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 4103,
+      "name": "Hysteresis Echo",
+      "damageType": 0,
+      "coefs": [
+        60,
+        65,
+        70,
+        76,
+        82,
+        88,
+        95,
+        103,
+        111,
+        120
+      ],
+      "maxCoef": 120,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 41031,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Normal attacks gain the [Pierce] effect while [Desert Huntfire] is active.\n[Pierce]: Normal attacks deal damage to all enemies within range. Damage decreases by ?% for each enemy hit beyond the first, with a minimum damage of ?%.",
+          "scripted": true,
+          "scriptName": "augustus.passive",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 4104,
+      "name": "Queen of War",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 41041,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Augustus gains an Attack bonus based on the number of enemies on the field. For each enemy, her Attack increases by ?%. This effect can stack up to 5 times.",
+          "scripted": true,
+          "scriptName": "augustus.talent",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "exclusive": {
+      "id": 4105,
+      "name": "Steel Apocalypse",
+      "damageType": 4,
+      "coefs": [
+        120,
+        180,
+        240
+      ],
+      "maxCoef": 240,
+      "coefSource": "Data",
+      "buffs": []
+    }
+  }
+}

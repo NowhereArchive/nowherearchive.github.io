@@ -1,0 +1,222 @@
+{
+  "id": 111403,
+  "name": "Wolverine",
+  "baseAtk": 139,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        21,
+        100
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        63,
+        200
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        21,
+        50
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 140301,
+      "name": "Right Tool",
+      "description": "[Trap] Stun effect duration is extended by 1 second.",
+      "effects": []
+    },
+    {
+      "id": 140302,
+      "name": "Shackles Sync I",
+      "description": "Normal ATK Damage +5%",
+      "effects": [
+        {
+          "propertyId": 26,
+          "key": "normalDmgBonus",
+          "label": "Normal Attack Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Normal Attack Damage Bonus",
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 140303,
+      "name": "Hunter's Vision",
+      "description": "After triggering [Trap], Wolverine adds a [Hunting] mark to all enemies within grid range, reducing their Defense by 20% for 10 seconds.",
+      "effects": []
+    },
+    {
+      "id": 140304,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption reduced by 3 points",
+      "effects": []
+    },
+    {
+      "id": 140305,
+      "name": "Shackles Sync II",
+      "description": "Normal ATK Damage +5%",
+      "effects": [
+        {
+          "propertyId": 26,
+          "key": "normalDmgBonus",
+          "label": "Normal Attack Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Normal Attack Damage Bonus",
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "characteristic": {
+      "id": 14030,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 140300,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 57,
+              "key": "breakingDmgBonus",
+              "label": "Breaking Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Breaking Damage Bonus",
+              "add": 5,
+              "isPercent": true
+            },
+            {
+              "propertyId": 17,
+              "key": "dmgBonus",
+              "label": "Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Damage Bonus (general)",
+              "add": 5,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 14031,
+      "name": "Crossbow Latch",
+      "damageType": 1,
+      "coefs": [
+        111,
+        119,
+        127,
+        135,
+        145,
+        154,
+        165,
+        176,
+        188,
+        200
+      ],
+      "maxCoef": 200,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 14032,
+      "name": "Trap",
+      "damageType": 0,
+      "coefs": [
+        100,
+        107,
+        114,
+        122,
+        130,
+        139,
+        148,
+        158,
+        169,
+        180
+      ],
+      "maxCoef": 180,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 14033,
+      "name": "Hunt",
+      "damageType": 0,
+      "coefs": [
+        4,
+        4.3,
+        4.6,
+        4.9,
+        5.2,
+        5.5,
+        5.9,
+        6.3,
+        6.7,
+        7.2
+      ],
+      "maxCoef": 7.2,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "passive": {
+      "id": 14034,
+      "name": "Lone Howl",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 140341,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When there are no enemies in a 3x3 square in front of Wolverine, he deals ?% additional damage.",
+          "scripted": true,
+          "scriptName": "langhuan.passive",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 1403001,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When there are no enemies in a 3x3 square in front of Wolverine, he deals ?% additional damage.",
+          "scripted": true,
+          "scriptName": "common.stateaddbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

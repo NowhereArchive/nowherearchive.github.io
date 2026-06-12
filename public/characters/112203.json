@@ -1,0 +1,264 @@
+{
+  "id": 112203,
+  "name": "Pepper",
+  "baseAtk": 131,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        21,
+        890
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        1,
+        5
+      ],
+      "attackCoefficient": [
+        21,
+        890
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        3,
+        10
+      ],
+      "attackCoefficient": [
+        21,
+        890
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        2,
+        5
+      ],
+      "attackCoefficient": [
+        21,
+        890
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 220301,
+      "name": "Compost",
+      "description": "[Mower] lasts for 3 seconds longer.",
+      "effects": []
+    },
+    {
+      "id": 220302,
+      "name": "Shackles Sync I",
+      "description": "Normal ATK Damage +5%",
+      "effects": [
+        {
+          "propertyId": 26,
+          "key": "normalDmgBonus",
+          "label": "Normal Attack Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Normal Attack Damage Bonus",
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 220303,
+      "name": "Photosynthesis",
+      "description": "After the battle starts, the Attack Speed of all allies is increased by 10%.",
+      "effects": []
+    },
+    {
+      "id": 220304,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption is reduced by 3 points.",
+      "effects": []
+    },
+    {
+      "id": 220305,
+      "name": "Shackles Sync II",
+      "description": "Normal ATK Damage +5%",
+      "effects": [
+        {
+          "propertyId": 26,
+          "key": "normalDmgBonus",
+          "label": "Normal Attack Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Normal Attack Damage Bonus",
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "characteristic": {
+      "id": 22030,
+      "name": "Extra Passive",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 220301,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 17,
+              "key": "dmgBonus",
+              "label": "Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Damage Bonus (general)",
+              "add": 5,
+              "isPercent": true
+            },
+            {
+              "propertyId": 57,
+              "key": "breakingDmgBonus",
+              "label": "Breaking Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Breaking Damage Bonus",
+              "add": 5,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 22031,
+      "name": "Loosen the Soil",
+      "damageType": 1,
+      "coefs": [
+        87,
+        93,
+        99,
+        105,
+        113,
+        120,
+        128,
+        137,
+        146,
+        156
+      ],
+      "maxCoef": 156,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 22032,
+      "name": "The Mower",
+      "damageType": 0,
+      "coefs": [
+        50,
+        53,
+        56,
+        58,
+        62,
+        65,
+        68,
+        72,
+        76,
+        80
+      ],
+      "maxCoef": 80,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 220321,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Pepper gets her circular saw ready to wipe out the enemies, gaining a ?% Attack Speed bonus for 12 seconds, during which she can't automatically recover Energy.",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 11,
+              "key": "atkSpeed",
+              "label": "ATK Speed",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 80,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "skill1": {
+      "id": 22033,
+      "name": "Leaf Infection",
+      "damageType": 0,
+      "coefs": [
+        40,
+        43,
+        46,
+        49,
+        52,
+        55,
+        59,
+        63,
+        67,
+        72
+      ],
+      "maxCoef": 72,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 220331,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "After Pepper attacks 6 times, her next attack deals multiple hits and attaches [Life Loss] to the target(s). [Life Loss]: The mark last 8 seconds, dealing (?% of Pepper's Attack) Physical Damage per second.",
+          "scripted": true,
+          "scriptName": "normalattack.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 22034,
+      "name": "Crop Management",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 220341,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "For each enemy with [Life Loss] on the battlefield, Pepper gains a ?% Attack Speed bonus. The bonus can stack up to 3 times.",
+          "scripted": true,
+          "scriptName": "jiekuilin.talent",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "extra1": {
+      "id": 22035,
+      "name": "Extra Skill 1",
+      "damageType": 1,
+      "coefs": [
+        38,
+        40,
+        43,
+        46,
+        49,
+        52,
+        56,
+        60,
+        64,
+        68
+      ],
+      "maxCoef": 68,
+      "coefSource": "AttackPowerCo",
+      "buffs": [],
+      "isSummonSkill": true,
+      "summonScalesFromMaster": true
+    }
+  }
+}

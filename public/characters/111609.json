@@ -1,0 +1,273 @@
+{
+  "id": 111609,
+  "name": "Zephyr",
+  "baseAtk": 124,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        21,
+        100
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        63,
+        200
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        21,
+        50
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 160901,
+      "name": "Shackles Sync I",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 160902,
+      "name": "Signal Interference",
+      "description": "[Signal Barrier] additionally reduces healing effects by 20%.",
+      "effects": []
+    },
+    {
+      "id": 160903,
+      "name": "Shackles Sync II",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 160904,
+      "name": "Energy Overflowing",
+      "description": "At the start of the battle, Zephyr gains 15 Energy.",
+      "effects": []
+    },
+    {
+      "id": 160905,
+      "name": "Shackles Sync III",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 160906,
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 15,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "characteristic": {
+      "id": 16090,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 160900,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 13,
+              "key": "energySpeed",
+              "label": "Energy Speed",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 10,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 16091,
+      "name": "Forced Landing",
+      "damageType": 2,
+      "coefs": [
+        84,
+        91,
+        98,
+        106,
+        114,
+        123,
+        133,
+        144,
+        156,
+        168
+      ],
+      "maxCoef": 168,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 16092,
+      "name": "Air Raid Siren",
+      "damageType": 0,
+      "coefs": [
+        1690,
+        1825,
+        1971,
+        2129,
+        2300,
+        2484,
+        2683,
+        2897,
+        3129,
+        3380
+      ],
+      "maxCoef": 3380,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 160921,
+          "targetCamps": 1,
+          "target": "enemy",
+          "description": "Zephyr deals (Attack *?%) Magic Damage to all enemies within range. Over the next 3 seconds, the enemies will gradually recover HP equal to 35% of the damage dealt by this hit. [Air Raid Siren] can be charged up to 2 times.",
+          "scripted": true,
+          "scriptName": "zephyr.marking",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "skill1": {
+      "id": 16093,
+      "name": "Flight Mode",
+      "damageType": 0,
+      "coefs": [
+        15,
+        16.200001,
+        17.5,
+        18.9,
+        20.4,
+        22,
+        23.799999,
+        25.700001,
+        27.799999,
+        30
+      ],
+      "maxCoef": 30,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 160931,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When casting [Air Raid Siren] or [Mayhem Route], applies [Signal Barrier] to enemies, reducing their healing received by ?% for 10 seconds.",
+          "scripted": true,
+          "scriptName": "zephyr.passive",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 160933,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When casting [Air Raid Siren] or [Mayhem Route], applies [Signal Barrier] to enemies, reducing their healing received by ?% for 10 seconds.",
+          "scripted": true,
+          "scriptName": "zephyr.passive",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 16094,
+      "name": "Signal Deflection",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 160940,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When enemies with [Signal Barrier] receive healing, their damage dealt decreases by ?%. This effect stacks up to 3 times and lasts for 5 seconds.",
+          "scripted": true,
+          "scriptName": "zephyr.talent",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "exclusive": {
+      "id": 16095,
+      "name": "Mayhem Route",
+      "damageType": 0,
+      "coefs": [
+        200,
+        350,
+        500
+      ],
+      "maxCoef": 500,
+      "coefSource": "Data",
+      "buffs": []
+    }
+  }
+}

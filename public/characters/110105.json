@@ -1,0 +1,221 @@
+{
+  "id": 110105,
+  "name": "Moore",
+  "baseAtk": 107,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        11,
+        50
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        33,
+        100
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        11,
+        25
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 10501,
+      "name": "Data Repair",
+      "description": "[Matrix] additionally recovers (Moore's Max HP *1.5%) per second for all allied units within range.",
+      "effects": []
+    },
+    {
+      "id": 10502,
+      "name": "Shackles Sync I",
+      "description": "Max HP +10%.",
+      "effects": [
+        {
+          "propertyId": 1,
+          "key": "hp",
+          "label": "HP",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 10503,
+      "name": "Enhanced Amplification",
+      "description": "During [Emergency Shutdown], damage and buff from [Matrix] increase by 50%.",
+      "effects": []
+    },
+    {
+      "id": 10504,
+      "name": "Energy Overflowing",
+      "description": "At the start of the battle, Moore gains 18 Energy.",
+      "effects": []
+    },
+    {
+      "id": 10505,
+      "name": "Shackles Sync II",
+      "description": "Max HP +10%.",
+      "effects": [
+        {
+          "propertyId": 1,
+          "key": "hp",
+          "label": "HP",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 10500,
+      "effects": [
+        {
+          "propertyId": 1,
+          "key": "hp",
+          "label": "HP",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 15,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "characteristic": {
+      "id": 1050,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": []
+    },
+    "normalAttack": {
+      "id": 1051,
+      "name": "Information Capture",
+      "damageType": 1,
+      "coefs": [
+        3,
+        3.2,
+        3.5,
+        3.8,
+        4.1,
+        4.4,
+        4.8,
+        5.1,
+        5.6,
+        6
+      ],
+      "maxCoef": 6,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 1052,
+      "name": "Dynamic Defense Matrix",
+      "damageType": 0,
+      "coefs": [
+        25,
+        27,
+        29.200001,
+        31.5,
+        34,
+        36.700001,
+        39.700001,
+        42.900002,
+        46.299999,
+        50
+      ],
+      "maxCoef": 50,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 1056,
+      "name": "Emergency Shutdown",
+      "damageType": 0,
+      "coefs": [
+        15,
+        16.200001,
+        17.5,
+        18.9,
+        20.4,
+        22,
+        23.799999,
+        25.700001,
+        27.799999,
+        30
+      ],
+      "maxCoef": 30,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 10531,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "New Second Ultimate [Emergency Shutdown]. Moore grants existing [Matrices] on the field a (Max HP *?%) shield, then expands the [Matrix] range to a 3x3 square, giving all allied units within range immunity to control effects for ? seconds. If the shield value of a [Matrix] reaches zero during this period, the [Matrix] will only disappear when the period ends.",
+          "scripted": true,
+          "scriptName": "moore.defensematrixaux",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 1054,
+      "name": "Active Defense System",
+      "damageType": 0,
+      "buffs": []
+    },
+    "extra1": {
+      "id": 1055,
+      "name": "Extra Skill 1",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 10550,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "christina.exclusive",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

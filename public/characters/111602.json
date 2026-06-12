@@ -1,0 +1,223 @@
+{
+  "id": 111602,
+  "name": "Chameleon",
+  "baseAtk": 121,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        21,
+        100
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        63,
+        200
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        21,
+        50
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 160201,
+      "name": "Hypnosis",
+      "description": "At the start of the battle, all allied Sinners gain a 10% Attack Speed bonus for 15 seconds.",
+      "effects": []
+    },
+    {
+      "id": 160202,
+      "name": "Shackles Sync I",
+      "description": "[Catalyst] Maximum number increases by 1",
+      "effects": []
+    },
+    {
+      "id": 160203,
+      "name": "Prolong",
+      "description": "[Transference] Effect duration is extended by 4 seconds.",
+      "effects": []
+    },
+    {
+      "id": 160204,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption reduced by 3 points",
+      "effects": []
+    },
+    {
+      "id": 160205,
+      "name": "Shackles Sync II",
+      "description": "[Catalyst] Maximum number increases by 1",
+      "effects": []
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "characteristic": {
+      "id": 16020,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 160200,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 13,
+              "key": "energySpeed",
+              "label": "Energy Speed",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 10,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 16021,
+      "name": "Mental Sore",
+      "damageType": 2,
+      "coefs": [
+        78,
+        83,
+        89,
+        95,
+        102,
+        108,
+        116,
+        124,
+        132,
+        141
+      ],
+      "maxCoef": 141,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 16022,
+      "name": "Suggestion",
+      "damageType": 0,
+      "coefs": [
+        4,
+        4.2,
+        4.4,
+        4.6,
+        4.8,
+        5,
+        5.2,
+        5.5,
+        5.7,
+        6
+      ],
+      "maxCoef": 6,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 1602220,
+          "targetCamps": 2,
+          "target": "self",
+          "description": "Chameleon hypnotizes an allied Sinner and attaches 1 stack of [Deep Suggestion]. Each stack of [Deep Suggestion] increases the ally's Attack Speed by ?%. [Deep Suggestion] can stack up to 5 times and lasts for the entire battle.",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 11,
+              "key": "atkSpeed",
+              "label": "ATK Speed",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 6,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "skill1": {
+      "id": 16023,
+      "name": "Mass Hypnosis",
+      "damageType": 0,
+      "coefs": [
+        10,
+        10.5,
+        10.9,
+        11.4,
+        12,
+        12.5,
+        13.1,
+        13.7,
+        14.3,
+        15
+      ],
+      "maxCoef": 15,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 160231,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Allied Sinners that have been affected by [Suggestion] become [Catalysts], gaining a ?% Normal Attack Damage bonus. When using [Suggestion], Chameleon attaches 1 stack of [Deep Suggestion] to all [Catalysts]. She can have up to 3 [Catalysts] at a time.",
+          "scripted": true,
+          "scriptName": "chameleon.passive",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 16024,
+      "name": "Transference",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 160241,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Allied Sinners affected by [Suggestion] gain an extra ?% Attack Speed bonus for 10 seconds.",
+          "scripted": true,
+          "scriptName": "common.triggerfield",
+          "maxLevelEffects": [
+            {
+              "propertyId": 13,
+              "key": "energySpeed",
+              "label": "Energy Speed",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 15,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

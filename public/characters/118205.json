@@ -1,0 +1,72 @@
+{
+  "id": 118205,
+  "name": "Toy tower base (back row)",
+  "baseAtk": 1,
+  "upgrade": [],
+  "chains": [],
+  "phasePassives": [],
+  "skills": {
+    "normalAttack": {
+      "id": 11740101,
+      "name": "Normal Attack",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 11820201,
+      "name": "Build [Nail Gun]",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 117401027,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Spend 50 [Parts] to place a [Nail Gun]. The [Nail Gun] has a long range and can deal massive damage to enemies along a straight line for 5 seconds.",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 118202011,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Spend 50 [Parts] to place a [Nail Gun]. The [Nail Gun] has a long range and can deal massive damage to enemies along a straight line for 5 seconds.",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 117401034,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Spend 50 [Parts] to place a [Nail Gun]. The [Nail Gun] has a long range and can deal massive damage to enemies along a straight line for 5 seconds.",
+          "scripted": true,
+          "scriptName": "common.addextrablocked",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 11740109,
+      "name": "Passive (S1)",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 117401092,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

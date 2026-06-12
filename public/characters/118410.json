@@ -1,0 +1,21 @@
+{
+  "id": 118410,
+  "name": "Scotch",
+  "baseAtk": 450,
+  "upgrade": [],
+  "chains": [],
+  "phasePassives": [],
+  "skills": {
+    "normalAttack": {
+      "id": 98001513,
+      "name": "Normal Attack",
+      "damageType": 1,
+      "coefs": [
+        100
+      ],
+      "maxCoef": 100,
+      "coefSource": "AttackPowerCo",
+      "buffs": []
+    }
+  }
+}

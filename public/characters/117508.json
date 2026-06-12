@@ -1,0 +1,39 @@
+{
+  "id": 117508,
+  "name": "Che",
+  "baseAtk": 140,
+  "upgrade": [],
+  "chains": [],
+  "phasePassives": [],
+  "skills": {
+    "normalAttack": {
+      "id": 22021,
+      "name": "Double Blades",
+      "damageType": 1,
+      "coefs": [
+        84,
+        90,
+        96,
+        102,
+        109,
+        116,
+        124,
+        133,
+        142,
+        151
+      ],
+      "maxCoef": 151,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 91022022,
+      "name": "Happy Hunting",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    }
+  }
+}

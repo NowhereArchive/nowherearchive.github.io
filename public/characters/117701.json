@@ -1,0 +1,38 @@
+{
+  "id": 117701,
+  "name": "Iridescent Bird",
+  "baseAtk": 1,
+  "upgrade": [],
+  "chains": [],
+  "phasePassives": [],
+  "skills": {
+    "normalAttack": {
+      "id": 92001501,
+      "name": "Normal Attack",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 92000001,
+      "name": "Cumulus",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 920000011,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Perform a ritual to change the Celestial Phenomenon. Once the preparation of the ritual is completed, the current Celestial Phenomenon will revolve to Ominous Cloud. Subsequent rituals will require a longer preparation time.",
+          "scripted": true,
+          "scriptName": "common.changeweather",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "id": 110607,
+  "name": "L.L.",
+  "baseAtk": 125,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        11,
+        50
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        33,
+        100
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        11,
+        25
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 60701,
+      "name": "Drowning Sea",
+      "description": "[Data Transfer] additionally recovers 4 Energy.",
+      "effects": []
+    },
+    {
+      "id": 60702,
+      "name": "Shackles Sync I",
+      "description": "Energy Recovery speed +7.5%",
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 7.5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 60703,
+      "name": "Addiction",
+      "description": "Chief gains an extra Energy at the start of the battle. Each time Chief Potestas is cast, Sinners on the field gain a 3% Attack boost lasting for the entire battle, stacking up to 5 times.",
+      "effects": []
+    },
+    {
+      "id": 60704,
+      "name": "Energy Overflowing",
+      "description": "At the start of the battle, L.L. gains 18 Energy.",
+      "effects": []
+    },
+    {
+      "id": 60705,
+      "name": "Shackles Sync II",
+      "description": "Energy Recovery speed +7.5%",
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 7.5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "characteristic": {
+      "id": 6070,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 60709,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.dieaddbuffself",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 60711,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 6071,
+      "name": "Wireless Connection",
+      "damageType": 4,
+      "coefs": [
+        63,
+        68,
+        73,
+        79,
+        86,
+        93,
+        100,
+        108,
+        117,
+        126
+      ],
+      "maxCoef": 126,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 6072,
+      "name": "Data Transfer",
+      "damageType": 0,
+      "coefs": [
+        33,
+        32,
+        31,
+        30,
+        29,
+        28,
+        27,
+        26,
+        25,
+        24
+      ],
+      "maxCoef": 24,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 60721,
+          "targetCamps": 4,
+          "target": "ally",
+          "description": "L.L. instantly restores ? Energy for a designated allied Sinner and grants the Sinner [Manty] for the entire battle. [Data Transfer] can be charged up to 2 times.",
+          "scripted": true,
+          "scriptName": "common.changeenergy",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "skill1": {
+      "id": 6073,
+      "name": "Monoid",
+      "damageType": 0,
+      "coefs": [
+        15,
+        16.200001,
+        17.5,
+        18.9,
+        20.4,
+        22,
+        23.799999,
+        25.700001,
+        27.799999,
+        30
+      ],
+      "maxCoef": 30,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 60731,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Sinners with [Manty] receive a ?% skill damage boost. When [Manty] leaves, this effect persists for another 5 seconds.",
+          "scripted": true,
+          "scriptName": "ll.passive",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 6074,
+      "name": "Resumable Breakpoint",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 60743,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Each time Chief's Potestas is cast, L.L. gains a ?% Energy Recovery Speed boost for 8 seconds.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}
