@@ -125,8 +125,8 @@ body {
 
 .card-hint {
     margin-left: auto;
-    font-size: 0.7rem;
-    color: rgba(255, 255, 255, 0.25);
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.35);
     font-style: italic;
 }
 
@@ -182,8 +182,8 @@ body {
 }
 
 .hint {
-    font-size: 0.7rem;
-    color: rgba(255, 255, 255, 0.3);
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.35);
     margin-top: 0.2rem;
     font-style: italic;
     min-height: 1em;

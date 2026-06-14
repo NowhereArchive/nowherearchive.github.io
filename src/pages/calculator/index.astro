@@ -547,6 +547,33 @@ import "../../styles/calculator.css";
 
           <div class="sep"></div>
 
+          <!-- Attacks over time -->
+          <div class="flabel" style="margin-bottom:.4rem">
+            <span class="ln">Attacks over time</span>
+          </div>
+          <div class="row2">
+            <div class="field">
+              <div class="flabel"><span class="ln">Minutes</span></div>
+              <input type="number" id="as-attack-minutes" value="0" min="0" placeholder="0" />
+            </div>
+            <div class="field">
+              <div class="flabel"><span class="ln">Seconds</span></div>
+              <input type="number" id="as-attack-seconds" value="30" min="0" max="59" placeholder="e.g. 30" />
+            </div>
+          </div>
+          <div id="as-attacks-result" class="as-current-box" style="margin-top:.5rem">
+            <div class="as-box-item">
+              <div class="as-box-lbl">Attacks / second</div>
+              <div class="as-box-val">—</div>
+            </div>
+            <div class="as-box-item">
+              <div class="as-box-lbl">Attacks / minute</div>
+              <div class="as-box-val">—</div>
+            </div>
+          </div>
+
+          <div class="sep"></div>
+
           <!-- Nearby breakpoints -->
           <div class="flabel" style="margin-bottom:.5rem">
             <span class="ln">Nearby breakpoints</span>
@@ -771,7 +798,7 @@ import "../../styles/calculator.css";
       color: #ff6b6b;
     }
     .chain-desc {
-      font-size: 0.68rem;
+      font-size: 0.72rem;
       color: rgba(255, 255, 255, 0.25);
       font-style: italic;
       line-height: 1.4;
@@ -869,6 +896,16 @@ import "../../styles/calculator.css";
       margin-top: 1.25rem;
     }
 
+    /* stack bonus cols on mobile */
+    .atk-speed-section .row2 {
+      grid-template-columns: 1fr;
+    }
+    @media (min-width: 601px) {
+      .atk-speed-section .row2 {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
     .as-bp-row {
       display: flex;
       align-items: center;
@@ -886,8 +923,8 @@ import "../../styles/calculator.css";
       letter-spacing: .06em;
       color: var(--text-secondary, rgba(255,255,255,.5));
     }
-    .as-bp-row.as-current .as-bp-frames { color: #4ade80; }
-    .as-bp-row.as-next    .as-bp-frames { color: #facc15; }
+    .as-bp-row.as-current .as-bp-frames { color: #ff6b6b; }
+    .as-bp-row.as-next    .as-bp-frames { color: #fbbf24; }
 
     .as-bp-thresh {
       min-width: 56px;
@@ -908,8 +945,8 @@ import "../../styles/calculator.css";
       background: rgba(255,255,255,.15);
       transition: width .2s;
     }
-    .as-bp-row.as-current .as-bp-fill { background: #4ade80; }
-    .as-bp-row.as-next    .as-bp-fill { background: rgba(250,204,21,.5); }
+    .as-bp-row.as-current .as-bp-fill { background: #ff6b6b; }
+    .as-bp-row.as-next    .as-bp-fill { background: rgba(251,191,36,.5); }
 
     .as-bp-label {
       min-width: 110px;
@@ -917,13 +954,13 @@ import "../../styles/calculator.css";
       color: rgba(255,255,255,.25);
       font-style: italic;
     }
-    .as-bp-row.as-current .as-bp-label { color: #4ade80; font-style: normal; font-weight: 700; }
-    .as-bp-row.as-next    .as-bp-label { color: #facc15; font-style: normal; }
+    .as-bp-row.as-current .as-bp-label { color: #ff6b6b; font-style: normal; font-weight: 700; }
+    .as-bp-row.as-next    .as-bp-label { color: #fbbf24; font-style: normal; }
 
     /* current breakpoint summary box */
     .as-current-box {
-      background: rgba(74,222,128,.06);
-      border: 1px solid rgba(74,222,128,.18);
+      background: rgba(255,107,107,.06);
+      border: 1px solid rgba(255,107,107,.18);
       padding: .6rem .875rem;
       font-size: .72rem;
       display: flex;
@@ -933,8 +970,8 @@ import "../../styles/calculator.css";
     .as-box-item { display: flex; flex-direction: column; gap: .15rem; }
     .as-box-lbl  { color: rgba(255,255,255,.3); font-size: .62rem; text-transform: uppercase; letter-spacing: .08em; }
     .as-box-val  { color: #e2e8f0; font-weight: 700; font-size: .9rem; }
-    .as-box-val.green { color: #4ade80; }
-    .as-box-val.yellow { color: #facc15; }
+    .as-box-val.red { color: #ff6b6b; }
+    .as-box-val.amber { color: #fbbf24; }
 
     /* worth-it result */
     .as-check-box {
@@ -945,12 +982,12 @@ import "../../styles/calculator.css";
       flex-direction: column;
       gap: .15rem;
     }
-    .as-check-box.yes { background: rgba(74,222,128,.06); border-color: rgba(74,222,128,.3); }
-    .as-check-box.no  { background: rgba(255,107,107,.06); border-color: rgba(255,107,107,.2); }
+    .as-check-box.yes { background: rgba(251,191,36,.06); border-color: rgba(251,191,36,.3); }
+    .as-check-box.no  { background: rgba(148,163,184,.06); border-color: rgba(148,163,184,.2); }
     .as-check-box .as-box-lbl { color: rgba(255,255,255,.3); font-size: .62rem; text-transform: uppercase; letter-spacing: .08em; }
     .as-check-box .result-line { font-weight: 700; font-size: .82rem; }
-    .as-check-box.yes .result-line { color: #4ade80; }
-    .as-check-box.no  .result-line { color: #ff6b6b; }
+    .as-check-box.yes .result-line { color: #fbbf24; }
+    .as-check-box.no  .result-line { color: #94a3b8; }
     .as-check-box .detail-line { color: rgba(255,255,255,.4); font-size: .68rem; margin-top: .1rem; }
 
     /* ── Help button ────────────────────────────────── */
@@ -2455,7 +2492,7 @@ import "../../styles/calculator.css";
         const flat     = totalFlat();
         const checkVal = parseFloat(document.getElementById('as-check').value) || 0;
 
-        const speed = (base + flat) * (1 + bonus / 100);
+        const speed = base * (1 + bonus / 100) + flat;
         const f     = frames(speed);
         const bp    = breakpoint(f);
         const bpNext = f > 1 ? breakpoint(f - 1) : null;
@@ -2470,15 +2507,13 @@ import "../../styles/calculator.css";
 
         /* current breakpoint box */
         const effBase = base + flat;
-        const bonusNeeded = bpNext
-          ? r((bpNext / effBase - 1) * 100 - bonus, 2)
-          : null;
+        const bonusNeeded = r(((bpNext - flat) / base - 1) * 100 - bonus, 2);
 
         document.getElementById('as-bp-current').innerHTML = `
           <div class="as-current-box">
             <div class="as-box-item">
               <div class="as-box-lbl">Frames / attack</div>
-              <div class="as-box-val green">${f}</div>
+              <div class="as-box-val red">${f}</div>
             </div>
 
             <div class="as-box-item">
@@ -2488,11 +2523,11 @@ import "../../styles/calculator.css";
             ${bpNext !== null ? `
             <div class="as-box-item">
               <div class="as-box-lbl">Next breakpoint</div>
-              <div class="as-box-val yellow">${r(bpNext, 4)}</div>
+              <div class="as-box-val amber">${r(bpNext, 4)}</div>
             </div>
             <div class="as-box-item">
               <div class="as-box-lbl">Bonus needed</div>
-              <div class="as-box-val yellow">+${bonusNeeded}%</div>
+              <div class="as-box-val amber">+${bonusNeeded}%</div>
             </div>` : `
             <div class="as-box-item">
               <div class="as-box-lbl">Next breakpoint</div>
@@ -2502,7 +2537,7 @@ import "../../styles/calculator.css";
 
         /* worth-it checker */
         if (bpNext !== null) {
-          const newSpeed = effBase * (1 + (bonus + checkVal) / 100);
+          const newSpeed = base * (1 + (bonus + checkVal) / 100) + flat;
           const newFrames = frames(newSpeed);
           const pushes = newFrames < f;
           const howManyTiers = f - newFrames;
@@ -2534,7 +2569,7 @@ import "../../styles/calculator.css";
           const isNext = bpNext !== null && i === f - 1;
           const prog   = Math.min(speed / thr, 1) * 100;
           const neededHere = !isCur && thr > speed
-            ? r((thr / effBase - 1) * 100 - bonus, 2)
+            ? r(((thr - flat) / base - 1) * 100 - bonus, 2)
             : null;
           const labelTxt = isCur
             ? '✓ current'
@@ -2550,6 +2585,9 @@ import "../../styles/calculator.css";
             </div>`;
         }
         document.getElementById('as-bp-list').innerHTML = html;
+
+        /* keep attacks-over-time in sync */
+        renderAttackCount();
       }
 
       /* ── listeners ─────────────────────────────────────── */
@@ -2559,6 +2597,49 @@ import "../../styles/calculator.css";
       renderBonuses();
       renderFlats();
       asUpdate();
+
+      /* ── attacks over time ────────────────────────────── */
+      function renderAttackCount() {
+        const mins = parseFloat(document.getElementById('as-attack-minutes').value) || 0;
+        const secs = parseFloat(document.getElementById('as-attack-seconds').value) || 0;
+        const totalSecs = mins * 60 + secs;
+        const base  = parseFloat(document.getElementById('as-base').value) || 1;
+        const bonus = totalBonus();
+        const flat  = totalFlat();
+        const speed = base * (1 + bonus / 100) + flat;
+        const f     = frames(speed);
+        const atkPerSec = RATE / f;
+        const atkPerMin = atkPerSec * 60;
+        const totalAttacks = totalSecs > 0 ? Math.floor(atkPerSec * totalSecs) : 0;
+
+        // Previous frame (slower)
+        const prevF = f + 1;
+        const prevAtkPerSec = RATE / prevF;
+        const prevTotal = totalSecs > 0 ? Math.floor(prevAtkPerSec * totalSecs) : 0;
+        const prevDiff = prevTotal - totalAttacks;
+
+        // Next frame (faster)
+        const nextF = Math.max(1, f - 1);
+        const nextAtkPerSec = RATE / nextF;
+        const nextTotal = totalSecs > 0 ? Math.floor(nextAtkPerSec * totalSecs) : 0;
+        const nextDiff = nextTotal - totalAttacks;
+
+        let html = '<div class="as-box-item"><div class="as-box-lbl">Attacks / second</div><div class="as-box-val">' + r(atkPerSec, 3) + '</div></div>';
+        html += '<div class="as-box-item"><div class="as-box-lbl">Attacks / minute</div><div class="as-box-val">' + r(atkPerMin, 1) + '</div></div>';
+
+        if (totalSecs > 0) {
+          html += '<div class="as-box-item"><div class="as-box-lbl">In ' + (mins > 0 ? mins + 'm ' : '') + secs + 's</div><div class="as-box-val red">' + totalAttacks.toLocaleString('en-US') + ' attacks</div></div>';
+          html += '<div class="as-box-item"><div class="as-box-lbl">One attack every</div><div class="as-box-val">' + r(f / RATE, 3) + 's</div></div>';
+        }
+
+        html += '<div class="as-box-item" style="opacity:.6"><div class="as-box-lbl">At ' + prevF + ' frames (prev tier)</div><div class="as-box-val" style="color:#94a3b8;font-size:.82rem">' + prevTotal.toLocaleString('en-US') + ' <span style="font-size:.65rem;opacity:.6">' + prevDiff + '</span></div></div>';
+        html += '<div class="as-box-item" style="opacity:.7"><div class="as-box-lbl">At ' + nextF + ' frames (next tier)</div><div class="as-box-val" style="color:#fbbf24;font-size:.82rem">' + nextTotal.toLocaleString('en-US') + ' <span style="font-size:.65rem;opacity:.6">+' + nextDiff + '</span></div></div>';
+
+        document.getElementById('as-attacks-result').innerHTML = html;
+      }
+      document.getElementById('as-attack-minutes').addEventListener('input', renderAttackCount);
+      document.getElementById('as-attack-seconds').addEventListener('input', renderAttackCount);
+      renderAttackCount();
     })();
   </script>
 </Layout>
