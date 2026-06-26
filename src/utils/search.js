@@ -61,7 +61,7 @@ export function doAll() {
     // Load chapters data with new structure
     async function loadChapters() {
         try {
-            const response = await fetch('https://raw.githubusercontent.com/NowhereArchive/NowhereDev/main/chapters.json');
+            const response = await fetch('https://raw.githubusercontent.com/NowhereArchive/NowhereCG/main/chapters.json');
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }

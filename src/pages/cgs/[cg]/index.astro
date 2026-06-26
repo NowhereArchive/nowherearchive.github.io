@@ -1,7 +1,7 @@
 ---
 import "../../../styles/global.css";
 import NavBar from "../../../components/NavBar.astro";
-import { ASSET_CHAPTERS_URL, ASSET_CGS_THUMBNAILS_URL, REPO } from "../../../config/config";
+import { ASSET_CHAPTERS_URL, ASSET_CGS_THUMBNAILS_URL, ASSET_CGS_URL } from "../../../config/config";
 import Layout from "../../../layouts/Layout.astro";
 
 interface Chapter {
@@ -10,7 +10,7 @@ interface Chapter {
 }
 
 export async function getStaticPaths() {
-  const chaptersResponse = await fetch(`${REPO}/chapters.json`);
+  const chaptersResponse = await fetch(`${ASSET_CGS_URL}/chapters.json`);
   const chapters = await chaptersResponse.json();
 
   const allChapters = Object.entries(chapters).flatMap(
