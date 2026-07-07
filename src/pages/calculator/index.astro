@@ -2492,7 +2492,7 @@ import "../../styles/calculator.css";
         const flat     = totalFlat();
         const checkVal = parseFloat(document.getElementById('as-check').value) || 0;
 
-        const speed = base * (1 + bonus / 100) + flat;
+        const speed = base + (bonus / 100) + flat; 
         const f     = frames(speed);
         const bp    = breakpoint(f);
         const bpNext = f > 1 ? breakpoint(f - 1) : null;
@@ -2606,7 +2606,7 @@ import "../../styles/calculator.css";
         const base  = parseFloat(document.getElementById('as-base').value) || 1;
         const bonus = totalBonus();
         const flat  = totalFlat();
-        const speed = base * (1 + bonus / 100) + flat;
+        const speed = base + (bonus / 100) + flat; 
         const f     = frames(speed);
         const atkPerSec = RATE / f;
         const atkPerMin = atkPerSec * 60;
