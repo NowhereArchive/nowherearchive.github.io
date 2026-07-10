@@ -2755,7 +2755,7 @@ import "../../styles/calculator.css";
 
         /* current breakpoint box */
         const effBase = base + flat;
-        const bonusNeeded = r((bpNext - base - flat) * 100 - bonus, 2);  
+        const bonusNeeded = r((bpNext - base - flat) * 100 - bonus, 5);  
 
         document.getElementById("as-bp-current").innerHTML = `
           <div class="as-current-box">
@@ -2804,7 +2804,7 @@ import "../../styles/calculator.css";
               <div class="detail-line">${
                 pushes
                   ? `New speed: ${r(newSpeed, 4)} ≥ ${r(bpNext, 4)}`
-                  : `Need +${bonusNeeded}%, have +${r(checkVal, 2)}% (short by ${r(bonusNeeded - checkVal, 2)}%)`
+                  : `Need +${bonusNeeded}%, have +${r(checkVal, 2)}% (short by ${r(bonusNeeded - checkVal, 5)}%)`
               }</div>
             </div>`;
         } else {
@@ -2826,7 +2826,7 @@ import "../../styles/calculator.css";
           const prog = Math.min(speed / thr, 1) * 100;
           const neededHere =
             !isCur && thr > speed
-              ? r((thr - base - flat) * 100 - bonus, 2)
+              ? r((thr - base - flat) * 100 - bonus, 5)
               : null;
           const labelTxt = isCur
             ? "✓ current"
