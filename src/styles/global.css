@@ -637,11 +637,10 @@ h1::after {
 
 .character img {
   width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 4px 4px 0 0;
   transition: transform 0.5s ease, filter 0.3s ease;
   object-fit: contain;
-  max-height: 280px;
   display: block;
   margin: 0 auto;
   filter: saturate(0.95) contrast(1.05);
@@ -737,7 +736,7 @@ h1::after {
 .image-container {
   position: relative;
   width: 100%;
-  min-height: 280px;
+  aspect-ratio: 1 / 2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -775,7 +774,8 @@ h1::after {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: contain;
   opacity: 0;
   transition: opacity 0.3s ease-in;
 }
@@ -785,7 +785,8 @@ h1::after {
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: contain;
   opacity: 0;
   transition: opacity 0.3s ease-in;
 }
@@ -1342,4 +1343,33 @@ html {
 @keyframes skeleton-pulse {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.5; }
+}
+
+/* Scope resets to this page only */
+.tree-items label,
+.tree-row {
+  display: flex !important;
+}
+
+.tree-items input[type="checkbox"] {
+  width: 15px !important;
+  height: 15px !important;
+  flex-shrink: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.tree-attire {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.tree-langs {
+  display: flex !important;
+  gap: 0.2rem !important;
+}
+
+.tree-attires {
+  display: flex !important;
+  flex-direction: column !important;
 }
