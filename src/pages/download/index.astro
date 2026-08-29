@@ -1,0 +1,1278 @@
+---
+import NavBar from "../../components/NavBar.astro";
+import "../../styles/global.css";
+import { REPO, ASSET_CGS_URL } from "../../config/config";
+import Layout from "../../layouts/Layout.astro";
+
+const charactersRes = await fetch(`${REPO}/characters.json`);
+const charactersData = await charactersRes.json();
+const chaptersRes = await fetch(`${ASSET_CGS_URL}/chapters.json`);
+const chaptersData = await chaptersRes.json();
+const languages = ["english", "japanese", "chinese", "korean"];
+---
+
+<Layout title="Download">
+  <NavBar />
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Download</h1>
+      <div class="site-note">
+        <p>Select CGs and voicelines to download as a single ZIP bundle.</p>
+      </div>
+      <div class="search-container">
+        <input
+          type="text"
+          id="searchInput"
+          class="search-input"
+          placeholder="Filter..."
+          autocomplete="off"
+        />
+        <span class="search-shortcut">/</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sticky Action Bar -->
+  <div class="action-bar" id="actionBar">
+    <div class="action-bar-inner">
+      <div class="view-tabs" id="viewTabs">
+        <button class="view-tab active" data-view="all">All</button>
+        <button class="view-tab" data-view="cgs">CGs</button>
+        <button class="view-tab" data-view="voicelines">Voicelines</button>
+      </div>
+      <span class="selection-info" id="selectedCount">0 selected</span>
+      <div class="header-select-all">
+        <button class="header-select-btn" id="selectAllCGs">Select All CGs</button>
+        <button class="header-select-btn" id="selectAllVLs">Select All Voicelines</button>
+        <span class="header-select-divider"></span>
+        <button class="header-select-btn deselect" id="deselectAll">Deselect All</button>
+      </div>
+      <button class="download-btn" id="downloadBtn" disabled>
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          ><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline
+            points="7 10 12 15 17 10"></polyline><line
+            x1="12"
+            y1="15"
+            x2="12"
+            y2="3"></line></svg
+        >
+        <span>Download Selected</span>
+        <span class="download-spinner" id="downloadSpinner"></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="download-warning">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    <span>Generating large downloads may take a while or fail. Consider downloading in smaller batches.</span>
+  </div>
+
+  <!-- Content -->
+  <div class="download-content" id="downloadContent">
+    <!-- CGs Tree -->
+    <section class="dl-section" id="cgsSection" data-section="cgs">
+      <div class="dl-section-header">
+        <h2>CGs</h2>
+        <div class="section-chips" id="cgCategoryChips">
+          <button class="chip active" data-cg-cat="all">All</button>
+        </div>
+      </div>
+      <div class="tree" id="cgsTree"></div>
+    </section>
+
+    <!-- Voicelines Tree -->
+    <section
+      class="dl-section"
+      id="voicelinesSection"
+      data-section="voicelines"
+    >
+      <div class="dl-section-header">
+        <h2>Voicelines</h2>
+        <div class="section-chips" id="vlCategoryChips">
+          <button class="chip active" data-vl-cat="all">All</button>
+        </div>
+        <div class="vl-lang-all">
+          <button class="chip" data-lang="english">All EN</button>
+          <button class="chip" data-lang="japanese">All JA</button>
+          <button class="chip" data-lang="chinese">All ZH</button>
+          <button class="chip" data-lang="korean">All KO</button>
+        </div>
+      </div>
+      <div class="tree" id="vlTree"></div>
+    </section>
+  </div>
+
+  <!-- No Results -->
+  <div class="no-results" id="noResults">Nothing matches your filter</div>
+
+  <script
+    define:vars={{
+      CHARACTERS: charactersData.characters,
+      CHAPTERS: chaptersData,
+      LANGUAGES: languages,
+    }}
+  >
+    const SERVER = "https://server-cu86.onrender.com";
+    const CHAPTERS_DATA = CHAPTERS;
+
+    const allChapters = Object.entries(CHAPTERS_DATA).flatMap(([cat, list]) =>
+      list.map((ch) => ({ ...ch, category: cat })),
+    );
+
+    const $ = (id) => document.getElementById(id);
+    const cgsTree = $("cgsTree");
+    const vlTree = $("vlTree");
+    const searchInput = $("searchInput");
+    const selectedCount = $("selectedCount");
+    const downloadBtn = $("downloadBtn");
+    const downloadSpinner = $("downloadSpinner");
+    const noResults = $("noResults");
+    const cgCategoryChips = $("cgCategoryChips");
+    const vlCategoryChips = $("vlCategoryChips");
+
+    const viewTabs = document.querySelectorAll(".view-tab");
+    const selectAllCGs = $("selectAllCGs");
+    const selectAllVLs = $("selectAllVLs");
+    const deselectAll = $("deselectAll");
+    const langAllBtns = document.querySelectorAll(".vl-lang-all .chip[data-lang]");
+
+    let currentView = "all";
+    let searchQuery = "";
+    let cgCategoryFilter = "all";
+    let vlCategoryFilter = "all";
+
+    const selectedCGs = new Set();
+    const selectedVLs = new Map();
+    const collapsedCGs = new Set(); // category names that are collapsed
+    const collapsedChars = new Set(); // "slug|attire" keys that are collapsed
+
+    // ── Render CGs Tree ──
+    function renderCGs() {
+      const cats = [...new Set(allChapters.map((c) => c.category))];
+      const fragment = document.createDocumentFragment();
+
+      cats.forEach((cat) => {
+        const items = allChapters
+          .filter((ch) => {
+            if (cgCategoryFilter !== "all" && ch.category !== cgCategoryFilter)
+              return false;
+            if (
+              searchQuery &&
+              !ch.displayName.toLowerCase().includes(searchQuery)
+            )
+              return false;
+            return true;
+          })
+          .filter((ch) => ch.category === cat);
+
+        if (items.length === 0) return;
+
+        const branch = document.createElement("div");
+        branch.className = `tree-branch ${collapsedCGs.has(cat) ? "collapsed" : ""}`;
+
+        const catAllChecked = items.every((ch) => selectedCGs.has(ch.name));
+        const header = document.createElement("div");
+        header.className = `tree-cat ${catAllChecked ? "checked" : ""}`;
+        header.innerHTML = `
+          <span class="tree-toggle">▾</span>
+          <span class="tree-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <span class="tree-cat-label">${cat}</span>
+          <span class="tree-cat-count">${items.length}</span>
+        `;
+        header.querySelector(".tree-check").addEventListener("click", (e) => {
+          e.stopPropagation();
+          const shouldCheck = !header.classList.contains("checked");
+          items.forEach((ch) => {
+            if (shouldCheck) selectedCGs.add(ch.name);
+            else selectedCGs.delete(ch.name);
+          });
+          renderCGs();
+        });
+        header.addEventListener("click", (e) => {
+          if (e.target.closest(".tree-check")) return;
+          branch.classList.toggle("collapsed");
+          if (branch.classList.contains("collapsed")) collapsedCGs.add(cat);
+          else collapsedCGs.delete(cat);
+          header.querySelector(".tree-toggle").textContent =
+            branch.classList.contains("collapsed") ? "▸" : "▾";
+        });
+
+        const list = document.createElement("div");
+        list.className = "tree-items";
+        items.forEach((ch) => {
+          const checked = selectedCGs.has(ch.name);
+          const row = document.createElement("label");
+          row.className = `tree-row ${checked ? "checked" : ""}`;
+          row.innerHTML = `
+            <input type="checkbox" ${checked ? "checked" : ""} value="${ch.name}" />
+            <span class="tree-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span class="tree-row-label">${ch.displayName}</span>
+          `;
+          row.addEventListener("click", () => {
+            const cb = row.querySelector("input");
+            cb.checked = !cb.checked;
+            cb.dispatchEvent(new Event("change"));
+          });
+          row.querySelector("input").addEventListener("change", (e) => {
+            if (e.target.checked) {
+              selectedCGs.add(ch.name);
+              row.classList.add("checked");
+            } else {
+              selectedCGs.delete(ch.name);
+              row.classList.remove("checked");
+            }
+            updateUI();
+          });
+          list.appendChild(row);
+        });
+
+        branch.append(header, list);
+        fragment.appendChild(branch);
+      });
+
+      cgsTree.innerHTML = "";
+      cgsTree.appendChild(fragment);
+      updateUI();
+      checkNoResults();
+    }
+
+    // ── Render Voicelines Tree ──
+    function renderVoicelines() {
+      const cats = [...new Set(CHARACTERS.map((c) => c.category))];
+      const fragment = document.createDocumentFragment();
+
+      cats.forEach((cat) => {
+        const chars = CHARACTERS.filter((ch) => {
+          if (vlCategoryFilter !== "all" && ch.category !== vlCategoryFilter)
+            return false;
+          if (
+            searchQuery &&
+            !ch.displayName.toLowerCase().includes(searchQuery) &&
+            !ch.name.toLowerCase().includes(searchQuery)
+          )
+            return false;
+          return true;
+        }).filter((ch) => ch.category === cat);
+
+        if (chars.length === 0) return;
+
+        const catAllChecked = chars.every((ch) =>
+          ch.attires.every((a) =>
+            LANGUAGES.every((l) =>
+              selectedVLs.has(`${ch.slug}|${a.name}|${l}`),
+            ),
+          ),
+        );
+        const branch = document.createElement("div");
+        branch.className = `tree-branch ${collapsedCGs.has(cat) ? "collapsed" : ""}`;
+
+        const header = document.createElement("div");
+        header.className = `tree-cat ${catAllChecked ? "checked" : ""}`;
+        header.innerHTML = `
+          <span class="tree-toggle">▾</span>
+          <span class="tree-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <span class="tree-cat-label">${cat}</span>
+          <span class="tree-cat-count">${chars.length}</span>
+        `;
+        header.querySelector(".tree-check").addEventListener("click", (e) => {
+          e.stopPropagation();
+          const shouldCheck = !header.classList.contains("checked");
+          chars.forEach((ch) => {
+            ch.attires.forEach((a) => {
+              LANGUAGES.forEach((l) => {
+                const key = `${ch.slug}|${a.name}|${l}`;
+                if (shouldCheck)
+                  selectedVLs.set(key, {
+                    slug: ch.slug,
+                    attire: a.name,
+                    language: l,
+                    displayName: ch.displayName,
+                  });
+                else selectedVLs.delete(key);
+              });
+            });
+          });
+          renderVoicelines();
+        });
+        header.addEventListener("click", (e) => {
+          if (e.target.closest(".tree-check")) return;
+          branch.classList.toggle("collapsed");
+          if (branch.classList.contains("collapsed")) collapsedCGs.add(cat);
+          else collapsedCGs.delete(cat);
+          header.querySelector(".tree-toggle").textContent =
+            branch.classList.contains("collapsed") ? "▸" : "▾";
+        });
+
+        const list = document.createElement("div");
+        list.className = "tree-items";
+        chars.forEach((ch) => {
+          const charRow = document.createElement("div");
+          charRow.className = "tree-char";
+
+          const charChecked = ch.attires.every((a) =>
+            LANGUAGES.every((l) =>
+              selectedVLs.has(`${ch.slug}|${a.name}|${l}`),
+            ),
+          );
+
+          const charHeader = document.createElement("div");
+          charHeader.className = `tree-char-header ${charChecked ? "checked" : ""}`;
+          const attireCount = ch.attires.length;
+          const selectedCountForChar = [...selectedVLs.keys()].filter((k) =>
+            k.startsWith(ch.slug + "|"),
+          ).length;
+
+          charHeader.innerHTML = `
+            <span class="tree-toggle">▸</span>
+            <span class="tree-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span class="tree-char-label">${ch.displayName}</span>
+            <span class="tree-char-meta">${attireCount} attire${attireCount !== 1 ? "s" : ""} · 4 languages</span>
+            <span class="tree-char-selected ${selectedCountForChar > 0 ? "has" : ""}">${selectedCountForChar} selected</span>
+          `;
+
+          let expanded = selectedCountForChar > 0 || currentView !== "cgs";
+          if (expanded)
+            charHeader.querySelector(".tree-toggle").textContent = "▾";
+          if (collapsedChars.has(ch.slug)) {
+            charRow.classList.add("collapsed");
+          } else if (!expanded) {
+            charRow.classList.add("collapsed");
+          }
+
+          charHeader
+            .querySelector(".tree-check")
+            .addEventListener("click", (e) => {
+              e.stopPropagation();
+              const shouldCheck = !charHeader.classList.contains("checked");
+              ch.attires.forEach((attire) => {
+                LANGUAGES.forEach((lang) => {
+                  const key = `${ch.slug}|${attire.name}|${lang}`;
+                  if (shouldCheck) {
+                    selectedVLs.set(key, {
+                      slug: ch.slug,
+                      attire: attire.name,
+                      language: lang,
+                      displayName: ch.displayName,
+                    });
+                  } else {
+                    selectedVLs.delete(key);
+                  }
+                });
+              });
+              renderVoicelines();
+            });
+
+          charHeader.addEventListener("click", (e) => {
+            if (
+              e.target.closest(".tree-lang-btn") ||
+              e.target.closest(".tree-check")
+            )
+              return;
+            charRow.classList.toggle("collapsed");
+            if (charRow.classList.contains("collapsed")) collapsedChars.add(ch.slug);
+            else collapsedChars.delete(ch.slug);
+            const toggle = charHeader.querySelector(".tree-toggle");
+            toggle.textContent = charRow.classList.contains("collapsed")
+              ? "▸"
+              : "▾";
+          });
+
+          const attireList = document.createElement("div");
+          attireList.className = "tree-attires";
+
+          ch.attires.forEach((attire) => {
+            const attireKey = `${ch.slug}|${attire.name}`;
+            const attireChecked = LANGUAGES.every((l) =>
+              selectedVLs.has(`${attireKey}|${l}`),
+            );
+
+            const attireRow = document.createElement("div");
+            attireRow.className = `tree-attire ${attireChecked ? "checked" : ""}`;
+
+            const attireLabel = document.createElement("div");
+            attireLabel.className = "tree-attire-label";
+            attireLabel.innerHTML = `
+              <span class="tree-check-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+              <span>${attire.displayName}</span>
+            `;
+
+            attireLabel
+              .querySelector(".tree-check-sm")
+              .addEventListener("click", (e) => {
+                e.stopPropagation();
+                const shouldCheck = !attireRow.classList.contains("checked");
+                LANGUAGES.forEach((lang) => {
+                  const key = `${attireKey}|${lang}`;
+                  if (shouldCheck) {
+                    selectedVLs.set(key, {
+                      slug: ch.slug,
+                      attire: attire.name,
+                      language: lang,
+                      displayName: ch.displayName,
+                    });
+                  } else {
+                    selectedVLs.delete(key);
+                  }
+                });
+                renderVoicelines();
+              });
+
+            const langGroup = document.createElement("div");
+            langGroup.className = "tree-langs";
+
+            LANGUAGES.forEach((lang) => {
+              const key = `${attireKey}|${lang}`;
+              const active = selectedVLs.has(key);
+              const btn = document.createElement("button");
+              btn.className = `tree-lang-btn ${active ? "active" : ""}`;
+              btn.textContent = lang[0].toUpperCase() + lang.slice(1, 3);
+              btn.addEventListener("click", () => {
+                if (selectedVLs.has(key)) {
+                  selectedVLs.delete(key);
+                } else {
+                  selectedVLs.set(key, {
+                    slug: ch.slug,
+                    attire: attire.name,
+                    language: lang,
+                    displayName: ch.displayName,
+                  });
+                }
+                renderVoicelines();
+              });
+              langGroup.appendChild(btn);
+            });
+
+            attireRow.append(attireLabel, langGroup);
+            attireList.appendChild(attireRow);
+          });
+
+          charRow.append(charHeader, attireList);
+          list.appendChild(charRow);
+        });
+
+        branch.append(header, list);
+        fragment.appendChild(branch);
+      });
+
+      vlTree.innerHTML = "";
+      vlTree.appendChild(fragment);
+      updateUI();
+      checkNoResults();
+    }
+
+    function updateCharSelectedCount(slug, headerEl) {
+      const count = [...selectedVLs.keys()].filter((k) =>
+        k.startsWith(slug + "|"),
+      ).length;
+      const span = headerEl.querySelector(".tree-char-selected");
+      if (span) {
+        span.textContent = `${count} selected`;
+        span.classList.toggle("has", count > 0);
+      }
+    }
+
+    // ── Category chips ──
+    function buildChips() {
+      const cgCats = [...new Set(allChapters.map((c) => c.category))];
+      cgCats.forEach((cat) => {
+        const btn = document.createElement("button");
+        btn.className = "chip";
+        btn.dataset.cgCat = cat;
+        btn.textContent = cat;
+        cgCategoryChips.appendChild(btn);
+      });
+      cgCategoryChips.addEventListener("click", (e) => {
+        const btn = e.target.closest(".chip");
+        if (!btn || !btn.dataset.cgCat) return;
+        cgCategoryChips
+          .querySelectorAll(".chip")
+          .forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        cgCategoryFilter = btn.dataset.cgCat;
+        renderCGs();
+      });
+
+      const vlCats = [...new Set(CHARACTERS.map((c) => c.category))];
+      vlCats.forEach((cat) => {
+        const btn = document.createElement("button");
+        btn.className = "chip";
+        btn.dataset.vlCat = cat;
+        btn.textContent = cat;
+        vlCategoryChips.appendChild(btn);
+      });
+      vlCategoryChips.addEventListener("click", (e) => {
+        const btn = e.target.closest(".chip");
+        if (!btn || !btn.dataset.vlCat) return;
+        vlCategoryChips
+          .querySelectorAll(".chip")
+          .forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        vlCategoryFilter = btn.dataset.vlCat;
+        renderVoicelines();
+      });
+    }
+
+    // ── UI ──
+    function updateUI() {
+      const total = selectedCGs.size + selectedVLs.size;
+      selectedCount.textContent = `${total} selected`;
+      downloadBtn.disabled = total === 0;
+    }
+
+    function checkNoResults() {
+      const cgItems = cgsTree.querySelectorAll(".tree-row").length;
+      const vlItems = vlTree.querySelectorAll(".tree-char").length;
+      const visible = searchQuery && cgItems === 0 && vlItems === 0;
+      noResults.style.display = visible ? "block" : "none";
+    }
+
+    // ── View tabs ──
+    viewTabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        viewTabs.forEach((t) => t.classList.remove("active"));
+        tab.classList.add("active");
+        currentView = tab.dataset.view;
+        $("cgsSection").style.display =
+          currentView === "voicelines" ? "none" : "";
+        $("voicelinesSection").style.display =
+          currentView === "cgs" ? "none" : "";
+      });
+    });
+
+    // ── Search ──
+    searchInput.addEventListener("input", () => {
+      searchQuery = searchInput.value.toLowerCase().trim();
+      renderCGs();
+      renderVoicelines();
+    });
+    document.addEventListener("keydown", (e) => {
+      if (
+        e.key === "/" &&
+        document.activeElement !== searchInput &&
+        !e.target.closest("input,textarea")
+      ) {
+        e.preventDefault();
+        searchInput?.focus();
+      }
+    });
+
+    // ── Select All / Deselect ──
+    selectAllCGs.addEventListener("click", () => {
+      allChapters.forEach((ch) => selectedCGs.add(ch.name));
+      renderCGs();
+    });
+    selectAllVLs.addEventListener("click", () => {
+      CHARACTERS.forEach((ch) => {
+        ch.attires.forEach((attire) => {
+          LANGUAGES.forEach((lang) => {
+            const key = `${ch.slug}|${attire.name}|${lang}`;
+            selectedVLs.set(key, {
+              slug: ch.slug,
+              attire: attire.name,
+              language: lang,
+              displayName: ch.displayName,
+            });
+          });
+        });
+      });
+      renderVoicelines();
+    });
+    langAllBtns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const lang = btn.dataset.lang;
+        CHARACTERS.forEach((ch) => {
+          ch.attires.forEach((attire) => {
+            const key = `${ch.slug}|${attire.name}|${lang}`;
+            selectedVLs.set(key, { slug: ch.slug, attire: attire.name, language: lang, displayName: ch.displayName });
+          });
+        });
+        renderVoicelines();
+      });
+    });
+
+    deselectAll.addEventListener("click", () => {
+      selectedCGs.clear();
+      selectedVLs.clear();
+      renderCGs();
+      renderVoicelines();
+    });
+
+    // ── Download ──
+    downloadBtn.addEventListener("click", async () => {
+      const voicelines = [...selectedVLs.values()];
+      const cgs = [...selectedCGs];
+      if (voicelines.length === 0 && cgs.length === 0) return;
+
+      downloadBtn.disabled = true;
+      downloadBtn.querySelector("span").textContent = "Preparing...";
+
+      try {
+        const res = await fetch(`${SERVER}/bundle/prepare`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ voicelines, cgs }),
+        });
+        const { token } = await res.json();
+        window.location.href = `${SERVER}/download/bundle/${token}`;
+      } catch (err) {
+        alert(`Failed to prepare download: ${err.message}`);
+      } finally {
+        downloadBtn.disabled = false;
+        downloadBtn.querySelector("span").textContent = "Download Selected";
+        updateUI();
+      }
+    });
+
+    // ── Init ──
+    buildChips();
+    renderCGs();
+    renderVoicelines();
+    updateUI();
+  </script>
+
+  <style is:global>
+    /* ── Action Bar ── */
+    .action-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(10, 10, 10, 0.94);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      padding: 0 1.5rem;
+    }
+    .action-bar-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.55rem 0;
+      flex-wrap: wrap;
+    }
+    .view-tabs {
+      display: flex;
+      gap: 0.25rem;
+      background: rgba(255, 255, 255, 0.04);
+      border-radius: 6px;
+      padding: 2px;
+    }
+    .view-tab {
+      padding: 0.3rem 0.85rem;
+      border: none;
+      background: transparent;
+      color: rgba(255, 255, 255, 0.35);
+      font-family: "Lato", sans-serif;
+      font-size: 0.78rem;
+      font-weight: 600;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .view-tab:hover {
+      color: rgba(255, 255, 255, 0.6);
+    }
+    .view-tab.active {
+      background: #9c1111;
+      color: #fff;
+    }
+    .selection-info {
+      color: rgba(255, 255, 255, 0.3);
+      font-size: 0.75rem;
+      font-weight: 500;
+      margin-right: auto;
+    }
+    .header-select-all {
+      display: flex;
+      gap: 0.3rem;
+      flex-wrap: wrap;
+    }
+    .header-select-btn {
+      padding: 0.25rem 0.55rem;
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.03);
+      color: rgba(255, 255, 255, 0.3);
+      font-family: "Lato", sans-serif;
+      font-size: 0.68rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .header-select-btn:hover {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: rgba(255, 255, 255, 0.12);
+      color: rgba(255, 255, 255, 0.5);
+    }
+    .header-select-btn.deselect:hover {
+      border-color: rgba(156, 17, 17, 0.4);
+      color: #e04040;
+      background: rgba(156, 17, 17, 0.08);
+    }
+    .header-select-divider {
+      width: 1px; height: 20px; background: rgba(255,255,255,0.08); flex-shrink: 0;
+    }
+    .vl-lang-all { display: flex; gap: 0.25rem; margin-left: auto; }
+    .vl-lang-all .chip { font-size: 0.68rem; }
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.45rem 1rem;
+      border: none;
+      border-radius: 6px;
+      background: #9c1111;
+      color: #fff;
+      font-family: "Lato", sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .download-btn:hover:not(:disabled) {
+      background: #ba1515;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba(156, 17, 17, 0.35);
+    }
+    .download-btn:disabled {
+      opacity: 0.25;
+      cursor: not-allowed;
+    }
+    .download-spinner {
+      display: none;
+      width: 13px;
+      height: 13px;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      border-top-color: #fff;
+      border-radius: 50%;
+      animation: spin 0.6s linear infinite;
+    }
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* ── Content ── */
+    .download-content {
+      max-width: 1100px;
+      margin: 1rem auto;
+      padding: 0 1.5rem 4rem;
+    }
+    .dl-section {
+      margin-bottom: 2.5rem;
+    }
+    .dl-section-header {
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      flex-wrap: wrap;
+    }
+    .dl-section-header h2 {
+      margin: 0;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.8);
+      letter-spacing: -0.2px;
+    }
+    .section-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem;
+    }
+    .chip {
+      padding: 0.2rem 0.65rem;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 4px;
+      background: transparent;
+      color: rgba(255, 255, 255, 0.3);
+      font-family: "Lato", sans-serif;
+      font-size: 0.7rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.12s ease;
+    }
+    .chip:hover {
+      border-color: rgba(255, 255, 255, 0.12);
+      color: rgba(255, 255, 255, 0.5);
+    }
+    .chip.active {
+      background: rgba(156, 17, 17, 0.18);
+      border-color: rgba(156, 17, 17, 0.35);
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    /* ── Tree ── */
+    .tree {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .tree-branch {
+      position: relative;
+    }
+
+    /* Category node */
+    .tree-cat {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.4rem 0.6rem;
+      cursor: pointer;
+      user-select: none;
+      border-radius: 4px;
+      transition: background 0.12s ease;
+      position: relative;
+    }
+    .tree-cat:hover {
+      background: rgba(255, 255, 255, 0.03);
+    }
+    .tree-toggle {
+      font-size: 0.6rem;
+      color: rgba(255, 255, 255, 0.4);
+      width: 14px;
+      text-align: center;
+      flex-shrink: 0;
+      transition: transform 0.15s ease;
+    }
+    .tree-branch.collapsed .tree-toggle {
+      transform: rotate(-90deg);
+    }
+    .tree-cat-label {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.85);
+      letter-spacing: 0.2px;
+    }
+    .tree-cat .tree-check {
+      margin: 0;
+    }
+    .tree-cat-count {
+      margin-left: auto;
+      font-size: 0.7rem;
+      color: rgba(255, 255, 255, 0.35);
+      font-weight: 500;
+    }
+
+    /* Items container — bordered guide line on the left */
+    .tree-items {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
+      padding-left: 18px;
+      border-left: 1px solid rgba(255, 255, 255, 0.06);
+      margin-top: 2px;
+      gap: 1px;
+    }
+    .tree-branch.collapsed > .tree-items {
+      display: none;
+    }
+
+    /* CG leaf rows */
+    .tree-row {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.3rem 0.5rem;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: all 0.12s ease;
+      position: relative;
+    }
+    .tree-row::before {
+      content: "";
+      position: absolute;
+      left: -19px;
+      top: 50%;
+      width: 16px;
+      height: 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      pointer-events: none;
+    }
+    .tree-row:first-child::after {
+      content: "";
+      position: absolute;
+      left: -19px;
+      top: 0;
+      bottom: 50%;
+      width: 1px;
+      background: rgba(255, 255, 255, 0.06);
+      pointer-events: none;
+    }
+    .tree-row:last-child::after {
+      content: "";
+      position: absolute;
+      left: -19px;
+      top: 50%;
+      bottom: 0;
+      width: 1px;
+      background: rgba(255, 255, 255, 0.06);
+      pointer-events: none;
+    }
+    .tree-row:only-child::after {
+      display: none;
+    }
+    .tree-row:last-child:first-child::before {
+      background: transparent;
+    }
+
+    .tree-row:hover {
+      background: rgba(255, 255, 255, 0.03);
+    }
+    .tree-row.checked {
+      background: rgba(156, 17, 17, 0.07);
+    }
+    .tree-row input {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+    .tree-row::selection {
+      background: transparent;
+    }
+    .tree-check {
+      width: 16px;
+      height: 16px;
+      border: 1.5px solid rgba(255, 255, 255, 0.15);
+      border-radius: 3px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.15s ease;
+      position: relative;
+    }
+    .tree-check svg {
+      width: 10px;
+      height: 10px;
+      opacity: 0;
+      transition: opacity 0.12s ease;
+    }
+    .checked .tree-check {
+      border-color: #9c1111;
+      background: #9c1111;
+    }
+    .checked .tree-check svg {
+      opacity: 1;
+    }
+    .tree-row-label {
+      font-size: 0.82rem;
+      color: rgba(255, 255, 255, 0.75);
+      font-weight: 500;
+    }
+    .tree-row.checked .tree-row-label {
+      color: #fff;
+    }
+
+    /* ── VL tree ── */
+    .tree-char {
+      position: relative;
+    }
+    .tree-char.collapsed > .tree-attires {
+      display: none;
+    }
+
+    .tree-char-header {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.35rem 0.5rem;
+      border-radius: 3px;
+      cursor: pointer;
+      user-select: none;
+      transition: background 0.12s ease;
+      position: relative;
+      padding-left: 20px;
+    }
+    .tree-char-header::before {
+      content: "";
+      position: absolute;
+      left: -19px;
+      top: 50%;
+      width: 16px;
+      height: 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      pointer-events: none;
+    }
+    .tree-char:first-child .tree-char-header::after {
+      content: "";
+      position: absolute;
+      left: -19px;
+      top: 0;
+      bottom: 50%;
+      width: 1px;
+      background: rgba(255, 255, 255, 0.06);
+      pointer-events: none;
+    }
+    .tree-char:last-child .tree-char-header::after {
+      content: "";
+      position: absolute;
+      left: -19px;
+      top: 50%;
+      bottom: 0;
+      width: 1px;
+      background: rgba(255, 255, 255, 0.06);
+      pointer-events: none;
+    }
+    .tree-char:only-child .tree-char-header::after {
+      display: none;
+    }
+    .tree-char-header:hover {
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .tree-char-header .tree-toggle {
+      position: absolute;
+      left: 2px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .tree-char.collapsed > .tree-char-header .tree-toggle {
+      transform: translateY(-50%) rotate(-90deg);
+    }
+
+    .tree-char-label {
+      font-size: 0.84rem;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    .tree-char-meta {
+      font-size: 0.68rem;
+      color: rgba(255, 255, 255, 0.35);
+      font-weight: 400;
+    }
+    .tree-char-selected {
+      margin-left: auto;
+      font-size: 0.66rem;
+      color: rgba(255, 255, 255, 0.25);
+      font-weight: 500;
+      transition: color 0.15s ease;
+    }
+    .tree-char-selected.has {
+      color: #9c1111;
+    }
+
+    /* Attire level */
+    .tree-attires {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
+      padding-left: 30px;
+      border-left: 1px solid rgba(255, 255, 255, 0.06);
+      gap: 1px;
+    }
+    .tree-attire {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.2rem 0.5rem;
+      border-radius: 3px;
+      position: relative;
+    }
+    .tree-attire::before {
+      content: "";
+      position: absolute;
+      left: -31px;
+      top: 50%;
+      width: 28px;
+      height: 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      pointer-events: none;
+    }
+    .tree-attire:first-child::after {
+      content: "";
+      position: absolute;
+      left: -31px;
+      top: 0;
+      bottom: 50%;
+      width: 1px;
+      background: rgba(255, 255, 255, 0.06);
+      pointer-events: none;
+    }
+    .tree-attire:last-child::after {
+      content: "";
+      position: absolute;
+      left: -31px;
+      top: 50%;
+      bottom: 0;
+      width: 1px;
+      background: rgba(255, 255, 255, 0.06);
+      pointer-events: none;
+    }
+    .tree-attire:only-child::after {
+      display: none;
+    }
+    .tree-attire:only-child::before {
+      left: -22px;
+      width: 19px;
+    }
+
+    .tree-attire-label {
+      font-size: 0.75rem;
+      color: rgba(255, 255, 255, 0.5);
+      min-width: 90px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      cursor: pointer;
+    }
+    .tree-attire.checked .tree-attire-label {
+      color: rgba(255, 255, 255, 0.8);
+    }
+    .tree-check-sm {
+      width: 14px;
+      height: 14px;
+      border: 1.5px solid rgba(255, 255, 255, 0.12);
+      border-radius: 3px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.12s ease;
+    }
+    .tree-check-sm svg {
+      width: 8px;
+      height: 8px;
+      opacity: 0;
+      transition: opacity 0.1s ease;
+    }
+    .tree-attire.checked .tree-check-sm {
+      border-color: #9c1111;
+      background: #9c1111;
+    }
+    .tree-attire.checked .tree-check-sm svg {
+      opacity: 1;
+    }
+
+    .tree-char-header .tree-check {
+      margin: 0;
+    }
+    .tree-langs {
+      display: flex;
+      gap: 0.2rem;
+    }
+
+    .tree-lang-btn {
+      padding: 0.18rem 0.5rem;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 3px;
+      background: rgba(255, 255, 255, 0.03);
+      color: rgba(255, 255, 255, 0.4);
+      font-family: "Lato", sans-serif;
+      font-size: 0.65rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.12s ease;
+      line-height: 1.4;
+    }
+    .tree-lang-btn:hover {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: rgba(255, 255, 255, 0.18);
+      color: rgba(255, 255, 255, 0.7);
+    }
+    .tree-lang-btn.active {
+      background: rgba(156, 17, 17, 0.22);
+      border-color: #9c1111;
+      color: #fff;
+    }
+
+    .download-warning {
+      max-width: 1100px; margin: 0.75rem auto; padding: 0.6rem 1rem;
+      display: flex; align-items: center; gap: 0.5rem;
+      border: 1px solid rgba(156,17,17,0.35); border-radius: 6px;
+      background: rgba(156,17,17,0.06);
+      width: calc(100% - 3rem);
+    }
+    .download-warning svg {
+      flex-shrink: 0; color: #9c1111; opacity: 0.85;
+    }
+    .download-warning span {
+      color: rgba(255,255,255,0.5); font-size: 0.78rem; line-height: 1.4;
+    }
+
+    .no-results {
+      display: none;
+      text-align: center;
+      padding: 3rem;
+      color: rgba(255, 255, 255, 0.3);
+      font-size: 0.9rem;
+      font-style: italic;
+    }
+
+    @media (max-width: 768px) {
+      .action-bar {
+        padding: 0 1rem;
+      }
+      .action-bar-inner {
+        gap: 0.4rem;
+      }
+      .download-content {
+        padding: 0 1rem 3rem;
+      }
+      .header-select-all {
+        order: 10;
+        width: 100%;
+      }
+      .tree-items {
+        padding-left: 10px;
+        margin-left: 5px;
+      }
+      .tree-attires {
+        padding-left: 20px;
+      }
+      .tree-row::before {
+        left: -11px;
+        width: 8px;
+      }
+      .tree-row:first-child::after,
+      .tree-row:last-child::after {
+        left: -11px;
+      }
+      .tree-char-header {
+        padding-left: 16px;
+      }
+      .tree-char-header::before {
+        left: -11px;
+        width: 8px;
+      }
+      .tree-char:first-child .tree-char-header::after,
+      .tree-char:last-child .tree-char-header::after {
+        left: -11px;
+      }
+      .tree-attire::before {
+        left: -21px;
+        width: 18px;
+      }
+      .tree-attire:first-child::after,
+      .tree-attire:last-child::after {
+        left: -21px;
+      }
+      .tree-attire-label {
+        min-width: 60px;
+        font-size: 0.65rem;
+      }
+    }
+    @media (max-width: 480px) {
+      .view-tab {
+        padding: 0.25rem 0.6rem;
+        font-size: 0.7rem;
+      }
+      .download-btn {
+        padding: 0.35rem 0.65rem;
+        font-size: 0.72rem;
+      }
+    }
+  </style>
+</Layout>
