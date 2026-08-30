@@ -42,10 +42,16 @@ const languages = ["english", "japanese", "chinese", "korean"];
       </div>
       <span class="selection-info" id="selectedCount">0 selected</span>
       <div class="header-select-all">
-        <button class="header-select-btn" id="selectAllCGs">Select All CGs</button>
-        <button class="header-select-btn" id="selectAllVLs">Select All Voicelines</button>
+        <button class="header-select-btn" id="selectAllCGs"
+          >Select All CGs</button
+        >
+        <button class="header-select-btn" id="selectAllVLs"
+          >Select All Voicelines</button
+        >
         <span class="header-select-divider"></span>
-        <button class="header-select-btn deselect" id="deselectAll">Deselect All</button>
+        <button class="header-select-btn deselect" id="deselectAll"
+          >Deselect All</button
+        >
       </div>
       <button class="download-btn" id="downloadBtn" disabled>
         <svg
@@ -71,8 +77,46 @@ const languages = ["english", "japanese", "chinese", "korean"];
   </div>
 
   <div class="download-warning">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-    <span>Generating large downloads may take a while or fail. Consider downloading in smaller batches.</span>
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      ><path
+        d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
+      ></path><line x1="12" y1="9" x2="12" y2="13"></line><line
+        x1="12"
+        y1="17"
+        x2="12.01"
+        y2="17"></line></svg
+    >
+    <span
+      >Generating large downloads may take a while or fail. Consider downloading
+      in smaller batches.</span
+    >
+  </div>
+
+  <div class="server-status-bar" id="serverStatusBar" style="display:none">
+    <svg
+      width="14"
+      height="14"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      ><circle cx="12" cy="12" r="10"></circle><line
+        x1="12"
+        y1="8"
+        x2="12"
+        y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg
+    >
+    <span id="serverStatusText"></span>
   </div>
 
   <!-- Content -->
@@ -113,15 +157,174 @@ const languages = ["english", "japanese", "chinese", "korean"];
   <!-- No Results -->
   <div class="no-results" id="noResults">Nothing matches your filter</div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
   <script
     define:vars={{
       CHARACTERS: charactersData.characters,
       CHAPTERS: chaptersData,
       LANGUAGES: languages,
+      ASSET_CGS_URL,
+      ASSET_AUDIO_URLS: {
+        english: "https://raw.githubusercontent.com/NowhereArchive/NowhereAudio-English/main/audio",
+        japanese: "https://raw.githubusercontent.com/NowhereArchive/NowhereAudio-Japanese/main/audio",
+        chinese: "https://raw.githubusercontent.com/NowhereArchive/NowhereAudio-Chinese/main/audio",
+        korean: "https://raw.githubusercontent.com/NowhereArchive/NowhereAudio-Korean/main/audio",
+      },
+      ASSET_CHARACTERS_URL: `${REPO}/CharactersJson`,
     }}
   >
     const SERVER = "https://server-cu86.onrender.com";
     const CHAPTERS_DATA = CHAPTERS;
+    const ASSET_CGS_ROOT = ASSET_CGS_URL;
+    const ASSET_CHARACTERS_ROOT = ASSET_CHARACTERS_URL;
+    const ASSET_AUDIO_ROOTS = ASSET_AUDIO_URLS;
+    let serverAvailable = false;
+
+    function sanitizeName(name = "") {
+      return name.toLowerCase().replace(/\s+/g, "_");
+    }
+
+    function sanitizeNameForGitHub(name = "") {
+      return name.toLowerCase().replace(/\./g, "").replace(/\s+/g, "_");
+    }
+
+    function trimFilePrefix(filename = "") {
+      return filename.startsWith("File:") ? filename.slice(5) : filename;
+    }
+
+    function showServerStatus(message, kind = "warn") {
+      const bar = $("serverStatusBar");
+      const text = $("serverStatusText");
+      if (!bar || !text) return;
+      bar.style.display = "flex";
+      bar.className = `server-status-bar ${kind}`;
+      text.textContent = message;
+    }
+
+    async function checkServerAvailability() {
+      try {
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), 4000);
+        const res = await fetch(`${SERVER}/`, {
+          method: "GET",
+          cache: "no-store",
+          signal: controller.signal,
+        });
+        clearTimeout(timeout);
+
+        if (res.ok) {
+          serverAvailable = true;
+          showServerStatus("Download server is online.", "ok");
+          return true;
+        }
+
+        serverAvailable = false;
+        showServerStatus(
+          "Download server is unavailable. Using the browser ZIP fallback.",
+          "warn",
+        );
+        return false;
+      } catch (err) {
+        serverAvailable = false;
+        showServerStatus(
+          "Download server is unavailable. Using the browser ZIP fallback.",
+          "warn",
+        );
+        return false;
+      }
+    }
+
+    async function buildClientSideZip(voicelines, cgs) {
+      const zip = new JSZip();
+      const cgEntries = [...new Set(cgs)];
+      const vlEntries = Array.from(
+        new Map(
+          voicelines.map((item) => [
+            `${item.slug}|${item.attire}|${item.language}`,
+            item,
+          ]),
+        ).values(),
+      );
+
+      for (const chapterName of cgEntries) {
+        try {
+          const chapterRes = await fetch(`${ASSET_CGS_ROOT}/chapters/${chapterName}.json`);
+          if (!chapterRes.ok) continue;
+          const chapterImages = await chapterRes.json();
+          for (const image of chapterImages || []) {
+            const imageUrl = image.fileName || image.url;
+            if (!imageUrl) continue;
+            try {
+              const imageRes = await fetch(imageUrl);
+              if (!imageRes.ok) continue;
+              const blob = await imageRes.blob();
+              const fileName = imageUrl.split("/").pop() || `${chapterName}.png`;
+              zip.file(`${chapterName}/${fileName}`, blob);
+            } catch (_) {
+            }
+          }
+        } catch (_) {
+        }
+      }
+
+      for (const item of vlEntries) {
+        try {
+          const voiceJsonUrl = `${ASSET_CHARACTERS_ROOT}/${item.slug}_${item.language}.json`;
+          const voiceRes = await fetch(voiceJsonUrl);
+          if (!voiceRes.ok) continue;
+          const voiceData = await voiceRes.json();
+          const entries = voiceData[item.attire] || [];
+          const folderName = sanitizeNameForGitHub(item.displayName || item.slug);
+          const audioBaseUrl = ASSET_AUDIO_ROOTS[item.language] || ASSET_AUDIO_ROOTS.english;
+
+          for (const entry of entries) {
+            const rawFilename = trimFilePrefix(entry.filename || "");
+            if (!rawFilename) continue;
+            const audioUrl = `${audioBaseUrl}/${folderName}/${item.language}/${item.attire}/${sanitizeName(rawFilename)}`;
+            try {
+              const audioRes = await fetch(audioUrl);
+              if (!audioRes.ok) continue;
+              const blob = await audioRes.blob();
+              const safeName = rawFilename.split("/").pop() || `${item.slug}_${item.language}.audio`;
+              zip.file(`voicelines/${folderName}/${item.language}/${item.attire}/${safeName}`, blob);
+            } catch (_) {
+              // Skip missing voice files without aborting the bundle.
+            }
+          }
+        } catch (_) {
+          // Skip missing voice JSON without aborting the bundle.
+        }
+      }
+
+      const zipBlob = await zip.generateAsync({ type: "blob" });
+      const blobUrl = URL.createObjectURL(zipBlob);
+      const a = document.createElement("a");
+      a.href = blobUrl;
+      a.download = "nowhere-download-bundle.zip";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(blobUrl);
+    }
+
+    async function runDownloadFlow(voicelines, cgs) {
+      if (serverAvailable) {
+        try {
+          const res = await fetch(`${SERVER}/bundle/prepare`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ voicelines, cgs }),
+          });
+          const { token } = await res.json();
+          window.location.href = `${SERVER}/download/bundle/${token}`;
+          return;
+        } catch (err) {
+          console.warn("Server bundle endpoint failed, using fallback.", err);
+        }
+      }
+
+      await buildClientSideZip(voicelines, cgs);
+    }
 
     const allChapters = Object.entries(CHAPTERS_DATA).flatMap(([cat, list]) =>
       list.map((ch) => ({ ...ch, category: cat })),
@@ -142,7 +345,9 @@ const languages = ["english", "japanese", "chinese", "korean"];
     const selectAllCGs = $("selectAllCGs");
     const selectAllVLs = $("selectAllVLs");
     const deselectAll = $("deselectAll");
-    const langAllBtns = document.querySelectorAll(".vl-lang-all .chip[data-lang]");
+    const langAllBtns = document.querySelectorAll(
+      ".vl-lang-all .chip[data-lang]",
+    );
 
     let currentView = "all";
     let searchQuery = "";
@@ -377,7 +582,8 @@ const languages = ["english", "japanese", "chinese", "korean"];
             )
               return;
             charRow.classList.toggle("collapsed");
-            if (charRow.classList.contains("collapsed")) collapsedChars.add(ch.slug);
+            if (charRow.classList.contains("collapsed"))
+              collapsedChars.add(ch.slug);
             else collapsedChars.delete(ch.slug);
             const toggle = charHeader.querySelector(".tree-toggle");
             toggle.textContent = charRow.classList.contains("collapsed")
@@ -591,7 +797,12 @@ const languages = ["english", "japanese", "chinese", "korean"];
         CHARACTERS.forEach((ch) => {
           ch.attires.forEach((attire) => {
             const key = `${ch.slug}|${attire.name}|${lang}`;
-            selectedVLs.set(key, { slug: ch.slug, attire: attire.name, language: lang, displayName: ch.displayName });
+            selectedVLs.set(key, {
+              slug: ch.slug,
+              attire: attire.name,
+              language: lang,
+              displayName: ch.displayName,
+            });
           });
         });
         renderVoicelines();
@@ -615,15 +826,9 @@ const languages = ["english", "japanese", "chinese", "korean"];
       downloadBtn.querySelector("span").textContent = "Preparing...";
 
       try {
-        const res = await fetch(`${SERVER}/bundle/prepare`, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ voicelines, cgs }),
-        });
-        const { token } = await res.json();
-        window.location.href = `${SERVER}/download/bundle/${token}`;
+        await runDownloadFlow(voicelines, cgs);
       } catch (err) {
-        alert(`Failed to prepare download: ${err.message}`);
+        alert(`Failed to prepare download: ${err?.message || err}`);
       } finally {
         downloadBtn.disabled = false;
         downloadBtn.querySelector("span").textContent = "Download Selected";
@@ -636,6 +841,7 @@ const languages = ["english", "japanese", "chinese", "korean"];
     renderCGs();
     renderVoicelines();
     updateUI();
+    checkServerAvailability();
   </script>
 
   <style is:global>
@@ -718,10 +924,19 @@ const languages = ["english", "japanese", "chinese", "korean"];
       background: rgba(156, 17, 17, 0.08);
     }
     .header-select-divider {
-      width: 1px; height: 20px; background: rgba(255,255,255,0.08); flex-shrink: 0;
+      width: 1px;
+      height: 20px;
+      background: rgba(255, 255, 255, 0.08);
+      flex-shrink: 0;
     }
-    .vl-lang-all { display: flex; gap: 0.25rem; margin-left: auto; }
-    .vl-lang-all .chip { font-size: 0.68rem; }
+    .vl-lang-all {
+      display: flex;
+      gap: 0.25rem;
+      margin-left: auto;
+    }
+    .vl-lang-all .chip {
+      font-size: 0.68rem;
+    }
     .download-btn {
       display: inline-flex;
       align-items: center;
@@ -1189,17 +1404,26 @@ const languages = ["english", "japanese", "chinese", "korean"];
     }
 
     .download-warning {
-      max-width: 1100px; margin: 0.75rem auto; padding: 0.6rem 1rem;
-      display: flex; align-items: center; gap: 0.5rem;
-      border: 1px solid rgba(156,17,17,0.35); border-radius: 6px;
-      background: rgba(156,17,17,0.06);
+      max-width: 1100px;
+      margin: 0.75rem auto;
+      padding: 0.6rem 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      border: 1px solid rgba(156, 17, 17, 0.35);
+      border-radius: 6px;
+      background: rgba(156, 17, 17, 0.06);
       width: calc(100% - 3rem);
     }
     .download-warning svg {
-      flex-shrink: 0; color: #9c1111; opacity: 0.85;
+      flex-shrink: 0;
+      color: #9c1111;
+      opacity: 0.85;
     }
     .download-warning span {
-      color: rgba(255,255,255,0.5); font-size: 0.78rem; line-height: 1.4;
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 0.78rem;
+      line-height: 1.4;
     }
 
     .no-results {
@@ -1273,6 +1497,94 @@ const languages = ["english", "japanese", "chinese", "korean"];
         padding: 0.35rem 0.65rem;
         font-size: 0.72rem;
       }
+    }
+
+    .server-status-bar {
+      max-width: 1100px;
+      margin: 0 auto 0.5rem;
+      padding: 0.5rem 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      border-radius: 6px;
+      width: calc(100% - 3rem);
+      font-size: 0.76rem;
+      line-height: 1.4;
+    }
+    .server-status-bar.ok {
+      border: 1px solid rgba(34, 197, 94, 0.3);
+      background: rgba(34, 197, 94, 0.06);
+      color: rgba(255, 255, 255, 0.5);
+    }
+    .server-status-bar.ok svg {
+      color: #22c55e;
+    }
+    .server-status-bar.warn {
+      border: 1px solid rgba(234, 179, 8, 0.3);
+      background: rgba(234, 179, 8, 0.06);
+      color: rgba(255, 255, 255, 0.5);
+    }
+    .server-status-bar.warn svg {
+      color: #eab308;
+    }
+
+    /* Progress overlay */
+    .dl-progress-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 200;
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(6px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .dl-progress-box {
+      background: #111;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      padding: 2rem 2.5rem;
+      min-width: 320px;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .dl-progress-title {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.85);
+    }
+    .dl-progress-bar-track {
+      height: 4px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    .dl-progress-bar-fill {
+      height: 100%;
+      background: #9c1111;
+      border-radius: 2px;
+      transition: width 0.2s ease;
+      width: 0%;
+    }
+    .dl-progress-label {
+      font-size: 0.72rem;
+      color: rgba(255, 255, 255, 0.35);
+    }
+    .dl-progress-cancel {
+      align-self: flex-end;
+      padding: 0.3rem 0.8rem;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 4px;
+      background: transparent;
+      color: rgba(255, 255, 255, 0.35);
+      font-size: 0.72rem;
+      cursor: pointer;
+      font-family: "Lato", sans-serif;
+    }
+    .dl-progress-cancel:hover {
+      color: #e04040;
+      border-color: rgba(156, 17, 17, 0.4);
     }
   </style>
 </Layout>
