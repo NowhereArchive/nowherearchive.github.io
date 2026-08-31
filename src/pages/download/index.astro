@@ -77,27 +77,59 @@ const languages = ["english", "japanese", "chinese", "korean"];
   </div>
 
   <div class="download-warning">
-    <svg
-      width="16"
-      height="16"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      ><path
-        d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
-      ></path><line x1="12" y1="9" x2="12" y2="13"></line><line
-        x1="12"
-        y1="17"
-        x2="12.01"
-        y2="17"></line></svg
+    <div class="download-warning-inner">
+      <svg
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        ><path
+          d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
+        ></path><line x1="12" y1="9" x2="12" y2="13"></line><line
+          x1="12"
+          y1="17"
+          x2="12.01"
+          y2="17"></line></svg
+      >
+      <span
+        >Generating large downloads may take a while or fail. Consider downloading
+        in smaller batches.</span
+      >
+    </div>
+    <button
+      id="downloadHelpBtn"
+      class="download-help-btn"
+      type="button"
+      title="Explain client-side downloads"
+      >?</button
     >
-    <span
-      >Generating large downloads may take a while or fail. Consider downloading
-      in smaller batches.</span
-    >
+  </div>
+
+  <div id="downloadHelpModal" class="download-help-overlay" style="display:none">
+    <div class="download-help-content">
+      <div class="download-help-header">
+        <div class="download-help-title">Client-side download</div>
+        <button id="downloadHelpClose" class="download-help-close" type="button">
+          ✕
+        </button>
+      </div>
+      <div class="download-help-body">
+        <p>
+          When the download server is offline, this page builds the ZIP directly in
+          your browser instead of using the remote server.
+        </p>
+        <ul>
+          <li>The page must stay open while the ZIP is being created.</li>
+          <li>If you refresh, close the tab, or leave the page, the download can stop.</li>
+          <li>Large downloads can take longer and may fail, so smaller batches are more reliable.</li>
+          <li>Once the ZIP is finished, the browser will start the file download automatically.</li>
+        </ul>
+      </div>
+    </div>
   </div>
 
   <div class="server-status-bar" id="serverStatusBar" style="display:none">
@@ -119,9 +151,7 @@ const languages = ["english", "japanese", "chinese", "korean"];
     <span id="serverStatusText"></span>
   </div>
 
-  <!-- Content -->
   <div class="download-content" id="downloadContent">
-    <!-- CGs Tree -->
     <section class="dl-section" id="cgsSection" data-section="cgs">
       <div class="dl-section-header">
         <h2>CGs</h2>
@@ -132,7 +162,6 @@ const languages = ["english", "japanese", "chinese", "korean"];
       <div class="tree" id="cgsTree"></div>
     </section>
 
-    <!-- Voicelines Tree -->
     <section
       class="dl-section"
       id="voicelinesSection"
@@ -154,7 +183,6 @@ const languages = ["english", "japanese", "chinese", "korean"];
     </section>
   </div>
 
-  <!-- No Results -->
   <div class="no-results" id="noResults">Nothing matches your filter</div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
@@ -190,6 +218,18 @@ const languages = ["english", "japanese", "chinese", "korean"];
 
     function trimFilePrefix(filename = "") {
       return filename.startsWith("File:") ? filename.slice(5) : filename;
+    }
+
+    function toBrowserFriendlyCgUrl(url = "") {
+      if (!url) return url;
+
+      const releaseUrl = url.match(
+        /^https:\/\/github\.com\/NowhereArchive\/NowhereCG\/releases\/download\/([^/]+)\/(.+)$/,
+      );
+      if (!releaseUrl) return url;
+
+      const [, chapterName, fileName] = releaseUrl;
+      return `https://raw.githubusercontent.com/NowhereArchive/NowhereCG/main/CGs/${chapterName}/${fileName}`;
     }
 
     function showServerStatus(message, kind = "warn") {
@@ -252,7 +292,7 @@ const languages = ["english", "japanese", "chinese", "korean"];
           if (!chapterRes.ok) continue;
           const chapterImages = await chapterRes.json();
           for (const image of chapterImages || []) {
-            const imageUrl = image.fileName || image.url;
+            const imageUrl = toBrowserFriendlyCgUrl(image.fileName || image.url);
             if (!imageUrl) continue;
             try {
               const imageRes = await fetch(imageUrl);
@@ -288,11 +328,9 @@ const languages = ["english", "japanese", "chinese", "korean"];
               const safeName = rawFilename.split("/").pop() || `${item.slug}_${item.language}.audio`;
               zip.file(`voicelines/${folderName}/${item.language}/${item.attire}/${safeName}`, blob);
             } catch (_) {
-              // Skip missing voice files without aborting the bundle.
             }
           }
         } catch (_) {
-          // Skip missing voice JSON without aborting the bundle.
         }
       }
 
@@ -340,6 +378,9 @@ const languages = ["english", "japanese", "chinese", "korean"];
     const noResults = $("noResults");
     const cgCategoryChips = $("cgCategoryChips");
     const vlCategoryChips = $("vlCategoryChips");
+    const downloadHelpBtn = $("downloadHelpBtn");
+    const downloadHelpModal = $("downloadHelpModal");
+    const downloadHelpClose = $("downloadHelpClose");
 
     const viewTabs = document.querySelectorAll(".view-tab");
     const selectAllCGs = $("selectAllCGs");
@@ -356,10 +397,9 @@ const languages = ["english", "japanese", "chinese", "korean"];
 
     const selectedCGs = new Set();
     const selectedVLs = new Map();
-    const collapsedCGs = new Set(); // category names that are collapsed
-    const collapsedChars = new Set(); // "slug|attire" keys that are collapsed
+    const collapsedCGs = new Set();
+    const collapsedChars = new Set();
 
-    // ── Render CGs Tree ──
     function renderCGs() {
       const cats = [...new Set(allChapters.map((c) => c.category))];
       const fragment = document.createDocumentFragment();
@@ -449,7 +489,6 @@ const languages = ["english", "japanese", "chinese", "korean"];
       checkNoResults();
     }
 
-    // ── Render Voicelines Tree ──
     function renderVoicelines() {
       const cats = [...new Set(CHARACTERS.map((c) => c.category))];
       const fragment = document.createDocumentFragment();
@@ -685,7 +724,6 @@ const languages = ["english", "japanese", "chinese", "korean"];
       }
     }
 
-    // ── Category chips ──
     function buildChips() {
       const cgCats = [...new Set(allChapters.map((c) => c.category))];
       cgCats.forEach((cat) => {
@@ -726,7 +764,6 @@ const languages = ["english", "japanese", "chinese", "korean"];
       });
     }
 
-    // ── UI ──
     function updateUI() {
       const total = selectedCGs.size + selectedVLs.size;
       selectedCount.textContent = `${total} selected`;
@@ -740,7 +777,6 @@ const languages = ["english", "japanese", "chinese", "korean"];
       noResults.style.display = visible ? "block" : "none";
     }
 
-    // ── View tabs ──
     viewTabs.forEach((tab) => {
       tab.addEventListener("click", () => {
         viewTabs.forEach((t) => t.classList.remove("active"));
@@ -753,7 +789,29 @@ const languages = ["english", "japanese", "chinese", "korean"];
       });
     });
 
-    // ── Search ──
+    function openDownloadHelp() {
+      if (!downloadHelpModal) return;
+      downloadHelpModal.style.display = "flex";
+      document.body.classList.add("modal-open");
+    }
+
+    function closeDownloadHelp() {
+      if (!downloadHelpModal) return;
+      downloadHelpModal.style.display = "none";
+      document.body.classList.remove("modal-open");
+    }
+
+    downloadHelpBtn?.addEventListener("click", openDownloadHelp);
+    downloadHelpClose?.addEventListener("click", closeDownloadHelp);
+    downloadHelpModal?.addEventListener("click", (e) => {
+      if (e.target === downloadHelpModal) closeDownloadHelp();
+    });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && downloadHelpModal?.style.display !== "none") {
+        closeDownloadHelp();
+      }
+    });
+
     searchInput.addEventListener("input", () => {
       searchQuery = searchInput.value.toLowerCase().trim();
       renderCGs();
@@ -770,7 +828,6 @@ const languages = ["english", "japanese", "chinese", "korean"];
       }
     });
 
-    // ── Select All / Deselect ──
     selectAllCGs.addEventListener("click", () => {
       allChapters.forEach((ch) => selectedCGs.add(ch.name));
       renderCGs();
@@ -816,7 +873,6 @@ const languages = ["english", "japanese", "chinese", "korean"];
       renderVoicelines();
     });
 
-    // ── Download ──
     downloadBtn.addEventListener("click", async () => {
       const voicelines = [...selectedVLs.values()];
       const cgs = [...selectedCGs];
@@ -836,7 +892,6 @@ const languages = ["english", "japanese", "chinese", "korean"];
       }
     });
 
-    // ── Init ──
     buildChips();
     renderCGs();
     renderVoicelines();
@@ -845,7 +900,7 @@ const languages = ["english", "japanese", "chinese", "korean"];
   </script>
 
   <style is:global>
-    /* ── Action Bar ── */
+    
     .action-bar {
       position: sticky;
       top: 0;
@@ -976,7 +1031,7 @@ const languages = ["english", "japanese", "chinese", "korean"];
       }
     }
 
-    /* ── Content ── */
+    
     .download-content {
       max-width: 1100px;
       margin: 1rem auto;
@@ -1028,7 +1083,7 @@ const languages = ["english", "japanese", "chinese", "korean"];
       color: rgba(255, 255, 255, 0.8);
     }
 
-    /* ── Tree ── */
+    
     .tree {
       display: flex;
       flex-direction: column;
@@ -1038,7 +1093,7 @@ const languages = ["english", "japanese", "chinese", "korean"];
       position: relative;
     }
 
-    /* Category node */
+    
     .tree-cat {
       display: flex;
       align-items: center;
@@ -1080,7 +1135,7 @@ const languages = ["english", "japanese", "chinese", "korean"];
       font-weight: 500;
     }
 
-    /* Items container — bordered guide line on the left */
+    
     .tree-items {
       display: flex;
       flex-direction: column;
@@ -1094,7 +1149,7 @@ const languages = ["english", "japanese", "chinese", "korean"];
       display: none;
     }
 
-    /* CG leaf rows */
+    
     .tree-row {
       display: flex;
       align-items: center;
@@ -1190,7 +1245,7 @@ const languages = ["english", "japanese", "chinese", "korean"];
       color: #fff;
     }
 
-    /* ── VL tree ── */
+    
     .tree-char {
       position: relative;
     }
@@ -1278,7 +1333,7 @@ const languages = ["english", "japanese", "chinese", "korean"];
       color: #9c1111;
     }
 
-    /* Attire level */
+    
     .tree-attires {
       display: flex;
       flex-direction: column;
@@ -1409,11 +1464,19 @@ const languages = ["english", "japanese", "chinese", "korean"];
       padding: 0.6rem 1rem;
       display: flex;
       align-items: center;
-      gap: 0.5rem;
+      justify-content: space-between;
+      gap: 0.75rem;
       border: 1px solid rgba(156, 17, 17, 0.35);
       border-radius: 6px;
       background: rgba(156, 17, 17, 0.06);
       width: calc(100% - 3rem);
+    }
+    .download-warning-inner {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex: 1;
+      min-width: 0;
     }
     .download-warning svg {
       flex-shrink: 0;
@@ -1424,6 +1487,82 @@ const languages = ["english", "japanese", "chinese", "korean"];
       color: rgba(255, 255, 255, 0.5);
       font-size: 0.78rem;
       line-height: 1.4;
+    }
+    .download-help-btn {
+      width: 22px;
+      height: 22px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.04);
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 0.72rem;
+      font-weight: 700;
+      line-height: 1;
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: all 0.15s ease;
+    }
+    .download-help-btn:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.35);
+      color: rgba(255, 255, 255, 0.9);
+    }
+    .download-help-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      backdrop-filter: blur(2px);
+    }
+    .download-help-content {
+      background: #0a0a0a;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 6px;
+      width: min(520px, calc(100% - 2rem));
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+    }
+    .download-help-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1rem 1rem 0.8rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .download-help-title {
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.9);
+    }
+    .download-help-close {
+      background: none;
+      border: none;
+      color: rgba(255, 255, 255, 0.4);
+      font-size: 1.3rem;
+      cursor: pointer;
+      line-height: 1;
+      padding: 0;
+    }
+    .download-help-close:hover {
+      color: rgba(255, 255, 255, 0.8);
+    }
+    .download-help-body {
+      padding: 1rem 1.1rem 1.2rem;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 0.82rem;
+      line-height: 1.7;
+    }
+    .download-help-body p,
+    .download-help-body ul {
+      margin: 0.5rem 0;
+    }
+    .download-help-body ul {
+      padding-left: 1.1rem;
     }
 
     .no-results {
@@ -1528,7 +1667,7 @@ const languages = ["english", "japanese", "chinese", "korean"];
       color: #eab308;
     }
 
-    /* Progress overlay */
+    
     .dl-progress-overlay {
       position: fixed;
       inset: 0;
