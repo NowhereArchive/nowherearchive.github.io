@@ -245,7 +245,7 @@ const languages = ["english", "japanese", "chinese", "korean"];
       try {
         const controller = new AbortController();
         const timeout = setTimeout(() => controller.abort(), 4000);
-        const res = await fetch(`${SERVER}/`, {
+        const res = await fetch(`${SERVER}/ping`, {
           method: "GET",
           cache: "no-store",
           signal: controller.signal,
