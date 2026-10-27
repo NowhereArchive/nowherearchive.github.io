@@ -1,0 +1,227 @@
+{
+  "id": 111301,
+  "name": "Iron",
+  "baseAtk": 150,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        21,
+        100
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        63,
+        200
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        21,
+        50
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 130101,
+      "name": "Electrical Activity",
+      "description": "The number of [Electrocution] mark stacks added by [Central Induction] is increased to 10.",
+      "effects": []
+    },
+    {
+      "id": 130102,
+      "name": "Shackles Sync I",
+      "description": "Physical Penetration +7.5%",
+      "effects": [
+        {
+          "propertyId": 9,
+          "key": "penPct",
+          "label": "Armor Pen %",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 7.5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 130103,
+      "name": "Inhibit",
+      "description": "Enemies hit by [Precision Scalpel] will have their Attack reduced by 15% for 8 seconds.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": -15,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 130104,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption reduced by 3 points",
+      "effects": []
+    },
+    {
+      "id": 130105,
+      "name": "Shackles Sync II",
+      "description": "Physical Penetration +7.5%",
+      "effects": [
+        {
+          "propertyId": 9,
+          "key": "penPct",
+          "label": "Armor Pen %",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 7.5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "characteristic": {
+      "id": 13010,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": []
+    },
+    "normalAttack": {
+      "id": 13011,
+      "name": "Dissection",
+      "damageType": 1,
+      "coefs": [
+        97,
+        103,
+        110,
+        117,
+        125,
+        134,
+        143,
+        153,
+        163,
+        174
+      ],
+      "maxCoef": 174,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 13012,
+      "name": "Precision Scalpel",
+      "damageType": 1,
+      "coefs": [
+        90,
+        96,
+        103,
+        109,
+        117,
+        125,
+        133,
+        142,
+        152,
+        162
+      ],
+      "maxCoef": 162,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 13013,
+      "name": "Central Induction",
+      "damageType": 0,
+      "coefs": [
+        20,
+        19,
+        18,
+        17,
+        16,
+        15,
+        14,
+        13,
+        12,
+        10
+      ],
+      "maxCoef": 10,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 130131,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Every ? second(s), enemies hit by Iron's normal attacks are attached with 8 stacks of [Electrocution] that last for 10 seconds.\n[Electrocution]: last for 10 seconds. Enemies with [Electrocution] are shocked when taking Ultimate damage, receiving (30% of the damage dealer's Attack damage) Magic Damage and reducing 1 stack of [Electrocution].",
+          "scripted": true,
+          "scriptName": "normalattack.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 13014,
+      "name": "Neural Reflex",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 1301000,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When Iron attacks enemies with [Electrocution], she turns her normal attack into a 2-hit one, each hit dealing (?% of her Attack) Physical Damage.",
+          "scripted": true,
+          "scriptName": "common.damagemarkbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "extra1": {
+      "id": 13015,
+      "name": "Extra Skill 1",
+      "damageType": 1,
+      "coefs": [
+        68,
+        72,
+        77,
+        82,
+        88,
+        94,
+        100,
+        107,
+        114,
+        122
+      ],
+      "maxCoef": 122,
+      "coefSource": "AttackPowerCo",
+      "buffs": [],
+      "isSummonSkill": true,
+      "summonScalesFromMaster": true
+    }
+  }
+}

@@ -1,0 +1,264 @@
+{
+  "id": 111411,
+  "name": "Pixel",
+  "baseAtk": 150,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        21,
+        100
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        63,
+        200
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        21,
+        50
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 141101,
+      "name": "",
+      "description": "",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 141102,
+      "name": "",
+      "description": "",
+      "effects": []
+    },
+    {
+      "id": 141103,
+      "name": "",
+      "description": "",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 141104,
+      "name": "",
+      "description": "",
+      "effects": []
+    },
+    {
+      "id": 141105,
+      "name": "",
+      "description": "",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "characteristic": {
+      "id": 14110,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 141100,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 17,
+              "key": "dmgBonus",
+              "label": "Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Damage Bonus (general)",
+              "add": 5,
+              "isPercent": true
+            },
+            {
+              "propertyId": 57,
+              "key": "breakingDmgBonus",
+              "label": "Breaking Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Breaking Damage Bonus",
+              "add": 5,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 14111,
+      "name": "Double Reading",
+      "damageType": 1,
+      "coefs": [
+        54,
+        58,
+        63,
+        68,
+        73,
+        79,
+        86,
+        93,
+        100,
+        108
+      ],
+      "maxCoef": 108,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 14112,
+      "name": "Argument Splicing",
+      "damageType": 0,
+      "coefs": [
+        3000,
+        3200,
+        3500,
+        3800,
+        4100,
+        4400,
+        4800,
+        5100,
+        5600,
+        6000
+      ],
+      "maxCoef": 6000,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 14113,
+      "name": "Research Progress",
+      "damageType": 0,
+      "coefs": [
+        1.5,
+        1.6,
+        1.7,
+        1.9,
+        2,
+        2.2,
+        2.4,
+        2.6,
+        2.8,
+        3
+      ],
+      "maxCoef": 3,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 141131,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "pikesaier.passive",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 14114,
+      "name": "Contract Cheating",
+      "damageType": 0,
+      "buffs": []
+    },
+    "exclusive": {
+      "id": 14115,
+      "name": "At Your Service",
+      "damageType": 0,
+      "coefs": [
+        1,
+        2,
+        3
+      ],
+      "maxCoef": 3,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 141151,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 11,
+              "key": "atkSpeed",
+              "label": "ATK Speed",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 60,
+              "isPercent": true
+            }
+          ]
+        },
+        {
+          "statusId": 141152,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,401 @@
+{
+  "id": 110103,
+  "name": "Rahu",
+  "baseAtk": 108,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        11,
+        50
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        33,
+        100
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        11,
+        25
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 10301,
+      "name": "Alive in Death's Face",
+      "description": "Reduces the stacks of [Battle Will] needed to trigger [Counterblow] by 2.",
+      "effects": []
+    },
+    {
+      "id": 10302,
+      "name": "Shackles Sync I",
+      "description": "Physical Damage increases by 8%.",
+      "effects": [
+        {
+          "propertyId": 18,
+          "key": "pDmgBonus",
+          "label": "Physical Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Physical Damage Bonus",
+          "add": 8,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 10303,
+      "name": "Sweet Revenge",
+      "description": "Rahu recovers 10% of her Max HP when [Counterblow] is triggered.",
+      "effects": []
+    },
+    {
+      "id": 10304,
+      "name": "Energy Overflowing",
+      "description": "At the start of the battle, Rahu gains 15 points of energy.",
+      "effects": []
+    },
+    {
+      "id": 10305,
+      "name": "Shackles Sync II",
+      "description": "Physical Damage increases by 8%.",
+      "effects": [
+        {
+          "propertyId": 18,
+          "key": "pDmgBonus",
+          "label": "Physical Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Physical Damage Bonus",
+          "add": 8,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "characteristic": {
+      "id": 1030,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 103091,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "jiushijiu.passive",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 103093,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "jiushijiu.passive",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 103092,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 18,
+              "key": "pDmgBonus",
+              "label": "Physical Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Physical Damage Bonus",
+              "add": 10,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 1031,
+      "name": "Dark Night/Rain Burst",
+      "damageType": 1,
+      "coefs": [
+        75,
+        80.099998,
+        85.5,
+        91.199997,
+        97.400002,
+        104,
+        111,
+        118.5,
+        126.5,
+        135
+      ],
+      "maxCoef": 135,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 1032,
+      "name": "Eclipse Shadow",
+      "damageType": 0,
+      "coefs": [
+        20,
+        21.6,
+        23.299999,
+        25.200001,
+        27.200001,
+        29.4,
+        31.700001,
+        34.299999,
+        37,
+        40
+      ],
+      "maxCoef": 40,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 10321,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Activate the Ultimate to swap between the [Guardian Blade] and [Armguard].\n\nWith [Armguard], Rahu's normal attacks heal ?% of her lost HP.\n\nWhen wielding the [Guardian Blade], Rahu gains a ?% Attack boost but reduces her Defense by 20% and drains 5% of her Max HP per second.",
+          "scripted": true,
+          "scriptName": "skill.replace",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 10322,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Activate the Ultimate to swap between the [Guardian Blade] and [Armguard].\n\nWith [Armguard], Rahu's normal attacks heal ?% of her lost HP.\n\nWhen wielding the [Guardian Blade], Rahu gains a ?% Attack boost but reduces her Defense by 20% and drains 5% of her Max HP per second.",
+          "scripted": true,
+          "scriptName": "skill.replace",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 10323,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Activate the Ultimate to swap between the [Guardian Blade] and [Armguard].\n\nWith [Armguard], Rahu's normal attacks heal ?% of her lost HP.\n\nWhen wielding the [Guardian Blade], Rahu gains a ?% Attack boost but reduces her Defense by 20% and drains 5% of her Max HP per second.",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 3,
+              "key": "armor",
+              "label": "Armor",
+              "statScreen": true,
+              "calcCat": null,
+              "add": -20,
+              "isPercent": true
+            },
+            {
+              "propertyId": 2,
+              "key": "atk",
+              "label": "ATK",
+              "statScreen": false,
+              "calcCat": null,
+              "add": 40,
+              "isPercent": true
+            }
+          ]
+        },
+        {
+          "statusId": 10324,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Activate the Ultimate to swap between the [Guardian Blade] and [Armguard].\n\nWith [Armguard], Rahu's normal attacks heal ?% of her lost HP.\n\nWhen wielding the [Guardian Blade], Rahu gains a ?% Attack boost but reduces her Defense by 20% and drains 5% of her Max HP per second.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 10326,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Activate the Ultimate to swap between the [Guardian Blade] and [Armguard].\n\nWith [Armguard], Rahu's normal attacks heal ?% of her lost HP.\n\nWhen wielding the [Guardian Blade], Rahu gains a ?% Attack boost but reduces her Defense by 20% and drains 5% of her Max HP per second.",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 10327,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Activate the Ultimate to swap between the [Guardian Blade] and [Armguard].\n\nWith [Armguard], Rahu's normal attacks heal ?% of her lost HP.\n\nWhen wielding the [Guardian Blade], Rahu gains a ?% Attack boost but reduces her Defense by 20% and drains 5% of her Max HP per second.",
+          "scripted": true,
+          "scriptName": "skill.replace",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 10328,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Activate the Ultimate to swap between the [Guardian Blade] and [Armguard].\n\nWith [Armguard], Rahu's normal attacks heal ?% of her lost HP.\n\nWhen wielding the [Guardian Blade], Rahu gains a ?% Attack boost but reduces her Defense by 20% and drains 5% of her Max HP per second.",
+          "scripted": false,
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "skill1": {
+      "id": 1033,
+      "name": "Payback",
+      "damageType": 0,
+      "coefs": [
+        320,
+        345.600006,
+        373.299988,
+        403.200012,
+        435.5,
+        470.299988,
+        508,
+        548.599976,
+        592.599976,
+        640
+      ],
+      "maxCoef": 640,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 10331,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Every time Rahu takes damage, she gains a stack of [Battle Will], stacking up to 5 times per second at most. In [Guardian Blade] mode, her normal attacks add another [Battle Will] stack upon landing a hit. After stacking 12 [Battle Will], Rahu unleashes [Counterblow], dealing (Attack *?%) Physical Damage to nearby enemies. [Counterblow] can stack up to 3 times.",
+          "scripted": true,
+          "scriptName": "rahu.passive",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 10337,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Every time Rahu takes damage, she gains a stack of [Battle Will], stacking up to 5 times per second at most. In [Guardian Blade] mode, her normal attacks add another [Battle Will] stack upon landing a hit. After stacking 12 [Battle Will], Rahu unleashes [Counterblow], dealing (Attack *?%) Physical Damage to nearby enemies. [Counterblow] can stack up to 3 times.",
+          "scripted": true,
+          "scriptName": "normalattack.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 1034,
+      "name": "Retaliation",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 10341,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Enemies hit by [Counterblow] take ?% more Physical Damage for the next 10 seconds.",
+          "scripted": true,
+          "scriptName": "rahu.talent",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 10343,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Enemies hit by [Counterblow] take ?% more Physical Damage for the next 10 seconds.",
+          "scripted": true,
+          "scriptName": "rahu.talent",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "exclusive": {
+      "id": 1035,
+      "name": "Unyielding",
+      "damageType": 0,
+      "coefs": [
+        10,
+        15,
+        20
+      ],
+      "maxCoef": 20,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 10351,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "New Exclusive Ultimate [Unyielding]. Attack +?% and keeps her HP above 35% of her Max HP. This effect lasts for ? seconds. [Unyielding] can only be used once per battle.",
+          "scripted": true,
+          "scriptName": "rahu.exclusive",
+          "maxLevelEffects": [
+            {
+              "propertyId": 2,
+              "key": "atk",
+              "label": "ATK",
+              "statScreen": false,
+              "calcCat": null,
+              "add": 20,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "extra1": {
+      "id": 1038,
+      "name": "Extra Skill 1",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "extra2": {
+      "id": 1039,
+      "name": "Extra Skill 2",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "extra3": {
+      "id": 10300,
+      "name": "Extra Skill 3",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 10301,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "normalattack.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,254 @@
+{
+  "id": 110603,
+  "name": "Cabernet",
+  "baseAtk": 128,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        11,
+        50
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        33,
+        100
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        11,
+        25
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 60301,
+      "name": "Soul Instinct",
+      "description": "After releasing the Ultimate, Cabernet recovers 1 [Soul Fragment].",
+      "effects": []
+    },
+    {
+      "id": 60302,
+      "name": "Shackles Sync I",
+      "description": "Energy Recovery speed +7.5%",
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 7.5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 60303,
+      "name": "Wanton Banquet",
+      "description": "After Cabernet uses [Thirst and Hunger], allied Sinners within the skill range increase damage by 20% for 12 seconds.",
+      "effects": []
+    },
+    {
+      "id": 60304,
+      "name": "Energy Overflowing",
+      "description": "At the start of the battle, Cabernet gains 15 points of Energy.",
+      "effects": []
+    },
+    {
+      "id": 60305,
+      "name": "Shackles Sync II",
+      "description": "Energy Recovery speed +7.5%",
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 7.5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 60306,
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 15,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "characteristic": {
+      "id": 6036,
+      "name": "Initial Attribute",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 603601,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "cabernet.passive",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 6031,
+      "name": "Savoring",
+      "damageType": 2,
+      "coefs": [
+        84,
+        90,
+        96,
+        103,
+        110,
+        117,
+        125,
+        133,
+        142,
+        152
+      ],
+      "maxCoef": 152,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 6032,
+      "name": "Thirst and Hunger",
+      "damageType": 0,
+      "coefs": [
+        20,
+        20.9,
+        21.9,
+        22.9,
+        23.9,
+        25.1,
+        26.200001,
+        27.4,
+        28.700001,
+        30
+      ],
+      "maxCoef": 30,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 603231,
+          "targetCamps": 2,
+          "target": "self",
+          "description": "Cabernet releases the power of souls, dispelling all debuffs from all allies within the skill range, and healing them for ?% of her Max HP. At the same time, Cabernet will consume all [Soul Fragments], each [Soul Fragment] consumed will increase the attack of all allies in the skill range by ?% for 12 seconds.",
+          "scripted": true,
+          "scriptName": "dudu.healovertime",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 603232,
+          "targetCamps": 2,
+          "target": "self",
+          "description": "Cabernet releases the power of souls, dispelling all debuffs from all allies within the skill range, and healing them for ?% of her Max HP. At the same time, Cabernet will consume all [Soul Fragments], each [Soul Fragment] consumed will increase the attack of all allies in the skill range by ?% for 12 seconds.",
+          "scripted": true,
+          "scriptName": "common.dispelled",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "skill1": {
+      "id": 6034,
+      "name": "Seize",
+      "damageType": 0,
+      "coefs": [
+        20,
+        20.9,
+        21.9,
+        22.9,
+        23.9,
+        25.1,
+        26.200001,
+        27.4,
+        28.700001,
+        30
+      ],
+      "maxCoef": 30,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 603410,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Each time when Cabernet uses [Thirst and Hunger], she gains a ?% increase in Energy Recovery Speed for 10 seconds.",
+          "scripted": true,
+          "scriptName": "geji.marking",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 6033,
+      "name": "Ingest",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 603320,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Every time Cabernet gains a [Soul Fragment], she gains a ?% increase in Max HP. This effect can stack up to 3 times.",
+          "scripted": true,
+          "scriptName": "geji.marking",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "exclusive": {
+      "id": 6035,
+      "name": "Throne of Gluttony",
+      "damageType": 0,
+      "coefs": [
+        600,
+        700,
+        800
+      ],
+      "maxCoef": 800,
+      "coefSource": "Data",
+      "buffs": []
+    }
+  }
+}

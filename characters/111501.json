@@ -1,0 +1,318 @@
+{
+  "id": 111501,
+  "name": "Victoria",
+  "baseAtk": 140,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        21,
+        100
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        63,
+        200
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        21,
+        50
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 150101,
+      "name": "Pierce Heart",
+      "description": "[Rose Penetration] Becomes instant.",
+      "effects": []
+    },
+    {
+      "id": 150102,
+      "name": "Shackles Sync I",
+      "description": "Damage increase 5%",
+      "effects": [
+        {
+          "propertyId": 17,
+          "key": "dmgBonus",
+          "label": "Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Damage Bonus (general)",
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 150103,
+      "name": "Cluster",
+      "description": "Two more penetration effects are triggered during [Rose Penetration].",
+      "effects": []
+    },
+    {
+      "id": 150104,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption reduced by 3 points",
+      "effects": []
+    },
+    {
+      "id": 150105,
+      "name": "Shackles Sync II",
+      "description": "Damage increase 5%",
+      "effects": [
+        {
+          "propertyId": 17,
+          "key": "dmgBonus",
+          "label": "Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Damage Bonus (general)",
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 150106,
+      "effects": [
+        {
+          "propertyId": 17,
+          "key": "dmgBonus",
+          "label": "Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Damage Bonus (general)",
+          "add": 10,
+          "isPercent": true
+        },
+        {
+          "propertyId": 57,
+          "key": "breakingDmgBonus",
+          "label": "Breaking Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Breaking Damage Bonus",
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "characteristic": {
+      "id": 15010,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 150101,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 17,
+              "key": "dmgBonus",
+              "label": "Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Damage Bonus (general)",
+              "add": 5,
+              "isPercent": true
+            },
+            {
+              "propertyId": 57,
+              "key": "breakingDmgBonus",
+              "label": "Breaking Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Breaking Damage Bonus",
+              "add": 5,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 15011,
+      "name": "Prickles",
+      "damageType": 2,
+      "coefs": [
+        83,
+        89,
+        95,
+        101,
+        108,
+        115,
+        123,
+        131,
+        140,
+        149
+      ],
+      "maxCoef": 149,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 15012,
+      "name": "Rose Penetration",
+      "damageType": 0,
+      "coefs": [
+        110,
+        117,
+        125,
+        134,
+        143,
+        152,
+        163,
+        174,
+        185,
+        198
+      ],
+      "maxCoef": 198,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 15013,
+      "name": "Red Rose",
+      "damageType": 0,
+      "coefs": [
+        150,
+        167,
+        187,
+        208,
+        232,
+        259,
+        288,
+        322,
+        359,
+        400
+      ],
+      "maxCoef": 400,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 150131,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Each [Rose Penetration] hit attaches 1 stack of [Rose]. An enemy with 3 stacks of [Rose] immediately takes (90% of Victoria's Attack) Magic Damage and enables Victoria to restore ? of her Max HP.",
+          "scripted": true,
+          "scriptName": "bai.passive",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 150134,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Each [Rose Penetration] hit attaches 1 stack of [Rose]. An enemy with 3 stacks of [Rose] immediately takes (90% of Victoria's Attack) Magic Damage and enables Victoria to restore ? of her Max HP.",
+          "scripted": true,
+          "scriptName": "skill.replace",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 150135,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Each [Rose Penetration] hit attaches 1 stack of [Rose]. An enemy with 3 stacks of [Rose] immediately takes (90% of Victoria's Attack) Magic Damage and enables Victoria to restore ? of her Max HP.",
+          "scripted": true,
+          "scriptName": "skill.replace",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 15014,
+      "name": "Thorns",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 150141,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Victoria's Attack is increased by 1 for every 50 HP she ever lost in the battle. The effect can increase her Attack by up to ?.",
+          "scripted": true,
+          "scriptName": "bai.talent",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "exclusive": {
+      "id": 15015,
+      "name": "White Rose",
+      "damageType": 0,
+      "coefs": [
+        10,
+        12.5,
+        15
+      ],
+      "maxCoef": 15,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 150151,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Once activated, Victoria loses 2.5% Max HP per second in exchange for a ?% damage bonus. Also, her normal attacks now deal damage to a single grid and inflict 1 stack of [Rose]. Use this again to cancel [White Rose].",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 17,
+              "key": "dmgBonus",
+              "label": "Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Damage Bonus (general)",
+              "add": 15,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "extra1": {
+      "id": 15016,
+      "name": "Rose Penetration",
+      "damageType": 2,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 150152,
+          "targetCamps": 1,
+          "target": "enemy",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.triggerfield",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

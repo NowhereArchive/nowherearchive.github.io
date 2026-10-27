@@ -1,0 +1,291 @@
+{
+  "id": 111307,
+  "name": "Garofano",
+  "baseAtk": 136,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        21,
+        100
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        63,
+        200
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        21,
+        50
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 130701,
+      "name": "Shackles Sync I",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 130702,
+      "name": "Guardian Resolution",
+      "description": "[Piercing Erosion] lasts 2 seconds longer.",
+      "effects": []
+    },
+    {
+      "id": 130703,
+      "name": "Shackles Sync II",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 130704,
+      "name": "Energy Overflowing",
+      "description": "At the start of the battle, Garofano gains 10 points of energy.",
+      "effects": []
+    },
+    {
+      "id": 130705,
+      "name": "Shackles Sync III",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 130700,
+      "effects": [
+        {
+          "propertyId": 92,
+          "key": "flawLegacyDmg",
+          "label": "Flaw Legacy Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Flaw Legacy Damage Bonus",
+          "add": 20,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "characteristic": {
+      "id": 13070,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 1608303,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.aura",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 1608304,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 13071,
+      "name": "Hidden Needles",
+      "damageType": 1,
+      "coefs": [
+        74,
+        79,
+        85,
+        91,
+        97,
+        103,
+        110,
+        118,
+        125,
+        134
+      ],
+      "maxCoef": 134,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 13072,
+      "name": "Pinpoint",
+      "damageType": 1,
+      "coefs": [
+        450,
+        486,
+        525,
+        567,
+        612,
+        661,
+        714,
+        772,
+        833,
+        900
+      ],
+      "maxCoef": 900,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 13073,
+      "name": "Piercing Gaze",
+      "damageType": 0,
+      "coefs": [
+        5,
+        5.4,
+        5.8,
+        6.3,
+        6.8,
+        7.3,
+        7.9,
+        8.6,
+        9.3,
+        10
+      ],
+      "maxCoef": 10,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 130731,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Gains a ?% Attack boost. [Pinpoint] applies a [Weakspot] mark to enemies that lasts for the entire battle.",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 2,
+              "key": "atk",
+              "label": "ATK",
+              "statScreen": false,
+              "calcCat": null,
+              "add": 10,
+              "isPercent": true
+            }
+          ]
+        },
+        {
+          "statusId": 130732,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Gains a ?% Attack boost. [Pinpoint] applies a [Weakspot] mark to enemies that lasts for the entire battle.",
+          "scripted": true,
+          "scriptName": "skill.replace",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 13074,
+      "name": "Piercing Erosion",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 130741,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When an enemy is given the [Weakspot] mark, Garofano deals (Attack *?%) Physical Damage per second to that enemy for 6 seconds.",
+          "scripted": true,
+          "scriptName": "common.stateaddbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "exclusive": {
+      "id": 13075,
+      "name": "Heart's Lament",
+      "damageType": 0,
+      "coefs": [
+        500,
+        750,
+        1000
+      ],
+      "maxCoef": 1000,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 130752,
+          "targetCamps": 1,
+          "target": "enemy",
+          "description": "New Exclusive Ultimate [Heart's Lament]. Removes all [Weakspot] marks in range and deals (Attack *?%) Physical Damage to those enemies with their [Weakspot] marks removed. They also take ?% more damage for 12 seconds. When Garofano removes [Weakspot] marks with this effect, she gains 14 Energy. [Heart's Lament] can only be used twice per battle.",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 20,
+              "key": "takeDmgBonus",
+              "label": "Enemy Takes More Damage",
+              "statScreen": false,
+              "calcCat": "Enemy takes more damage",
+              "add": 16,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,334 @@
+{
+  "id": 110104,
+  "name": "Vanilla",
+  "baseAtk": 103,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        11,
+        50
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        33,
+        100
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        11,
+        25
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 10401,
+      "name": "Sempiternity",
+      "description": "Every time an allied unit casts the Ultimate, Vanilla gains a 5% increase in Max HP. This effect can stack up to 4 times.",
+      "effects": []
+    },
+    {
+      "id": 10402,
+      "name": "Shackles Sync I",
+      "description": "Max HP increases by 10%.",
+      "effects": [
+        {
+          "propertyId": 1,
+          "key": "hp",
+          "label": "HP",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 10403,
+      "name": "Time Dilation",
+      "description": "Vanilla gains 1 additional M-Value every time she takes damage, and the maximum M-Value she can gain per second increases by 5. In [Corruption State], she gains 2 M-Value per second.",
+      "effects": []
+    },
+    {
+      "id": 10404,
+      "name": "Energy Overflowing",
+      "description": "At the start of the battle, Vanilla gains 25 M-Value.",
+      "effects": []
+    },
+    {
+      "id": 10405,
+      "name": "Shackles Sync II",
+      "description": "Max HP increases by 10%.",
+      "effects": [
+        {
+          "propertyId": 1,
+          "key": "hp",
+          "label": "HP",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 10400,
+      "effects": [
+        {
+          "propertyId": 1,
+          "key": "hp",
+          "label": "HP",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 15,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "characteristic": {
+      "id": 1040,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 10401,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.changeragevalue",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 10403,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.stateaddbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 10404,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.removebuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 10405,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.stateaddbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 10406,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.stateaddbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 10407,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.stateaddbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 10408,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.stateaddbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 10421,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "vanilla.passive",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 1041,
+      "name": "Exoskeleton Arm",
+      "damageType": 1,
+      "coefs": [
+        85,
+        92,
+        99,
+        107,
+        116,
+        125,
+        135,
+        146,
+        157,
+        170
+      ],
+      "maxCoef": 170,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 1042,
+      "name": "Potential Charge",
+      "damageType": 0,
+      "coefs": [
+        125,
+        135,
+        145.800003,
+        157.5,
+        170.100006,
+        183.699997,
+        198.399994,
+        214.300003,
+        231.5,
+        250
+      ],
+      "maxCoef": 250,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 10425,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "[Potential Charge]: Vanilla charges up, restoring 4% Max HP per second and switching her Ultimate to [Kinetic Release] for 10 seconds. If [Kinetic Release] is not used within this period, her Ultimate is switched back to [Potential Charge] and she then gains 10 energy.\n[Kinetic Release]: Vanilla unleashes a heavy punch, dealing (Max HP *?%) Physical Damage and 1 Core Damage to all enemies within the 3x3 square in front. Meanwhile, her Ultimate is switched to [Potential Charge].\n[Corruption State]: [Potential Charge] now restores 8% Max HP per second and [Kinetic Release] now deals ?% damage and 1 additional Core Damage.",
+          "scripted": true,
+          "scriptName": "skill.replace",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 10422,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "[Potential Charge]: Vanilla charges up, restoring 4% Max HP per second and switching her Ultimate to [Kinetic Release] for 10 seconds. If [Kinetic Release] is not used within this period, her Ultimate is switched back to [Potential Charge] and she then gains 10 energy.\n[Kinetic Release]: Vanilla unleashes a heavy punch, dealing (Max HP *?%) Physical Damage and 1 Core Damage to all enemies within the 3x3 square in front. Meanwhile, her Ultimate is switched to [Potential Charge].\n[Corruption State]: [Potential Charge] now restores 8% Max HP per second and [Kinetic Release] now deals ?% damage and 1 additional Core Damage.",
+          "scripted": true,
+          "scriptName": "vanilla.accumulate",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "skill1": {
+      "id": 1043,
+      "name": "Meshing Gears",
+      "damageType": 0,
+      "coefs": [
+        12.5,
+        13.5,
+        14.6,
+        15.7,
+        17,
+        18.4,
+        19.799999,
+        21.4,
+        23.1,
+        25
+      ],
+      "maxCoef": 25,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 10431,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "After Vanilla deals damage with four normal attacks, the next normal attack triggers [Mesh].\n[Mesh]: Deals (Max HP *?%) Physical Damage to all enemies within the 3x3 square in front. Meanwhile, she gains 5 M-Value.\n[Corruption State]: After using [Kinetic Release], [Mesh] is automatically triggered once every second for 2 seconds.",
+          "scripted": true,
+          "scriptName": "common.triggerfield",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 10432,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "After Vanilla deals damage with four normal attacks, the next normal attack triggers [Mesh].\n[Mesh]: Deals (Max HP *?%) Physical Damage to all enemies within the 3x3 square in front. Meanwhile, she gains 5 M-Value.\n[Corruption State]: After using [Kinetic Release], [Mesh] is automatically triggered once every second for 2 seconds.",
+          "scripted": true,
+          "scriptName": "normalattack.addbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 10434,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "After Vanilla deals damage with four normal attacks, the next normal attack triggers [Mesh].\n[Mesh]: Deals (Max HP *?%) Physical Damage to all enemies within the 3x3 square in front. Meanwhile, she gains 5 M-Value.\n[Corruption State]: After using [Kinetic Release], [Mesh] is automatically triggered once every second for 2 seconds.",
+          "scripted": true,
+          "scriptName": "common.addbuffaftercasterbuffstart",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 10435,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "After Vanilla deals damage with four normal attacks, the next normal attack triggers [Mesh].\n[Mesh]: Deals (Max HP *?%) Physical Damage to all enemies within the 3x3 square in front. Meanwhile, she gains 5 M-Value.\n[Corruption State]: After using [Kinetic Release], [Mesh] is automatically triggered once every second for 2 seconds.",
+          "scripted": true,
+          "scriptName": "common.addbuffaftercasterbuffstart",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 1044,
+      "name": "One-Way Drivetrain",
+      "damageType": 0,
+      "buffs": []
+    },
+    "exclusive": {
+      "id": 1045,
+      "name": "Eternity Leap",
+      "damageType": 1,
+      "coefs": [
+        100,
+        125,
+        150
+      ],
+      "maxCoef": 150,
+      "coefSource": "Data",
+      "buffs": []
+    }
+  }
+}

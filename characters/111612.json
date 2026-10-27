@@ -1,0 +1,242 @@
+{
+  "id": 111612,
+  "name": "Forensica",
+  "baseAtk": 126,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        21,
+        100
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        63,
+        200
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        21,
+        50
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 161201,
+      "name": "Shackles 1",
+      "description": "tbd",
+      "effects": [
+        {
+          "propertyId": 43,
+          "key": "property_43",
+          "label": "Property 43",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 8,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 161202,
+      "name": "Shackles 2",
+      "description": "tbd",
+      "effects": []
+    },
+    {
+      "id": 161203,
+      "name": "Shackles 3",
+      "description": "tbd",
+      "effects": [
+        {
+          "propertyId": 43,
+          "key": "property_43",
+          "label": "Property 43",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 8,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 161204,
+      "name": "Shackles 4",
+      "description": "tbd",
+      "effects": []
+    },
+    {
+      "id": 161205,
+      "name": "Shackles 5",
+      "description": "tbd",
+      "effects": [
+        {
+          "propertyId": 43,
+          "key": "property_43",
+          "label": "Property 43",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 8,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 16120,
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 15,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "characteristic": {
+      "id": 16120,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 161201,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.energyfull",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 16121,
+      "name": "Adrift Smoke",
+      "damageType": 0,
+      "coefs": [
+        34,
+        37,
+        40,
+        43,
+        46,
+        50,
+        54,
+        58,
+        63,
+        68
+      ],
+      "maxCoef": 68,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 16122,
+      "name": "Endless Pursuit",
+      "damageType": 0,
+      "coefs": [
+        100,
+        108,
+        116.699997,
+        126,
+        136.100006,
+        147,
+        158.699997,
+        171.399994,
+        185.199997,
+        200
+      ],
+      "maxCoef": 200,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 16123,
+      "name": "Thermal Feedback",
+      "damageType": 0,
+      "coefs": [
+        8,
+        8.6,
+        9.3,
+        10.1,
+        10.9,
+        11.8,
+        12.7,
+        13.7,
+        14.8,
+        16
+      ],
+      "maxCoef": 16,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 161231,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Receives a ?% Attack Speed boost. Each time Yanyan removes a [Burn] mark from an enemy, she recovers 1 energy.",
+          "scripted": true,
+          "scriptName": "forensica.passive",
+          "maxLevelEffects": [
+            {
+              "propertyId": 43,
+              "key": "property_43",
+              "label": "Property 43",
+              "statScreen": false,
+              "calcCat": null,
+              "add": 16,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "passive": {
+      "id": 16124,
+      "name": "Reignition",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 161241,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Yanyan's normal attack has a ?% chance to rebound once within the diamond-shaped area, prioritizing enemies with the [Burn] mark.",
+          "scripted": true,
+          "scriptName": "ll.passive",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,255 @@
+{
+  "id": 110202,
+  "name": "NOX",
+  "baseAtk": 145,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        11,
+        50
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        33,
+        100
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        11,
+        25
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 20201,
+      "name": "Ash Tide",
+      "description": "[Touch of Despair] While activated, this state will be extended by 1 second each time NOX kills an enemy, up to 8 seconds.",
+      "effects": []
+    },
+    {
+      "id": 20202,
+      "name": "Shackles Sync I",
+      "description": "Normal ATK Damage +5%",
+      "effects": [
+        {
+          "propertyId": 26,
+          "key": "normalDmgBonus",
+          "label": "Normal Attack Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Normal Attack Damage Bonus",
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 20203,
+      "name": "Shudder",
+      "description": "[Touch of Despair] While activated, the Defense Reduction effect of [Nether Intimidation] is increased by 50%.",
+      "effects": []
+    },
+    {
+      "id": 20204,
+      "name": "Energy Overflowing",
+      "description": "At the start of the battle, NOX gains 15 points of Energy.",
+      "effects": []
+    },
+    {
+      "id": 20205,
+      "name": "Shackles Sync II",
+      "description": "Normal ATK Damage +5%",
+      "effects": [
+        {
+          "propertyId": 26,
+          "key": "normalDmgBonus",
+          "label": "Normal Attack Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Normal Attack Damage Bonus",
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "characteristic": {
+      "id": 2020,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 20200,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 57,
+              "key": "breakingDmgBonus",
+              "label": "Breaking Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Breaking Damage Bonus",
+              "add": 5,
+              "isPercent": true
+            },
+            {
+              "propertyId": 17,
+              "key": "dmgBonus",
+              "label": "Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Damage Bonus (general)",
+              "add": 5,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 2021,
+      "name": "Destruction",
+      "damageType": 1,
+      "coefs": [
+        90,
+        96,
+        102,
+        109,
+        116,
+        124,
+        132,
+        141,
+        151,
+        161
+      ],
+      "maxCoef": 161,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 2022,
+      "name": "Touch of Despair",
+      "damageType": 0,
+      "coefs": [
+        158,
+        169,
+        180,
+        192,
+        205,
+        219,
+        234,
+        250,
+        267,
+        285
+      ],
+      "maxCoef": 285,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 2023,
+      "name": "Soul Corruption",
+      "damageType": 0,
+      "coefs": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        22,
+        24,
+        27,
+        30
+      ],
+      "maxCoef": 30,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 20231,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "For every enemy dead in battle, NOX gains 0.6% Attack bonus, to a maximum of ?%",
+          "scripted": true,
+          "scriptName": "nuokesi.extrapassive",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 2024,
+      "name": "Nether Intimidation",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 20241,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "NOX reduces all enemies' Defense by ?% when she's on the battlefield.",
+          "scripted": true,
+          "scriptName": "common.aura",
+          "maxLevelEffects": [
+            {
+              "propertyId": 9,
+              "key": "penPct",
+              "label": "Armor Pen %",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 15,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "extra1": {
+      "id": 2025,
+      "name": "Extra Skill 1",
+      "damageType": 1,
+      "coefs": [
+        158,
+        169,
+        180,
+        192,
+        205,
+        219,
+        234,
+        250,
+        267,
+        285
+      ],
+      "maxCoef": 285,
+      "coefSource": "AttackPowerCo",
+      "buffs": [],
+      "isSummonSkill": true,
+      "summonScalesFromMaster": true
+    }
+  }
+}

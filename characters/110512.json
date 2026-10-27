@@ -1,0 +1,224 @@
+{
+  "id": 110512,
+  "name": "Kisugi Rui",
+  "baseAtk": 154,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        11,
+        50
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        33,
+        100
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        11,
+        25
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 51201,
+      "name": "Shackles 1",
+      "description": "",
+      "effects": []
+    },
+    {
+      "id": 51202,
+      "name": "Shackles 2",
+      "description": "",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 51203,
+      "name": "Shackles 3",
+      "description": "",
+      "effects": []
+    },
+    {
+      "id": 51204,
+      "name": "Shackles 4",
+      "description": "",
+      "effects": []
+    },
+    {
+      "id": 51205,
+      "name": "Shackles 5",
+      "description": "",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "characteristic": {
+      "id": 5120,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 51200,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.energyfull",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 5121,
+      "name": "Cipherkey",
+      "damageType": 2,
+      "coefs": [
+        56,
+        60,
+        65,
+        71,
+        76,
+        82,
+        89,
+        96,
+        104,
+        112
+      ],
+      "maxCoef": 112,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 51211,
+          "targetCamps": 1,
+          "target": "enemy",
+          "description": "",
+          "scripted": true,
+          "scriptName": "catseye.callingcard",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "ultimate": {
+      "id": 5122,
+      "name": "Signature Frequency",
+      "damageType": 2,
+      "coefs": [
+        700,
+        756,
+        817,
+        882,
+        953,
+        1029,
+        1111,
+        1200,
+        1296,
+        1400
+      ],
+      "maxCoef": 1400,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 51211,
+          "targetCamps": 1,
+          "target": "enemy",
+          "description": "",
+          "scripted": true,
+          "scriptName": "catseye.callingcard",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "skill1": {
+      "id": 5123,
+      "name": "Song of Tomorrow",
+      "damageType": 0,
+      "coefs": [
+        150,
+        162,
+        175,
+        189,
+        204,
+        220,
+        238,
+        257,
+        278,
+        300
+      ],
+      "maxCoef": 300,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 51230,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "catseye.artwork",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 51232,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "catseye.mieupassive",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 5124,
+      "name": "Bandwidth Boost",
+      "damageType": 0,
+      "buffs": []
+    }
+  }
+}

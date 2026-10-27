@@ -1,0 +1,302 @@
+{
+  "id": 110403,
+  "name": "Oak Casket",
+  "baseAtk": 157,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        11,
+        50
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        33,
+        100
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        11,
+        25
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 40301,
+      "name": "Shackles Sync I",
+      "description": "Attack is increased by 5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 40302,
+      "name": "Hymn in the Box",
+      "description": "Oak Casket's damage increases by 25%. The effect stops when she takes any damage and resumes when she doesn't take any damage within 10 seconds.",
+      "effects": [
+        {
+          "propertyId": 17,
+          "key": "dmgBonus",
+          "label": "Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Damage Bonus (general)",
+          "add": 25,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 40303,
+      "name": "Shackles Sync II",
+      "description": "Attack is increased by 5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 40304,
+      "name": "Whispers of Thousand Hills",
+      "description": "[Secret Language]'s cooldown is reduced to 12 seconds.",
+      "effects": []
+    },
+    {
+      "id": 40305,
+      "name": "Shackles Sync III",
+      "description": "Attack is increased by 5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 40306,
+      "effects": [
+        {
+          "propertyId": 17,
+          "key": "dmgBonus",
+          "label": "Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Damage Bonus (general)",
+          "add": 10,
+          "isPercent": true
+        },
+        {
+          "propertyId": 57,
+          "key": "breakingDmgBonus",
+          "label": "Breaking Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Breaking Damage Bonus",
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "characteristic": {
+      "id": 4030,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 40301,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.energyfull",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 4031,
+      "name": "Ebony/Ivory",
+      "damageType": 1,
+      "coefs": [
+        30,
+        32,
+        34.200001,
+        36.5,
+        39,
+        41.599998,
+        44.400002,
+        47.400002,
+        50.599998,
+        54
+      ],
+      "maxCoef": 54,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 4032,
+      "name": "Funeral Elegy",
+      "damageType": 1,
+      "coefs": [
+        320,
+        342,
+        365,
+        389,
+        416,
+        444,
+        474,
+        505,
+        540,
+        576
+      ],
+      "maxCoef": 576,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 4033,
+      "name": "Psionic Lament",
+      "damageType": 0,
+      "coefs": [
+        1.8,
+        1.88,
+        1.97,
+        2.06,
+        2.16,
+        2.25,
+        2.36,
+        2.47,
+        2.58,
+        2.7
+      ],
+      "maxCoef": 2.7,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 40341,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "For every Energy point Oak Casket has, her damage will be increased by ?%.",
+          "scripted": true,
+          "scriptName": "oak.talent",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 4034,
+      "name": "Secret Language",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 40331,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Every 15 seconds, the damage of Oak Casket's next Normal Attack increases by ?% and regains ? points of Energy.",
+          "scripted": true,
+          "scriptName": "oak.passive",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "exclusive": {
+      "id": 4035,
+      "name": "Silent Finale",
+      "damageType": 0,
+      "coefs": [
+        170,
+        195,
+        220
+      ],
+      "maxCoef": 220,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 40361,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Oak Casket switches her fighting strategy, sacrificing some of her Attack Speed to expand her Normal Attack range to cover the whole field. At the same time, the damage of her Normal Attack is increased by ?%. In this state, Oak Casket spends 3 points of Energy per second and no longer recovers Energy over time. She will exit this state upon receiving control effects or performing actions other than Normal Attacks. [Silent Finale] has a cooldown time of 15 seconds after each use.",
+          "scripted": true,
+          "scriptName": "skill.replace",
+          "maxLevelEffects": [
+            {
+              "propertyId": 13,
+              "key": "energySpeed",
+              "label": "Energy Speed",
+              "statScreen": true,
+              "calcCat": null,
+              "add": -500,
+              "isPercent": true
+            }
+          ]
+        },
+        {
+          "statusId": 40362,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Oak Casket switches her fighting strategy, sacrificing some of her Attack Speed to expand her Normal Attack range to cover the whole field. At the same time, the damage of her Normal Attack is increased by ?%. In this state, Oak Casket spends 3 points of Energy per second and no longer recovers Energy over time. She will exit this state upon receiving control effects or performing actions other than Normal Attacks. [Silent Finale] has a cooldown time of 15 seconds after each use.",
+          "scripted": true,
+          "scriptName": "common.changeenergy",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 40363,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Oak Casket switches her fighting strategy, sacrificing some of her Attack Speed to expand her Normal Attack range to cover the whole field. At the same time, the damage of her Normal Attack is increased by ?%. In this state, Oak Casket spends 3 points of Energy per second and no longer recovers Energy over time. She will exit this state upon receiving control effects or performing actions other than Normal Attacks. [Silent Finale] has a cooldown time of 15 seconds after each use.",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

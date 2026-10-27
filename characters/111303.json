@@ -1,0 +1,237 @@
+{
+  "id": 111303,
+  "name": "Sumire",
+  "baseAtk": 140,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        21,
+        100
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        63,
+        200
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        21,
+        50
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 130301,
+      "name": "Shackles Sync I",
+      "description": "Attack Speed +5%",
+      "effects": [
+        {
+          "propertyId": 11,
+          "key": "atkSpeed",
+          "label": "ATK Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 130302,
+      "name": "Come Up Roses",
+      "description": "Every attack reduces the cooldown of [Crazed Sakura] by 1 second.",
+      "effects": []
+    },
+    {
+      "id": 130303,
+      "name": "Shackles Sync II",
+      "description": "Attack Speed +5%",
+      "effects": [
+        {
+          "propertyId": 11,
+          "key": "atkSpeed",
+          "label": "ATK Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 130304,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption reduced by 3 points",
+      "effects": []
+    },
+    {
+      "id": 130305,
+      "name": "Shackles Sync III",
+      "description": "Attack Speed +5%",
+      "effects": [
+        {
+          "propertyId": 11,
+          "key": "atkSpeed",
+          "label": "ATK Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "characteristic": {
+      "id": 13030,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 130301,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.changeenergy",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 13031,
+      "name": "Umbrella Blade",
+      "damageType": 1,
+      "coefs": [
+        68,
+        73,
+        78,
+        83,
+        89,
+        95,
+        101,
+        108,
+        115,
+        123
+      ],
+      "maxCoef": 123,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 13032,
+      "name": "Impermanence",
+      "damageType": 1,
+      "coefs": [
+        250,
+        267,
+        285,
+        304,
+        325,
+        347,
+        370,
+        395,
+        422,
+        450
+      ],
+      "maxCoef": 450,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 13033,
+      "name": "Crazed Sakura",
+      "damageType": 0,
+      "coefs": [
+        45,
+        48,
+        51,
+        55,
+        58,
+        62,
+        67,
+        71,
+        76,
+        81
+      ],
+      "maxCoef": 81,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 130331,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Every 16 seconds, Sumire rapidly stabs all enemies 6 times in the 2 grids ahead, each stab dealing (?% of her Attack) Physical Damage and attaching [Life Loss] mark.\n[Life Loss]: Deals (?% of Sumire's Attack) Physical Damage per second, lasts for 8 seconds.",
+          "scripted": true,
+          "scriptName": "common.timeactiveskill",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 13034,
+      "name": "Flower Silhouette",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 130341,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Sumire gains ?% Damage bonus to enemies if an ally is in the grid ahead of her.",
+          "scripted": true,
+          "scriptName": "common.nearfriendaddbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "extra1": {
+      "id": 13036,
+      "name": "Sumire - Enhanced Normal Attack",
+      "damageType": 1,
+      "coefs": [
+        20,
+        21,
+        23,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36
+      ],
+      "maxCoef": 36,
+      "coefSource": "AttackPowerCo",
+      "buffs": [],
+      "isSummonSkill": true,
+      "summonScalesFromMaster": true
+    }
+  }
+}

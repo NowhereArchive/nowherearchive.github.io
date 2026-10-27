@@ -1,0 +1,214 @@
+{
+  "id": 111102,
+  "name": "Cinnabar",
+  "baseAtk": 103,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        21,
+        100
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        63,
+        200
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        21,
+        50
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 110201,
+      "name": "Will to Protect",
+      "description": "[Wall of Sighs] No longer limited to being centered around self, but can be used on any grid.",
+      "effects": []
+    },
+    {
+      "id": 110202,
+      "name": "Shackles Sync I",
+      "description": "Shield Efficiency +5%",
+      "effects": [
+        {
+          "propertyId": 47,
+          "key": "property_47",
+          "label": "Property 47",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 110203,
+      "name": "Pressure Feedback",
+      "description": "Using [Wall of Sighs] refreshes [Pressure Shield]'s cooldown.",
+      "effects": []
+    },
+    {
+      "id": 110204,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption reduced by 3 points",
+      "effects": []
+    },
+    {
+      "id": 110205,
+      "name": "Shackles Sync II",
+      "description": "Shield Efficiency +5%",
+      "effects": [
+        {
+          "propertyId": 47,
+          "key": "property_47",
+          "label": "Property 47",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "characteristic": {
+      "id": 11020,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 110201,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 47,
+              "key": "property_47",
+              "label": "Property 47",
+              "statScreen": false,
+              "calcCat": null,
+              "add": 10,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 11021,
+      "name": "Kick",
+      "damageType": 1,
+      "coefs": [
+        104,
+        110,
+        118,
+        126,
+        134,
+        143,
+        153,
+        163,
+        174,
+        186
+      ],
+      "maxCoef": 186,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 11022,
+      "name": "Wall of Sighs",
+      "damageType": 0,
+      "coefs": [
+        2.5,
+        2.7,
+        2.8,
+        3,
+        3.2,
+        3.5,
+        3.7,
+        3.9,
+        4.2,
+        4.5
+      ],
+      "maxCoef": 4.5,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 11023,
+      "name": "Pressure Shield",
+      "damageType": 0,
+      "coefs": [
+        12,
+        12.8,
+        13.7,
+        14.6,
+        15.6,
+        16.6,
+        17.799999,
+        19,
+        20,
+        21.6
+      ],
+      "maxCoef": 21.6,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 110231,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Before taking damage, Cinnabar gains a (?% of Max HP) shield for 5 seconds. This effect can be triggered once every 25 seconds.",
+          "scripted": true,
+          "scriptName": "beisefenni.passive",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 11024,
+      "name": "Comprehensive Field",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 110241,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "At the start of the battle, all allies gain a ?% shield bonus.",
+          "scripted": true,
+          "scriptName": "common.triggerfield",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

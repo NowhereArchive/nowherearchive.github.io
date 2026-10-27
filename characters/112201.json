@@ -1,0 +1,319 @@
+{
+  "id": 112201,
+  "name": "Hella",
+  "baseAtk": 146,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        21,
+        890
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        1,
+        5
+      ],
+      "attackCoefficient": [
+        21,
+        890
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        3,
+        10
+      ],
+      "attackCoefficient": [
+        21,
+        890
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        2,
+        5
+      ],
+      "attackCoefficient": [
+        21,
+        890
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 220101,
+      "name": "Endless",
+      "description": "[Street Justice] Duration extended by 2 seconds",
+      "effects": []
+    },
+    {
+      "id": 220102,
+      "name": "Shackles Sync I",
+      "description": "Max HP +10%",
+      "effects": [
+        {
+          "propertyId": 1,
+          "key": "hp",
+          "label": "HP",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 220103,
+      "name": "All Walks of Life",
+      "description": "Triggering [Ultra Self-healing] removes all of Hella's debuffs.",
+      "effects": []
+    },
+    {
+      "id": 220104,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption is reduced by 3 points.",
+      "effects": []
+    },
+    {
+      "id": 220105,
+      "name": "Shackles Sync II",
+      "description": "Max HP +10%",
+      "effects": [
+        {
+          "propertyId": 1,
+          "key": "hp",
+          "label": "HP",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 220106,
+      "effects": [
+        {
+          "propertyId": 45,
+          "key": "property_45",
+          "label": "Property 45",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "characteristic": {
+      "id": 22010,
+      "name": "Shackles 6",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 220101,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 1,
+              "key": "hp",
+              "label": "HP",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 10,
+              "isPercent": true
+            },
+            {
+              "propertyId": 17,
+              "key": "dmgBonus",
+              "label": "Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Damage Bonus (general)",
+              "add": 5,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 22011,
+      "name": "Pipe Strike",
+      "damageType": 1,
+      "coefs": [
+        113,
+        121,
+        129,
+        138,
+        147,
+        157,
+        168,
+        179,
+        191,
+        204
+      ],
+      "maxCoef": 204,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 22012,
+      "name": "Street Justice",
+      "damageType": 0,
+      "coefs": [
+        90,
+        97,
+        103,
+        110,
+        117,
+        125,
+        134,
+        143,
+        152,
+        163
+      ],
+      "maxCoef": 163,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 220121,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Hella randomly swings her weapon with all her might, turning [Pipe Strike] into a 2-hit attack and gaining a ?% Attack bonus. This effect lasts for 10 seconds, during which she can't automatically recover Energy.",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 2,
+              "key": "atk",
+              "label": "ATK",
+              "statScreen": false,
+              "calcCat": null,
+              "add": 36,
+              "isPercent": true
+            }
+          ]
+        },
+        {
+          "statusId": 220122,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Hella randomly swings her weapon with all her might, turning [Pipe Strike] into a 2-hit attack and gaining a ?% Attack bonus. This effect lasts for 10 seconds, during which she can't automatically recover Energy.",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 13,
+              "key": "energySpeed",
+              "label": "Energy Speed",
+              "statScreen": true,
+              "calcCat": null,
+              "add": -500,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "skill1": {
+      "id": 22013,
+      "name": "Slow Recovery",
+      "damageType": 0,
+      "coefs": [
+        4,
+        4.2,
+        4.4,
+        4.6,
+        4.8,
+        5,
+        5.2,
+        5.5,
+        5.7,
+        6
+      ],
+      "maxCoef": 6,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 220131,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "If Hella takes no damage for 4 seconds, she then restores ?% of her Max HP per second.",
+          "scripted": true,
+          "scriptName": "hella.passive",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 22014,
+      "name": "Ultra Self-healing",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 220141,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When Hella's HP drops below 20%, she restores ?% of her Max HP. This effect can be triggered only once per battle.",
+          "scripted": true,
+          "scriptName": "hella.talent",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "extra1": {
+      "id": 22015,
+      "name": "Ultimate Normal Attack",
+      "damageType": 1,
+      "coefs": [
+        90,
+        97,
+        103,
+        110,
+        117,
+        125,
+        134,
+        143,
+        152,
+        163
+      ],
+      "maxCoef": 163,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "extra2": {
+      "id": 22017,
+      "name": "Enhanced Normal Attack",
+      "damageType": 1,
+      "coefs": [
+        90,
+        97,
+        103,
+        110,
+        117,
+        125,
+        134,
+        143,
+        152,
+        163
+      ],
+      "maxCoef": 163,
+      "coefSource": "AttackPowerCo",
+      "buffs": [],
+      "isSummonSkill": true,
+      "summonScalesFromMaster": true
+    }
+  }
+}

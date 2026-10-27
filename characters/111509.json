@@ -1,0 +1,215 @@
+{
+  "id": 111509,
+  "name": "Wuhuanzi",
+  "baseAtk": 158,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        21,
+        100
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        63,
+        200
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        21,
+        50
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 150901,
+      "name": "Shackles Sync I",
+      "description": "Magic damage increases by 8%.",
+      "effects": [
+        {
+          "propertyId": 19,
+          "key": "mDmgBonus",
+          "label": "Magic Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Magic Damage Bonus",
+          "add": 8,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 150902,
+      "name": "From Decline to Prosperity",
+      "description": "When [Tempestuous Flick] is cast, restores 3 Energy. If [Karmic Shift] effect is not triggered, restores 6 Energy instead.",
+      "effects": []
+    },
+    {
+      "id": 150903,
+      "name": "Shackles Sync II",
+      "description": "Magic damage increases by 8%.",
+      "effects": [
+        {
+          "propertyId": 19,
+          "key": "mDmgBonus",
+          "label": "Magic Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Magic Damage Bonus",
+          "add": 8,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 150904,
+      "name": "Twin Fortunes",
+      "description": "Normal attack deals 2 quick strikes. There is an 85% chance that [Karmic Shift] will not be triggered. This effect can only be triggered up to once every 0.5 seconds.",
+      "effects": []
+    },
+    {
+      "id": 150905,
+      "name": "Shackles Sync III",
+      "description": "Magic damage increases by 8%.",
+      "effects": [
+        {
+          "propertyId": 19,
+          "key": "mDmgBonus",
+          "label": "Magic Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Magic Damage Bonus",
+          "add": 8,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "characteristic": {
+      "id": 15090,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 150900,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "wuhuanzi.luckye",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 15091,
+      "name": "Talismanic Strike",
+      "damageType": 2,
+      "coefs": [
+        58,
+        63,
+        68,
+        74,
+        79,
+        86,
+        93,
+        100,
+        108,
+        116
+      ],
+      "maxCoef": 116,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 15092,
+      "name": "Tempestuous Flick",
+      "damageType": 2,
+      "coefs": [
+        370,
+        400,
+        432,
+        466,
+        503,
+        544,
+        587,
+        634,
+        685,
+        740
+      ],
+      "maxCoef": 740,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 15093,
+      "name": "Phantom Talismans",
+      "damageType": 0,
+      "coefs": [
+        90,
+        97.199997,
+        105,
+        113.400002,
+        122.5,
+        132.300003,
+        142.899994,
+        154.300003,
+        166.699997,
+        180
+      ],
+      "maxCoef": 180,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 150901,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Whenever Wuhuanzi uses normal attack, [Talisman] deals (Attack *?%) Magic Damage twice to all enemies within a single grid. There is a ?% chance of triggering [Karmic Shift], dealing damage only once.",
+          "scripted": true,
+          "scriptName": "wuhuanzi.passive",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 15094,
+      "name": "Nadir's Edge",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 150902,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When [Karmic Shift] fails to be triggered, Attack increases by ?%, stacking up to ? times and lasting for ? seconds. When the duration ends, one stack is removed.",
+          "scripted": true,
+          "scriptName": "wuhuanzi.talent",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

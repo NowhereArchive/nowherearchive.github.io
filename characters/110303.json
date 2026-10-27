@@ -1,0 +1,282 @@
+{
+  "id": 110303,
+  "name": "Serpent",
+  "baseAtk": 156,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        11,
+        50
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        33,
+        100
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        11,
+        25
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 30301,
+      "name": "The Show Begins",
+      "description": "After using [Serpent Constriction] or [Brilliant Appearance], Serpent gains 20% Attack Speed bonus for 12 seconds.",
+      "effects": []
+    },
+    {
+      "id": 30302,
+      "name": "Shackles Sync I",
+      "description": "Attack Speed +5%",
+      "effects": [
+        {
+          "propertyId": 11,
+          "key": "atkSpeed",
+          "label": "ATK Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 30303,
+      "name": "Joy Comes First",
+      "description": "After [Ophidian Domination] is cast, it has a 30% chance of being retriggered.",
+      "effects": []
+    },
+    {
+      "id": 30304,
+      "name": "The Sufferer",
+      "description": "[Serpent Constriction] Energy Consumption is reduced by 3 points.",
+      "effects": []
+    },
+    {
+      "id": 30305,
+      "name": "Shackles Sync II",
+      "description": "Attack Speed +5%",
+      "effects": [
+        {
+          "propertyId": 11,
+          "key": "atkSpeed",
+          "label": "ATK Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "characteristic": {
+      "id": 3030,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 30343,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "snake.skillrepeated",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 3031,
+      "name": "Blade of Fang",
+      "damageType": 2,
+      "coefs": [
+        80,
+        85,
+        91,
+        97,
+        104,
+        111,
+        118,
+        126,
+        135,
+        144
+      ],
+      "maxCoef": 144,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 3032,
+      "name": "Serpent Constriction",
+      "damageType": 2,
+      "coefs": [
+        600,
+        640,
+        684,
+        730,
+        779,
+        832,
+        888,
+        948,
+        1012,
+        1080
+      ],
+      "maxCoef": 1080,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 30321,
+          "targetCamps": 1,
+          "target": "enemy",
+          "description": "After charging, Serpent smashes the ground with chains and deals (Attack * ?%) Magic Damage and 1 Core Damage to all enemies within range, leaving [Fang] marks on them for 12 seconds.",
+          "scripted": true,
+          "scriptName": "snake.covered",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "skill1": {
+      "id": 3033,
+      "name": "Thermal Effect",
+      "damageType": 0,
+      "coefs": [
+        30,
+        31.4,
+        32.799999,
+        34.299999,
+        35.900002,
+        37.599998,
+        39.299999,
+        41.099998,
+        43,
+        45
+      ],
+      "maxCoef": 45,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 30331,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When Serpent's grid is free of enemies, her Normal Attack range extends to the 3x3 square around and gains ?% Normal Attack bonus.",
+          "scripted": true,
+          "scriptName": "snake.passive2",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 3034,
+      "name": "Ophidian Domination",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 30341,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "After triggering [Thermal Effect] 6 times, Serpent rolls in the air to give a sweep, dealing (Attack * ?%) Magic Damage to all enemies within range, leaving [Fang] marks on them for 12 seconds. This skill's unleash speed is affected by Attack Speed bonus.",
+          "scripted": true,
+          "scriptName": "normalattack.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "exclusive": {
+      "id": 3035,
+      "name": "Brilliant Appearance",
+      "damageType": 0,
+      "coefs": [
+        10,
+        12.5,
+        15
+      ],
+      "maxCoef": 15,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "extra1": {
+      "id": 3037,
+      "name": "Extra Skill 1",
+      "damageType": 2,
+      "coefs": [
+        300,
+        320,
+        342,
+        365,
+        390,
+        416,
+        444,
+        474,
+        506,
+        540
+      ],
+      "maxCoef": 540,
+      "coefSource": "AttackPowerCo",
+      "buffs": [
+        {
+          "statusId": 30321,
+          "targetCamps": 1,
+          "target": "enemy",
+          "description": "",
+          "scripted": true,
+          "scriptName": "snake.covered",
+          "maxLevelEffects": []
+        }
+      ],
+      "isSummonSkill": true,
+      "summonScalesFromMaster": true
+    },
+    "extra2": {
+      "id": 3036,
+      "name": "Extra Skill 2",
+      "damageType": 2,
+      "coefs": [
+        80,
+        85,
+        91,
+        97,
+        104,
+        111,
+        118,
+        126,
+        135,
+        144
+      ],
+      "maxCoef": 144,
+      "coefSource": "AttackPowerCo",
+      "buffs": [],
+      "isSummonSkill": true,
+      "summonScalesFromMaster": true
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "id": 111511,
+  "name": "Evie",
+  "baseAtk": 147,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        21,
+        100
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        63,
+        200
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        21,
+        50
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 151101,
+      "name": "",
+      "description": "",
+      "effects": []
+    },
+    {
+      "id": 151102,
+      "name": "",
+      "description": "",
+      "effects": []
+    },
+    {
+      "id": 151103,
+      "name": "",
+      "description": "",
+      "effects": []
+    },
+    {
+      "id": 151104,
+      "name": "",
+      "description": "",
+      "effects": []
+    },
+    {
+      "id": 151105,
+      "name": "",
+      "description": "",
+      "effects": []
+    }
+  ],
+  "phasePassives": [],
+  "skills": {}
+}

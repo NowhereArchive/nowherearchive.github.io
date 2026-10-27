@@ -1,0 +1,250 @@
+{
+  "id": 112101,
+  "name": "K.K.",
+  "baseAtk": 101,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        21,
+        890
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        1,
+        5
+      ],
+      "attackCoefficient": [
+        21,
+        890
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        3,
+        10
+      ],
+      "attackCoefficient": [
+        21,
+        890
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        2,
+        5
+      ],
+      "attackCoefficient": [
+        21,
+        890
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 210101,
+      "name": "Regards from Whitestone",
+      "description": "Gains Taunt while [Defensive Stance] lasts.",
+      "effects": []
+    },
+    {
+      "id": 210102,
+      "name": "Shackles Sync I",
+      "description": "Defense is increased by 5%",
+      "effects": [
+        {
+          "propertyId": 3,
+          "key": "armor",
+          "label": "Armor",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 210103,
+      "name": "Bite the Bullet",
+      "description": "After the battle starts, all allies gain a 5% Defense increase.",
+      "effects": []
+    },
+    {
+      "id": 210104,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption reduced by 3 points",
+      "effects": []
+    },
+    {
+      "id": 210105,
+      "name": "Shackles Sync II",
+      "description": "Defense is increased by 5%",
+      "effects": [
+        {
+          "propertyId": 3,
+          "key": "armor",
+          "label": "Armor",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 210106,
+      "effects": [
+        {
+          "propertyId": 23,
+          "key": "takePDmgReduce",
+          "label": "Take Phys Damage Reduce",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 15,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "characteristic": {
+      "id": 21010,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 210102,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 3,
+              "key": "armor",
+              "label": "Armor",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 5,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 21011,
+      "name": "Street Fight",
+      "damageType": 1,
+      "coefs": [
+        88,
+        95,
+        100,
+        107,
+        115,
+        123,
+        130,
+        140,
+        150,
+        160
+      ],
+      "maxCoef": 160,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 21012,
+      "name": "Defensive Stance",
+      "damageType": 0,
+      "coefs": [
+        20,
+        21.299999,
+        22.799999,
+        24.299999,
+        26,
+        27.700001,
+        29.6,
+        31.6,
+        33.700001,
+        36
+      ],
+      "maxCoef": 36,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 210121,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "K.K. shows her fighting spirit, increasing her Defense by ?% for 12 seconds, during which she can't automatically recover Energy.",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 3,
+              "key": "armor",
+              "label": "Armor",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 36,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "skill1": {
+      "id": 21013,
+      "name": "Pain Tolerance",
+      "damageType": 0,
+      "coefs": [
+        20,
+        22,
+        22,
+        24,
+        26,
+        26,
+        28,
+        28,
+        30,
+        30
+      ],
+      "maxCoef": 30,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 210131,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When K.K. takes damage, her Defense is increased by ?%. The effect can stack up to ? times.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 21014,
+      "name": "Solid Defense",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 210141,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "For each enemy K.K. blocks, her Defense is increased by ?%.",
+          "scripted": true,
+          "scriptName": "common.blockedaddbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

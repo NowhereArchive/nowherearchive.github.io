@@ -1,0 +1,203 @@
+{
+  "id": 110609,
+  "name": "Parfait",
+  "baseAtk": 129,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        11,
+        50
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        33,
+        100
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        11,
+        25
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 60901,
+      "name": "Herd Mentality",
+      "description": "When an allied Sinner with [Credit] already stacked to the maximum gains [Credit] again, it is randomly distributed to other allied Sinners with [Deception].",
+      "effects": []
+    },
+    {
+      "id": 60902,
+      "name": "Energy Boost I",
+      "description": "At the start of the battle, Parfait gains 10 Energy.",
+      "effects": []
+    },
+    {
+      "id": 60903,
+      "name": "Economic Bubble",
+      "description": "When [Deception] is active on allied Sinners, if [Credit] is stacked to the maximum, the effect is additionally increased by 30%. Additionally, for each stack of [Credit] gained by allied Sinners, Parfait's Energy recovery speed increases by 3%, stacking up to 18 times,",
+      "effects": []
+    },
+    {
+      "id": 60904,
+      "name": "Illusory Liquidity",
+      "description": "When allied Sinners with [Credit] deal damage, for each 1 Core Damage applied by that attack, recovers 1 Energy. If that attack breaks an [Umbra Core] and Parfait has unlocked the [Leverage Doubling] effect, recovers 2 Energy instead. This effect can trigger up to 3 times per second.",
+      "effects": []
+    },
+    {
+      "id": 60905,
+      "name": "Energy Boost II",
+      "description": "At the start of the battle, Parfait gains 10 Energy.",
+      "effects": []
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "characteristic": {
+      "id": 6090,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 60900,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "graves.superweaknesscreator",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 6091,
+      "name": "Invest",
+      "damageType": 1,
+      "coefs": [
+        48,
+        52,
+        56,
+        60,
+        65,
+        71,
+        76,
+        82,
+        89,
+        96
+      ],
+      "maxCoef": 96,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 6092,
+      "name": "Credit Speculation",
+      "damageType": 1,
+      "coefs": [
+        1.5,
+        1.6,
+        1.7,
+        1.9,
+        2,
+        2.2,
+        2.4,
+        2.6,
+        2.8,
+        3
+      ],
+      "maxCoef": 3,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 60923,
+          "targetCamps": 2,
+          "target": "self",
+          "description": "Parfait applies [Deception] to the 3 allied Sinners with the highest Attack for 20 seconds. When allied Sinners with [Deception] deal Core Damage, Parfait grants them [Credit] based on the number of broken cores, stacking up to 12 times per second.\n[Credit]: Each stack grants the carrier ?% increased damage against elite and boss units, stacking up to 12 times and lasting until the end of the battle. During [Deception], if [Credit] reaches maximum stacks, the effect is increased by 30%. When [Deception] ends, if [Credit] has not reached maximum stacks, all stacks are removed.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 60920,
+          "targetCamps": 2,
+          "target": "self",
+          "description": "Parfait applies [Deception] to the 3 allied Sinners with the highest Attack for 20 seconds. When allied Sinners with [Deception] deal Core Damage, Parfait grants them [Credit] based on the number of broken cores, stacking up to 12 times per second.\n[Credit]: Each stack grants the carrier ?% increased damage against elite and boss units, stacking up to 12 times and lasting until the end of the battle. During [Deception], if [Credit] reaches maximum stacks, the effect is increased by 30%. When [Deception] ends, if [Credit] has not reached maximum stacks, all stacks are removed.",
+          "scripted": true,
+          "scriptName": "parfait.fraud",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 609211,
+          "targetCamps": 2,
+          "target": "self",
+          "description": "Parfait applies [Deception] to the 3 allied Sinners with the highest Attack for 20 seconds. When allied Sinners with [Deception] deal Core Damage, Parfait grants them [Credit] based on the number of broken cores, stacking up to 12 times per second.\n[Credit]: Each stack grants the carrier ?% increased damage against elite and boss units, stacking up to 12 times and lasting until the end of the battle. During [Deception], if [Credit] reaches maximum stacks, the effect is increased by 30%. When [Deception] ends, if [Credit] has not reached maximum stacks, all stacks are removed.",
+          "scripted": true,
+          "scriptName": "common.addbuffaftercasterbuffstart",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "skill1": {
+      "id": 6093,
+      "name": "Feedback Loop",
+      "damageType": 0,
+      "coefs": [
+        15,
+        16.200001,
+        17.5,
+        18.9,
+        20.4,
+        22,
+        23.799999,
+        25.700001,
+        27.799999,
+        30
+      ],
+      "maxCoef": 30,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 60930,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When allied Sinners with [Credit] deal damage, for every 1 Core Damage applied by that attack, Parfait recovers (Attack *?%) HP per [Credit] stack for them, and other allied Sinners receive ?% of the recovery effect. This effect can trigger up to 6 times per second.",
+          "scripted": true,
+          "scriptName": "parfait.passive",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 6094,
+      "name": "Irrational Exuberance",
+      "damageType": 0,
+      "buffs": []
+    }
+  }
+}

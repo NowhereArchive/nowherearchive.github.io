@@ -1,0 +1,228 @@
+{
+  "id": 110107,
+  "name": "Rust",
+  "baseAtk": 102,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        11,
+        50
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        33,
+        100
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        11,
+        25
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 10701,
+      "name": "Shackles 1",
+      "description": "",
+      "effects": []
+    },
+    {
+      "id": 10702,
+      "name": "Shackles 2",
+      "description": "",
+      "effects": [
+        {
+          "propertyId": 1,
+          "key": "hp",
+          "label": "HP",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 10703,
+      "name": "Shackles 3",
+      "description": "",
+      "effects": []
+    },
+    {
+      "id": 10704,
+      "name": "Shackles 4",
+      "description": "",
+      "effects": []
+    },
+    {
+      "id": 10705,
+      "name": "Shackles 5",
+      "description": "",
+      "effects": [
+        {
+          "propertyId": 1,
+          "key": "hp",
+          "label": "HP",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 1070,
+      "effects": [
+        {
+          "propertyId": 1,
+          "key": "hp",
+          "label": "HP",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 15,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "normalAttack": {
+      "id": 1071,
+      "name": "Normal Attack",
+      "damageType": 1,
+      "coefs": [
+        4,
+        4.3,
+        4.7,
+        5,
+        5.4,
+        5.9,
+        6.3,
+        6.9,
+        7.4,
+        8
+      ],
+      "maxCoef": 8,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 1072,
+      "name": "Crimson Rite",
+      "damageType": 1,
+      "coefs": [
+        80,
+        86.400002,
+        93.900002,
+        100.800003,
+        108.900002,
+        117.599998,
+        127,
+        137.199997,
+        148.100006,
+        160
+      ],
+      "maxCoef": 160,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 1073,
+      "name": "Humility",
+      "damageType": 0,
+      "coefs": [
+        160,
+        172.800003,
+        186.600006,
+        201.600006,
+        217.699997,
+        235.199997,
+        254,
+        274.299988,
+        296.299988,
+        320
+      ],
+      "maxCoef": 320,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 10731,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "After Rust deals damage with four normal attacks, the next normal attack triggers [Mesh].\n[Mesh]: Deals (Max HP *?%) Physical Damage to all enemies within the 3x3 square in front. Meanwhile, he gains 5 M-Value.\n[Corruption State]: After using [Kinetic Release], [Mesh] is automatically triggered once every second for 2 seconds.",
+          "scripted": true,
+          "scriptName": "rust.passive",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 1074,
+      "name": "Bone-Etched Verse",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 10741,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Damage dealt by [Mesh] increases by ?%. When [Mesh] hits only one enemy, the damage dealt is additionally increased by ?%.",
+          "scripted": true,
+          "scriptName": "rahu.talent",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 10742,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Damage dealt by [Mesh] increases by ?%. When [Mesh] hits only one enemy, the damage dealt is additionally increased by ?%.",
+          "scripted": true,
+          "scriptName": "rahu.talent",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "exclusive": {
+      "id": 1075,
+      "name": "Blood, Flesh and Bone",
+      "damageType": 1,
+      "coefs": [
+        2,
+        3,
+        3
+      ],
+      "maxCoef": 3,
+      "coefSource": "Data",
+      "buffs": []
+    }
+  }
+}

@@ -1,0 +1,271 @@
+{
+  "id": 110513,
+  "name": "Isomer",
+  "baseAtk": 170,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        11,
+        50
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        33,
+        100
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        11,
+        25
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 51301,
+      "name": "Isomer - Shackles 1",
+      "description": "",
+      "effects": []
+    },
+    {
+      "id": 51302,
+      "name": "Isomer - Shackles 2",
+      "description": "",
+      "effects": [
+        {
+          "propertyId": 11,
+          "key": "atkSpeed",
+          "label": "ATK Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 8,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 51303,
+      "name": "Isomer - Shackles 3",
+      "description": "",
+      "effects": []
+    },
+    {
+      "id": 51304,
+      "name": "Isomer - Shackles 4",
+      "description": "",
+      "effects": []
+    },
+    {
+      "id": 51305,
+      "name": "Isomer - Shackles 5",
+      "description": "",
+      "effects": [
+        {
+          "propertyId": 11,
+          "key": "atkSpeed",
+          "label": "ATK Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 8,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 51306,
+      "effects": [
+        {
+          "propertyId": 11,
+          "key": "atkSpeed",
+          "label": "ATK Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 15,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "characteristic": {
+      "id": 5130,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 51300,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 17,
+              "key": "dmgBonus",
+              "label": "Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Damage Bonus (general)",
+              "add": 5,
+              "isPercent": true
+            },
+            {
+              "propertyId": 57,
+              "key": "breakingDmgBonus",
+              "label": "Breaking Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Breaking Damage Bonus",
+              "add": 5,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 5131,
+      "name": "Normal Attack",
+      "damageType": 2,
+      "coefs": [
+        81,
+        87,
+        94,
+        102,
+        110,
+        119,
+        129,
+        139,
+        150,
+        162
+      ],
+      "maxCoef": 162,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 5132,
+      "name": "Ultimate",
+      "damageType": 0,
+      "coefs": [
+        120,
+        130,
+        140,
+        151,
+        163,
+        176,
+        190,
+        206,
+        222,
+        240
+      ],
+      "maxCoef": 240,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 5133,
+      "name": "Passive",
+      "damageType": 0,
+      "coefs": [
+        50,
+        54,
+        58,
+        63,
+        68,
+        73,
+        79,
+        86,
+        93,
+        100
+      ],
+      "maxCoef": 100,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 51331,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "aisemoer.passive",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 5134,
+      "name": "Passive",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 51341,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "aisemoer.talent",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 51342,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 11,
+              "key": "atkSpeed",
+              "label": "ATK Speed",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 21.000999,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "exclusive": {
+      "id": 5135,
+      "name": "Exclusive",
+      "damageType": 2,
+      "coefs": [
+        600,
+        800,
+        1000
+      ],
+      "maxCoef": 1000,
+      "coefSource": "Data",
+      "buffs": []
+    }
+  }
+}

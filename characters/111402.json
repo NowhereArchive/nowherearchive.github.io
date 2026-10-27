@@ -1,0 +1,234 @@
+{
+  "id": 111402,
+  "name": "Roulecca",
+  "baseAtk": 150,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        21,
+        100
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        63,
+        200
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        21,
+        50
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 140201,
+      "name": "Royal Flush",
+      "description": "[Lucky Roulette] After casting, there is a 40% chance to reset the charge. This effect can be triggered every 6 seconds.",
+      "effects": []
+    },
+    {
+      "id": 140202,
+      "name": "Shackles Sync I",
+      "description": "Normal ATK Damage +5%",
+      "effects": [
+        {
+          "propertyId": 26,
+          "key": "normalDmgBonus",
+          "label": "Normal Attack Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Normal Attack Damage Bonus",
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 140203,
+      "name": "Push Your Luck",
+      "description": "When the decrease damage taken effect of [Hit Me If You Can] activates, it lasts for 3 seconds.",
+      "effects": []
+    },
+    {
+      "id": 140204,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption is reduced by 3 points.",
+      "effects": []
+    },
+    {
+      "id": 140205,
+      "name": "Shackles Sync II",
+      "description": "Normal ATK Damage +5%",
+      "effects": [
+        {
+          "propertyId": 26,
+          "key": "normalDmgBonus",
+          "label": "Normal Attack Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Normal Attack Damage Bonus",
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "characteristic": {
+      "id": 14020,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 140201,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "kuangdu.bulletpool",
+          "maxLevelEffects": [
+            {
+              "propertyId": 17,
+              "key": "dmgBonus",
+              "label": "Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Damage Bonus (general)",
+              "add": 5,
+              "isPercent": true
+            },
+            {
+              "propertyId": 57,
+              "key": "breakingDmgBonus",
+              "label": "Breaking Damage Bonus",
+              "statScreen": false,
+              "calcCat": "Breaking Damage Bonus",
+              "add": 5,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 14021,
+      "name": "Precision Revolver",
+      "damageType": 1,
+      "coefs": [
+        95,
+        102,
+        109,
+        116,
+        124,
+        132,
+        141,
+        150,
+        161,
+        171
+      ],
+      "maxCoef": 171,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 14022,
+      "name": "Lucky Roulette",
+      "damageType": 0,
+      "coefs": [
+        225,
+        243,
+        262,
+        283,
+        306,
+        331,
+        357,
+        386,
+        417,
+        450
+      ],
+      "maxCoef": 450,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 14023,
+      "name": "You're Dead Meat",
+      "damageType": 0,
+      "coefs": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        21,
+        22,
+        24,
+        25,
+        27
+      ],
+      "maxCoef": 27,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 140231,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Roulecca's Attack Speed is increased by ?%. Each [Lucky Bullet] has a 15% chance to increase [Lucky Bullet]'s CRIT Rate and CRIT Damage. The effect can stack up to 3 times.\n\n1 stack: 10% CRIT Rate and 15% CRIT Damage\n2 stacks: 20% CRIT Rate and 30% CRIT Damage\n3 stacks: 40% CRIT Rate and 60% CRIT Damage",
+          "scripted": true,
+          "scriptName": "kuangdu.bulletaddbuff",
+          "maxLevelEffects": [
+            {
+              "propertyId": 11,
+              "key": "atkSpeed",
+              "label": "ATK Speed",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 27,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "passive": {
+      "id": 14024,
+      "name": "Hit Me If You Can",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 140241,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "For every 6 [Lucky Bullets] fired, Roulecca reduces her next damage to take by ?%.",
+          "scripted": true,
+          "scriptName": "kuangdu.bulletaddbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

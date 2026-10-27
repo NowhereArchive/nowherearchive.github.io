@@ -1,0 +1,285 @@
+{
+  "id": 110613,
+  "name": "Jichuan",
+  "baseAtk": 147,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        11,
+        50
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        33,
+        100
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        11,
+        25
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 61301,
+      "name": "Shackles 1",
+      "description": "Shackles 1",
+      "effects": []
+    },
+    {
+      "id": 61302,
+      "name": "Shackles 2",
+      "description": "Shackles 2",
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 61303,
+      "name": "Shackles 3",
+      "description": "Shackles 3",
+      "effects": []
+    },
+    {
+      "id": 61304,
+      "name": "Shackles 4",
+      "description": "Shackles 4",
+      "effects": []
+    },
+    {
+      "id": 61305,
+      "name": "Shackles 5",
+      "description": "Shackles 5",
+      "effects": []
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "characteristic": {
+      "id": 6130,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 61300,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "jichuan.feature",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 61305,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "skill.replace",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 61306,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 61311,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "jichuan.chains",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 61312,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "secretland.damagetypeaddbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 61313,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "secretland.damagetypeaddbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 61314,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 13,
+              "key": "energySpeed",
+              "label": "Energy Speed",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 10,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 6131,
+      "name": "Plum Branch",
+      "damageType": 1,
+      "coefs": [
+        58,
+        63,
+        68,
+        73,
+        79,
+        85,
+        92,
+        99,
+        107,
+        116
+      ],
+      "maxCoef": 116,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 6132,
+      "name": "Wind's Path",
+      "damageType": 1,
+      "coefs": [
+        10,
+        10.8,
+        11.7,
+        12.6,
+        13.6,
+        14.7,
+        15.9,
+        17.1,
+        18.5,
+        20
+      ],
+      "maxCoef": 20,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 6133,
+      "name": "Pulsing Wind",
+      "damageType": 0,
+      "coefs": [
+        50,
+        54,
+        58.299999,
+        63,
+        68,
+        73.5,
+        79.400002,
+        85.699997,
+        92.599998,
+        100
+      ],
+      "maxCoef": 100,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 61331,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Every 10 seconds, Ceto turns her next normal attack into dealing damage in 1 grid, dealing (?% of her Attack) Physical Damage 4 times.",
+          "scripted": true,
+          "scriptName": "jichuan.passive",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 6134,
+      "name": "Three Powers Synergy",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 61341,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Ceto gains a ?% damage bonus for each enemy on the battlefield. The bonus can stack up to 6 times.",
+          "scripted": true,
+          "scriptName": "jichuan.talent",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 61308,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Ceto gains a ?% damage bonus for each enemy on the battlefield. The bonus can stack up to 6 times.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 61309,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Ceto gains a ?% damage bonus for each enemy on the battlefield. The bonus can stack up to 6 times.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "extra1": {
+      "id": 6137,
+      "name": "Ceto swings her chainsaw frantically, dealing (?% of Attack damage) Physical Damage to enemies within range 5 times.",
+      "damageType": 1,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    }
+  }
+}

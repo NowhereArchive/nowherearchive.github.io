@@ -1,0 +1,291 @@
+{
+  "id": 110610,
+  "name": "Shin",
+  "baseAtk": 135,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        11,
+        50
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        33,
+        100
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        11,
+        25
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 61001,
+      "name": "Abyssal Voice",
+      "description": "[Sleeptalk]'s skill range is expanded to the entire field.",
+      "effects": []
+    },
+    {
+      "id": 61002,
+      "name": "Shackles Sync I",
+      "description": "Healing is increased by 10%.",
+      "effects": [
+        {
+          "propertyId": 43,
+          "key": "property_43",
+          "label": "Property 43",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 61003,
+      "name": "Crawling Truth",
+      "description": "Removes restrictions for the [Immortal] Alignment in [Voyager] and [Immortal Domain].",
+      "effects": []
+    },
+    {
+      "id": 61004,
+      "name": "True Form",
+      "description": "At the start of battle, allied Sinners gain 8 stacks of [Abyssal Gaze].",
+      "effects": []
+    },
+    {
+      "id": 61005,
+      "name": "Shackles Sync II",
+      "description": "Healing is increased by 10%.",
+      "effects": [
+        {
+          "propertyId": 43,
+          "key": "property_43",
+          "label": "Property 43",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "characteristic": {
+      "id": 6100,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 61001,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.changeragevalue",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 61003,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.stateaddbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 61004,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.stateaddbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 610031,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.stateaddbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 610041,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.stateaddbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 61005,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "skill.replace",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 61006,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "skill.replace",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 610051,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "skill.replace",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 6101,
+      "name": "Sleeptalk",
+      "damageType": 0,
+      "coefs": [
+        36,
+        39,
+        42,
+        45,
+        49,
+        53,
+        57,
+        62,
+        67,
+        72
+      ],
+      "maxCoef": 72,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 6102,
+      "name": "Abyssal Blessing",
+      "damageType": 0,
+      "coefs": [
+        13.5,
+        14.6,
+        15.7,
+        17,
+        18.4,
+        19.799999,
+        21.4,
+        23.1,
+        25,
+        27
+      ],
+      "maxCoef": 27,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 6103,
+      "name": "Glimpse of Truth",
+      "damageType": 0,
+      "coefs": [
+        2,
+        2.2,
+        2.3,
+        2.5,
+        2.7,
+        2.9,
+        3.2,
+        3.4,
+        3.7,
+        4
+      ],
+      "maxCoef": 4,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 61031,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When allied Sinners are within the [Sleeptalk] skill range, they gain 1 stack of [Abyssal Gaze] every 2 seconds. This gives Sinners a ?% Normal Attack Damage boost. [Abyssal Gaze] can stack up to 10 times. When allied Sinners leave the [Sleeptalk] skill range, 1 stack of [Abyssal Gaze] is removed every 2 seconds.",
+          "scripted": true,
+          "scriptName": "shin.damageaura",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 6104,
+      "name": "Immortal Domain",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 61041,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "For each allied [Immortal] Sinner on the field, the entire team gains a ?% damage boost. This effect can stack up to 6 times.",
+          "scripted": true,
+          "scriptName": "shin.talent",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "exclusive": {
+      "id": 6105,
+      "name": "Limbo Omen",
+      "damageType": 0,
+      "coefs": [
+        10,
+        10,
+        10
+      ],
+      "maxCoef": 10,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 610512,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "New Exclusive Ultimate [Limbo Omen]. Shin recovers ? M-Value per second for allied Sinners within her [Sleeptalk] skill range for 6 seconds.",
+          "scripted": true,
+          "scriptName": "common.triggerfield",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

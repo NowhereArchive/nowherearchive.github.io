@@ -1,0 +1,300 @@
+{
+  "id": 111305,
+  "name": "McQueen",
+  "baseAtk": 142,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        21,
+        100
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        63,
+        200
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        21,
+        50
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 130501,
+      "name": "Shackles Sync I",
+      "description": "McQueen and [Sculpture] gains 5% Damage bonus to enemies.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        },
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 130502,
+      "name": "Art Appraisal",
+      "description": "McQueen and [Sculpture] gains 20% Damage bonus to enemies if [Sculpture] is on the battlefield.",
+      "effects": []
+    },
+    {
+      "id": 130503,
+      "name": "Shackles Sync II",
+      "description": "McQueen and [Sculpture] gains 5% Damage bonus to enemies.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        },
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 130504,
+      "name": "Joy of Sanction",
+      "description": "McQueen recovers 5 energy when [Sculpture] disappears",
+      "effects": []
+    },
+    {
+      "id": 130505,
+      "name": "Shackles Sync III",
+      "description": "McQueen and [Sculpture] gains 5% Damage bonus to enemies.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        },
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "characteristic": {
+      "id": 13050,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": []
+    },
+    "normalAttack": {
+      "id": 13051,
+      "name": "Cutting",
+      "damageType": 1,
+      "coefs": [
+        56,
+        60,
+        64,
+        68,
+        73,
+        78,
+        83,
+        88,
+        94,
+        101
+      ],
+      "maxCoef": 101,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 13052,
+      "name": "Sculpture",
+      "damageType": 0,
+      "coefs": [
+        125,
+        135,
+        146,
+        157,
+        170,
+        184,
+        198,
+        214,
+        231,
+        250
+      ],
+      "maxCoef": 250,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 13053,
+      "name": "Replication Technique",
+      "damageType": 0,
+      "coefs": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        21,
+        22,
+        24,
+        25,
+        27
+      ],
+      "maxCoef": 27,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 130531,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When [Sculpture] is present, McQueen's normal attack deals extra Physical Damage which is equal to ?% of [Sculpture]'s Attack.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 130533,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When [Sculpture] is present, McQueen's normal attack deals extra Physical Damage which is equal to ?% of [Sculpture]'s Attack.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 130535,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When [Sculpture] is present, McQueen's normal attack deals extra Physical Damage which is equal to ?% of [Sculpture]'s Attack.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 13054,
+      "name": "Deceptive Deals",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 130541,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "McQueen and [Sculpture] gains ?% Damage bonus to enemies if [Sculpture] is on the battlefield.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 130543,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "McQueen and [Sculpture] gains ?% Damage bonus to enemies if [Sculpture] is on the battlefield.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "exclusive": {
+      "id": 13056,
+      "name": "Verisimilitude",
+      "damageType": 0,
+      "coefs": [
+        80,
+        90,
+        100
+      ],
+      "maxCoef": 100,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "extra1": {
+      "id": 13057,
+      "name": "Extra Skill 1",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 130572,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 130574,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

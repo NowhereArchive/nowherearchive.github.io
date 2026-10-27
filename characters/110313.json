@@ -1,0 +1,82 @@
+{
+  "id": 110313,
+  "name": "Phanuel",
+  "baseAtk": 154,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        11,
+        50
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        33,
+        100
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        11,
+        25
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 31301,
+      "name": "Phanuel Shackles 1",
+      "description": "tbd",
+      "effects": []
+    },
+    {
+      "id": 31302,
+      "name": "Phanuel Shackles 2",
+      "description": "tbd",
+      "effects": []
+    },
+    {
+      "id": 31303,
+      "name": "Phanuel Shackles 3",
+      "description": "tbd",
+      "effects": []
+    },
+    {
+      "id": 31304,
+      "name": "Phanuel Shackles 4",
+      "description": "tbd",
+      "effects": []
+    },
+    {
+      "id": 31305,
+      "name": "Phanuel Shackles 5",
+      "description": "tbd",
+      "effects": []
+    }
+  ],
+  "phasePassives": [],
+  "skills": {}
+}

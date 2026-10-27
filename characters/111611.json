@@ -1,0 +1,278 @@
+{
+  "id": 111611,
+  "name": "Kisugi Ai",
+  "baseAtk": 129,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        21,
+        100
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        63,
+        200
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        21,
+        50
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 161101,
+      "name": "Shackles 1",
+      "description": "tbd",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 161102,
+      "name": "Shackles 2",
+      "description": "tbd",
+      "effects": []
+    },
+    {
+      "id": 161103,
+      "name": "Shackles 3",
+      "description": "tbd",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 161104,
+      "name": "Shackles 4",
+      "description": "tbd",
+      "effects": []
+    },
+    {
+      "id": 161105,
+      "name": "Shackles 5",
+      "description": "tbd",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 16110,
+      "effects": [
+        {
+          "propertyId": 13,
+          "key": "energySpeed",
+          "label": "Energy Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 15,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "characteristic": {
+      "id": 16110,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": []
+    },
+    "normalAttack": {
+      "id": 16111,
+      "name": "Fine Brew",
+      "damageType": 0,
+      "coefs": [
+        38,
+        41,
+        44,
+        48,
+        52,
+        56,
+        60,
+        65,
+        70,
+        76
+      ],
+      "maxCoef": 76,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 16112,
+      "name": "Double Mix",
+      "damageType": 0,
+      "coefs": [
+        86,
+        92,
+        100,
+        108,
+        118,
+        126,
+        136,
+        148,
+        160,
+        172
+      ],
+      "maxCoef": 172,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 161121,
+          "targetCamps": 2,
+          "target": "self",
+          "description": "Kisugi Ai designates 1 allied Sinner other than herself and gives that Sinner the [Perpetrator] mark.",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": [
+            {
+              "propertyId": 13,
+              "key": "energySpeed",
+              "label": "Energy Speed",
+              "statScreen": true,
+              "calcCat": null,
+              "add": -500,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "skill1": {
+      "id": 16113,
+      "name": "Cupped Nightmare",
+      "damageType": 0,
+      "coefs": [
+        20,
+        21.6,
+        23.299999,
+        25.200001,
+        27.200001,
+        29.4,
+        31.700001,
+        34.299999,
+        37,
+        40
+      ],
+      "maxCoef": 40,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 161132,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When a [Scapegoat] mark bearer dies, [Perpetrator] mark bearers' Attack increases by ?% for 10 seconds.",
+          "scripted": true,
+          "scriptName": "catseye.artwork",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 161133,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When a [Scapegoat] mark bearer dies, [Perpetrator] mark bearers' Attack increases by ?% for 10 seconds.",
+          "scripted": true,
+          "scriptName": "common.change",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 161134,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When a [Scapegoat] mark bearer dies, [Perpetrator] mark bearers' Attack increases by ?% for 10 seconds.",
+          "scripted": true,
+          "scriptName": "common.change",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 161135,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When a [Scapegoat] mark bearer dies, [Perpetrator] mark bearers' Attack increases by ?% for 10 seconds.",
+          "scripted": true,
+          "scriptName": "common.change",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 16114,
+      "name": "Shake",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 161141,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When an allied Sinner is revived, all allied Sinners' damage increases by ?%, stacking up to 3 times.",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 43,
+              "key": "property_43",
+              "label": "Property 43",
+              "statScreen": false,
+              "calcCat": null,
+              "add": 20,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

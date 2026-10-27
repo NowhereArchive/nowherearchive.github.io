@@ -1,0 +1,335 @@
+{
+  "id": 110204,
+  "name": "Donald",
+  "baseAtk": 155,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        11,
+        50
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        33,
+        100
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        11,
+        25
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 20401,
+      "name": "Accumulator Battery",
+      "description": "Gains 2 Electricity per second. While [Thunderous Might] is active, no Electricity can be gained, but the Electricity cost is reduced by 20%.",
+      "effects": []
+    },
+    {
+      "id": 20402,
+      "name": "Shackles Sync I",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 20403,
+      "name": "High-Efficiency Conductor",
+      "description": "The trigger interval of [Thunderous Might] is reduced by 0.25 seconds.",
+      "effects": []
+    },
+    {
+      "id": 20404,
+      "name": "Energy Overflowing",
+      "description": "At the start of the battle, Donald gains 18 points of Energy.",
+      "effects": []
+    },
+    {
+      "id": 20405,
+      "name": "Shackles Sync II",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 20400,
+      "effects": [
+        {
+          "propertyId": 17,
+          "key": "dmgBonus",
+          "label": "Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Damage Bonus (general)",
+          "add": 10,
+          "isPercent": true
+        },
+        {
+          "propertyId": 57,
+          "key": "breakingDmgBonus",
+          "label": "Breaking Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Breaking Damage Bonus",
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "characteristic": {
+      "id": 2040,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 20400,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "secretland.changedamagetype",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 20401,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.changeelectricenergy",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 20402,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.stateaddbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 20406,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "don.standcasting",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 20416,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.stateaddbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 20417,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.removebuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 20403,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.stateaddbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 2041,
+      "name": "Electric Surge",
+      "damageType": 1,
+      "coefs": [
+        71,
+        76.699997,
+        82.800003,
+        89.5,
+        96.599998,
+        104.400002,
+        112.699997,
+        121.699997,
+        131.5,
+        142
+      ],
+      "maxCoef": 142,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 2042,
+      "name": "Thunderous Might",
+      "damageType": 0,
+      "coefs": [
+        200,
+        216,
+        233,
+        252,
+        272,
+        294,
+        317,
+        343,
+        370,
+        400
+      ],
+      "maxCoef": 400,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 2044,
+      "name": "Unexpected Thunder",
+      "damageType": 0,
+      "coefs": [
+        330,
+        356,
+        385,
+        416,
+        449,
+        485,
+        524,
+        566,
+        611,
+        660
+      ],
+      "maxCoef": 660,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 20412,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "For every 5 times Donald uses [Electric Surge] or [Thunderous Might], an Electric Hurricane is triggered, dealing (Attack *?%) Physical Damage to enemies in range.",
+          "scripted": true,
+          "scriptName": "don.passive",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 2045,
+      "name": "Electric Conduction",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 20419,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Donald gives all allied Sinners a ?% [Electrocution] damage boost.",
+          "scripted": true,
+          "scriptName": "common.triggerfield",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "exclusive": {
+      "id": 2043,
+      "name": "Dead End",
+      "damageType": 0,
+      "coefs": [
+        10,
+        17.5,
+        25
+      ],
+      "maxCoef": 25,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 20414,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Donald enters Discharge Mode for 10 seconds. In this state, Donald gains a ?% Attack boost. His Electricity and Ultimate Energy are instantly filled, and the number of attacks required to activate [Unexpected Thunder] is reduced by ?. [Dead End] can only be used once per battle.",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 2,
+              "key": "atk",
+              "label": "ATK",
+              "statScreen": false,
+              "calcCat": null,
+              "add": 25,
+              "isPercent": true
+            }
+          ]
+        },
+        {
+          "statusId": 20409,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Donald enters Discharge Mode for 10 seconds. In this state, Donald gains a ?% Attack boost. His Electricity and Ultimate Energy are instantly filled, and the number of attacks required to activate [Unexpected Thunder] is reduced by ?. [Dead End] can only be used once per battle.",
+          "scripted": true,
+          "scriptName": "common.changeelectricenergy",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 20410,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Donald enters Discharge Mode for 10 seconds. In this state, Donald gains a ?% Attack boost. His Electricity and Ultimate Energy are instantly filled, and the number of attacks required to activate [Unexpected Thunder] is reduced by ?. [Dead End] can only be used once per battle.",
+          "scripted": true,
+          "scriptName": "common.energyfull",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

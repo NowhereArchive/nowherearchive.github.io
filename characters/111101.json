@@ -1,0 +1,242 @@
+{
+  "id": 111101,
+  "name": "Countess Chelsea",
+  "baseAtk": 100,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        21,
+        100
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        63,
+        200
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        21,
+        50
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 110101,
+      "name": "Gem Fever",
+      "description": "When an enemy is petrified, Countess Chelsea and [Sitri] recover 3% of their Max HP.",
+      "effects": []
+    },
+    {
+      "id": 110102,
+      "name": "Shackles Sync I",
+      "description": "Max HP +10%",
+      "effects": [
+        {
+          "propertyId": 1,
+          "key": "hp",
+          "label": "HP",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 110103,
+      "name": "Loyal Guard",
+      "description": "If Countess Chelsea's and [Sitri]'s HP drops below 30% after [Shared Fate] is triggered, they both recover 4% of their Max HP.",
+      "effects": []
+    },
+    {
+      "id": 110104,
+      "name": "Energy Overflowing",
+      "description": "Countess Chelsea gains 10 energy when battle starts.",
+      "effects": []
+    },
+    {
+      "id": 110105,
+      "name": "Shackles Sync II",
+      "description": "Max HP +10%",
+      "effects": [
+        {
+          "propertyId": 1,
+          "key": "hp",
+          "label": "HP",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "characteristic": {
+      "id": 11010,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 110100,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 1,
+              "key": "hp",
+              "label": "HP",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 10,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 11011,
+      "name": "Crystal Claws",
+      "damageType": 1,
+      "coefs": [
+        93,
+        100,
+        106,
+        114,
+        121,
+        129,
+        138,
+        147,
+        157,
+        168
+      ],
+      "maxCoef": 168,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 11012,
+      "name": "Dear Kitty",
+      "damageType": 0,
+      "coefs": [
+        80,
+        84,
+        88,
+        92,
+        96,
+        100,
+        105,
+        110,
+        115,
+        120
+      ],
+      "maxCoef": 120,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 11013,
+      "name": "Behave, Or Get Petrified",
+      "damageType": 0,
+      "coefs": [
+        8,
+        8.5,
+        9.1,
+        9.7,
+        10.4,
+        11.1,
+        11.8,
+        12.6,
+        13.5,
+        14.4
+      ],
+      "maxCoef": 14.4,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 110131,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Normal attacks of Countess Chelsea and [Sitri] have a ?% chance to petrify the hit enemy for 2 seconds. The effect has a 12-second cooldown.",
+          "scripted": true,
+          "scriptName": "normalattack.addbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 110133,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Normal attacks of Countess Chelsea and [Sitri] have a ?% chance to petrify the hit enemy for 2 seconds. The effect has a 12-second cooldown.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 11014,
+      "name": "Shared Fate",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 110141,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "[Sitri] gains ?% damage reduction. During a battle, the health of Countess Chelsea and [Sitri] is automatically redistributed so that they have the same health percentage. The effect has a 4-second cooldown.",
+          "scripted": true,
+          "scriptName": "fupo.passive",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 110142,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "[Sitri] gains ?% damage reduction. During a battle, the health of Countess Chelsea and [Sitri] is automatically redistributed so that they have the same health percentage. The effect has a 4-second cooldown.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": [
+            {
+              "propertyId": 1,
+              "key": "hp",
+              "label": "HP",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 15,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

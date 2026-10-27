@@ -1,0 +1,251 @@
+{
+  "id": 111112,
+  "name": "Rumina",
+  "baseAtk": 99,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        21,
+        100
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        63,
+        200
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        21,
+        50
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 111201,
+      "name": "Shackles 1",
+      "description": "",
+      "effects": [
+        {
+          "propertyId": 3,
+          "key": "armor",
+          "label": "Armor",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 111202,
+      "name": "Shackles 2",
+      "description": "",
+      "effects": []
+    },
+    {
+      "id": 111203,
+      "name": "Shackles 3",
+      "description": "",
+      "effects": [
+        {
+          "propertyId": 3,
+          "key": "armor",
+          "label": "Armor",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 111204,
+      "name": "Shackles 4",
+      "description": "",
+      "effects": []
+    },
+    {
+      "id": 111205,
+      "name": "Shackles 5",
+      "description": "",
+      "effects": [
+        {
+          "propertyId": 3,
+          "key": "armor",
+          "label": "Armor",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "normalAttack": {
+      "id": 11121,
+      "name": "Alchemic Smelt",
+      "damageType": 2,
+      "coefs": [
+        50,
+        54,
+        58,
+        63,
+        68,
+        74,
+        79,
+        86,
+        93,
+        100
+      ],
+      "maxCoef": 100,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 11122,
+      "name": "Prayer of Dawn",
+      "damageType": 0,
+      "coefs": [
+        2,
+        2.16,
+        2.33,
+        2.52,
+        2.72,
+        2.94,
+        3.18,
+        3.43,
+        3.7,
+        4
+      ],
+      "maxCoef": 4,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 11123,
+      "name": "Elem Transmute",
+      "damageType": 0,
+      "coefs": [
+        2,
+        2.16,
+        2.33,
+        2.52,
+        2.72,
+        2.94,
+        3.18,
+        3.43,
+        3.7,
+        4
+      ],
+      "maxCoef": 4,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 111231,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When [Prayer of Dawn] is cast, allied summoned creatures receive a ?% Normal Attack Damage boost for 15 seconds.\nIf [Prayer of Dawn] is cast by [Gilded Machina], summoned creatures receive an additional ?% Normal Attack Damage boost for 15 seconds.",
+          "scripted": true,
+          "scriptName": "eve.passive",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 11124,
+      "name": "Auric Resonance",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 111241,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Each time [Gilded Machina] casts a skill, increases Attack by ?%, stacking up to 5 times.",
+          "scripted": true,
+          "scriptName": "rumina.talent",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "exclusive": {
+      "id": 11125,
+      "name": "Prayer of Dawn",
+      "damageType": 0,
+      "coefs": [
+        15,
+        20,
+        25
+      ],
+      "maxCoef": 25,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 111251,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Rumina deals (Attack *?%) Magic Damage to each grid within the skill range, with the damage distributed among all enemies within each grid. This damage counts as Normal Attack Damage.\nIf [Gilded Machina] is present and able to cast skills, it will cast this skill instead of Rumina.",
+          "scripted": true,
+          "scriptName": "rumina.exclusive",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 111253,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Rumina deals (Attack *?%) Magic Damage to each grid within the skill range, with the damage distributed among all enemies within each grid. This damage counts as Normal Attack Damage.\nIf [Gilded Machina] is present and able to cast skills, it will cast this skill instead of Rumina.",
+          "scripted": true,
+          "scriptName": "common.removebuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "extra2": {
+      "id": 11126,
+      "name": "Extra Skill 2",
+      "damageType": 2,
+      "coefs": [
+        50,
+        54,
+        58,
+        63,
+        68,
+        74,
+        79,
+        86,
+        93,
+        100
+      ],
+      "maxCoef": 100,
+      "coefSource": "Data",
+      "buffs": []
+    }
+  }
+}

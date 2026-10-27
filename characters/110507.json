@@ -1,0 +1,223 @@
+{
+  "id": 110507,
+  "name": "Hestia",
+  "baseAtk": 167,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        11,
+        50
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        33,
+        100
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        11,
+        25
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 50701,
+      "name": "Detonation",
+      "description": "The fiery halo's effective period +3 seconds. When applying or transferring a fiery halo, deals (Hestia's Attack *300%) Magic Damage to the enemy gaining the fiery halo.",
+      "effects": []
+    },
+    {
+      "id": 50702,
+      "name": "Shackles Sync I",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 50703,
+      "name": "Fire Accelerant",
+      "description": "[Furnace Flame]'s fireball sum value increases by 18%.",
+      "effects": []
+    },
+    {
+      "id": 50704,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption is reduced by 5 points.",
+      "effects": []
+    },
+    {
+      "id": 50705,
+      "name": "Shackles Sync II",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 50706,
+      "effects": [
+        {
+          "propertyId": 19,
+          "key": "mDmgBonus",
+          "label": "Magic Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Magic Damage Bonus",
+          "add": 15,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "characteristic": {
+      "id": 5070,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 50707,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.changeragevalue",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 5071,
+      "name": "Sacred Flambeau",
+      "damageType": 2,
+      "coefs": [
+        81,
+        87,
+        94,
+        102,
+        110,
+        119,
+        129,
+        139,
+        150,
+        162
+      ],
+      "maxCoef": 162,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 5072,
+      "name": "Igneous Illumination",
+      "damageType": 0,
+      "coefs": [
+        24,
+        25.9,
+        28,
+        30.200001,
+        32.700001,
+        35.5,
+        38.099998,
+        41.099998,
+        44.400002,
+        48
+      ],
+      "maxCoef": 48,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 5073,
+      "name": "Furnace Flame",
+      "damageType": 0,
+      "coefs": [
+        50,
+        54,
+        58.299999,
+        63,
+        68,
+        73.5,
+        79.400002,
+        85.699997,
+        92.599998,
+        100
+      ],
+      "maxCoef": 100,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "passive": {
+      "id": 5074,
+      "name": "Pyrophoric Breach",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 50741,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When an allied Sinner applies a [Burn] mark to an enemy, the allied Sinner gains ? Magic Penetration.",
+          "scripted": true,
+          "scriptName": "hestia.talent",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "exclusive": {
+      "id": 5075,
+      "name": "Wildfire",
+      "damageType": 2,
+      "coefs": [
+        520
+      ],
+      "maxCoef": 520,
+      "coefSource": "AttackPowerCo",
+      "buffs": []
+    }
+  }
+}

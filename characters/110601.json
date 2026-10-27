@@ -1,0 +1,258 @@
+{
+  "id": 110601,
+  "name": "Hamel",
+  "baseAtk": 139,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        11,
+        50
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        33,
+        100
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        11,
+        25
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 60101,
+      "name": "Everlasting Dance",
+      "description": "[Bewitching Dance] lasts for 3 seconds longer.",
+      "effects": []
+    },
+    {
+      "id": 60102,
+      "name": "Shackles Sync I",
+      "description": "Healing efficiency +5%",
+      "effects": [
+        {
+          "propertyId": 43,
+          "key": "property_43",
+          "label": "Property 43",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 60103,
+      "name": "Admirer",
+      "description": "For each Catalyst Sinner on the team, team damage +5%",
+      "effects": []
+    },
+    {
+      "id": 60104,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption is reduced by 3 points.",
+      "effects": []
+    },
+    {
+      "id": 60105,
+      "name": "Shackles Sync II",
+      "description": "Healing efficiency +5%",
+      "effects": [
+        {
+          "propertyId": 43,
+          "key": "property_43",
+          "label": "Property 43",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 60106,
+      "effects": [
+        {
+          "propertyId": 43,
+          "key": "property_43",
+          "label": "Property 43",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 10,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "characteristic": {
+      "id": 6010,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 60101,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.triggerstate",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 60102,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 60109,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.addextrablocked",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 60111,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "hameier.dance",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 6011,
+      "name": "Requiem",
+      "damageType": 0,
+      "coefs": [
+        4,
+        4.2,
+        4.4,
+        4.6,
+        4.8,
+        5,
+        5.2,
+        5.4,
+        5.7,
+        6
+      ],
+      "maxCoef": 6,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 6012,
+      "name": "Bewitching Dance",
+      "damageType": 0,
+      "coefs": [
+        40,
+        42.700001,
+        45.599998,
+        48.700001,
+        51.900002,
+        55.400002,
+        59.200001,
+        63.200001,
+        67.400002,
+        72
+      ],
+      "maxCoef": 72,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 60121,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Hamel [Dances] hard, enhancing all the effects [Dances] bring by ?% for 12 seconds, during which she can't automatically recover her energy.",
+          "scripted": true,
+          "scriptName": "hameier.upgradedance",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "skill1": {
+      "id": 6013,
+      "name": "Infinite Spin",
+      "damageType": 0,
+      "coefs": [
+        60,
+        64,
+        68,
+        73,
+        78,
+        83,
+        89,
+        95,
+        101,
+        108
+      ],
+      "maxCoef": 108,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 60131,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When the battle begins, the effects of all [Dances] are enhanced by 0.5% per second for up to ? seconds. The range will be enlarged to a diamond shape at the 45th second and cover the entire field at the 90th second.",
+          "scripted": true,
+          "scriptName": "hameier.passive",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 6014,
+      "name": "Life Touch",
+      "damageType": 0,
+      "buffs": []
+    },
+    "exclusive": {
+      "id": 6015,
+      "name": "Path of Compassion",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": []
+    }
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "id": 111409,
+  "name": "Thalia",
+  "baseAtk": 165,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        21,
+        100
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        63,
+        200
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        21,
+        50
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 140901,
+      "name": "Shackles Sync I",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 140902,
+      "name": "Bonus Discount",
+      "description": "When an enemy marked with [Discount] dies, the nearest enemy to Chief receives a [Discount] mark and the mark's duration is refreshed.",
+      "effects": []
+    },
+    {
+      "id": 140903,
+      "name": "Shackles Sync II",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 140904,
+      "name": "Limited-Time Deal",
+      "description": "[Discount]'s Movement Speed reduction effect is additionally increased by 15%, and its duration is extended by 5 seconds.",
+      "effects": []
+    },
+    {
+      "id": 140905,
+      "name": "Shackles Sync III",
+      "description": "Attack +5%.",
+      "effects": [
+        {
+          "propertyId": 2,
+          "key": "atk",
+          "label": "ATK",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "characteristic": {
+      "id": 14090,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": []
+    },
+    "normalAttack": {
+      "id": 14091,
+      "name": "Keen Eye",
+      "damageType": 1,
+      "coefs": [
+        80,
+        86,
+        93,
+        101,
+        109,
+        118,
+        127,
+        137,
+        148,
+        160
+      ],
+      "maxCoef": 160,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 14092,
+      "name": "Transparent Dealings",
+      "damageType": 1,
+      "coefs": [
+        450,
+        486,
+        525,
+        567,
+        612,
+        661,
+        714,
+        772,
+        833,
+        900
+      ],
+      "maxCoef": 900,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 14093,
+      "name": "Free with Purchase",
+      "damageType": 0,
+      "coefs": [
+        7.5,
+        8.1,
+        8.7,
+        9.4,
+        10.2,
+        11,
+        11.9,
+        12.9,
+        13.9,
+        15
+      ],
+      "maxCoef": 15,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 140931,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Thalia gains an Attack Speed bonus based on the number of enemies marked with [Discount] on the field. For each enemy marked with [Discount], her Attack Speed increases by ?%. This effect can stack up to ? times.",
+          "scripted": true,
+          "scriptName": "thalia.passive",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 14094,
+      "name": "Gilded Temptation",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 140941,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Enemies marked with [Discount] take ?% more Physical Damage.",
+          "scripted": true,
+          "scriptName": "thalia.talent",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "extra1": {
+      "id": 14095,
+      "name": "Extra Skill 1",
+      "damageType": 0,
+      "coefs": [],
+      "maxCoef": null,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 140951,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "normalattack.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

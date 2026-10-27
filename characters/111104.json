@@ -1,0 +1,261 @@
+{
+  "id": 111104,
+  "name": "Levy",
+  "baseAtk": 108,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        21,
+        100
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        63,
+        200
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        21,
+        50
+      ],
+      "attackCoefficient": [
+        441,
+        17800
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 110401,
+      "name": "Shackles Sync I",
+      "description": "Healing received is increased by 5%.",
+      "effects": [
+        {
+          "propertyId": 45,
+          "key": "property_45",
+          "label": "Property 45",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 110402,
+      "name": "Auto Renew Contract",
+      "description": "[Fraud Contract] lasts 4 seconds longer.",
+      "effects": []
+    },
+    {
+      "id": 110403,
+      "name": "Shackles Sync II",
+      "description": "Healing received is increased by 5%.",
+      "effects": [
+        {
+          "propertyId": 45,
+          "key": "property_45",
+          "label": "Property 45",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 110404,
+      "name": "Standard Contract",
+      "description": "[Fraud Contract]'s energy consumption is reduced by 3.",
+      "effects": []
+    },
+    {
+      "id": 110405,
+      "name": "Shackles Sync III",
+      "description": "Healing received is increased by 5%.",
+      "effects": [
+        {
+          "propertyId": 45,
+          "key": "property_45",
+          "label": "Property 45",
+          "statScreen": false,
+          "calcCat": null,
+          "add": 5,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "characteristic": {
+      "id": 11040,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 110400,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 1,
+              "key": "hp",
+              "label": "HP",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 10,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 11041,
+      "name": "Contract Request",
+      "damageType": 1,
+      "coefs": [
+        79,
+        85,
+        90,
+        97,
+        103,
+        110,
+        117,
+        125,
+        134,
+        143
+      ],
+      "maxCoef": 143,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 11042,
+      "name": "Fraud Contract",
+      "damageType": 0,
+      "coefs": [
+        20,
+        21.299999,
+        22.6,
+        24.1,
+        25.6,
+        27.299999,
+        29,
+        30.9,
+        32.900002,
+        35
+      ],
+      "maxCoef": 35,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 110421,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Levy backs down and drafts a \"fair contract\", increasing his Magic Resistance by ?% for 12 seconds. While this is active, he cannot automatically recover Energy.",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 4,
+              "key": "magicResist",
+              "label": "Magic Resist",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 35,
+              "isPercent": true
+            }
+          ]
+        },
+        {
+          "statusId": 110422,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Levy backs down and drafts a \"fair contract\", increasing his Magic Resistance by ?% for 12 seconds. While this is active, he cannot automatically recover Energy.",
+          "scripted": false,
+          "maxLevelEffects": [
+            {
+              "propertyId": 13,
+              "key": "energySpeed",
+              "label": "Energy Speed",
+              "statScreen": true,
+              "calcCat": null,
+              "add": -500,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "skill1": {
+      "id": 11043,
+      "name": "Contract Pitfall",
+      "damageType": 0,
+      "coefs": [
+        25,
+        27,
+        29.200001,
+        31.5,
+        34,
+        36.700001,
+        39.700001,
+        42.900002,
+        46.299999,
+        50
+      ],
+      "maxCoef": 50,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 110431,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "When Levy takes damage from an enemy, he inflicts a mark of [Life Loss] on them.\n[Life Loss]: Deals (Magic Resistance *?%) Physical Damage per second for 12 seconds.",
+          "scripted": true,
+          "scriptName": "common.damageextra",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 11044,
+      "name": "Additional Terms",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 110441,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "While [Fraud Contract] lasts, all enemies within a 3x3 square around Levy suffer ?% more [Life Loss] damage.",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

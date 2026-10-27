@@ -1,0 +1,247 @@
+{
+  "id": 110509,
+  "name": "Yingying",
+  "baseAtk": 163,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        11,
+        50
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        33,
+        100
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        11,
+        25
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 50901,
+      "name": "Cloudbreaker Vines",
+      "description": "[Wisteria Cluster]'s range expands to a diamond shape. Additionally, [Cascadum]'s hits increase by 3.",
+      "effects": []
+    },
+    {
+      "id": 50902,
+      "name": "Shackles Sync I",
+      "description": "Magic damage increases by 8%.",
+      "effects": [
+        {
+          "propertyId": 19,
+          "key": "mDmgBonus",
+          "label": "Magic Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Magic Damage Bonus",
+          "add": 8,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": 50903,
+      "name": "Shattered Bloom",
+      "description": "[Blossom]'s maximum stacks increase to 8. Each [Blossom] stack additionally increases damage taken by 3%.",
+      "effects": []
+    },
+    {
+      "id": 50904,
+      "name": "Whispers of Gilded Wishes",
+      "description": "When [Blossom] reaches 8 stacks on boss enemies and elite enemies, a [Dream Amulet] is generated within the [Wisteria Clusters] on the field. Each grid can contain at most one [Dream Amulet].",
+      "effects": []
+    },
+    {
+      "id": 50905,
+      "name": "Shackles Sync II",
+      "description": "Magic damage increases by 8%.",
+      "effects": [
+        {
+          "propertyId": 19,
+          "key": "mDmgBonus",
+          "label": "Magic Damage Bonus",
+          "statScreen": false,
+          "calcCat": "Magic Damage Bonus",
+          "add": 8,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "characteristic": {
+      "id": 5090,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 50901,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.energyfull",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 50902,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "common.addbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 5091,
+      "name": "Vine Dance",
+      "damageType": 2,
+      "coefs": [
+        55,
+        59,
+        64,
+        69,
+        75,
+        81,
+        87,
+        94,
+        102,
+        110
+      ],
+      "maxCoef": 110,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 5092,
+      "name": "Entwine/Celestium",
+      "damageType": 0,
+      "coefs": [
+        25,
+        27,
+        29.200001,
+        31.5,
+        34,
+        36.700001,
+        39.700001,
+        42.900002,
+        46.299999,
+        50
+      ],
+      "maxCoef": 50,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 5093,
+      "name": "Enlace",
+      "damageType": 0,
+      "coefs": [
+        90,
+        97.199997,
+        105,
+        113.400002,
+        122.5,
+        132.300003,
+        142.899994,
+        154.300003,
+        166.699997,
+        180
+      ],
+      "maxCoef": 180,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "passive": {
+      "id": 5094,
+      "name": "Mauve Aroma",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 50941,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "CRIT Rate increases by ?%. When Yingying deals damage, the damage is increased based on the enemy's current HP percentage. The lower the enemy's HP percentage, the stronger the damage boost, reaching its maximum when the enemy's HP is below 20%. The maximum damage boost is ?%.",
+          "scripted": true,
+          "scriptName": "yingying.talent",
+          "maxLevelEffects": [
+            {
+              "propertyId": 5,
+              "key": "critRate",
+              "label": "Crit Rate",
+              "statScreen": true,
+              "calcCat": null,
+              "add": 30,
+              "isPercent": true
+            }
+          ]
+        }
+      ]
+    },
+    "exclusive": {
+      "id": 5095,
+      "name": "Soulful Glimpse",
+      "damageType": 0,
+      "coefs": [
+        1,
+        2,
+        3
+      ],
+      "maxCoef": 3,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "extra1": {
+      "id": 5096,
+      "name": "Extra Skill 1",
+      "damageType": 2,
+      "coefs": [
+        55,
+        59,
+        64,
+        69,
+        75,
+        81,
+        87,
+        94,
+        102,
+        110
+      ],
+      "maxCoef": 110,
+      "coefSource": "Data",
+      "buffs": []
+    }
+  }
+}

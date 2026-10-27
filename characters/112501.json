@@ -1,0 +1,194 @@
+{
+  "id": 112501,
+  "name": "Kelvin",
+  "baseAtk": 138,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        21,
+        890
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        1,
+        5
+      ],
+      "attackCoefficient": [
+        21,
+        890
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        3,
+        10
+      ],
+      "attackCoefficient": [
+        21,
+        890
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        2,
+        5
+      ],
+      "attackCoefficient": [
+        21,
+        890
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 250101,
+      "name": "Liquid Nitrogen",
+      "description": "[Frigid Zone] Duration extended by 2 seconds",
+      "effects": []
+    },
+    {
+      "id": 250102,
+      "name": "Streamline",
+      "description": "[Frigid Zone] Speed reduction effect increased by 10%",
+      "effects": []
+    },
+    {
+      "id": 250103,
+      "name": "Freezer",
+      "description": "[Frost] When this mark takes effect, the attacker is frozen for 2 seconds",
+      "effects": []
+    },
+    {
+      "id": 250104,
+      "name": "Emotion Resonance",
+      "description": "Ultimate Energy Consumption reduced by 3 points",
+      "effects": []
+    },
+    {
+      "id": 250105,
+      "name": "Streamline",
+      "description": "[Frigid Zone] Speed reduction effect increased by 10%",
+      "effects": []
+    }
+  ],
+  "phasePassives": [],
+  "skills": {
+    "characteristic": {
+      "id": 25010,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 250100,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "normalattack.addbuff",
+          "maxLevelEffects": []
+        },
+        {
+          "statusId": 2501005,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "geji.passive",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 25011,
+      "name": "Ice Crystal",
+      "damageType": 2,
+      "coefs": [
+        114,
+        122,
+        130,
+        139,
+        148,
+        158,
+        169,
+        181,
+        193,
+        206
+      ],
+      "maxCoef": 206,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 25012,
+      "name": "Frigid Zone",
+      "damageType": 0,
+      "coefs": [
+        180,
+        192,
+        205,
+        219,
+        234,
+        250,
+        266,
+        284,
+        304,
+        324
+      ],
+      "maxCoef": 324,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 25013,
+      "name": "Frozen Freshness",
+      "damageType": 0,
+      "coefs": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28.5,
+        30
+      ],
+      "maxCoef": 30,
+      "coefSource": "Data",
+      "buffs": [
+        {
+          "statusId": 250131,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "Kelvin creates a diamond-shaped [Low Temperature Field] around herself. The Movement Speed of enemies inside it will be reduced by ?%.",
+          "scripted": true,
+          "scriptName": "common.triggerfield",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "passive": {
+      "id": 25014,
+      "name": "Frost",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 250141,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "During a battle, Kelvin automatically covers an allied Sinner with lowest percentage of HP with [Frost], gaining ?% damage reduction. After taking damage, [Frost] is removed. The effect has a 15-second cooldown.",
+          "scripted": true,
+          "scriptName": "common.specifytargetaddbuff",
+          "maxLevelEffects": []
+        }
+      ]
+    }
+  }
+}

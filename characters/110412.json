@@ -1,0 +1,82 @@
+{
+  "id": 110412,
+  "name": "Chengxiao",
+  "baseAtk": 163,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        11,
+        50
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        33,
+        100
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        11,
+        25
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 41201,
+      "name": "Shackles 1",
+      "description": "Shackles 1",
+      "effects": []
+    },
+    {
+      "id": 41202,
+      "name": "Shackles 2",
+      "description": "Shackles 2",
+      "effects": []
+    },
+    {
+      "id": 41203,
+      "name": "Shackles 3",
+      "description": "Shackles 3",
+      "effects": []
+    },
+    {
+      "id": 41204,
+      "name": "Shackles 4",
+      "description": "Shackles 4",
+      "effects": []
+    },
+    {
+      "id": 41205,
+      "name": "Shackles 5",
+      "description": "Shackles 5",
+      "effects": []
+    }
+  ],
+  "phasePassives": [],
+  "skills": {}
+}

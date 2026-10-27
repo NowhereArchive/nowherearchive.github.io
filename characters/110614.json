@@ -1,0 +1,205 @@
+{
+  "id": 110614,
+  "name": "Celine",
+  "baseAtk": 135,
+  "upgrade": [
+    {
+      "grade": 0,
+      "propertyCoefficient": null,
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 1,
+      "propertyCoefficient": [
+        11,
+        50
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 2,
+      "propertyCoefficient": [
+        33,
+        100
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    },
+    {
+      "grade": 3,
+      "propertyCoefficient": [
+        11,
+        25
+      ],
+      "attackCoefficient": [
+        231,
+        8900
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": 61401,
+      "name": "Shackles 1",
+      "description": "",
+      "effects": []
+    },
+    {
+      "id": 61402,
+      "name": "Shackles 2",
+      "description": "",
+      "effects": []
+    },
+    {
+      "id": 61403,
+      "name": "Shackles 3",
+      "description": "",
+      "effects": []
+    },
+    {
+      "id": 61404,
+      "name": "Shackles 4",
+      "description": "",
+      "effects": []
+    },
+    {
+      "id": 61405,
+      "name": "Shackles 5",
+      "description": "",
+      "effects": []
+    }
+  ],
+  "phasePassives": [
+    {
+      "phase": 2,
+      "label": "Mania Intensify",
+      "entryId": 6140,
+      "effects": [
+        {
+          "propertyId": 11,
+          "key": "atkSpeed",
+          "label": "ATK Speed",
+          "statScreen": true,
+          "calcCat": null,
+          "add": 15,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "characteristic": {
+      "id": 6140,
+      "name": "Characteristic",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 61401,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "",
+          "scripted": true,
+          "scriptName": "celine.chains",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "normalAttack": {
+      "id": 6141,
+      "name": "Folios",
+      "damageType": 2,
+      "coefs": [
+        62,
+        67,
+        72,
+        78,
+        84,
+        91,
+        98,
+        106,
+        115,
+        124
+      ],
+      "maxCoef": 124,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "ultimate": {
+      "id": 6142,
+      "name": "Legacy Manuscript",
+      "damageType": 0,
+      "coefs": [
+        15,
+        16.200001,
+        17.5,
+        18.9,
+        20.4,
+        22,
+        23.799999,
+        25.700001,
+        27.799999,
+        30
+      ],
+      "maxCoef": 30,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "skill1": {
+      "id": 6143,
+      "name": "Lessons from History",
+      "damageType": 0,
+      "coefs": [
+        3,
+        3.2,
+        3.5,
+        3.8,
+        4.1,
+        4.4,
+        4.8,
+        5.1,
+        5.6,
+        6
+      ],
+      "maxCoef": 6,
+      "coefSource": "Data",
+      "buffs": []
+    },
+    "passive": {
+      "id": 6144,
+      "name": "Compilation",
+      "damageType": 0,
+      "buffs": [
+        {
+          "statusId": 61441,
+          "targetCamps": 5,
+          "target": "ally",
+          "description": "For every 600 HP [Raindrop] consumes from the allied Sinner, the Sinner gains a ?% damage boost, stacking up to 10 times and lasting until [Raindrop] is removed. Additionally, each time [Overcast] is triggered, Celine recovers 1 Energy.",
+          "scripted": true,
+          "scriptName": "celine.talent",
+          "maxLevelEffects": []
+        }
+      ]
+    },
+    "exclusive": {
+      "id": 6145,
+      "name": "Ceaseless Torrent",
+      "damageType": 0,
+      "coefs": [
+        400,
+        600,
+        800
+      ],
+      "maxCoef": 800,
+      "coefSource": "Data",
+      "buffs": []
+    }
+  }
+}
